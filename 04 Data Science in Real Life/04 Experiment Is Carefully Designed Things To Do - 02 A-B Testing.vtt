@@ -1,0 +1,698 @@
+WEBVTT
+
+1
+00:00:00.920 --> 00:00:03.534
+Hi.
+My name's Brian Caffo, and welcome to
+
+2
+00:00:03.534 --> 00:00:08.201
+the lecture on A/B testing as part of our
+Executive Day science specialization.
+
+3
+00:00:08.201 --> 00:00:13.490
+I'm going to start this lecture by
+posing one of the most fundamental
+
+4
+00:00:13.490 --> 00:00:19.200
+questions of our time, and
+that is how can Jeff sell more books.
+
+5
+00:00:19.200 --> 00:00:21.860
+So Jeff is another one of
+the instructors in our specialization,
+
+6
+00:00:21.860 --> 00:00:26.190
+and he does have a book called
+the The Elements of Data Analytic Style.
+
+7
+00:00:26.190 --> 00:00:27.250
+It's a great book.
+
+8
+00:00:27.250 --> 00:00:27.980
+Get it off of Leanpub.
+
+9
+00:00:29.060 --> 00:00:33.840
+So imagine if Jeff had two Twitter's
+ad campaigns he'd like to compare
+
+10
+00:00:33.840 --> 00:00:35.830
+to see which one was more effective.
+
+11
+00:00:35.830 --> 00:00:39.530
+The first one says, a practical but
+non-technical guide to data analysis.
+
+12
+00:00:39.530 --> 00:00:41.650
+Pay what you want.
+
+13
+00:00:41.650 --> 00:00:44.200
+And the other one says,
+a book of non-technical tips for
+
+14
+00:00:44.200 --> 00:00:45.700
+analyzing data the right way.
+
+15
+00:00:45.700 --> 00:00:50.620
+[INAUDIBLE] So, he wants to
+compare these two ad campaigns,
+
+16
+00:00:50.620 --> 00:00:53.230
+what are some possible strategies
+he might use to do that?
+
+17
+00:00:54.820 --> 00:00:57.440
+Well, one is he could run the ad serially.
+
+18
+00:00:57.440 --> 00:01:01.600
+He could run for a couple of weeks
+the first ad then run the second one for
+
+19
+00:01:01.600 --> 00:01:02.600
+a couple of weeks.
+
+20
+00:01:02.600 --> 00:01:05.820
+Maybe after a washout period, and
+
+21
+00:01:05.820 --> 00:01:10.310
+then compare the conversion rate during
+the time periods of the two ads.
+
+22
+00:01:10.310 --> 00:01:14.170
+Now, that has the problem
+that anything that he found,
+
+23
+00:01:14.170 --> 00:01:19.020
+whether it's an effective ad type or
+absence of effect, could also be
+
+24
+00:01:19.020 --> 00:01:23.700
+attributed to whatever's aliased with
+the time periods that he was studying.
+
+25
+00:01:23.700 --> 00:01:28.230
+For example, imagine the first ad ran
+during Christmas or a major holiday.
+
+26
+00:01:29.500 --> 00:01:33.870
+Then, of course people's purchasing
+patterns are different during that time of
+
+27
+00:01:33.870 --> 00:01:36.950
+year, than during a time where
+there isn't a major holiday.
+
+28
+00:01:36.950 --> 00:01:41.240
+So, he wouldn't be able to conclude
+that there is a difference or absence of
+
+29
+00:01:41.240 --> 00:01:45.490
+a difference because of ad campaign
+because of this lurking variable and
+
+30
+00:01:45.490 --> 00:01:47.830
+that's what we're going to study today.
+
+31
+00:01:47.830 --> 00:01:50.160
+I think this idea of lurking variables and
+
+32
+00:01:50.160 --> 00:01:55.680
+confounding underlies a lot of the issues
+with observational studies and
+
+33
+00:01:55.680 --> 00:02:02.140
+why in particular in nutritional studies
+we see kind of opposite results so often.
+
+34
+00:02:02.140 --> 00:02:06.110
+Chocolate is good for us one week and
+it's bad for us another week.
+
+35
+00:02:06.110 --> 00:02:12.700
+And I saw this great article
+where it's a blogger,
+
+36
+00:02:12.700 --> 00:02:19.660
+of E Magazine, written by healthcare
+journalists for healthcare journalists.
+
+37
+00:02:19.660 --> 00:02:22.680
+And the title was, Don't fudge
+the facts on chocolate studies and
+
+38
+00:02:22.680 --> 00:02:25.770
+it actually goes through many of
+the topics we're gonna talk about today.
+
+39
+00:02:25.770 --> 00:02:30.170
+So such as confounding, but chocolate is
+one of these examples where frequently
+
+40
+00:02:30.170 --> 00:02:34.600
+it's associated with cancer,
+it's not associated with cancer, etc.
+
+41
+00:02:34.600 --> 00:02:39.390
+So I'd like to use chocolate today to
+discuss the issue of confounding and
+
+42
+00:02:39.390 --> 00:02:44.560
+how randomization as is used in A/B
+testing and randomized controlled trials,
+
+43
+00:02:44.560 --> 00:02:47.310
+how that can help combat
+some of these issues.
+
+44
+00:02:48.380 --> 00:02:52.490
+And I made up a little data set and
+it's a little bit contrived.
+
+45
+00:02:52.490 --> 00:02:56.130
+But, kind of purposefully so, so
+that you can just focus on the concepts.
+
+46
+00:02:57.310 --> 00:03:00.410
+In this case, we have two group,
+to the left the group of people who
+
+47
+00:03:00.410 --> 00:03:04.400
+eats chocolate and to the right the group
+of people who don't eat chocolate.
+
+48
+00:03:04.400 --> 00:03:06.760
+We're interested in
+ascertaining whether or
+
+49
+00:03:06.760 --> 00:03:11.950
+not chocolate lowers our blood pressure,
+for whatever the reason.
+
+50
+00:03:13.630 --> 00:03:18.930
+So everyone who has a smiley
+face has low blood pressure,
+
+51
+00:03:18.930 --> 00:03:22.170
+and everyone who has a frowny
+face has high blood pressure.
+
+52
+00:03:22.170 --> 00:03:26.110
+And if you were to look at this data set
+where we just observed people's chocolate
+
+53
+00:03:26.110 --> 00:03:30.290
+eating patterns and compared the two
+groups, you'd see five out of either for
+
+54
+00:03:30.290 --> 00:03:33.310
+the chocolate group and three out of
+either for the non-chocolate group
+
+55
+00:03:34.540 --> 00:03:38.619
+had low blood pressure or
+had normal blood pressure.
+
+56
+00:03:39.710 --> 00:03:43.200
+And so you might conclude that if there
+was enough subjects of this sort, maybe
+
+57
+00:03:43.200 --> 00:03:46.850
+let each smiley face represents 1,000
+people or something like that, then you
+
+58
+00:03:46.850 --> 00:03:52.190
+would conclude that there's a significant
+difference associated with chocolate.
+
+59
+00:03:52.190 --> 00:03:54.760
+However, imagine if there
+was a lurking variable.
+
+60
+00:03:54.760 --> 00:03:58.990
+In this case, imagine that
+the lurking variable is whether or
+
+61
+00:03:58.990 --> 00:04:02.210
+not the subject is taking
+anti-hypertensive medication.
+
+62
+00:04:02.210 --> 00:04:05.340
+Something that's clearly
+related to blood pressure.
+
+63
+00:04:05.340 --> 00:04:10.050
+In this case the group of people who are
+naturally eating chocolate happen to have
+
+64
+00:04:10.050 --> 00:04:14.600
+a much higher percentage of people who are
+taking this anti-hypertensive medications.
+
+65
+00:04:14.600 --> 00:04:18.824
+And if you count 5 out of 7 for the red
+faces, the people on the medication,
+
+66
+00:04:18.824 --> 00:04:22.257
+3 out of 9 for the blue faces
+being happy,there's a greater
+
+67
+00:04:22.257 --> 00:04:25.029
+percentage of people with
+lower blood pressure,
+
+68
+00:04:25.029 --> 00:04:29.204
+on the anti hypertensive medications,
+likely due to their medications.
+
+69
+00:04:29.204 --> 00:04:33.190
+So in this case, you can't really
+ascertain whether this effect is due to
+
+70
+00:04:33.190 --> 00:04:37.373
+the chocolate or due to the
+anti-hypertensive medications, we haven't,
+
+71
+00:04:37.373 --> 00:04:42.250
+you know, for this made up example,
+I think we'd all probably conclude it's.
+
+72
+00:04:42.250 --> 00:04:45.620
+Likely do to the anti-hypertensive
+medications.
+
+73
+00:04:45.620 --> 00:04:47.330
+So, how can we combat that?
+
+74
+00:04:47.330 --> 00:04:50.190
+Ideally, we'd like to compare two groups
+
+75
+00:04:50.190 --> 00:04:54.780
+with an equal mixture of people
+who are on medication versus not.
+
+76
+00:04:54.780 --> 00:04:59.670
+Or we could fix medication and
+compare just among
+
+77
+00:04:59.670 --> 00:05:02.630
+those taking medication,
+their chocolate-eating habits and
+
+78
+00:05:02.630 --> 00:05:06.530
+just among those not taking medication,
+their chocolate eating habits.
+
+79
+00:05:06.530 --> 00:05:10.600
+Of course that later
+strategy requires us to know
+
+80
+00:05:10.600 --> 00:05:15.100
+what variables we need to control for
+and to have measured them.
+
+81
+00:05:15.100 --> 00:05:20.010
+Randomization, on the other hand,
+is an attempt to balance the observed and
+
+82
+00:05:20.010 --> 00:05:23.760
+unobserved variables that
+may contaminate our result.
+
+83
+00:05:23.760 --> 00:05:27.460
+In randomization,
+we simply randomize every subject.
+
+84
+00:05:27.460 --> 00:05:30.720
+In this case, you've randomized them and
+say go eat a bunch of chocolate, and
+
+85
+00:05:30.720 --> 00:05:34.420
+randomize the other group and
+say you're not allowed to eat chocolate.
+
+86
+00:05:34.420 --> 00:05:38.800
+The fundamental problem, of course, with
+randomization in many cases like this one,
+
+87
+00:05:38.800 --> 00:05:41.760
+you can't ethically carry out a random,
+
+88
+00:05:41.760 --> 00:05:45.990
+ethically or
+practically carry out a randomized trial.
+
+89
+00:05:45.990 --> 00:05:49.870
+So the goal of randomization again
+is to compare like with like.
+
+90
+00:05:49.870 --> 00:05:52.710
+Get apples to apples and
+oranges to oranges,
+
+91
+00:05:52.710 --> 00:05:55.960
+in other words the group's that
+you're comparing have an equal, have
+
+92
+00:05:55.960 --> 00:06:00.840
+roughly equal proportional mixtures of all
+the lurking variables that are associated,
+
+93
+00:06:00.840 --> 00:06:05.160
+that are typically associated with
+the predictor and with the outcome.
+
+94
+00:06:05.160 --> 00:06:07.110
+And you've broken that
+association with the,
+
+95
+00:06:07.110 --> 00:06:10.020
+with the treatment by virtue
+of the randomization.
+
+96
+00:06:11.060 --> 00:06:14.100
+And I'll give you this wonderful quote
+that I think summarizes this idea
+
+97
+00:06:14.100 --> 00:06:15.130
+very neatly.
+
+98
+00:06:15.130 --> 00:06:19.820
+It's by R.A. Fisher, one of the early
+pioneers on the subject of randomization.
+
+99
+00:06:20.850 --> 00:06:23.440
+And he said randomization
+properly carried out,
+
+100
+00:06:23.440 --> 00:06:26.670
+relieves the experimenter from
+the anxiety of considering and estimating
+
+101
+00:06:26.670 --> 00:06:30.770
+the magnitude of the innumerable causes
+by which his data may be disturbed.
+
+102
+00:06:30.770 --> 00:06:31.650
+This by, this quote,
+
+103
+00:06:31.650 --> 00:06:36.550
+by the way, I found in a wonderful paper
+by Armitage on Fisher, Bradford Hill, and
+
+104
+00:06:36.550 --> 00:06:40.650
+randomization, a discussion of some of
+the early thinking on randomization.
+
+105
+00:06:42.420 --> 00:06:45.410
+Let's return to our example, and
+
+106
+00:06:45.410 --> 00:06:49.760
+see what would likely have
+occurred if we had randomization.
+
+107
+00:06:49.760 --> 00:06:53.590
+Well it would make, at least with
+high probability, the treated and
+
+108
+00:06:53.590 --> 00:06:57.570
+untreated groups having
+roughly equal proportions
+
+109
+00:06:57.570 --> 00:07:01.530
+of people on anti-hypertensive
+medications and people not.
+
+110
+00:07:01.530 --> 00:07:03.940
+And in this case,
+we got the opposite result.
+
+111
+00:07:03.940 --> 00:07:06.970
+3 out of 8 for chocolate and
+5 out of 8 for no chocolate.
+
+112
+00:07:06.970 --> 00:07:09.470
+So, as an example.
+
+113
+00:07:09.470 --> 00:07:13.800
+Now the effect actually reverses itself
+when we perform the randomization.
+
+114
+00:07:16.470 --> 00:07:20.440
+I'd like to close this lecture by asking
+the question is randomization a cure all?
+
+115
+00:07:20.440 --> 00:07:22.740
+Is it all we need to think about for
+
+116
+00:07:22.740 --> 00:07:25.940
+trying to solve some of the problems
+with observational studies?
+
+117
+00:07:27.120 --> 00:07:29.410
+And the answer of course by
+posing this question is no.
+
+118
+00:07:31.010 --> 00:07:37.280
+And one particular way in which bias
+can creep back into randomized studies
+
+119
+00:07:37.280 --> 00:07:42.660
+is through missing data and I concocted
+an example where in this case for
+
+120
+00:07:42.660 --> 00:07:47.130
+the chocolate group its just like before 3
+out of 8 its the same set of smiley faces
+
+121
+00:07:47.130 --> 00:07:52.840
+and frowning faces as before, but for the
+non-chocolate group almost every person
+
+122
+00:07:52.840 --> 00:07:57.350
+who was not taking anti-hypertensive
+medications dropped out of the study.
+
+123
+00:07:57.350 --> 00:08:02.190
+They said for whatever the reason
+there most of them were frowny faces.
+
+124
+00:08:02.190 --> 00:08:06.840
+So they were saying I've
+got high blood pressure.
+
+125
+00:08:06.840 --> 00:08:08.250
+I feel like eating some chocolate.
+
+126
+00:08:08.250 --> 00:08:10.270
+Whatever, they dropped out of the study.
+
+127
+00:08:11.510 --> 00:08:14.700
+And so
+now the comparison is contaminated again
+
+128
+00:08:14.700 --> 00:08:16.980
+by the fact that the groups
+aren't directly comparable.
+
+129
+00:08:16.980 --> 00:08:20.380
+The mixture of anti-hypertensive
+medication folks
+
+130
+00:08:20.380 --> 00:08:22.920
+is different in the two groups.
+
+131
+00:08:22.920 --> 00:08:25.900
+So just as a fun, and
+
+132
+00:08:25.900 --> 00:08:30.960
+again the specifics of all the different
+ways in which A/B tests or
+
+133
+00:08:30.960 --> 00:08:36.820
+a randomized trial can fail is perhaps out
+of the out of the purview of this class.
+
+134
+00:08:36.820 --> 00:08:40.710
+But I just want to emphasize the fact
+that just because you've randomized
+
+135
+00:08:40.710 --> 00:08:44.810
+the necessary things to think
+about don't just end there.
+
+136
+00:08:46.090 --> 00:08:48.790
+So at any rate I'd like to
+summarize this lecture.
+
+137
+00:08:48.790 --> 00:08:54.240
+And the fundamental point of this lecture
+is the main characteristic of A/B testing,
+
+138
+00:08:54.240 --> 00:08:57.170
+which is the main characteristic of
+randomized trials in the medical
+
+139
+00:08:57.170 --> 00:09:03.760
+literature, is the idea of using
+randomization to balance these confounding
+
+140
+00:09:03.760 --> 00:09:08.000
+factors in lurking variables that would
+otherwise contaminate the results.
+
+141
+00:09:08.000 --> 00:09:11.480
+And the benefit is that they hopefully,
+at least with high probability,
+
+142
+00:09:11.480 --> 00:09:17.350
+will balance both the known confounding
+factors and the unknown ones as well.
+
+143
+00:09:19.250 --> 00:09:21.200
+So I hope you enjoyed today's lecture and
+
+144
+00:09:21.200 --> 00:09:23.000
+I look forward to seeing
+you in the next class.

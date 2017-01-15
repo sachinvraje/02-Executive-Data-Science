@@ -1,0 +1,102 @@
+Hi, my name is Brian Caffo and this is the lecture on report writing as
+part of the Executive Data Science series. So report writing is, often the case you get reports that
+are just really problematic. And I think that's more of
+the norm than getting clear, concise, reproducible reports
+that have a obvious and clear narrative and tell a clear story. More often, your reports are a little
+bit of a mis-mash of thoughts. And so in this lecture, what we're
+going to talk about are some tools that will help at least certain
+aspects of the report writing. Of course, there's a lot to
+whatever specific area you're in to the art in that area of how your
+reports are gonna get generated. But some of these tools
+are ubiquitous enough across scenarios that we can give
+some general recommendations. So, in a perfect world,
+reports would be clear and reproducible, kind of the two
+most important characteristics. And so
+we're just gonna give three strategies for helping manage report writing. The first one I can say, which seems
+ridiculous, but it seems to help a lot and it's encouraged checking the signs,
+the magnitudes and the units of effects that are reported. The second one is to focus
+on interpretation and interpretability of the report. And the third is to use
+reproducible research tools. So let me just briefly elaborate on
+this point on checking the signs, the magnitudes, and the units. So the signs, for example,
+what do I mean by that? I basically mean to check to make
+sure the directions of the effects are as anticipated. And this can often happen in a case. The worst example of this is when
+the report only gives the output of a regression analysis without actually
+interpreting the coefficients. Well the most basic form of interpretation
+of the coefficient is just checking that it's in the direction that
+everyone would anticipate that it's in. So in this case I said, are brain volumes decreasing with
+increasing Alzheimer's disease symptoms? If you saw the opposite effect if
+you saw a brain volumes increasing, then you would be worried. Or at least that would
+merit some explanation. The second idea was magnitudes. We wanna compare the magnitudes
+effects with other known effects. So volume loss is similar to
+a decade of normal aging, is akin to the example
+we gave from before. So we've talked about this idea
+before of taking effects for things that you're studying that you don't
+know a lot about, and contrasting them with the effects of things that you know a
+lot about, like normal aging in this case. The third thing is the units. And I can't stress this enough,
+make sure that the units are known, they're written out explicitly and
+they're included on all graph axes. So just to give you an anecdote,
+at one point we were all sitting around discussing an effect that
+we saw for brain volume and we realized that we had messed up the
+units at some point and people's brains were supposedly growing at the size of a
+house every year, or something like that. And it was only through the exercise
+of checking the units and making sure that the units of our
+coefficient really made sense relative to the context of the problem that
+we kind of caught that error and found that one of our variables had
+been multiplied by a strange constant. And so at any rate, the units, and
+again it's a simple thing, but just drill down on the units
+on any given problem. Understanding the units really
+helps you understand the problem. So the second point I made was to focus
+on interpretation and interpretability. So again, I'm gonna reiterate that
+comparing effects to other known effects is a great way to focus on
+interpretation and interpretability. The second way to focus
+on interpretation and interpretability is to
+encourage so-called parsimony. Parsimony, to me, is a key ingredient
+to having interpretable models. And what I mean by parsimony is using the
+simplest possible model and no simpler. In other words, I'm encouraging you
+to place a premium on simplicity. So if you have a regression model, regression models tend to be pretty
+simple models, that achieve 95% of the prediction performance of some
+complicated machine learning algorithm. You might wanna just stick with the
+regression model because that 5% penalty of complexity is really a very high price. You're losing a lot of interpretability
+for that extra 5% prediction. So in this case I would suggest
+encouraging in the report writing focusing on the regression results. Or maybe doing both, but
+especially reporting and giving good interpretations of
+the regression coefficient, which are much more interpretable than
+the output of a complex algorithm. The third idea that I find very useful, is the idea of what I like
+to call effect critiquing. And if you see a significant effect,
+or something that's very exciting, then what you want to do is try to put yourself in the mind of someone
+who would be a skeptic of that effect. Try to be as skeptical and
+critical as possible. And once you're in that mindset, then try to come up with
+the counter-arguments for that effect. Okay, so we saw this effect on lead
+exposure and brain volume loss. But was it really due to something else,
+like the different body mass indexes of the people who were
+exposed to lead to the people who weren't? So it's really not due to lead exposure,
+it's really due to body mass. Okay that would be
+an example of a critique. So what will we do? We might consider a model that
+then had lead exposure and body mass in the model, just to see what
+impact looking at both simultaneously did on the effect that we're interested in,
+the lead exposure. Okay? So the broader point in this case is to
+think like a critic of your effect, and that will inform additional analyses you
+want to do to counter those arguments. And I think, if possible,
+you could get other groups of people to serve in the role as an internal
+critic in order to try to help you generate new ways to poke and
+prod at an exciting or apparently significant effect, to poke and
+prod at it and see if it really is real. Now reproducability is a big
+topic around here, Roger Peng, one of the co instructors in the series
+is one of the leading researchers and thinkers on the idea of reproducibility. But I love this Tweet by this person, Ben
+Hamner, who I don't know, who said, When you write code, keep in mind that you're
+collaborating with your future self. So, for reproducibility in a report, you wanna make sure that these
+reports can get regenerated. You'll get the exact same numbers. The report contains
+the information available to reproduce all of the numbers and
+analyses in it. Fortunately for
+the people that you're managing, there are a lot of tools
+available now that merge the data analysis and
+the report writing into a single document. And the two most popular in my mind are
+knitr, which is a tool for R specifically, and the idea is knitting the analysis and
+the report writing together. And then IPython Notebooks
+are another one. And you should highly encourage the people
+you're managing to use tools like these. Maybe not these specific tools, but
+I would recommend these specific tools. But tools like these, in order to make
+sure that your reports are reproducible and they leave a documented trail of exactly how to go from
+the data to the final analyses. So these are three simple rules,
+or three broad categories I think that can help improve report writing
+across a broad spectrum of areas.

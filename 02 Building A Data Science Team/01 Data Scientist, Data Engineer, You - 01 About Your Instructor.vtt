@@ -1,0 +1,158 @@
+WEBVTT
+
+1
+00:00:03.753 --> 00:00:06.500
+Welcome to this class on
+building data science teams.
+
+2
+00:00:06.500 --> 00:00:10.540
+I'm really excited to teach you about
+recruiting, managing, organizing, and
+
+3
+00:00:10.540 --> 00:00:15.060
+evaluating data science teams to help
+your organization get better with data.
+
+4
+00:00:15.060 --> 00:00:17.750
+I thought I'd tell you a little
+bit about myself to start.
+
+5
+00:00:17.750 --> 00:00:21.371
+So I'm very excited about data and data
+science, and I do a few different things
+
+6
+00:00:21.371 --> 00:00:24.573
+that are related to data and
+data science because of that excitement.
+
+7
+00:00:24.573 --> 00:00:29.190
+So the first thing I wanted to tell you
+about is I blog at simplystatistics, so
+
+8
+00:00:29.190 --> 00:00:32.070
+you can also find me on
+Twitter @simplystats.
+
+9
+00:00:32.070 --> 00:00:35.630
+I talk about a lot of data science issues,
+a lot of statistical issues, and
+
+10
+00:00:35.630 --> 00:00:39.140
+then a few more inside baseball
+issues related to academics.
+
+11
+00:00:39.140 --> 00:00:42.570
+I do that with a couple of colleagues,
+Roger Peng and Rafael Irizarry.
+
+12
+00:00:42.570 --> 00:00:46.250
+Roger Peng is another instructor
+in this sequence with me.
+
+13
+00:00:46.250 --> 00:00:49.820
+I also teach in the Johns Hopkins
+data science specialization.
+
+14
+00:00:49.820 --> 00:00:52.830
+So the Johns Hopkins Data Science
+Specialization is a sequence of
+
+15
+00:00:52.830 --> 00:00:54.120
+nine classes.
+
+16
+00:00:54.120 --> 00:00:57.650
+And it's focused on teaching
+data scientists who are actually
+
+17
+00:00:57.650 --> 00:01:02.110
+going to be on the ground doing data
+science day to day how to do their jobs.
+
+18
+00:01:02.110 --> 00:01:05.410
+And so
+that set of classes is incredibly popular.
+
+19
+00:01:05.410 --> 00:01:08.070
+It has enrolled over two million people.
+
+20
+00:01:08.070 --> 00:01:11.140
+And this sort of executive data
+science sequence is sort of
+
+21
+00:01:11.140 --> 00:01:14.920
+building on the success and excitement
+around that data science sequence.
+
+22
+00:01:14.920 --> 00:01:19.130
+And then finally I actually manage a team
+of data scientists here at John's Hopkins.
+
+23
+00:01:19.130 --> 00:01:22.880
+I'm an associate professor of
+biostatistics here at John's Hopkins, and
+
+24
+00:01:22.880 --> 00:01:26.280
+I lead a team that works on
+data science for genomics.
+
+25
+00:01:26.280 --> 00:01:29.960
+So you can think of this as a way to use
+genomic information say to personalize
+
+26
+00:01:29.960 --> 00:01:33.000
+health or to understand
+natural biological variation.
+
+27
+00:01:33.000 --> 00:01:37.270
+So a lot of what I do day to day is
+actually managing data scientist and
+
+28
+00:01:37.270 --> 00:01:39.340
+organizing them and
+getting them to work with others.
+
+29
+00:01:39.340 --> 00:01:42.644
+And so I'm going to share some of
+the experiences that I have from doing
+
+30
+00:01:42.644 --> 00:01:44.100
+that here at John Hopkins, and
+
+31
+00:01:44.100 --> 00:01:47.210
+hopefully help you to manage
+your data science teams better.
+
+32
+00:01:47.210 --> 00:01:48.640
+I'm really looking forward
+to seeing you in class.

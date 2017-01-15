@@ -1,0 +1,615 @@
+WEBVTT
+
+1
+00:00:03.460 --> 00:00:05.680
+No matter how well you've put
+the data science team together,
+
+2
+00:00:05.680 --> 00:00:09.280
+there can often be problems when the data
+science team is interacting with people
+
+3
+00:00:09.280 --> 00:00:12.180
+outside of the team but
+within your organization.
+
+4
+00:00:12.180 --> 00:00:15.060
+So, this lecture's a little bit
+about what those problems are and
+
+5
+00:00:15.060 --> 00:00:16.760
+how to deal with them.
+
+6
+00:00:16.760 --> 00:00:18.910
+So, the first one is lack of interaction.
+
+7
+00:00:18.910 --> 00:00:20.730
+So, this can happen if you,
+
+8
+00:00:20.730 --> 00:00:24.740
+especially if you have a data science
+team that's stand alone, it's on its own.
+
+9
+00:00:24.740 --> 00:00:28.070
+And there's not necessarily a standing,
+or regular commitment,
+
+10
+00:00:28.070 --> 00:00:32.720
+to be embedded it with, or
+sitting with an external unit.
+
+11
+00:00:32.720 --> 00:00:38.060
+So, here if there's a lack of interaction,
+you have to identify what the problem is.
+
+12
+00:00:38.060 --> 00:00:40.040
+The problem can either be
+with the data scientists.
+
+13
+00:00:40.040 --> 00:00:42.650
+They don't know how to contact the person.
+
+14
+00:00:42.650 --> 00:00:45.228
+They don't know what
+questions to be asking or
+
+15
+00:00:45.228 --> 00:00:47.220
+it could be with the external unit.
+
+16
+00:00:47.220 --> 00:00:51.550
+So, sometimes that lack of communication
+is because there is nothing to do.
+
+17
+00:00:51.550 --> 00:00:54.410
+So, if there's no communication,
+you need to identity,
+
+18
+00:00:54.410 --> 00:00:57.460
+is this because there's not actually
+a problem for them to be solving.
+
+19
+00:00:57.460 --> 00:01:00.200
+In which case it's good to repurpose
+that data scientist's time on to
+
+20
+00:01:00.200 --> 00:01:01.029
+a different project.
+
+21
+00:01:02.070 --> 00:01:06.450
+Or to identify, is it because the external
+person isn't necessarily sending over,
+
+22
+00:01:06.450 --> 00:01:09.300
+hey, we need to have those
+projections by the end of the week.
+
+23
+00:01:09.300 --> 00:01:12.080
+They're just not contacting
+the data scientists.
+
+24
+00:01:12.080 --> 00:01:14.750
+Or is it because your data scientist is so
+busy working on their problem,
+
+25
+00:01:14.750 --> 00:01:16.190
+that they're not interacting.
+
+26
+00:01:16.190 --> 00:01:19.850
+They're not emailing and contacting
+the person that they're working with.
+
+27
+00:01:19.850 --> 00:01:23.260
+So again, this will depend a little
+bit on the scale of the project.
+
+28
+00:01:23.260 --> 00:01:24.950
+If you're building a quick
+machine learning algorithm,
+
+29
+00:01:24.950 --> 00:01:26.960
+there should be lots of quick interaction.
+
+30
+00:01:26.960 --> 00:01:29.600
+If you're building out a huge
+scalable infrastructure for
+
+31
+00:01:29.600 --> 00:01:32.270
+data management, it might take
+a little bit longer before there's
+
+32
+00:01:32.270 --> 00:01:35.840
+interaction with the leadership team
+about that, and that's to be expected.
+
+33
+00:01:35.840 --> 00:01:38.310
+So if there's this lack of communication,
+there's a couple of options.
+
+34
+00:01:38.310 --> 00:01:39.750
+You can take a more active role.
+
+35
+00:01:39.750 --> 00:01:41.800
+You can start initiating the conversation,
+
+36
+00:01:41.800 --> 00:01:44.210
+you can send emails that will
+connect people together.
+
+37
+00:01:44.210 --> 00:01:47.590
+Again, you have to be very mindful of
+the balance of not interrupting time for
+
+38
+00:01:47.590 --> 00:01:49.510
+data scientists and data engineers.
+
+39
+00:01:49.510 --> 00:01:53.400
+Those sort of uninterrupted moments
+are when most of the work gets done.
+
+40
+00:01:53.400 --> 00:01:56.130
+And again, if you need to move personnel
+from a project, whether it's for
+
+41
+00:01:56.130 --> 00:01:58.660
+lack of motivation,
+lack of good communication, or
+
+42
+00:01:58.660 --> 00:02:01.910
+because there's not really a data science
+project they're gonna be working on,
+
+43
+00:02:01.910 --> 00:02:05.040
+that's an important part of a data
+science manager, or an executive's job.
+
+44
+00:02:06.170 --> 00:02:10.470
+Another reason that you might have to
+get involved is lack of empowerment.
+
+45
+00:02:10.470 --> 00:02:13.100
+So this often happens if the data
+scientist is actually embedded
+
+46
+00:02:13.100 --> 00:02:14.720
+in an external team.
+
+47
+00:02:14.720 --> 00:02:19.230
+And so, if that happens, often the data
+scientist will feel a little bit
+
+48
+00:02:19.230 --> 00:02:21.690
+isolated and they might not feel
+empowered to make decisions.
+
+49
+00:02:21.690 --> 00:02:23.210
+So the external unit is in charge.
+
+50
+00:02:23.210 --> 00:02:24.920
+They have to make some
+decisions about marketing.
+
+51
+00:02:24.920 --> 00:02:28.080
+Or they have to make some decisions about
+how they're gonna take that data and
+
+52
+00:02:28.080 --> 00:02:31.160
+make a decision for a product or so forth.
+
+53
+00:02:31.160 --> 00:02:35.260
+And since they don't necessarily
+make those decisions,
+
+54
+00:02:35.260 --> 00:02:37.660
+they might feel like I keep
+presenting my data ideas,
+
+55
+00:02:37.660 --> 00:02:40.840
+I keep showing them experimental results,
+and they just don't listen.
+
+56
+00:02:40.840 --> 00:02:42.280
+They don't wanna answer to those data,
+
+57
+00:02:42.280 --> 00:02:45.310
+they don't wanna sort of use
+the information that I'm presenting.
+
+58
+00:02:45.310 --> 00:02:48.210
+So the first thing that you need
+to do is understand both sides,
+
+59
+00:02:48.210 --> 00:02:50.000
+cuz that can happen in one of two ways.
+
+60
+00:02:50.000 --> 00:02:53.490
+One, the person that they're working with,
+the collaborator they're working with,
+
+61
+00:02:53.490 --> 00:02:56.850
+can just be ignoring their advice,
+can be ignoring their data analysis.
+
+62
+00:02:56.850 --> 00:03:00.890
+In which case, it's up to you to
+convince the other person, and to
+
+63
+00:03:00.890 --> 00:03:05.810
+sort of take the initiative to explain why
+this is important, why using the data will
+
+64
+00:03:05.810 --> 00:03:09.680
+help you do a better experiment, will get
+you better results at the end of the day.
+
+65
+00:03:09.680 --> 00:03:12.520
+On the other hand, it could be because
+the data scientist is just sort of
+
+66
+00:03:12.520 --> 00:03:15.640
+pushing ideas beyond
+the scope of the data, or
+
+67
+00:03:15.640 --> 00:03:18.420
+they're not getting the data analysis
+done in a way that's convincing for
+
+68
+00:03:18.420 --> 00:03:22.660
+the external person to sort of look at and
+interact with.
+
+69
+00:03:22.660 --> 00:03:24.980
+So you kind of have to
+understand both sides.
+
+70
+00:03:24.980 --> 00:03:27.630
+And then, it's sort of up to the data
+science manager to take the heat,
+
+71
+00:03:27.630 --> 00:03:31.650
+particularly in a situation where say,
+leadership is asking for this machine
+
+72
+00:03:31.650 --> 00:03:35.310
+learning algorithm to be done last week,
+and your data scientist is telling you,
+
+73
+00:03:35.310 --> 00:03:39.160
+well, it takes six weeks to build
+a machine learning algorithm to do this.
+
+74
+00:03:39.160 --> 00:03:42.750
+Then, it's up to the data science
+manager to collect that information,
+
+75
+00:03:42.750 --> 00:03:43.520
+present it, and
+
+76
+00:03:43.520 --> 00:03:47.250
+take the heat if things aren't going the
+way that everybody hoped they will take.
+
+77
+00:03:47.250 --> 00:03:50.820
+So, one thing that's sort of a common
+misconception about data science or
+
+78
+00:03:50.820 --> 00:03:53.250
+data engineering is that it's
+basically instantaneous.
+
+79
+00:03:53.250 --> 00:03:56.720
+Because computers are so fast,
+people think that also data science or
+
+80
+00:03:56.720 --> 00:03:58.800
+machine learning is
+really fast to develop.
+
+81
+00:03:58.800 --> 00:03:59.580
+But sometimes it isn't.
+
+82
+00:03:59.580 --> 00:04:03.490
+Sometimes it takes a long time to build
+a really good machine learning algorithm.
+
+83
+00:04:03.490 --> 00:04:06.340
+And so, part of your role is
+sort of being the intermediate.
+
+84
+00:04:06.340 --> 00:04:07.260
+Being the explainer.
+
+85
+00:04:07.260 --> 00:04:08.960
+Why does it take so long?
+
+86
+00:04:08.960 --> 00:04:12.290
+And then providing internal
+support to your data science team.
+
+87
+00:04:12.290 --> 00:04:16.290
+And whether that's just being an ear for
+them to talk to.
+
+88
+00:04:16.290 --> 00:04:18.600
+Whether it's by suggesting new ideas.
+
+89
+00:04:18.600 --> 00:04:22.260
+And very often it's by
+identifying when to stop.
+
+90
+00:04:22.260 --> 00:04:24.680
+So data science, data engineering and
+
+91
+00:04:24.680 --> 00:04:30.910
+data science are often areas where
+perfect is the enemy of the very good.
+
+92
+00:04:30.910 --> 00:04:35.635
+Once you have a pretty good solution, that
+might be enough to get everything done.
+
+93
+00:04:35.635 --> 00:04:38.245
+And so, the data scientists or
+data engineer,
+
+94
+00:04:38.245 --> 00:04:41.715
+because they have pride in what
+they're doing, will sort of try to
+
+95
+00:04:41.715 --> 00:04:45.495
+optimize that machine learning
+algorithm for the last 3% accuracy, or
+
+96
+00:04:45.495 --> 00:04:49.005
+save at just a little bit more computing
+power on the data engineering side.
+
+97
+00:04:49.005 --> 00:04:51.595
+Sometimes that's necessary,
+but sometimes it isn't, and
+
+98
+00:04:51.595 --> 00:04:53.945
+it's up to the data science manager
+to sort of pay attention and
+
+99
+00:04:53.945 --> 00:04:58.400
+manage when you're actually solving the
+data science problem that matters versus
+
+100
+00:04:58.400 --> 00:05:02.120
+when you're chasing something that
+doesn't maybe necessarily matter.
+
+101
+00:05:02.120 --> 00:05:04.580
+The last problem can be
+lack of understanding.
+
+102
+00:05:04.580 --> 00:05:07.680
+So, this could be because
+the data science team
+
+103
+00:05:07.680 --> 00:05:10.040
+doesn't understand the problem
+that they're working on.
+
+104
+00:05:10.040 --> 00:05:13.030
+This commonly happens when data
+scientist act in a consulting roll,
+
+105
+00:05:13.030 --> 00:05:17.150
+when they just one off, see people from
+your organization, or bring one question,
+
+106
+00:05:17.150 --> 00:05:20.880
+how does this t test work, or
+how does this random force work.
+
+107
+00:05:20.880 --> 00:05:23.470
+Then, they might not actually
+understand the problem, and so
+
+108
+00:05:23.470 --> 00:05:24.900
+they might give advice
+that isn't very good.
+
+109
+00:05:26.000 --> 00:05:30.050
+Another way that this could work is,
+the marketing team doesn't understand what
+
+110
+00:05:30.050 --> 00:05:33.530
+data science can do, or the product team
+doesn't understand what data science can
+
+111
+00:05:33.530 --> 00:05:36.210
+do, or any collaborator doesn't
+understand what data science can do.
+
+112
+00:05:36.210 --> 00:05:40.520
+And so it's up to you to sort of help make
+sure that everyone knows what's possible,
+
+113
+00:05:40.520 --> 00:05:42.120
+what's not possible.
+
+114
+00:05:42.120 --> 00:05:43.520
+And then, you can do this,
+
+115
+00:05:43.520 --> 00:05:45.700
+you can manage this process in
+a couple of different ways.
+
+116
+00:05:45.700 --> 00:05:50.180
+One, make sure that, if you have
+a separate dedicated data science team,
+
+117
+00:05:50.180 --> 00:05:53.500
+that they interact with other groups in
+a regular way, that they're embedded for
+
+118
+00:05:53.500 --> 00:05:54.130
+periods of time.
+
+119
+00:05:55.160 --> 00:05:58.120
+Also, that there's presentations
+regularly to the organization
+
+120
+00:05:58.120 --> 00:06:02.510
+both about capabilities and about new
+techniques and about just what's going on.
+
+121
+00:06:02.510 --> 00:06:06.410
+And then advertising the data to
+the science team within the organization.
+
+122
+00:06:06.410 --> 00:06:10.310
+Make sure that everyone knows, oh, that's
+a problem that the data science team can
+
+123
+00:06:10.310 --> 00:06:14.300
+handle or actually we don't have any data
+on that but it'd be cool to collect it.
+
+124
+00:06:14.300 --> 00:06:16.520
+Is that something that we
+actually need to collect data on?
+
+125
+00:06:16.520 --> 00:06:20.257
+Those are the sorts of roles that can
+help build a understanding within
+
+126
+00:06:20.257 --> 00:06:23.860
+the organization about what data
+science is and how it can help.
+
+127
+00:06:23.860 --> 00:06:28.022
+So those are a couple of the ways that
+you could help minimize sort of external
+
+128
+00:06:28.022 --> 00:06:30.310
+conflicts within the data science team.

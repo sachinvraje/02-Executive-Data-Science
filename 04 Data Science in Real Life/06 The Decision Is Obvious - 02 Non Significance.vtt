@@ -1,0 +1,345 @@
+WEBVTT
+
+1
+00:00:03.422 --> 00:00:08.010
+Hi, my name is Brian Caffo and
+this is a lecture on non-significance.
+
+2
+00:00:08.010 --> 00:00:11.730
+What I'm going for in this lecture
+is to consider the instances where,
+
+3
+00:00:11.730 --> 00:00:18.340
+I shouldn't even call it non-significance,
+just where the results of the test or
+
+4
+00:00:18.340 --> 00:00:23.090
+a confidence interval or whatever
+are a little bit on the equivocal side.
+
+5
+00:00:23.090 --> 00:00:27.720
+It's kind of easy if you're test are
+highly non-significant, it's clear there's
+
+6
+00:00:27.720 --> 00:00:31.070
+no effect, or they're highly significant,
+it's clear that there is effect.
+
+7
+00:00:31.070 --> 00:00:33.680
+But what do you do if things
+are right on the margin?
+
+8
+00:00:33.680 --> 00:00:35.930
+Maybe just under or just over?
+
+9
+00:00:35.930 --> 00:00:39.190
+So what sorts of things
+are you thinking about?
+
+10
+00:00:39.190 --> 00:00:43.924
+So now I have this cartoon here
+where you get a P value of 0.051.
+
+11
+00:00:45.990 --> 00:00:49.740
+So what are you most concerned
+with with a marginal effect?
+
+12
+00:00:50.740 --> 00:00:55.060
+Well you could be, there's lots
+of things that could be going on.
+
+13
+00:00:55.060 --> 00:00:55.790
+One is right.
+
+14
+00:00:55.790 --> 00:00:57.450
+You could just be unlucky.
+
+15
+00:00:57.450 --> 00:01:03.720
+There really is no effect and
+there's just some noise in the system and
+
+16
+00:01:03.720 --> 00:01:08.350
+you just happen to get a p value or
+hypothesis test that was close
+
+17
+00:01:08.350 --> 00:01:11.920
+to significant or just under significant
+but there really is no effect.
+
+18
+00:01:13.620 --> 00:01:19.640
+And that is an unfortunate case,
+you're unlucky but
+
+19
+00:01:19.640 --> 00:01:23.670
+another thing that we're often
+concerned about is this idea of power.
+
+20
+00:01:23.670 --> 00:01:29.610
+Namely, was the study set up in the first
+place to really adjudicate whether or
+
+21
+00:01:29.610 --> 00:01:30.590
+not there was an effect.
+
+22
+00:01:32.900 --> 00:01:39.360
+So, in the presence of equivocal results,
+
+23
+00:01:39.360 --> 00:01:41.660
+the first question you
+wanna ask yourself was,
+
+24
+00:01:41.660 --> 00:01:45.950
+was the study set up for
+failure by not being adequately powered?
+
+25
+00:01:45.950 --> 00:01:46.990
+So what is power?
+
+26
+00:01:46.990 --> 00:01:50.650
+Power is the probability of detecting
+an effect that is truly there.
+
+27
+00:01:50.650 --> 00:01:52.410
+You want more power.
+
+28
+00:01:52.410 --> 00:01:56.860
+Okay, so as an example,
+when you're designing a study,
+
+29
+00:01:56.860 --> 00:02:00.708
+studies that have a larger sample
+size are gonna have more power.
+
+30
+00:02:00.708 --> 00:02:05.080
+Studies that are trying to detect a bigger
+effect are gonna have more power.
+
+31
+00:02:05.080 --> 00:02:09.300
+It's easier to see an elephant
+than it is to see a mouse, right?
+
+32
+00:02:09.300 --> 00:02:11.210
+So if there's a bigger
+effect it's easier to find.
+
+33
+00:02:11.210 --> 00:02:14.850
+So you're gonna have more power
+if the true effect is larger.
+
+34
+00:02:16.710 --> 00:02:19.230
+And the less noise that's in the system,
+
+35
+00:02:19.230 --> 00:02:22.100
+the smaller the variance,
+the more power you have.
+
+36
+00:02:22.100 --> 00:02:25.250
+The less uncertainty in the system
+that you study, the more power you're
+
+37
+00:02:25.250 --> 00:02:30.090
+gonna have and so often people will do
+power calculations prior to a study
+
+38
+00:02:30.090 --> 00:02:34.990
+just in order to make sure that
+they've set themselves up for
+
+39
+00:02:34.990 --> 00:02:39.510
+success, that they know
+that they have a specific
+
+40
+00:02:39.510 --> 00:02:43.720
+high probability of detecting effect
+in effect if it's actually there.
+
+41
+00:02:45.960 --> 00:02:50.810
+I think what you're often
+concerned with after a study
+
+42
+00:02:52.240 --> 00:02:55.980
+is if the power was not adequate or
+
+43
+00:02:55.980 --> 00:03:00.620
+at least having the discussion of whether
+this study was really set up for success.
+
+44
+00:03:00.620 --> 00:03:05.880
+Unfortunately, post talk, there's not
+that much that can be done about power.
+
+45
+00:03:05.880 --> 00:03:10.100
+The obvious thing,
+which most of the time's not feasible,
+
+46
+00:03:10.100 --> 00:03:14.200
+is collecting more data, or
+doing another study, okay?
+
+47
+00:03:14.200 --> 00:03:17.890
+That will obviously work, okay?
+
+48
+00:03:17.890 --> 00:03:19.900
+But that's often out of your control.
+
+49
+00:03:21.270 --> 00:03:26.520
+But an idea that everyone flirts
+with is checking the power post hoc.
+
+50
+00:03:26.520 --> 00:03:30.750
+Using the effects that you saw and doing
+some sort of power calculation post hoc.
+
+51
+00:03:30.750 --> 00:03:32.740
+This is generally a bad idea,
+
+52
+00:03:32.740 --> 00:03:37.280
+I think this,
+if you're doing this you need to be very
+
+53
+00:03:37.280 --> 00:03:41.550
+sophisticated in the field of statistics
+to understand the pitfalls and so on.
+
+54
+00:03:41.550 --> 00:03:45.460
+Usually what are called post hoc power
+calculations are a terrible idea so
+
+55
+00:03:45.460 --> 00:03:51.070
+in general the idea of trying to,
+via the data, figure out what the power
+
+56
+00:03:51.070 --> 00:03:56.120
+of your study was after you've already
+conducted it is almost always a bad idea.
+
+57
+00:03:56.120 --> 00:04:01.180
+So what are you left with if
+you can't collect more data or
+
+58
+00:04:01.180 --> 00:04:06.520
+do another study, we've already said that
+doing some sort of post hoc calculations
+
+59
+00:04:06.520 --> 00:04:10.580
+to quantify power is usually a bad idea or
+at least if you're going to do that and
+
+60
+00:04:10.580 --> 00:04:14.620
+you don't know a lot about it, you should
+at least contact a PhD statistician
+
+61
+00:04:14.620 --> 00:04:19.350
+who will probably try and talk you out of
+it anyway, all that you're left with is
+
+62
+00:04:19.350 --> 00:04:24.360
+a critical discussion of the strength of
+the study and that's your main recourse.
+
+63
+00:04:24.360 --> 00:04:26.780
+Is basically trying to figure out well,
+
+64
+00:04:26.780 --> 00:04:29.050
+it should we have seen
+an effect in this study.
+
+65
+00:04:29.050 --> 00:04:31.830
+Is the sample size similar
+
+66
+00:04:31.830 --> 00:04:34.609
+to what we see in other studies
+where we do see an effect?
+
+67
+00:04:36.230 --> 00:04:40.360
+This kind of critical review is
+what you have at this point for
+
+68
+00:04:40.360 --> 00:04:44.000
+understanding this equivocal result.
+
+69
+00:04:45.020 --> 00:04:46.490
+Okay, so
+
+70
+00:04:46.490 --> 00:04:52.800
+my main point here is that in the presence
+of these kinds of marginal results.
+
+71
+00:04:52.800 --> 00:04:56.586
+One of the main points of discussion you
+want to have is a discussion over whether
+
+72
+00:04:56.586 --> 00:04:59.878
+or not your study was set up for
+success by being adequately powered.

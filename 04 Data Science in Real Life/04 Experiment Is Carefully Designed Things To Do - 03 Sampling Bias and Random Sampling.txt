@@ -1,0 +1,76 @@
+Hi, my name is Brian Caffo and this is the lecture on Bias as part of our
+executive data science specialization. I want to distinguish the kind of bias
+that I'm talking about today with some of the other things that we've
+talked about before, like randomization. The goal of randomization is to
+make the two groups that we're studying as comparable as possible. So if we randomize a treatment and
+a control to a collection of subjects, then they're otherwise
+similar other than whether or not they receive the treatment or
+control, with high probability at least. That doesn't mean necessarily
+that the collection of patients that you're
+studying are representative of the broader collection of patients
+that you'd like to draw conclusions on. For example, patients in clinic
+trials often are very good at adhering to their medications where as
+the general population may be less so. This, of course, carries over to
+discussion of thinks like AB-Testing. So why is this relevant? Well it's relevant because
+statistical inference, kind of the fundamental
+component of statistics, is the process of making conclusions
+about a population from our sample. It's not enough to just say
+things about our sample. We actually want to generalize that
+knowledge beyond our sample and that is the process of
+statistical inference. Well, if our sample isn't representative
+of the population that we'd like to draw inferences on, then we have a problem. And things can happen like this. When the Chicago Tribune declared
+that Dewey defeated Truman, when in fact Truman won the election. The root cause in this case was a kind
+of bizarre sampling scheme that led to an erroneous conclusion. Another famous example is
+the so-called Kinsey Report. In the Kinsey Report, the collection of
+study subjects involved a lot of people with psychological disorders and
+prisoners. And then the main criticism of the work
+was that it wasn't generalizable beyond this somewhat different
+population that it was studying. It's interesting to note that Kinsey's
+response was to collect more subjects, but again, not representative subjects. And this of course doesn't
+solve the problem. Simply getting a greater end of a biased
+sample doesn't correct the bias. In fact, in a sense, it makes it worse. So what can you do? And that's what we're
+gonna talk about today. Different strategies for handling bias. Well, I could think of three. So, how do we combat sampling and
+other forms of bias? Well, one of the best ones is random
+sampling, here's a picture of an urn. Urn problems are sort of famous
+in statistics for sampling. So, random sampling is exactly that, we try to draw subjects randomly from
+the population that we're interested in. This can often be quite hard to do. For example, in polling, there's an entire
+science devoted to getting accurate polls and getting your sample random so
+that they don't have inherent biases and they don't make
+a Chicago Tribune style mistake. One, for example, one strategy often used is random dialing,
+random telephone dialing for example. But, none the less, this is a good
+strategy if you can do it, but often you can't,
+often it's not on the table. What are some other strategies? Well, waiting is another strategy when
+again, random sampling is off the table. The idea of waiting is
+something like this, imagine in your sample you have
+twice as many men as you have women. However, you know in the population
+that you're interested in drawing inferences about,
+there's equal numbers of men and women. In your sample then when you
+were doing your analysis, you would upweight the collection
+of women that you had and you would down weight
+the collection of men. So that as far as the weighted
+inferences were concerned, the women and
+men were contributing equally, okay? So that's the process of weighting. Again, this requires that you know the
+population demographics through respect to these important characteristics and that
+you have them measured in your sample. Finally, the last strategy that I think
+of, one the important three strategies for dealing with bias, is modeling. In our modeling case, what we would
+say is we would want to understand why it is that on whatever we were
+measuring, gender made a difference. And we would try to model that and
+account for it and then use our statistical
+model to adjust for it. This has the problem of actually
+having to build the model and whether or not our conclusions
+are robust to this model building. Things like having a random sample
+are quite robust to a lot of assumptions whereas modeling can often be fraught
+with errors associated with assumption. So again, those are three strategies
+that you can use to combat bias. So let me summarize. So bias comes in many forms and
+can contaminate your analysis, especially your statistical inferences. Sampling in bias,
+which we talked a lot about today, is a particularly common one whereby
+your sample isn't indicative of the population you'd like
+to make inferences is about. We talked about three strategies for
+combatting sampling bias. One was random sampling,
+that's at the design stage, and may or may not be applicable in your case. We talked about reweighting, okay? That's done in the analysis stage but requires you to have specific
+knowledge about the weights. And then there's modeling, which, again,
+is done at the analysis stage, however, requires the model building exercise and
+may or may not be sensitive to some of those choices
+that you make in building the model. Well, I hope you found
+this lecture useful, and I look forward to seeing
+you in the next class.

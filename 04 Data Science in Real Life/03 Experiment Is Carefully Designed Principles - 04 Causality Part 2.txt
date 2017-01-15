@@ -1,0 +1,112 @@
+Another way that people get at,
+this is natural experiments. So a great example of natural
+experiments is where smoking trials. So you can't randomize people some
+to smoke, and some not to smoke, so you can't get the kind of Cadillac version
+of a causal fact via randomization. What you can look at is, for example,
+places that put in smoking bans. And smoking bans impact smoking behavior. Right?
+So, you can maybe accurate numbers of smoking related cardiac
+issues in a city or some other geographic unit, and before and
+after a smoking ban went into effect. Okay? And that gets at the idea of causality for the same reasons we were
+talking about before. But of course, it fails with
+some fundamental assumptions. You have to aggregate it a high level. You don't get individuals. You certainly don't get
+individual counter factuals. And everything that's aliased with the
+timing of before the law to after the law could contaminate our results. So if in the same election cycle where the smoking ban was passed that broadly
+impacted people's smoking behaviors. If that same election cycle had other
+policies that also impacted things, those other policies would also be
+associated with whatever cardiac decline, decline in cardiac issues that you
+saw from your hospital records. So again, naturalized natural experiments,
+something where some external manipulation like a ban going into effect,
+those are another way you can try to get that causality, again, but
+with a lot of assumptions. And again, the entire field of causal
+infringement is trying to outline those assumptions and again, in this case, the
+assumptions, I think, are quite strong. Matching is another great one and, so matching is this idea of
+finding Dopplegangers. So here I have a picture of
+President Obama, and then I looked up Doppelganger for President Obama on
+Google, and it found this fellow. So what's the idea of matching? So if I have a collection of subjects
+that received the treatment, I find people who are very close in every other respect
+control subjects and match them up. So as an example, this is very
+commonly done in medical studies. So if you found, for
+example you could look retrospectively, if you found a bunch of cases of
+people that died of lung cancer. And you had a complete medical history and
+a lot of other history on these subjects, then you would find some other people
+to match and contrast them with that never had lung cancer, but
+that had the same weight, same age, etc. etc.
+etc. So at any rate,
+think when you think about matching, think about why when people do this,
+why they're thinking causally. They're trying to get that counter
+factual idea by saying okay, I can't observe this person twice
+in two states of nature, but me, I can observe this person and
+they're close Doppelganger. Of course, the real problem with matching,
+well there's a couple, but the main problem with matching is you're only as good as those
+things that you can match on. Right?
+And then there's also the problem of finding matches. You may not be able to find the data set
+to match enough characteristics, but you're only as good as
+those things you match on. Everything you fail to match on,
+than you haven't found a real, you haven't found the same person
+in the important respects. There's other problems. Often, if you have a data set, and
+you can find matches for some people and you throw out the remainder because
+you can't find good matches for them, well then you've kind of destroyed some
+of the generalizability of your sample. If you have a really good sample, and then now you're only analyzing
+the people that have matches, that new sample may not be generalizable
+in the way the original sample was. So again, in all cases when you're
+trying to make causal assumptions, you're going to have to bite some bullets. But I would hope that you can see
+the connection of how people are trying to think causally and think about
+counterfactuals when they do matching. Randomization is our best tool. And it's our most effective tool for
+estimating average causal effect. So we have an entire class and
+lecture on randomization in AB testing. But the idea of randomization
+is to make the treated and untreated groups as directly
+comparable as possible. So if you have a group of people and
+you randomize the twist and tone to half of them, and the other half
+of them don't get anything, well yes, you don't have exact matches of people who
+receive the controls to people who didn't. But in all other respects by
+virtue of the randomization, they should with high probability,
+the groups should be directly comparable. And you can show via some mathematics
+that if the sample is large enough and it's a random sample, you do really
+get two average causal effects. This doesn't mean that randomization
+is a panacea, there can be issues. For example, there might be dropout, people get randomized to
+the twisting zone, but they realize they look kinda ridiculous
+doing it, so they stop doing it. So the collection of people that
+complete the treatment are different than the people that were randomized
+to the treatment, so there's lots of issues that can come up, even in
+our Cadillac version of randomized trials. But this is to date the best way that
+we can get that causal and effect. So what are some other
+examples of things we can do? Instrumental variables are a very clever
+idea, and we're not gonna go through the details, but imagine if you
+wanted to understand whether or not oral contraceptives had
+a relationship with ovarian cancer. Very reasonable question. So, and let's suppose you you looked at something like reimbursement
+rates as those relate to ovarian cancer. Well the fact that there's no direct
+link between reimbursement rates and ovarian cancer. You know, how we elect to reimburse oral contraceptive
+usage through insurance plans. Can't possibly have any real relationship
+with ovarian cancer, so any effect of reimbursement rates on ovarian cancer
+has to go through contraceptive use. So people have used this idea. The reimbursement rate is an instrumental
+variable so people have used this idea to try and come causal effects without
+actually having randomization. There's a big assumption in instrumental
+variables that the only way in which reimbursement rates could get to ovarian
+cancer is through oral contraceptive use. Again, that assumption is often that
+the only link between the instrumental variable and the outcome is through
+this variable that you're interested in. That assumption is often suspect as it's
+very hard to find instrumental variables. But this was an incredibly clever idea
+it underlies a lot of causal thinking, modern causal thinking, and
+it's a pretty interesting approach. And then there's always modeling. So in modeling you're trying to,
+for example, build up a model that explains why
+people respond to the treatment or not. And if that is model
+sort of all encompassing, then you don't need to see
+the person in two states of nature. You have in a sense the two states of
+nature because you've built up the system, you've understood the system
+through the model. Again, this is only as good as the model
+is, it's fraught with assumptions. And so, and I would just say
+the most well known modeling technique in causal inferences
+uses so-called propensity scores. So what I've given you in this lecture
+is one definition of causality, this counter factual
+definition of causality. One generalization of the idea,
+the average causal effect. And how different ways of statistical
+thinking try to get at this. And we try to understand both that
+these ways of statistical thinking get at causal effects, but they come
+with a lot of assumption and baggage. And that there's often no perfect
+way to get at causal effects. And the best thing we have
+going is randomization. So if you'd like to read
+more about causality, actually the Wikipedia page on
+causal inferences is pretty good. And I think any of the survey papers by, for example, Donald Rubin,
+are wonderful reads on causal inferences. He's one of the modern forefathers. Of the renewed interest in
+causal thinking and statistics. Well thanks for listening, I look forward
+to seeing you in the next lecture.

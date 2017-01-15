@@ -1,0 +1,179 @@
+Recognizing whether you are asking
+an inferential question or a prediction question is really important. Because the type of question that you are
+asking can greatly influence the modeling strategy that you pursue
+in any data analysis. So just to recap, with inferential
+questions the goal is to estimate the association between an outcome and
+a key predictor. While potentially trying to adjust for
+all these confounding factors. There is usually a very small number,
+or even a single key predictor that we're interested in and
+it's relationship to the outcome. And then there may be all
+these other variables. And the key goals for the modeling
+is to estimate this association and to make sure that you appropriately
+adjust for any other kinda factors. You often do sensitivity analyses to see how the association might change
+in the presence of other factors. With the prediction question,
+the goal is to develop a model that best predicts the outcome using whatever
+information you have available to you. So typically you don't put any [FOREIGN]
+weight on one predictor over another. And so there's no notion of let's
+say a key predictor and confounder. All the predictors might be equally
+important before you look at the data. And any good prediction algorithm
+will tell you which predictors or which variables are more or
+less important for predicting the outcome. But beforehand, we don't necessarily divide them into
+different groups based on importance. Finally, we usually don't care
+about the mechanism or the specific details of the relationships between
+the various predictors or variables. We just wanna find a kind of a model form that predicts the outcome with
+a high accuracy and low error. So I wanted to give a brief
+example of how these different types of questions can lead to different
+conclusions, even on the same dataset. I'll start first with
+an inferential question. Suppose I want to know how is air
+pollution in New York City related to mortality in New York City. Okay? So the data I'm gonna use comes
+from this national morbidity and mortality in air pollution study, and here's a picture of daily mortality
+in New York from 2001 to 2005. And you can see that it has
+highly seasonal components, the mortality tends to be higher in
+the winter and lower in the summer, and it's very specific to kind of
+to pattern across every year. Here is what particulate
+matter data looks like. And so for the same time period you can see this
+has also a seasonal structure to it. In particular,
+particulate matter is high in the summer. It tends to be low in
+the winter in New York City. That's a very, that pattern is
+kind of repeated across the years. So the first step I'm gonna do is
+just to try the easy solution. The easiest solution is just
+a scatter plot of mortality and PM10 on the x-axis, and here you can
+see what the relationship looks like. There's quite a bit of noise because
+we wouldn't necessarily expect particulate matter to explain all
+the vulnerability in mortality. And so,
+we may need to resort to some modeling, some formal modeling to see if
+there's any sort of association here. So the first thing we're going to
+do is to take that scatter plot and just fit a simple linear aggression
+to the data in that scatter plot. This is basically regressing mortality as
+the outcome and PM10 as our key predictor, without any other factors,
+just as kind of a baseline model. Now here are the results that we get
+from a regression model of that nature. And you can see that the coefficient for
+PM10 here is 0.00004, etc. And so basically is close to zero. You can tell by the size
+of the standard error, which is much bigger than the estimate,
+that there's a lot of variability around this estimate and
+so it's effectively zero. The association between
+the two variables is zero. Okay.
+So that's kind of what our basic
+first cut analysis tells us. Now one thing we know about pollution and
+mortality, just from the pictures that we just saw of
+the data is that they're highly seasonal. Season plays a big role in explaining
+variability in both mortality and in air pollution okay? Remember mortality was high in
+the winter and low in the summer, and pollution was high in the summer and
+low in the winter. So it seems like season is clearly
+related to both mortality and pollution. So it might be a reasonable thing to
+include as a potential confounding factor. So we can fit a secondary
+model to the data, which includes pm10 as our key predictor,
+and then maybe we'll include the season of the
+year as a potential confounding factor, so the season will just be, you know,
+there'll be four seasons, and we'll have a categorical value
+with a category for each season. So, here is the results of
+fitting that model to the data. And you can see that I
+highlighted the coefficient for pm10 here is actually quite a bit
+larger now, is 0.00149, and you can see that the standard error is quite
+a bit smaller relative to the estimate. So, this suggests that the coefficient for pm10 is quite a bit bigger than zero,
+maybe statistically significant. So the addition of this confounding factor dramatically changed the association
+we estimate between pm10 and mortality. And so, part of this is because season
+is very strongly related to both, but it's kind of positive,
+it's correlated in one way with mortality, but it's correlated in
+a different way with pollution. That's part of why we saw it when
+we didn't include season we saw no relationship. But when we do include it, we see this
+kinda quite a bit stronger relationship. Now there are other potential
+factors that we might wanna consider in terms of things that might both be
+related to mortality and to air pollution. So another one is the weather. Right?
+So weather is associated with mortality and it's also highly associated
+with various air pollutants and so we can characterize the weather with
+something like temperature or dew point temperature to think to just capture
+a piece of kind of what weather is and so we can include that into our model. So here's the results of including
+temperature which is the tmpd variable and dew-point temperature which
+is the dptp variable. And you can see now. And actually I've highlighted
+the coefficient for pm10, it's even bigger than it was before and
+the standard error is similar, so it's actually more statistically significant in
+some sense than in the previous models. Again, temperature and dew point are strong factors that are
+related to both mortality and pollution. Finally, another type of factor that may
+be related to both mortality and PM, particulate matter,
+is other pollutants, right? So there are other pollutants that may
+affect health, and they may be correlated with particulate matter because
+they may share common sources. So, one common source in a city
+like New York is gonna be traffic. Traffic can produce particles,
+it can also produce other pollutants. So one of the pollutants that
+we'll look at is nitrogen dioxide. And so nitrogen dioxide tends
+to be correlated with particles. So if you are interested in
+association between particles and mortality, you might
+wonder well is what we're seeing actually the association between
+nitrogen dioxide and mortality? And pm10 is kind of getting
+mixed up in the two. And so we can include nitrogen
+dioxide in our model as a potential confounding factor, and
+see how the estimate for particulate matter
+changes when we do that. So here are the results from that model,
+and you can see that compared to
+the previous model the coefficient for pm10 drops a little bit,
+it goes down a little bit, so the effect weakens a little bit when we
+include nitrogen dioxide in the model. Now it's still quite a strong effect, relative to the standard error that
+we estimate but it's not estimate, that is not as strong as it was before we
+entered, we included no2 in the model. And so, no2 and pm10 might be sharing
+a lot of the same effect on mortality and it may be difficult to
+completely disentangle them. However, even with no2 in the model
+we still see a reasonably strong association between pm10 and
+mortality in New York City. So when we put all these results
+together from the primary model which just had pm10 in mortality, and then
+the various secondary models we've shown, you can see that the primary model had
+a zero association effectively, and then the other three models
+had a relatively strong positive association with the outcome. And here I've plotted the 95% confidence
+intervals for each of these associations. So this is the kind of analysis
+that we're interested in. We're looking at pm10
+as our key predictor. And mortality is our outcome. And we want to see how that association
+changes under different scenarios. Under different sets of models, including
+different sets of confounding factors. Now what we do with this information will
+depend on what the goal of the analysis is, who the stakeholders are, and what we
+might do with this information afterwards. But we won't talk about that now. The point I want to make is the kind
+of the analysis that you do for an associational type of analysis
+is very much along these lines. So another question that we could ask,
+is what best predicts mortality in New York City, using
+the data that we have available, okay? So now I've changed the question to
+a prediction type of question, and we want to know what
+predicts the outcome best. So one of the things that we could
+do is fit a complex prediction algorithm, all right? We don't need to know, we don't need to
+worry about estimating associations, or adjusting for confounding factors. We're just gonna put all the data
+that we have available to us and see how well that predicts
+the outcome mortality. So here I'm gonna use a random
+force algorithm to make predictions of mortality in New York City. And one of the aspects of random
+forest algorithm is that it allows for a summary statistic called
+variable importance. And this gives you a sense of how
+important a variable is in increasing the skill of the algorithm
+in predicting the outcome. So, I've plotted here, the variable importance plot that rank
+orders all the variables in terms of how important they are to improving
+the prediction skill of the algorithm. And you can see at the very
+top here is temperature, which is kind of ranked as
+the most important variable. Followed by dew-point temperature,
+followed by the date, and then no2, ozone which is o3. Season. And then finally, pm10 and then dow,
+which is the day of the week. So you can see that from
+this prediction model, particularly matter actually
+is second from the bottom in terms of improving the prediction
+skill of the algorithm. So if you were to look
+at this analysis and then ask the original question, and
+say, how is pm10 related to mortality? You might think well,
+it's not related to mortality. It's not important for predicting. But that's true, but it doesn't
+necessarily mean that pm10 is not associated with mortality,
+from an associational standpoint. It may have an important
+association with mortality. But that the association
+is inherently weak. And so it's not necessarily going to be
+good for be predicting the outcome, but it may, nevertheless, have an important
+association with the outcome. And so, separating these kinds of
+questions out, and the goals of these questions is very important because if you
+were to ask an inferential question, but then do an analysis that's really tuned
+for prediction you might be lead to come to the wrong conclusion that,
+oh, pm10 is not important. And it doesn't have an important
+association with the outcome. And particularly, if you think about
+something like pollution, it may have an inherently very small association with
+the outcome, but because everyone in New York City ostensibly breathes,
+and is exposed to this polluted air. The effect, the ultimate effect,
+of such an association, could be quite large given the large
+population of a city like New York. So it's important to not kind of conflate
+the magnitude of the association with the ultimate effect on
+the population that you're interested in. Using prediction algorithms for
+prediction questions, and associational analyses for associational
+questions, is really important so that you can draw the right
+conclusions from your data, and not mistake the results of
+one question for another. So framing the question correctly
+is really important for developing an important modeling strategy, and for
+kinda drawing the right conclusions.

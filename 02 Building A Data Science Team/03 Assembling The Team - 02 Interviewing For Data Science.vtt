@@ -1,0 +1,482 @@
+WEBVTT
+
+1
+00:00:02.620 --> 00:00:05.190
+So once you've identified the people that
+you wanna bring in, or people who've
+
+2
+00:00:05.190 --> 00:00:07.720
+applied to your organization,
+the next step is interviewing them, and
+
+3
+00:00:07.720 --> 00:00:11.150
+trying to figure out if they're a good
+fit for your data science team.
+
+4
+00:00:11.150 --> 00:00:14.410
+So the structure of a data science
+interview is usually is follows.
+
+5
+00:00:14.410 --> 00:00:16.150
+Usually you have individual or
+
+6
+00:00:16.150 --> 00:00:19.700
+group meetings where you meet
+either one on one with the person.
+
+7
+00:00:19.700 --> 00:00:22.530
+Or you have a small group
+of people meet with them.
+
+8
+00:00:22.530 --> 00:00:27.300
+Then you have some kind of demonstration
+or presentation of their skills, and
+
+9
+00:00:27.300 --> 00:00:29.820
+then maybe a test of their
+technical skills as well.
+
+10
+00:00:29.820 --> 00:00:33.015
+So those are usually the three main
+components of the data science interview.
+
+11
+00:00:33.015 --> 00:00:34.560
+And so,
+I'm gonna talk about each of these.
+
+12
+00:00:34.560 --> 00:00:37.600
+So the first is individual meetings or
+group meetings.
+
+13
+00:00:37.600 --> 00:00:40.010
+So this kind of depends on
+the size of your organization.
+
+14
+00:00:40.010 --> 00:00:43.670
+How many people they'll meet at once,
+whether it's a few people, or one person.
+
+15
+00:00:43.670 --> 00:00:47.690
+And ideally they will meet both people
+inside the data science team as well as
+
+16
+00:00:47.690 --> 00:00:50.520
+people outside the data science team, so
+you can get feedback on whether they've
+
+17
+00:00:50.520 --> 00:00:55.160
+communicated well with both internal
+people and external people.
+
+18
+00:00:55.160 --> 00:00:58.120
+So the key here is to focus on
+the projects that they've worked on.
+
+19
+00:00:58.120 --> 00:01:02.360
+Try to illicit as much information as
+you can about how they work on projects.
+
+20
+00:01:02.360 --> 00:01:06.200
+Whether they're go-getters, whether
+they can go figure it out on their own.
+
+21
+00:01:06.200 --> 00:01:08.380
+It's also very critical that
+you assess at this stage.
+
+22
+00:01:08.380 --> 00:01:10.740
+The resume will tell you a lot
+about their technical skills.
+
+23
+00:01:10.740 --> 00:01:13.730
+It will tell very little about
+their interpersonal skills.
+
+24
+00:01:13.730 --> 00:01:18.150
+So this is sort of a critical stage
+where you need to dissect and identify,
+
+25
+00:01:18.150 --> 00:01:23.260
+are they a person that will easily work
+with other people in your organisation.
+
+26
+00:01:23.260 --> 00:01:27.460
+Ideally, you want to do this in such a way
+that it's sometimes good to have people
+
+27
+00:01:27.460 --> 00:01:29.860
+can make people a little
+uncomfortable as data scientists.
+
+28
+00:01:29.860 --> 00:01:32.970
+Again, that's gonna be part of their
+job is they might come up with ideas,
+
+29
+00:01:32.970 --> 00:01:36.785
+when they might analyze data, and come to
+conclusions that aren't super popular.
+
+30
+00:01:36.785 --> 00:01:39.951
+But you might still wanna be able
+to communicate with them, and
+
+31
+00:01:39.951 --> 00:01:42.173
+you'll be able to do
+that in a friendly way.
+
+32
+00:01:42.173 --> 00:01:45.214
+Here you're gonna want to focus on
+the global evaluation of skills.
+
+33
+00:01:45.214 --> 00:01:49.410
+So some people have used
+technical recruiting questions.
+
+34
+00:01:49.410 --> 00:01:52.930
+Although, a lot of large organizations,
+including really famous data science
+
+35
+00:01:52.930 --> 00:01:55.680
+organizations, have kind of moved
+away from that in interviews,
+
+36
+00:01:55.680 --> 00:01:58.380
+sort of the riddle type of questions.
+
+37
+00:01:58.380 --> 00:02:04.110
+Or the mathematical type puzzle questions
+are sort of not in favor any more,
+
+38
+00:02:04.110 --> 00:02:08.970
+and I think I agree with that in the sense
+that it's very unuseful in a very
+
+39
+00:02:08.970 --> 00:02:13.660
+confined setting to know how somebody's
+gonna react to a specific tricky puzzle.
+
+40
+00:02:13.660 --> 00:02:16.170
+It's usually like, have they
+studied that kind of puzzle before,
+
+41
+00:02:16.170 --> 00:02:19.030
+is a better predictor than
+their actual abilities.
+
+42
+00:02:19.030 --> 00:02:21.870
+And so, it's better to ask sort
+of general purpose questions.
+
+43
+00:02:21.870 --> 00:02:23.600
+How would you tackle this kind of problem?
+
+44
+00:02:23.600 --> 00:02:25.060
+How would you, in general,
+
+45
+00:02:25.060 --> 00:02:28.550
+build out the infrastructure to
+solve this kind of security risk?
+
+46
+00:02:28.550 --> 00:02:32.480
+So you wanna focus on, maybe some drill
+down into some technical details, but
+
+47
+00:02:32.480 --> 00:02:34.760
+you definitely want to focus on
+their conceptual understanding.
+
+48
+00:02:34.760 --> 00:02:36.200
+Do they know how to tackle the problems?
+
+49
+00:02:36.200 --> 00:02:38.770
+Do they know the right
+sort of language to speak?
+
+50
+00:02:38.770 --> 00:02:40.900
+Do they know the right
+technologies to talk about?
+
+51
+00:02:40.900 --> 00:02:44.050
+Do they seem like they have experience in
+solving the sorts of problems that you'd
+
+52
+00:02:44.050 --> 00:02:47.110
+ask them to solve if they
+came onto your organization?
+
+53
+00:02:47.110 --> 00:02:50.200
+The next key component, and some
+organizations don't do this, but I think
+
+54
+00:02:50.200 --> 00:02:53.430
+it's very important when interviewing any
+data scientist, data engineer, or data
+
+55
+00:02:53.430 --> 00:02:57.740
+science manager, is to have them do some
+kind of demonstration or presentation.
+
+56
+00:02:57.740 --> 00:02:58.950
+This is good for a couple of reasons.
+
+57
+00:02:58.950 --> 00:03:02.260
+One, it's an ability for
+them to show their own creativity and
+
+58
+00:03:02.260 --> 00:03:07.080
+show their own sort of unique contribution
+that they can bring to your organization.
+
+59
+00:03:07.080 --> 00:03:10.150
+So if they do a presentation about
+a data analysis they've done, or
+
+60
+00:03:10.150 --> 00:03:13.940
+an infrastructure they've built, or they
+demo some software that they build, or
+
+61
+00:03:13.940 --> 00:03:16.500
+if they talk a little bit about
+their management techniques and
+
+62
+00:03:16.500 --> 00:03:18.550
+how they would manage a data science team.
+
+63
+00:03:18.550 --> 00:03:22.360
+It's important to get sort of that
+information about what's creative or
+
+64
+00:03:22.360 --> 00:03:23.770
+unique about them.
+
+65
+00:03:23.770 --> 00:03:25.830
+It's also a communications skills check.
+
+66
+00:03:25.830 --> 00:03:28.910
+Almost always data scientist,
+data engineers, data managers,
+
+67
+00:03:28.910 --> 00:03:30.930
+they're going to have to present
+their results to people.
+
+68
+00:03:30.930 --> 00:03:34.320
+And so, it's good to evaluate right from
+the get-go, are they able to do that,
+
+69
+00:03:34.320 --> 00:03:36.550
+are they able to answer
+questions on their feet.
+
+70
+00:03:36.550 --> 00:03:40.930
+Are they comfortable with presenting
+information that's technical and detailed.
+
+71
+00:03:40.930 --> 00:03:44.450
+It's also an opportunity for
+a broader group to interact with them.
+
+72
+00:03:44.450 --> 00:03:46.990
+So you can only have so many individual or
+
+73
+00:03:46.990 --> 00:03:49.390
+small group meetings with
+any person at any given day.
+
+74
+00:03:49.390 --> 00:03:53.314
+But if you have a nice big presentation
+for them to give with a larger group of
+
+75
+00:03:53.314 --> 00:03:56.510
+people, it gives more people
+a chance to sort of weigh in on.
+
+76
+00:03:56.510 --> 00:03:59.320
+Does this person seem like the kind
+of person that would fit into our
+
+77
+00:03:59.320 --> 00:04:00.029
+organization?
+
+78
+00:04:01.470 --> 00:04:04.960
+So finally, there's often
+an evaluation of technical skills.
+
+79
+00:04:04.960 --> 00:04:08.360
+Now, there are two kind of
+schools of thought here.
+
+80
+00:04:08.360 --> 00:04:12.522
+One is very technical,
+maybe even like riddle-like problems.
+
+81
+00:04:12.522 --> 00:04:17.500
+And the other is to actually have them try
+to solve a very small but real problem.
+
+82
+00:04:17.500 --> 00:04:20.750
+So I think that the latter case
+is usually much more effective.
+
+83
+00:04:20.750 --> 00:04:24.890
+So for a data scientist, you might
+give them a very small data set, and
+
+84
+00:04:24.890 --> 00:04:27.510
+see if they can do an analysis on it and
+report.
+
+85
+00:04:27.510 --> 00:04:31.050
+It might take them only an hour, cuz
+it's very small, or something like that.
+
+86
+00:04:31.050 --> 00:04:33.720
+And then, you afterwards
+have an interview with them.
+
+87
+00:04:33.720 --> 00:04:35.200
+You go through what they did,
+
+88
+00:04:35.200 --> 00:04:39.050
+and get a feel for what their
+thinking process is really like.
+
+89
+00:04:39.050 --> 00:04:40.730
+Ideally, you'd give them a problem or
+
+90
+00:04:40.730 --> 00:04:43.680
+a project that's related to what
+your organization does every day.
+
+91
+00:04:43.680 --> 00:04:47.210
+It might be a simulated example or
+a fake example, so
+
+92
+00:04:47.210 --> 00:04:50.880
+they don't get access to any real data,
+but it gives you an idea.
+
+93
+00:04:50.880 --> 00:04:53.910
+How are they gonna operate
+day-to-day in the organization?
+
+94
+00:04:53.910 --> 00:04:56.989
+So those are the three components,
+you have individual or group meetings.
+
+95
+00:04:56.989 --> 00:04:59.575
+You have a demonstration or
+presentation of their skills, and
+
+96
+00:04:59.575 --> 00:05:02.430
+then you have some evaluation
+of their technical skills.
+
+97
+00:05:02.430 --> 00:05:05.508
+Then you collect all the information
+from everybody who saw them, and
+
+98
+00:05:05.508 --> 00:05:08.814
+you make a judgment on whether they're
+a right fit for your organization.
+
+99
+00:05:08.814 --> 00:05:09.314
+[BLANK AUDIO]

@@ -1,0 +1,537 @@
+WEBVTT
+
+1
+00:00:00.720 --> 00:00:03.722
+There are six types of questions
+you can ask in a data analysis, and
+
+2
+00:00:03.722 --> 00:00:06.828
+in this lecture, we'll talk about
+each of them and what they mean for
+
+3
+00:00:06.828 --> 00:00:08.180
+interpreting your results.
+
+4
+00:00:08.180 --> 00:00:12.510
+[MUSIC]
+
+5
+00:00:12.510 --> 00:00:18.037
+The six types of questions that you can
+ask in a data analysis are descriptive,
+
+6
+00:00:18.037 --> 00:00:23.770
+exploratory, inferential,
+predictive, causal, and mechanistic.
+
+7
+00:00:23.770 --> 00:00:26.810
+Now each one of these questions has
+very different characteristics and
+
+8
+00:00:26.810 --> 00:00:30.720
+imply different ways that you can
+interpret findings from any data analysis.
+
+9
+00:00:30.720 --> 00:00:33.510
+So we're gonna talk about the
+characteristics of each of these types of
+
+10
+00:00:33.510 --> 00:00:39.980
+questions and how they can be used or
+misused in any data analysis.
+
+11
+00:00:39.980 --> 00:00:43.290
+The first type of question you can
+ask is a descriptive question.
+
+12
+00:00:43.290 --> 00:00:46.070
+Now, the fundamental feature of
+a descriptive question is that
+
+13
+00:00:46.070 --> 00:00:50.190
+you're often looking to summarize a
+characteristic of a dataset, so often this
+
+14
+00:00:50.190 --> 00:00:53.780
+involves taking the average or taking the
+proportion of some feature in your data.
+
+15
+00:00:53.780 --> 00:00:54.740
+So for example,
+
+16
+00:00:54.740 --> 00:00:58.900
+you might ask how many people have visited
+this website in the last 24 hours?
+
+17
+00:00:58.900 --> 00:01:03.100
+Or, you know, what's the average level of
+air pollution in the city of Baltimore?
+
+18
+00:01:03.100 --> 00:01:07.260
+So here, you're summarizing kind
+of the features of a dataset and
+
+19
+00:01:07.260 --> 00:01:09.670
+you're focusing on the data
+that you have on hand.
+
+20
+00:01:09.670 --> 00:01:12.920
+And you're not really worried about things
+that are outside of the dataset yet.
+
+21
+00:01:12.920 --> 00:01:15.039
+You really just want to summarize
+the numbers that you have.
+
+22
+00:01:17.780 --> 00:01:21.590
+The second type of question you can
+ask is an exploratory question.
+
+23
+00:01:21.590 --> 00:01:24.538
+And the basic goal here is
+you want to look at trends or
+
+24
+00:01:24.538 --> 00:01:27.990
+relationships between
+variables in your data set.
+
+25
+00:01:27.990 --> 00:01:32.300
+Sometimes, these are called hypothesis
+generating types of analysis because
+
+26
+00:01:32.300 --> 00:01:35.520
+you're looking at the dataset that
+you have in hand and looking for
+
+27
+00:01:35.520 --> 00:01:37.760
+relationships that might be of interest.
+
+28
+00:01:37.760 --> 00:01:41.266
+Again, like a descriptive question,
+typically with an exploratory question,
+
+29
+00:01:41.266 --> 00:01:44.161
+you're not interested in things
+that are outside the dataset, but
+
+30
+00:01:44.161 --> 00:01:47.488
+rather in summarizing and characterizing
+relationships within a dataset.
+
+31
+00:01:50.029 --> 00:01:54.560
+The third type of data analysis
+question is an inferential question.
+
+32
+00:01:54.560 --> 00:01:58.650
+And an inferential question can often be
+the result of lots of exploratory and
+
+33
+00:01:58.650 --> 00:02:00.370
+descriptive types of analyses.
+
+34
+00:02:00.370 --> 00:02:03.670
+And the fundamental property
+of an inferential question
+
+35
+00:02:03.670 --> 00:02:07.600
+is that you wanna make a statement
+about something outside the dataset.
+
+36
+00:02:07.600 --> 00:02:11.411
+And so you often, for example, you wanna
+know whether a relationship that you
+
+37
+00:02:11.411 --> 00:02:13.677
+observe in the dataset
+holds somewhere else.
+
+38
+00:02:13.677 --> 00:02:17.798
+Either in another dataset or a different
+population of kind of data points.
+
+39
+00:02:17.798 --> 00:02:22.796
+And so, the key to an inferential question
+is that you wanna make a statement about
+
+40
+00:02:22.796 --> 00:02:25.650
+something that you don't observe.
+
+41
+00:02:25.650 --> 00:02:30.010
+And so this is a much more difficult
+type of question because now you're
+
+42
+00:02:30.010 --> 00:02:33.430
+concerned about things that
+are outside the dataset.
+
+43
+00:02:33.430 --> 00:02:35.441
+And so you have to be careful
+of what types of methods and
+
+44
+00:02:35.441 --> 00:02:36.941
+what types of approaches you use there.
+
+45
+00:02:39.163 --> 00:02:44.020
+The fourth type of question in a data
+analysis is a predictive question.
+
+46
+00:02:44.020 --> 00:02:48.970
+Now with a predictive question you
+wanna know whether you can take a set
+
+47
+00:02:48.970 --> 00:02:53.800
+of features and use them to predict
+another feature on a given person or
+
+48
+00:02:53.800 --> 00:02:55.830
+on a given unit of analysis, right.
+
+49
+00:02:55.830 --> 00:02:58.530
+So this is at a large scale about
+
+50
+00:02:58.530 --> 00:03:02.050
+essentially looking at correlations
+between lots of features in a data set.
+
+51
+00:03:03.160 --> 00:03:06.150
+Now, often with predictive
+types of questions,
+
+52
+00:03:06.150 --> 00:03:11.940
+they lead you to solutions that don’t
+necessarily tell you how things work or
+
+53
+00:03:11.940 --> 00:03:16.730
+explain the mechanism of what’s
+going on inside any given system.
+
+54
+00:03:16.730 --> 00:03:20.150
+Because the goal is to really produce
+a very good prediction of a given feature,
+
+55
+00:03:20.150 --> 00:03:22.090
+given a set of other features, and
+
+56
+00:03:22.090 --> 00:03:25.080
+the goal is not really to
+explain how things are working.
+
+57
+00:03:25.080 --> 00:03:29.293
+Now on occasion, a predictive question can
+lead you to an explanation about what's
+
+58
+00:03:29.293 --> 00:03:32.754
+going on, but the key point here is
+that it's not the ultimate goal.
+
+59
+00:03:35.798 --> 00:03:39.790
+The fifth type of question that we're
+interested in is a causal question.
+
+60
+00:03:39.790 --> 00:03:45.460
+Now with a causal question we're often
+looking to determine how average
+
+61
+00:03:45.460 --> 00:03:47.520
+changes in a set of features or
+
+62
+00:03:47.520 --> 00:03:52.290
+in a given feature will change
+when we modify another feature.
+
+63
+00:03:52.290 --> 00:03:55.440
+And so, if we take a variable and
+deliberately make changes to it,
+
+64
+00:03:55.440 --> 00:04:01.350
+on average, how will another feature or
+another characteristic be affected?
+
+65
+00:04:01.350 --> 00:04:05.570
+These types of questions can often be
+directly addressed via experiment.
+
+66
+00:04:05.570 --> 00:04:07.219
+Such as randomized controlled trials,
+
+67
+00:04:07.219 --> 00:04:09.601
+or directly controlled kind
+of laboratory experiments.
+
+68
+00:04:09.601 --> 00:04:14.548
+However, in many other situations,
+causal questions can really only be
+
+69
+00:04:14.548 --> 00:04:19.577
+answered indirectly using observational
+data, so in situations where we
+
+70
+00:04:19.577 --> 00:04:24.923
+can't control what the settings are or
+what the experiment or design a specific
+
+71
+00:04:24.923 --> 00:04:29.670
+experiment to kind of to collect data,
+on directly on this question.
+
+72
+00:04:29.670 --> 00:04:31.864
+And so, there in situations like that,
+
+73
+00:04:31.864 --> 00:04:36.060
+we need to accumulate evidence through
+many different types of studies, and
+
+74
+00:04:36.060 --> 00:04:40.204
+to develop a pattern that would suggest
+that a causal relationship exists.
+
+75
+00:04:42.769 --> 00:04:47.215
+The sixth type of question that we
+are interested in is a mechanistic type of
+
+76
+00:04:47.215 --> 00:04:47.930
+question.
+
+77
+00:04:47.930 --> 00:04:52.660
+And the goal here is essentially
+to uncover a deterministic link
+
+78
+00:04:52.660 --> 00:04:55.300
+between two sets of features, okay?
+
+79
+00:04:55.300 --> 00:04:59.530
+And so we want to know if we can, if we
+change one measurement on one hand, can
+
+80
+00:04:59.530 --> 00:05:03.820
+we, does it always result in a specific
+outcome on a different measurement?
+
+81
+00:05:03.820 --> 00:05:04.490
+Okay?
+
+82
+00:05:04.490 --> 00:05:08.980
+Now this type of relationship is often
+very difficult to identify outside of
+
+83
+00:05:08.980 --> 00:05:13.220
+highly controlled environments, for
+example in engineering processes.
+
+84
+00:05:13.220 --> 00:05:17.980
+So we're often not, we're not often
+gonna be looking at mechanistic types of
+
+85
+00:05:17.980 --> 00:05:20.240
+questions, but
+it is an important area to think about.
+
+86
+00:05:23.030 --> 00:05:26.050
+Now why are we talking about
+these six types of questions?
+
+87
+00:05:26.050 --> 00:05:29.580
+The reason is because knowing what
+type of question you're asking is
+
+88
+00:05:29.580 --> 00:05:32.880
+really important to interpreting
+the results of a data analysis.
+
+89
+00:05:32.880 --> 00:05:37.180
+It's often very common to mistake
+one type of question for another.
+
+90
+00:05:37.180 --> 00:05:40.910
+And that will often result in
+problems in your interpretation.
+
+91
+00:05:40.910 --> 00:05:45.294
+And on improperly weighting the evidence
+from one kind of analysis versus another
+
+92
+00:05:45.294 --> 00:05:46.610
+kind of analysis.
+
+93
+00:05:46.610 --> 00:05:50.740
+In fact it's so common to mistake
+one type of question for another
+
+94
+00:05:50.740 --> 00:05:55.520
+that we actually have little nicknames for
+when this type mistake occurs.
+
+95
+00:05:55.520 --> 00:05:59.050
+For example, we often think we're
+asking a causal question, but
+
+96
+00:05:59.050 --> 00:06:00.590
+the way that we've done the analysis or
+
+97
+00:06:00.590 --> 00:06:05.740
+collected the data is really results
+in us asking an inferential question,
+
+98
+00:06:05.740 --> 00:06:09.950
+and that is the classic correlation does
+not imply causation type of problem.
+
+99
+00:06:09.950 --> 00:06:12.960
+Another good example is when we
+think we're doing inferential,
+
+100
+00:06:12.960 --> 00:06:15.260
+we're asking an inferential
+type of question.
+
+101
+00:06:15.260 --> 00:06:19.030
+But in reality we're doing
+something more exploratory and so
+
+102
+00:06:19.030 --> 00:06:20.990
+that's sometimes called data dredging.
+
+103
+00:06:20.990 --> 00:06:26.250
+Another mistake that's commonly made is
+when we think were trying to do prediction
+
+104
+00:06:26.250 --> 00:06:31.250
+but we build our prediction
+models improperly and
+
+105
+00:06:31.250 --> 00:06:34.190
+so it ends up being more of
+an exploratory type of analysis.
+
+106
+00:06:34.190 --> 00:06:36.780
+And that's something that's
+called over fitting the data.
+
+107
+00:06:36.780 --> 00:06:41.640
+And lastly, we sometimes think that we're
+doing an inferential type of analysis, but
+
+108
+00:06:41.640 --> 00:06:45.940
+it's really more descriptive, particularly
+if you have very small sample sizes.
+
+109
+00:06:45.940 --> 00:06:48.520
+So, that's sometimes called
+an n of one analysis.
+
+110
+00:06:48.520 --> 00:06:51.550
+So, make sure you know what type
+of question you're asking, and
+
+111
+00:06:51.550 --> 00:06:53.430
+interpret your data
+analysis appropriately.

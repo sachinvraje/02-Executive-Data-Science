@@ -1,0 +1,435 @@
+WEBVTT
+
+1
+00:00:02.390 --> 00:00:05.330
+The last member of the data science
+team is a data science manager.
+
+2
+00:00:05.330 --> 00:00:07.440
+So I'm gonna talk a little bit about
+the qualifications and skills.
+
+3
+00:00:07.440 --> 00:00:10.900
+These might be your qualifications and
+skills, if you're taking this class.
+
+4
+00:00:10.900 --> 00:00:12.806
+So what does a data science manager do?
+
+5
+00:00:12.806 --> 00:00:14.711
+Well, the first that they
+might be responsible for
+
+6
+00:00:14.711 --> 00:00:16.140
+is building the data science team.
+
+7
+00:00:16.140 --> 00:00:20.090
+They are responsible for identifying,
+and recruiting data engineers, and
+
+8
+00:00:20.090 --> 00:00:21.940
+data scientists to the team.
+
+9
+00:00:21.940 --> 00:00:26.050
+Getting them set up, setting goals and
+priorities, identifying those problems
+
+10
+00:00:26.050 --> 00:00:29.930
+within an organization that need
+to be solved by data science,
+
+11
+00:00:29.930 --> 00:00:33.440
+and sort of putting the right
+people on the right problem.
+
+12
+00:00:33.440 --> 00:00:35.530
+So then,
+they manage the data science process.
+
+13
+00:00:35.530 --> 00:00:37.910
+So data science,
+as you'll learn in another class,
+
+14
+00:00:37.910 --> 00:00:42.800
+is a process that's not just one time,
+one all thing.
+
+15
+00:00:42.800 --> 00:00:46.360
+It's an iterative process, and so
+it needs to be managed carefully.
+
+16
+00:00:46.360 --> 00:00:49.093
+And so, that is one of their
+responsibilities is making sure that
+
+17
+00:00:49.093 --> 00:00:51.728
+people interact with each other
+within the data science team,
+
+18
+00:00:51.728 --> 00:00:54.578
+but also interact with other people
+in the external organization.
+
+19
+00:00:54.578 --> 00:00:56.630
+And they also interact with other groups.
+
+20
+00:00:56.630 --> 00:00:58.980
+So they might report to higher management.
+
+21
+00:00:58.980 --> 00:01:02.360
+They might also just interact with,
+or collaborate with
+
+22
+00:01:02.360 --> 00:01:06.400
+people at their same level and
+their units of your organization, and
+
+23
+00:01:06.400 --> 00:01:10.010
+so they need to have good
+communication skills in that sense.
+
+24
+00:01:10.010 --> 00:01:12.580
+And so, what kind of skills do they need?
+
+25
+00:01:12.580 --> 00:01:15.535
+Ideally they have knowledge of
+the software and hardware being used.
+
+26
+00:01:15.535 --> 00:01:18.730
+That's great if they have some kind of
+background in either data science or
+
+27
+00:01:18.730 --> 00:01:19.480
+data engineering.
+
+28
+00:01:19.480 --> 00:01:21.930
+That's sort of the ideal case.
+
+29
+00:01:21.930 --> 00:01:22.557
+That's ideal,
+
+30
+00:01:22.557 --> 00:01:25.566
+because then they actually kind of know
+the infrastructure that's involved.
+
+31
+00:01:25.566 --> 00:01:29.921
+If there's a problem that comes up they
+might have a good suggestion about how to
+
+32
+00:01:29.921 --> 00:01:34.536
+fix the data science infrastructure, or
+how to fix that machine learning algorithm
+
+33
+00:01:34.536 --> 00:01:37.985
+that doesn't necessary work
+exactly like the person wanted.
+
+34
+00:01:37.985 --> 00:01:40.980
+They don't have to have that
+qualification, but it'd be nice.
+
+35
+00:01:40.980 --> 00:01:43.920
+They do need to know the roles, they
+need to know what a data scientist does,
+
+36
+00:01:43.920 --> 00:01:47.100
+what a data engineer does, what other
+teams are supposed to be doing, and
+
+37
+00:01:47.100 --> 00:01:49.950
+how that may or may not be data science.
+
+38
+00:01:49.950 --> 00:01:53.460
+And so, part of that is a filter, so that
+they can sort of filter out the problems
+
+39
+00:01:53.460 --> 00:01:56.450
+that aren't necessarily appropriate,
+and focus on the ones that are.
+
+40
+00:01:57.490 --> 00:01:59.950
+They need to know what can and
+can't be achieved.
+
+41
+00:01:59.950 --> 00:02:05.120
+So data science is useful and
+it can be a very powerful tool for
+
+42
+00:02:05.120 --> 00:02:08.410
+an organization, but
+it's not all purpose and all knowing.
+
+43
+00:02:08.410 --> 00:02:11.830
+And so, there's often problems that
+just can't be solved with data science.
+
+44
+00:02:11.830 --> 00:02:13.750
+That could be because
+the data aren't available.
+
+45
+00:02:13.750 --> 00:02:16.700
+It could be because algorithms aren't
+good enough to be able to do that kind
+
+46
+00:02:16.700 --> 00:02:18.740
+of prediction at that time.
+
+47
+00:02:18.740 --> 00:02:21.200
+It could be because we can
+definitely solve the problem, but
+
+48
+00:02:21.200 --> 00:02:23.450
+we just can't scale it up to
+the scale that's necessary.
+
+49
+00:02:23.450 --> 00:02:27.470
+So they need to kind of have an idea of
+what are the global parameters of what can
+
+50
+00:02:27.470 --> 00:02:29.290
+be done and
+what can't be done with data science.
+
+51
+00:02:29.290 --> 00:02:32.570
+And then obviously, strong communication
+skills, because they're going to
+
+52
+00:02:32.570 --> 00:02:36.008
+be communicating with their own team,
+they'll be interfacing with other units.
+
+53
+00:02:36.008 --> 00:02:39.560
+And so, they need to be able to
+communicate with what's going on.
+
+54
+00:02:39.560 --> 00:02:42.660
+And so,
+what is the background of data managers?
+
+55
+00:02:42.660 --> 00:02:47.330
+So data managers ideally come from
+some sort of data science background.
+
+56
+00:02:47.330 --> 00:02:48.970
+Whether that's analyzing data themselves,
+
+57
+00:02:48.970 --> 00:02:52.910
+or building data science infrastructure
+themselves plus some management training.
+
+58
+00:02:52.910 --> 00:02:56.160
+That might be you if you've taken, say,
+the data science specialization series and
+
+59
+00:02:56.160 --> 00:02:57.290
+now you're taking this series.
+
+60
+00:02:57.290 --> 00:03:00.630
+You kinda have data science background
+plus management background.
+
+61
+00:03:00.630 --> 00:03:04.420
+Or you might have data engineering and
+again management experience.
+
+62
+00:03:04.420 --> 00:03:07.920
+There's also another option is that you
+have some management experience, but
+
+63
+00:03:07.920 --> 00:03:11.990
+you've also taken or learned a little bit
+about data science and data engineering.
+
+64
+00:03:11.990 --> 00:03:14.680
+And ideally you've learned about it at
+least at the depth where you'll be able to
+
+65
+00:03:14.680 --> 00:03:17.580
+come up with those suggestions
+if those people get stuck.
+
+66
+00:03:17.580 --> 00:03:21.090
+At the high level it's good that you know
+how to direct and set priorities, and
+
+67
+00:03:21.090 --> 00:03:24.080
+know what's possible and not possible,
+but ideally you can also sort of
+
+68
+00:03:24.080 --> 00:03:26.420
+get in the mix and
+help people out if that's possible.
+
+69
+00:03:26.420 --> 00:03:30.290
+The best managers at some level or
+another know enough data science or
+
+70
+00:03:30.290 --> 00:03:33.440
+data in general that they can
+contribute to the team in that way.
+
+71
+00:03:33.440 --> 00:03:37.435
+So their key characteristics are that
+they're knowledgeable about data science.
+
+72
+00:03:37.435 --> 00:03:40.578
+That they're supportive, data science and
+data engineering are often very
+
+73
+00:03:40.578 --> 00:03:42.851
+frustrating components of
+being in an organization for
+
+74
+00:03:42.851 --> 00:03:44.350
+lots of different reasons.
+
+75
+00:03:44.350 --> 00:03:46.680
+And so, being positive and supportive and
+
+76
+00:03:46.680 --> 00:03:50.302
+motivational is really important when
+identifying a data science manager.
+
+77
+00:03:50.302 --> 00:03:54.184
+Being thick-skinned is also really
+important, it often falls on the data
+
+78
+00:03:54.184 --> 00:03:58.500
+science manager to report disappointing
+results from a prediction algorithm, or
+
+79
+00:03:58.500 --> 00:04:02.381
+an experiment that failed, they often
+have to report that to management or
+
+80
+00:04:02.381 --> 00:04:04.684
+people that might not
+be too happy about it.
+
+81
+00:04:04.684 --> 00:04:08.253
+And so, they have to be willing to do that
+in a way that's positive and friendly and
+
+82
+00:04:08.253 --> 00:04:09.682
+like moves on to the next thing.
+
+83
+00:04:09.682 --> 00:04:13.357
+So thick-skinned is very important for
+a data science manager.
+
+84
+00:04:13.357 --> 00:04:16.991
+And again, polite, but relentless,
+friendly, but relentless,
+
+85
+00:04:16.991 --> 00:04:20.000
+they'll get out there and
+really work with people.
+
+86
+00:04:20.000 --> 00:04:24.650
+They can communicate with them, but they
+advocate for and use data science in a way
+
+87
+00:04:24.650 --> 00:04:28.260
+that's really positive for
+the whole organization and for their team.
+
+88
+00:04:28.260 --> 00:04:30.730
+And so, that's what you're looking for
+in a data science manager.
+
+89
+00:04:30.730 --> 00:04:34.761
+Somebody that can kinda organize the whole
+process, keep it going, and move people
+
+90
+00:04:34.761 --> 00:04:38.646
+onto the right problems and solve the real
+problems that your organization has.

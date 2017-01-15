@@ -1,0 +1,93 @@
+There are six types of questions
+you can ask in a data analysis, and in this lecture, we'll talk about
+each of them and what they mean for interpreting your results. [MUSIC] The six types of questions that you can
+ask in a data analysis are descriptive, exploratory, inferential,
+predictive, causal, and mechanistic. Now each one of these questions has
+very different characteristics and imply different ways that you can
+interpret findings from any data analysis. So we're gonna talk about the
+characteristics of each of these types of questions and how they can be used or
+misused in any data analysis. The first type of question you can
+ask is a descriptive question. Now, the fundamental feature of
+a descriptive question is that you're often looking to summarize a
+characteristic of a dataset, so often this involves taking the average or taking the
+proportion of some feature in your data. So for example, you might ask how many people have visited
+this website in the last 24 hours? Or, you know, what's the average level of
+air pollution in the city of Baltimore? So here, you're summarizing kind
+of the features of a dataset and you're focusing on the data
+that you have on hand. And you're not really worried about things
+that are outside of the dataset yet. You really just want to summarize
+the numbers that you have. The second type of question you can
+ask is an exploratory question. And the basic goal here is
+you want to look at trends or relationships between
+variables in your data set. Sometimes, these are called hypothesis
+generating types of analysis because you're looking at the dataset that
+you have in hand and looking for relationships that might be of interest. Again, like a descriptive question,
+typically with an exploratory question, you're not interested in things
+that are outside the dataset, but rather in summarizing and characterizing
+relationships within a dataset. The third type of data analysis
+question is an inferential question. And an inferential question can often be
+the result of lots of exploratory and descriptive types of analyses. And the fundamental property
+of an inferential question is that you wanna make a statement
+about something outside the dataset. And so you often, for example, you wanna
+know whether a relationship that you observe in the dataset
+holds somewhere else. Either in another dataset or a different
+population of kind of data points. And so, the key to an inferential question
+is that you wanna make a statement about something that you don't observe. And so this is a much more difficult
+type of question because now you're concerned about things that
+are outside the dataset. And so you have to be careful
+of what types of methods and what types of approaches you use there. The fourth type of question in a data
+analysis is a predictive question. Now with a predictive question you
+wanna know whether you can take a set of features and use them to predict
+another feature on a given person or on a given unit of analysis, right. So this is at a large scale about essentially looking at correlations
+between lots of features in a data set. Now, often with predictive
+types of questions, they lead you to solutions that don’t
+necessarily tell you how things work or explain the mechanism of what’s
+going on inside any given system. Because the goal is to really produce
+a very good prediction of a given feature, given a set of other features, and the goal is not really to
+explain how things are working. Now on occasion, a predictive question can
+lead you to an explanation about what's going on, but the key point here is
+that it's not the ultimate goal. The fifth type of question that we're
+interested in is a causal question. Now with a causal question we're often
+looking to determine how average changes in a set of features or in a given feature will change
+when we modify another feature. And so, if we take a variable and
+deliberately make changes to it, on average, how will another feature or
+another characteristic be affected? These types of questions can often be
+directly addressed via experiment. Such as randomized controlled trials, or directly controlled kind
+of laboratory experiments. However, in many other situations,
+causal questions can really only be answered indirectly using observational
+data, so in situations where we can't control what the settings are or
+what the experiment or design a specific experiment to kind of to collect data,
+on directly on this question. And so, there in situations like that, we need to accumulate evidence through
+many different types of studies, and to develop a pattern that would suggest
+that a causal relationship exists. The sixth type of question that we
+are interested in is a mechanistic type of question. And the goal here is essentially
+to uncover a deterministic link between two sets of features, okay? And so we want to know if we can, if we
+change one measurement on one hand, can we, does it always result in a specific
+outcome on a different measurement? Okay? Now this type of relationship is often
+very difficult to identify outside of highly controlled environments, for
+example in engineering processes. So we're often not, we're not often
+gonna be looking at mechanistic types of questions, but
+it is an important area to think about. Now why are we talking about
+these six types of questions? The reason is because knowing what
+type of question you're asking is really important to interpreting
+the results of a data analysis. It's often very common to mistake
+one type of question for another. And that will often result in
+problems in your interpretation. And on improperly weighting the evidence
+from one kind of analysis versus another kind of analysis. In fact it's so common to mistake
+one type of question for another that we actually have little nicknames for
+when this type mistake occurs. For example, we often think we're
+asking a causal question, but the way that we've done the analysis or collected the data is really results
+in us asking an inferential question, and that is the classic correlation does
+not imply causation type of problem. Another good example is when we
+think we're doing inferential, we're asking an inferential
+type of question. But in reality we're doing
+something more exploratory and so that's sometimes called data dredging. Another mistake that's commonly made is
+when we think were trying to do prediction but we build our prediction
+models improperly and so it ends up being more of
+an exploratory type of analysis. And that's something that's
+called over fitting the data. And lastly, we sometimes think that we're
+doing an inferential type of analysis, but it's really more descriptive, particularly
+if you have very small sample sizes. So, that's sometimes called
+an n of one analysis. So, make sure you know what type
+of question you're asking, and interpret your data
+analysis appropriately.

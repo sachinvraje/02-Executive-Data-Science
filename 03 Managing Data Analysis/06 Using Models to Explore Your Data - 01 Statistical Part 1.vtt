@@ -1,0 +1,1243 @@
+WEBVTT
+
+1
+00:00:00.530 --> 00:00:04.170
+Statistical models can play many
+different roles in a data analysis.
+
+2
+00:00:04.170 --> 00:00:07.653
+In this lecture I'll talk about how to use
+statistical models to explore your data.
+
+3
+00:00:12.458 --> 00:00:16.465
+So exploratory data analysis
+can have two broad goals.
+
+4
+00:00:16.465 --> 00:00:20.448
+The first is more basic where it's you
+determine whether you have the right data
+
+5
+00:00:20.448 --> 00:00:21.769
+to answer your question.
+
+6
+00:00:21.769 --> 00:00:25.963
+And part of exploratory analysis is to
+determine do you need to get more data,
+
+7
+00:00:25.963 --> 00:00:29.834
+do you need to change datasets, or
+do you need to change your question or
+
+8
+00:00:29.834 --> 00:00:31.143
+refine your question.
+
+9
+00:00:31.143 --> 00:00:35.273
+So what I'm gonna talk about in this
+lecture is really how do we develop
+
+10
+00:00:35.273 --> 00:00:40.034
+a sketch of a solution to your question,
+assume your question is appropriate and
+
+11
+00:00:40.034 --> 00:00:43.554
+is answerable,
+we want to start sketching out a solution.
+
+12
+00:00:46.037 --> 00:00:48.187
+So in many ways this is
+like with film-making,
+
+13
+00:00:48.187 --> 00:00:50.460
+you want to make a rough
+cut of your movie, right?
+
+14
+00:00:50.460 --> 00:00:53.290
+So the idea is it's not gonna
+be the final product, but
+
+15
+00:00:53.290 --> 00:00:56.670
+it's gonna give you a sense of how
+things flow and how things work.
+
+16
+00:00:56.670 --> 00:01:00.060
+And if you're gonna make an argument
+to someone, you're gonna argue for
+
+17
+00:01:00.060 --> 00:01:03.260
+doing this versus that and you wanna
+build evidence to make your case,
+
+18
+00:01:03.260 --> 00:01:07.180
+this is gonna be a basic sketch of
+how that argument's gonna work out.
+
+19
+00:01:07.180 --> 00:01:08.120
+Okay?
+So that's what we'll talk
+
+20
+00:01:08.120 --> 00:01:09.580
+about in this lecture.
+
+21
+00:01:09.580 --> 00:01:13.600
+And so this lecture is really
+about using statistical models
+
+22
+00:01:13.600 --> 00:01:16.400
+to help you to summarize your data, and
+
+23
+00:01:16.400 --> 00:01:19.120
+to eventually kind of make things to
+things like make inference, okay.
+
+24
+00:01:19.120 --> 00:01:22.200
+So the first thing we need to talk
+about is what is a model, okay, and
+
+25
+00:01:22.200 --> 00:01:24.090
+why do we need them, okay.
+
+26
+00:01:24.090 --> 00:01:28.370
+So, models are generally speaking
+are just constructs that we build
+
+27
+00:01:28.370 --> 00:01:30.850
+to help us understand the real world,
+okay.
+
+28
+00:01:30.850 --> 00:01:37.090
+So for example, in biology often people
+will use mice as models for humans.
+
+29
+00:01:37.090 --> 00:01:39.490
+So we can't do experiments on humans so
+we'll use,
+
+30
+00:01:39.490 --> 00:01:44.540
+we sometimes people do
+experiments on mice to use,
+
+31
+00:01:44.540 --> 00:01:47.830
+to kind of give us sense of what
+might happen in a human being.
+
+32
+00:01:47.830 --> 00:01:50.320
+For example, for
+things like drug development or whatever.
+
+33
+00:01:50.320 --> 00:01:52.950
+Now, so that's a very,
+that's a physical type of model.
+
+34
+00:01:52.950 --> 00:01:55.560
+We're not going to be talking about
+those kind of models of course.
+
+35
+00:01:55.560 --> 00:01:58.930
+But the models that we use
+are mathematical models in many cases.
+
+36
+00:01:58.930 --> 00:02:00.290
+And we use them to help tell,
+
+37
+00:02:00.290 --> 00:02:04.450
+to kind of help us describe
+the population that we're talking about.
+
+38
+00:02:04.450 --> 00:02:09.560
+So if there's a population out there that
+we're trying to make inferences to, or
+
+39
+00:02:09.560 --> 00:02:13.030
+to describe in some way,
+we use a model to kind of help us do that.
+
+40
+00:02:13.030 --> 00:02:16.522
+Because often the population is too
+complex to think about all at once.
+
+41
+00:02:16.522 --> 00:02:20.010
+So imagine if you're trying to make a
+statement about the entire United States,
+
+42
+00:02:20.010 --> 00:02:22.020
+everyone in the United States, okay.
+
+43
+00:02:22.020 --> 00:02:25.110
+All the things that might go
+on between all the 300 or so
+
+44
+00:02:25.110 --> 00:02:28.210
+million people in the United States,
+it's impossible to think about.
+
+45
+00:02:28.210 --> 00:02:31.180
+So we need a model to
+help us simplify that,
+
+46
+00:02:31.180 --> 00:02:36.490
+to allow us to think about it
+in a kind of a reasonable way.
+
+47
+00:02:36.490 --> 00:02:39.600
+The ideas of the models will stand in for
+the population.
+
+48
+00:02:39.600 --> 00:02:42.930
+And they're a much simpler form than
+what might actually be going on
+
+49
+00:02:42.930 --> 00:02:43.960
+in the population.
+
+50
+00:02:43.960 --> 00:02:48.540
+But they represent population features and
+relationships, okay.
+
+51
+00:02:48.540 --> 00:02:52.900
+And the models help us by imposing
+structure on the population, so
+
+52
+00:02:52.900 --> 00:02:56.250
+we might for example assume that things
+are linearly related to each other.
+
+53
+00:02:56.250 --> 00:02:58.220
+We don't necessarily know that, but
+
+54
+00:02:58.220 --> 00:03:02.780
+it helps us to simplify how we think about
+two different variables in the population.
+
+55
+00:03:02.780 --> 00:03:04.684
+And the important thing to realize, and
+
+56
+00:03:04.684 --> 00:03:07.210
+this is a well worn saying
+in the field of statistics.
+
+57
+00:03:07.210 --> 00:03:10.750
+Is that, all models are wrong,
+but some are useful.
+
+58
+00:03:10.750 --> 00:03:14.170
+So, it's important not to get hung
+up on finding the right model.
+
+59
+00:03:14.170 --> 00:03:17.740
+But rather to focus on developing
+a model that's actually useful
+
+60
+00:03:17.740 --> 00:03:19.490
+to help you tell your story
+about the population.
+
+61
+00:03:24.810 --> 00:03:28.060
+So it might be useful
+to start at this point,
+
+62
+00:03:28.060 --> 00:03:31.880
+which I think it was to ask what's
+it like to have no model at all?
+
+63
+00:03:31.880 --> 00:03:32.580
+Okay.
+
+64
+00:03:32.580 --> 00:03:35.210
+So that way you get a sense of
+kind of how bad things can be or
+
+65
+00:03:35.210 --> 00:03:38.030
+how difficult it might be if
+you didn't ever use a model.
+
+66
+00:03:38.030 --> 00:03:38.600
+Okay.
+
+67
+00:03:38.600 --> 00:03:41.280
+So just take this as a basic example.
+
+68
+00:03:41.280 --> 00:03:43.710
+Suppose you're developing a new product,
+and
+
+69
+00:03:43.710 --> 00:03:47.110
+you want to know how much people would
+be willing to pay for this new product.
+
+70
+00:03:47.110 --> 00:03:49.950
+So something you might do is
+just put out a simple survey,
+
+71
+00:03:49.950 --> 00:03:54.590
+you might survey 20 people, and
+that may be a representative
+
+72
+00:03:54.590 --> 00:03:59.330
+of the the larger population of people
+that would be willing to buy this product.
+
+73
+00:03:59.330 --> 00:04:01.570
+And ask them how much they
+would be willing to pay.
+
+74
+00:04:01.570 --> 00:04:04.440
+And so you do the survey and
+then someone comes at you and says,
+
+75
+00:04:04.440 --> 00:04:06.150
+okay well what did the data say?
+
+76
+00:04:06.150 --> 00:04:08.150
+Okay, what did they tell us?
+
+77
+00:04:08.150 --> 00:04:12.190
+Now so as an example, I recently
+published a book called R Programming for
+
+78
+00:04:12.190 --> 00:04:13.760
+Data Science.
+
+79
+00:04:13.760 --> 00:04:16.339
+And before it was published,
+on the website,
+
+80
+00:04:16.339 --> 00:04:20.043
+you could ask people to put their names,
+their email addresses and
+
+81
+00:04:20.043 --> 00:04:24.433
+ask them how much they'd be willing to
+pay for this book before it goes on sale.
+
+82
+00:04:24.433 --> 00:04:26.777
+And so here's what the data looked like.
+
+83
+00:04:26.777 --> 00:04:31.053
+So these are 20 numbers from
+the survey that was put out on
+
+84
+00:04:31.053 --> 00:04:33.594
+the website about my book, okay?
+
+85
+00:04:33.594 --> 00:04:36.276
+So this is life without a model, okay?
+
+86
+00:04:36.276 --> 00:04:39.200
+The answer to what did the data tell us.
+
+87
+00:04:39.200 --> 00:04:40.900
+It's in here somewhere,
+because this is the data.
+
+88
+00:04:40.900 --> 00:04:42.580
+It has to be in here somewhere.
+
+89
+00:04:42.580 --> 00:04:47.160
+But the problem is, so this is, there's
+no model to help us think about the data.
+
+90
+00:04:47.160 --> 00:04:49.860
+So this is what I would call the trivial
+model, meaning that there's no model.
+
+91
+00:04:49.860 --> 00:04:50.550
+Okay?
+
+92
+00:04:50.550 --> 00:04:53.470
+And the problem is the trivial
+model is not useful.
+
+93
+00:04:53.470 --> 00:04:56.415
+Because it doesn't provide any summary or
+any data reduction.
+
+94
+00:04:56.415 --> 00:04:59.420
+Okay?
+So put it this way, if all models
+
+95
+00:04:59.420 --> 00:05:03.200
+are gonna be wrong, you might as well
+try to find something that's useful.
+
+96
+00:05:03.200 --> 00:05:08.125
+Rather than have no model at all that's
+almost certainly not going to be useful.
+
+97
+00:05:08.125 --> 00:05:09.105
+All right?
+
+98
+00:05:09.105 --> 00:05:11.795
+So just for the sake of example,
+let's use the normal model.
+
+99
+00:05:11.795 --> 00:05:15.125
+So, the normal model is based
+on the normal distribution, and
+
+100
+00:05:15.125 --> 00:05:18.055
+it's the familiar bell curve that
+we've seen many, many times.
+
+101
+00:05:18.055 --> 00:05:18.920
+Okay?
+
+102
+00:05:18.920 --> 00:05:21.550
+The nice thing about the normal
+model is that it only requires
+
+103
+00:05:21.550 --> 00:05:22.700
+two parameters to estimate.
+
+104
+00:05:22.700 --> 00:05:24.810
+There's the mean, and
+the standard deviation, okay?
+
+105
+00:05:24.810 --> 00:05:27.470
+And we can estimate that from the data
+by just calculating the mean and
+
+106
+00:05:27.470 --> 00:05:30.050
+the standard deviation in the usual way.
+
+107
+00:05:30.050 --> 00:05:33.660
+So the first question we want to ask is,
+what do we expect to see?
+
+108
+00:05:33.660 --> 00:05:37.220
+If the population were truly
+coming from a normal distribution,
+
+109
+00:05:37.220 --> 00:05:39.350
+what would that look like, okay?
+
+110
+00:05:39.350 --> 00:05:41.590
+And it's always important
+to set expectations for
+
+111
+00:05:41.590 --> 00:05:45.210
+models, so I know it's very tempting
+to get right into the data and
+
+112
+00:05:45.210 --> 00:05:48.430
+see what they look like, but you gotta
+be able to set your expectations.
+
+113
+00:05:48.430 --> 00:05:51.820
+Appropriately, so that you know whether
+you're right or wrong in the end, okay?
+
+114
+00:05:51.820 --> 00:05:56.420
+So here's what we would expect the data
+to look like if they were drawn from,
+
+115
+00:05:56.420 --> 00:05:58.920
+as representative samples
+from the population
+
+116
+00:05:58.920 --> 00:06:00.580
+that was governed by
+a normal distribution.
+
+117
+00:06:00.580 --> 00:06:01.950
+So here's the normal curve.
+
+118
+00:06:01.950 --> 00:06:03.830
+It probably looks very familiar to you.
+
+119
+00:06:03.830 --> 00:06:05.140
+Now models are very useful,
+
+120
+00:06:05.140 --> 00:06:08.520
+because they can tell us a lot of
+different things about the population.
+
+121
+00:06:08.520 --> 00:06:10.130
+For example, this model, the normal model,
+
+122
+00:06:10.130 --> 00:06:15.510
+says that 68% of the population of readers
+would be willing to pay between $6 and
+
+123
+00:06:15.510 --> 00:06:18.600
+81 cents, and $27 and 59 cents,
+okay, how do we know that?
+
+124
+00:06:18.600 --> 00:06:21.470
+Because that's what the normal
+distribution based on this data set
+
+125
+00:06:21.470 --> 00:06:23.920
+tells us about the population, okay?
+
+126
+00:06:23.920 --> 00:06:27.140
+We can use the models to compute other
+quantities too, for example we might want
+
+127
+00:06:27.140 --> 00:06:30.330
+to know how many people will be
+willing to pay more than $30.
+
+128
+00:06:30.330 --> 00:06:33.700
+So we can use the normal
+distribution to say that 11% of
+
+129
+00:06:33.700 --> 00:06:37.410
+the population would be
+willing to pay more than 30.
+
+130
+00:06:37.410 --> 00:06:39.670
+So that's useful to know.
+
+131
+00:06:39.670 --> 00:06:43.210
+Now, the one thing about this picture
+that you have to just remember
+
+132
+00:06:43.210 --> 00:06:45.370
+is that there is no data in this picture.
+
+133
+00:06:45.370 --> 00:06:47.840
+Now we use the data to draw the picture,
+
+134
+00:06:47.840 --> 00:06:51.350
+because we use the data to calculate
+the mean and the standard deviation.
+
+135
+00:06:51.350 --> 00:06:53.947
+But there's no actual
+data in this picture.
+
+136
+00:06:53.947 --> 00:06:58.270
+So just keep that in mind.
+
+137
+00:06:58.270 --> 00:06:59.840
+Now, but
+eventually we'll look at the data.
+
+138
+00:06:59.840 --> 00:07:03.320
+And we want to know how that
+data matches our expectation,
+
+139
+00:07:03.320 --> 00:07:04.750
+which is what this picture is giving us.
+
+140
+00:07:05.910 --> 00:07:09.930
+Now before we actually get to the data,
+one of the things I just want to do is to
+
+141
+00:07:09.930 --> 00:07:14.310
+show you, what would data look like if it
+came from a normal distribution, okay?
+
+142
+00:07:14.310 --> 00:07:16.890
+Now the nice thing about most software
+packages now is that we could just
+
+143
+00:07:16.890 --> 00:07:19.560
+simulate the error from a normal
+distribution and see what it looks like.
+
+144
+00:07:19.560 --> 00:07:21.490
+So here's what that picture looks like.
+
+145
+00:07:21.490 --> 00:07:24.460
+I've made a histogram of 20
+data points that come from
+
+146
+00:07:24.460 --> 00:07:26.730
+exactly a normal distribution.
+
+147
+00:07:26.730 --> 00:07:29.230
+And I plotted the theoretical
+normal curve over.
+
+148
+00:07:29.230 --> 00:07:30.790
+You can see that the histogram and
+
+149
+00:07:30.790 --> 00:07:32.880
+the blue curve match very
+nicely with each other.
+
+150
+00:07:32.880 --> 00:07:36.550
+This is all very nice and
+ideal because it's simulated, okay?
+
+151
+00:07:36.550 --> 00:07:40.040
+So this is what I call,
+drawing a fake picture, okay?
+
+152
+00:07:40.040 --> 00:07:42.980
+Drawing a fake picture I
+find to be terribly useful
+
+153
+00:07:42.980 --> 00:07:45.520
+because it really helps
+to set expectations.
+
+154
+00:07:45.520 --> 00:07:48.322
+And sometimes its okay to even
+literally just draw it with your hand.
+
+155
+00:07:48.322 --> 00:07:50.528
+You don't have to
+necessarily use a computer.
+
+156
+00:07:50.528 --> 00:07:55.028
+But draw a fake picture of what
+you're expecting to see with
+
+157
+00:07:55.028 --> 00:07:57.290
+the actual data okay?
+
+158
+00:07:57.290 --> 00:07:59.010
+So this is what normal data looks like,
+
+159
+00:07:59.010 --> 00:08:02.220
+if we see a histogram it
+kinda looks like this.
+
+160
+00:08:02.220 --> 00:08:06.560
+We might think okay a normal distribution
+is a pretty reasonable approximation for
+
+161
+00:08:06.560 --> 00:08:08.140
+the dataset okay?
+
+162
+00:08:08.140 --> 00:08:12.290
+So, now one thing that we can
+see from the fake picture
+
+163
+00:08:12.290 --> 00:08:15.250
+is that the normal distribution probably
+isn't going to be perfect from the get-go.
+
+164
+00:08:15.250 --> 00:08:17.990
+Because in particularly you can
+see on the left-hand side there
+
+165
+00:08:17.990 --> 00:08:19.545
+that there are negative values, okay?
+
+166
+00:08:19.545 --> 00:08:22.510
+[LAUGH] And it doesn't seem plausible
+
+167
+00:08:22.510 --> 00:08:27.260
+that people would be willing to pay
+negative dollars for this book.
+
+168
+00:08:27.260 --> 00:08:31.300
+And so maybe that's probably not the best
+model, but it may be still useful.
+
+169
+00:08:31.300 --> 00:08:32.860
+Remember that no model is
+going to be right, but
+
+170
+00:08:32.860 --> 00:08:36.270
+it may actually still be useful for
+helping us summarize the data.
+
+171
+00:08:36.270 --> 00:08:39.055
+Okay, so here's what the data
+actually looked like, okay?
+
+172
+00:08:39.055 --> 00:08:45.045
+I've got a histogram of all of the data
+points that were from the survey.
+
+173
+00:08:45.045 --> 00:08:46.545
+This is 20 data points.
+
+174
+00:08:46.545 --> 00:08:49.035
+And I've overlaid it with the blue curve,
+the normal distribution,
+
+175
+00:08:49.035 --> 00:08:50.515
+that's fitted to the data.
+
+176
+00:08:50.515 --> 00:08:53.442
+So you have to ask yourself
+how does the data match
+
+177
+00:08:53.442 --> 00:08:56.622
+up with this normal distribution,
+with this model, okay?
+
+178
+00:08:56.622 --> 00:09:00.162
+Now, given what we've seen before
+with the theoretical normal curve,
+
+179
+00:09:00.162 --> 00:09:02.972
+with the fake data and
+the fake picture that we showed,
+
+180
+00:09:02.972 --> 00:09:06.032
+how does this picture compare
+to the fake picture, okay?
+
+181
+00:09:07.052 --> 00:09:10.642
+Now, you might think it doesn't look
+that good, actually, [LAUGH] right?
+
+182
+00:09:10.642 --> 00:09:12.292
+So what's wrong with this picture?
+
+183
+00:09:12.292 --> 00:09:17.400
+Well, you got this huge spike in
+the histogram at around $10, okay?
+
+184
+00:09:17.400 --> 00:09:18.830
+That's not predicted by the volume,
+
+185
+00:09:18.830 --> 00:09:22.160
+the normal distribution doesn't have
+a huge spike right there, and furthermore,
+
+186
+00:09:22.160 --> 00:09:26.750
+there are no values that are either close
+to zero or negative, whereas the normal
+
+187
+00:09:26.750 --> 00:09:32.780
+distribution has all these negative
+values in its functional form.
+
+188
+00:09:32.780 --> 00:09:36.190
+So it doesn't look like
+the histogram really fits that well.
+
+189
+00:09:36.190 --> 00:09:37.940
+So what are we going to do about that?
+
+190
+00:09:37.940 --> 00:09:39.540
+So there may be multiple problems.
+
+191
+00:09:39.540 --> 00:09:43.200
+There may be multiple explanations for
+why the histogram from the data
+
+192
+00:09:43.200 --> 00:09:46.520
+doesn't look like what we'd expect
+from a normal distribution.
+
+193
+00:09:46.520 --> 00:09:49.920
+For starters, the data may not even
+be representative of the population.
+
+194
+00:09:49.920 --> 00:09:54.550
+This is just a website that was up there
+and anyone who just happened to come by
+
+195
+00:09:54.550 --> 00:09:57.460
+could fill in their name and
+say what price they'd be willing to pay.
+
+196
+00:09:57.460 --> 00:10:00.820
+Who knows who these people were, who knows
+if they were even prospective customers,
+
+197
+00:10:00.820 --> 00:10:03.890
+people who would actually buy the product?
+
+198
+00:10:03.890 --> 00:10:06.730
+So that the data collection process
+might have been very skewed.
+
+199
+00:10:06.730 --> 00:10:08.890
+We have no real way of knowing that.
+
+200
+00:10:08.890 --> 00:10:13.360
+But on the other hand it could be that the
+model clearly just does not fit well and
+
+201
+00:10:13.360 --> 00:10:15.550
+we may need to revise the model too.
+
+202
+00:10:15.550 --> 00:10:19.900
+It may be easier in some circumstances to
+revise the model than to revise the data,
+
+203
+00:10:19.900 --> 00:10:21.245
+especially at the data collection process.
+
+204
+00:10:21.245 --> 00:10:23.175
+Is very expensive, okay?
+
+205
+00:10:23.175 --> 00:10:26.315
+So one of the things we can do is
+let's try the gamma distribution.
+
+206
+00:10:26.315 --> 00:10:29.185
+Okay, so the gamma distribution
+is another model and
+
+207
+00:10:29.185 --> 00:10:32.495
+one of its key features is that it
+only allows for positive values.
+
+208
+00:10:32.495 --> 00:10:35.207
+So unlike the normal which has
+negative and positive values.
+
+209
+00:10:35.207 --> 00:10:38.627
+The gamma distribution only
+allows positive values.
+
+210
+00:10:38.627 --> 00:10:41.437
+So then we can just repeat all the steps
+that we just went right through.
+
+211
+00:10:41.437 --> 00:10:42.627
+We can set expectations.
+
+212
+00:10:42.627 --> 00:10:47.557
+We can draw a fake picture and then we
+can compare our expectations to the data.
+
+213
+00:10:47.557 --> 00:10:48.110
+Okay.
+
+214
+00:10:48.110 --> 00:10:51.060
+So, I'll skip the first two steps there,
+and I'll just show you,
+
+215
+00:10:51.060 --> 00:10:53.050
+here's what the picture
+looks like with the data,
+
+216
+00:10:53.050 --> 00:10:55.790
+and the gamma distribution that's
+fitted on top of it, okay?
+
+217
+00:10:55.790 --> 00:10:59.870
+So you can see from this picture that
+the fit's not perfect either, okay?
+
+218
+00:10:59.870 --> 00:11:01.780
+Maybe, you could argue
+it's a little bit better,
+
+219
+00:11:01.780 --> 00:11:05.040
+you've got a little hump
+wherever that spike at ten is.
+
+220
+00:11:05.040 --> 00:11:09.830
+But it's not, it doesnt exactly fit it
+perfectly, and still you have a bunch of,
+
+221
+00:11:09.830 --> 00:11:15.040
+the curve, is kind of covering values
+where there's no data between the zero and
+
+222
+00:11:15.040 --> 00:11:16.370
+five range.
+
+223
+00:11:16.370 --> 00:11:19.226
+And now, but the important thing is
+that we have a different model, and so
+
+224
+00:11:19.226 --> 00:11:22.470
+a different model is gonna
+yield different predictions.
+
+225
+00:11:22.470 --> 00:11:26.058
+So this model is telling us something
+completely different about the population
+
+226
+00:11:26.058 --> 00:11:27.650
+than the normal model was, right?
+
+227
+00:11:27.650 --> 00:11:31.090
+So the normal model told us there was
+gonna be a big hump kind of around 20.
+
+228
+00:11:31.090 --> 00:11:35.780
+But this model tells us that the hump's
+more like around seven and ten.
+
+229
+00:11:35.780 --> 00:11:36.470
+Okay?
+
+230
+00:11:36.470 --> 00:11:39.740
+So the model is telling us something very
+different about what the population is
+
+231
+00:11:39.740 --> 00:11:41.890
+willing to pay for this product.
+
+232
+00:11:41.890 --> 00:11:42.800
+Okay?
+
+233
+00:11:42.800 --> 00:11:43.790
+For example,
+
+234
+00:11:43.790 --> 00:11:47.640
+before we said that 11% of people
+would be willing to pay more than $30.
+
+235
+00:11:47.640 --> 00:11:50.100
+However, if we use the gamma model
+
+236
+00:11:50.100 --> 00:11:54.100
+we find that only 7% of people would
+be willing to pay more than $30.
+
+237
+00:11:54.100 --> 00:11:58.610
+So the importance of using models,
+different types of models is that
+
+238
+00:11:58.610 --> 00:12:01.220
+they tell you very different
+things about the population, and
+
+239
+00:12:01.220 --> 00:12:03.350
+they result in very different predictions.
+
+240
+00:12:03.350 --> 00:12:06.370
+And so, if you're interested in
+making these predictions and
+
+241
+00:12:06.370 --> 00:12:09.850
+being accurate about them, you want
+to make sure you have a model that's
+
+242
+00:12:09.850 --> 00:12:13.670
+reasonably a reasonable
+approximation of the population.
+
+243
+00:12:13.670 --> 00:12:17.330
+And you can use the data to
+help you see if that fits well.
+
+244
+00:12:17.330 --> 00:12:21.370
+Now we have looked at two
+different types of models
+
+245
+00:12:21.370 --> 00:12:26.220
+to tell us about our data and
+to tell us about the population, okay?
+
+246
+00:12:26.220 --> 00:12:30.290
+So now you may want to keep, continue to
+refine this, think about different models.
+
+247
+00:12:30.290 --> 00:12:33.290
+Obviously this last one didn't really
+fit perfectly, so you might wanna
+
+248
+00:12:33.290 --> 00:12:36.550
+either refine your model or you might want
+to do another survey to get more data,
+
+249
+00:12:36.550 --> 00:12:41.020
+to get a better sense and so you kind
+of think about where you go from here.
+
+250
+00:12:41.020 --> 00:12:45.350
+The point of this whole exercise
+is that you get a little sketch
+
+251
+00:12:45.350 --> 00:12:48.000
+of where you're gonna go and
+kinda what your solution's gonna be.
+
+252
+00:12:48.000 --> 00:12:52.100
+If your question was originally,
+how much are people willing to pay for
+
+253
+00:12:52.100 --> 00:12:55.500
+this product,
+you have a better sense now in terms of
+
+254
+00:12:55.500 --> 00:12:58.180
+what the shape of that
+distribution might look like.
+
+255
+00:12:58.180 --> 00:13:00.350
+And what the population
+might be willing to do.
+
+256
+00:13:00.350 --> 00:13:03.190
+From here where you go, it depends.
+
+257
+00:13:03.190 --> 00:13:06.750
+You may have enough information
+as it is to kind of set prices or
+
+258
+00:13:06.750 --> 00:13:09.390
+to figure out how your
+marketing campaign's gonna go.
+
+259
+00:13:09.390 --> 00:13:11.550
+Or you might want to go
+into more formal modeling.
+
+260
+00:13:11.550 --> 00:13:13.990
+So you can test the sensitivity
+of your assumptions,
+
+261
+00:13:13.990 --> 00:13:16.470
+of your expectations to various features.
+
+262
+00:13:16.470 --> 00:13:19.997
+So that's what we'll talk about more
+when we talk about formal modeling.

@@ -1,0 +1,326 @@
+WEBVTT
+
+1
+00:00:02.350 --> 00:00:04.950
+So, the way in which you'll interact with
+data science depends a little bit on
+
+2
+00:00:04.950 --> 00:00:06.940
+what kind of organization you are.
+
+3
+00:00:06.940 --> 00:00:09.920
+To some extent, it depends a lot
+on the size of your organization.
+
+4
+00:00:09.920 --> 00:00:13.150
+So, when you're just a start up,
+when you're an early stage company, or
+
+5
+00:00:13.150 --> 00:00:15.180
+you're just one person
+with a very small team,
+
+6
+00:00:15.180 --> 00:00:17.450
+maybe like one other person working for
+you.
+
+7
+00:00:17.450 --> 00:00:22.030
+You may not need to worry so much yet
+about how to do experimentation,
+
+8
+00:00:22.030 --> 00:00:26.460
+how to do machine learning, how to do sort
+of prediction and downstream calculations.
+
+9
+00:00:26.460 --> 00:00:30.430
+The first order of business is just making
+sure your sort of data house is in order.
+
+10
+00:00:30.430 --> 00:00:33.610
+And the way to do that is to make
+sure you focus on infrastructure.
+
+11
+00:00:33.610 --> 00:00:36.480
+So the first thing that you need to do
+is build out the infrastructure for
+
+12
+00:00:36.480 --> 00:00:38.860
+storing the data,
+the databases and so forth.
+
+13
+00:00:38.860 --> 00:00:42.070
+The software that's gonna
+be run to pull those data,
+
+14
+00:00:42.070 --> 00:00:45.070
+the servers that are gonna serve
+the data to other people, and
+
+15
+00:00:45.070 --> 00:00:48.150
+the servers that you'll interact with
+yourself in order to get the data out.
+
+16
+00:00:48.150 --> 00:00:51.560
+So all that sort of requires
+infrastructure building up at first.
+
+17
+00:00:51.560 --> 00:00:55.690
+So often the first people that you
+get to hire into a data science team,
+
+18
+00:00:55.690 --> 00:00:58.780
+are not people that you would necessarily
+called data scientists in the sense that
+
+19
+00:00:58.780 --> 00:01:01.230
+they're not analyzing the data,
+they're not doing machine learning.
+
+20
+00:01:01.230 --> 00:01:02.810
+They might do a little bit of that but
+
+21
+00:01:02.810 --> 00:01:05.370
+mostly they're involved on just
+making sure the machine is running,
+
+22
+00:01:05.370 --> 00:01:08.750
+making sure the data's getting collected,
+its secure, its stored and so fourth.
+
+23
+00:01:10.170 --> 00:01:12.100
+So when your a mid size organization,
+
+24
+00:01:12.100 --> 00:01:14.460
+then hopefully you've got
+the basic infrastructure in place.
+
+25
+00:01:14.460 --> 00:01:17.110
+And you can start thinking about building
+out your real data science team.
+
+26
+00:01:17.110 --> 00:01:19.990
+And so to do that you can bring on board
+people that are actually called data
+
+27
+00:01:19.990 --> 00:01:20.970
+scientists.
+
+28
+00:01:20.970 --> 00:01:23.050
+And those are the folks who will
+then actually use the data.
+
+29
+00:01:23.050 --> 00:01:25.410
+So they might pull it out of the database.
+
+30
+00:01:25.410 --> 00:01:26.990
+They might run some experiments.
+
+31
+00:01:26.990 --> 00:01:28.980
+They might build machine
+learning algorithms.
+
+32
+00:01:28.980 --> 00:01:32.200
+They might analyze the data to see
+if you can identify any patterns or
+
+33
+00:01:32.200 --> 00:01:34.530
+trends in behavior that you care about.
+
+34
+00:01:34.530 --> 00:01:35.820
+And so at that point,
+
+35
+00:01:35.820 --> 00:01:38.300
+you're thinking about actually
+building out the data science team.
+
+36
+00:01:38.300 --> 00:01:42.110
+You're also thinking about implementing
+these data science ideas and products.
+
+37
+00:01:42.110 --> 00:01:44.850
+So again, the data scientist might
+build something like a machine learning
+
+38
+00:01:44.850 --> 00:01:47.740
+algorithm that predicts,
+say, consumer behavior.
+
+39
+00:01:47.740 --> 00:01:49.650
+Once you have that algorithm built out,
+
+40
+00:01:49.650 --> 00:01:51.970
+you might need to implement
+it back on to your system.
+
+41
+00:01:51.970 --> 00:01:55.530
+And you might need to scale it up, so
+that it can be run on the whole data set.
+
+42
+00:01:55.530 --> 00:01:57.380
+You might wanna build some
+sort of visualization,
+
+43
+00:01:57.380 --> 00:02:00.420
+that people who aren't necessarily
+data scientists can interact with.
+
+44
+00:02:00.420 --> 00:02:02.940
+And so, that would be turning it back
+over to the data engineering team.
+
+45
+00:02:02.940 --> 00:02:05.150
+So there's still infrastructure concerns,
+
+46
+00:02:05.150 --> 00:02:08.220
+because you have a large set of data that
+you've hopefully collected at this point.
+
+47
+00:02:08.220 --> 00:02:10.390
+You need to be secure about it,
+you need to have a database,
+
+48
+00:02:10.390 --> 00:02:11.690
+you need to be able to scale it.
+
+49
+00:02:11.690 --> 00:02:15.439
+But, now you're sort of graduating into
+a more complete view of data science.
+
+50
+00:02:16.450 --> 00:02:18.920
+For a large organization you have
+all those same sorts of things.
+
+51
+00:02:18.920 --> 00:02:20.470
+You now have a data infrastructure,
+
+52
+00:02:20.470 --> 00:02:23.080
+you might have a data science
+team that's running experiments.
+
+53
+00:02:23.080 --> 00:02:25.890
+You may be using those
+experiments to make decisions.
+
+54
+00:02:25.890 --> 00:02:29.580
+But now you have one additional component
+which is really managing the team and
+
+55
+00:02:29.580 --> 00:02:32.810
+keeping everybody on task and coordinated.
+
+56
+00:02:32.810 --> 00:02:37.730
+So at this point the data science manager
+role becomes a little bit more involved,
+
+57
+00:02:37.730 --> 00:02:40.570
+in the sense that you might be
+coordinating multiple teams of data
+
+58
+00:02:40.570 --> 00:02:42.390
+scientists working on different projects.
+
+59
+00:02:42.390 --> 00:02:45.140
+You might have a team that works
+exclusively on building machine
+
+60
+00:02:45.140 --> 00:02:46.340
+learning projects.
+
+61
+00:02:46.340 --> 00:02:49.230
+You might have another team that works
+exclusively on running experiments and
+
+62
+00:02:49.230 --> 00:02:51.640
+inferring what you can
+from those experiments.
+
+63
+00:02:51.640 --> 00:02:55.190
+And then someone has to be in charge of
+coordinating those activities making sure
+
+64
+00:02:55.190 --> 00:02:57.690
+they're connected to the right
+people within your organization.
+
+65
+00:02:57.690 --> 00:03:00.390
+Whether that's the marketing team,
+the business group or
+
+66
+00:03:00.390 --> 00:03:03.040
+whoever else that you're
+collaborating with.
+
+67
+00:03:03.040 --> 00:03:05.250
+You have to be able to
+connect those people.
+
+68
+00:03:05.250 --> 00:03:08.770
+And so at that scale the full data
+science infrastructure is in place.

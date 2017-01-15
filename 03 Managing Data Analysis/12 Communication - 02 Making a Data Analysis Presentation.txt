@@ -1,0 +1,74 @@
+This lecture provides just a couple of
+ideas of how to make a good data analysis presentation. There are a couple of key components that
+I feel like are important to making a good presentation that involves data analysis, and so I thought I would just
+list a couple of them here. Just so
+you can kind of keep them in mind and think about them the next time you're
+making your next presentation. So, the first and I think the most
+important thing you want to have in a presentation is to state the question
+that you're trying to answer. I can't tell you how many times
+I've been in a presentation and we've been ten minutes in and I still don't exactly know what question
+this person is trying to answer. Okay. So, it's important, upfront, that you not
+assume that everyone is on the same page, that everyone has the same background,
+but to state the question clearly and succinctly so
+that everyone knows what the goal is. Okay.
+And once everyone knows what the goal is, we could all be kind of on the same page
+and oriented towards achieving that goal. Okay.
+So stating the question is very important from
+the get go in a presentation. Secondary to that, you might want to
+describe what type of question it is that you're trying to answer if it's
+not immediately obvious, okay. So remember that we have the six types
+of questions that you can try to ask. And so it's useful to the audience
+sometimes to know if you're trying to ask an inferential question versus
+a causal one, versus a predictive one. That can help to inform any discussion
+that may occur afterward in terms of improving your analysis or modifying it. Another thing that I like to do that I
+think is very useful is to show the data. Okay.
+It's often helpful or tempting to just show summaries, or you
+just kind of just not even data summaries, but just kind of summaries in
+words of what the results are. But it's actually very
+useful to show the data. But just as a warning though,
+this could be a double edged sword. Because people like to talk
+about data when they see it. So if you want people to have good
+discussion, to have informed discussion that may be useful to you,
+I think it's very useful to show the data. People love to talk about data, but, so
+even if you don't want that discussion to happen necessarily, you may be better
+off in the end if it does happen. And so to this extent,
+I find plots are better than tables, because plots show people, you know,
+a summary of the data, but they also show people deviations
+from what might be expected, and so plots are very useful for
+kind of producing discussion and kind of encouraging people
+to think about the data. When it's possible, if you're making a
+presentation and you're showing the data, if you're showing some summary or
+a statistic about the data, try to show a measure of
+uncertainty to go with it. And the reason why is it just provides for
+a richer discussion when you can incorporate the uncertainty
+into any predictions or any estimates that you make from the data. And so, try to have a broad array
+of measures of uncertainty so that people can get the full picture
+of what's going on in your analysis. So for example, if you have a primary
+model, it can be used to show results for say, a bunch of secondary models or to
+show confidence intervals for parameters. Lastly, I think it's important that when
+you present results from a data analysis, that you separate three things, they are the evidence,
+the interpretation and the decision. Okay? It's often easy to kind of conflate
+all these things into one sentence or to one statement and
+I think it helps people to provide a useful discussion
+if you can separate them out. So for example, if you're looking at,
+let's say, an air pollutant and some health outcome, you might find that the increase in the air pollutant results,
+you estimate that an increase in the air pollutant results
+in a 5% increase in the health outcome. So that's bad. So maybe the health outcome is mortality. So, an increase in the pollutant results
+in a five percent increase in mortality. So that's the evidence,
+that is the result of your analysis. You estimated some parameter and
+that was the result, and maybe there's a competence level that
+you can present around that too. So, the interpretation might be,
+okay air pollution is bad for you, okay, and then the decision might be we
+need to lower air pollution levels in whatever environment we're thinking about. So there's three separate components there
+that all could be evaluated independently. Given a set of evidence,
+you're interpretation might be that, oh if it's only 5% maybe air
+pollution's not so bad for you. Or it might be 5% and it's terrible. But your interpretation can be
+made separate from the evidence that's provided. And further more, what you do about it is
+further separate from what you think about it, how you interpret it,
+and what the evidence is. So, separating the evidence,
+the interpretation, and the decision can help people think
+about the different components. And can weigh the evidence, in terms
+of how they would react differently or how important that evidence is to
+whatever process they're involved in. So, I think doing that provides for
+a useful presentation and provides for a more important, a useful discussion
+about the meaning of your results and what we should do about them.

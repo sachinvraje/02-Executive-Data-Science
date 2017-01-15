@@ -1,0 +1,360 @@
+WEBVTT
+
+1
+00:00:03.260 --> 00:00:08.700
+Hi, my name is Brian Caffo and this is
+a brief lecture on version control.
+
+2
+00:00:08.700 --> 00:00:11.170
+Remember the theme of this
+course is contrasting
+
+3
+00:00:12.340 --> 00:00:16.950
+what happens in real life
+versus the ideal data analysis.
+
+4
+00:00:16.950 --> 00:00:22.100
+I think version control is one of those
+instances where it is exactly the ideal
+
+5
+00:00:22.100 --> 00:00:27.010
+for data analysis, but it's a fairly
+easily attainable ideal as opposed to
+
+6
+00:00:27.010 --> 00:00:31.700
+many of the other topics in this class
+where it's very hard to obtain it.
+
+7
+00:00:31.700 --> 00:00:35.093
+This version control just adds
+a little bit of work, but
+
+8
+00:00:35.093 --> 00:00:36.907
+often saves you a lot of time.
+
+9
+00:00:36.907 --> 00:00:39.732
+So now, just to return to this quote,
+When you write code,
+
+10
+00:00:39.732 --> 00:00:42.797
+keep in mind that you're
+collaborating with your future self.
+
+11
+00:00:42.797 --> 00:00:46.414
+And the ability to look at your code and
+
+12
+00:00:46.414 --> 00:00:51.615
+go back to previous versions and
+see the history of your
+
+13
+00:00:51.615 --> 00:00:57.290
+process is an incredibly
+important part of data analysis.
+
+14
+00:00:57.290 --> 00:00:59.960
+So we've talked in our
+report writing section,
+
+15
+00:00:59.960 --> 00:01:04.040
+we talked about how important it
+is to create reproducible reports.
+
+16
+00:01:04.040 --> 00:01:11.280
+That's certainly one component of having
+a very well done and documented data
+
+17
+00:01:11.280 --> 00:01:16.530
+analysis but keeping all your versioning
+of your code as you go is another one.
+
+18
+00:01:16.530 --> 00:01:21.630
+Not only does it help you for
+back up and archival purposes,
+
+19
+00:01:21.630 --> 00:01:26.628
+but it also helps keep a log of
+exactly what you did, and for
+
+20
+00:01:26.628 --> 00:01:29.184
+data and analytic purposes.
+
+21
+00:01:29.184 --> 00:01:33.870
+So, in general,
+version control is just good practice.
+
+22
+00:01:33.870 --> 00:01:37.990
+And, unlike a lot of the other topics
+in this class, it's pretty easy and
+
+23
+00:01:37.990 --> 00:01:39.410
+it's directly under your control.
+
+24
+00:01:41.580 --> 00:01:45.080
+Having said that, I'll take this
+moment to complain about Roger Pang.
+
+25
+00:01:46.410 --> 00:01:52.570
+And, so I've been using version
+control for a long time.
+
+26
+00:01:52.570 --> 00:01:55.636
+I think the earliest version
+control I used was RCS,
+
+27
+00:01:55.636 --> 00:01:58.087
+a fairly old version of version control.
+
+28
+00:01:58.087 --> 00:02:04.895
+And then CVS, which was another,
+older version of version control.
+
+29
+00:02:04.895 --> 00:02:07.890
+And then Roger Peng at one point
+came into my office and said,
+
+30
+00:02:07.890 --> 00:02:11.850
+everyone is using this program called
+subversion, and you've got to switch.
+
+31
+00:02:11.850 --> 00:02:14.290
+No one's using CVS anymore.
+
+32
+00:02:14.290 --> 00:02:16.500
+And so, I resisted for a little bit.
+
+33
+00:02:16.500 --> 00:02:20.050
+And then I said, you know, Roger's almost
+always right about computing things.
+
+34
+00:02:20.050 --> 00:02:21.720
+I'm going to switch.
+
+35
+00:02:21.720 --> 00:02:22.980
+Switch to subversion.
+
+36
+00:02:24.070 --> 00:02:28.100
+Which was a monumental effort changing
+all my CVS repositories to Subversion
+
+37
+00:02:28.100 --> 00:02:29.100
+repositories.
+
+38
+00:02:29.100 --> 00:02:34.700
+And then the next day, Roger comes into
+my office and says, everyone's using Git.
+
+39
+00:02:34.700 --> 00:02:37.360
+You gotta quit using Subversion.
+
+40
+00:02:37.360 --> 00:02:40.590
+So, I resisted then for
+
+41
+00:02:40.590 --> 00:02:44.500
+another long period of time to using
+Git and stuck with Subversion.
+
+42
+00:02:44.500 --> 00:02:50.350
+But once I finally switched to git,
+I was very happy about it.
+
+43
+00:02:50.350 --> 00:02:52.760
+And I've noticed that
+I've been using Git for
+
+44
+00:02:52.760 --> 00:02:55.750
+a while and Git seems to be here to stay.
+
+45
+00:02:55.750 --> 00:02:59.050
+It's not gonna get supplanted by
+the next version control system.
+
+46
+00:02:59.050 --> 00:03:01.700
+At least it doesn't appear to be so
+any time soon.
+
+47
+00:03:01.700 --> 00:03:06.660
+At any rate, for the people that
+you're managing, you should be
+
+48
+00:03:07.890 --> 00:03:12.360
+inspiring them to either use Git,
+or Subversion,
+
+49
+00:03:12.360 --> 00:03:16.050
+or Mercurial or
+some of these kinds of tools for
+
+50
+00:03:16.050 --> 00:03:20.550
+their analyses,
+some of these version control tools.
+
+51
+00:03:20.550 --> 00:03:23.060
+So just to orient you
+to the software I think
+
+52
+00:03:23.060 --> 00:03:26.940
+if I'm going to make a recommendation
+I'm gonna suggest Git.
+
+53
+00:03:26.940 --> 00:03:30.880
+And so Git is the versioning
+version control software.
+
+54
+00:03:30.880 --> 00:03:36.310
+It is what helps you
+keep a complete history
+
+55
+00:03:36.310 --> 00:03:42.270
+of your code and your analysis files,
+and if you want, even your data files.
+
+56
+00:03:42.270 --> 00:03:43.870
+And so on as you go.
+
+57
+00:03:43.870 --> 00:03:47.910
+So you can go backwards
+to any point in time or
+
+58
+00:03:47.910 --> 00:03:52.460
+go forwards if you've gone back again.
+
+59
+00:03:52.460 --> 00:03:56.880
+Just at no point is anything that gets
+checked into your Git repository does it
+
+60
+00:03:56.880 --> 00:03:57.990
+get lost.
+
+61
+00:03:57.990 --> 00:04:01.410
+So Git is the tool for
+your version control and
+
+62
+00:04:01.410 --> 00:04:03.650
+then you need a place to host it.
+
+63
+00:04:03.650 --> 00:04:05.360
+Now you can do this yourself.
+
+64
+00:04:05.360 --> 00:04:10.050
+If your in a company presumably you
+have version control systems in place.
+
+65
+00:04:10.050 --> 00:04:12.810
+If you're at a smaller company,
+
+66
+00:04:12.810 --> 00:04:15.530
+you might want to look at one
+of these get hosting services.
+
+67
+00:04:15.530 --> 00:04:20.260
+Some of the most popular ones, at least
+the two that I'm most familiar with
+
+68
+00:04:20.260 --> 00:04:24.070
+are GitHub which I think is clearly
+the largest, and then Bitbucket.
+
+69
+00:04:24.070 --> 00:04:27.580
+So these are not version
+control tools themselves,
+
+70
+00:04:27.580 --> 00:04:32.990
+these are hosting places where you
+are pushing your code and files up.
+
+71
+00:04:32.990 --> 00:04:36.520
+This is, in essence,
+hosting the Git software for you, and
+
+72
+00:04:36.520 --> 00:04:38.310
+then keeping track of your files.
+
+73
+00:04:39.430 --> 00:04:45.304
+And so they're wonderful tools and I would
+highly suggest this as using Git and
+
+74
+00:04:45.304 --> 00:04:49.134
+using version control as
+a part of best practices.
+
+75
+00:04:49.134 --> 00:04:52.878
+And as part of your management
+strategy encouraging the use or
+
+76
+00:04:52.878 --> 00:04:55.327
+maybe requiring the use of these tools.

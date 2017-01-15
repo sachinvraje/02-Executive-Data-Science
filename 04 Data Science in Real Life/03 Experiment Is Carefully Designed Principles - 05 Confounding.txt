@@ -1,0 +1,56 @@
+Hi, my name is Brian Caffo. And this is the lecture on confounding as
+part of our executive data science series. I'd like to thank Jeff Leek who wrote
+these slides, and I'm giving the lecture. So sometimes you see
+unexpected patterns in data. And as an example, we have here the number
+of people who've drowned by falling into a pool, by the films Nicholas Cage
+has appeared in over time. And there's a strong correlation
+just by happenstance. So what are some of the reasons that
+we see spurious correlations in data? Probably this example isn't the best, because this isn't really
+an example of confounding. And we'll go over why in a few slides. But one potential reason we
+see associations that maybe don't make sense or are not real is
+because of the idea of confounding. And confounding is one of
+the central topics in statistics. And I would say it's one
+of the core reasons that observational data analysis is hard. Let's go through a simple exam
+that Jeff concocted just to illustrate the principle of confounding. Here we see a picture of Jeff
+playing with his son Dexter. He points out that he has big shoes,
+and he's literate, he claims he's somewhat literate, but
+I've seen him read and he's literate. And Dexter has little tiny shoes and
+is not literate because he's a little kid. So, imagine conducting a data analysis with some variables, and
+you see an association like that. Well, in this example you might say, okay, well,
+is shoe size associated with literacy? But there's another variable,
+which is age. In this case, Dexter is young and
+Jeff is older, middle aged he claims. And so that is ultimately the intermediary
+between the relationship. So we might put it in a graph like this
+where we have shoe size, literacy and age, and we have the arrows in the sense
+that age corresponds to shoe size. Younger people have smaller feet. Older people have bigger feet. And age corresponds to literacy. As we age and develop,
+we develop our reading skills. And so this is the idea of confounding. That the confounder exists between
+what you're using to predict, and what you are predicting. And it, the name confounder,
+comes because it can confound. In other words, it confounds the relationship
+that you're trying to look at. So, here's another funny example that he
+came up with that came from the XKCD comic book, where sales correlate with
+geography, but so do lots of other things. And this is basically what
+this comic is illustrating, is that whenever you look
+at any of these heat maps. Right? What you see are very consistent hotspots,
+and those hotspots tend to just be where most
+people live, and the comics says, pet peeve #208, geographic profile maps which
+are specifically just population maps. In other words,
+whatever you're trying to study and geography is being confounded by the
+number of people that live in that area. So confounding just to reiterate and
+to summarize this lecture, confounding is the idea that a relationship between
+a variable you're interested in and an outcome is spurious and really due to a third variable that
+really is associated with the other two. Okay? And so It's very often the case that we
+find relationships in our data set and have to be able to navigate
+through things like confounding to figure out whether these associations
+are real, or whether they're fake. And just to give you a sense to
+foreshadow some later lectures, how do we deal with confounding? How do we address it? Well the big way that we address it
+is through things like adjustment. In the first case with the shoe size
+example if we had a bunch of people and we had their shoe sizes and we had a bunch
+of people and we had their reading levels. If we fit a model that had shoe size
+we'd get a positive association but if we adjust it for age right? If we adjusted for age,
+then that association would go away. Same thing here where if we looked at
+geography as it was associated with whatever they were looking at, subscribers
+to Martha Stewart Living in this case. And we accounted for
+population density at that geographic location,
+then the relationship would go away, okay? So, adjustment,
+things like adjustment using models, is going to be one of the ways that
+we look to, to address confounding.

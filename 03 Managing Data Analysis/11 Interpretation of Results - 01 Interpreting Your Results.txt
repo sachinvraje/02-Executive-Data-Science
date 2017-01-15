@@ -1,0 +1,157 @@
+This lecture is about
+interpreting your results. Because data analysis is an iterative
+process, interpretation is actually something that happens continuously
+throughout the whole process. But because it's so important,
+it deserves a separate discussion. Interpretation in the data analysis is
+a continuous part of the entire data analysis process. And just like with other
+aspects of data analysis, everything you do is based on setting
+expectations and kind of matching the data that you collect with the information
+that you collect to those expectations. Now the expectations for your
+interpretation will be based on things like exploratory data analysis and
+formal modelling. Now when the interpretation does
+not match your expectations, that you're gonna have to figure
+out whether it's because your expectations were incorrect or
+because your interpretation is incorrect. And so figuring that out is part of
+the iterative nature of interpretation. And even though this is one of
+the last steps of any data analysis, you may need to go back to
+the exploratory data analysis or the formal modeling stages if
+the things that you've discover in your interpretation challenge
+what you found previously. So there are a couple of basic principles
+to keep in mind when interpreting results, particularly in the later
+stages of a data analysis. The first thing you're probably gonna
+wanna do is to revisit your question, and just to kinda make sure that you
+haven't gone off course from your original question. The second thing you wanna think
+about is your primary results. So typically in a formal modelling,
+you'll have a primary model and maybe some secondary models. Particularly in an inferential or
+causal type of question. And so the primary result will be
+kind of initially what you focus on. It may not be the last thing
+that you focus on, but it'll be what you initially focus on. And there are three things that you wanna
+think about with your primary result. That's the directionality,
+the magnitude, and the uncertainty. And we'll talk more
+about this in a second. But those are kind of the three properties
+of any result that you're gonna wanna think about. Then there's the context. The context is important because it
+really takes into account the totality of the evidence that you've developed
+through both primary and secondary models. And when you look at the kind of totality
+of the evidence, you wanna look separately at the direction, magnitude, uncertainty
+of all the different models that you fit. And of course, you wanna join this
+with everything that's already known about the question you're asking,
+either from literature or from other colleagues
+in your organization. Last thing you wanna think about is
+the implications, so you wanna consider the implications of your analysis and how
+they might determine what actions to take. And it should be, any actions that might be taken that are
+a result of the answer to your question. So that the implication is kind of
+the last step of interpretation. So revisiting the question is really
+important because often in a long and complicated data analysis, it's easy to go
+off course or kinda go off on a tangent while you're looking at
+interesting things in your data. This can happen either in
+the exploratory data analysis process or in the formal modeling phase. And so it's important to kinda either get back
+onto track with your original question. Or if you divert it onto a different or
+perhaps more interesting question to recognize that fact that you're
+looking at something different. So you may pursue other
+important findings, that's okay, but it's important to just realize
+what question you're actually asking. So because if your former modelling ends
+up answering a different question and perhaps the modeling approach doesn't
+exactly match what the question was, then you might have a problem
+with interpretation later on. So revisiting the question
+is really important for just setting your expectation for
+what you will find in your results. It's also useful to kind of
+remind yourself of what type of question you're trying to ask,
+whether it was descriptive, exploratory, inferential, predictive,
+causal, or mechanistic. Just to remind yourself of the kind
+of nature of the question, and to make sure that the analysis that you did
+matched the question that you were asking. So, most of what I'm gonna
+talk about in this lecture really pertains to inferential or
+kinda causal questions, where the interpretation
+can be very challenging. So, the other thing you wanna think about
+as you reconsider your question is check for potential bias in your results. So, given a certain type of question, you will have a population
+that question applies to. You'll have a sampling process that you
+should be able to describe as part of your kind of data analysis process. And it's useful to think about whether or
+not that sampling process accurately represents the population or whether there
+may be some bias in terms of who you selected into your dataset and
+who exactly they represent. So once you've got your primary model,
+this is based on exploratory data analysis and kind of formal modeling,
+you're gonna have a primary result. And the three things that you wanna
+think about are the directionality of the result, the magnitude,
+and the uncertainty. So directionality really pertains,
+I think, to inferential and causal types of questions where you
+try to estimate some association and the association can either be positive,
+negative, or zero. Now, so positive or negative is what we're talking about
+when we talk about directionality. And that's a very easy thing to check. If you were expecting
+a positive association, then you can see whether
+the result is positive. And likewise,
+if you were expecting something negative, you can see whether
+the result was negative. So that quick check on directionality
+is a useful kind of quick check for seeing whether your results
+kinda match your expectations. The next thing, once you've solved
+the directionality issue is the magnitude. So the magnitude is really
+the size of the association or the size of the effect that you estimate. And the question you wanna ask is
+does that magnitude make sense? Is it meaningful to you? And what would be the impact
+on the population of having an effect of this size or
+if the association was of this size? So who would be affected is
+an important question when you kind of think about the magnitude and
+whether it's meaningful to you or not. The last thing of course,
+you wanna think about is the uncertainty. At this phase it's important that
+you focus on continuous measures of uncertainty and not kind of binary measures of yes,
+no's or statistical significance or not. Things like confidence intervals and other measures that can give you a sense
+of the range of possibilities and kinda be magnitude of the uncertainty in
+your estimate are useful at this phase, before you start making decisions
+about what to do or what not to do. So the directionality,
+magnitude, and uncertainty, are the key things to look at when
+you've got your primary model results. Now in addition to primary model results,
+you'll have a lot of secondary model sensitivity analyses,
+other things that you tried. And this will kinda make up the totality
+of the evidence for your analysis. And so you're gonna wanna think
+about each of these primary and secondary models, in the context of the
+three's factors that we just talked about, which are directionality,
+magnitude, and uncertainty, kind of roughly in that order. So, when you look across all of
+the evidence that you generated, how is the directionality preserved,
+or not. How is the magnitude of the effect or
+the association preserved, or not. And how is the uncertainty about
+your estimate preserved or not? How does those change from model to model? If the directionality changes then that
+may call into question whether you've got a reasonable modeling strategy or if even that association actually
+exists in the population. If the magnitude changes
+that may indicate you've got a potential confounding going on, or
+maybe you've got to think about what type of model is the best model for
+estimating this type of association. And similarly, if the uncertainty
+blows up when you add certain factors into your model, then that will
+indicate to you that maybe you don't have a very good estimate of an association or
+an effect in the population. And finally of course, included with the
+totality of the evidence, is the kind of any results they may already be existing
+that people have researched before. People, either in the literature or
+in your organization, that people already know about. And you wanna know how your results,
+along with kind of the evidence that you've generated, are
+consistent or not with existing results. Finally, it's important to think about
+the implications of your analysis. So many analyses are done to
+ultimately inform a decision. And so any kind of positive findings that
+you find that match your expectations may require some follow up before
+it ultimately decision is made. So sometimes with inferential questions
+where you're just looking for an association, if the association is of
+interest that meant you evolved into kind of asking a more causal question where
+you may need to design a different kind of study, maybe an intervention,
+or a controlled trial. So that may be the decision that
+results from your analysis. But the ultimate decision and
+how much evidence is needed to inform that decision will
+depend on the stakeholders of the analysis of who asked for
+the analysis, who is being informed by it, and kind of what their cost benefits and
+what their kind of values are. And so, different groups of people
+will interpret evidence differently, not because of their
+interpreting it incorrectly but rather their decision to act on evidence
+will based on a variety of factors that are really outside the dataset and
+are not really part of the analysis. So it's important to always keep in
+mind the ultimate goal of the analysis, the decision that might need to be made,
+and the stakeholders who are involved in making those decisions and what kinds
+of factors they need to consider. So, just to summarize, when it comes to interpreting results,
+you wanna always revisit the question, make sure you know what question you're
+asking and what type of question it is, so that you can figure out whether
+the analysis matched the question. Think about your primary result,
+and for that result, you wanna consider the direction,
+the magnitude, and the uncertainty. There's gonna be many
+results that you generate, so you wanna think about
+the totality of the evidence. So this is the context
+that we're talking about. And for each of the kind of results that
+you generate, you similarly wanna think about the direction, magnitude,
+and uncertainty of those results. And you wanna combine this evidence that
+you've generated with existing knowledge. Finally, the implications of analysis
+are always important to consider. And you wanna think about how the evidence
+that you generate will inform the next steps, or any decisions that
+might be made afterwards.

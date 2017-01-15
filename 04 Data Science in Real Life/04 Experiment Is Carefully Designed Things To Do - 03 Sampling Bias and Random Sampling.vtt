@@ -1,0 +1,468 @@
+WEBVTT
+
+1
+00:00:00.120 --> 00:00:01.980
+Hi, my name is Brian Caffo and
+
+2
+00:00:01.980 --> 00:00:06.050
+this is the lecture on Bias as part of our
+executive data science specialization.
+
+3
+00:00:07.720 --> 00:00:10.900
+I want to distinguish the kind of bias
+that I'm talking about today with
+
+4
+00:00:10.900 --> 00:00:14.690
+some of the other things that we've
+talked about before, like randomization.
+
+5
+00:00:14.690 --> 00:00:17.420
+The goal of randomization is to
+make the two groups that we're
+
+6
+00:00:17.420 --> 00:00:20.040
+studying as comparable as possible.
+
+7
+00:00:20.040 --> 00:00:24.550
+So if we randomize a treatment and
+a control to a collection of subjects,
+
+8
+00:00:24.550 --> 00:00:27.380
+then they're otherwise
+similar other than whether or
+
+9
+00:00:27.380 --> 00:00:31.830
+not they receive the treatment or
+control, with high probability at least.
+
+10
+00:00:32.890 --> 00:00:35.590
+That doesn't mean necessarily
+that the collection of
+
+11
+00:00:35.590 --> 00:00:39.160
+patients that you're
+studying are representative
+
+12
+00:00:39.160 --> 00:00:43.180
+of the broader collection of patients
+that you'd like to draw conclusions on.
+
+13
+00:00:43.180 --> 00:00:47.840
+For example, patients in clinic
+trials often are very good at
+
+14
+00:00:47.840 --> 00:00:52.060
+adhering to their medications where as
+the general population may be less so.
+
+15
+00:00:53.060 --> 00:00:56.270
+This, of course, carries over to
+discussion of thinks like AB-Testing.
+
+16
+00:00:57.550 --> 00:00:59.440
+So why is this relevant?
+
+17
+00:00:59.440 --> 00:01:02.760
+Well it's relevant because
+statistical inference,
+
+18
+00:01:02.760 --> 00:01:05.550
+kind of the fundamental
+component of statistics,
+
+19
+00:01:05.550 --> 00:01:10.810
+is the process of making conclusions
+about a population from our sample.
+
+20
+00:01:10.810 --> 00:01:13.480
+It's not enough to just say
+things about our sample.
+
+21
+00:01:13.480 --> 00:01:17.340
+We actually want to generalize that
+knowledge beyond our sample and
+
+22
+00:01:17.340 --> 00:01:20.020
+that is the process of
+statistical inference.
+
+23
+00:01:20.020 --> 00:01:23.990
+Well, if our sample isn't representative
+of the population that we'd like to draw
+
+24
+00:01:23.990 --> 00:01:26.670
+inferences on, then we have a problem.
+
+25
+00:01:26.670 --> 00:01:29.530
+And things can happen like this.
+
+26
+00:01:29.530 --> 00:01:32.820
+When the Chicago Tribune declared
+that Dewey defeated Truman,
+
+27
+00:01:32.820 --> 00:01:34.439
+when in fact Truman won the election.
+
+28
+00:01:35.510 --> 00:01:39.160
+The root cause in this case was a kind
+of bizarre sampling scheme that
+
+29
+00:01:39.160 --> 00:01:41.450
+led to an erroneous conclusion.
+
+30
+00:01:43.610 --> 00:01:46.870
+Another famous example is
+the so-called Kinsey Report.
+
+31
+00:01:46.870 --> 00:01:51.440
+In the Kinsey Report, the collection of
+study subjects involved a lot of people
+
+32
+00:01:51.440 --> 00:01:54.240
+with psychological disorders and
+prisoners.
+
+33
+00:01:54.240 --> 00:01:59.380
+And then the main criticism of the work
+was that it wasn't generalizable
+
+34
+00:01:59.380 --> 00:02:03.900
+beyond this somewhat different
+population that it was studying.
+
+35
+00:02:03.900 --> 00:02:09.030
+It's interesting to note that Kinsey's
+response was to collect more subjects, but
+
+36
+00:02:09.030 --> 00:02:11.206
+again, not representative subjects.
+
+37
+00:02:12.760 --> 00:02:16.520
+And this of course doesn't
+solve the problem.
+
+38
+00:02:16.520 --> 00:02:22.819
+Simply getting a greater end of a biased
+sample doesn't correct the bias.
+
+39
+00:02:22.819 --> 00:02:25.730
+In fact, in a sense, it makes it worse.
+
+40
+00:02:25.730 --> 00:02:26.934
+So what can you do?
+
+41
+00:02:26.934 --> 00:02:29.430
+And that's what we're
+gonna talk about today.
+
+42
+00:02:29.430 --> 00:02:31.550
+Different strategies for handling bias.
+
+43
+00:02:31.550 --> 00:02:32.830
+Well, I could think of three.
+
+44
+00:02:33.840 --> 00:02:37.970
+So, how do we combat sampling and
+other forms of bias?
+
+45
+00:02:37.970 --> 00:02:43.140
+Well, one of the best ones is random
+sampling, here's a picture of an urn.
+
+46
+00:02:43.140 --> 00:02:45.920
+Urn problems are sort of famous
+in statistics for sampling.
+
+47
+00:02:46.940 --> 00:02:49.370
+So, random sampling is exactly that,
+
+48
+00:02:49.370 --> 00:02:53.590
+we try to draw subjects randomly from
+the population that we're interested in.
+
+49
+00:02:53.590 --> 00:02:55.850
+This can often be quite hard to do.
+
+50
+00:02:55.850 --> 00:03:00.710
+For example, in polling, there's an entire
+science devoted to getting accurate polls
+
+51
+00:03:00.710 --> 00:03:05.110
+and getting your sample random so
+that they don't have inherent biases and
+
+52
+00:03:05.110 --> 00:03:07.609
+they don't make
+a Chicago Tribune style mistake.
+
+53
+00:03:09.630 --> 00:03:10.830
+One, for example,
+
+54
+00:03:10.830 --> 00:03:15.380
+one strategy often used is random dialing,
+random telephone dialing for example.
+
+55
+00:03:15.380 --> 00:03:18.360
+But, none the less, this is a good
+strategy if you can do it, but
+
+56
+00:03:18.360 --> 00:03:20.770
+often you can't,
+often it's not on the table.
+
+57
+00:03:22.070 --> 00:03:23.360
+What are some other strategies?
+
+58
+00:03:23.360 --> 00:03:29.590
+Well, waiting is another strategy when
+again, random sampling is off the table.
+
+59
+00:03:29.590 --> 00:03:31.920
+The idea of waiting is
+something like this,
+
+60
+00:03:31.920 --> 00:03:36.170
+imagine in your sample you have
+twice as many men as you have women.
+
+61
+00:03:36.170 --> 00:03:39.696
+However, you know in the population
+that you're interested in drawing
+
+62
+00:03:39.696 --> 00:03:42.714
+inferences about,
+there's equal numbers of men and women.
+
+63
+00:03:42.714 --> 00:03:45.461
+In your sample then when you
+were doing your analysis,
+
+64
+00:03:45.461 --> 00:03:48.388
+you would upweight the collection
+of women that you had and
+
+65
+00:03:48.388 --> 00:03:50.930
+you would down weight
+the collection of men.
+
+66
+00:03:50.930 --> 00:03:55.470
+So that as far as the weighted
+inferences were concerned,
+
+67
+00:03:55.470 --> 00:03:59.600
+the women and
+men were contributing equally, okay?
+
+68
+00:03:59.600 --> 00:04:01.760
+So that's the process of weighting.
+
+69
+00:04:01.760 --> 00:04:06.260
+Again, this requires that you know the
+population demographics through respect to
+
+70
+00:04:06.260 --> 00:04:09.329
+these important characteristics and that
+you have them measured in your sample.
+
+71
+00:04:11.040 --> 00:04:15.980
+Finally, the last strategy that I think
+of, one the important three strategies for
+
+72
+00:04:15.980 --> 00:04:17.450
+dealing with bias, is modeling.
+
+73
+00:04:18.530 --> 00:04:22.170
+In our modeling case, what we would
+say is we would want to understand
+
+74
+00:04:22.170 --> 00:04:26.770
+why it is that on whatever we were
+measuring, gender made a difference.
+
+75
+00:04:26.770 --> 00:04:29.420
+And we would try to model that and
+account for it and
+
+76
+00:04:29.420 --> 00:04:33.030
+then use our statistical
+model to adjust for it.
+
+77
+00:04:33.030 --> 00:04:38.400
+This has the problem of actually
+having to build the model and
+
+78
+00:04:38.400 --> 00:04:41.910
+whether or not our conclusions
+are robust to this model building.
+
+79
+00:04:41.910 --> 00:04:46.730
+Things like having a random sample
+are quite robust to a lot of assumptions
+
+80
+00:04:46.730 --> 00:04:51.870
+whereas modeling can often be fraught
+with errors associated with assumption.
+
+81
+00:04:51.870 --> 00:04:56.950
+So again, those are three strategies
+that you can use to combat bias.
+
+82
+00:04:56.950 --> 00:04:58.510
+So let me summarize.
+
+83
+00:04:58.510 --> 00:05:02.140
+So bias comes in many forms and
+can contaminate your analysis,
+
+84
+00:05:02.140 --> 00:05:03.900
+especially your statistical inferences.
+
+85
+00:05:05.370 --> 00:05:07.830
+Sampling in bias,
+which we talked a lot about today,
+
+86
+00:05:07.830 --> 00:05:11.740
+is a particularly common one whereby
+your sample isn't indicative
+
+87
+00:05:11.740 --> 00:05:15.020
+of the population you'd like
+to make inferences is about.
+
+88
+00:05:15.020 --> 00:05:19.210
+We talked about three strategies for
+combatting sampling bias.
+
+89
+00:05:19.210 --> 00:05:23.730
+One was random sampling,
+that's at the design stage, and may or
+
+90
+00:05:23.730 --> 00:05:26.720
+may not be applicable in your case.
+
+91
+00:05:26.720 --> 00:05:28.794
+We talked about reweighting, okay?
+
+92
+00:05:28.794 --> 00:05:30.620
+That's done in the analysis stage but
+
+93
+00:05:30.620 --> 00:05:33.539
+requires you to have specific
+knowledge about the weights.
+
+94
+00:05:35.120 --> 00:05:40.280
+And then there's modeling, which, again,
+is done at the analysis stage, however,
+
+95
+00:05:40.280 --> 00:05:43.100
+requires the model building exercise and
+may or may not be
+
+96
+00:05:43.100 --> 00:05:46.020
+sensitive to some of those choices
+that you make in building the model.
+
+97
+00:05:48.030 --> 00:05:50.410
+Well, I hope you found
+this lecture useful, and
+
+98
+00:05:50.410 --> 00:05:52.260
+I look forward to seeing
+you in the next class.

@@ -1,0 +1,54 @@
+So once you have a data science team, you
+need to think about how that team is going to interact with other teams
+within your organization. So there a few different modes
+under which that can happen, and I'm just gonna talk
+about each one of them and how the data science team interacts
+with outside people in that role. So the first one I wanted to
+talk about was consulting. So consulting is an opportunity for your team to collaborate with other
+people where they come to you. So they bring problems from outside
+that they want to have solved, whether it's maybe predicting how many
+people will come to a certain website, or identifying how many people
+will click on an ad. Or any other kind of problem that's based
+in something that they're working on that they think machine learning,
+or prediction, or inference would help them out with. So that's a consulting model
+where they sort of come to you. Another option is that you
+can have collaboration. So in collaboration, the data science
+team will work sort of closely hand in hand with one of your teams
+to sort of build out a whole project. And so in that case, it might be long-term
+in the sense that you might have one data scientist working with one external
+team, say, the marketing team, for a long period of time, or with one
+collaborator for a long period of time. And in that case, you often build
+a sort of a deeper knowledge of the exact function,
+a role of that external person, and so that can often help
+in the data science process. When you're talking about just a
+consulting relationship, you only get sort of a superficial idea about what's
+the problem it is that you're solving. And so
+data science can still be useful, but it really doesn't have that deep dive
+effect where the person actually has expertise in the area
+that they're working on. Another way that the data science team can
+interact with the outside community at your organization is through teaching. So almost all data science organizations
+can play a useful role by educating other people about what data science is,
+what data science can be used for. How that team can actually
+help benefit all the different teams within the organization or the other collaborative groups
+within the organization. And so a teaching role for a data science
+unit is always a very helpful component. And so one way to do that is to organize
+one-off events where you have a particular idea that's taught, say, how to visualize
+data or how to interact with data. Another is to have sort of a standing
+teaching commitment where you have a sort of a boot camp for people that come in. How does data science help them? So finally, you can have a data science
+team be creative and propose new ideas and actually move the organization forward. So there's an idea that
+you could be data-driven, in a sense that you can go out and
+collect data, and make all of your decisions based on the
+data wisdom that you collect from those. But that actually falls a little
+short of being able really make transformative changes based on data. In order to make transformative changes
+with data, you need to propose new hypotheses and then test those hypotheses
+and see if they actually work. So it might be creating a new product and then running experiments to
+see if that product works. Or might be predicting consumer behavior
+or any kind of behavior that you're interested in, based on machine learning,
+in a new way, in a new application. Those sorts of creative ideas can
+often come from the data science team, particularly if they're involved in those
+sort of close collaborative relationships where they really understand what's
+the problem we're trying to solve. And maybe they have a new idea or
+some new data that they can go collect, either within your organization or
+externally, to answer that question. And so it's always great to give your
+data science team a little bit of freedom to be creative and
+to come up with their own ideas.

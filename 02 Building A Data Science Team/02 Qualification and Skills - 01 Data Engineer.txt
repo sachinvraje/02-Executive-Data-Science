@@ -1,0 +1,98 @@
+One of the key members of a data
+science team is a data engineer. And so I'm gonna talk a little bit
+about what are the qualifications and skills that you might
+need in a data engineer. So what does a data engineer do? They might do things like
+build infrastructure. So they would build out what are your
+databases, the hardware for that. Whether it's purchasing that, and
+organizing it, and ordering it. Or they might build out your system for
+actually computing on that, whether it's what servers they're gonna
+buy and how they're gonna organize that. And what software they're gonna
+run on top of the database, what software they're gonna
+run on top of the server. And then,
+they manage the data storage and use. So they might monitor how those work. They might monitor who,
+what people are using which data. They might pull data out and
+give it to somebody. And then they might
+implement production tools. Now each of these is a different thing,
+and so you might not have one person
+that does all of these things. Certainly at the beginning,
+when you're a very small organization, you might need one person that can kind
+of handle the entire data infrastructure. And then you might get more specialized
+people as you get to be a larger and larger organization. So the question is,
+what skills do they need? So they might need some knowledge of
+what's the right hardware to be looking for, both in terms of storage and
+in terms of computing. They might need to have some
+knowledge about databases software. They might need to know a little bit
+about software for computing and what are the different software needs
+that your organization might need. In that sense, they need to be able
+to interact with the data scientists, once you have them. They need to be able to know what
+software they need to be able to install, what kind of data pulls that
+people will frequently do. That will all inform users of hardware
+choices that they're going to be making. And so, they also need to understand data
+processing at scale, almost always now, and if you're a data driven organization, you're collecting a massive
+amount amount of data. So you need to be able to run at
+scale those data processes and those data prediction algorithms
+that you've developed. And then they need to understand
+software engineering at the level of, they need to know how they're gonna
+interact with all these other components of the data science team. And so the background for data
+engineers is often computer science and computer engineering, but
+they could also come from other places. They might come from a quantitative
+background with some computer science experience that they picked up maybe in
+online courses or in courses in person. Or maybe they come from information
+technology where they've actually been involved in infrastructure building and
+so forth. Again, sort of like with
+the data scientist, you might depend on what your
+organization needs a little bit, which of these specific
+backgrounds is most useful to you. But the primary thing you're looking for is, can they execute those jobs that
+your organization needs them to execute? Are they able to build infrastructure? Are they able to maintain
+the infrastructure that you need them to be able to maintain? Can they implement the data science, or machine learning algorithms, or
+statistical experiments, at scale for your organization in the way
+that you would like them to. So again, the key is to get them to be able to
+solve the problems that you need now. With a data engineer, the balance of
+solutions versus software might be a little bit different
+then a data scientist. Since this person is the person that's
+going to sort of be maintaining the data stack for you, you need them to be able to
+do that in a way that's consistent with the way that your
+organization does things. So they need to be able to have an idea
+about what are the specific software and hardware needs that your organization has. There are a few sort of key things that
+they need to know, they might need to know how to build and manage some databases,
+things like SQL, things like MongoDB. They might also need to know how to
+do things like implement or run, things like Hadoop, which is
+a parallel processing infrastructure. Now it's not necessarily true that they
+need to know any one of these buzzwords or another. But it is true that they need to have the
+combination of skills that allow them to build out a data infrastructure that's
+supportive and that can be maintained. So there's a couple of key
+characteristics that you're looking for when you're looking for a data engineer. So first, again, they need to be
+willing to find answers on their own. This is again, a person that often will
+be one of the few people that's solely responsible for the data infrastructure. And so, often they need be able to
+answer those questions themselves. They need to be able to go out and
+get the quotes on the Internet. They need to be able to ask questions and
+figure out what's the right hardware, and what's the right security
+measures to be taking, and so forth. Often they will have to do that a little
+bit on their own, in the sense that, the data engineering team is often
+very specific and expert in an area. Where it's not clear that other people
+within your organization will be able to give them a lot of advice. They need to know a little
+bit of data science. They need to know how data is used,
+how it's pulled, how it's analyzed. So that they know how to build
+the infrastructure that's useful for them. Ideally, they'll be closely
+collaborative with the data scientists, maybe they've done that before. And then they need to be able
+to work well under pressure. And so one reason for
+that is that the data infrastructure for an organization is often very critical. And if it goes down then, say,
+your website might go down, or you won't be able to do any analysis, or
+the organization sort of grinds to a halt. And so having a data engineer that's
+able to work well under pressure, that's able to keep things up and
+running, and keep things maintaining. That makes good decisions about
+software maintainability, and hardware maintainability, and somebody that's
+critical for your data engineering team. And again, friendly but relentless, so they need to be able to
+interact with people. Again, their personal communication skills
+are highly undervalued but are very, very important. There's gonna be a lot of steps at which
+a data engineer is gonna have to interact, especially at first in a small
+organization but even later on, with data scientists, with other people
+in your organization, and external units. And so you need to be able to have
+a friendly conversation with them. And ideally, they can explain in very simple terms
+why they need to make certain decisions. So often the decisions, especially
+these days, are quite technical, quite involved with the hardware and
+software involved. And so it's very useful if they can,
+in very simple language, explain what's going on, what the problem
+is, how it's gonna be fixed, and so forth. That can be a huge advantage
+to your organization. So that's what a little bit about,
+what a data engineer is.

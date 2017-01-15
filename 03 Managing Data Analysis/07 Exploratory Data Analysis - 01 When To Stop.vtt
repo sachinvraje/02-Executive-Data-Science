@@ -1,0 +1,571 @@
+WEBVTT
+
+1
+00:00:00.370 --> 00:00:04.060
+Exploratory data analysis is
+a highly iterative process.
+
+2
+00:00:04.060 --> 00:00:06.660
+But it's tempting to want
+to iterate it forever.
+
+3
+00:00:06.660 --> 00:00:08.948
+This lecture talks about
+when to stop the process and
+
+4
+00:00:08.948 --> 00:00:10.830
+move on to the next
+phase of data analysis.
+
+5
+00:00:10.830 --> 00:00:15.179
+[MUSIC]
+
+6
+00:00:15.179 --> 00:00:17.700
+So far the examples in these lectures
+
+7
+00:00:17.700 --> 00:00:22.570
+have generally illustrated one
+phase of the EDA iteration.
+
+8
+00:00:22.570 --> 00:00:26.720
+But most exploratory data analyses iterate
+for a couple of times as you go through
+
+9
+00:00:26.720 --> 00:00:31.790
+and you revise the question or
+update the data or change your model.
+
+10
+00:00:31.790 --> 00:00:35.620
+And usually, every new answer that
+you get will raise more questions.
+
+11
+00:00:35.620 --> 00:00:37.980
+So it's possible to just
+kind of go on forever.
+
+12
+00:00:37.980 --> 00:00:42.300
+Now, but the real question is when do you
+stop, because none of us live forever.
+
+13
+00:00:42.300 --> 00:00:46.650
+We have to eventually figure out
+what the answer's going to be and
+
+14
+00:00:46.650 --> 00:00:48.920
+move onto the next phase.
+
+15
+00:00:48.920 --> 00:00:52.380
+This lecture just raises a couple of
+questions that you can ask yourself
+
+16
+00:00:52.380 --> 00:00:54.870
+to figure out when it's time to stop.
+
+17
+00:00:54.870 --> 00:00:58.410
+So, the first question is
+really are you out of data?
+
+18
+00:00:58.410 --> 00:01:02.940
+So eventually, as you iterate through the
+exploratory data analysis, you may be led
+
+19
+00:01:02.940 --> 00:01:06.560
+to a place where you simply don't have
+any more data to answer the questions.
+
+20
+00:01:06.560 --> 00:01:07.950
+So you can't move forward.
+
+21
+00:01:07.950 --> 00:01:11.240
+So for example in the example about the
+ozone and temperature relationship, one
+
+22
+00:01:11.240 --> 00:01:15.830
+of the things that we discovered was that
+the relationship appeared to be nonlinear.
+
+23
+00:01:15.830 --> 00:01:20.890
+But what the data doesn't tell you is why
+that relationship might be nonlinear.
+
+24
+00:01:20.890 --> 00:01:23.520
+Or how it might manifest in that way.
+
+25
+00:01:23.520 --> 00:01:28.650
+And so the data might suggest certain
+hypotheses that you can further explore.
+
+26
+00:01:28.650 --> 00:01:30.470
+But eventually you'll need to go out and
+
+27
+00:01:30.470 --> 00:01:34.520
+collect more data on things that
+you haven't already measured.
+
+28
+00:01:34.520 --> 00:01:37.160
+So, now if the analysis is successful and
+
+29
+00:01:37.160 --> 00:01:40.590
+you've answered the question
+that you've set out to ask.
+
+30
+00:01:40.590 --> 00:01:42.780
+That's another indicator that
+you're probably out of data.
+
+31
+00:01:42.780 --> 00:01:45.410
+Because often what
+you'll want to do is get
+
+32
+00:01:45.410 --> 00:01:47.840
+another data set to
+replicate what you've done.
+
+33
+00:01:47.840 --> 00:01:50.290
+Okay?
+So if you've answered the question and
+
+34
+00:01:50.290 --> 00:01:53.150
+maybe it's matched your expectations,
+it's often important
+
+35
+00:01:53.150 --> 00:01:56.080
+to try to replicate your findings
+in an independent data set just so
+
+36
+00:01:56.080 --> 00:02:02.340
+you can be sure that the answer that
+you've come to is actually the truth.
+
+37
+00:02:02.340 --> 00:02:06.420
+So this is a sign that you're out of
+data and you need to get some more.
+
+38
+00:02:07.620 --> 00:02:11.790
+The next question that you might want to
+ask yourself is do you have enough data
+
+39
+00:02:11.790 --> 00:02:13.070
+to make a decision?
+
+40
+00:02:13.070 --> 00:02:17.610
+Now data analysis is often done in
+support of some sort of decision making.
+
+41
+00:02:17.610 --> 00:02:18.250
+Okay?
+
+42
+00:02:18.250 --> 00:02:22.830
+And analysis for decisions is often
+different from doing analysis for
+
+43
+00:02:22.830 --> 00:02:27.520
+like supporting a research paper,
+or for shipping a product, or
+
+44
+00:02:27.520 --> 00:02:29.620
+even if you're writing a technical report.
+
+45
+00:02:29.620 --> 00:02:32.070
+It may be that you have
+enough information or
+
+46
+00:02:32.070 --> 00:02:35.605
+you have enough evidence to make
+a decision based on lots of external
+
+47
+00:02:35.605 --> 00:02:37.705
+factors that are not really
+in the data set, okay.
+
+48
+00:02:37.705 --> 00:02:40.175
+So decision making can depend
+on many different inputs.
+
+49
+00:02:40.175 --> 00:02:42.295
+One of which may be your analysis.
+
+50
+00:02:42.295 --> 00:02:46.382
+So, keeping in mind the purpose of
+a data analysis is very important.
+
+51
+00:02:46.382 --> 00:02:51.122
+Cuz if you don't keep in mind the exact
+purpose of why you're analyzing the data,
+
+52
+00:02:51.122 --> 00:02:54.592
+you may over or
+under invest resources into your project.
+
+53
+00:02:54.592 --> 00:02:57.762
+And so, and finally, the purpose of
+your analysis may change over time.
+
+54
+00:02:57.762 --> 00:02:59.061
+This is fairly common.
+
+55
+00:02:59.061 --> 00:03:02.491
+And there may be multiple
+parallel purposes all at once.
+
+56
+00:03:02.491 --> 00:03:05.051
+And so, keeping track of
+what these purposes are and
+
+57
+00:03:05.051 --> 00:03:08.561
+why you're analyzing data will keep you
+focused on how much you can iterate your
+
+58
+00:03:08.561 --> 00:03:11.361
+data analysis to get
+the appropriate answer.
+
+59
+00:03:12.681 --> 00:03:14.271
+The next question you
+wanna ask yourself is,
+
+60
+00:03:14.271 --> 00:03:17.381
+can you place your results
+in a larger context?
+
+61
+00:03:17.381 --> 00:03:21.090
+Another way to ask this question is
+really, do the results make any sense?
+
+62
+00:03:21.090 --> 00:03:23.600
+Because now,
+in order to answer this question,
+
+63
+00:03:23.600 --> 00:03:26.969
+you may need to search the literature,
+or talk to people inside or
+
+64
+00:03:26.969 --> 00:03:30.156
+outside your organization who
+are familiar with this area and
+
+65
+00:03:30.156 --> 00:03:33.050
+to see if your findings fit
+with what they expect to see.
+
+66
+00:03:33.050 --> 00:03:37.283
+Now whether your findings do fit
+the kind of existing literature or
+
+67
+00:03:37.283 --> 00:03:38.727
+what people believe.
+
+68
+00:03:38.727 --> 00:03:41.520
+It may or may not be a good thing.
+
+69
+00:03:41.520 --> 00:03:45.360
+If they don't fit, for example, this may
+lead you down a path of new discovery.
+
+70
+00:03:45.360 --> 00:03:48.600
+So it could be a good thing if you
+find something that's unexpected.
+
+71
+00:03:48.600 --> 00:03:51.380
+Now on the other hand if you do find
+something that is expected, and
+
+72
+00:03:51.380 --> 00:03:54.000
+your findings kind of match
+what everyone is looking for.
+
+73
+00:03:54.000 --> 00:03:55.890
+That may or
+may not be a good thing either.
+
+74
+00:03:55.890 --> 00:04:00.580
+Now in particular,
+if your data match your expectations
+
+75
+00:04:00.580 --> 00:04:04.785
+it may simply be an indication that you
+have a question that's not very sharp.
+
+76
+00:04:04.785 --> 00:04:08.195
+If you have a question that's
+kinda vague in its nature,
+
+77
+00:04:08.195 --> 00:04:11.055
+then there may be a lot of
+different patterns in the data
+
+78
+00:04:11.055 --> 00:04:15.455
+that match those expectations
+that are raised by your question.
+
+79
+00:04:15.455 --> 00:04:19.175
+If you find things that kind of make sense
+to you, it may be an indication that you
+
+80
+00:04:19.175 --> 00:04:21.265
+actually need to sharpen
+your question a little bit,
+
+81
+00:04:21.265 --> 00:04:22.735
+to make it a little bit more precise.
+
+82
+00:04:24.170 --> 00:04:26.710
+Now if the results don't
+match what you're expecting,
+
+83
+00:04:27.740 --> 00:04:31.950
+this may be an interesting thing, but
+it definitely needs to be followed up.
+
+84
+00:04:31.950 --> 00:04:35.720
+Because remember for every diamond in
+the rough, there are 99 pieces of coal.
+
+85
+00:04:35.720 --> 00:04:40.150
+So it could be that you just made a simple
+mistake, and you need to check for this.
+
+86
+00:04:40.150 --> 00:04:44.001
+So really actually, no matter what, no
+matter how you answer the question of do
+
+87
+00:04:44.001 --> 00:04:48.028
+these results make sense, the thing that
+you need to do is check what you've done,
+
+88
+00:04:48.028 --> 00:04:51.010
+check it over to make sure
+there's no simple mistakes.
+
+89
+00:04:51.010 --> 00:04:54.380
+And if you don't find any mistakes
+the other thing that you might want to do
+
+90
+00:04:54.380 --> 00:04:56.950
+is to try to replicate it
+in an independent data set.
+
+91
+00:04:56.950 --> 00:05:00.749
+And so if you can replicate your findings,
+and then regardless of whether
+
+92
+00:05:00.749 --> 00:05:05.101
+they matched your original expectations,
+you can have a little bit more confidence
+
+93
+00:05:05.101 --> 00:05:08.429
+in the fact that whatever you
+found could actually be the truth.
+
+94
+00:05:08.429 --> 00:05:12.580
+The last question you can ask yourself
+is really are you out of time?
+
+95
+00:05:12.580 --> 00:05:14.600
+Now, this sounds arbitrary.
+
+96
+00:05:14.600 --> 00:05:16.650
+But it's a very realistic question.
+
+97
+00:05:16.650 --> 00:05:19.820
+Another way to ask this question really,
+is are you out of money, okay?
+
+98
+00:05:19.820 --> 00:05:24.090
+Now every project has a time budget and
+a monetary budget.
+
+99
+00:05:24.090 --> 00:05:27.370
+And it's important to be aware of these
+budgets, even if you don't directly
+
+100
+00:05:27.370 --> 00:05:32.160
+control them, because they will help you
+to manage the data analysis process.
+
+101
+00:05:32.160 --> 00:05:35.820
+And importantly, you may need to
+eventually argue for more resources or
+
+102
+00:05:35.820 --> 00:05:41.560
+more time, and you're going to have to
+persuade other people in those cases.
+
+103
+00:05:41.560 --> 00:05:45.762
+So it's important to know when to stop the
+data analysis process or the exploratory
+
+104
+00:05:45.762 --> 00:05:49.963
+data analysis process in order to prepare
+results for presentation and to argue for
+
+105
+00:05:49.963 --> 00:05:53.824
+continuation of the project, if that's
+what you believe needs to be done.
+
+106
+00:05:53.824 --> 00:05:57.360
+Keeping track of your time and
+your budgets for both money and
+
+107
+00:05:57.360 --> 00:06:01.310
+time is an important part of managing
+the data analysis process, so
+
+108
+00:06:01.310 --> 00:06:04.984
+that you kind of manage the continuation
+into the next phase and
+
+109
+00:06:04.984 --> 00:06:07.644
+to argue for
+more resources if you need them.
+
+110
+00:06:07.644 --> 00:06:11.797
+So these are some basic questions that you
+can ask yourself to determine whether you
+
+111
+00:06:11.797 --> 00:06:15.040
+need to stop the exploratory
+data analysis process.
+
+112
+00:06:15.040 --> 00:06:16.310
+Are you out of data?
+
+113
+00:06:16.310 --> 00:06:19.210
+Do you have enough evidence
+to make a decision?
+
+114
+00:06:19.210 --> 00:06:21.360
+Can you place your results
+in a larger context or
+
+115
+00:06:21.360 --> 00:06:25.160
+do these results make sense, and
+finally are you just simply out of time?
+
+116
+00:06:25.160 --> 00:06:29.036
+These questions will help you determine
+how to manage the data analysis process in
+
+117
+00:06:29.036 --> 00:06:32.349
+general and whether you can stop
+the exploratory analysis process and
+
+118
+00:06:32.349 --> 00:06:33.601
+move on to the next phase.

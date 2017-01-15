@@ -1,0 +1,115 @@
+WEBVTT
+
+1
+00:00:00.400 --> 00:00:02.980
+Have you ever had the perfect
+data science experiment?
+
+2
+00:00:04.020 --> 00:00:05.740
+You ran an AB test.
+
+3
+00:00:05.740 --> 00:00:08.830
+Data collection pulls and
+mergers all went perfectly.
+
+4
+00:00:08.830 --> 00:00:10.560
+There was no missing data.
+
+5
+00:00:10.560 --> 00:00:14.670
+The sample was easily generalizable to
+the population you're interested in.
+
+6
+00:00:14.670 --> 00:00:17.174
+Tests were robust and highly significant.
+
+7
+00:00:17.174 --> 00:00:21.794
+And actual conclusions were obvious
+from the results of your test.
+
+8
+00:00:21.794 --> 00:00:23.651
+Has this ever happened to you?
+
+9
+00:00:23.651 --> 00:00:24.483
+>> No.
+
+10
+00:00:24.483 --> 00:00:25.968
+Of course not.
+
+11
+00:00:25.968 --> 00:00:30.868
+Instead, your experiments are with
+observational data on a sample that isn't
+
+12
+00:00:30.868 --> 00:00:34.455
+representative of the population
+that you're interested in.
+
+13
+00:00:34.455 --> 00:00:37.450
+You have missing data and
+errors in data collection.
+
+14
+00:00:37.450 --> 00:00:40.060
+Through a complex merging.
+
+15
+00:00:40.060 --> 00:00:44.720
+The results of your test are borderline
+and the conclusions are not clear.
+
+16
+00:00:44.720 --> 00:00:46.550
+Welcome to data science in real life.
+
+17
+00:00:47.610 --> 00:00:49.030
+This class is about the ying and
+
+18
+00:00:49.030 --> 00:00:53.600
+yang of when data analysis is ideal,
+versus when it's hard.
+
+19
+00:00:53.600 --> 00:00:56.489
+We'll cover the common pitfalls and
+protections from them in data analysis.
+
+20
+00:00:57.700 --> 00:01:01.120
+We'll talk about how design can
+protect you in your recourse for
+
+21
+00:01:01.120 --> 00:01:03.420
+when design is out of your control.
+
+22
+00:01:03.420 --> 00:01:06.260
+We'll discuss when it's appropriate
+to throw in the towel and
+
+23
+00:01:06.260 --> 00:01:10.660
+say that your data just can't answer
+the questions that you'd like to ask.
+
+24
+00:01:10.660 --> 00:01:13.210
+So welcome to the class,
+I hope you enjoy it.
+
+25
+00:01:13.210 --> 00:01:13.810
+And let's begin.

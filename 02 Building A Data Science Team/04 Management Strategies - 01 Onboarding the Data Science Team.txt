@@ -1,0 +1,95 @@
+So once you've hired a member of the data
+science team and they show up on their first day of work, it's important
+that you have a system in place so that they can quickly get into the flow. This is a way to waste a lot of time if
+there's not a good system for them to get all of the support and the help that
+they need to get up and running as quickly as possible and really start helping
+your organization as fast as they can. So the onboarding process usually
+starts with an initial meeting. So this should be with
+whoever their manager is. And they should go over an overview of
+their position, what the expectations are. In particular, what are the projects
+that you'd like to have them complete, who they're supposed to interact with and
+at what time scale. And are you gonna start those
+interactions, or do they need to go and start those interactions themselves? GIving them the contact information of
+any of the people that they need to be in contact with,
+throughout the entire process. And then,
+establishing any sort of policies. So, often, it makes a lot of
+sense to set up policies for how you're gonna interact
+with the internal team. How are you going to
+communicate with them? What's okay and what's not okay
+in terms of feedback and review? The same sort of thing for
+external interactions. So, how are you gonna
+interact with other people? Is that all gonna flow through
+the management of the data science team? Or is that gonna be embedding people
+briefly in other teams during the week? And how are they gonna
+communicate with them? All of that needs to be laid out,
+ideally in a short, initial meeting where they actually get
+all that information sort of compressed. It's really ideal if that information
+could be stored somewhere internally on a level that they can communicate with. Whether it's a website, or some kind
+of document that's distributed, so that they actually can
+always have a reference for who they should be contacting,
+how they should be acting, and so forth. So, that's the ideal way to make sure
+that they always have that information available to them. The next step is usually human resources,
+so they need to get set up with payroll. They need to get set up with benefits,
+any kind of documentation they need. So this isn't really part of
+the data science process, but it is always a step that needs to happen
+in the onboarding process for people. Then the next thing that needs
+to happen is introductions. And so
+that person might have interviewed, and you might have even be aware
+that they're showing up. But it's really good to have that
+person be able to go around and put a face to the name for all
+the people within the data science team. So this is ideal if you, as the manager,
+can go and take them from place to place, introduce them to all the data science
+team, make sure they get to know them, they have a few minutes to talk, and so, that everybody knows who
+the new member of the team is. You also might want to introduce them
+their external points of contact. Whatever external units they'll be working
+with, or collaborators they'll be working with, make sure that you do
+a direct introduction of them. So that everyone knows the new person
+is here, the new data scientist, or data engineer,
+who they're gonna be interacting with, how to contact those people,
+how you want that process to work. If you sort of initiate that yourself,
+then it makes it a little bit smoother for them to know where to
+go in the organization, if that's all sort of outlined
+right from the beginning. Right from the get go. Another thing that all data scientists or
+data engineers will need is equipment and communications. So often they'll either have a computer,
+or you need to get them a computer associated with the activity of
+what they're going to be doing. Let them know what software is
+available for them to install, what their purchasing limits are in terms
+of organizing how they can get software. You also need to let them know how to
+interact with your global infrastructure. How do they do data polls? What's their username? How do they interact with sort
+of the global infrastructure and the hardware that you have? Ideally, again, you have documentation for
+this, whether it's a PDF or some other documentation that you can give
+them, share with them through the internal communication channels,
+that shows them, okay. Here's where all the data is stored,
+here's the kind of database we're using, here's the way to pull
+data out of that database. Sort of tutorials and introductions,
+so they can immediately get up and running without having to go and ask
+a hundred questions at the data engineer. Okay, where is the data? What's the data set stored under? What's the sort of framework under
+which we're storing all this stuff? And then get them set up on
+the communication channels that are useful for you. So some organizations like to just
+communicate by email or through chat. What if there's something like Slack, where they communicate
+with each other as a team. And so it's important that you get
+them set up and running on whatever the communication channel is, the one that
+your organization particularly focuses on. And so, after you've got their equipment
+set up and you've got them sort of ready to go, the best thing to do
+with any data scientist or data engineer is to set them
+up with an initial problem. So obviously what you'd like is
+that this person can come in and immediately start having an impact, and
+immediately identify all of the problems your organization might need to have
+solved, but that usually never happens. Each organization is a little bit quirky. They have particular problems that they
+care about and that they don't care about. And so the best way to get somebody up and
+running immediately, is to start them on a small, a finite,
+concrete project right away. So this might be, for a data scientist,
+it might be an analysis that is just a small analysis, that they can
+work on just right away, that day. They can already start asking questions, and they can already start
+interacting with people. Ideally, it's a short duration project,
+so that they can just get up to speed. They can kind of get started on something,
+they can get their feet wet. It's the same sort of thing for
+data engineers or data science managers. You wanna give them a short, concrete project that they
+can use sort of a jump start. So, obviously you're going to want
+them to work on larger scale projects. They might have long term projects that
+you're going to want them to work on. But if they get something under their
+belt, right away, that's a solution they can present, first of all,
+it' gives them a lot of confidence. Second of all, it's the best way. The absolute best way to get them
+integrated into a team is to have them working on a project right away. So, the first thing that you do,
+is you give them that initial project, along with all of the other, sort of,
+documentation that you need. And then, you turn them loose.

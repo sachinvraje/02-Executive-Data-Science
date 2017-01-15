@@ -1,0 +1,785 @@
+WEBVTT
+
+1
+00:00:03.071 --> 00:00:05.071
+Hi, my name is Brian Caffo and
+
+2
+00:00:05.071 --> 00:00:09.000
+this is the lecture on
+Estimation Target being Relevant.
+
+3
+00:00:11.070 --> 00:00:16.450
+And so I'm gonna start with this quote
+from, it's attributed to lots of people,
+
+4
+00:00:16.450 --> 00:00:19.300
+I give some example up there
+which you can find on Wikipedia.
+
+5
+00:00:19.300 --> 00:00:21.820
+But of course many of
+you have heard the song.
+
+6
+00:00:21.820 --> 00:00:25.060
+But if you can't be with the one you love,
+love the one you're with.
+
+7
+00:00:25.060 --> 00:00:28.040
+And that's the idea behind some of these
+
+8
+00:00:28.040 --> 00:00:30.710
+surrogate variables we're
+gonna talk about today.
+
+9
+00:00:30.710 --> 00:00:35.700
+If you can't measure the variable you
+want, measure the variable you got.
+
+10
+00:00:35.700 --> 00:00:40.920
+Okay, so what we're basically
+talking about in this lecture,
+
+11
+00:00:40.920 --> 00:00:45.420
+is when you have an outcome you
+are interested in studying, but
+
+12
+00:00:45.420 --> 00:00:47.230
+you can't actually measure it.
+
+13
+00:00:47.230 --> 00:00:49.530
+You can only measure some surrogate for
+it.
+
+14
+00:00:50.690 --> 00:00:53.870
+And we are gonna talk about
+the benefits and pitfalls and
+
+15
+00:00:53.870 --> 00:00:58.900
+some strategies that you can do
+this very common circumstance.
+
+16
+00:00:58.900 --> 00:01:03.900
+But, even if you don't find
+that prior quote less inspire.
+
+17
+00:01:03.900 --> 00:01:06.560
+Even if you don't find that
+prior quote inspiring,
+
+18
+00:01:06.560 --> 00:01:10.910
+even less inspiring is the classic joke
+that talks about the drunk looking for
+
+19
+00:01:10.910 --> 00:01:13.090
+his keys under the lamp post.
+
+20
+00:01:13.090 --> 00:01:16.880
+And the police comes up to him and
+asks, what are you doing?
+
+21
+00:01:16.880 --> 00:01:19.560
+And the drunk says, looking for my keys.
+
+22
+00:01:19.560 --> 00:01:23.390
+And the policeman says, well,
+did you drop them near here?
+
+23
+00:01:23.390 --> 00:01:25.380
+And the drunk says,
+no I dropped them over there.
+
+24
+00:01:25.380 --> 00:01:27.331
+And he's, well, why are you looking here?
+
+25
+00:01:27.331 --> 00:01:30.840
+And the drunk says,
+cuz this is where the light is.
+
+26
+00:01:30.840 --> 00:01:35.948
+Okay, so let's talk about surrogate
+variables and hopefully we won't be
+
+27
+00:01:35.948 --> 00:01:41.231
+like drunks looking under the lamppost,
+hopefully our keys'll be nearby.
+
+28
+00:01:42.951 --> 00:01:47.535
+So, the idea behind what we're talking
+about today, is it's very common
+
+29
+00:01:47.535 --> 00:01:52.338
+to not be able to directly measure what
+is most germane to your investigation,
+
+30
+00:01:52.338 --> 00:01:54.930
+what you really want to measure.
+
+31
+00:01:54.930 --> 00:01:56.670
+So, some classic examples.
+
+32
+00:01:56.670 --> 00:02:00.040
+Body mass index as a measure
+of body fat percentage.
+
+33
+00:02:00.040 --> 00:02:05.200
+So, Bbdy mass index is really
+just only take two measurements.
+
+34
+00:02:05.200 --> 00:02:06.431
+Your weight and your height.
+
+35
+00:02:06.431 --> 00:02:09.980
+But a real measure of body fat
+percentage is much harder.
+
+36
+00:02:09.980 --> 00:02:15.390
+It takes much more careful measurement,
+so BMI is a surrogate variable for
+
+37
+00:02:15.390 --> 00:02:18.119
+what people really want,
+which is body fat percentage.
+
+38
+00:02:19.860 --> 00:02:25.070
+It's very common for economists to use
+GDP as a measure of economic well-being,
+
+39
+00:02:25.070 --> 00:02:28.430
+even though they fully acknowledge
+that it's a crude summary of that.
+
+40
+00:02:30.080 --> 00:02:34.560
+Probably one of the worst, not worst,
+probably one of the hardest examples
+
+41
+00:02:34.560 --> 00:02:37.940
+are food frequency questionnaires for
+calorie consumptions.
+
+42
+00:02:37.940 --> 00:02:42.240
+So, if you just ask people what
+they ate last week to try to and
+
+43
+00:02:42.240 --> 00:02:46.840
+ascertain their calorie consumption,
+that's a very noisy measure,
+
+44
+00:02:46.840 --> 00:02:51.040
+but it's very hard to get good data
+on what people eat either way.
+
+45
+00:02:53.090 --> 00:02:57.270
+Of course, if you ask people
+whether they're going to vote,
+
+46
+00:02:57.270 --> 00:03:01.099
+you get likely voters, but that doesn't
+mean you're gonna get actual voters.
+
+47
+00:03:02.260 --> 00:03:06.620
+If you measure web traffic that doesn't
+mean it's sort of actual web traffic.
+
+48
+00:03:06.620 --> 00:03:11.741
+You might be getting lots of hits from
+web crawlers and things like that.
+
+49
+00:03:11.741 --> 00:03:15.660
+Search engine crawlers and
+that sort of thing.
+
+50
+00:03:15.660 --> 00:03:18.481
+So in my area, the area that I work in,
+
+51
+00:03:18.481 --> 00:03:23.611
+we study something called
+Functional Magnetic Resonance Imaging.
+
+52
+00:03:23.611 --> 00:03:28.561
+We would really like to measure people's
+brain activation, we really wanna get at
+
+53
+00:03:28.561 --> 00:03:33.509
+let's say neuronal signaling, but we don't
+get that, we get instead a very crude
+
+54
+00:03:33.509 --> 00:03:37.771
+proxy for this called the blood oxygen
+level dependent or BOLD signal.
+
+55
+00:03:37.771 --> 00:03:42.288
+So, this phenomenon of not getting
+to measure what you want, but
+
+56
+00:03:42.288 --> 00:03:46.067
+getting the measure of some
+surrogate that's close or
+
+57
+00:03:46.067 --> 00:03:49.040
+hopefully close is a very common problem.
+
+58
+00:03:50.600 --> 00:03:52.401
+So what are some hallmarks
+of good surrogates?
+
+59
+00:03:52.401 --> 00:03:55.620
+Well, the best surrogates
+are gonna be unbiased.
+
+60
+00:03:55.620 --> 00:03:59.740
+Even if they're noisy and they're not
+completely like the variable that they're
+
+61
+00:03:59.740 --> 00:04:03.200
+measuring, they're not systematically
+larger or systematically smaller.
+
+62
+00:04:04.280 --> 00:04:07.740
+And ideally they have a known
+variance around the desired outcome.
+
+63
+00:04:09.970 --> 00:04:13.808
+So in that case,
+if you have a good surrogate variable.
+
+64
+00:04:13.808 --> 00:04:19.210
+A very good surrogate is for
+
+65
+00:04:19.210 --> 00:04:23.920
+example, weight,
+with a nice unbiased scale.
+
+66
+00:04:23.920 --> 00:04:27.047
+If you don't know the person's
+actual weight but
+
+67
+00:04:27.047 --> 00:04:31.513
+you have a scale that's kind of noisy but
+on average across all people,
+
+68
+00:04:31.513 --> 00:04:36.661
+it's as high as it is low and you actually
+know how variable it is around the truth.
+
+69
+00:04:36.661 --> 00:04:39.381
+Then you can use that
+information in your analysis and
+
+70
+00:04:39.381 --> 00:04:41.510
+probably everything will be fine.
+
+71
+00:04:41.510 --> 00:04:43.750
+That's a very unusual circumstance.
+
+72
+00:04:45.490 --> 00:04:49.740
+Maybe the second best setting,
+which at some level attainable.
+
+73
+00:04:49.740 --> 00:04:54.520
+Is where you have the truth measured
+on some subset of the people and
+
+74
+00:04:54.520 --> 00:04:58.768
+you can study and
+understand some amount of calibration.
+
+75
+00:04:58.768 --> 00:05:03.151
+And I'm gonna give an example,
+so a very common thing that
+
+76
+00:05:03.151 --> 00:05:07.631
+people do now is they wear,
+I have a picture here of fitbit.
+
+77
+00:05:07.631 --> 00:05:11.701
+And this is a little accelerometer
+that you wear around your wrist and
+
+78
+00:05:11.701 --> 00:05:15.361
+it counts things like steps,
+but it's not measuring steps.
+
+79
+00:05:15.361 --> 00:05:16.410
+It's on your wrist.
+
+80
+00:05:16.410 --> 00:05:17.841
+It's measuring acceleration.
+
+81
+00:05:17.841 --> 00:05:22.450
+So they have to use an algorithm to
+predict how many steps you're making.
+
+82
+00:05:22.450 --> 00:05:25.630
+So and sometimes it's accurate and
+sometimes it's not.
+
+83
+00:05:25.630 --> 00:05:29.990
+And maybe even further, your software,
+your fitbit software or
+
+84
+00:05:29.990 --> 00:05:34.770
+your calorie count, your accelerometer
+on your watch or your cell phone, will
+
+85
+00:05:34.770 --> 00:05:38.230
+also not only give you steps but it'll
+actually give you calorie consumption.
+
+86
+00:05:39.880 --> 00:05:40.461
+So what could you do?
+
+87
+00:05:40.461 --> 00:05:45.243
+Well, if you were very serious
+about studying accelerometry,
+
+88
+00:05:45.243 --> 00:05:50.300
+what you could do is really get people
+in the lab, put a mask on them.
+
+89
+00:05:50.300 --> 00:05:56.090
+Really get very careful measurements
+of steps and calorie consumption
+
+90
+00:05:56.090 --> 00:06:01.080
+while they are wearing a fitbit,
+they are wearing these other devices.
+
+91
+00:06:01.080 --> 00:06:04.560
+And use that to understand
+its degree of accuracy.
+
+92
+00:06:04.560 --> 00:06:09.580
+You could maybe build up models because
+you know the truth on that subset
+
+93
+00:06:09.580 --> 00:06:14.110
+of people, and
+using those models employ the strategies
+
+94
+00:06:14.110 --> 00:06:18.080
+from those models in the instances
+where you only have the fitbit data and
+
+95
+00:06:18.080 --> 00:06:20.290
+you don't have the gold standard data.
+
+96
+00:06:20.290 --> 00:06:22.140
+So doing a gold standard study,
+
+97
+00:06:22.140 --> 00:06:25.740
+is probably one of the better
+things that you can do.
+
+98
+00:06:25.740 --> 00:06:28.080
+And if you have that option,
+
+99
+00:06:28.080 --> 00:06:32.950
+I would highly recommend taking the time
+to actually study the variables,
+
+100
+00:06:32.950 --> 00:06:35.000
+these surrogate variables
+that you are looking at.
+
+101
+00:06:35.000 --> 00:06:40.230
+And I think what often happens at least
+In my experience in the scientific world,
+
+102
+00:06:40.230 --> 00:06:44.620
+whenever we go after these surrogate
+variables, and try and figure out how
+
+103
+00:06:44.620 --> 00:06:50.490
+accurate they are, we always seem to come
+away surprised at how inaccurate they are.
+
+104
+00:06:50.490 --> 00:06:54.961
+How much less accurate they
+were then we thought they were.
+
+105
+00:06:54.961 --> 00:06:59.938
+So at any rate, that is the strategy,
+that is very helpful but
+
+106
+00:06:59.938 --> 00:07:04.344
+if you don't have those
+strategies available to you,
+
+107
+00:07:04.344 --> 00:07:10.030
+well the worst case scenario is you
+have to acknowledge limitations.
+
+108
+00:07:10.030 --> 00:07:12.981
+You don't have a real way
+to validate your surrogate.
+
+109
+00:07:12.981 --> 00:07:17.596
+Maybe using some external data that you
+didn't collect, maybe that's an option,
+
+110
+00:07:17.596 --> 00:07:21.431
+but let's suppose none of these
+circumstances are available to you.
+
+111
+00:07:21.431 --> 00:07:25.680
+Then you wanna make sure you
+use skepticism of your results.
+
+112
+00:07:25.680 --> 00:07:29.771
+For example if you're analyzing BMI and
+treating it as if it's body
+
+113
+00:07:29.771 --> 00:07:34.219
+fat percentage, then you want to think
+about your sample and say, well,
+
+114
+00:07:34.219 --> 00:07:37.159
+do I have a lot of body builders and
+midgets and and
+
+115
+00:07:37.159 --> 00:07:41.301
+extremely tall people in my sample
+where BMI may not be as accurate?
+
+116
+00:07:41.301 --> 00:07:44.034
+Or is my sample kind of in
+this range where we know,
+
+117
+00:07:44.034 --> 00:07:48.430
+it's probably kind of okay and
+tends to sort of be and unbiased measure.
+
+118
+00:07:48.430 --> 00:07:52.018
+You wanna use skepticism in
+studying your results and
+
+119
+00:07:52.018 --> 00:07:56.411
+thing about the noise associate
+with your surrogate variables.
+
+120
+00:07:58.491 --> 00:08:03.022
+And another reasonable strategy is
+to use sensitivity analysis for
+
+121
+00:08:03.022 --> 00:08:06.680
+bias and
+variability of your surrogate variable.
+
+122
+00:08:06.680 --> 00:08:11.608
+So what I mean by sensitivity analysis is,
+come up with some idea of how off it's
+
+123
+00:08:11.608 --> 00:08:14.491
+going to be for
+the individual measurements.
+
+124
+00:08:14.491 --> 00:08:17.767
+And come up with an idea of how
+biased it could possibly be, so
+
+125
+00:08:17.767 --> 00:08:22.076
+if you're studying a food frequency
+questionnaire, you might think, okay,
+
+126
+00:08:22.076 --> 00:08:26.451
+well, what if these food frequency
+questionnaires are really underestimating
+
+127
+00:08:26.451 --> 00:08:30.160
+calorie consumptions by
+a thousand calories per day?
+
+128
+00:08:30.160 --> 00:08:33.140
+Think about that, and
+then factor that into the analysis and
+
+129
+00:08:33.140 --> 00:08:34.018
+see what would happen.
+
+130
+00:08:34.018 --> 00:08:37.975
+So sensitivity analysis
+are always at your disposal and
+
+131
+00:08:37.975 --> 00:08:40.584
+they're a good way to sort of poke and
+
+132
+00:08:40.584 --> 00:08:46.491
+prod at what are the consequences of not
+measuring what you really want to measure.
+
+133
+00:08:46.491 --> 00:08:50.517
+And I have this funny thing that says
+limitations, until you spread your wings
+
+134
+00:08:50.517 --> 00:08:54.188
+you have no idea how far you can walk and
+there's a picture of a penquin.
+
+135
+00:08:54.188 --> 00:08:57.760
+I thought that was terrible,
+put it up anyway.
+
+136
+00:08:58.980 --> 00:09:01.480
+And then when to throw in the towel.
+
+137
+00:09:01.480 --> 00:09:07.840
+So, I thought a lot about recommending
+when you throw in the towel,
+
+138
+00:09:07.840 --> 00:09:12.940
+and so this is the resolution that
+I came up with, is prior to running
+
+139
+00:09:12.940 --> 00:09:18.250
+your analysis, think about how you're
+going to interpret your results.
+
+140
+00:09:18.250 --> 00:09:21.550
+And if the variable that
+you're going to use in lieu
+
+141
+00:09:21.550 --> 00:09:25.830
+of the one that you really want is so
+unknown and so
+
+142
+00:09:25.830 --> 00:09:30.880
+unreliable in estimate
+of the desired outcome.
+
+143
+00:09:30.880 --> 00:09:33.190
+That no results would
+change your decision or
+
+144
+00:09:33.190 --> 00:09:37.410
+state of knowledge, then why bother
+running the analysis at all?
+
+145
+00:09:37.410 --> 00:09:42.790
+So, what I would do is go through the
+exercise before you perform the analysis,
+
+146
+00:09:42.790 --> 00:09:44.810
+before you collect the data.
+
+147
+00:09:44.810 --> 00:09:48.750
+And then kinda think about your
+decision space in the event that
+
+148
+00:09:48.750 --> 00:09:51.869
+the results come out exactly
+as you would hope, or
+
+149
+00:09:51.869 --> 00:09:57.300
+in the event that the results come up
+the exact opposite of what you would hope.
+
+150
+00:09:57.300 --> 00:10:02.210
+Is the fact that
+the surrogate variable is so
+
+151
+00:10:02.210 --> 00:10:06.030
+inaccurate relative to what
+you're trying to measure.
+
+152
+00:10:06.030 --> 00:10:11.297
+If that's true in neither of those
+extremes would it really change your
+
+153
+00:10:11.297 --> 00:10:16.916
+decision space, then you either need
+to improve your surrogate variable,
+
+154
+00:10:16.916 --> 00:10:19.311
+do some gold standard studies.
+
+155
+00:10:19.311 --> 00:10:21.313
+Or get a new variable or
+something like that,
+
+156
+00:10:21.313 --> 00:10:23.980
+cuz it's probably not
+worth doing at that point.
+
+157
+00:10:23.980 --> 00:10:27.280
+But I do think if you have
+a really noisy surrogate variable,
+
+158
+00:10:27.280 --> 00:10:31.070
+it is at least worthwhile
+to think about whether or
+
+159
+00:10:31.070 --> 00:10:33.990
+not you're actually gonna
+get anything valuable at all
+
+160
+00:10:33.990 --> 00:10:38.939
+out of your analyses before you undertake
+the costly exercise of actually doing it.
+
+161
+00:10:40.820 --> 00:10:42.370
+Okay, well thank you for your time,
+
+162
+00:10:42.370 --> 00:10:44.530
+and I look forward to seeing
+you in the next lecture.

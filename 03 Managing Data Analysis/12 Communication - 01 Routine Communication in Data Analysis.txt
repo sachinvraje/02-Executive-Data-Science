@@ -1,0 +1,100 @@
+There are two kinds of communications
+that you want to engage in while you're working
+through a data analysis. This lecture talks about the more routine
+kinds of communications that you do on a day to day basis. Communication is fundamental
+to good data analysis. That's because data analysis
+is a highly verbal process and requires regular back and forth and
+discussion to move the process forward. In this kind of setting, both informal and
+formal communications are very important and you want to be able to coordinate
+communication between members or with yourself to make sure that
+the process is constantly moving forward. In this lecture, I will talk more about
+the kind of routine communications and the purposes of those routine
+communications as the data analysis project moves forward. Routine communication is an important tool
+for performing any good data analysis and it's important to realize that
+communication is both a tool and a product of data analysis. Ultimately, when you've completed
+a data analysis project, you're gonna wanna communicate your
+findings and your results to an audience. That's communication as a product but
+as you go through the whole process, you want there to be constant
+communication and dialog so that you can assess findings and
+challenge them constantly to make sure that you get
+the best results that you can. Any good data analyst
+is gonna be engaged in regular informal communication multiple
+times through the data analysis process. They're also gonna keep in mind the way
+in which the ultimate results can be communicated to a wider audience and think
+about what's the best way to do that. It's important to ensure that
+the people in the data science team or the analysts stay on task with these
+two basic communication goals. The basic purpose of a routine
+communication is to gather information, you gathered communication by
+communicating your results and by taking in the responses
+from your audience. Hopefully, that will inform the next
+steps of your data analysis. The form that a routine communication
+takes depends on the goal or what kind of information
+needs to be collected. For example, you might need an answer to
+a very focused and technical question, it's often just a clarification or about
+the details of a data set or a model. Ultimately, you want to
+gather a single fact. At the next level, you might want to
+get some feedback about results that are puzzling or unexpected as you
+were analyzing your data set. In the last level, you may not have
+any specific question whatsoever but you want to gather information
+about the overall process and get some first impressions and
+feedback about what you're doing, so you can refine your data
+analysis even further. It's important to kind of classify
+the purpose of a given communication and to provide the appropriate environment and
+audience for that communication. Just a few quick examples. For example, when you're at a narrow
+level, you might want to say clarify the coding of a variable
+because maybe the metadata's unclear. Maybe if a variable is labeled zero or one, you may not know what it means
+by zero and what is meant by one. There may be a specific person that you
+can talk to to answer that question and the communication will be very brief and
+to the point and the answer will just be a single fact,
+essentially. At the next level, you might be
+doing exploratory data analysis and you are looking at the data and you see
+something that's really unexpected, remember it's part of the EDA process. You always set your expectations for
+what the data should look like and then when you look at the data or
+you make a plot or a table and it doesn't look like what you expected,
+and you can't quite explain, it you may need to communicate
+that to a person or a group of people in order to get
+some feedback or answers about that. This might take the form or an informal meeting with a few people
+to present some preliminary tables or figures, you may need to show
+the data in terms of visualizations. At the highest level,
+you may have reached a major milestone, or maybe you've developed a primary model,
+and you want to get some feedback
+on what you've done so far. Part of this is just this idea that you
+always wanna be checking to see that you haven't missed anything, you wanna be
+challenging your results all the time. This may require a slightly larger
+audience, maybe a team meeting or a group meeting,
+where you present your results and get some feedback on what you've done so
+far. There are a couple of just core
+concepts that are important for any type of routine communication
+that you wanna think about. The first, of course, is the audience. To the extent that you might be able to
+control the audience that you present to, you wanna make sure that you have
+the right people or the right person, so that you can get the most efficient
+answers to your question. It's important to know your audience and make sure you've got the right people
+in the room to get the right feedback. The next thing to think
+about is the content. It's important to be prepared,
+so that you can be focused and concise about what you're trying to say or
+what you're trying to communicate. But also it's important to
+provide sufficient information so that the audience can understand where
+you're coming from and where you're going. Especially, if you have
+an interdisciplinary type of audience, you wanna make sure that everyone's on
+the same page at the very beginning. As far as the style is concerned, I
+generally find it useful to avoid a lot of jargon because as soon as the audience
+grows to more than just a few people, it's likely that different people will have
+different expertise, and different skills. You're not gonna want to use
+very technical jargon that will only be understood by a small
+subset of people, try to use language that'll be understandable
+to a broader range of people. Try to design your figures and
+tables so that people with a broad background will be able to understand
+what's going on in those figures and tables with just a little
+bit of explanation. Finally, it's just your attitude
+when it comes to communication, and it's important to have an open and
+collaborative attitude so the audience is fully engaged in giving you feedback
+and helping you out with your analysis. The point is not really to think about
+yourself as defending the analysis but rather to work to get their input so
+you can do your best work. This is a basic sketch of
+kind of routine communication as you're going through
+the data analysis process. This may be something that you
+do without much thinking but actually, it's a very important
+part of the data analysis process. It's important that the communication
+works between team members, between managers and team members and
+that it's a continuous process to get feedback and
+improve the quality of data analysis.

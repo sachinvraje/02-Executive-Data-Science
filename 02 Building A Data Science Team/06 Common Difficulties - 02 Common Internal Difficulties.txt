@@ -1,0 +1,109 @@
+So no matter how well you set up your
+data science team, and no matter how nice the personalities are, there will always
+be some potential internal difficulties. Some of these are related to personalities
+and interactions between people. Some of them are related to
+the way data scientists and data engineers tend to work. So, it's up to you to sort of set up an
+environment where these sorts of problems are minimized and it's possible to sort
+of keep the process moving as quickly and as sort of friendly way as possible. So the first thing they can often happen
+is there can be interpersonal conflict. Now this happens in any organization, but
+obviously when you're dealing with sort of heavily quantitative folks who often
+are maybe a little bit introverted and maybe have a little bit less interpersonal
+interaction than people in other sort of external units might have, you can
+have some difficulties of interaction. So I think it's very helpful to right
+up front have a policy on the Code of Conduct. This policy can cover all sorts of things, but it should definitely
+cover all of the biggies. Obviously you don't want to any
+sort of put downs on the basis of sexual orientation or on the basis
+of race or on the basis of sex. All that sort of thing can be
+built into the policy, but it can also cover more subtle things and
+data science specific things. So for example, if there's going to be
+code review, if one person is gonna review someone else's code, you might set up the
+parameters for how that's gonna happen. Are they going to make the suggestions? Are they going to immediately submit
+changes or fixes to people's code? Are they gonna do that in a way where
+they communicate with the person who originally wrote the code or not? When people are reviewing
+each other's code and in group meeting how are they
+supposed to communicate? Are they supposed to be critical? How are they supposed to be impartial? How are they supposed to
+interact with each other? Now this seems a little bit pedantic
+to have these sorts of things set up in advance, this sort of policy, but it can really save you a lot
+of trouble in the end run. If you up front explain,
+here are the exceptions for how our organization is gonna run. It also helps, in the data science
+organization, like I said several times, there's often uncomfortable truths
+that you discover with data. Whether it's something you
+didn't quite expect or a whether its a product or
+a machine learning algorithm that failed. And so having a Code of
+Contact in place to prevent personal hurt feelings Is
+a critical component of this. In that Code of Conduct it also makes
+a lot of sense to explain what you mean by success and failure. So, if you only define success by
+the machine learning algorithm works or the software never has bugs in it or the hardware never goes down,
+there will be a lot of failure. But if you define success
+as identifying problems, tackling those problems, and not always
+getting an answer that everyone expects. You kind of reduce the pressure on any
+individual analysis, and that allows people to act sort of more impartially,
+really let the data speak for itself. In addition to this policy you
+need to have open communication. Allow people to communicate directly
+with you, and with each other, about whether that policy
+is being enforced. And make sure that they feel empowered to
+have that conversation with each other. This is really critically important,
+both in a general sense, but also very specifically for data science. It needs to be a policy that open
+criticism of each others data analysis, or other people's data infrastructure,
+is accepted and embraced. But at the same time, that criticism
+isn't made to make people feel awful or isn't used to hurt people, it's just
+used to improve the entire process. So that if you organize it in that way,
+people will be open to criticism and they'll be willing to sort of make
+changes if they don't feel like it's gonna hurt their job and
+their job prospects. The other thing is, in the extreme circumstance where people
+are not adhering to the Code of Conduct, for either sort of general purpose reasons
+or for data science specific reasons, it's very useful to have outlined what
+are the steps that are gonna take place. What's the enforcement? Whether it's something like, I'm gonna point out when you're
+behaving incorrectly in a code review. Or whether it's something
+like at a certain stage, you'll be barred from coming to this
+meeting for this period of time. Whatever it is that you need to establish. It's better to say it up front, rather than to invent policies on the fly
+when dealing with a data science team, especially when you're dealing with
+diverse people who have different expertise, and maybe different
+expectations about what's going on. Another thing that you need to deal with,
+or another problem that often comes up
+internally, is inter-meeting slowdowns. So especially if you've established
+regular individual meetings, regular group meetings, you hope to see
+progress at each of those meetings. You hope to see problems getting solved or
+at least tackled. But sometimes that slows down,
+and like I mentioned, that can often be for
+very trivial reasons. There's a little bug in the code and
+you just can't see it. So you want somebody else to take a look
+at your code and help you fix it and get unstuck. So the key here is to
+identify the core issues. What's the real problem? Is it that the person
+isn't self motivating? Is it that they're not chasing,
+they don't know where to go to look for the right answers? Is it that the interaction between the
+data engineers and the data scientists, or the data scientists and
+the external people, it's not happening? So you can either deal with that by
+increasing your interaction, getting more directly involved, emailing to ask
+questions about how things are going. That's sort of a delicate balance, because
+like I mentioned, data scientists and data engineers need long
+periods of uninterrupted time in order to actually solve these sort of
+quite technical challenging problems. It's also useful to sort of
+check on people's motivation. So you might have a data scientist who's
+working with, say, the market team, but they don't really like marketing. They would much rather be
+involved with a different team, they'd rather be involved with product. And they'd like to be building
+data science products that can be externally used. And if you don't identify quickly
+that their motivation is flogging, it can be very hard for
+the to get going again. Given the frustrating
+nature of data science and data engineering for the people that
+are doing it, motivation is critical. So identifying and fixing problems with motivation is one of
+the key jobs of the data science manager. So this is comes back to
+the idea of frustration. So, frustration is something that will
+always come up with data science teams. Both people externally being frustrated
+with the data science team for not getting the answer that they wanted,
+and frustration internally because the stupid software isn't
+working the way you wanted it to. And so a way to fix that problem,
+or to keep that problem going, is to remember to use lots of
+positive feedback whenever success are there you
+need to celebrate them. Help people keep going,
+keep being excited about coming in and working on those data science problems. But also impartial feedback. So the key there is to talk about
+the code, talk about the hardware, don't talk about the person. Always sort of focus on the problem and
+how the problem's gonna be fixed. And again, not to say that
+problems are an issue that will cause you to have difficulties
+with your employment. Like if If the machine learning algorithm
+isn't working, that doesn't mean that you're gonna be done, it means we're gonna
+try another machine learning algorithm, or we're gonna get a different data set, or
+we're try to tackle a different problem. That will keep people motivated and
+not make them fear that if they don't do the analysis in a certain way, they
+won't be able to sort of keep their job. So, motivation is a huge component of
+keeping an internal data science team going.

@@ -1,0 +1,72 @@
+It's not just the people in your
+Data Science team that will want to use data and interact with data. So part of your role as
+Data Science manager, or a Data Science executive is
+teaching people how to use data or empowering people to use
+data within an organization. So one of the ways in which to do that
+is through Data Science training. So there's a number of different
+ways that you can do this. One is pointing people to resources,
+collecting and curating resources that
+are available online. Whether that's online classes or online
+materials related to sorts of things that they might wanna be able to do. It might be writing those
+tutorials yourself, so that people can interact with
+the data themselves directly. Another really useful way is to have
+internal talks that are available to everybody to go to if they want to. Where the Data Science team communicates. How do you pull data out of the database? How do you make plots? How do you visualize data
+in a way that's compelling? How do you do machine learning? Or what is machine learning? Those internal talks are really useful
+if they can also communicate what the internal capabilities are. One thing that's very difficult about Data
+Science teams is that every Data Science team had different capabilities. Depending on the people that are there,
+how subscribed their activities are, how difficult it is to do the problems. And so communicating what's possible and
+what's not possible in a way that's sort of unbiased to the whole
+organization often spurs new ideas. New ways to take advantage of the Data
+Science team to solve new problems that people care about. So you can either have sort
+of training sessions or sort of informational sessions about
+how the Data Science team works. Those are both really useful ways
+to empower people to approach the Data Science team and work with them. Another way is to build documents or
+build tools or build products that can be
+shared with other people. Who don't necessarily have Data Science or
+Data Engineering training, but would like to interact with the data. So one common example
+is sort of a dashboard, sort of a set of visualizations or
+set of plots. That are built, so that somebody
+can click on some buttons and interact with that visualization. They can ask their own questions,
+have their own hypothesis and interact with the data. Even if it's just a subset of the data. Another way is just one interactive
+visualization can be really compelling, can be a way for
+people to sort of interact with the data, ask one specific question. And sort of see how their choices work. So here the key is,
+there's a design element to it. It's how are you going to
+design your interface so that people can interact with the data. They can ask their own questions. But they're not intimidated by syntax or
+knowing how to actually do the stuff. With the low-level programming
+languages that you or your Data Science team might know about. So in addition to training, there's these sort of ways to directly
+connect people to the data themselves. Ideally, you can automate this. So a lot of report writing tools,
+whether they're in sort of high Python notebooks or shiny documents or so
+forth, can be sort of auto-generated. You can also setup a dashboard that
+does an auto-pull from your database, that always has the latest and
+freshest data available to people. If you can automate it in that way,
+the most common questions can be answered by people other
+than the Data Science team. Which leads them to innovate and
+to focus on new ideas and new things that they can do well. Or to shore up the infrastructure for this
+sort of Data Science processes that you already have going on
+in your organization. The other thing that can be really useful
+as a way to have people sort of interact with the Data Science team is with
+Data Science idea evaluation. So often people will have ideas about
+ways they think they might be able to use data that solve a particular
+problem or another. But it turns out that sometimes
+those are impossible. We don't have the right data or we don't
+have the imaginary infrastructure, we don't have the right scale to
+be able to solve that problem. But it's still really nice if you
+can provide a way or a format or a forum where people can propose ideas
+that they'd like to do with the data and get critical, but
+positive feedback on those ideas. You don't wanna immediately crush
+any idea that somebody brings up. You'll never hear another idea again. But it is a good idea to sort of,
+that helps tune expectations. What can we actually do with
+the datasets that we have? Especially, if someone else
+is proposing the ideas and you are sort of letting them know. Yes, we can do that. No, we can't do that. Yes, we can do that, but it would take a whole new
+infrastructure on the server side. Yes, we can do that, but it would require us to develop a whole
+new machine learning infrastructure here. That gives people an idea about what's
+going on with the Data Science team. What can you actually do, what are the
+parameters that makes it useful for you. And so you can do peer review of
+these ideas from the data team and from yourself as another way to
+interact with the organization. But in general,
+the idea is as often as possible drawing other people into
+the Data Science process. Often that requires a little bit of
+education and that education can feel like wasted time if you're not thinking
+about it in the right way. But if you think about it as
+an investment in the future Data Science capabilities of your organization. It can be a really positive, really value
+compounding way of doing data science.

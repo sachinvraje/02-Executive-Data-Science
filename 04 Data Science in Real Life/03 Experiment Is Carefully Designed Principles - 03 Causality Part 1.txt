@@ -1,0 +1,108 @@
+Hi, my name is Brian Caffo and
+this is the lecture on Causality. So what is causation? And I start with this great xkcd comic. If you don't read xkcd,
+it's this wonderful web comic and you should look it up. And it says I used to think
+correlation implied causation then I took a 101 class and now I don't. Sounds like the class helped and
+it says, well, maybe. And so, that's what we're gonna talk
+about today is the well, maybe part. So in order to define causality, I'm gonna
+go back to the philosopher David Hume. And his philosophy really underlies
+was the starting point for some of the thinking on causality in
+the world of statistical analysis. And I give you this quote here,
+and it's somewhat of a mouthful. But the fundamental idea for defining
+a causal effect in statistics, or at least one of the major branches of thinking
+Is to think about counterfactuals. So and this is what he describes and if
+you look at the last sentence or in other words where if the first object had not
+been, the second never had existed. He's talking about or we translate it
+now to the idea of counterfactuals. So as an example in the medical world of
+a counterfactual, what we would talk about is whether or not a person would respond
+to the treatment with what we observed. If we gave them the treatment and
+they responded or not, and then the counterfactual be
+what would have happened for that person if we had not
+given them the treatment? So the causal effect is the difference for
+that person whether they received the treatment or
+whether they didn't receive the treatment. Okay, but of course we only get to
+see one of those two realities. And so the counterfactual is the
+difference between something we observe and something we can't observe. So again, just to reiterate,
+that's what this slide says, is the causal effect of the treatment on
+a subject is the change in the outcome. From the treatment that
+the subject actually received, and what would've occurred had she or
+he received the other treatment. Okay, so
+that's the counterfactual difference. And again,
+it requires something we observed, but also requires something we cannot observe. So let's just go through an example and
+consider a made up treatment. And in this case I don't know why, I
+decided let's pick an exercise treatment. So I picked a silly one. So this is in kind of a crazy 70s exercise equipment called the Twist 'N
+Tone where you kinda twist on your hips. Okay. So let's imaging, so the causal,
+the counter factual, right? Would be the difference between what would
+happen if a person used to twist and tone, let's say for
+12 weeks, vs they didn't. Both of these, it's the same person and by the way both of the persons in
+these images are the same person. It's Christian Bale from
+two different roles. Certainly the amount of weight loss he
+went through in the right hand role was a little excessive. But the counterfactual difference would
+be the difference in the outcome, in this case the measure of fitness or
+muscle density or whatever, comparing whether or not the person had used it
+to whether the person had not used it. So we can observe that, right? We can observe for
+this specific point in time a person who has both used the twist and
+tone and not used the twist and tone. We could do something like in Christian
+Bale's case, look at it if he used it for a while then had a washout period and
+then he didn't use it for a while or something like that, but again,
+that's not at the same point in time. So whatever effect we see
+may be aliased with time. So we can't actually get at
+the causal effect for an individual. However we can get at, we can estimate
+at least, the average causal effect, the average across individuals,
+under some assumptions. Okay, so the average causal effect
+is not just if we look at whether or not Christian Bale used the twist and
+tone or not. The average causal effect is
+if we took a bunch of people, some of them used twist and
+tone and another collection of them didn't they received the control and
+the comparison between the two. And if we have things like randomization,
+that allows us, under some assumptions, to estimate
+the actual average causal effect. So we can get a real idea of
+cause completely empirically. And that's the idea of causal
+statistical inference. To get at the idea of cause to understand
+the assumptions you're making and to have a formal definition of
+cause underlying your analysis. So this way of thinking,
+there's some consequences. One consequence is to talk about cause, we have to think about an assignable
+treatment or intervention, okay. So in this case we can assign the twist
+and tone to some people and not. We have to conceptually,
+even if we can't specifically, even if we can't randomize it, like
+smoking is something we can't randomize. We can't tell people to go smoke, right? That wouldn't be ethical. However, it's conceptually randomizable. I work in a setting, brain imagining,
+we're often interested in cause. In things that are not assignable. For example, does this kind of
+change in your brain structure change your predilection for a particular
+kind of neurological disorder? And in that case, we can't conceptually think about that
+change actually being randomizable. So that's one potential
+problem with this specific definition of causal statistical analysis
+that I'm supporting here in this lecture. Of course, the other is we
+can't observe counterfactuals. We only get to observe one state
+of nature at a particular time. And that's the crux of the work in causal
+inference, is trying to combat that issue. But we can with assumptions and careful
+study design make inferences about average causal effects and
+that's where the real insight was. And to me I think there's
+formal causal analysis and then there's Understanding
+an enough of causal analysis so that you can, you can think about
+the causal implications of your analysis. And so to me I don't know,
+personally I don't know, I don't do that much
+specific causal analysis. However, causal thinking
+underlies a lot of what I'm doing. So I think causal thinking is
+essential for statistical analysis. And it's essential for understanding
+the causal implications of your analysis. So what I'd like you to do is now to
+think about these various study designs. Now that you know this one simple fact,
+we're gonna define cause as the difference as a causal effect is the difference
+between what we would observe on a person if they had a treatment minus what they
+would observe or over what they would have observed had they not received the
+treatment, where we only get to view one. So what I'd like you to do is think about
+these various kinds of study designs and how they try to get out that question and
+what ways they've failed and in what ways they succeed. So one really obvious example of trying
+to think this way is a crossover trial. Give a subject a treatment, than after a suitable washout
+period give them the other. So as an example,
+if you were studying chronic migraines. We could give someone some relief
+medication after a washout period, then give them another. So I think this might work for
+migraines because, chronic migraines people tend to continue
+to have them after a washout period we can assume that the drug isn't
+carrying over to the next period. But it wouldn't work for
+something like an ad campaign, right? Because you can't unsee the previous ad,
+okay? So, cross-over trials try to
+get causal effects by virtue of having the same person
+actually receive both treatments. Or, I'll give another example here,
+a weight loss study. You couldn't do this kind of thing for
+a weight loss study. But again, I want you to think
+about crossover trials and the implications with causal and
+counterfactual thinking.

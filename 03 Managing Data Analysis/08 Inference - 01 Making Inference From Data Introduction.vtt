@@ -1,0 +1,467 @@
+WEBVTT
+
+1
+00:00:00.640 --> 00:00:04.580
+Inference is the task of making statements
+about things you can't observe.
+
+2
+00:00:04.580 --> 00:00:07.871
+This lecture's about the ingredients you
+need to make useful inferences from data.
+
+3
+00:00:11.998 --> 00:00:15.523
+So the goal of inference is to be able
+to make statements about things we
+
+4
+00:00:15.523 --> 00:00:17.900
+can't really observe directly.
+
+5
+00:00:17.900 --> 00:00:20.467
+And we also want to be able to
+characterize our uncertainty about
+
+6
+00:00:20.467 --> 00:00:22.280
+those statements that we make.
+
+7
+00:00:22.280 --> 00:00:25.170
+So these things that we can't observe,
+the things that we wanna make inferences
+
+8
+00:00:25.170 --> 00:00:28.680
+about, these are usually referred
+to generally as the population.
+
+9
+00:00:28.680 --> 00:00:30.380
+Okay, and then to make inference,
+
+10
+00:00:30.380 --> 00:00:33.550
+what we do is we collect
+a sample from the population.
+
+11
+00:00:33.550 --> 00:00:38.330
+And the sampling process that we
+use results in our dataset, okay.
+
+12
+00:00:38.330 --> 00:00:41.220
+So we have a dataset that results
+from a sampling process that
+
+13
+00:00:41.220 --> 00:00:42.940
+draws from a population.
+
+14
+00:00:42.940 --> 00:00:47.100
+So to make inferences from data,
+you need three simple ingredients.
+
+15
+00:00:47.100 --> 00:00:50.020
+First, you need to be able
+to identify the population
+
+16
+00:00:50.020 --> 00:00:51.620
+to which you're making these inferences.
+
+17
+00:00:51.620 --> 00:00:54.480
+Of course you have to have a question
+about that population, but
+
+18
+00:00:54.480 --> 00:00:56.080
+that's kind of secondary.
+
+19
+00:00:56.080 --> 00:00:57.640
+Once you've identified the population,
+
+20
+00:00:57.640 --> 00:01:01.590
+then you can talk coherently about
+what you're making inference about.
+
+21
+00:01:01.590 --> 00:01:05.320
+The next thing you need to be able to
+do is to describe the sampling process.
+
+22
+00:01:05.320 --> 00:01:10.000
+You need to be able to tell a story about
+how the data came from the population and
+
+23
+00:01:10.000 --> 00:01:10.795
+ended up in your lap.
+
+24
+00:01:10.795 --> 00:01:14.900
+Okay?
+If you can't describe that process,
+
+25
+00:01:14.900 --> 00:01:17.800
+then it is going to be very
+hard to understand how
+
+26
+00:01:17.800 --> 00:01:20.290
+valid your inferences are from the data.
+
+27
+00:01:20.290 --> 00:01:24.540
+The better and more clearly you can
+describe how the data came to you,
+
+28
+00:01:24.540 --> 00:01:26.520
+the stronger your results will be.
+
+29
+00:01:26.520 --> 00:01:30.110
+Now the last thing you need is a model for
+the population.
+
+30
+00:01:30.110 --> 00:01:33.371
+You need a model for how either elements
+of the population interact with each other
+
+31
+00:01:33.371 --> 00:01:34.942
+or how they're related to each other.
+
+32
+00:01:40.046 --> 00:01:44.430
+So defining the population is far and
+away the most important task.
+
+33
+00:01:44.430 --> 00:01:47.240
+If you can't coherently
+describe the population,
+
+34
+00:01:47.240 --> 00:01:49.465
+then you can't really make any inferences.
+
+35
+00:01:49.465 --> 00:01:51.575
+Okay because there's nothing
+to make inference to.
+
+36
+00:01:51.575 --> 00:01:54.285
+So make sure that you can accurately
+characterize your population.
+
+37
+00:01:54.285 --> 00:01:57.295
+It's gonna help you tell the story better
+in the end after you analyze the data.
+
+38
+00:01:57.295 --> 00:02:01.111
+So similarly it's important that you
+identify an important question that you
+
+39
+00:02:01.111 --> 00:02:01.696
+wanna ask.
+
+40
+00:02:01.696 --> 00:02:03.100
+Just get an answer.
+
+41
+00:02:03.100 --> 00:02:04.735
+But presumably you've done this already.
+
+42
+00:02:04.735 --> 00:02:07.230
+[COUGH] So just as a very quick,
+
+43
+00:02:07.230 --> 00:02:12.150
+simple running example,
+here's a basic population of ten penguins.
+
+44
+00:02:12.150 --> 00:02:16.990
+Okay, and each of these penguins has
+a turquoise hat or a purple hat.
+
+45
+00:02:16.990 --> 00:02:19.490
+And so
+the basic question that we wanna ask is,
+
+46
+00:02:19.490 --> 00:02:24.740
+what proportion of this population of
+penguins is wearing a turquoise hat?
+
+47
+00:02:24.740 --> 00:02:26.080
+So, that's basically it.
+
+48
+00:02:26.080 --> 00:02:27.590
+Now, the problem, of course,
+
+49
+00:02:27.590 --> 00:02:30.340
+is that we can't collect data
+on the population, right?
+
+50
+00:02:30.340 --> 00:02:33.834
+Cuz they're penguins after all, and
+we can't take care of all of them, so
+
+51
+00:02:33.834 --> 00:02:36.320
+we need to draw a sample
+from this population.
+
+52
+00:02:36.320 --> 00:02:40.096
+So the sampling process is the manner
+in which the data come to you, and
+
+53
+00:02:40.096 --> 00:02:41.740
+this gives you the dataset.
+
+54
+00:02:41.740 --> 00:02:44.330
+So, let's say we're going
+to sample three penguins,
+
+55
+00:02:44.330 --> 00:02:48.930
+and the way that we sample those
+three penguins is, we stand there in
+
+56
+00:02:48.930 --> 00:02:52.530
+front of these ten penguins and we take
+the first three that walk up to us, okay?
+
+57
+00:02:52.530 --> 00:02:55.930
+So then we have our dataset
+of just three penguins.
+
+58
+00:02:55.930 --> 00:03:00.490
+And so, now the model for the population
+describes how the features of
+
+59
+00:03:00.490 --> 00:03:03.200
+the units in the population
+are related to each other, okay?
+
+60
+00:03:03.200 --> 00:03:05.060
+And this model can be more or
+
+61
+00:03:05.060 --> 00:03:08.510
+less complex depending on the type of
+question that we're trying to answer.
+
+62
+00:03:08.510 --> 00:03:12.420
+But the important thing is that the model
+connects the data that we observe
+
+63
+00:03:12.420 --> 00:03:14.210
+to the population that we don't observe.
+
+64
+00:03:14.210 --> 00:03:14.990
+All right?
+
+65
+00:03:14.990 --> 00:03:18.780
+And so, it's basically a little
+cartoon of how the world works.
+
+66
+00:03:18.780 --> 00:03:24.030
+So a couple of example of what a model
+might consist of is that we might assume,
+
+67
+00:03:24.030 --> 00:03:27.300
+for example, that the units of the
+population are independent of each other.
+
+68
+00:03:27.300 --> 00:03:30.230
+So imagine that the different
+penguins in this population
+
+69
+00:03:30.230 --> 00:03:31.650
+are wearing different hats.
+
+70
+00:03:31.650 --> 00:03:35.663
+And the fact that one penguin is wearing
+a turquoise hat doesn't really influence
+
+71
+00:03:35.663 --> 00:03:39.110
+whether another penguin is gonna wear
+a purple hat or a turquoise hat.
+
+72
+00:03:39.110 --> 00:03:40.890
+So they're all kind of
+independent of each other.
+
+73
+00:03:40.890 --> 00:03:43.440
+That's one assumption that we'll
+make as part of our model.
+
+74
+00:03:43.440 --> 00:03:46.040
+Another intentional assumption
+that we might want to make is that
+
+75
+00:03:46.040 --> 00:03:49.350
+certain features of the population
+are linearly related.
+
+76
+00:03:49.350 --> 00:03:51.010
+So there are linear
+relationships between them.
+
+77
+00:03:51.010 --> 00:03:54.760
+And there are many other kinds of things
+that you might wanna assume about
+
+78
+00:03:54.760 --> 00:03:58.130
+a population if your question's
+a little bit more complex.
+
+79
+00:03:58.130 --> 00:04:00.350
+Now the question that we're
+asking here is very simple.
+
+80
+00:04:00.350 --> 00:04:04.090
+We just wanna know what's the proportion
+of penguins with turquoise hats.
+
+81
+00:04:04.090 --> 00:04:07.020
+So we don't have to make too many
+assumptions about the population in order
+
+82
+00:04:07.020 --> 00:04:08.440
+to order that question.
+
+83
+00:04:08.440 --> 00:04:10.709
+So given our little data
+set here of three penguins,
+
+84
+00:04:11.840 --> 00:04:15.780
+we want to estimate what's the proportion
+with turquoise hats in the population.
+
+85
+00:04:15.780 --> 00:04:19.505
+So from the dataset we can estimate
+that it's one-third of the dataset.
+
+86
+00:04:19.505 --> 00:04:22.930
+One-third of the penguins
+have turquoise hats so
+
+87
+00:04:22.930 --> 00:04:25.960
+we'll assume that one-third of
+the population wears turquoise hats.
+
+88
+00:04:25.960 --> 00:04:29.160
+So that's what we're gonna
+infer from our dataset.
+
+89
+00:04:29.160 --> 00:04:33.430
+Our final estimate is one-third or
+.33 penguins with turquoise hats.
+
+90
+00:04:33.430 --> 00:04:36.360
+Now it turns out because we know
+the population that the truth is about
+
+91
+00:04:36.360 --> 00:04:41.050
+point four penguins actually wear
+turquoise hats, or two-fifths, okay?
+
+92
+00:04:41.050 --> 00:04:45.500
+So our estimate is 0.3 roughly and
+the truth is point four.
+
+93
+00:04:45.500 --> 00:04:50.550
+And so the question is well how do we
+know if 0.3 or 0.33 is a good estimate?
+
+94
+00:04:50.550 --> 00:04:52.730
+So we'll talk about that
+in the next lecture.
+
+95
+00:04:52.730 --> 00:04:54.746
+In terms of how do you know whether
+you've made a good inference or not.
+
+96
+00:04:54.746 --> 00:04:58.924
+But the point is that our estimate
+is .33 and the truth is .4.
+
+97
+00:04:58.924 --> 00:05:00.990
+So there's a variation
+there as we would expect.
+
+98
+00:05:02.030 --> 00:05:04.070
+But that's our estimate for
+the population level feature.

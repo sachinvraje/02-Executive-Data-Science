@@ -1,0 +1,64 @@
+Hi. This is the lecture on negative controls. So this is part of our discussion of
+looking at statistically significant or non-significant results and
+adding meat to our hypothesis testing. And in this case, what we're
+concerned with is the problem of, did the process that we
+executed the hypothesis in, was that what created the significance, or
+was it a real intrinsically true effect? Okay. So let's restate the problem. You're worried that your results are more
+due to process than a real effect. Well how do you check? Well there's a lot of ways and a lot of
+the mechanisms of statistical significance are trying to check against that. They're evaluating your results relative
+to the uncertainty in your data and so on. But this, what I'm about to present
+is a very practical solution to that. Just a real sort of more data
+science-y way to think about it. And the idea is to perform
+a negative control. And you're basically going
+to repeat the study for a variable that is known
+to have no association. So, let me give you a very famous
+example in the area that I work in. What everyone is talking about in brain activation studies now,
+is in this idea of connectivity. That two different areas of the brain, their brain activity tends
+to track with one another. And that's the idea of
+so-called connectivity. It's interesting to note that
+what someone did at one point is they used all these tools
+that people like me and other people that work in the area have
+developed, and they looked at them in an area of the brain where there
+is no brain, the ventricles, okay? So the in the ventricles there's
+nothing but cerebral spinal fluid, so there's nothing there. And for two locations in the ventricles, they used the same techniques that we
+use for two locations in the brain to study correlations or
+connectivity as we like to call it. And what they found is
+significant results. And that's an interesting finding
+cuz there's no brain there, so it's not brain conductivity they're
+finding, it purely has to do with process. And what they found out is that this
+was due to a couple of interesting artifactual components of the data. One, it was due to sort of head motion. As people move their head, it created
+similar patterns in the two locations in this area of the ventricles and
+that caused correlations. Those effects permeated the rest
+of the image, so a lot of what people were reporting as connectivity
+was really due to head motion. It's also true that as we breathe,
+and as our heart beats, that changes the character of
+the signal dynamically and those were also related to
+creating spurious correlations. The broader point, though,
+is that what these investigators did is they repeated an analysis
+that everyone was excited about. Everyone was excited about
+finding remote correlations in the brain that were
+putatively brain networks and understanding how they were related
+to disease and stuff like that. However, what these researchers did is, they said okay let's just study
+the process by looking at an instance where we know that there can't be
+an effect, but in every other sense, we've replicated the analysis in exactly
+the same way and they found an effect. So these kinds of negative controls offer
+a very simple way to investigate spurious effects due to things like confounding or
+multiplicity. In this case, it was confounding. The correlation between this two voxels is
+actually confounded by head motion, for example. So what are the characteristics
+of a good negative control? Well, they're variables that are realistic
+but known to have no association. So in this case, they had a perfect one. They had something that was in the image
+already, that they could look at, it was subject to all the same
+processing experience that the rest of the brain got and so this was a good
+version of a negative control. If there's one criticism of negative
+control, it's often very hard to find something where you know for
+sure there can't possibly be an effect. So another strategy that
+people employ rather than executing things like negative controls,
+is they do things like permutation tests. They actually formally break
+the association by permuting one of the variables so that there can't be
+an association, they've broken it. So that's a little bit more of an advance
+of a topic, but the idea is quite similar. So this is a simple technique. And if you're feeling queasy about a process that one of the people you're
+managing went through, a very long, complicated set of data munging and
+analysis and several models being built, ask them to just repeat the whole
+process for something that is, on face value, can't possibly exhibit
+an association, and see what comes out. And it's a great way to
+offer a sanity check, and to check influences due to process.

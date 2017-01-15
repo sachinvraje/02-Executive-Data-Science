@@ -1,0 +1,908 @@
+WEBVTT
+
+1
+00:00:00.430 --> 00:00:03.398
+This lecture gives an example
+of an associational analysis and
+
+2
+00:00:03.398 --> 00:00:06.030
+how to use formal modeling
+to challenge your findings.
+
+3
+00:00:10.515 --> 00:00:14.333
+The basic form of a model in
+an associational analysis will look
+
+4
+00:00:14.333 --> 00:00:15.950
+something like this.
+
+5
+00:00:15.950 --> 00:00:20.460
+You'll have an outcome, y and
+you'll have a key predictor, x.
+
+6
+00:00:20.460 --> 00:00:23.110
+And then you have maybe some potential
+confounder that will call z.
+
+7
+00:00:23.110 --> 00:00:26.920
+And then you have some independent
+random error that we call epsilon.
+
+8
+00:00:26.920 --> 00:00:28.570
+In addition to those factors,
+
+9
+00:00:28.570 --> 00:00:30.720
+we have a number of parameters
+that we wanna estimate.
+
+10
+00:00:30.720 --> 00:00:32.890
+So alpha here is the intercept.
+
+11
+00:00:32.890 --> 00:00:35.600
+It's the value of y when x and z are zero.
+
+12
+00:00:35.600 --> 00:00:40.930
+We have beta, which is the change in y
+associated with a one unit increase in x,
+
+13
+00:00:40.930 --> 00:00:41.620
+adjusted for z.
+
+14
+00:00:41.620 --> 00:00:46.180
+And then gamma is the change in y
+associated with a one-unit increase in z,
+
+15
+00:00:46.180 --> 00:00:47.030
+adjusting for x.
+
+16
+00:00:47.030 --> 00:00:50.350
+So, this is a linear model, and
+
+17
+00:00:50.350 --> 00:00:53.160
+the parameter that we're trying
+to estimate here is beta.
+
+18
+00:00:53.160 --> 00:00:58.200
+That's what tells us how our outcome
+changes along with our key predictor.
+
+19
+00:00:58.200 --> 00:01:01.550
+Now, there are other parameters, gamma and
+alpha, that are in the model and
+
+20
+00:01:01.550 --> 00:01:05.590
+we need to have them in the model for
+the model to work.
+
+21
+00:01:05.590 --> 00:01:07.750
+But we're actually not
+interested in those parameters.
+
+22
+00:01:07.750 --> 00:01:09.760
+So we sometimes call
+them nuisance parameters,
+
+23
+00:01:09.760 --> 00:01:13.220
+because we have to estimate them, but
+we don't actually care about their value.
+
+24
+00:01:13.220 --> 00:01:15.530
+So this is what I might
+consider to be a primary model.
+
+25
+00:01:15.530 --> 00:01:19.890
+It's very simple, there's a key predictor
+and there's only one confounder.
+
+26
+00:01:19.890 --> 00:01:22.900
+And so you may need to consider
+other things later on, but
+
+27
+00:01:22.900 --> 00:01:24.470
+this is sometimes good as a primary model.
+
+28
+00:01:24.470 --> 00:01:25.290
+On the other hand,
+
+29
+00:01:25.290 --> 00:01:28.170
+sometimes we'll use a primary model
+that doesn't have any confounders.
+
+30
+00:01:28.170 --> 00:01:32.380
+And then slowly add things to the mall
+to see how our results change.
+
+31
+00:01:32.380 --> 00:01:36.250
+So the example I'm going to use here is
+going to be an advertising campaign for
+
+32
+00:01:36.250 --> 00:01:37.270
+a new product.
+
+33
+00:01:37.270 --> 00:01:40.640
+Imagine you're selling something and
+you're thinking you're buying ads on
+
+34
+00:01:40.640 --> 00:01:44.770
+Facebook and you wanna know how
+effective those ads are gonna be.
+
+35
+00:01:44.770 --> 00:01:47.140
+So ultimately what you wanna
+do is sell more products and
+
+36
+00:01:47.140 --> 00:01:48.560
+make more money from this.
+
+37
+00:01:48.560 --> 00:01:53.060
+And so one thing you might do is try to
+pilot a one week experiment where you buy
+
+38
+00:01:53.060 --> 00:01:55.875
+Facebook ads for a week and
+see how it does.
+
+39
+00:01:55.875 --> 00:01:59.965
+So this is a very simple design,
+you might say look at the one week before
+
+40
+00:01:59.965 --> 00:02:02.985
+the ad campaign,
+the one week during the ad campaign.
+
+41
+00:02:02.985 --> 00:02:05.705
+And then the one week after
+the ad campaign just to see
+
+42
+00:02:05.705 --> 00:02:09.305
+how the sales numbers change
+while you're running the ads.
+
+43
+00:02:09.305 --> 00:02:12.985
+Then you could compare the total sales for
+the three weeks during,
+
+44
+00:02:12.985 --> 00:02:15.505
+the three weeks before and
+the three weeks after.
+
+45
+00:02:15.505 --> 00:02:18.630
+And see if there is any reasonable
+increase in the total sales.
+
+46
+00:02:18.630 --> 00:02:20.470
+So using this type of design and
+
+47
+00:02:20.470 --> 00:02:23.780
+this kind of experiment what
+would you expect to see?
+
+48
+00:02:23.780 --> 00:02:28.030
+So here's a data set that's not real, but
+it kind of represents the ideal scenario
+
+49
+00:02:28.030 --> 00:02:31.150
+for what you might see in
+an experiment like this.
+
+50
+00:02:31.150 --> 00:02:35.020
+So in the first seven days you have
+an average about 200 dollars per day.
+
+51
+00:02:35.020 --> 00:02:35.670
+Then the next 7 days,
+
+52
+00:02:35.670 --> 00:02:39.030
+this is during the campaign,
+you have an average of about $300.
+
+53
+00:02:39.030 --> 00:02:42.910
+And then after the campaign finishes you
+have an average of, again, about $200.
+
+54
+00:02:42.910 --> 00:02:47.450
+So it's possible to tell just from this
+graph, without doing anything fancy,
+
+55
+00:02:47.450 --> 00:02:52.710
+that the ad campaign seems to add about
+$100 per day to the total daily sales.
+
+56
+00:02:52.710 --> 00:02:54.880
+So, in this case,
+your primary model might be very simple,
+
+57
+00:02:54.880 --> 00:02:56.340
+it might look something like this.
+
+58
+00:02:56.340 --> 00:02:59.410
+Where you have Y, is the outcome,
+that would be the daily sales.
+
+59
+00:02:59.410 --> 00:03:03.530
+And then X is just an indicator of
+whether a given day fell during
+
+60
+00:03:03.530 --> 00:03:05.000
+the ad campaign or not.
+
+61
+00:03:05.000 --> 00:03:07.780
+And then still your primary
+interest is on the coefficient beta
+
+62
+00:03:07.780 --> 00:03:13.100
+which tells you how your total daily sales
+increases with the ad campaign in place.
+
+63
+00:03:13.100 --> 00:03:14.540
+So for example, the data for
+
+64
+00:03:14.540 --> 00:03:18.770
+this might look something like this in
+this table here where you have 21 days.
+
+65
+00:03:18.770 --> 00:03:22.790
+And you have seven days without the
+campaign, seven days with the campaign,
+
+66
+00:03:22.790 --> 00:03:24.310
+and seven days without.
+
+67
+00:03:24.310 --> 00:03:29.030
+I can see that the daily sales change
+as you go in and out of the campaign.
+
+68
+00:03:29.030 --> 00:03:31.370
+So it's a very basic setup,
+very simple, and
+
+69
+00:03:31.370 --> 00:03:36.080
+this is kinda what you would love to
+see in your data in an ideal world.
+
+70
+00:03:36.080 --> 00:03:39.270
+Of course, in reality,
+you will never see data like this.
+
+71
+00:03:39.270 --> 00:03:41.620
+There will always be
+something more complicated.
+
+72
+00:03:41.620 --> 00:03:44.120
+So here is a picture of
+what kinda more realistic
+
+73
+00:03:44.120 --> 00:03:46.780
+data might look like from
+an experiment like this.
+
+74
+00:03:46.780 --> 00:03:50.390
+Typically real world data are more noisy.
+
+75
+00:03:50.390 --> 00:03:52.970
+There are other trends in the background
+that are kind of messing up your
+
+76
+00:03:52.970 --> 00:03:53.500
+relationship.
+
+77
+00:03:53.500 --> 00:03:56.030
+So it makes it harder to analyze the data.
+
+78
+00:03:56.030 --> 00:03:58.970
+So you'll notice that in this
+picture there does appear
+
+79
+00:03:58.970 --> 00:04:01.930
+to be an increase in sales
+during the campaign period.
+
+80
+00:04:01.930 --> 00:04:05.160
+But the problem is that it seems
+like the increase started,
+
+81
+00:04:05.160 --> 00:04:08.770
+actually before the campaign even started,
+the sales were kind of going up.
+
+82
+00:04:08.770 --> 00:04:11.860
+And so you might wanna ask,
+well are there background trends that for
+
+83
+00:04:11.860 --> 00:04:14.570
+some reason increase sales
+over a three week period?
+
+84
+00:04:14.570 --> 00:04:18.390
+So it's possible that we would've
+seen higher sales in the product,
+
+85
+00:04:18.390 --> 00:04:21.440
+even without the ad campaign,
+just because of these background trends.
+
+86
+00:04:21.440 --> 00:04:23.350
+And so
+the question you really wanna know is,
+
+87
+00:04:23.350 --> 00:04:26.270
+did the ads cause an increase in sales.
+
+88
+00:04:26.270 --> 00:04:29.580
+Over and above whatever background trends
+that might of been going on that you
+
+89
+00:04:29.580 --> 00:04:31.380
+that you're not aware of.
+
+90
+00:04:31.380 --> 00:04:33.790
+So let's take our primary model,
+
+91
+00:04:33.790 --> 00:04:38.810
+which is just gonna be a simple model with
+the outcome and indicator of the campaign.
+
+92
+00:04:38.810 --> 00:04:42.160
+If we use that model, what you'll
+see is that we'll estimate beta,
+
+93
+00:04:42.160 --> 00:04:47.940
+the increase in the daily sales due to
+the ad campaign to be $44.75, okay?
+
+94
+00:04:47.940 --> 00:04:51.600
+Now, now let's suppose we add
+a background trend into our model.
+
+95
+00:04:51.600 --> 00:04:53.930
+So instead of the primary model where
+we just had the key predictor and
+
+96
+00:04:53.930 --> 00:04:55.760
+the outcome, we fit the following model.
+
+97
+00:04:55.760 --> 00:05:01.432
+Which has a quadratic trend for time, so
+this allows for kinda a little curvature,
+
+98
+00:05:01.432 --> 00:05:05.986
+and allows for kind of rising and
+falling of the daily total sales.
+
+99
+00:05:05.986 --> 00:05:10.396
+Okay, so if we use this model, and
+we still try to estimate beta,
+
+100
+00:05:10.396 --> 00:05:14.690
+what we get is that the,
+our estimate of beta is $39.86.
+
+101
+00:05:14.690 --> 00:05:18.100
+So that's somewhat less than the beta
+that we estimated for the primary model.
+
+102
+00:05:19.680 --> 00:05:24.530
+And recall that this is the increase
+in sales due to the ad campaign.
+
+103
+00:05:24.530 --> 00:05:28.260
+So just for comparison, we can fit
+actually even more complex model.
+
+104
+00:05:28.260 --> 00:05:31.170
+We could have a fourth order
+polynomial to model the trend,
+
+105
+00:05:31.170 --> 00:05:34.760
+just in case there might be something more
+complicated going on in the background.
+
+106
+00:05:34.760 --> 00:05:39.530
+And then if we were to fit that model,
+this gives us a beta of $49.10 per day.
+
+107
+00:05:39.530 --> 00:05:46.660
+So under this model, the ad campaign added
+an extra $49.10 per day to our sales.
+
+108
+00:05:47.810 --> 00:05:49.890
+So we have three models.
+
+109
+00:05:49.890 --> 00:05:52.920
+One primary model and
+two secondary models.
+
+110
+00:05:52.920 --> 00:05:58.483
+And so, model one tells us that
+our estimate of beta is $44.75.
+
+111
+00:05:58.483 --> 00:06:04.195
+Model two tells us it's $39.86, and
+model three tells us it's $49.10.
+
+112
+00:06:04.195 --> 00:06:06.080
+So, what do we do with this?
+
+113
+00:06:07.580 --> 00:06:12.870
+So there are a number of ways to
+evaluate your formal modeling and
+
+114
+00:06:12.870 --> 00:06:16.410
+your examination of primary and
+secondary models.
+
+115
+00:06:16.410 --> 00:06:18.690
+The first thing you want to
+look at is the effect size.
+
+116
+00:06:18.690 --> 00:06:22.910
+So the effect size essentially is what
+is the value of beta that you estimate.
+
+117
+00:06:22.910 --> 00:06:24.970
+And is it big or is it small, or
+
+118
+00:06:24.970 --> 00:06:27.250
+how do they compare to each
+other from the different models?
+
+119
+00:06:27.250 --> 00:06:32.374
+So the three different models represent
+a range of going from roughly $39 to $49.
+
+120
+00:06:32.374 --> 00:06:35.330
+And so you might wanna ask
+yourself is that a big range?
+
+121
+00:06:35.330 --> 00:06:37.250
+Do you care about those differences?
+
+122
+00:06:37.250 --> 00:06:40.070
+It's a little hard to answer that
+question without knowing kind
+
+123
+00:06:40.070 --> 00:06:42.450
+of what the context is and
+what your situation is.
+
+124
+00:06:42.450 --> 00:06:46.020
+For example, if the cost of the ad
+campaign were really low, and
+
+125
+00:06:46.020 --> 00:06:49.460
+it didn't really matter how much you
+made as long as you made something.
+
+126
+00:06:49.460 --> 00:06:51.690
+Then maybe you don't care
+whether it's $39 or $49.
+
+127
+00:06:51.690 --> 00:06:55.730
+As long as you make something back,
+then the ad campaign's worth it.
+
+128
+00:06:55.730 --> 00:06:58.400
+On the other hand, if the ad
+campaign were really expensive, so
+
+129
+00:06:58.400 --> 00:07:01.180
+maybe it's $20 a day to run these ads.
+
+130
+00:07:01.180 --> 00:07:06.350
+Then you might care which end of
+the range you fall on when you
+
+131
+00:07:06.350 --> 00:07:11.000
+run this ad campaign, because maybe $39 is
+not worth it, but $49 would be worth it.
+
+132
+00:07:11.000 --> 00:07:12.410
+So ultimately,
+
+133
+00:07:12.410 --> 00:07:17.690
+the question you're asking is is it
+worth the risk of buying these ads.
+
+134
+00:07:17.690 --> 00:07:21.220
+Given the evidence that you've seen from
+these different models showing you that
+
+135
+00:07:21.220 --> 00:07:26.760
+there might be a range of say,
+$39 $49 increase in total sales
+
+136
+00:07:26.760 --> 00:07:28.550
+during the period of the ad campaign.
+
+137
+00:07:28.550 --> 00:07:32.660
+The second factor you wanna
+think about is plausibility.
+
+138
+00:07:32.660 --> 00:07:34.670
+So even though we fit
+many different models,
+
+139
+00:07:34.670 --> 00:07:37.110
+not all of them are equally plausible,
+okay?
+
+140
+00:07:37.110 --> 00:07:41.080
+So the primary model may not be plausible,
+because it didn't incorporate
+
+141
+00:07:41.080 --> 00:07:44.010
+the possibility of any sort
+of background trend, okay?
+
+142
+00:07:44.010 --> 00:07:45.260
+And likely with real world data,
+
+143
+00:07:45.260 --> 00:07:47.820
+there's gonna be lots of things
+going on in the background.
+
+144
+00:07:47.820 --> 00:07:51.912
+And you don't want to just forget about
+them because they could affect how your
+
+145
+00:07:51.912 --> 00:07:55.326
+sales go, and you may think your
+campaign is having a big effect.
+
+146
+00:07:55.326 --> 00:07:57.953
+When actually there's something just going
+on in the background that's moving your
+
+147
+00:07:57.953 --> 00:07:59.090
+sales numbers.
+
+148
+00:07:59.090 --> 00:08:03.230
+Now the third model that we did which
+had this kind of fourth order polynomial
+
+149
+00:08:03.230 --> 00:08:06.420
+was a relatively complex
+model to capture a trend.
+
+150
+00:08:06.420 --> 00:08:08.280
+And it may be too complex or
+
+151
+00:08:08.280 --> 00:08:12.340
+more than we need to capture a very
+simple smooth trend in the background.
+
+152
+00:08:12.340 --> 00:08:15.280
+And so model two seems kind of reasonable.
+
+153
+00:08:15.280 --> 00:08:17.430
+We allow for this background trend.
+
+154
+00:08:17.430 --> 00:08:19.290
+It's a polynomial model.
+
+155
+00:08:19.290 --> 00:08:23.060
+But it's not very complicated, or
+
+156
+00:08:23.060 --> 00:08:26.120
+at least not overly complicated,
+to try to capture this trend.
+
+157
+00:08:26.120 --> 00:08:28.480
+So whether a model could
+be considered more or
+
+158
+00:08:28.480 --> 00:08:31.880
+less plausible will depend on
+your knowledge of the subject.
+
+159
+00:08:31.880 --> 00:08:36.480
+And your ability to map real world events
+to mathematical formulations of the model.
+
+160
+00:08:36.480 --> 00:08:38.850
+The last concept to think of is parsimony.
+
+161
+00:08:38.850 --> 00:08:41.380
+When different models tell the same story,
+for example,
+
+162
+00:08:41.380 --> 00:08:45.570
+if you don't care about the range
+of $39 to $49, then it's
+
+163
+00:08:45.570 --> 00:08:50.850
+sometimes better to choose the simpler
+model or the model with fewer parameters.
+
+164
+00:08:50.850 --> 00:08:54.510
+And the reason is it's usually easier
+to tell a story about the data
+
+165
+00:08:54.510 --> 00:08:57.980
+when you have fewer parameters and
+so this makes the model more useful.
+
+166
+00:08:57.980 --> 00:09:01.070
+And then finally a simpler
+model would be more efficient
+
+167
+00:09:01.070 --> 00:09:04.480
+because you're using more data to
+estimate fewer parameters and so
+
+168
+00:09:04.480 --> 00:09:07.670
+that's generally good from
+a statistical standpoint.
+
+169
+00:09:07.670 --> 00:09:11.890
+That will afford you to have
+less uncertainty about those
+
+170
+00:09:11.890 --> 00:09:16.319
+parameter estimates because you're able to
+use more data for each of the parameters.
+
+171
+00:09:17.340 --> 00:09:20.700
+So in this example,
+this was an associational analysis, and
+
+172
+00:09:20.700 --> 00:09:23.570
+it focused on estimating
+the association between two features.
+
+173
+00:09:23.570 --> 00:09:27.980
+Total sales and the ad campaign, while
+adjusting for other confounding factors,
+
+174
+00:09:27.980 --> 00:09:30.160
+like this potential background trend.
+
+175
+00:09:30.160 --> 00:09:33.350
+The primary models kind of
+capture the basic relationship.
+
+176
+00:09:33.350 --> 00:09:36.910
+While the secondary models
+are used to kind of adjust for
+
+177
+00:09:36.910 --> 00:09:38.470
+different factors in different ways.
+
+178
+00:09:38.470 --> 00:09:41.580
+So we had two different models kind of
+adjusting for the background trends.
+
+179
+00:09:41.580 --> 00:09:46.430
+So what conclusion you make ultimately
+may depend on outside factors like cost,
+
+180
+00:09:46.430 --> 00:09:48.440
+or kind of timing issues.
+
+181
+00:09:48.440 --> 00:09:51.560
+And so you have to factor all this in
+when you kind of ultimately draw your
+
+182
+00:09:51.560 --> 00:09:54.910
+conclusions about what to do or
+what decisions to make.
+
+183
+00:09:54.910 --> 00:09:57.870
+And also, you may have to think about
+the plausibility of the various
+
+184
+00:09:57.870 --> 00:09:59.000
+models that you've chosen.
+
+185
+00:09:59.000 --> 00:10:04.420
+To determine what evidence you're gonna
+weight more heavily than other evidence.
+
+186
+00:10:04.420 --> 00:10:07.510
+So this is the basic kinda outline
+of an associational analysis.
+
+187
+00:10:07.510 --> 00:10:10.250
+Obviously there'll often be many more
+things that you're gonna wanna do.
+
+188
+00:10:10.250 --> 00:10:13.480
+But they'll generally follow this
+framework, and you're gonna wanna iterate
+
+189
+00:10:13.480 --> 00:10:16.730
+between kinda fitting primary models and
+secondary models.
+
+190
+00:10:16.730 --> 00:10:20.714
+And so you get to an answer that you
+can use or can make a decision on.

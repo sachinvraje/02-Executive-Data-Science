@@ -1,0 +1,559 @@
+WEBVTT
+
+1
+00:00:01.030 --> 00:00:04.195
+This lecture is about the most
+important part of a data analysis, and
+
+2
+00:00:04.195 --> 00:00:06.060
+you don't even need a computer to do it.
+
+3
+00:00:10.470 --> 00:00:15.670
+The first step for any data analysis
+is pretty simple, you have to think.
+
+4
+00:00:15.670 --> 00:00:17.350
+So thinking is really important.
+
+5
+00:00:17.350 --> 00:00:19.130
+In fact, in most data analyses,
+
+6
+00:00:19.130 --> 00:00:22.550
+you should probably do more thinking
+than doing of the data analysis.
+
+7
+00:00:22.550 --> 00:00:25.140
+Because It will save you a lot of time and
+a lot of money and
+
+8
+00:00:25.140 --> 00:00:28.220
+a lot of frustration if you just think a
+little bit beforehand about what you want
+
+9
+00:00:28.220 --> 00:00:32.570
+to do before you start digging into
+the data and digging into the details.
+
+10
+00:00:32.570 --> 00:00:36.510
+One of the most important things about
+data analysis doesn't actually have to do
+
+11
+00:00:36.510 --> 00:00:41.900
+with the analysis itself, but it is
+really important to ask a good question.
+
+12
+00:00:41.900 --> 00:00:44.160
+So in this lecture I was going
+to talk a little bit about
+
+13
+00:00:44.160 --> 00:00:46.440
+what are the characteristics
+of a good question.
+
+14
+00:00:48.670 --> 00:00:51.830
+So there's five characteristics
+that I just want to highlight
+
+15
+00:00:51.830 --> 00:00:54.000
+about what makes for a good question.
+
+16
+00:00:54.000 --> 00:00:58.190
+So the first characteristic is that it
+has to be of interest to your audience.
+
+17
+00:00:58.190 --> 00:01:01.050
+And now, the important part of this
+
+18
+00:01:01.050 --> 00:01:04.500
+feature is that you have to be able to
+define who your audience is going to be.
+
+19
+00:01:04.500 --> 00:01:06.780
+So depending on who you are and
+where you work and
+
+20
+00:01:06.780 --> 00:01:10.160
+what you're doing, your audience is
+going to be a different set of people.
+
+21
+00:01:10.160 --> 00:01:13.810
+So, for example, if you're an academic
+your audience might be collaborators,
+
+22
+00:01:13.810 --> 00:01:17.160
+they might be a scientific community,
+they might be your funders or
+
+23
+00:01:17.160 --> 00:01:20.590
+the general public for your problem.
+
+24
+00:01:20.590 --> 00:01:24.650
+If you're working at a start up
+your audience might be your boss or
+
+25
+00:01:24.650 --> 00:01:28.350
+the company leadership or investors or
+maybe even potential customers.
+
+26
+00:01:28.350 --> 00:01:32.820
+So, knowing who your audience is and
+knowing what questions are relevant to
+
+27
+00:01:32.820 --> 00:01:36.410
+them is a really important part
+of asking the right question.
+
+28
+00:01:38.430 --> 00:01:41.290
+The second important part about
+a good question that hasn't
+
+29
+00:01:41.290 --> 00:01:45.620
+already been answered already, so
+this may seem a little bit obvious, but
+
+30
+00:01:45.620 --> 00:01:49.450
+with the wealth of data out there and
+literature and
+
+31
+00:01:49.450 --> 00:01:53.700
+the availability of the Internet,
+it's quite possible that someone,somewhere
+
+32
+00:01:53.700 --> 00:01:58.420
+out there, has either at least studied
+your question or maybe even answered it.
+
+33
+00:01:58.420 --> 00:02:01.660
+So doing a simple search and looking to
+see if your question has already been
+
+34
+00:02:01.660 --> 00:02:06.260
+answered, either inside or outside your
+organization, can save you a lot of time
+
+35
+00:02:06.260 --> 00:02:10.300
+and money and allow you to ask the real
+question that people want answered,
+
+36
+00:02:10.300 --> 00:02:12.360
+opposed to one that's
+already been answered.
+
+37
+00:02:12.360 --> 00:02:16.420
+So it's helpful often to discuss your
+question with experts in your area, or
+
+38
+00:02:16.420 --> 00:02:20.940
+maybe experts in your organization who
+could help you to shape your question and
+
+39
+00:02:20.940 --> 00:02:23.240
+to ask one that actually
+hasn't been answered before.
+
+40
+00:02:24.520 --> 00:02:27.780
+The third feature of a good
+question is that it's plausible.
+
+41
+00:02:27.780 --> 00:02:31.470
+And the basic idea here, is that you
+need to be able to have a reasonable
+
+42
+00:02:31.470 --> 00:02:33.790
+explanation for how the world works,
+
+43
+00:02:33.790 --> 00:02:37.060
+if the answer to your question is
+kinda what you expect it to be.
+
+44
+00:02:37.060 --> 00:02:41.970
+In other words, you should be able to
+explain the mechanism for how things work.
+
+45
+00:02:41.970 --> 00:02:46.240
+If you can't do this, then it's usually
+a bad sign that it's not a great question.
+
+46
+00:02:46.240 --> 00:02:49.480
+And the problem with asking a question
+that's not really plausible is that
+
+47
+00:02:49.480 --> 00:02:51.930
+it may lead you to collect some bad data.
+
+48
+00:02:51.930 --> 00:02:55.657
+In the sense that any analysis that you
+do with the data might be difficult to
+
+49
+00:02:55.657 --> 00:02:56.367
+interpret and
+
+50
+00:02:56.367 --> 00:02:59.880
+may not really lead to strong evidence
+about anything in particular.
+
+51
+00:02:59.880 --> 00:03:02.954
+And so and that may end up wasting
+a lot of time, a lot of money for
+
+52
+00:03:02.954 --> 00:03:06.730
+people if you've collected bad data
+that question is not really plausible.
+
+53
+00:03:06.730 --> 00:03:10.729
+So before you go out and spend
+the resources to conduct an experiment and
+
+54
+00:03:10.729 --> 00:03:15.325
+do an analysis, try to think about your
+questions, think about whether you could
+
+55
+00:03:15.325 --> 00:03:19.410
+explain how things would work if
+you get the answer that you expect.
+
+56
+00:03:19.410 --> 00:03:21.990
+If you can't do that you may need to
+refine your question a little bit.
+
+57
+00:03:23.360 --> 00:03:26.630
+The fourth feature is that the question
+has to be answerable okay?
+
+58
+00:03:26.630 --> 00:03:28.770
+This is another one that
+might seem a little obvious.
+
+59
+00:03:28.770 --> 00:03:31.690
+But the truth is there
+are a lot of good questions,
+
+60
+00:03:31.690 --> 00:03:35.540
+really interesting questions,
+that are just simply not answerable.
+
+61
+00:03:35.540 --> 00:03:37.900
+There may be many reasons why
+a question can't be answered.
+
+62
+00:03:37.900 --> 00:03:40.770
+There may be ethical reasons
+where you can't collect the data.
+
+63
+00:03:40.770 --> 00:03:42.010
+You might not have the money.
+
+64
+00:03:42.010 --> 00:03:45.210
+They might require too many resources
+to try to answer a question.
+
+65
+00:03:45.210 --> 00:03:48.680
+And so, there's a lot of questions
+that simply have to go unanswered.
+
+66
+00:03:48.680 --> 00:03:52.330
+For example, in health research, there are
+a lot of questions that we have about how
+
+67
+00:03:52.330 --> 00:03:55.810
+the body works and how does disease occur,
+but we simply cannot conduct
+
+68
+00:03:55.810 --> 00:03:59.320
+the experiments that we might like to
+conduct because you might be putting
+
+69
+00:03:59.320 --> 00:04:03.010
+people in danger, or it might be simply
+unethical to do such experiments.
+
+70
+00:04:03.010 --> 00:04:05.560
+So think about your questions
+to see whether it's even
+
+71
+00:04:05.560 --> 00:04:10.020
+possible to answer it given the kind
+of real-life situations that we are in.
+
+72
+00:04:11.820 --> 00:04:15.580
+Now, the last feature of a good
+question is very important,
+
+73
+00:04:15.580 --> 00:04:18.970
+and it's that a good question
+tends to be very specific.
+
+74
+00:04:20.020 --> 00:04:25.900
+Now, specificity is useful because it
+often leads to simpler data collection and
+
+75
+00:04:25.900 --> 00:04:29.100
+simpler kind of experiments and
+data analysis.
+
+76
+00:04:29.100 --> 00:04:31.560
+And so the key word here is sharpness.
+
+77
+00:04:31.560 --> 00:04:33.600
+You'd like to have a question
+that's very sharp.
+
+78
+00:04:33.600 --> 00:04:37.350
+And that way you'll know whether the data
+
+79
+00:04:37.350 --> 00:04:39.760
+meets your expectations
+about the question.
+
+80
+00:04:39.760 --> 00:04:41.130
+So a simple example might be,
+
+81
+00:04:41.130 --> 00:04:44.590
+you might wanna know whether a good
+diet leads to better health, okay?
+
+82
+00:04:44.590 --> 00:04:45.930
+So that's a reasonable question.
+
+83
+00:04:45.930 --> 00:04:49.910
+People think that, you eat better,
+your health will be better in general, but
+
+84
+00:04:49.910 --> 00:04:53.960
+it's not a very specific question, so
+another version of that question might be,
+
+85
+00:04:53.960 --> 00:04:58.820
+if you eat five servings of fresh fruits
+and vegetables per day, does that
+
+86
+00:04:58.820 --> 00:05:03.030
+lead to fewer respiratory tract infections
+or, you know, colds, things like that?
+
+87
+00:05:03.030 --> 00:05:06.730
+So that's a much more specific question,
+because I'm, instead of saying good diet,
+
+88
+00:05:06.730 --> 00:05:09.760
+I'm saying five servings of fruits and
+vegetables per day.
+
+89
+00:05:09.760 --> 00:05:13.920
+And instead of saying, better health, I'm
+saying fewer respiratory tract infections,
+
+90
+00:05:13.920 --> 00:05:16.630
+which is something very
+specific that we can measure.
+
+91
+00:05:16.630 --> 00:05:20.550
+So, the important thing about
+having a very specific question is
+
+92
+00:05:20.550 --> 00:05:24.460
+that it often can lead to a well
+defined intervention, okay?
+
+93
+00:05:24.460 --> 00:05:27.590
+And by the intervention I mean
+an action that you can take
+
+94
+00:05:29.130 --> 00:05:32.480
+given the answer to any
+data analysis you might do.
+
+95
+00:05:32.480 --> 00:05:35.960
+So, if we collect the data on people
+who have five servings of fruits and
+
+96
+00:05:35.960 --> 00:05:37.820
+vegetables per day, and
+
+97
+00:05:37.820 --> 00:05:41.810
+we collect data on how many respiratory
+tract infections that they have.
+
+98
+00:05:41.810 --> 00:05:46.280
+If the data suggests that this
+question is true, that more fruits and
+
+99
+00:05:46.280 --> 00:05:50.780
+vegetables leads to fewer respiratory
+tract infections, then we already know how
+
+100
+00:05:50.780 --> 00:05:56.350
+we might intervene in terms of modifying
+people's diets and improving their health.
+
+101
+00:05:56.350 --> 00:06:00.760
+So a very specific question will tend to
+lead to a well defined intervention and
+
+102
+00:06:00.760 --> 00:06:04.730
+that will give you, those kinds of
+results will allow you change behaviors,
+
+103
+00:06:04.730 --> 00:06:08.560
+to change actions to actually
+make a difference in the world.
+
+104
+00:06:08.560 --> 00:06:13.250
+Whereas a very vague or non-specific
+question will often leave you in the same
+
+105
+00:06:13.250 --> 00:06:17.920
+place that you started out in and without
+knowing what kinds of changes to make or
+
+106
+00:06:17.920 --> 00:06:20.500
+what kinds of behaviors to change.
+
+107
+00:06:20.500 --> 00:06:24.350
+So just to summarize the five
+features of a good question
+
+108
+00:06:24.350 --> 00:06:27.560
+are it has to be of
+interest to an audience.
+
+109
+00:06:27.560 --> 00:06:30.100
+It has to not already been answered.
+
+110
+00:06:30.100 --> 00:06:34.580
+It has to plausible so that you can
+kind of explain how things would work
+
+111
+00:06:34.580 --> 00:06:39.080
+if the answer to the question
+met your expectation.
+
+112
+00:06:39.080 --> 00:06:41.970
+The question itself has to
+be answerable in the real
+
+113
+00:06:41.970 --> 00:06:45.020
+world given all the constraints
+that you might have on you.
+
+114
+00:06:45.020 --> 00:06:48.020
+And finally,
+a good question is very specific so
+
+115
+00:06:48.020 --> 00:06:51.760
+that it can lead to a well defined
+intervention in the world.

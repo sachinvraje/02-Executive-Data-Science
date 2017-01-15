@@ -1,0 +1,127 @@
+Formal modeling is the process
+of precisely specifying statistical models for your data, and for providing a rigorous framework for
+challenging and testing those models. So, at this point you've done a lot
+of exploratory data analysis, and you probably have a reasonable sketch of
+the solution that you're looking for for your question. But you may not be so sure about whether
+that solution will hold up to kind of challenges or will be sensitive to the
+little changes in the data or the model. And so, formal modeling is the process
+of kind of specifying your model very precisely so that you know
+what you're trying to estimate, and you know how you can challenge your
+findings in a rigorous framework. And so, usually the way that
+we write down these models is with mathematical notation or
+with computer codes so that we can get very specific
+about what we're trying to do. Using just words alone
+to describe a model, so that's why we usually have to resort
+to mathematics or computer code. Now, when we talk about formal models,
+very often we'll talk about parameters, and parameters play an important
+role in statistical modelling. Parameters usually represent
+characteristics of the population. They might describe relationships
+between variables or certain features like means or standard deviations, and
+because they are characteristics of the population they're generally
+considered to be unknown. So, we have to estimate
+them from the data and often the goal of an analysis Is to
+estimate given types of parameters. And the nice thing about formal
+modeling is that it allows you to specify which types of parameters you're
+interested in and are trying to estimate. So for example, in a linear regression, the coefficients of the linear
+regression models are parameters. And very often your goal
+is to estimate them. So, the general framework for doing formal
+modeling is very similar to kind of what we've been talking about
+all along in this course. The three basic steps are setting
+expectations, collecting information, and then revising those
+expectations based on what you see. So for setting expectations, typically
+you want to have a primary model, which is your best sense of
+what the solution should be and what is the answer to your question. This is the leading candidate based on
+all the current information you have and based on any kind of exploratory
+analysis that you've done. Now it's not necessarily going
+to be the final model, it's going to be the model that you start with
+to kind of structure your formal analysis. You may update it later based on
+any information that you collect, and you may change your primary
+model to be something different. So that's okay, and so you don't
+have to worry too much about kind of what your primary model is
+going to be from the get-go. Just pick one that seems reasonable
+from the data, and provides a, kind of, sensible solution. And then you'll be testing it
+in various different ways, just to see if it's going to work. So the next stage is
+collecting information. So given that you have a primary model,
+you want to develop a series of what I call secondary models to test and
+challenge your solution. So the basic idea of
+a secondary model is that it's slightly different from
+your primary model. It may add variables,
+it may subtract variables and you may add different functional forms. So it looks kind of like your primary
+model but it has variations to it. Those are all the secondary
+models that you want to look at. And the goal is to generate evidence
+against your primary model. Okay, so if you can generate evidence
+that suggest that your primary model is incorrect. Then you can kinda update your thinking, and try to come up with
+a different primary model. Another word for
+this is sensitivity analysis. So you wanna think about how
+sensitive your primary model is to various changes that are introduced
+via the secondary models. So we'll talk a little bit more
+specifically about what this means when we talk about our examples okay? The last step of course is
+revising your expectations. And so if the secondary models are largely
+consistent with your primary model and exactly what consistent means depends
+on the context and your application and the question that you are asking. And then that's great and you can
+either move on to the next phase or maybe you're finished and
+you can just kind of record your results. However, if your secondary models
+successfully challenge your primary model and maybe put some of your
+initial conclusions in doubt, then you may need to adjust or
+modify the primary model to better reflect all this additional evidence that you've
+generated via all the secondary models. And then you can start the process
+again with a new primary model, and then perhaps a new set of secondary
+models to challenge that primary model. And then you can iterate through this
+process until you arrive at a model that you think reasonably
+summarizes your data and answers the question that
+you were looking to ask. So there's two basic types of situations
+In which we often use formal modeling. And I'm going to categorize them into
+what I call Associational Analyses and Prediction Analyses. So Associational Analyses, there the aim is to look at the association between
+two or maybe more features while in the presence of many other potentially
+confounding factors, okay And so for the most part we're interested in looking
+at the association between two things, but there may be other things that we have
+to adjust for, or account for, and that we want to make sure
+we're accounting for properly. So there's three classes of variables
+in an associational type of analysis. The first is the outcome. The outcome is the factor or the feature that we think varies along
+with what I call a key predictor. Now, it may not actually respond to
+the key predictor in a causal sense, but the idea is that when
+the key predictor changes, the outcome changes along with it,
+whether it is causal or not. So the next type class of variable
+is what I call the key predictor. And this is usually the predictor
+of interest that we wanna know, how does it vary? How does the outcome vary
+with the key predictor? There may be one, or two, or even three key predictors that
+you're primarily interested in. But usually the number will be small, and very often the number
+is actually just one. And so the key predictor explains
+some variation in the outcome and it's something that you're interested in. The last set is a very
+large class of variables, is all the potential confounders. So these are things that tend to be, they
+are associated with your key predictor and they're also associated
+with their outcome. And they generally serve to kinda confuse
+the association between your key predictor and your outcome. So these are things that often may need
+to be accounted for in some way or included in a formal model to properly examine the relationship between
+your key predictor and your outcome. The next set of analyses that you
+might do is a prediction analysis. So a prediction analysis differs from
+an associational type of analysis, because the goal here is to really to
+use all available information to predict an outcome, okay? So you usually don't care
+about the mechanism, or how things work when you're trying
+to do a prediction analysis. So you don't necessarily care about
+explaining how a variable can predict a given outcome. You just want to be able to generate
+a good prediction from a set of variables and you're not developing some detailed
+understanding of the relationships between all the features okay. Now for most prediction analysis this
+really isn't a distinction between the key predictor and
+a bunch of other potential confounders. Usually all predictors
+are considered equally cuz they may contribute information
+to predicting the outcome. And before we do the analysis,
+we may not weight them any differently, we may weight them all equally. Because we don't have any a priori
+information about might more or less important. Now any good prediction algorithm,
+will help you to determine which variables are useful for
+predicting the outcome and which aren't. And so they will help you sort that out. Another feature of prediction analyses
+is that, usually the model that you use cannot be written down in
+a convenient mathematical notation. Often, the only way that the procedure can
+be specified, is through computer code, or through some algorithm. And so,
+often there's no parameters of interest. So, you're not trying to
+estimate any parameters. You're just trying to make a prediction
+using any combination of features, using an functional form
+of any type of model. So that's kind of hallmark
+of prediction analysis. And finally, most prediction analysis
+often are what you might call classification problems, so the outcome
+is really something that takes two different values and you're trying to
+predict one of those two different values. So that's the kind of summary of
+what formal modeling is used for and in what context is may be used. Whether it's associational or
+prediction types of analyses. In the next lectures I'll give examples of
+associational and prediction analysis and how the formal modeling framework can
+be used to work through these different kinds of analyses.

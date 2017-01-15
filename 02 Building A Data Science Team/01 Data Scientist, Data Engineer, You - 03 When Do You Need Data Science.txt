@@ -1,0 +1,54 @@
+So, the way in which you'll interact with
+data science depends a little bit on what kind of organization you are. To some extent, it depends a lot
+on the size of your organization. So, when you're just a start up,
+when you're an early stage company, or you're just one person
+with a very small team, maybe like one other person working for
+you. You may not need to worry so much yet
+about how to do experimentation, how to do machine learning, how to do sort
+of prediction and downstream calculations. The first order of business is just making
+sure your sort of data house is in order. And the way to do that is to make
+sure you focus on infrastructure. So the first thing that you need to do
+is build out the infrastructure for storing the data,
+the databases and so forth. The software that's gonna
+be run to pull those data, the servers that are gonna serve
+the data to other people, and the servers that you'll interact with
+yourself in order to get the data out. So all that sort of requires
+infrastructure building up at first. So often the first people that you
+get to hire into a data science team, are not people that you would necessarily
+called data scientists in the sense that they're not analyzing the data,
+they're not doing machine learning. They might do a little bit of that but mostly they're involved on just
+making sure the machine is running, making sure the data's getting collected,
+its secure, its stored and so fourth. So when your a mid size organization, then hopefully you've got
+the basic infrastructure in place. And you can start thinking about building
+out your real data science team. And so to do that you can bring on board
+people that are actually called data scientists. And those are the folks who will
+then actually use the data. So they might pull it out of the database. They might run some experiments. They might build machine
+learning algorithms. They might analyze the data to see
+if you can identify any patterns or trends in behavior that you care about. And so at that point, you're thinking about actually
+building out the data science team. You're also thinking about implementing
+these data science ideas and products. So again, the data scientist might
+build something like a machine learning algorithm that predicts,
+say, consumer behavior. Once you have that algorithm built out, you might need to implement
+it back on to your system. And you might need to scale it up, so
+that it can be run on the whole data set. You might wanna build some
+sort of visualization, that people who aren't necessarily
+data scientists can interact with. And so, that would be turning it back
+over to the data engineering team. So there's still infrastructure concerns, because you have a large set of data that
+you've hopefully collected at this point. You need to be secure about it,
+you need to have a database, you need to be able to scale it. But, now you're sort of graduating into
+a more complete view of data science. For a large organization you have
+all those same sorts of things. You now have a data infrastructure, you might have a data science
+team that's running experiments. You may be using those
+experiments to make decisions. But now you have one additional component
+which is really managing the team and keeping everybody on task and coordinated. So at this point the data science manager
+role becomes a little bit more involved, in the sense that you might be
+coordinating multiple teams of data scientists working on different projects. You might have a team that works
+exclusively on building machine learning projects. You might have another team that works
+exclusively on running experiments and inferring what you can
+from those experiments. And then someone has to be in charge of
+coordinating those activities making sure they're connected to the right
+people within your organization. Whether that's the marketing team,
+the business group or whoever else that you're
+collaborating with. You have to be able to
+connect those people. And so at that scale the full data
+science infrastructure is in place.

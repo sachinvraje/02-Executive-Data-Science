@@ -1,0 +1,143 @@
+Hi, my name is Brian Caffo, and this is
+the lecture on managing the data pull. Like all the other lectures in this class, we're gonna contrast between idealized
+settings, and what happens in real life. In real life, data can be very messy. And when we talk about the data pull,
+we're talking about all the different components that go into going from a raw
+form of data into an analytic data set. So in this process, some of these
+steps are almost always required. You almost always have to pull
+an analytic data set from a larger more complex data source. You often have to merge disparate sorts
+of data causing matching errors and things like that. Often, we have to summarize complex data
+types, so for example, you might have recorded voice data or text data that you
+need to convert into meaningful summaries. In my personal area that I work in,
+often we're working with large complex brain imaging data and
+we have to summarize that down into a handful of numbers that represent
+certain regions of the brain for example. Another very common problem is going
+from data that is convenient for one purpose into a convenient form for
+analysis. So for example the way we
+might store the data for archival purposes is generally not
+what's right for analysis purposes. So in the process of converting
+there can always be errors. So as a manager you're not
+going to actually probably execute any of these solutions. Maybe you did that in your past, but
+now you're managing groups of people or individuals that are doing this for you. So in this lecture, we're gonna give you
+some simple tools that you can do to help ensure data quality in real life when you
+have these kind of messy data issues. In researching this lecture, I noticed
+that there were a lot of tools for the practitioners, for the people that are
+actually going to be doing the merging and doing the actual data manipulations. But relatively few for managers, so
+that's what we're gonna focus on here. The first thing I'd like to mention is the
+simple act of creating what I like to call Table 1. And this is, these are basically
+just summary tables and these are a great way to catch errors. And in Epi and Biostatistics
+we call these tables Table 1. And the reason we do that is because
+whenever you write an Epi or a biostatistics paper there's
+always a first table that's main purpose is just to summarize
+demographic information in your sample. So this is a great way to catch errors. But a couple of caveats. Get standard deviations along with means,
+medians and quantiles, the standard deviations will
+often help you catch errors. Another thing, another important one, and I'll give an anecdote about this
+in a minute, is check your units. And I'll give an anecdote just to
+remind exactly what I mean by that. And then the other important thing I would
+say is, usually, you're meeting about these data tables maybe weekly,
+maybe monthly, but keep the old ones and always refer back to them cuz even subtle
+changes in these Table 1's can often highlight important meaningful changes,
+an errant record or something like that. If means that are usually quite stable
+jump up from one report to the next that's often valuable information. So now I'm gonna go over this
+example that I eluded to earlier. In this example we were studying
+brain volume as it related to people who are chronically
+exposed to lead. They worked in a chemical
+manufacturing plant back when they were adding lead to paint and
+gasoline and that sort of thing. We we're interested in people's
+longitudinal change in brain volumes over time and when we started creating our
+Table 1's, we weren't keeping track of our units and it wasn't until
+much later on in the process, thankfully well before we
+had finished the paper. But it wasn't until pretty
+long in the process, before we realized we weren't
+keeping track of our units. And that people's brains were declining
+at a rate that was way too fast to be reasonable. They were going from the size of
+a house to the size of a pea, for example, too quickly. That was only because we hadn't
+kept good track of our units. But once when we had a very helpful
+discussion about what the units were, and then because of that discussion
+on what the units were, we went on a long literature review
+on standard rates of brain decline in healthy adults,
+this really helped inform the paper. But more than anything,
+it also helped us with data quality, since we realized that there were some
+errant measurements driving up results. So, a second tool at your disposal
+after the modeling stage just like we had the table one which we usually
+conduct before we do any modeling. After you've done some
+regression modeling, regression diagnostics are an extremely
+useful way to detect data errors. And my favorite examples of regression
+diagnostics are from Len Stefansky, who's at North Carolina State. And if you look at this data set on
+the left, it actually goes on for a while after that. If you were to look at it and
+do some basic scatter plots, you would see nothing out of
+the ordinary in the data. It would just look kind of like noise. However if you do a residual plot,
+which is plotting the errors of the fitted values of the Russian model
+versus the actual observed outcome values, versus the predicted, you see this
+crazy plot with Homer Simpsons on it. And this is his way of showing
+how residual plots can highlight hidden systematic patterns in our data. Okay, so residual plots are always
+a good thing to look at and always a good thing to look at for systematic patterns, errant observations,
+outliers, and those sorts of things. Of course, these always occur
+after you've done your modeling. You have to have a model in
+order to look at a residual. So let me give you some definitions of
+some of the things you might want to look at especially from regression modeling
+which is my favorite kind of modeling. So residuals, like I just said, these
+are the difference between the response, the outcome that you're studying and the fitted value,
+what your model predicts it would be. So, what you wanna look for
+in residual plots, you just wanna make sure that there aren't any systematic
+patterns and you wanna look for extremely large values that are well outside
+the general pattern of the residuals. There's another quantity called the hat
+values, and they consider how variable a data row of explanatory variable is
+among its space of fellow predictors. So all hat values are going to tell
+you is simply how outside of the norm, the normal range of variability, this particular row of data is
+relative to all it's other colleagues. So, the DF fits, DF betas, and
+Cook's distance, these are all measures of things that are kind of related,
+sort of like cross validation. And in all these cases what you do is you
+fit the model with the point deleted, and then you fit the model
+with that point included. With a row of your data entirely deleted,
+and then with that row included, okay? And then you look at how
+much your results changed by virtue of leaving that row in or out. And if you compare the fitted values. And you get what are called the DF fits. If you compare the slope estimates then
+you get what are called the DF betas. And if you compare the slope estimates
+aggregated into one single number, one single metric,
+that's called Cook's distance. But all of these are influence measures. All they're trying to do is tell
+you how much did things change when I deleted this data
+point from my model fitting. That's also the same logic
+among the PRESS residuals, which are just residuals of the same sort. How big was the residual for this data point if I left
+it in versus I left it out? And these are often called leave one out
+residuals or cross validated residuals but all these things are useful and your
+analyst or whoever you are working with. You should work with them so that they produce these kinds of residuals
+diagnostic plots with your regression. Not only do they help you evaluate
+things about your regression model but they help you evaluate things about
+airing data points outlying observation. And then you can drill down and
+see what went wrong to have those specific observations to have
+such a large impact on the model fit for example, or to be so
+outside of the norm of all their peers. Another kind of interesting,
+in my mind fascinating way to consider data quality
+is to use Benford's law. And Benford's law is the so
+called First-Digit Law. And I just mentioned here, you can read up
+on it and sometimes people find it useful. And it's so called phenomenological law
+about the frequency distribution of leading digits In many but
+of course not all real live sets of data. And so what this means, what Benford's Law
+says, is if you look at the final digit, say for example telephone numbers,
+they don't follow a uniform distribution. They follow a distribution that
+looks something like this. And you can try it,
+try some Benford Laws experiment. And it's basically saying that the numbers
+should be uniform on a log scale rather than on the natural scale. So what you can do in terms of
+data quality sometimes is if your phenomenon that you're studying. Whatever outcome that you're studying,
+if it's digits should follow Benford's law if you've checked in
+the past then you can do it again and see if there was some systematic errors
+causing the distribution of your the distribution of your points,
+not to follow this law. Again, this only is applicable when
+the digits should follow Benford's Law. As an example, if you're looking at
+a particular city, the first digit, the leftmost digit of telephone numbers,
+isn't gonna follow Benford's Laws because it's
+going to be related to the area codes. But the rightmost digit it does
+tend to follow Benford's Law. So at any rate, it's a little
+subtle tool that you can use for assessing a systematic data quality error that's perturbing the distribution
+of the digits of your data. The final thing you might want to
+try is actually checking specific rows of your data through so-called
+data quality queries, DQQs. Of course you can't check every single
+point because that's usually too time-consuming. However, you can check some. And you can use statistical procedures
+like random sampling to get a random sample of rows of your data, check those
+rows individually, and because it's a nice random sample, you can get an estimate of
+the proportion of bad rows in your data. Okay, so
+you can use statistics to sample and understand how good or bad in general your dataset is from a relatively small
+sample that you check by hand, okay? So these are some simple techniques
+that you can help to try and stay on top of the real life circumstance
+where your data is actually a messy, mishmash of merging errors and
+that sort of thing. Since we all know that the true idealized
+setting doesn't occur in real life ever.

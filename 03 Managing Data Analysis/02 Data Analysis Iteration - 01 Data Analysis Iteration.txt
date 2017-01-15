@@ -1,0 +1,103 @@
+This lecture's gonna provide an overview
+of the cycle of data analysis. Data analysis is a complex process
+that can involve many pieces and many different tools. But fundamentally,
+there are only three parts to it. The first part is setting expectations. The second part involves
+collecting information and comparing your expectations to data, and the last part Involves reacting to data,
+and revising your expectations. So that's basically it. Those are the three parts of data analysis
+that you often will cycle through, many times, in the course of
+analyzing any given data set. So I'm gonna break down each one of these pieces to give you a little bit of
+a description of what they are, and I'll give you a little example of kinda how
+they might be applied in the real world. So steady expectations involve
+deliberately thinking about what you're gonna do before you do it. Now, the idea in any part of data analysis
+is that everything you do is gonna have some sort of consequence,
+whether it's collecting data, whether it's fitting a model, whether it's asking
+a question or making some sort of plot. Everything you do there will be some sort
+of action, and the point is you wanna think about what that consequence
+is gonna be, before you do it. And that way you set the expectations for
+yourself, and you can determine whether the reality
+kind of meets that expectation. So that's the first part
+of the data analysis cycle. Once you've set your expectations the next
+thing you wanna do is collect some data or collect some information that will
+allow you to compare those expectations to reality. And so,
+collecting that information is key, because it will tell you whether or
+not your expectations were right. Whether they were wrong. Whether they were too high, too low, whatever it is depending on
+the problem you're working on. And then, once you've collected that
+information, and compared it to your expectations you can react to it, and
+maybe change your behavior in some way. So the last part of the data analysis
+cycle is to think about what have we learned from the data, from our
+expectations, and their comparison. What would we do differently next time. Did we match our expectations,
+did they not match, why or why not. So that's the third part. And then, once you've completed the third
+part and you've revised your expectations, you may go back, with these revised
+expectations and collect more data and try to match them again, and
+then this iteration continues, often for many different times in
+any given data analysis. So I just wanna give you a quick
+example of how you can use these three components in a kind of generic or
+kind of commonplace setting. So the basic example I'm gonna present
+here is going out to dinner with your friends. So suppose you're going out to dinner and the restaurant you're going
+to is a cash only place. So the question you have to ask yourself
+is how much money should you bring. And the basic activity you're gonna
+engage in is eating a meal, and you're gonna check for the bill, and you're gonna
+have to pay, money to pay for the meal. But before you do that, you gotta figure
+out how much money to bring, and so you have to figure out well, what's your
+expectation for the cost of this meal. Maybe you've dined at this
+restaurant all the time, so you know exactly how much it's gonna cost. Maybe you know, well in this city, the
+typical meal costs this many dollars, and so I'll just bring that much money,
+cuz this is an average kind of restaurant. Maybe you know, well the most expensive restaurant in
+this city costs this many dollars. So I know it's not gonna
+cost this more than that, so I'll just bring that to kind of serve as
+an upper bound on how much money I might end up spending at this restaurant. You might ask your friends,
+if they've been their before, how much does this place cost. Or you might Google the restaurant and maybe look up the menu to see what
+the meal typically costs there. At any rate, before you've gone to the
+restaurant and eat the meal, you can use any sort of opreory information
+to set up your expectations for what the cost is ultimately gonna be. Before you observe the real thing. So once you've set your expectations, you
+can figure out how much money to bring. The actual collecting of the data
+involves going to the restaurant and getting the check. So once you've gotten the check, you observed the reality
+of what the meal costs. And there's two possibilities. One is that,
+that cost meets your expectation. So suppose you thought
+it was gonna be $30, and it ended up being $30, then that's great. You know exactly, you brought the right amount of money,
+and then you can pay for the meal. The other possibility is that
+the expectations don't match of what the reality is. So thought it was $30 and
+it ended up being $40. And so, you have to ask yourself
+then why do you have that mismatch. Why is it that you thought it was $30 and
+the meal turned out to be $40. So there's two possibilities. One is that your expectations were wrong. So you thought that the restaurant
+was cheaper than it actually was. Another possibility is that there's
+something wrong with the data, for example. It's possible that they added up the check
+wrong, maybe they charged you for something for
+that you didn't actually eat. So you can look at the check to see if
+there is a problem with the data that you collected. One thing to note about
+this example is that it was easy to know whether your expectations
+were matched with the data or not. So for example, if your expectation was
+the meal would cost $30, and then it actually cost $40, you know immediately
+that your expectations were not right. The meal was $10 more than you
+actually thought it was gonna be. And so,
+you can make that conclusion very quickly. Another possibility, for example, is that you could've said well
+the meal being between 0 and $1,000. And so, when the data actually comes
+in and you see the check is $40 then it actually matches your expectation which
+is that it's between 0 and $1,000. But because your original
+expectation was so diffused, and so kind of general,
+you don't really learn that much from collecting the data given your
+very diffused expectation. So this brings us to an important point
+which is that it's important to have a very sharp expectation or a sharp hypothesis about what
+you're trying to investigate. When I said that I expected
+the meal to be $30, it was very easy to know when
+my expectations were not met. But if my expectation was very diffused
+and not sharp at all, like between 0 and 1,000, then, collecting the data
+doesn't really help you. Or it doesn't help you learn the process
+you're trying to study or in this case, the cost of the meal at this place. So ultimately,
+what we're leaning toward with setting your expectations in collecting
+data is called a change in behavior or an understanding of the mechanism
+you're trying to study. What did we learn, and
+what would you do differently next time? So in this scenario where you
+thought it was gonna be $30 and it ended up being $40, well then the next
+time you might bring an extra $10. If you originally thought it
+was gonna be between 0 and $1,000 then the cost ended up being $40,
+it's not clear that you would change anything about your behaviour
+based on this data. And so, if there is no change
+in what you might think or what you might do based on
+the collection of the data and matching it with your expectations,
+then that's often a sign that either the evidence from your experiment
+is not very strong or the data analysis was not able to generate enough evidence,
+or there may be some other problem. With your study or
+your data analysis process. So setting the right expectations and
+making them as sharp as possible is a really key element to this
+whole data analysis cycle.

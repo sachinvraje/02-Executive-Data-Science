@@ -1,0 +1,484 @@
+WEBVTT
+
+1
+00:00:03.640 --> 00:00:06.110
+It's not just the people in your
+Data Science team that will want to
+
+2
+00:00:06.110 --> 00:00:07.750
+use data and interact with data.
+
+3
+00:00:07.750 --> 00:00:10.430
+So part of your role as
+Data Science manager, or
+
+4
+00:00:10.430 --> 00:00:13.890
+a Data Science executive is
+teaching people how to use data or
+
+5
+00:00:13.890 --> 00:00:16.800
+empowering people to use
+data within an organization.
+
+6
+00:00:16.800 --> 00:00:20.140
+So one of the ways in which to do that
+is through Data Science training.
+
+7
+00:00:20.140 --> 00:00:22.620
+So there's a number of different
+ways that you can do this.
+
+8
+00:00:22.620 --> 00:00:25.140
+One is pointing people to resources,
+collecting and
+
+9
+00:00:25.140 --> 00:00:27.310
+curating resources that
+are available online.
+
+10
+00:00:27.310 --> 00:00:31.140
+Whether that's online classes or online
+materials related to sorts of things that
+
+11
+00:00:31.140 --> 00:00:33.090
+they might wanna be able to do.
+
+12
+00:00:33.090 --> 00:00:35.190
+It might be writing those
+tutorials yourself, so
+
+13
+00:00:35.190 --> 00:00:39.460
+that people can interact with
+the data themselves directly.
+
+14
+00:00:39.460 --> 00:00:43.650
+Another really useful way is to have
+internal talks that are available to
+
+15
+00:00:43.650 --> 00:00:45.640
+everybody to go to if they want to.
+
+16
+00:00:45.640 --> 00:00:47.950
+Where the Data Science team communicates.
+
+17
+00:00:47.950 --> 00:00:49.660
+How do you pull data out of the database?
+
+18
+00:00:49.660 --> 00:00:50.780
+How do you make plots?
+
+19
+00:00:50.780 --> 00:00:53.570
+How do you visualize data
+in a way that's compelling?
+
+20
+00:00:53.570 --> 00:00:55.430
+How do you do machine learning?
+
+21
+00:00:55.430 --> 00:00:57.698
+Or what is machine learning?
+
+22
+00:00:57.698 --> 00:01:01.589
+Those internal talks are really useful
+if they can also communicate what
+
+23
+00:01:01.589 --> 00:01:03.384
+the internal capabilities are.
+
+24
+00:01:03.384 --> 00:01:07.289
+One thing that's very difficult about Data
+Science teams is that every Data Science
+
+25
+00:01:07.289 --> 00:01:08.946
+team had different capabilities.
+
+26
+00:01:08.946 --> 00:01:13.712
+Depending on the people that are there,
+how subscribed their activities are,
+
+27
+00:01:13.712 --> 00:01:16.520
+how difficult it is to do the problems.
+
+28
+00:01:16.520 --> 00:01:20.466
+And so communicating what's possible and
+what's not possible in a way that's sort
+
+29
+00:01:20.466 --> 00:01:24.930
+of unbiased to the whole
+organization often spurs new ideas.
+
+30
+00:01:24.930 --> 00:01:28.130
+New ways to take advantage of the Data
+Science team to solve new problems
+
+31
+00:01:28.130 --> 00:01:28.890
+that people care about.
+
+32
+00:01:29.920 --> 00:01:32.010
+So you can either have sort
+of training sessions or
+
+33
+00:01:32.010 --> 00:01:35.010
+sort of informational sessions about
+how the Data Science team works.
+
+34
+00:01:35.010 --> 00:01:38.670
+Those are both really useful ways
+to empower people to approach
+
+35
+00:01:38.670 --> 00:01:41.200
+the Data Science team and work with them.
+
+36
+00:01:41.200 --> 00:01:44.470
+Another way is to build documents or
+build tools or
+
+37
+00:01:44.470 --> 00:01:48.210
+build products that can be
+shared with other people.
+
+38
+00:01:48.210 --> 00:01:51.910
+Who don't necessarily have Data Science or
+Data Engineering training, but
+
+39
+00:01:51.910 --> 00:01:53.910
+would like to interact with the data.
+
+40
+00:01:53.910 --> 00:01:56.500
+So one common example
+is sort of a dashboard,
+
+41
+00:01:56.500 --> 00:01:59.345
+sort of a set of visualizations or
+set of plots.
+
+42
+00:01:59.345 --> 00:02:02.430
+That are built, so that somebody
+can click on some buttons and
+
+43
+00:02:02.430 --> 00:02:03.920
+interact with that visualization.
+
+44
+00:02:03.920 --> 00:02:06.720
+They can ask their own questions,
+have their own hypothesis and
+
+45
+00:02:06.720 --> 00:02:07.890
+interact with the data.
+
+46
+00:02:07.890 --> 00:02:10.210
+Even if it's just a subset of the data.
+
+47
+00:02:10.210 --> 00:02:14.930
+Another way is just one interactive
+visualization can be really compelling,
+
+48
+00:02:14.930 --> 00:02:17.390
+can be a way for
+people to sort of interact with the data,
+
+49
+00:02:17.390 --> 00:02:19.120
+ask one specific question.
+
+50
+00:02:19.120 --> 00:02:22.100
+And sort of see how their choices work.
+
+51
+00:02:22.100 --> 00:02:25.370
+So here the key is,
+there's a design element to it.
+
+52
+00:02:25.370 --> 00:02:27.710
+It's how are you going to
+design your interface so
+
+53
+00:02:27.710 --> 00:02:30.340
+that people can interact with the data.
+
+54
+00:02:30.340 --> 00:02:32.050
+They can ask their own questions.
+
+55
+00:02:32.050 --> 00:02:36.316
+But they're not intimidated by syntax or
+knowing how to actually do the stuff.
+
+56
+00:02:36.316 --> 00:02:38.910
+With the low-level programming
+languages that you or
+
+57
+00:02:38.910 --> 00:02:41.010
+your Data Science team might know about.
+
+58
+00:02:41.010 --> 00:02:42.620
+So in addition to training,
+
+59
+00:02:42.620 --> 00:02:47.380
+there's these sort of ways to directly
+connect people to the data themselves.
+
+60
+00:02:47.380 --> 00:02:49.020
+Ideally, you can automate this.
+
+61
+00:02:49.020 --> 00:02:53.690
+So a lot of report writing tools,
+whether they're in sort of high Python
+
+62
+00:02:53.690 --> 00:02:58.386
+notebooks or shiny documents or so
+forth, can be sort of auto-generated.
+
+63
+00:02:58.386 --> 00:03:02.190
+You can also setup a dashboard that
+does an auto-pull from your database,
+
+64
+00:03:02.190 --> 00:03:05.600
+that always has the latest and
+freshest data available to people.
+
+65
+00:03:05.600 --> 00:03:10.210
+If you can automate it in that way,
+the most common questions can be
+
+66
+00:03:10.210 --> 00:03:12.860
+answered by people other
+than the Data Science team.
+
+67
+00:03:12.860 --> 00:03:15.710
+Which leads them to innovate and
+to focus on new ideas and
+
+68
+00:03:15.710 --> 00:03:17.330
+new things that they can do well.
+
+69
+00:03:17.330 --> 00:03:21.394
+Or to shore up the infrastructure for this
+sort of Data Science processes that you
+
+70
+00:03:21.394 --> 00:03:23.680
+already have going on
+in your organization.
+
+71
+00:03:23.680 --> 00:03:27.914
+The other thing that can be really useful
+as a way to have people sort of interact
+
+72
+00:03:27.914 --> 00:03:32.060
+with the Data Science team is with
+Data Science idea evaluation.
+
+73
+00:03:32.060 --> 00:03:35.200
+So often people will have ideas about
+ways they think they might be able to
+
+74
+00:03:35.200 --> 00:03:38.330
+use data that solve a particular
+problem or another.
+
+75
+00:03:38.330 --> 00:03:41.120
+But it turns out that sometimes
+those are impossible.
+
+76
+00:03:41.120 --> 00:03:44.230
+We don't have the right data or we don't
+have the imaginary infrastructure,
+
+77
+00:03:44.230 --> 00:03:47.040
+we don't have the right scale to
+be able to solve that problem.
+
+78
+00:03:47.040 --> 00:03:50.020
+But it's still really nice if you
+can provide a way or a format or
+
+79
+00:03:50.020 --> 00:03:53.590
+a forum where people can propose ideas
+that they'd like to do with the data and
+
+80
+00:03:53.590 --> 00:03:56.410
+get critical, but
+positive feedback on those ideas.
+
+81
+00:03:56.410 --> 00:03:59.840
+You don't wanna immediately crush
+any idea that somebody brings up.
+
+82
+00:03:59.840 --> 00:04:01.570
+You'll never hear another idea again.
+
+83
+00:04:01.570 --> 00:04:05.230
+But it is a good idea to sort of,
+that helps tune expectations.
+
+84
+00:04:05.230 --> 00:04:08.260
+What can we actually do with
+the datasets that we have?
+
+85
+00:04:08.260 --> 00:04:11.080
+Especially, if someone else
+is proposing the ideas and
+
+86
+00:04:11.080 --> 00:04:12.460
+you are sort of letting them know.
+
+87
+00:04:12.460 --> 00:04:13.460
+Yes, we can do that.
+
+88
+00:04:13.460 --> 00:04:14.360
+No, we can't do that.
+
+89
+00:04:14.360 --> 00:04:15.180
+Yes, we can do that, but
+
+90
+00:04:15.180 --> 00:04:18.810
+it would take a whole new
+infrastructure on the server side.
+
+91
+00:04:18.810 --> 00:04:19.700
+Yes, we can do that, but
+
+92
+00:04:19.700 --> 00:04:23.190
+it would require us to develop a whole
+new machine learning infrastructure here.
+
+93
+00:04:23.190 --> 00:04:26.370
+That gives people an idea about what's
+going on with the Data Science team.
+
+94
+00:04:26.370 --> 00:04:30.760
+What can you actually do, what are the
+parameters that makes it useful for you.
+
+95
+00:04:30.760 --> 00:04:33.840
+And so you can do peer review of
+these ideas from the data team and
+
+96
+00:04:33.840 --> 00:04:37.220
+from yourself as another way to
+interact with the organization.
+
+97
+00:04:37.220 --> 00:04:40.655
+But in general,
+the idea is as often as possible drawing
+
+98
+00:04:40.655 --> 00:04:43.340
+other people into
+the Data Science process.
+
+99
+00:04:43.340 --> 00:04:47.260
+Often that requires a little bit of
+education and that education can feel like
+
+100
+00:04:47.260 --> 00:04:50.545
+wasted time if you're not thinking
+about it in the right way.
+
+101
+00:04:50.545 --> 00:04:53.395
+But if you think about it as
+an investment in the future Data Science
+
+102
+00:04:53.395 --> 00:04:55.145
+capabilities of your organization.
+
+103
+00:04:55.145 --> 00:05:00.395
+It can be a really positive, really value
+compounding way of doing data science.

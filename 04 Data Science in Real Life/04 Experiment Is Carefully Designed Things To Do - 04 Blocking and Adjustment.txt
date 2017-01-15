@@ -1,0 +1,146 @@
+Hi, I'm Brian Caffo and this is
+the lecture on Blocking and Adjustment. So let's start talking about this
+problem by putting it into a context. Imagine if you're looking at improving
+mobility among the elderly and you want to do this using fitness tracker,
+so I think for me the most famous fitness
+tracker I think is Fitbit. And you want the fitness tracker to serve
+as motivation for greater mobility. And you're gonna do a clinical
+trial where you randomize half of your subjects to receive a Fitbit,
+and the control subjects get nothing. But most clinical trials they get
+something like the Fitbit at the end of the trial to reward them for
+being in the study, in case you were worried about that. So you're worried that age would
+confound the relationship and ideally, and likely in fact,
+the age groups would be distributed In roughly equal proportions
+among the treated and the controls. However, if you have a smaller study,
+something like this might happen. You might get, at the younger age group,
+one person who is a control. At the middle age group,
+three people who are control, and the high age group in this case,
+five people who are control, and each of those age
+groups having six people. And, then, in this case, age will be
+aliased with control status, right, for the younger ages, fewer controls,
+for the higher ages, more controls. And so if you were to look at
+the relationship between the fitness tracker and measured mobility. You would then be worried that
+it's actually associated with age. And this would be
+an unlucky arrangement and if you had enough subjects, probably
+things would wash out just by probability. But because you know age is such
+an important factor, a priori, you might wanna force it to be equal within your
+age categories you might want to take and get six people who are age 65 to 70 and then randomize them on those six people
+three to receive the treatment and three to receive the control and
+this is called blocking. And it's basically, the principle that
+if you know that an important source of explanatory variation exists as
+a variable, why don't you control for it at the onset,
+at the stage of the experimental design? Let's talk about a related problem
+when you don't have control over the experiment, or
+when you've conducted the experiment and realize that there was
+some sort of aliasing. So, for example, you might have
+conducted this experiment, and actually there was an aliasing. What could you have done? So you are studying the elderly still and
+you are comparing the use of trackers with mobility, but
+you are just observing the collection of people who self-select into using
+fitness trackers versus the controls. And so you're worried about because it's
+an observation study, you're worried about lots of factors that might confound
+the relationship between mobility and use of a fitness tracker. However, you're very concerned
+about age in specific, so let's just talk about that one variable,
+while we would note, for a full observational study,
+we'd be concerned about lots of things. But, you're worried about
+the age distribution. The younger subjects are gonna be more
+likely to pick up a fitness tracker just because of level of comfort with
+technology and other factors like that. And so you're worried any
+results you see aren't gonna be really associated with just
+differential age distributions. So how can, what's the most common way
+to look at this, to solve this problem. And this is the idea of adjustment. And so adjustment is the idea
+of looking at the relationship within levels of
+the confounder held fixed. So we would look at, say for
+example, the middle age group, we would compare the mobility
+with the age group held fixed, so we're still comparing like with like. Now we may not have equal numbers
+of subjects in that age group, but we will have fixed the age group so age
+isn't varying in that comparison, okay? So there's lots of different
+ways to do adjustment. But perhaps the most common and straightforward and easiest one to do
+is so called regression adjustment. And this is when if we
+want to look at Fitbit or not as a variable in a regression
+analysis, what do we do? We add age as another variable
+in that regressional analysis. And that performs a sort of adjustment,
+and I'm gonna go through some
+examples to show you, but also go through some examples to show
+you that adjustment is why you can get strange things happening when you add in
+a new variable into a regression model. So here's a pretty simple example,
+so here, again, the gray people are people who self-selected into using
+a Fitbit, and the red people are the ones who are the control,
+are the ones who don't use a Fitbit. And the Y-axis is a measure of mobility,
+and the X-axis is a measure of age. In this set, in this example you can look,
+the mean for the gray faces is higher than
+the mean mobility for the red faces. So the unadjusted effect is large. As we adjust it we see that there's
+this line of mobility with age. However, and those lines are parallel
+we're gonna stick with just the setting where the lines are parallel
+in our examples. And the lines are parallel, but
+the difference between the parallel lines is about the same as
+the difference in the means. So adjustment didn't really do much in
+this case, other than give us peace of mind that our fact wasn't entirely due
+to just differential age distribution. But notice one reason why
+the adjustment didn't change much. First of all, the data really suggests
+that the lines are parallel, but secondly there's a large overlap. At every age distribution you see people
+with both control and having Fitbits. Okay, so at every H distribution
+there is a lot of overlap. So there's a lot of data to
+directly make this comparison. Consider this example. In this example the marginal mean,
+the mean for the red group, disregarding age, is higher than the mean
+for the gray group, disregarding age. However, when we fit the regression
+model with age in it, we fit two parallel lines, and notice
+that the parallel lines would suggest that the gray group is
+the higher than the red group. Okay, that the Fitbit mobility is
+higher than the Control mobility. And what this is an example of this
+is an example where the effect would actually reverse itself. It would've gone from a significant effect
+but in one direction to a significant effect in the other direction after the
+inclusion of age in our regression model. So this serves as an example to show why
+it is when someone is reporting to you to a data analysis, and you say, okay,
+I'm concerned that age might be causing this problem, and
+they run the analysis real quick, and the effect actually reverses itself,
+it's because of a phenomena like this. I would also notice, look at this
+particular example, another hallmark of it is there's almost no overlap, there's
+almost no ages where there's direct data to compare the fitness trackers with the
+use of a fitness tracker with mobility. Only in this sort of middle age range
+is there just a couple of people who are overlapped. Otherwise, it's basically the old
+people don't use fitness trackers, and the young people all do
+use fitness trackers. So this data, our results, our adjusted results will be
+heavily dependent on our model. Here's an example where the marginal mean,
+the mean without considering age, for the control group, the red faces, is higher than that of the gray group,
+again they're lower. However, when we adjust for age,
+notice the lines appear to be the same, there appears to be no difference. So, this would be an instance where you
+would have a strongly significant effect if you didn't factor in age,
+but once you accounted for age in your regression model,
+it went away. Okay, everything just
+lied on the same line. So if you disregarded age. So this is just an example of, again, how your effect can really change
+after the inclusion of another variable. Oh, and notice again in this one there
+isn't a lot of direct overlap; a lot of instances of direct comparability
+between the groups. If there is a lot of direct comparability
+then the adjustment doesn't tend to change much, and in this case, here's an instance
+where the mean disregarding age of both groups is about the same, but
+when we fit the model adjusted for age, the two parallel line's we're
+fitting will be quite different in terms of their intercept or the shift
+between the lines would be quite high. And so, this would be an instance of when
+it went from a non-significant effect if we disregarded h, to a highly
+significant effect when we thought, when we included h. The final example, I want to make this point one more time,
+and what I wanted to say is in this case, once you fit the model there would be a
+big effect between the two parallel lines. They look very different in this case,
+however, one thing I wanna mention,
+in this case there's no overlap. There's no ages where we observe
+both control and treated group or control and self-selected Fitbit users. So this the result would be all model and
+no data, right? The comparison we would be making would
+be extrapolating the line from the gray group on upward and extrapolating
+the line from the red group downward. So there's no data overlap
+to inform this decision. This is something to think about that regression does not handle by itself,
+right. It does not tell you that the comparison
+you're making has a lot of data. So I think it's often good to ask
+the people that you're managing to do some basic plots. In this case you would want to look at
+the correlation of age with Fitbit use and if it's highly correlated
+than that's a problem. Right, in this case,
+you could perfectly pick, predict their Fitbit usage by their age. If they were above this middle age rung,
+they all used Fitbit and if they were below that,
+they didn't use Fitbit. And whenever you can,
+whenever that can happen. Whenever your confounder predicts
+your regression very well that you're interested in,
+then that's a problem. Okay, so thanks for
+listening to this lecture and I hope you learned a little bit about two
+common strategies, one blocking, something that we do as part of our experimental
+design and another: adjustment, something that we do after we've
+collected data to try and account for confounding variables that may contaminate
+relationships that we're interested in. Thanks again and
+I'll see you in the next lecture.

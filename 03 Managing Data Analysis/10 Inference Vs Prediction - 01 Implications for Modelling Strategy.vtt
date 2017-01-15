@@ -1,0 +1,1003 @@
+WEBVTT
+
+1
+00:00:00.750 --> 00:00:03.420
+Recognizing whether you are asking
+an inferential question or
+
+2
+00:00:03.420 --> 00:00:05.420
+a prediction question is really important.
+
+3
+00:00:05.420 --> 00:00:09.450
+Because the type of question that you are
+asking can greatly influence the modeling
+
+4
+00:00:09.450 --> 00:00:11.390
+strategy that you pursue
+in any data analysis.
+
+5
+00:00:16.585 --> 00:00:20.763
+So just to recap, with inferential
+questions the goal is to estimate
+
+6
+00:00:20.763 --> 00:00:24.400
+the association between an outcome and
+a key predictor.
+
+7
+00:00:24.400 --> 00:00:28.750
+While potentially trying to adjust for
+all these confounding factors.
+
+8
+00:00:28.750 --> 00:00:31.790
+There is usually a very small number,
+or even a single
+
+9
+00:00:31.790 --> 00:00:35.752
+key predictor that we're interested in and
+it's relationship to the outcome.
+
+10
+00:00:35.752 --> 00:00:38.110
+And then there may be all
+these other variables.
+
+11
+00:00:38.110 --> 00:00:42.040
+And the key goals for the modeling
+is to estimate this association and
+
+12
+00:00:42.040 --> 00:00:45.850
+to make sure that you appropriately
+adjust for any other kinda factors.
+
+13
+00:00:45.850 --> 00:00:48.980
+You often do sensitivity analyses to
+
+14
+00:00:48.980 --> 00:00:53.280
+see how the association might change
+in the presence of other factors.
+
+15
+00:00:53.280 --> 00:00:56.370
+With the prediction question,
+the goal is to develop a model that
+
+16
+00:00:56.370 --> 00:01:00.160
+best predicts the outcome using whatever
+information you have available to you.
+
+17
+00:01:00.160 --> 00:01:05.020
+So typically you don't put any [FOREIGN]
+weight on one predictor over another.
+
+18
+00:01:05.020 --> 00:01:08.350
+And so there's no notion of let's
+say a key predictor and confounder.
+
+19
+00:01:08.350 --> 00:01:12.650
+All the predictors might be equally
+important before you look at the data.
+
+20
+00:01:12.650 --> 00:01:16.100
+And any good prediction algorithm
+will tell you which predictors or
+
+21
+00:01:16.100 --> 00:01:19.080
+which variables are more or
+less important for predicting the outcome.
+
+22
+00:01:19.080 --> 00:01:19.830
+But beforehand,
+
+23
+00:01:19.830 --> 00:01:24.630
+we don't necessarily divide them into
+different groups based on importance.
+
+24
+00:01:24.630 --> 00:01:29.460
+Finally, we usually don't care
+about the mechanism or the specific
+
+25
+00:01:29.460 --> 00:01:33.880
+details of the relationships between
+the various predictors or variables.
+
+26
+00:01:33.880 --> 00:01:37.170
+We just wanna find a kind of a model form
+
+27
+00:01:37.170 --> 00:01:39.849
+that predicts the outcome with
+a high accuracy and low error.
+
+28
+00:01:41.030 --> 00:01:45.830
+So I wanted to give a brief
+example of how these different
+
+29
+00:01:45.830 --> 00:01:49.740
+types of questions can lead to different
+conclusions, even on the same dataset.
+
+30
+00:01:51.130 --> 00:01:54.540
+I'll start first with
+an inferential question.
+
+31
+00:01:54.540 --> 00:01:59.290
+Suppose I want to know how is air
+pollution in New York City related to
+
+32
+00:01:59.290 --> 00:02:00.760
+mortality in New York City.
+
+33
+00:02:00.760 --> 00:02:01.290
+Okay?
+
+34
+00:02:01.290 --> 00:02:04.918
+So the data I'm gonna use comes
+from this national morbidity and
+
+35
+00:02:04.918 --> 00:02:07.134
+mortality in air pollution study, and
+
+36
+00:02:07.134 --> 00:02:11.452
+here's a picture of daily mortality
+in New York from 2001 to 2005.
+
+37
+00:02:11.452 --> 00:02:14.428
+And you can see that it has
+highly seasonal components,
+
+38
+00:02:14.428 --> 00:02:18.353
+the mortality tends to be higher in
+the winter and lower in the summer, and
+
+39
+00:02:18.353 --> 00:02:21.610
+it's very specific to kind of
+to pattern across every year.
+
+40
+00:02:22.970 --> 00:02:25.740
+Here is what particulate
+matter data looks like.
+
+41
+00:02:25.740 --> 00:02:26.900
+And so for
+
+42
+00:02:26.900 --> 00:02:31.500
+the same time period you can see this
+has also a seasonal structure to it.
+
+43
+00:02:31.500 --> 00:02:34.300
+In particular,
+particulate matter is high in the summer.
+
+44
+00:02:34.300 --> 00:02:37.170
+It tends to be low in
+the winter in New York City.
+
+45
+00:02:37.170 --> 00:02:39.910
+That's a very, that pattern is
+kind of repeated across the years.
+
+46
+00:02:42.350 --> 00:02:45.970
+So the first step I'm gonna do is
+just to try the easy solution.
+
+47
+00:02:45.970 --> 00:02:49.170
+The easiest solution is just
+a scatter plot of mortality and
+
+48
+00:02:49.170 --> 00:02:54.090
+PM10 on the x-axis, and here you can
+see what the relationship looks like.
+
+49
+00:02:54.090 --> 00:02:57.420
+There's quite a bit of noise because
+we wouldn't necessarily expect
+
+50
+00:02:57.420 --> 00:03:01.370
+particulate matter to explain all
+the vulnerability in mortality.
+
+51
+00:03:01.370 --> 00:03:04.660
+And so,
+we may need to resort to some modeling,
+
+52
+00:03:04.660 --> 00:03:07.850
+some formal modeling to see if
+there's any sort of association here.
+
+53
+00:03:10.250 --> 00:03:13.471
+So the first thing we're going to
+do is to take that scatter plot and
+
+54
+00:03:13.471 --> 00:03:16.910
+just fit a simple linear aggression
+to the data in that scatter plot.
+
+55
+00:03:16.910 --> 00:03:22.080
+This is basically regressing mortality as
+the outcome and PM10 as our key predictor,
+
+56
+00:03:22.080 --> 00:03:24.440
+without any other factors,
+just as kind of a baseline model.
+
+57
+00:03:26.160 --> 00:03:30.860
+Now here are the results that we get
+from a regression model of that nature.
+
+58
+00:03:30.860 --> 00:03:35.820
+And you can see that the coefficient for
+PM10 here is 0.00004, etc.
+
+59
+00:03:36.980 --> 00:03:39.000
+And so basically is close to zero.
+
+60
+00:03:39.000 --> 00:03:41.770
+You can tell by the size
+of the standard error,
+
+61
+00:03:41.770 --> 00:03:45.020
+which is much bigger than the estimate,
+that there's a lot of
+
+62
+00:03:45.020 --> 00:03:48.560
+variability around this estimate and
+so it's effectively zero.
+
+63
+00:03:48.560 --> 00:03:50.630
+The association between
+the two variables is zero.
+
+64
+00:03:50.630 --> 00:03:51.330
+Okay.
+So
+
+65
+00:03:51.330 --> 00:03:56.604
+that's kind of what our basic
+first cut analysis tells us.
+
+66
+00:03:56.604 --> 00:03:59.377
+Now one thing we know about pollution and
+mortality,
+
+67
+00:03:59.377 --> 00:04:03.930
+just from the pictures that we just saw of
+the data is that they're highly seasonal.
+
+68
+00:04:03.930 --> 00:04:08.290
+Season plays a big role in explaining
+variability in both mortality and
+
+69
+00:04:08.290 --> 00:04:09.550
+in air pollution okay?
+
+70
+00:04:09.550 --> 00:04:12.660
+Remember mortality was high in
+the winter and low in the summer, and
+
+71
+00:04:12.660 --> 00:04:15.090
+pollution was high in the summer and
+low in the winter.
+
+72
+00:04:15.090 --> 00:04:20.550
+So it seems like season is clearly
+related to both mortality and pollution.
+
+73
+00:04:20.550 --> 00:04:24.120
+So it might be a reasonable thing to
+include as a potential confounding factor.
+
+74
+00:04:24.120 --> 00:04:26.890
+So we can fit a secondary
+model to the data,
+
+75
+00:04:26.890 --> 00:04:28.990
+which includes pm10 as our key predictor,
+and
+
+76
+00:04:28.990 --> 00:04:34.480
+then maybe we'll include the season of the
+year as a potential confounding factor,
+
+77
+00:04:34.480 --> 00:04:37.750
+so the season will just be, you know,
+there'll be four seasons, and
+
+78
+00:04:37.750 --> 00:04:40.509
+we'll have a categorical value
+with a category for each season.
+
+79
+00:04:42.190 --> 00:04:44.870
+So, here is the results of
+fitting that model to the data.
+
+80
+00:04:44.870 --> 00:04:47.168
+And you can see that I
+highlighted the coefficient for
+
+81
+00:04:47.168 --> 00:04:52.830
+pm10 here is actually quite a bit
+larger now, is 0.00149, and you
+
+82
+00:04:52.830 --> 00:04:57.550
+can see that the standard error is quite
+a bit smaller relative to the estimate.
+
+83
+00:04:57.550 --> 00:05:01.242
+So, this suggests that the coefficient for
+
+84
+00:05:01.242 --> 00:05:05.790
+pm10 is quite a bit bigger than zero,
+maybe statistically significant.
+
+85
+00:05:05.790 --> 00:05:09.250
+So the addition of this confounding factor
+
+86
+00:05:09.250 --> 00:05:14.040
+dramatically changed the association
+we estimate between pm10 and mortality.
+
+87
+00:05:14.040 --> 00:05:18.330
+And so, part of this is because season
+is very strongly related to both,
+
+88
+00:05:18.330 --> 00:05:23.050
+but it's kind of positive,
+it's correlated in one way with mortality,
+
+89
+00:05:23.050 --> 00:05:26.280
+but it's correlated in
+a different way with pollution.
+
+90
+00:05:26.280 --> 00:05:29.096
+That's part of why we saw it when
+we didn't include season we saw no
+
+91
+00:05:29.096 --> 00:05:29.810
+relationship.
+
+92
+00:05:29.810 --> 00:05:32.850
+But when we do include it, we see this
+kinda quite a bit stronger relationship.
+
+93
+00:05:34.450 --> 00:05:37.820
+Now there are other potential
+factors that we might wanna consider
+
+94
+00:05:37.820 --> 00:05:42.360
+in terms of things that might both be
+related to mortality and to air pollution.
+
+95
+00:05:42.360 --> 00:05:43.570
+So another one is the weather.
+
+96
+00:05:43.570 --> 00:05:45.872
+Right?
+So weather is associated with mortality
+
+97
+00:05:45.872 --> 00:05:49.463
+and it's also highly associated
+with various air pollutants and so
+
+98
+00:05:49.463 --> 00:05:53.560
+we can characterize the weather with
+something like temperature or dew point
+
+99
+00:05:53.560 --> 00:05:57.530
+temperature to think to just capture
+a piece of kind of what weather is and so
+
+100
+00:05:57.530 --> 00:05:59.440
+we can include that into our model.
+
+101
+00:05:59.440 --> 00:06:03.364
+So here's the results of including
+temperature which is the tmpd variable and
+
+102
+00:06:03.364 --> 00:06:06.055
+dew-point temperature which
+is the dptp variable.
+
+103
+00:06:06.055 --> 00:06:08.150
+And you can see now.
+
+104
+00:06:08.150 --> 00:06:10.020
+And actually I've highlighted
+the coefficient for pm10,
+
+105
+00:06:10.020 --> 00:06:14.410
+it's even bigger than it was before and
+the standard error is similar, so it's
+
+106
+00:06:14.410 --> 00:06:20.280
+actually more statistically significant in
+some sense than in the previous models.
+
+107
+00:06:20.280 --> 00:06:21.390
+Again, temperature and
+
+108
+00:06:21.390 --> 00:06:27.450
+dew point are strong factors that are
+related to both mortality and pollution.
+
+109
+00:06:27.450 --> 00:06:32.560
+Finally, another type of factor that may
+be related to both mortality and PM,
+
+110
+00:06:32.560 --> 00:06:35.110
+particulate matter,
+is other pollutants, right?
+
+111
+00:06:35.110 --> 00:06:38.720
+So there are other pollutants that may
+affect health, and they may be correlated
+
+112
+00:06:38.720 --> 00:06:42.660
+with particulate matter because
+they may share common sources.
+
+113
+00:06:42.660 --> 00:06:46.520
+So, one common source in a city
+like New York is gonna be traffic.
+
+114
+00:06:46.520 --> 00:06:50.860
+Traffic can produce particles,
+it can also produce other pollutants.
+
+115
+00:06:50.860 --> 00:06:53.842
+So one of the pollutants that
+we'll look at is nitrogen dioxide.
+
+116
+00:06:53.842 --> 00:06:57.720
+And so nitrogen dioxide tends
+to be correlated with particles.
+
+117
+00:06:57.720 --> 00:07:01.260
+So if you are interested in
+association between particles and
+
+118
+00:07:01.260 --> 00:07:04.049
+mortality, you might
+wonder well is what we're
+
+119
+00:07:04.049 --> 00:07:08.419
+seeing actually the association between
+nitrogen dioxide and mortality?
+
+120
+00:07:08.419 --> 00:07:10.409
+And pm10 is kind of getting
+mixed up in the two.
+
+121
+00:07:10.409 --> 00:07:14.210
+And so we can include nitrogen
+dioxide in our model as a potential
+
+122
+00:07:14.210 --> 00:07:17.450
+confounding factor, and
+see how the estimate for
+
+123
+00:07:17.450 --> 00:07:19.240
+particulate matter
+changes when we do that.
+
+124
+00:07:20.670 --> 00:07:22.200
+So here are the results from that model,
+and
+
+125
+00:07:22.200 --> 00:07:25.910
+you can see that compared to
+the previous model the coefficient for
+
+126
+00:07:25.910 --> 00:07:28.470
+pm10 drops a little bit,
+it goes down a little bit, so
+
+127
+00:07:28.470 --> 00:07:33.040
+the effect weakens a little bit when we
+include nitrogen dioxide in the model.
+
+128
+00:07:33.040 --> 00:07:34.870
+Now it's still quite a strong effect,
+
+129
+00:07:34.870 --> 00:07:38.010
+relative to the standard error that
+we estimate but it's not estimate,
+
+130
+00:07:38.010 --> 00:07:43.320
+that is not as strong as it was before we
+entered, we included no2 in the model.
+
+131
+00:07:43.320 --> 00:07:48.520
+And so, no2 and pm10 might be sharing
+a lot of the same effect on mortality and
+
+132
+00:07:48.520 --> 00:07:51.370
+it may be difficult to
+completely disentangle them.
+
+133
+00:07:51.370 --> 00:07:55.510
+However, even with no2 in the model
+we still see a reasonably strong
+
+134
+00:07:55.510 --> 00:07:59.340
+association between pm10 and
+mortality in New York City.
+
+135
+00:08:00.440 --> 00:08:03.310
+So when we put all these results
+together from the primary model which
+
+136
+00:08:03.310 --> 00:08:06.950
+just had pm10 in mortality, and then
+the various secondary models we've shown,
+
+137
+00:08:06.950 --> 00:08:11.570
+you can see that the primary model had
+a zero association effectively, and
+
+138
+00:08:11.570 --> 00:08:15.720
+then the other three models
+had a relatively strong
+
+139
+00:08:15.720 --> 00:08:18.400
+positive association with the outcome.
+
+140
+00:08:18.400 --> 00:08:22.950
+And here I've plotted the 95% confidence
+intervals for each of these associations.
+
+141
+00:08:22.950 --> 00:08:25.528
+So this is the kind of analysis
+that we're interested in.
+
+142
+00:08:25.528 --> 00:08:28.140
+We're looking at pm10
+as our key predictor.
+
+143
+00:08:28.140 --> 00:08:29.590
+And mortality is our outcome.
+
+144
+00:08:29.590 --> 00:08:33.380
+And we want to see how that association
+changes under different scenarios.
+
+145
+00:08:33.380 --> 00:08:37.660
+Under different sets of models, including
+different sets of confounding factors.
+
+146
+00:08:37.660 --> 00:08:41.290
+Now what we do with this information will
+depend on what the goal of the analysis
+
+147
+00:08:41.290 --> 00:08:46.570
+is, who the stakeholders are, and what we
+might do with this information afterwards.
+
+148
+00:08:46.570 --> 00:08:47.820
+But we won't talk about that now.
+
+149
+00:08:47.820 --> 00:08:50.760
+The point I want to make is the kind
+of the analysis that you do for
+
+150
+00:08:50.760 --> 00:08:53.790
+an associational type of analysis
+is very much along these lines.
+
+151
+00:08:55.030 --> 00:08:58.290
+So another question that we could ask,
+is what best
+
+152
+00:08:58.290 --> 00:09:02.710
+predicts mortality in New York City, using
+the data that we have available, okay?
+
+153
+00:09:02.710 --> 00:09:06.140
+So now I've changed the question to
+a prediction type of question, and
+
+154
+00:09:06.140 --> 00:09:07.850
+we want to know what
+predicts the outcome best.
+
+155
+00:09:08.900 --> 00:09:12.110
+So one of the things that we could
+do is fit a complex prediction
+
+156
+00:09:12.110 --> 00:09:12.700
+algorithm, all right?
+
+157
+00:09:12.700 --> 00:09:16.630
+We don't need to know, we don't need to
+worry about estimating associations, or
+
+158
+00:09:16.630 --> 00:09:18.670
+adjusting for confounding factors.
+
+159
+00:09:18.670 --> 00:09:22.230
+We're just gonna put all the data
+that we have available to us and
+
+160
+00:09:22.230 --> 00:09:25.730
+see how well that predicts
+the outcome mortality.
+
+161
+00:09:25.730 --> 00:09:29.859
+So here I'm gonna use a random
+force algorithm to make
+
+162
+00:09:29.859 --> 00:09:33.265
+predictions of mortality in New York City.
+
+163
+00:09:33.265 --> 00:09:37.079
+And one of the aspects of random
+forest algorithm is that it allows for
+
+164
+00:09:37.079 --> 00:09:40.210
+a summary statistic called
+variable importance.
+
+165
+00:09:40.210 --> 00:09:44.056
+And this gives you a sense of how
+important a variable is in increasing
+
+166
+00:09:44.056 --> 00:09:47.120
+the skill of the algorithm
+in predicting the outcome.
+
+167
+00:09:47.120 --> 00:09:48.598
+So, I've plotted here,
+
+168
+00:09:48.598 --> 00:09:53.039
+the variable importance plot that rank
+orders all the variables in terms of how
+
+169
+00:09:53.039 --> 00:09:57.160
+important they are to improving
+the prediction skill of the algorithm.
+
+170
+00:09:57.160 --> 00:10:00.570
+And you can see at the very
+top here is temperature,
+
+171
+00:10:00.570 --> 00:10:03.530
+which is kind of ranked as
+the most important variable.
+
+172
+00:10:03.530 --> 00:10:07.910
+Followed by dew-point temperature,
+followed by the date, and
+
+173
+00:10:07.910 --> 00:10:09.900
+then no2, ozone which is o3.
+
+174
+00:10:09.900 --> 00:10:11.100
+Season.
+
+175
+00:10:11.100 --> 00:10:13.620
+And then finally, pm10 and then dow,
+which is the day of the week.
+
+176
+00:10:13.620 --> 00:10:17.030
+So you can see that from
+this prediction model,
+
+177
+00:10:17.030 --> 00:10:20.780
+particularly matter actually
+is second from the bottom
+
+178
+00:10:20.780 --> 00:10:23.960
+in terms of improving the prediction
+skill of the algorithm.
+
+179
+00:10:23.960 --> 00:10:27.080
+So if you were to look
+at this analysis and
+
+180
+00:10:27.080 --> 00:10:32.150
+then ask the original question, and
+say, how is pm10 related to mortality?
+
+181
+00:10:32.150 --> 00:10:34.460
+You might think well,
+it's not related to mortality.
+
+182
+00:10:34.460 --> 00:10:36.480
+It's not important for predicting.
+
+183
+00:10:36.480 --> 00:10:41.430
+But that's true, but it doesn't
+necessarily mean that pm10 is not
+
+184
+00:10:43.130 --> 00:10:46.430
+associated with mortality,
+from an associational standpoint.
+
+185
+00:10:46.430 --> 00:10:49.160
+It may have an important
+association with mortality.
+
+186
+00:10:49.160 --> 00:10:51.740
+But that the association
+is inherently weak.
+
+187
+00:10:51.740 --> 00:10:56.430
+And so it's not necessarily going to be
+good for be predicting the outcome, but
+
+188
+00:10:56.430 --> 00:10:59.630
+it may, nevertheless, have an important
+association with the outcome.
+
+189
+00:10:59.630 --> 00:11:03.170
+And so, separating these kinds of
+questions out, and the goals of these
+
+190
+00:11:03.170 --> 00:11:07.030
+questions is very important because if you
+were to ask an inferential question, but
+
+191
+00:11:07.030 --> 00:11:11.010
+then do an analysis that's really tuned
+for prediction you might be lead to
+
+192
+00:11:11.010 --> 00:11:14.200
+come to the wrong conclusion that,
+oh, pm10 is not important.
+
+193
+00:11:14.200 --> 00:11:16.250
+And it doesn't have an important
+association with the outcome.
+
+194
+00:11:16.250 --> 00:11:19.170
+And particularly, if you think about
+something like pollution, it may have
+
+195
+00:11:19.170 --> 00:11:23.710
+an inherently very small association with
+the outcome, but because everyone in
+
+196
+00:11:23.710 --> 00:11:27.975
+New York City ostensibly breathes,
+and is exposed to this polluted air.
+
+197
+00:11:27.975 --> 00:11:30.715
+The effect, the ultimate effect,
+of such an association,
+
+198
+00:11:30.715 --> 00:11:34.875
+could be quite large given the large
+population of a city like New York.
+
+199
+00:11:34.875 --> 00:11:40.505
+So it's important to not kind of conflate
+the magnitude of the association
+
+200
+00:11:40.505 --> 00:11:45.655
+with the ultimate effect on
+the population that you're interested in.
+
+201
+00:11:47.340 --> 00:11:51.280
+Using prediction algorithms for
+prediction questions, and
+
+202
+00:11:51.280 --> 00:11:55.550
+associational analyses for associational
+questions, is really important so
+
+203
+00:11:55.550 --> 00:11:59.090
+that you can draw the right
+conclusions from your data, and
+
+204
+00:11:59.090 --> 00:12:02.420
+not mistake the results of
+one question for another.
+
+205
+00:12:02.420 --> 00:12:07.240
+So framing the question correctly
+is really important for developing
+
+206
+00:12:07.240 --> 00:12:11.120
+an important modeling strategy, and for
+kinda drawing the right conclusions.

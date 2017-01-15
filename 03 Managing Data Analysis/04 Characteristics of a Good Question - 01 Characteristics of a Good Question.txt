@@ -1,0 +1,99 @@
+This lecture is about the most
+important part of a data analysis, and you don't even need a computer to do it. The first step for any data analysis
+is pretty simple, you have to think. So thinking is really important. In fact, in most data analyses, you should probably do more thinking
+than doing of the data analysis. Because It will save you a lot of time and
+a lot of money and a lot of frustration if you just think a
+little bit beforehand about what you want to do before you start digging into
+the data and digging into the details. One of the most important things about
+data analysis doesn't actually have to do with the analysis itself, but it is
+really important to ask a good question. So in this lecture I was going
+to talk a little bit about what are the characteristics
+of a good question. So there's five characteristics
+that I just want to highlight about what makes for a good question. So the first characteristic is that it
+has to be of interest to your audience. And now, the important part of this feature is that you have to be able to
+define who your audience is going to be. So depending on who you are and
+where you work and what you're doing, your audience is
+going to be a different set of people. So, for example, if you're an academic
+your audience might be collaborators, they might be a scientific community,
+they might be your funders or the general public for your problem. If you're working at a start up
+your audience might be your boss or the company leadership or investors or
+maybe even potential customers. So, knowing who your audience is and
+knowing what questions are relevant to them is a really important part
+of asking the right question. The second important part about
+a good question that hasn't already been answered already, so
+this may seem a little bit obvious, but with the wealth of data out there and
+literature and the availability of the Internet,
+it's quite possible that someone,somewhere out there, has either at least studied
+your question or maybe even answered it. So doing a simple search and looking to
+see if your question has already been answered, either inside or outside your
+organization, can save you a lot of time and money and allow you to ask the real
+question that people want answered, opposed to one that's
+already been answered. So it's helpful often to discuss your
+question with experts in your area, or maybe experts in your organization who
+could help you to shape your question and to ask one that actually
+hasn't been answered before. The third feature of a good
+question is that it's plausible. And the basic idea here, is that you
+need to be able to have a reasonable explanation for how the world works, if the answer to your question is
+kinda what you expect it to be. In other words, you should be able to
+explain the mechanism for how things work. If you can't do this, then it's usually
+a bad sign that it's not a great question. And the problem with asking a question
+that's not really plausible is that it may lead you to collect some bad data. In the sense that any analysis that you
+do with the data might be difficult to interpret and may not really lead to strong evidence
+about anything in particular. And so and that may end up wasting
+a lot of time, a lot of money for people if you've collected bad data
+that question is not really plausible. So before you go out and spend
+the resources to conduct an experiment and do an analysis, try to think about your
+questions, think about whether you could explain how things would work if
+you get the answer that you expect. If you can't do that you may need to
+refine your question a little bit. The fourth feature is that the question
+has to be answerable okay? This is another one that
+might seem a little obvious. But the truth is there
+are a lot of good questions, really interesting questions,
+that are just simply not answerable. There may be many reasons why
+a question can't be answered. There may be ethical reasons
+where you can't collect the data. You might not have the money. They might require too many resources
+to try to answer a question. And so, there's a lot of questions
+that simply have to go unanswered. For example, in health research, there are
+a lot of questions that we have about how the body works and how does disease occur,
+but we simply cannot conduct the experiments that we might like to
+conduct because you might be putting people in danger, or it might be simply
+unethical to do such experiments. So think about your questions
+to see whether it's even possible to answer it given the kind
+of real-life situations that we are in. Now, the last feature of a good
+question is very important, and it's that a good question
+tends to be very specific. Now, specificity is useful because it
+often leads to simpler data collection and simpler kind of experiments and
+data analysis. And so the key word here is sharpness. You'd like to have a question
+that's very sharp. And that way you'll know whether the data meets your expectations
+about the question. So a simple example might be, you might wanna know whether a good
+diet leads to better health, okay? So that's a reasonable question. People think that, you eat better,
+your health will be better in general, but it's not a very specific question, so
+another version of that question might be, if you eat five servings of fresh fruits
+and vegetables per day, does that lead to fewer respiratory tract infections
+or, you know, colds, things like that? So that's a much more specific question,
+because I'm, instead of saying good diet, I'm saying five servings of fruits and
+vegetables per day. And instead of saying, better health, I'm
+saying fewer respiratory tract infections, which is something very
+specific that we can measure. So, the important thing about
+having a very specific question is that it often can lead to a well
+defined intervention, okay? And by the intervention I mean
+an action that you can take given the answer to any
+data analysis you might do. So, if we collect the data on people
+who have five servings of fruits and vegetables per day, and we collect data on how many respiratory
+tract infections that they have. If the data suggests that this
+question is true, that more fruits and vegetables leads to fewer respiratory
+tract infections, then we already know how we might intervene in terms of modifying
+people's diets and improving their health. So a very specific question will tend to
+lead to a well defined intervention and that will give you, those kinds of
+results will allow you change behaviors, to change actions to actually
+make a difference in the world. Whereas a very vague or non-specific
+question will often leave you in the same place that you started out in and without
+knowing what kinds of changes to make or what kinds of behaviors to change. So just to summarize the five
+features of a good question are it has to be of
+interest to an audience. It has to not already been answered. It has to plausible so that you can
+kind of explain how things would work if the answer to the question
+met your expectation. The question itself has to
+be answerable in the real world given all the constraints
+that you might have on you. And finally,
+a good question is very specific so that it can lead to a well defined
+intervention in the world.

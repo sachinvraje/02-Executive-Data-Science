@@ -1,0 +1,51 @@
+So in this lecture, we're going to
+talk about ways to help us interpret effects when we're studying something
+that we don't know too well. And the idea is simply to compare
+things with benchmark effects. So to summarize, here's the problem
+that we're interested in. Here's the real life
+data analysis problem. It's hard to interpret an effect or its
+magnitude because it's a newly, it's hard to interpret an effect or its magnitude
+because its a newly studied construct. And the solution I'm going to propose is,
+contrast the effect or the P value, or the effect size, with the level of
+significance, with a known construct. So let me give you an example,
+just to kind of frame the discussion. So a friend of mine named Brian Schwarz, he's in environmental health here, wrote a
+paper called, past adult lead exposure is linked to neurodegeneration
+as measured by brain MRI. And what they found is, that unadjusted
+effect estimate of -1.141 milliliters of brain volume per 1 microgram of lead
+per gram of bone mineral increase. Which is a hard thing to interpret,
+but it's basically saying you'll lose about 1.14 milliliters of brain volume for
+every 1 unit increase in lead exposure. He was looking at people who worked
+in lead manufacturing plants. They are worried that the chronic
+exposure to lead was causing accelerated brain volume decline beyond
+that would occur in normal aging. Okay, so
+how do would interpret this -1.14? We just gave the interpretation. Right?
+It had the units of the problem. However, there is the problem that I
+still kinda don't know what that means. So here's the idea of putting it into
+a context with a related phenomenon. So just to remind us, and here I'm just
+looking at one version of the effect. The paper, of course,
+really drilled down in this problem, so that the one version of this effect,
+the unadjusted effect was negative 1.41. So, a decrease in brain volume
+as lead exposure increases. I don't understand that effect terribly
+well because I'm not an expert on lead. But I do know some things
+about normal aging. Normal aging, over the age of 40, results in about a half a percent of
+decline in brain volume per year. Okay. So, I know it's roughly about that,
+maybe that estimate's a little high, but let's say it's roughly about that. So, if I take that half a percent
+decline in brain volume per year, and I look at the average brain volume from
+Brian's study, then I can figure out that 1.41 decrease is roughly equivalent
+to about about 20% of a year. So basically, we're saying this effect,
+that a one unit increase in lead, in lead exposure results
+in brain volume loss. That's about the same amount of
+volume loss that people experience in about 20% of the year
+over the age of 40. So to me, that's more interpretable,
+because I understand, in this case, because I understand about healthy brain
+aging, because I work in the area. And so, what I'm trying to convince you
+to do, is when you're looking at this complicated effect measure,
+put it in to compare it, put it into a contrast with something
+that you're very familiar with. In this case, I'm very familiar
+with normal, healthy aging. I'm not too familiar with lead exposure
+and its effects on the brain, so I'm going to perform this comparison. And this is a highly powerful technique
+for bringing and explaining concepts, and its especially useful when
+you put these new constructs into the frame of something that
+everyone in the room is familiar with. So again, this is a technique that is
+used all the time in epidemiology and public health and biostatistics, and
+I suggest you try it out in your studies.

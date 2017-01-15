@@ -1,0 +1,56 @@
+Hi, my name is Brian Caffo and this is
+a brief lecture on version control. Remember the theme of this
+course is contrasting what happens in real life
+versus the ideal data analysis. I think version control is one of those
+instances where it is exactly the ideal for data analysis, but it's a fairly
+easily attainable ideal as opposed to many of the other topics in this class
+where it's very hard to obtain it. This version control just adds
+a little bit of work, but often saves you a lot of time. So now, just to return to this quote,
+When you write code, keep in mind that you're
+collaborating with your future self. And the ability to look at your code and go back to previous versions and
+see the history of your process is an incredibly
+important part of data analysis. So we've talked in our
+report writing section, we talked about how important it
+is to create reproducible reports. That's certainly one component of having
+a very well done and documented data analysis but keeping all your versioning
+of your code as you go is another one. Not only does it help you for
+back up and archival purposes, but it also helps keep a log of
+exactly what you did, and for data and analytic purposes. So, in general,
+version control is just good practice. And, unlike a lot of the other topics
+in this class, it's pretty easy and it's directly under your control. Having said that, I'll take this
+moment to complain about Roger Pang. And, so I've been using version
+control for a long time. I think the earliest version
+control I used was RCS, a fairly old version of version control. And then CVS, which was another,
+older version of version control. And then Roger Peng at one point
+came into my office and said, everyone is using this program called
+subversion, and you've got to switch. No one's using CVS anymore. And so, I resisted for a little bit. And then I said, you know, Roger's almost
+always right about computing things. I'm going to switch. Switch to subversion. Which was a monumental effort changing
+all my CVS repositories to Subversion repositories. And then the next day, Roger comes into
+my office and says, everyone's using Git. You gotta quit using Subversion. So, I resisted then for another long period of time to using
+Git and stuck with Subversion. But once I finally switched to git,
+I was very happy about it. And I've noticed that
+I've been using Git for a while and Git seems to be here to stay. It's not gonna get supplanted by
+the next version control system. At least it doesn't appear to be so
+any time soon. At any rate, for the people that
+you're managing, you should be inspiring them to either use Git,
+or Subversion, or Mercurial or
+some of these kinds of tools for their analyses,
+some of these version control tools. So just to orient you
+to the software I think if I'm going to make a recommendation
+I'm gonna suggest Git. And so Git is the versioning
+version control software. It is what helps you
+keep a complete history of your code and your analysis files,
+and if you want, even your data files. And so on as you go. So you can go backwards
+to any point in time or go forwards if you've gone back again. Just at no point is anything that gets
+checked into your Git repository does it get lost. So Git is the tool for
+your version control and then you need a place to host it. Now you can do this yourself. If your in a company presumably you
+have version control systems in place. If you're at a smaller company, you might want to look at one
+of these get hosting services. Some of the most popular ones, at least
+the two that I'm most familiar with are GitHub which I think is clearly
+the largest, and then Bitbucket. So these are not version
+control tools themselves, these are hosting places where you
+are pushing your code and files up. This is, in essence,
+hosting the Git software for you, and then keeping track of your files. And so they're wonderful tools and I would
+highly suggest this as using Git and using version control as
+a part of best practices. And as part of your management
+strategy encouraging the use or maybe requiring the use of these tools.

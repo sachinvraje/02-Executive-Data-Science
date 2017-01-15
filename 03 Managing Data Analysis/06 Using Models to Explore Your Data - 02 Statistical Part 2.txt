@@ -1,0 +1,80 @@
+This lecture's just another quick example
+of how to use statistical models to explore your data and
+to develop a sketch of your solution. [MUSIC] So this example looks at fitting
+linear models to some data. And the data that we're
+gonna use is ozone and temperature data from New York City for
+the year 1999. This data comes from
+the National Morbidity and Mortality Air Pollution Study which is
+an Air Pollution Study that I was heavily involved with. So the data that we've got here is
+just daily levels of 24 hour average temperature and 24 hour average ozone
+levels for the year 1999 in New York. And the basic question that
+we're interested in asking here is how our ambient temperature levels related to ambient ozone
+levels in New York City, okay? Now, just a couple things
+about how ozone works. First of all,
+the development of ozone in the air depends a lot on the amount
+of sunlight that's available. So, days with lots of sunlight
+have higher temperatures than otherwise similar days
+with lower temperatures. And so, similarly, cloudy days tend to
+have lower temperature and less ozone. So the basic idea is that we expect days with higher temperature to
+have higher ozone levels. But this is kind of
+an indirect relationship. What we're really doing is we're
+using temperature as a proxy for the amount of sunlight that's available, cuz we don't really actually
+have any data on sunlight, okay? So we're expecting this kind of positive
+correlation between temperature and ozone in New York City. Now the simplest model that we can use to describe this relationship that
+we expect is a linear model. So now the question we should
+be asking right now is, what does a linear model look like? So remember we wanna set expectations
+before we start looking at the data. So the easiest way to do that
+is to draw a fake picture. So this picture shows two simulated
+variables with a linear relationship. Okay?
+There's no actual data here. We just simulated it on the computer. So you can see that the data
+increased from the left to the right, like a line but
+with some scatter around it. And, furthermore, if you choose any point
+on the blue line, there are roughly the same number of points above the line
+as there are below it, all right? So we think of the line as
+being kind of unbiased, right? So if there's gonna be a deviation
+from the line it's equally likely to be above or below it. So this is the picture that we expect
+to see when we look at the data. So it's important that we kind of set
+these expectations before we look at the data, so we know whether we are kind
+of right, or wrong, or far off, or pretty close to the mark. So here's the actually data for New York in 1999, with a fitted linear
+regression line overlaid on top, okay. So the first question you wanna ask
+yourself is how does it compare to what we are expecting from
+the previous picture, okay. Now one thing that we can
+see is that temperature and ozone are in fact increasing together. When temperature is higher,
+ozone does tend to be higher. And when temperature is lower,
+ozone tends to be lower. But there are some deviations
+from what we might expect from what we saw in the previous picture. In particular, if you look at
+around 85 degrees in temperature, you look at where the blue
+line is around that point, you'll see that most of the data points
+happen to be above the line, okay? There aren't many data points below
+the line, right around that neighborhood. Then again, if you look at the temperature
+70 degrees and where the blue line is there, you'll see that most of
+the points are below the line, actually. And there aren't that many
+points above the line. So, at around 85 degrees, what we see
+is that the blue line, our model, the linear model,
+is kind of biased downwards. And at 70 degree point mark the linear
+model is actually biased upwards. We're tending to predict too high for
+what the ozone level actually is. So what we see here is that the model
+kind of captures the general trend of kind of increasing
+temperature and increasing ozone, but it tends to be biased within
+certain ranges of temperature. So it's clearly not a perfect model. So the observed pattern from the data
+seems to suggest that the relationship between ozone and temperature is
+actually kind of flat up until about the point where you hit 70 degrees,
+72, 73 degrees. Then there's a sharp increase
+in ozone with every additional degree of temperature. And so this suggests that maybe
+the relationship is non linear. Okay. So we can revise our expectations for what the relationship should look like to
+be this kind of non-linear relationship, rather than our original expectation
+of a linear relationship. And so the way that we can check that
+is by using a non-linear smoother. Here's some data with a low-S smoother,
+which is a flexible smoother that can capture a lot of different
+kinds of smooth trends, okay. So what we can see here is that, from
+the blue line, there's a sharp increase in ozone after about 75 degrees, and
+then maybe around 85 degrees or so, there's some suggestion of
+leveling off of the relationship. So there's a suggestion of a classic
+kind of S-shaped curve here, where there's a kind of
+roughly flat relationship, then there's a sharp, increasing one and
+then kind of leveling off. Now, these smoothers like low S are very
+useful for capturing these kinds of null in your trends but they usually don't tell
+you much about how things work underneath. So we may wanna revise our original
+linear model based on what we found here to think,
+to try to capture these trends and to learn more about what's
+going on underneath.

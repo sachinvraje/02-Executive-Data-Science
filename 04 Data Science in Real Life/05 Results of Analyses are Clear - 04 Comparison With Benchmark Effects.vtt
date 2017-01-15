@@ -1,0 +1,275 @@
+WEBVTT
+
+1
+00:00:02.030 --> 00:00:07.260
+So in this lecture, we're going to
+talk about ways to help us interpret
+
+2
+00:00:07.260 --> 00:00:11.250
+effects when we're studying something
+that we don't know too well.
+
+3
+00:00:11.250 --> 00:00:15.220
+And the idea is simply to compare
+things with benchmark effects.
+
+4
+00:00:16.640 --> 00:00:20.440
+So to summarize, here's the problem
+that we're interested in.
+
+5
+00:00:20.440 --> 00:00:22.830
+Here's the real life
+data analysis problem.
+
+6
+00:00:22.830 --> 00:00:27.420
+It's hard to interpret an effect or its
+magnitude because it's a newly, it's hard
+
+7
+00:00:27.420 --> 00:00:32.230
+to interpret an effect or its magnitude
+because its a newly studied construct.
+
+8
+00:00:32.230 --> 00:00:35.990
+And the solution I'm going to propose is,
+contrast the effect or the P value, or
+
+9
+00:00:35.990 --> 00:00:39.740
+the effect size, with the level of
+significance, with a known construct.
+
+10
+00:00:41.640 --> 00:00:46.660
+So let me give you an example,
+just to kind of frame the discussion.
+
+11
+00:00:46.660 --> 00:00:48.360
+So a friend of mine named Brian Schwarz,
+
+12
+00:00:48.360 --> 00:00:52.920
+he's in environmental health here, wrote a
+paper called, past adult lead exposure is
+
+13
+00:00:52.920 --> 00:00:56.430
+linked to neurodegeneration
+as measured by brain MRI.
+
+14
+00:00:57.920 --> 00:01:03.990
+And what they found is, that unadjusted
+effect estimate of -1.141 milliliters of
+
+15
+00:01:03.990 --> 00:01:09.140
+brain volume per 1 microgram of lead
+per gram of bone mineral increase.
+
+16
+00:01:09.140 --> 00:01:14.440
+Which is a hard thing to interpret,
+but it's basically saying you'll lose
+
+17
+00:01:14.440 --> 00:01:19.200
+about 1.14 milliliters of brain volume for
+every 1 unit increase in lead exposure.
+
+18
+00:01:19.200 --> 00:01:22.152
+He was looking at people who worked
+in lead manufacturing plants.
+
+19
+00:01:22.152 --> 00:01:28.360
+They are worried that the chronic
+exposure to lead was causing
+
+20
+00:01:28.360 --> 00:01:33.500
+accelerated brain volume decline beyond
+that would occur in normal aging.
+
+21
+00:01:33.500 --> 00:01:35.410
+Okay, so
+how do would interpret this -1.14?
+
+22
+00:01:35.410 --> 00:01:38.740
+We just gave the interpretation.
+
+23
+00:01:38.740 --> 00:01:41.340
+Right?
+It had the units of the problem.
+
+24
+00:01:41.340 --> 00:01:46.600
+However, there is the problem that I
+still kinda don't know what that means.
+
+25
+00:01:46.600 --> 00:01:52.090
+So here's the idea of putting it into
+a context with a related phenomenon.
+
+26
+00:01:52.090 --> 00:01:57.020
+So just to remind us, and here I'm just
+looking at one version of the effect.
+
+27
+00:01:57.020 --> 00:02:00.540
+The paper, of course,
+really drilled down in this problem, so
+
+28
+00:02:00.540 --> 00:02:04.800
+that the one version of this effect,
+the unadjusted effect was negative 1.41.
+
+29
+00:02:04.800 --> 00:02:09.210
+So, a decrease in brain volume
+as lead exposure increases.
+
+30
+00:02:10.600 --> 00:02:16.000
+I don't understand that effect terribly
+well because I'm not an expert on lead.
+
+31
+00:02:16.000 --> 00:02:18.810
+But I do know some things
+about normal aging.
+
+32
+00:02:18.810 --> 00:02:21.182
+Normal aging, over the age of 40,
+
+33
+00:02:21.182 --> 00:02:26.270
+results in about a half a percent of
+decline in brain volume per year.
+
+34
+00:02:26.270 --> 00:02:26.770
+Okay.
+
+35
+00:02:28.090 --> 00:02:31.310
+So, I know it's roughly about that,
+maybe that estimate's a little high,
+
+36
+00:02:31.310 --> 00:02:32.970
+but let's say it's roughly about that.
+
+37
+00:02:32.970 --> 00:02:36.960
+So, if I take that half a percent
+decline in brain volume per year, and
+
+38
+00:02:36.960 --> 00:02:42.290
+I look at the average brain volume from
+Brian's study, then I can figure out
+
+39
+00:02:42.290 --> 00:02:50.890
+that 1.41 decrease is roughly equivalent
+to about about 20% of a year.
+
+40
+00:02:50.890 --> 00:02:57.180
+So basically, we're saying this effect,
+that a one unit increase in lead,
+
+41
+00:02:57.180 --> 00:03:01.510
+in lead exposure results
+in brain volume loss.
+
+42
+00:03:01.510 --> 00:03:04.810
+That's about the same amount of
+volume loss that people experience
+
+43
+00:03:04.810 --> 00:03:07.670
+in about 20% of the year
+over the age of 40.
+
+44
+00:03:07.670 --> 00:03:13.365
+So to me, that's more interpretable,
+because I understand, in this case,
+
+45
+00:03:13.365 --> 00:03:18.185
+because I understand about healthy brain
+aging, because I work in the area.
+
+46
+00:03:18.185 --> 00:03:22.555
+And so, what I'm trying to convince you
+to do, is when you're looking at this
+
+47
+00:03:22.555 --> 00:03:27.270
+complicated effect measure,
+put it in to compare it,
+
+48
+00:03:27.270 --> 00:03:31.540
+put it into a contrast with something
+that you're very familiar with.
+
+49
+00:03:31.540 --> 00:03:34.850
+In this case, I'm very familiar
+with normal, healthy aging.
+
+50
+00:03:34.850 --> 00:03:38.340
+I'm not too familiar with lead exposure
+and its effects on the brain, so
+
+51
+00:03:38.340 --> 00:03:40.050
+I'm going to perform this comparison.
+
+52
+00:03:40.050 --> 00:03:45.450
+And this is a highly powerful technique
+for bringing and explaining concepts,
+
+53
+00:03:45.450 --> 00:03:50.190
+and its especially useful when
+you put these new constructs
+
+54
+00:03:50.190 --> 00:03:55.660
+into the frame of something that
+everyone in the room is familiar with.
+
+55
+00:03:55.660 --> 00:04:01.320
+So again, this is a technique that is
+used all the time in epidemiology and
+
+56
+00:04:01.320 --> 00:04:05.990
+public health and biostatistics, and
+I suggest you try it out in your studies.

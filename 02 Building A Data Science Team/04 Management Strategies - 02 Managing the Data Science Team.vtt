@@ -1,0 +1,686 @@
+WEBVTT
+
+1
+00:00:03.434 --> 00:00:06.431
+Once your team is up and running,
+then the process of managing or
+
+2
+00:00:06.431 --> 00:00:08.429
+maintaining the team
+as it goes forward and
+
+3
+00:00:08.429 --> 00:00:12.310
+answers data science problems is a
+critical role for a data science manager.
+
+4
+00:00:12.310 --> 00:00:16.110
+So the first thing that you would often
+have with every member of your team,
+
+5
+00:00:16.110 --> 00:00:19.120
+ideally, is individual meetings.
+
+6
+00:00:19.120 --> 00:00:21.830
+So this will happen particularly if you
+are at the first stage of management where
+
+7
+00:00:21.830 --> 00:00:23.490
+you're managing just a few people.
+
+8
+00:00:23.490 --> 00:00:25.440
+Once your organization
+gets a little bit bigger,
+
+9
+00:00:25.440 --> 00:00:27.020
+there'll be a hierarchical structure and
+
+10
+00:00:27.020 --> 00:00:31.040
+you might not necessarily meet with
+every member of the team every week say.
+
+11
+00:00:31.040 --> 00:00:32.930
+But if you're only managing a few people,
+
+12
+00:00:32.930 --> 00:00:36.580
+it's a really good idea to have a standing
+regular meeting where they can come and
+
+13
+00:00:36.580 --> 00:00:38.440
+they can present anything
+that they're working on.
+
+14
+00:00:38.440 --> 00:00:41.210
+Things that they've accomplished,
+things that they finished and so
+
+15
+00:00:41.210 --> 00:00:44.270
+you can sort of check them off
+as things that have gotten done.
+
+16
+00:00:44.270 --> 00:00:48.040
+Any kind of problems that they have and
+their goals for the week.
+
+17
+00:00:48.040 --> 00:00:54.080
+And so, individual meetings take up a lot
+of time, if you spend them, well they
+
+18
+00:00:54.080 --> 00:00:58.410
+can be a huge advantage in the sense that
+people often get stuck in data science on
+
+19
+00:00:58.410 --> 00:01:02.230
+something that can easily be resolved
+just by having someone else look at it.
+
+20
+00:01:02.230 --> 00:01:05.360
+A lot of times, this has happened to me,
+where I'm analyzing some dataset, and
+
+21
+00:01:05.360 --> 00:01:09.310
+I just get stuck on some low level detail,
+and I can't quite figure it out.
+
+22
+00:01:09.310 --> 00:01:12.020
+And then as soon I show it to
+somebody else they immediately spot,
+
+23
+00:01:12.020 --> 00:01:13.550
+whatever it was that was slowing me down.
+
+24
+00:01:13.550 --> 00:01:16.950
+So this is sort of the best and most
+effective way to get people unstuck and
+
+25
+00:01:16.950 --> 00:01:18.570
+keep them moving.
+
+26
+00:01:18.570 --> 00:01:21.930
+The second thing that makes a lot of sense
+to have is Data Science Team Meetings.
+
+27
+00:01:21.930 --> 00:01:24.830
+So that's get the whole
+data science team together.
+
+28
+00:01:24.830 --> 00:01:27.440
+Again, this should be a regular
+standing meeting that you have so
+
+29
+00:01:27.440 --> 00:01:31.650
+that everybody can come together and
+talk about what they're working on.
+
+30
+00:01:31.650 --> 00:01:34.780
+So again they can share any updates
+of any progress that they've made.
+
+31
+00:01:34.780 --> 00:01:38.400
+They can identify any problems that they
+are working on, or that they're stuck on.
+
+32
+00:01:38.400 --> 00:01:41.220
+In particular problems that
+maybe touch on different teams.
+
+33
+00:01:41.220 --> 00:01:44.070
+So say the data science team can't
+necessarily make a data pool that
+
+34
+00:01:44.070 --> 00:01:46.430
+they want because
+the infrastructure isn't in place,
+
+35
+00:01:46.430 --> 00:01:48.910
+that's a good time to communicate
+with the data engineering team.
+
+36
+00:01:48.910 --> 00:01:50.050
+And then what are their goals?
+
+37
+00:01:50.050 --> 00:01:52.070
+What's the steps that they wanna take?
+
+38
+00:01:52.070 --> 00:01:55.700
+It's also an opportunity to sort of peer
+review of the progress that's going on.
+
+39
+00:01:55.700 --> 00:01:58.180
+So data science teams can
+make presentations or
+
+40
+00:01:58.180 --> 00:02:00.380
+data engineering teams
+can make presentations.
+
+41
+00:02:00.380 --> 00:02:04.120
+Everyone else can chip in, and
+make comments and sort of evaluate.
+
+42
+00:02:04.120 --> 00:02:07.180
+So the key here is that you need
+to set it up in such a way,
+
+43
+00:02:07.180 --> 00:02:11.265
+that people are empowered or
+able to make criticism if they need to.
+
+44
+00:02:11.265 --> 00:02:13.660
+They can make critical
+
+45
+00:02:13.660 --> 00:02:16.980
+comments about other people's
+stuff without being rude or mean.
+
+46
+00:02:16.980 --> 00:02:20.120
+There's sort of a very fine line
+to balance, and a lot of people
+
+47
+00:02:20.120 --> 00:02:24.270
+have difficulty with giving criticism
+well or taking criticism well.
+
+48
+00:02:24.270 --> 00:02:27.510
+It's sort of up to the data science
+team lead to make sure that,
+
+49
+00:02:27.510 --> 00:02:29.170
+especially when dealing with data,
+
+50
+00:02:29.170 --> 00:02:33.470
+to be very objective to allow people
+to express their real opinions.
+
+51
+00:02:33.470 --> 00:02:37.030
+It's also an opportunity for you to set
+team priorities and motivate people.
+
+52
+00:02:37.030 --> 00:02:39.380
+So, data science can
+very often become a slog.
+
+53
+00:02:39.380 --> 00:02:43.300
+It's very hard to get all the details
+right when you're doing an analysis or
+
+54
+00:02:43.300 --> 00:02:45.220
+setting up an infrastructure just right.
+
+55
+00:02:45.220 --> 00:02:48.480
+And, so
+when you're sort of mired in the weeds,
+
+56
+00:02:48.480 --> 00:02:51.240
+it's very helpful to have somebody who can
+come in and tell you the bigger picture.
+
+57
+00:02:51.240 --> 00:02:52.270
+Why are we doing this?
+
+58
+00:02:52.270 --> 00:02:55.750
+Why are we solving all these
+really hard technically problems?
+
+59
+00:02:55.750 --> 00:02:57.900
+What's the goal that we're setting and
+how do we get there?
+
+60
+00:02:57.900 --> 00:03:01.580
+And so that's your opportunity to sort of
+motivate people, keep everybody excited,
+
+61
+00:03:01.580 --> 00:03:05.930
+keep everybody fresh on the problems that
+you're working on at any given time.
+
+62
+00:03:05.930 --> 00:03:08.030
+So it's important to mix those two things.
+
+63
+00:03:08.030 --> 00:03:11.100
+To have individual meetings,
+where each person can talk about what
+
+64
+00:03:11.100 --> 00:03:15.710
+is their personal issues that they need to
+deal with or their own personal successes.
+
+65
+00:03:15.710 --> 00:03:19.560
+And also a group meeting where everybody
+can kind of come together and communicate.
+
+66
+00:03:19.560 --> 00:03:21.720
+Your also in charge of
+monitoring interactions.
+
+67
+00:03:21.720 --> 00:03:25.790
+So it's very common, if you sort of set
+your data science team up in the way that
+
+68
+00:03:25.790 --> 00:03:27.350
+is sort of the most optimal.
+
+69
+00:03:27.350 --> 00:03:31.349
+In my opinion to have a data science
+team that sits all by itself,
+
+70
+00:03:31.349 --> 00:03:33.729
+that talks to each other and so forth.
+
+71
+00:03:33.729 --> 00:03:37.824
+But then those people also in the data
+science team spend some period of time
+
+72
+00:03:37.824 --> 00:03:39.620
+embedded in other groups.
+
+73
+00:03:39.620 --> 00:03:42.420
+And so they interact with those groups,
+they email those other groups, and
+
+74
+00:03:42.420 --> 00:03:46.140
+ideally each member of your team will
+be responsible for interacting with
+
+75
+00:03:46.140 --> 00:03:49.600
+one particular external unit of
+the organization that you're dealing with.
+
+76
+00:03:49.600 --> 00:03:51.445
+So it's your job to kind
+of keep on top of that.
+
+77
+00:03:51.445 --> 00:03:55.580
+It's to monitor how those interactions are
+going and you can either do that actively,
+
+78
+00:03:55.580 --> 00:03:59.630
+by being CC'd on messages,
+by being involved in the slack channel or
+
+79
+00:03:59.630 --> 00:04:02.420
+by going to those meetings
+with the external folks.
+
+80
+00:04:02.420 --> 00:04:03.750
+Or you can do it sort of more passively,
+
+81
+00:04:03.750 --> 00:04:08.350
+sort of accept the feedback and hear it
+from both the external organization and
+
+82
+00:04:08.350 --> 00:04:10.430
+from the person that
+you've embedded there.
+
+83
+00:04:10.430 --> 00:04:13.210
+In either case, it's sort of up to
+you to sort of monitor that and
+
+84
+00:04:13.210 --> 00:04:14.780
+make sure that
+the communication is flowing.
+
+85
+00:04:14.780 --> 00:04:16.520
+That there's no break downs.
+
+86
+00:04:16.520 --> 00:04:20.400
+A very common thing is either for
+communication to be to fast or to slow.
+
+87
+00:04:20.400 --> 00:04:24.150
+In a sense that if it's to slow, their not
+getting enough details back and forth, and
+
+88
+00:04:24.150 --> 00:04:25.430
+the progress will slow down.
+
+89
+00:04:25.430 --> 00:04:26.460
+If it's to fast,
+
+90
+00:04:26.460 --> 00:04:30.150
+you might have an external unit that's
+making extreme demands on data scientist.
+
+91
+00:04:30.150 --> 00:04:31.720
+That's very common too.
+
+92
+00:04:31.720 --> 00:04:34.791
+And so knowing how to sort of
+modulate those sort of request and
+
+93
+00:04:34.791 --> 00:04:38.512
+take some of the heat for the data
+sciences or data engineer that's getting
+
+94
+00:04:38.512 --> 00:04:41.485
+those requests is something
+that is up to the data manager.
+
+95
+00:04:41.485 --> 00:04:44.002
+And so it's up to you to
+sort of keep things running.
+
+96
+00:04:44.002 --> 00:04:48.027
+And so the best way to do this in my
+experience is with an open door policy.
+
+97
+00:04:48.027 --> 00:04:51.566
+So generally it's good to have people
+be able to come to you at anytime and
+
+98
+00:04:51.566 --> 00:04:55.047
+not just at their weekly meeting or
+their regular individual meeting or
+
+99
+00:04:55.047 --> 00:04:55.874
+group meeting.
+
+100
+00:04:55.874 --> 00:04:58.565
+Have them be able to like just drop by and
+ask questions so
+
+101
+00:04:58.565 --> 00:05:00.920
+that they can immediately get unstuck.
+
+102
+00:05:00.920 --> 00:05:03.910
+Again, some of these details
+are things where people get stuck for
+
+103
+00:05:03.910 --> 00:05:07.550
+a long time on something they can easily
+be solved if they talked to somebody else.
+
+104
+00:05:07.550 --> 00:05:10.440
+And so the best way to do that
+is Is to have an open policy.
+
+105
+00:05:10.440 --> 00:05:14.996
+Another way is to have a policy to quickly
+responding to questions via email or chat,
+
+106
+00:05:14.996 --> 00:05:19.620
+especially if they're sort of things
+that can be resolved very quickly.
+
+107
+00:05:19.620 --> 00:05:22.690
+You also want to be able to
+like minimize the amount of
+
+108
+00:05:22.690 --> 00:05:24.310
+formal meetings that people have.
+
+109
+00:05:24.310 --> 00:05:27.550
+I mean there needs to be a regular
+meeting so you can check on progress but
+
+110
+00:05:27.550 --> 00:05:29.640
+you don't wanna introduce
+a large number of meetings.
+
+111
+00:05:29.640 --> 00:05:34.080
+Data science and data engineering
+require large amounts of uninterrupted,
+
+112
+00:05:34.080 --> 00:05:35.130
+concentrated effort.
+
+113
+00:05:35.130 --> 00:05:38.440
+And so introducing too many meetings
+into the lives of these people
+
+114
+00:05:38.440 --> 00:05:40.340
+means that they'll really
+slow down their work.
+
+115
+00:05:40.340 --> 00:05:44.734
+And so, one way to do that is by allowing
+quick communication that doesn't have to
+
+116
+00:05:44.734 --> 00:05:46.719
+resolve into a formalized meeting.
+
+117
+00:05:48.220 --> 00:05:50.780
+It's also important to manage
+the growth of the organization and
+
+118
+00:05:50.780 --> 00:05:52.400
+that's growth in a couple
+of different ways.
+
+119
+00:05:52.400 --> 00:05:56.270
+Obviously it's growth in terms of the
+number of people and how they're gonna be
+
+120
+00:05:56.270 --> 00:05:59.810
+managed in terms of how they can
+communicate with each other and so forth.
+
+121
+00:05:59.810 --> 00:06:02.610
+But it's also good manage
+the growth of individuals people.
+
+122
+00:06:02.610 --> 00:06:05.480
+Make sure that there is opportunities for
+them to learn new tools.
+
+123
+00:06:05.480 --> 00:06:09.770
+Whether that's through giving them
+access to courses online or otherwise.
+
+124
+00:06:09.770 --> 00:06:12.320
+Whether it's through presentations
+in the group meeting,
+
+125
+00:06:12.320 --> 00:06:15.440
+where people present new ideas or
+new tools that they've learned about so
+
+126
+00:06:15.440 --> 00:06:17.460
+other people can take advantage of them.
+
+127
+00:06:17.460 --> 00:06:19.810
+Whether its introductions
+to new interactions.
+
+128
+00:06:19.810 --> 00:06:22.940
+So sometimes you'll be in meetings that
+aren't necessarily the meetings that
+
+129
+00:06:22.940 --> 00:06:27.050
+your data science team is going to, but
+you might identify an external group or
+
+130
+00:06:27.050 --> 00:06:30.060
+a person that really would make a good
+connection with your data science team.
+
+131
+00:06:30.060 --> 00:06:34.580
+It's your job as the data science
+manager to facilitate that interaction.
+
+132
+00:06:34.580 --> 00:06:39.350
+And then, a really critical component
+of being a data science manager is, and
+
+133
+00:06:39.350 --> 00:06:40.700
+building a good data science team,
+
+134
+00:06:40.700 --> 00:06:43.830
+is identifying opportunities for
+advancement for your people.
+
+135
+00:06:43.830 --> 00:06:48.750
+And so anytime that there's an opportunity
+for your people to either get promoted or
+
+136
+00:06:48.750 --> 00:06:52.510
+to take on new responsibilities that will
+look really good for them on their resume,
+
+137
+00:06:52.510 --> 00:06:55.110
+it's up to the data science manager
+to sort of be on the lookout for
+
+138
+00:06:55.110 --> 00:06:56.710
+those opportunities.
+
+139
+00:06:56.710 --> 00:06:58.280
+Whether it's through new interactions.
+
+140
+00:06:58.280 --> 00:07:00.300
+Whether it's through
+learning about new tools.
+
+141
+00:07:00.300 --> 00:07:04.172
+Or whether it's just ways in which they
+can promote themselves both inside
+
+142
+00:07:04.172 --> 00:07:07.737
+the organization and externally
+at conferences or at meet-ups, or
+
+143
+00:07:07.737 --> 00:07:11.992
+anything like that where they can actually
+make more connections in their field.

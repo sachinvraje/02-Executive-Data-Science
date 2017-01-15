@@ -1,0 +1,573 @@
+WEBVTT
+
+1
+00:00:00.250 --> 00:00:05.940
+So let's go through some examples of
+ways in which things can go right and
+
+2
+00:00:05.940 --> 00:00:07.690
+things can go wrong.
+
+3
+00:00:07.690 --> 00:00:10.200
+So my colleagues wrote
+this wonderful paper
+
+4
+00:00:11.530 --> 00:00:16.080
+exactly about the issue of using your
+data to come up with your hypotheses.
+
+5
+00:00:16.080 --> 00:00:19.480
+They work in the area
+of Multiple Sclerosis.
+
+6
+00:00:19.480 --> 00:00:23.770
+And a common problem in the area of
+Multiple Sclerosis brain research with
+
+7
+00:00:23.770 --> 00:00:28.450
+magnetic resonance imaging which is what
+they work on is actually defining what it
+
+8
+00:00:28.450 --> 00:00:32.500
+means for a lesion which is one
+of the hallmarks of the disease,
+
+9
+00:00:32.500 --> 00:00:36.760
+a brain lesion to be so-called enhancing,
+so
+
+10
+00:00:36.760 --> 00:00:40.300
+it's sort of getting a greater
+amount of blood in the area.
+
+11
+00:00:41.640 --> 00:00:46.240
+So, they put forward
+a framework necessarily because
+
+12
+00:00:46.240 --> 00:00:50.890
+the hypotheses weren't clear, they put
+forward a framework that both identified
+
+13
+00:00:50.890 --> 00:00:56.340
+the hypotheses and interrogated
+the hypotheses with the same data set.
+
+14
+00:00:56.340 --> 00:00:59.060
+And of course they're
+statistical researchers so
+
+15
+00:00:59.060 --> 00:01:02.470
+their emphasis was on doing
+this in a rigorous fashion.
+
+16
+00:01:02.470 --> 00:01:05.530
+But it's just an example
+of a setting where
+
+17
+00:01:05.530 --> 00:01:10.460
+the hypotheses just couldn't immediately
+be come up with in a clear fashion and
+
+18
+00:01:10.460 --> 00:01:15.405
+so the data had to perform double duty of
+both coming up with the hypotheses and
+
+19
+00:01:15.405 --> 00:01:17.763
+interrogating those hypotheses.
+
+20
+00:01:19.020 --> 00:01:20.020
+Multiple comparisons.
+
+21
+00:01:20.020 --> 00:01:23.850
+Since we're on the subject of brain
+imaging, which is the area that I work on,
+
+22
+00:01:23.850 --> 00:01:30.760
+multiple comparisons is often an issue,
+and in one particularly famous example,
+
+23
+00:01:30.760 --> 00:01:34.870
+some people put a dead
+salmon in an fMRI machine,
+
+24
+00:01:34.870 --> 00:01:39.550
+which is there to detect brain activation.
+
+25
+00:01:39.550 --> 00:01:42.188
+And of course there's no brain
+activation in a dead salmon.
+
+26
+00:01:42.188 --> 00:01:45.490
+And what they found is that if you do
+lots and lots and lots of tests, and
+
+27
+00:01:45.490 --> 00:01:50.950
+you don't account for that correctly, you
+can see brain activation in a dead salmon.
+
+28
+00:01:53.210 --> 00:01:58.960
+A very famous example of randomization
+that occurred kind of recently,
+
+29
+00:01:58.960 --> 00:02:03.480
+at least in the past decade,
+was from the Women's Health Initiative.
+
+30
+00:02:03.480 --> 00:02:09.270
+The Women's Health Initiative conducted
+a study, a randomized trial of
+
+31
+00:02:09.270 --> 00:02:14.338
+hormone replacement therapy, which at the
+time was a fairly standard treatment for
+
+32
+00:02:14.338 --> 00:02:18.296
+post-menopausal women.
+
+33
+00:02:18.296 --> 00:02:25.260
+The results of these randomized trials
+contradicted what was thought of as common
+
+34
+00:02:25.260 --> 00:02:30.880
+knowledge for the efficacy of hormone
+replacement therapy and the safety of it.
+
+35
+00:02:30.880 --> 00:02:36.670
+And so it brought about a lot
+soul-searching about the value
+
+36
+00:02:36.670 --> 00:02:41.920
+of randomized trial versus the value
+of a lot of observational data.
+
+37
+00:02:41.920 --> 00:02:46.340
+And I think it's maybe not necessary
+to go into the weeds of this study
+
+38
+00:02:47.710 --> 00:02:49.770
+for the purposes of this lecture.
+
+39
+00:02:49.770 --> 00:02:53.560
+However, suffice it to say, the randomized
+trial carried a lot of weight with it
+
+40
+00:02:53.560 --> 00:02:55.730
+because of the randomization.
+
+41
+00:02:55.730 --> 00:02:59.920
+All the previous observational trials
+where they just saw whether or
+
+42
+00:02:59.920 --> 00:03:03.380
+not women were on hormone replacement
+therapy and watched them over time.
+
+43
+00:03:04.500 --> 00:03:09.080
+The multitude of those studies was
+
+44
+00:03:09.080 --> 00:03:13.180
+not deemed as rigorous as the one
+study that had randomization,
+
+45
+00:03:13.180 --> 00:03:16.000
+where women were actually randomized
+to hormone replacement therapy or not.
+
+46
+00:03:16.000 --> 00:03:21.480
+And as a side note, if you're
+interested about reading up on hormone
+
+47
+00:03:21.480 --> 00:03:25.850
+replacement therapy, I put a website
+here from the Women's Health Initiative
+
+48
+00:03:25.850 --> 00:03:30.320
+where you can actually go and
+look on the frequently
+
+49
+00:03:30.320 --> 00:03:33.340
+asked questions relating to some of
+the studies that have done since then.
+
+50
+00:03:33.340 --> 00:03:36.750
+There's been a decade of
+work since then to further
+
+51
+00:03:37.800 --> 00:03:40.820
+refine the science on
+this particular issue.
+
+52
+00:03:40.820 --> 00:03:43.740
+The main point for
+this lecture is how important
+
+53
+00:03:43.740 --> 00:03:46.380
+randomization was In
+this particular setting.
+
+54
+00:03:49.070 --> 00:03:52.390
+So here's an example of a study
+that I was involved in,
+
+55
+00:03:52.390 --> 00:03:56.030
+where you can't actually
+measure what you'd like to.
+
+56
+00:03:56.030 --> 00:04:00.190
+So in two ways in this study,
+you can't measure what you'd like to.
+
+57
+00:04:00.190 --> 00:04:00.970
+So my colleague,
+
+58
+00:04:00.970 --> 00:04:05.418
+Susan Bassett, was interested
+in studying Alzheimer's disease.
+
+59
+00:04:05.418 --> 00:04:08.470
+And what she'd really like to know is,
+
+60
+00:04:08.470 --> 00:04:12.860
+well before people have Alzheimer's
+disease, what do their brains look like
+
+61
+00:04:12.860 --> 00:04:17.070
+with regard to these functional
+magnetic resonance imaging scans?
+
+62
+00:04:17.070 --> 00:04:21.000
+So well before it, and that would be very
+useful, because if you could see that
+
+63
+00:04:21.000 --> 00:04:24.170
+there were some changes in the brain
+well before people developed symptoms,
+
+64
+00:04:24.170 --> 00:04:25.060
+maybe you could treat it.
+
+65
+00:04:26.110 --> 00:04:28.880
+So this is a big deal actually
+in Alzheimer's research,
+
+66
+00:04:28.880 --> 00:04:31.720
+is trying to find precursors for
+the disease.
+
+67
+00:04:32.820 --> 00:04:36.290
+So there's two problems that
+occur with respect to measurement
+
+68
+00:04:36.290 --> 00:04:37.880
+in this particular study.
+
+69
+00:04:37.880 --> 00:04:42.470
+First of all, the fMRI machine doesn't
+actually measure brain activation.
+
+70
+00:04:42.470 --> 00:04:46.340
+It measures a proxy for brain
+activation through blood oxygenation.
+
+71
+00:04:46.340 --> 00:04:51.790
+So it actually, we can't actually
+measure in living humans to the spatial
+
+72
+00:04:51.790 --> 00:04:55.560
+extent that we'd like, the brain
+activation in the way that we'd like.
+
+73
+00:04:55.560 --> 00:04:58.980
+So there's one sense that the technology
+just can't measure exactly what we'd like,
+
+74
+00:04:58.980 --> 00:05:00.610
+it only measures a proxy.
+
+75
+00:05:00.610 --> 00:05:02.104
+But, let's put that to the side and
+
+76
+00:05:02.104 --> 00:05:04.670
+then talk about another way in which
+we're not measuring what we like.
+
+77
+00:05:04.670 --> 00:05:09.690
+We can't know in advance who's
+going to get Alzheimer's disease,
+
+78
+00:05:09.690 --> 00:05:11.440
+we can only guess.
+
+79
+00:05:11.440 --> 00:05:14.320
+And so in this case what she
+looked at was people who
+
+80
+00:05:14.320 --> 00:05:16.100
+were at very high familial risks.
+
+81
+00:05:16.100 --> 00:05:20.300
+They had affected siblings, or affected
+parents, multiple affected siblings and
+
+82
+00:05:20.300 --> 00:05:24.620
+affected parents and
+then in the other group they had
+
+83
+00:05:24.620 --> 00:05:27.880
+people with no affected siblings and
+affected parents.
+
+84
+00:05:27.880 --> 00:05:33.000
+But that doesn't mean that everyone
+in the familial risk group
+
+85
+00:05:33.000 --> 00:05:34.540
+is gonna contract Alzheimer's disease.
+
+86
+00:05:34.540 --> 00:05:37.840
+Quite the opposite,
+relatively small fraction of them has.
+
+87
+00:05:37.840 --> 00:05:41.670
+And that doesn't mean no one in the other
+group is going to contract Alzheimer's
+
+88
+00:05:41.670 --> 00:05:43.380
+disease, and some of them did, eventually.
+
+89
+00:05:43.380 --> 00:05:45.370
+This was a long study, over 15 years.
+
+90
+00:05:45.370 --> 00:05:49.550
+So later on they saw some results for
+people who actually converted.
+
+91
+00:05:50.750 --> 00:05:55.400
+But the point being here that she can't
+actually measure what she needs to.
+
+92
+00:05:55.400 --> 00:05:59.220
+She can't prospectively measure
+who's going to contract this disease
+
+93
+00:05:59.220 --> 00:06:00.230
+in the future.
+
+94
+00:06:00.230 --> 00:06:02.710
+Because if you did, the problem
+wouldn't be worth studying, right?
+
+95
+00:06:02.710 --> 00:06:04.110
+That's everything that you'd like to do.
+
+96
+00:06:04.110 --> 00:06:07.770
+So the measurement is a very
+clear problem in this case and
+
+97
+00:06:07.770 --> 00:06:11.600
+what you have to combat this
+with is giant sample sizes.
+
+98
+00:06:11.600 --> 00:06:14.420
+You just having a greater percentage
+of likely people that are gonna get
+
+99
+00:06:14.420 --> 00:06:18.390
+Alzheimer's disease in the one group and
+a smaller percentage in the other group.
+
+100
+00:06:18.390 --> 00:06:21.320
+And you need a much larger
+sample size to account for
+
+101
+00:06:21.320 --> 00:06:26.730
+the fact that you're going to see
+much smaller effects from the fewer
+
+102
+00:06:26.730 --> 00:06:31.990
+people of eventual disease
+type in the one group and
+
+103
+00:06:31.990 --> 00:06:35.320
+the fewer people of control
+type in the other group.
+
+104
+00:06:35.320 --> 00:06:38.940
+So, again, this just serves as an example
+where the measurement that you'd
+
+105
+00:06:38.940 --> 00:06:41.410
+like to have,
+isn't the measurement that you get.
+
+106
+00:06:41.410 --> 00:06:44.800
+And this is very common in
+data science experiments and
+
+107
+00:06:44.800 --> 00:06:45.830
+you need to work around it.
+
+108
+00:06:45.830 --> 00:06:49.760
+Just like Susan in this case did by
+conducting one of the largest fMRI
+
+109
+00:06:49.760 --> 00:06:54.000
+experiments that anyone had seen at
+the time, just to combat this issue.
+
+110
+00:06:55.640 --> 00:06:59.780
+So in this class we're gonna dig through
+various facets of the perfect data science
+
+111
+00:06:59.780 --> 00:07:01.410
+experience versus real life.
+
+112
+00:07:01.410 --> 00:07:06.500
+And we'll use this idea of what's
+ideal versus what tends to happen
+
+113
+00:07:06.500 --> 00:07:10.030
+as our launching point for
+all of our discussions.
+
+114
+00:07:10.030 --> 00:07:12.330
+And we'll give some practical
+recommendations for
+
+115
+00:07:12.330 --> 00:07:14.930
+the messy situations and
+how you can manage
+
+116
+00:07:14.930 --> 00:07:18.820
+the people doing the data analysis if
+it's not you and you're the manager.
+
+117
+00:07:18.820 --> 00:07:22.720
+How you can manage and help direct
+them to different solutions for
+
+118
+00:07:22.720 --> 00:07:26.550
+this collection of various problems
+that arise in data analysis.
+
+119
+00:07:26.550 --> 00:07:29.628
+So welcome to the class, and
+we look forward to seeing you in it.

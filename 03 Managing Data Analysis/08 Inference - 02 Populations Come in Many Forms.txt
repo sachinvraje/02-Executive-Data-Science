@@ -1,0 +1,65 @@
+I'm gonna talk a little bit
+more about populations and the forms in which they can come because
+populations can come in a variety of different forms that you
+may not necessarily expect. Two common ones that I wanna talk about
+are for data that vary over time or data that vary over space. For example, suppose you
+are looking at time series data. You might be looking at the closing
+value of Apple stock every day for year. You've got this data set, it's daily data
+for a year of Apple's closing price. Suppose you wanna make
+an inference from this data set, what is the population there now that
+you're trying to make an inference too? There's a couple of different
+candidates that you can think about. The first is, this data came from
+a single year's worth of data. Apple's been around for many years. You might think that this data
+set represents a sample from all the future or past years, for
+example, of data that might exist. This data's a random sample from all the
+different years that you might look at. Another possibility is that,
+of course, Apple is on a stock market, and there's other stocks that
+trade on a stock market. You might think of Apple
+as being a random draw from those other stocks
+in the stock market. For example, if you're trying to
+approximate an index of stocks, Apple would be a random
+element of that index, you might sample different
+stocks to approximate the index. The other kind of phenomenon that often,
+where the population can be difficult to define, is when
+you're looking at natural phenomenons. For things like earthquakes ,hurricanes,
+or wildfires, things that occur in space, you often collect data on that and
+analyze it using models or whatnot. But then if you want to make an inference,
+you have to think a little bit carefully about what exactly are you inferring,
+or making an inference about? Often with natural processes, it's useful
+to think of an unobserved stochastic process that lies in the background and
+drops these events on the ground. If you imagine there's a stochastic
+process of earthquakes that randomly drops earthquakes into our world,
+or wildfires, or hurricanes, whatever it may be, when you fit a model
+and you make an inference from that model, what you're inferring are properties
+of this unobserved stochastic process. The last thing that I'll
+talk about when it comes to inference is actually not
+about inference at all, it's actually a special case of
+using the data as a population. The underlying question here really
+that you want to ask yourself is do you actually need to
+make an inference at all? Sometimes you can think of
+the data set as a population. There may be cases where you actually
+have all the data you ever wanna see and then you actually don't care about
+things that are outside the data set, which is really, fundamentally, what inference is about is that you're
+talking about things outside the data set. If the data are the population, one of the features of your analysis
+is that it will have no uncertainty because there's no sampling process
+that generates the uncertainty. You won't have to worry about confidence
+intervals or standard errors or P values because you'll have all the
+certainty in the world that you'll need, assuming that you don't have any
+problems with that data set. There are many cases where, for example,
+if you have data collecting on your organization that you won't have to worry
+about things that are outside the data set because you may not be worried about
+things that are outside your organization. Try to always think
+carefully about whether or not you actually have to make an inference
+because, in many cases, you may not. Then you're analysis will
+be greatly simplified because you won't have to worry about
+making statements about things that you don't actually observe because
+you actually observe everything. Just to summarize, inference is
+the process of making statements from data about things that you can't observe. There are many different kind of
+populations that you can think about or construct when you're
+making inference from data. Then there's the special case of
+using the data as a population, in which case you're not making
+any inferences at all but you actually have all
+the information you need. It's useful to figure out what situation
+you're in and for any given question, and to always define
+the population coherently, so that you know what you're
+making inferences about.

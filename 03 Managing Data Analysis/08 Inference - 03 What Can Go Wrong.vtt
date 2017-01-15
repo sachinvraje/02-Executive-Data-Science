@@ -1,0 +1,603 @@
+WEBVTT
+
+1
+00:00:00.360 --> 00:00:03.368
+There are a number of things that can
+affect the quality of inferences that we
+
+2
+00:00:03.368 --> 00:00:04.033
+make from data.
+
+3
+00:00:04.033 --> 00:00:06.832
+This lecture talks about what
+can go wrong with inference.
+
+4
+00:00:11.271 --> 00:00:14.814
+So the basic problems that occur
+when we're making inference,
+
+5
+00:00:14.814 --> 00:00:18.292
+usually result from a violation
+of the assumptions that we make
+
+6
+00:00:18.292 --> 00:00:22.642
+about the population, the sampling
+process or the model for the population.
+
+7
+00:00:22.642 --> 00:00:25.015
+So, I'm kinda talk about
+each one of these things and
+
+8
+00:00:25.015 --> 00:00:27.565
+kinda what happens when there
+is some sort of violation.
+
+9
+00:00:27.565 --> 00:00:31.601
+The first problem is that
+the population is not well-defined.
+
+10
+00:00:31.601 --> 00:00:33.358
+So this is a big problem,
+
+11
+00:00:33.358 --> 00:00:38.065
+because a vaguely defined population
+leads to vague inferences.
+
+12
+00:00:38.065 --> 00:00:41.783
+The sign that you have a vaguely defined
+population is that often the results
+
+13
+00:00:41.783 --> 00:00:44.238
+are uninterpretable or
+difficult to interpret.
+
+14
+00:00:44.238 --> 00:00:47.849
+And so this is really a problem that
+isn't really solved by the data or
+
+15
+00:00:47.849 --> 00:00:48.920
+affixing the data.
+
+16
+00:00:48.920 --> 00:00:52.572
+Really, it's about thinking a little bit
+more clearly about what type of population
+
+17
+00:00:52.572 --> 00:00:54.460
+you're trying to make an inference about.
+
+18
+00:00:54.460 --> 00:00:59.637
+Now the second problem you can have is
+an incorrectly specified sampling process.
+
+19
+00:00:59.637 --> 00:01:04.244
+Now what this results in is that
+the sample data will not be representative
+
+20
+00:01:04.244 --> 00:01:05.517
+of the population.
+
+21
+00:01:05.517 --> 00:01:07.699
+Often, this is called a convenient sample.
+
+22
+00:01:07.699 --> 00:01:11.542
+So when you collect data, you collect
+data in the most convenient way and
+
+23
+00:01:11.542 --> 00:01:12.681
+it may just involve.
+
+24
+00:01:12.681 --> 00:01:16.439
+For example, if you're studying
+people in an observational study or
+
+25
+00:01:16.439 --> 00:01:20.708
+in an experimental study, you just kinda
+take whatever people come your way and
+
+26
+00:01:20.708 --> 00:01:22.124
+enroll them in the study.
+
+27
+00:01:22.124 --> 00:01:26.491
+This may not involve a sampling process
+that represents your population.
+
+28
+00:01:26.491 --> 00:01:28.556
+It's often just a convenient sample.
+
+29
+00:01:28.556 --> 00:01:32.530
+And so what the result of this is that
+you'll have a what's called selection
+
+30
+00:01:32.530 --> 00:01:36.816
+bias, so the people in your study will
+represent a selection of your population,
+
+31
+00:01:36.816 --> 00:01:38.887
+but not really the entire population.
+
+32
+00:01:38.887 --> 00:01:41.254
+And so
+the result is that if you fit any models,
+
+33
+00:01:41.254 --> 00:01:45.567
+if you estimate any characteristics from
+your data, those things that you estimate
+
+34
+00:01:45.567 --> 00:01:49.781
+won't actually apply to the target
+population that you originally designated.
+
+35
+00:01:49.781 --> 00:01:53.811
+They will apply to some other population
+that you may not be able to accurately
+
+36
+00:01:53.811 --> 00:01:54.311
+define.
+
+37
+00:01:54.311 --> 00:01:58.715
+So even if your model for the population
+is correct and even if you have a sense of
+
+38
+00:01:58.715 --> 00:02:03.190
+what your target population is if your
+sampling process is not well specified or
+
+39
+00:02:03.190 --> 00:02:06.664
+well characterized or
+if you don't understand it properly,
+
+40
+00:02:06.664 --> 00:02:10.670
+then the data that you collect and
+the inferences that you make will only
+
+41
+00:02:10.670 --> 00:02:15.340
+apply to some other population that you
+haven't really well characterized yet.
+
+42
+00:02:15.340 --> 00:02:19.205
+So that's what can result from kind
+of incorrectly specifying your
+
+43
+00:02:19.205 --> 00:02:20.369
+sampling process.
+
+44
+00:02:21.520 --> 00:02:25.260
+The last part is incorrectly specifying
+the model for your population.
+
+45
+00:02:25.260 --> 00:02:28.751
+Now recall that we said previously
+that all models are wrong.
+
+46
+00:02:28.751 --> 00:02:32.607
+And for sure, you will incorrectly
+specify the model for the population.
+
+47
+00:02:32.607 --> 00:02:36.897
+And so really the goal is not to get the
+correct model, but rather to get a model
+
+48
+00:02:36.897 --> 00:02:41.004
+that's a reasonable approximation for
+what the population looks like.
+
+49
+00:02:41.004 --> 00:02:44.611
+And so if you have the wrong model,
+a couple of things may occur.
+
+50
+00:02:44.611 --> 00:02:47.924
+First, there may be
+uncertainty in your estimates
+
+51
+00:02:47.924 --> 00:02:50.627
+from the data that are not accounted for.
+
+52
+00:02:50.627 --> 00:02:54.826
+So you may underestimate how certain you
+are about certain characteristics of
+
+53
+00:02:54.826 --> 00:02:55.786
+the population.
+
+54
+00:02:55.786 --> 00:03:00.330
+Any parameters that you estimate from your
+model may end up being uninterpretable.
+
+55
+00:03:00.330 --> 00:03:02.102
+And so if your model's incorrect,
+
+56
+00:03:02.102 --> 00:03:05.529
+it doesn't correctly reflect
+the relationships in your data in your
+
+57
+00:03:05.529 --> 00:03:09.607
+population, then your parameters that you
+estimate will not really apply to that
+
+58
+00:03:09.607 --> 00:03:11.995
+population and
+may be difficult to interpret.
+
+59
+00:03:11.995 --> 00:03:14.319
+Furthermore, in prediction
+types of problems.
+
+60
+00:03:14.319 --> 00:03:18.225
+If you don't have the right model, then
+it's pretty straightforward to see that
+
+61
+00:03:18.225 --> 00:03:21.520
+your predictions just may be poor and
+they may have a high error rate.
+
+62
+00:03:27.198 --> 00:03:31.304
+So really what you need to know is kinda
+what are the questions that you need to
+
+63
+00:03:31.304 --> 00:03:34.590
+be asking when you're involved
+in a data analysis process?
+
+64
+00:03:34.590 --> 00:03:38.698
+And so the three basic questions related
+to the different kinds of violations that
+
+65
+00:03:38.698 --> 00:03:40.909
+you might encounter when doing inference.
+
+66
+00:03:40.909 --> 00:03:43.819
+So the first is can we
+characterize the population?
+
+67
+00:03:43.819 --> 00:03:45.544
+That's a very simple question and
+
+68
+00:03:45.544 --> 00:03:48.587
+the solution is to really just
+do more thinking beforehand.
+
+69
+00:03:48.587 --> 00:03:51.965
+Before you engage in the inference
+process, just take a little bit of extra
+
+70
+00:03:51.965 --> 00:03:55.734
+time to think about what the population is
+and maybe engage in experts in this area.
+
+71
+00:03:55.734 --> 00:03:58.625
+They may be inside or
+outside of your organization.
+
+72
+00:03:58.625 --> 00:04:04.585
+The second question you wanna ask is
+do we understand the sampling process?
+
+73
+00:04:04.585 --> 00:04:09.186
+So what you wanna do about this is you can
+either collect your own data in which case
+
+74
+00:04:09.186 --> 00:04:12.446
+you can specify what the sampling
+process is going to be.
+
+75
+00:04:12.446 --> 00:04:17.155
+You can maybe collect auxiliary data
+about the population characteristics.
+
+76
+00:04:17.155 --> 00:04:21.546
+So if you have auxiliary data about
+the population, maybe certain features of
+
+77
+00:04:21.546 --> 00:04:26.001
+the population, then you can quantify
+the differences between the sample that
+
+78
+00:04:26.001 --> 00:04:30.676
+you collect and the auxiliary data on the
+population to see how different they are.
+
+79
+00:04:30.676 --> 00:04:37.001
+For example, you might have data on
+the sex of people in your study.
+
+80
+00:04:37.001 --> 00:04:41.215
+And so you might want to know, well if the
+population is roughly 50, 50 male, female,
+
+81
+00:04:41.215 --> 00:04:45.102
+but your dataset is say, 70, 30 male,
+female, then you can characterize that
+
+82
+00:04:45.102 --> 00:04:49.089
+difference between the data you collected
+and the population your trying to target.
+
+83
+00:04:49.089 --> 00:04:54.595
+Again, you can be more specific about
+the differences between the two.
+
+84
+00:04:54.595 --> 00:04:57.706
+So auxiliary data about
+the population can be very useful for
+
+85
+00:04:57.706 --> 00:05:01.499
+characterizing any sort of selection
+bias you might have in your sample.
+
+86
+00:05:01.499 --> 00:05:04.516
+The last question you want to ask is
+do you have an appropriate model for
+
+87
+00:05:04.516 --> 00:05:05.293
+the population?
+
+88
+00:05:05.293 --> 00:05:09.436
+It's not going to be a perfect model, but
+you hope it's a reasonable approximation.
+
+89
+00:05:09.436 --> 00:05:13.309
+This can be kind of addressed to
+a thorough exploratory data analysis or
+
+90
+00:05:13.309 --> 00:05:16.728
+by using things, for example,
+things like robust methods for
+
+91
+00:05:16.728 --> 00:05:19.717
+inference when you're
+fitting statistical models.
+
+92
+00:05:19.717 --> 00:05:22.775
+Another approach is to
+use very flexible models.
+
+93
+00:05:22.775 --> 00:05:26.192
+Like machine learning methods
+that are useful for making very
+
+94
+00:05:26.192 --> 00:05:30.999
+accurate predictions without you having to
+specify very carefully what the model is.
+
+95
+00:05:30.999 --> 00:05:35.023
+Often, lots of machine learning types of
+techniques can just learn the model from
+
+96
+00:05:35.023 --> 00:05:37.832
+the data without you having
+to be very specific about it.
+
+97
+00:05:37.832 --> 00:05:41.282
+That can be very useful when you don't
+have a good understanding about what
+
+98
+00:05:41.282 --> 00:05:43.262
+the relationships of the population are.
+
+99
+00:05:48.323 --> 00:05:51.966
+The final challenge to making good
+inferences is sampling variability.
+
+100
+00:05:51.966 --> 00:05:54.063
+Now I've left this to the end for
+a reason,
+
+101
+00:05:54.063 --> 00:05:58.326
+because sampling variability will exist
+even if you've done everything else right.
+
+102
+00:05:58.326 --> 00:06:01.897
+So you've defined the population,
+you've described the sampling process,
+
+103
+00:06:01.897 --> 00:06:04.575
+you've developed a reasonable model for
+the population.
+
+104
+00:06:04.575 --> 00:06:07.024
+By virtue of the fact that
+you are sampling data,
+
+105
+00:06:07.024 --> 00:06:10.687
+you will introduce uncertainty,
+because you don't have all the data.
+
+106
+00:06:10.687 --> 00:06:14.412
+And so every time you draw a sample,
+it'll be slightly different and so
+
+107
+00:06:14.412 --> 00:06:18.884
+anything you estimate about the population
+will be slightly different every time you
+
+108
+00:06:18.884 --> 00:06:19.645
+sample data.
+
+109
+00:06:19.645 --> 00:06:23.866
+And so we'll talk a little bit more about
+this in the lecture about interpreting
+
+110
+00:06:23.866 --> 00:06:25.120
+data analysis.
+
+111
+00:06:25.120 --> 00:06:29.610
+But the important thing to know here
+is that you should always be asking for
+
+112
+00:06:29.610 --> 00:06:34.030
+a measure of uncertainty along with any
+estimate that's obtained from the data.
+
+113
+00:06:34.030 --> 00:06:36.080
+So any summary statistic or
+
+114
+00:06:36.080 --> 00:06:40.760
+any model parameter that you
+can estimate from the data,
+
+115
+00:06:40.760 --> 00:06:44.680
+you should always be asking for a measure
+of uncertainty that comes along with it,
+
+116
+00:06:44.680 --> 00:06:48.410
+because there always will be uncertainty
+if you're sampling data from a population.
+
+117
+00:06:49.570 --> 00:06:53.967
+So just to summarize briefly, always think
+about what the population's going to be.
+
+118
+00:06:53.967 --> 00:06:58.094
+Always assess the sampling process and
+think about differences between the data
+
+119
+00:06:58.094 --> 00:07:02.172
+that you collect and the population that
+you're trying to make inferences to.
+
+120
+00:07:02.172 --> 00:07:05.695
+Always try to diagnose your model
+as carefully as possible or
+
+121
+00:07:05.695 --> 00:07:09.228
+use a very flexible method to
+kind of model your population.
+
+122
+00:07:09.228 --> 00:07:12.194
+And lastly, always require
+a measure of uncertainty for
+
+123
+00:07:12.194 --> 00:07:14.371
+any estimate that you draw from the data.
+
+124
+00:07:14.371 --> 00:07:17.370
+So these are the kinds of things that
+can go wrong with inferences and
+
+125
+00:07:17.370 --> 00:07:19.801
+how you can try to protect
+yourself from these things.

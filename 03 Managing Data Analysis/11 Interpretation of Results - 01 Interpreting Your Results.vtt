@@ -1,0 +1,873 @@
+WEBVTT
+
+1
+00:00:00.860 --> 00:00:03.310
+This lecture is about
+interpreting your results.
+
+2
+00:00:03.310 --> 00:00:06.690
+Because data analysis is an iterative
+process, interpretation is actually
+
+3
+00:00:06.690 --> 00:00:09.560
+something that happens continuously
+throughout the whole process.
+
+4
+00:00:09.560 --> 00:00:13.218
+But because it's so important,
+it deserves a separate discussion.
+
+5
+00:00:17.406 --> 00:00:21.249
+Interpretation in the data analysis is
+a continuous part of the entire data
+
+6
+00:00:21.249 --> 00:00:22.290
+analysis process.
+
+7
+00:00:22.290 --> 00:00:25.450
+And just like with other
+aspects of data analysis,
+
+8
+00:00:25.450 --> 00:00:29.980
+everything you do is based on setting
+expectations and kind of matching the data
+
+9
+00:00:29.980 --> 00:00:34.010
+that you collect with the information
+that you collect to those expectations.
+
+10
+00:00:34.010 --> 00:00:36.960
+Now the expectations for your
+interpretation will be based on things
+
+11
+00:00:36.960 --> 00:00:40.220
+like exploratory data analysis and
+formal modelling.
+
+12
+00:00:40.220 --> 00:00:43.132
+Now when the interpretation does
+not match your expectations,
+
+13
+00:00:43.132 --> 00:00:45.650
+that you're gonna have to figure
+out whether it's because your
+
+14
+00:00:45.650 --> 00:00:50.200
+expectations were incorrect or
+because your interpretation is incorrect.
+
+15
+00:00:50.200 --> 00:00:53.750
+And so figuring that out is part of
+the iterative nature of interpretation.
+
+16
+00:00:53.750 --> 00:00:57.430
+And even though this is one of
+the last steps of any data analysis,
+
+17
+00:00:57.430 --> 00:01:00.390
+you may need to go back to
+the exploratory data analysis or
+
+18
+00:01:00.390 --> 00:01:03.550
+the formal modeling stages if
+the things that you've discover
+
+19
+00:01:03.550 --> 00:01:05.790
+in your interpretation challenge
+what you found previously.
+
+20
+00:01:07.570 --> 00:01:12.440
+So there are a couple of basic principles
+to keep in mind when interpreting results,
+
+21
+00:01:12.440 --> 00:01:15.220
+particularly in the later
+stages of a data analysis.
+
+22
+00:01:15.220 --> 00:01:19.420
+The first thing you're probably gonna
+wanna do is to revisit your question,
+
+23
+00:01:19.420 --> 00:01:21.940
+and just to kinda make sure that you
+haven't gone off course from your
+
+24
+00:01:21.940 --> 00:01:23.530
+original question.
+
+25
+00:01:23.530 --> 00:01:26.160
+The second thing you wanna think
+about is your primary results.
+
+26
+00:01:26.160 --> 00:01:29.640
+So typically in a formal modelling,
+you'll have a primary model and
+
+27
+00:01:29.640 --> 00:01:31.280
+maybe some secondary models.
+
+28
+00:01:31.280 --> 00:01:34.310
+Particularly in an inferential or
+causal type of question.
+
+29
+00:01:34.310 --> 00:01:38.630
+And so the primary result will be
+kind of initially what you focus on.
+
+30
+00:01:38.630 --> 00:01:40.490
+It may not be the last thing
+that you focus on, but
+
+31
+00:01:40.490 --> 00:01:42.010
+it'll be what you initially focus on.
+
+32
+00:01:42.010 --> 00:01:45.110
+And there are three things that you wanna
+think about with your primary result.
+
+33
+00:01:45.110 --> 00:01:48.690
+That's the directionality,
+the magnitude, and the uncertainty.
+
+34
+00:01:48.690 --> 00:01:51.750
+And we'll talk more
+about this in a second.
+
+35
+00:01:53.040 --> 00:01:55.390
+But those are kind of the three properties
+of any result that you're gonna
+
+36
+00:01:55.390 --> 00:01:56.240
+wanna think about.
+
+37
+00:01:56.240 --> 00:01:57.920
+Then there's the context.
+
+38
+00:01:57.920 --> 00:02:01.130
+The context is important because it
+really takes into account the totality
+
+39
+00:02:01.130 --> 00:02:05.585
+of the evidence that you've developed
+through both primary and secondary models.
+
+40
+00:02:05.585 --> 00:02:09.435
+And when you look at the kind of totality
+of the evidence, you wanna look separately
+
+41
+00:02:09.435 --> 00:02:13.895
+at the direction, magnitude, uncertainty
+of all the different models that you fit.
+
+42
+00:02:13.895 --> 00:02:18.315
+And of course, you wanna join this
+with everything that's already known
+
+43
+00:02:18.315 --> 00:02:21.305
+about the question you're asking,
+either from literature or
+
+44
+00:02:21.305 --> 00:02:22.769
+from other colleagues
+in your organization.
+
+45
+00:02:24.130 --> 00:02:27.390
+Last thing you wanna think about is
+the implications, so you wanna consider
+
+46
+00:02:27.390 --> 00:02:33.440
+the implications of your analysis and how
+they might determine what actions to take.
+
+47
+00:02:33.440 --> 00:02:34.520
+And it should be,
+
+48
+00:02:34.520 --> 00:02:38.780
+any actions that might be taken that are
+a result of the answer to your question.
+
+49
+00:02:38.780 --> 00:02:42.110
+So that the implication is kind of
+the last step of interpretation.
+
+50
+00:02:43.740 --> 00:02:47.570
+So revisiting the question is really
+important because often in a long and
+
+51
+00:02:47.570 --> 00:02:53.040
+complicated data analysis, it's easy to go
+off course or kinda go off on a tangent
+
+52
+00:02:53.040 --> 00:02:56.140
+while you're looking at
+interesting things in your data.
+
+53
+00:02:56.140 --> 00:02:59.020
+This can happen either in
+the exploratory data analysis process or
+
+54
+00:02:59.020 --> 00:03:00.750
+in the formal modeling phase.
+
+55
+00:03:00.750 --> 00:03:01.640
+And so
+
+56
+00:03:01.640 --> 00:03:05.710
+it's important to kinda either get back
+onto track with your original question.
+
+57
+00:03:05.710 --> 00:03:09.860
+Or if you divert it onto a different or
+perhaps more interesting question
+
+58
+00:03:09.860 --> 00:03:12.170
+to recognize that fact that you're
+looking at something different.
+
+59
+00:03:13.690 --> 00:03:16.820
+So you may pursue other
+important findings, that's okay,
+
+60
+00:03:16.820 --> 00:03:20.160
+but it's important to just realize
+what question you're actually asking.
+
+61
+00:03:20.160 --> 00:03:24.930
+So because if your former modelling ends
+up answering a different question and
+
+62
+00:03:24.930 --> 00:03:29.110
+perhaps the modeling approach doesn't
+exactly match what the question was,
+
+63
+00:03:29.110 --> 00:03:31.820
+then you might have a problem
+with interpretation later on.
+
+64
+00:03:31.820 --> 00:03:34.100
+So revisiting the question
+is really important for
+
+65
+00:03:34.100 --> 00:03:38.280
+just setting your expectation for
+what you will find in your results.
+
+66
+00:03:39.640 --> 00:03:42.270
+It's also useful to kind of
+remind yourself of what type
+
+67
+00:03:42.270 --> 00:03:46.140
+of question you're trying to ask,
+whether it was descriptive, exploratory,
+
+68
+00:03:46.140 --> 00:03:48.890
+inferential, predictive,
+causal, or mechanistic.
+
+69
+00:03:48.890 --> 00:03:52.960
+Just to remind yourself of the kind
+of nature of the question, and to
+
+70
+00:03:52.960 --> 00:03:57.630
+make sure that the analysis that you did
+matched the question that you were asking.
+
+71
+00:03:57.630 --> 00:04:00.339
+So, most of what I'm gonna
+talk about in this lecture
+
+72
+00:04:00.339 --> 00:04:03.409
+really pertains to inferential or
+kinda causal questions,
+
+73
+00:04:03.409 --> 00:04:06.070
+where the interpretation
+can be very challenging.
+
+74
+00:04:06.070 --> 00:04:10.429
+So, the other thing you wanna think about
+as you reconsider your question is check
+
+75
+00:04:10.429 --> 00:04:12.400
+for potential bias in your results.
+
+76
+00:04:12.400 --> 00:04:15.047
+So, given a certain type of question,
+
+77
+00:04:15.047 --> 00:04:19.160
+you will have a population
+that question applies to.
+
+78
+00:04:19.160 --> 00:04:22.875
+You'll have a sampling process that you
+should be able to describe as part of your
+
+79
+00:04:22.875 --> 00:04:24.470
+kind of data analysis process.
+
+80
+00:04:24.470 --> 00:04:28.839
+And it's useful to think about whether or
+not that sampling process accurately
+
+81
+00:04:28.839 --> 00:04:33.076
+represents the population or whether there
+may be some bias in terms of who you
+
+82
+00:04:33.076 --> 00:04:36.420
+selected into your dataset and
+who exactly they represent.
+
+83
+00:04:37.950 --> 00:04:42.030
+So once you've got your primary model,
+this is based on exploratory data analysis
+
+84
+00:04:42.030 --> 00:04:45.910
+and kind of formal modeling,
+you're gonna have a primary result.
+
+85
+00:04:45.910 --> 00:04:49.163
+And the three things that you wanna
+think about are the directionality
+
+86
+00:04:49.163 --> 00:04:51.708
+of the result, the magnitude,
+and the uncertainty.
+
+87
+00:04:51.708 --> 00:04:55.356
+So directionality really pertains,
+I think, to inferential and
+
+88
+00:04:55.356 --> 00:04:59.329
+causal types of questions where you
+try to estimate some association and
+
+89
+00:04:59.329 --> 00:05:02.800
+the association can either be positive,
+negative, or zero.
+
+90
+00:05:02.800 --> 00:05:03.624
+Now, so positive or
+
+91
+00:05:03.624 --> 00:05:06.680
+negative is what we're talking about
+when we talk about directionality.
+
+92
+00:05:06.680 --> 00:05:08.450
+And that's a very easy thing to check.
+
+93
+00:05:08.450 --> 00:05:11.140
+If you were expecting
+a positive association,
+
+94
+00:05:11.140 --> 00:05:13.310
+then you can see whether
+the result is positive.
+
+95
+00:05:13.310 --> 00:05:15.170
+And likewise,
+if you were expecting something negative,
+
+96
+00:05:15.170 --> 00:05:17.360
+you can see whether
+the result was negative.
+
+97
+00:05:17.360 --> 00:05:21.820
+So that quick check on directionality
+is a useful kind of quick check for
+
+98
+00:05:21.820 --> 00:05:24.430
+seeing whether your results
+kinda match your expectations.
+
+99
+00:05:24.430 --> 00:05:28.630
+The next thing, once you've solved
+the directionality issue is the magnitude.
+
+100
+00:05:28.630 --> 00:05:31.310
+So the magnitude is really
+the size of the association or
+
+101
+00:05:31.310 --> 00:05:34.090
+the size of the effect that you estimate.
+
+102
+00:05:34.090 --> 00:05:37.330
+And the question you wanna ask is
+does that magnitude make sense?
+
+103
+00:05:37.330 --> 00:05:38.390
+Is it meaningful to you?
+
+104
+00:05:39.950 --> 00:05:43.930
+And what would be the impact
+on the population
+
+105
+00:05:43.930 --> 00:05:49.070
+of having an effect of this size or
+if the association was of this size?
+
+106
+00:05:49.070 --> 00:05:51.790
+So who would be affected is
+an important question when
+
+107
+00:05:51.790 --> 00:05:54.790
+you kind of think about the magnitude and
+whether it's meaningful to you or not.
+
+108
+00:05:56.200 --> 00:05:59.080
+The last thing of course,
+you wanna think about is the uncertainty.
+
+109
+00:05:59.080 --> 00:06:02.537
+At this phase it's important that
+you focus on continuous measures of
+
+110
+00:06:02.537 --> 00:06:03.358
+uncertainty and
+
+111
+00:06:03.358 --> 00:06:07.296
+not kind of binary measures of yes,
+no's or statistical significance or not.
+
+112
+00:06:07.296 --> 00:06:09.333
+Things like confidence intervals and
+
+113
+00:06:09.333 --> 00:06:13.213
+other measures that can give you a sense
+of the range of possibilities and
+
+114
+00:06:13.213 --> 00:06:17.538
+kinda be magnitude of the uncertainty in
+your estimate are useful at this phase,
+
+115
+00:06:17.538 --> 00:06:21.657
+before you start making decisions
+about what to do or what not to do.
+
+116
+00:06:21.657 --> 00:06:24.287
+So the directionality,
+magnitude, and uncertainty,
+
+117
+00:06:24.287 --> 00:06:27.337
+are the key things to look at when
+you've got your primary model results.
+
+118
+00:06:28.537 --> 00:06:31.587
+Now in addition to primary model results,
+you'll have a lot of secondary
+
+119
+00:06:31.587 --> 00:06:34.427
+model sensitivity analyses,
+other things that you tried.
+
+120
+00:06:34.427 --> 00:06:37.817
+And this will kinda make up the totality
+of the evidence for your analysis.
+
+121
+00:06:37.817 --> 00:06:40.227
+And so you're gonna wanna think
+about each of these primary and
+
+122
+00:06:40.227 --> 00:06:45.210
+secondary models, in the context of the
+three's factors that we just talked about,
+
+123
+00:06:45.210 --> 00:06:48.580
+which are directionality,
+magnitude, and uncertainty,
+
+124
+00:06:48.580 --> 00:06:50.090
+kind of roughly in that order.
+
+125
+00:06:50.090 --> 00:06:53.770
+So, when you look across all of
+the evidence that you generated,
+
+126
+00:06:53.770 --> 00:06:56.680
+how is the directionality preserved,
+or not.
+
+127
+00:06:56.680 --> 00:07:00.960
+How is the magnitude of the effect or
+the association preserved, or not.
+
+128
+00:07:00.960 --> 00:07:03.960
+And how is the uncertainty about
+your estimate preserved or not?
+
+129
+00:07:03.960 --> 00:07:07.120
+How does those change from model to model?
+
+130
+00:07:07.120 --> 00:07:11.170
+If the directionality changes then that
+may call into question whether you've
+
+131
+00:07:11.170 --> 00:07:13.500
+got a reasonable modeling strategy or
+
+132
+00:07:13.500 --> 00:07:17.350
+if even that association actually
+exists in the population.
+
+133
+00:07:17.350 --> 00:07:22.210
+If the magnitude changes
+that may indicate you've got
+
+134
+00:07:22.210 --> 00:07:25.670
+a potential confounding going on, or
+maybe you've got to think about what
+
+135
+00:07:25.670 --> 00:07:29.880
+type of model is the best model for
+estimating this type of association.
+
+136
+00:07:29.880 --> 00:07:34.060
+And similarly, if the uncertainty
+blows up when you add certain
+
+137
+00:07:34.060 --> 00:07:37.970
+factors into your model, then that will
+indicate to you that maybe you don't have
+
+138
+00:07:37.970 --> 00:07:41.730
+a very good estimate of an association or
+an effect in the population.
+
+139
+00:07:42.970 --> 00:07:46.630
+And finally of course, included with the
+totality of the evidence, is the kind of
+
+140
+00:07:46.630 --> 00:07:50.670
+any results they may already be existing
+that people have researched before.
+
+141
+00:07:50.670 --> 00:07:53.120
+People, either in the literature or
+in your organization,
+
+142
+00:07:53.120 --> 00:07:54.410
+that people already know about.
+
+143
+00:07:54.410 --> 00:07:57.420
+And you wanna know how your results,
+along with kind of
+
+144
+00:07:57.420 --> 00:08:01.470
+the evidence that you've generated, are
+consistent or not with existing results.
+
+145
+00:08:03.250 --> 00:08:07.250
+Finally, it's important to think about
+the implications of your analysis.
+
+146
+00:08:07.250 --> 00:08:11.320
+So many analyses are done to
+ultimately inform a decision.
+
+147
+00:08:11.320 --> 00:08:15.620
+And so any kind of positive findings that
+you find that match your expectations may
+
+148
+00:08:15.620 --> 00:08:18.780
+require some follow up before
+it ultimately decision is made.
+
+149
+00:08:18.780 --> 00:08:21.550
+So sometimes with inferential questions
+where you're just looking for
+
+150
+00:08:21.550 --> 00:08:25.660
+an association, if the association is of
+interest that meant you evolved into kind
+
+151
+00:08:25.660 --> 00:08:28.660
+of asking a more causal question where
+you may need to design a different
+
+152
+00:08:28.660 --> 00:08:32.630
+kind of study, maybe an intervention,
+or a controlled trial.
+
+153
+00:08:32.630 --> 00:08:35.300
+So that may be the decision that
+results from your analysis.
+
+154
+00:08:35.300 --> 00:08:40.420
+But the ultimate decision and
+how much evidence is needed to
+
+155
+00:08:40.420 --> 00:08:45.160
+inform that decision will
+depend on the stakeholders of
+
+156
+00:08:45.160 --> 00:08:50.010
+the analysis of who asked for
+the analysis, who is being informed by it,
+
+157
+00:08:50.010 --> 00:08:54.450
+and kind of what their cost benefits and
+what their kind of values are.
+
+158
+00:08:54.450 --> 00:08:58.080
+And so, different groups of people
+will interpret evidence differently,
+
+159
+00:08:58.080 --> 00:09:01.870
+not because of their
+interpreting it incorrectly but
+
+160
+00:09:01.870 --> 00:09:06.100
+rather their decision to act on evidence
+will based on a variety of factors that
+
+161
+00:09:06.100 --> 00:09:09.405
+are really outside the dataset and
+are not really part of the analysis.
+
+162
+00:09:09.405 --> 00:09:13.785
+So it's important to always keep in
+mind the ultimate goal of the analysis,
+
+163
+00:09:13.785 --> 00:09:18.375
+the decision that might need to be made,
+and the stakeholders who are involved in
+
+164
+00:09:18.375 --> 00:09:21.455
+making those decisions and what kinds
+of factors they need to consider.
+
+165
+00:09:22.520 --> 00:09:23.780
+So, just to summarize,
+
+166
+00:09:23.780 --> 00:09:27.120
+when it comes to interpreting results,
+you wanna always revisit the question,
+
+167
+00:09:27.120 --> 00:09:30.515
+make sure you know what question you're
+asking and what type of question it is, so
+
+168
+00:09:30.515 --> 00:09:33.630
+that you can figure out whether
+the analysis matched the question.
+
+169
+00:09:33.630 --> 00:09:36.230
+Think about your primary result,
+and for that result,
+
+170
+00:09:36.230 --> 00:09:39.710
+you wanna consider the direction,
+the magnitude, and the uncertainty.
+
+171
+00:09:41.190 --> 00:09:43.360
+There's gonna be many
+results that you generate, so
+
+172
+00:09:43.360 --> 00:09:44.940
+you wanna think about
+the totality of the evidence.
+
+173
+00:09:44.940 --> 00:09:47.920
+So this is the context
+that we're talking about.
+
+174
+00:09:47.920 --> 00:09:51.180
+And for each of the kind of results that
+you generate, you similarly wanna think
+
+175
+00:09:51.180 --> 00:09:53.940
+about the direction, magnitude,
+and uncertainty of those results.
+
+176
+00:09:53.940 --> 00:09:57.740
+And you wanna combine this evidence that
+you've generated with existing knowledge.
+
+177
+00:09:57.740 --> 00:10:00.510
+Finally, the implications of analysis
+are always important to consider.
+
+178
+00:10:00.510 --> 00:10:04.229
+And you wanna think about how the evidence
+that you generate will inform the next
+
+179
+00:10:04.229 --> 00:10:06.910
+steps, or any decisions that
+might be made afterwards.

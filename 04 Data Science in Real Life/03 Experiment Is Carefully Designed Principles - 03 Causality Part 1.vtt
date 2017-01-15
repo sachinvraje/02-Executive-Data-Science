@@ -1,0 +1,620 @@
+WEBVTT
+
+1
+00:00:01.790 --> 00:00:04.970
+Hi, my name is Brian Caffo and
+this is the lecture on Causality.
+
+2
+00:00:06.760 --> 00:00:07.870
+So what is causation?
+
+3
+00:00:07.870 --> 00:00:10.640
+And I start with this great xkcd comic.
+
+4
+00:00:10.640 --> 00:00:13.250
+If you don't read xkcd,
+it's this wonderful web comic and
+
+5
+00:00:13.250 --> 00:00:14.720
+you should look it up.
+
+6
+00:00:14.720 --> 00:00:18.050
+And it says I used to think
+correlation implied causation
+
+7
+00:00:18.050 --> 00:00:21.250
+then I took a 101 class and now I don't.
+
+8
+00:00:21.250 --> 00:00:23.630
+Sounds like the class helped and
+it says, well, maybe.
+
+9
+00:00:23.630 --> 00:00:26.730
+And so, that's what we're gonna talk
+about today is the well, maybe part.
+
+10
+00:00:28.020 --> 00:00:33.310
+So in order to define causality, I'm gonna
+go back to the philosopher David Hume.
+
+11
+00:00:33.310 --> 00:00:38.250
+And his philosophy really underlies
+was the starting point for
+
+12
+00:00:38.250 --> 00:00:43.670
+some of the thinking on causality in
+the world of statistical analysis.
+
+13
+00:00:43.670 --> 00:00:46.740
+And I give you this quote here,
+and it's somewhat of a mouthful.
+
+14
+00:00:46.740 --> 00:00:53.330
+But the fundamental idea for defining
+a causal effect in statistics, or at least
+
+15
+00:00:53.330 --> 00:00:57.290
+one of the major branches of thinking
+Is to think about counterfactuals.
+
+16
+00:00:58.350 --> 00:01:01.810
+So and this is what he describes and if
+you look at the last sentence or in other
+
+17
+00:01:01.810 --> 00:01:05.970
+words where if the first object had not
+been, the second never had existed.
+
+18
+00:01:05.970 --> 00:01:11.440
+He's talking about or we translate it
+now to the idea of counterfactuals.
+
+19
+00:01:11.440 --> 00:01:16.690
+So as an example in the medical world of
+a counterfactual, what we would talk about
+
+20
+00:01:16.690 --> 00:01:21.870
+is whether or not a person would respond
+to the treatment with what we observed.
+
+21
+00:01:21.870 --> 00:01:23.950
+If we gave them the treatment and
+they responded or not,
+
+22
+00:01:23.950 --> 00:01:27.400
+and then the counterfactual be
+what would have happened for
+
+23
+00:01:27.400 --> 00:01:29.560
+that person if we had not
+given them the treatment?
+
+24
+00:01:29.560 --> 00:01:33.320
+So the causal effect is the difference for
+that person
+
+25
+00:01:33.320 --> 00:01:37.110
+whether they received the treatment or
+whether they didn't receive the treatment.
+
+26
+00:01:37.110 --> 00:01:40.910
+Okay, but of course we only get to
+see one of those two realities.
+
+27
+00:01:40.910 --> 00:01:44.220
+And so the counterfactual is the
+difference between something we observe
+
+28
+00:01:44.220 --> 00:01:45.550
+and something we can't observe.
+
+29
+00:01:47.060 --> 00:01:49.380
+So again, just to reiterate,
+that's what this slide says,
+
+30
+00:01:49.380 --> 00:01:53.510
+is the causal effect of the treatment on
+a subject is the change in the outcome.
+
+31
+00:01:53.510 --> 00:01:56.380
+From the treatment that
+the subject actually received, and
+
+32
+00:01:56.380 --> 00:01:59.640
+what would've occurred had she or
+he received the other treatment.
+
+33
+00:01:59.640 --> 00:02:02.040
+Okay, so
+that's the counterfactual difference.
+
+34
+00:02:03.210 --> 00:02:05.880
+And again,
+it requires something we observed, but
+
+35
+00:02:05.880 --> 00:02:08.010
+also requires something we cannot observe.
+
+36
+00:02:09.190 --> 00:02:13.890
+So let's just go through an example and
+consider a made up treatment.
+
+37
+00:02:13.890 --> 00:02:17.740
+And in this case I don't know why, I
+decided let's pick an exercise treatment.
+
+38
+00:02:17.740 --> 00:02:19.020
+So I picked a silly one.
+
+39
+00:02:19.020 --> 00:02:21.290
+So this is in kind of a crazy
+
+40
+00:02:22.650 --> 00:02:27.290
+70s exercise equipment called the Twist 'N
+Tone where you kinda twist on your hips.
+
+41
+00:02:27.290 --> 00:02:27.950
+Okay.
+
+42
+00:02:27.950 --> 00:02:32.130
+So let's imaging, so the causal,
+the counter factual, right?
+
+43
+00:02:32.130 --> 00:02:36.130
+Would be the difference between what would
+happen if a person used to twist and
+
+44
+00:02:36.130 --> 00:02:39.460
+tone, let's say for
+12 weeks, vs they didn't.
+
+45
+00:02:39.460 --> 00:02:42.090
+Both of these, it's the same person and
+
+46
+00:02:42.090 --> 00:02:46.630
+by the way both of the persons in
+these images are the same person.
+
+47
+00:02:46.630 --> 00:02:48.900
+It's Christian Bale from
+two different roles.
+
+48
+00:02:48.900 --> 00:02:52.390
+Certainly the amount of weight loss he
+went through in the right hand role was
+
+49
+00:02:52.390 --> 00:02:53.710
+a little excessive.
+
+50
+00:02:53.710 --> 00:02:57.280
+But the counterfactual difference would
+be the difference in the outcome,
+
+51
+00:02:57.280 --> 00:03:02.170
+in this case the measure of fitness or
+muscle density or whatever, comparing
+
+52
+00:03:02.170 --> 00:03:06.477
+whether or not the person had used it
+to whether the person had not used it.
+
+53
+00:03:08.790 --> 00:03:11.050
+So we can observe that, right?
+
+54
+00:03:12.110 --> 00:03:16.020
+We can observe for
+this specific point in time
+
+55
+00:03:16.020 --> 00:03:20.690
+a person who has both used the twist and
+tone and not used the twist and tone.
+
+56
+00:03:20.690 --> 00:03:25.840
+We could do something like in Christian
+Bale's case, look at it if he used it for
+
+57
+00:03:25.840 --> 00:03:30.770
+a while then had a washout period and
+then he didn't use it for a while or
+
+58
+00:03:30.770 --> 00:03:35.650
+something like that, but again,
+that's not at the same point in time.
+
+59
+00:03:35.650 --> 00:03:38.910
+So whatever effect we see
+may be aliased with time.
+
+60
+00:03:38.910 --> 00:03:43.560
+So we can't actually get at
+the causal effect for an individual.
+
+61
+00:03:43.560 --> 00:03:47.480
+However we can get at, we can estimate
+at least, the average causal effect,
+
+62
+00:03:47.480 --> 00:03:50.589
+the average across individuals,
+under some assumptions.
+
+63
+00:03:51.960 --> 00:03:55.390
+Okay, so the average causal effect
+is not just if we look at whether or
+
+64
+00:03:55.390 --> 00:03:58.460
+not Christian Bale used the twist and
+tone or not.
+
+65
+00:03:58.460 --> 00:04:01.610
+The average causal effect is
+if we took a bunch of people,
+
+66
+00:04:01.610 --> 00:04:05.220
+some of them used twist and
+tone and another collection of them
+
+67
+00:04:05.220 --> 00:04:10.420
+didn't they received the control and
+the comparison between the two.
+
+68
+00:04:10.420 --> 00:04:14.600
+And if we have things like randomization,
+that allows us,
+
+69
+00:04:14.600 --> 00:04:18.900
+under some assumptions, to estimate
+the actual average causal effect.
+
+70
+00:04:18.900 --> 00:04:24.640
+So we can get a real idea of
+cause completely empirically.
+
+71
+00:04:24.640 --> 00:04:30.040
+And that's the idea of causal
+statistical inference.
+
+72
+00:04:30.040 --> 00:04:34.769
+To get at the idea of cause to understand
+the assumptions you're making and
+
+73
+00:04:34.769 --> 00:04:38.836
+to have a formal definition of
+cause underlying your analysis.
+
+74
+00:04:41.254 --> 00:04:44.600
+So this way of thinking,
+there's some consequences.
+
+75
+00:04:44.600 --> 00:04:47.560
+One consequence is to talk about cause,
+
+76
+00:04:47.560 --> 00:04:51.720
+we have to think about an assignable
+treatment or intervention, okay.
+
+77
+00:04:51.720 --> 00:04:55.490
+So in this case we can assign the twist
+and tone to some people and not.
+
+78
+00:04:55.490 --> 00:04:59.720
+We have to conceptually,
+even if we can't specifically,
+
+79
+00:04:59.720 --> 00:05:02.590
+even if we can't randomize it, like
+smoking is something we can't randomize.
+
+80
+00:05:02.590 --> 00:05:04.760
+We can't tell people to go smoke, right?
+
+81
+00:05:04.760 --> 00:05:06.740
+That wouldn't be ethical.
+
+82
+00:05:06.740 --> 00:05:09.220
+However, it's conceptually randomizable.
+
+83
+00:05:09.220 --> 00:05:14.970
+I work in a setting, brain imagining,
+we're often interested in cause.
+
+84
+00:05:14.970 --> 00:05:17.480
+In things that are not assignable.
+
+85
+00:05:17.480 --> 00:05:22.590
+For example, does this kind of
+change in your brain structure
+
+86
+00:05:22.590 --> 00:05:26.910
+change your predilection for a particular
+kind of neurological disorder?
+
+87
+00:05:26.910 --> 00:05:27.630
+And in that case,
+
+88
+00:05:27.630 --> 00:05:33.030
+we can't conceptually think about that
+change actually being randomizable.
+
+89
+00:05:33.030 --> 00:05:37.430
+So that's one potential
+problem with this specific
+
+90
+00:05:37.430 --> 00:05:41.380
+definition of causal statistical analysis
+that I'm supporting here in this lecture.
+
+91
+00:05:42.820 --> 00:05:45.000
+Of course, the other is we
+can't observe counterfactuals.
+
+92
+00:05:45.000 --> 00:05:48.420
+We only get to observe one state
+of nature at a particular time.
+
+93
+00:05:48.420 --> 00:05:52.850
+And that's the crux of the work in causal
+inference, is trying to combat that issue.
+
+94
+00:05:54.240 --> 00:05:58.100
+But we can with assumptions and careful
+study design make inferences about average
+
+95
+00:05:58.100 --> 00:06:03.640
+causal effects and
+that's where the real insight was.
+
+96
+00:06:03.640 --> 00:06:08.900
+And to me I think there's
+formal causal analysis and
+
+97
+00:06:08.900 --> 00:06:12.480
+then there's Understanding
+an enough of causal analysis so
+
+98
+00:06:12.480 --> 00:06:17.530
+that you can, you can think about
+the causal implications of your analysis.
+
+99
+00:06:17.530 --> 00:06:20.710
+And so to me I don't know,
+personally I don't know,
+
+100
+00:06:20.710 --> 00:06:23.870
+I don't do that much
+specific causal analysis.
+
+101
+00:06:23.870 --> 00:06:26.990
+However, causal thinking
+underlies a lot of what I'm doing.
+
+102
+00:06:26.990 --> 00:06:33.230
+So I think causal thinking is
+essential for statistical analysis.
+
+103
+00:06:33.230 --> 00:06:36.750
+And it's essential for understanding
+the causal implications of your analysis.
+
+104
+00:06:38.910 --> 00:06:43.740
+So what I'd like you to do is now to
+think about these various study designs.
+
+105
+00:06:43.740 --> 00:06:48.950
+Now that you know this one simple fact,
+we're gonna define cause as the difference
+
+106
+00:06:48.950 --> 00:06:54.490
+as a causal effect is the difference
+between what we would observe on a person
+
+107
+00:06:54.490 --> 00:06:58.670
+if they had a treatment minus what they
+would observe or over what they would
+
+108
+00:06:58.670 --> 00:07:02.640
+have observed had they not received the
+treatment, where we only get to view one.
+
+109
+00:07:02.640 --> 00:07:07.250
+So what I'd like you to do is think about
+these various kinds of study designs and
+
+110
+00:07:07.250 --> 00:07:11.420
+how they try to get out that question and
+what ways they've failed and
+
+111
+00:07:11.420 --> 00:07:12.650
+in what ways they succeed.
+
+112
+00:07:13.990 --> 00:07:20.700
+So one really obvious example of trying
+to think this way is a crossover trial.
+
+113
+00:07:20.700 --> 00:07:22.280
+Give a subject a treatment,
+
+114
+00:07:22.280 --> 00:07:24.820
+than after a suitable washout
+period give them the other.
+
+115
+00:07:25.850 --> 00:07:30.390
+So as an example,
+if you were studying chronic migraines.
+
+116
+00:07:30.390 --> 00:07:34.740
+We could give someone some relief
+medication after a washout period,
+
+117
+00:07:34.740 --> 00:07:35.560
+then give them another.
+
+118
+00:07:36.950 --> 00:07:40.790
+So I think this might work for
+migraines because,
+
+119
+00:07:40.790 --> 00:07:44.860
+chronic migraines people tend to continue
+to have them after a washout period we can
+
+120
+00:07:44.860 --> 00:07:49.620
+assume that the drug isn't
+carrying over to the next period.
+
+121
+00:07:49.620 --> 00:07:53.840
+But it wouldn't work for
+something like an ad campaign, right?
+
+122
+00:07:53.840 --> 00:07:56.962
+Because you can't unsee the previous ad,
+okay?
+
+123
+00:07:56.962 --> 00:08:02.020
+So, cross-over trials try to
+get causal effects by virtue
+
+124
+00:08:02.020 --> 00:08:07.296
+of having the same person
+actually receive both treatments.
+
+125
+00:08:07.296 --> 00:08:09.730
+Or, I'll give another example here,
+a weight loss study.
+
+126
+00:08:09.730 --> 00:08:12.280
+You couldn't do this kind of thing for
+a weight loss study.
+
+127
+00:08:13.300 --> 00:08:15.851
+But again, I want you to think
+about crossover trials and
+
+128
+00:08:15.851 --> 00:08:18.629
+the implications with causal and
+counterfactual thinking.

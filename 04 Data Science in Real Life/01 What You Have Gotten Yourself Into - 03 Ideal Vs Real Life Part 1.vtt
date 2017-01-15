@@ -1,0 +1,323 @@
+WEBVTT
+
+1
+00:00:00.430 --> 00:00:03.000
+Hi, my name is Brian Caffo.
+
+2
+00:00:03.000 --> 00:00:06.500
+This is the lecture on the perfect data
+science experience versus real life.
+
+3
+00:00:08.330 --> 00:00:12.030
+Let's start by talking about
+the perfect data science experiment.
+
+4
+00:00:12.030 --> 00:00:14.960
+Here we've got the happy little cat
+looking at a highly significant p value.
+
+5
+00:00:16.300 --> 00:00:17.950
+So in the perfect data science experiment,
+
+6
+00:00:17.950 --> 00:00:21.410
+you have clearly defined hypotheses
+that are specified a priori.
+
+7
+00:00:22.480 --> 00:00:25.360
+And experimental design
+is available to you.
+
+8
+00:00:25.360 --> 00:00:29.840
+For example, you can use randomization
+across the treatment of interest.
+
+9
+00:00:29.840 --> 00:00:34.080
+You can stratify or
+block on some nuisance variables.
+
+10
+00:00:34.080 --> 00:00:36.990
+Your sample is a random sample
+from a population of interests so
+
+11
+00:00:36.990 --> 00:00:38.350
+you know that it's generalizable.
+
+12
+00:00:39.640 --> 00:00:43.680
+And the data that you have are directly
+able to interrogate the hypothesis that
+
+13
+00:00:43.680 --> 00:00:44.480
+you're interested in.
+
+14
+00:00:45.690 --> 00:00:47.764
+All the data set creation and merging and
+
+15
+00:00:47.764 --> 00:00:50.750
+data pulls from the larger
+data set goes smoothly.
+
+16
+00:00:50.750 --> 00:00:53.940
+There's no missing data or dropout, and
+
+17
+00:00:53.940 --> 00:00:58.480
+your analyses are robust without the need
+for any sort of advance modeling.
+
+18
+00:00:58.480 --> 00:01:00.023
+Your conclusions are clear and
+
+19
+00:01:00.023 --> 00:01:02.939
+parsimonious of knowledge is
+gained via the experiment.
+
+20
+00:01:04.360 --> 00:01:07.980
+And the decision is obvious
+being given the data and
+
+21
+00:01:07.980 --> 00:01:12.742
+communicated clearly with a nice report or
+out going data product.
+
+22
+00:01:14.410 --> 00:01:15.760
+What happens in real life?
+
+23
+00:01:17.050 --> 00:01:21.895
+Well, in real life, Often
+
+24
+00:01:21.895 --> 00:01:26.800
+the data is needed to both inform the
+hypotheses and interrogate the hypotheses.
+
+25
+00:01:26.800 --> 00:01:30.190
+Often multiple comparisons are an issue
+because you've tried several different
+
+26
+00:01:30.190 --> 00:01:33.860
+hypotheses or
+you're looking at multiple things at once.
+
+27
+00:01:35.180 --> 00:01:39.310
+Often your access to experimental
+design is limited or nonexistent.
+
+28
+00:01:39.310 --> 00:01:42.570
+The data is often
+completely observational.
+
+29
+00:01:42.570 --> 00:01:47.410
+So the population being studied isn't
+the population that you're interested in.
+
+30
+00:01:47.410 --> 00:01:48.310
+That's often a problem,
+
+31
+00:01:48.310 --> 00:01:52.220
+your sample isn't representative of
+the sample you'd like to generalize to.
+
+32
+00:01:52.220 --> 00:01:55.550
+The data don't have the exact measurements
+that you need to evaluate the hypothesis.
+
+33
+00:01:55.550 --> 00:01:58.020
+This is a surprisingly common problem.
+
+34
+00:01:58.020 --> 00:02:00.200
+You'd like to study caloric intake, but
+
+35
+00:02:00.200 --> 00:02:03.160
+all you have is
+questionnaires asking people
+
+36
+00:02:03.160 --> 00:02:07.040
+how many calories they ate last week,
+which they can't usually remember well.
+
+37
+00:02:08.280 --> 00:02:13.040
+The data set is problematic, merging
+is problematic with multiple matches or
+
+38
+00:02:13.040 --> 00:02:14.870
+no matches.
+
+39
+00:02:14.870 --> 00:02:16.094
+Data entry errors,
+
+40
+00:02:16.094 --> 00:02:20.558
+the data pool doesn't go the way that
+you want, so often the case that just
+
+41
+00:02:20.558 --> 00:02:25.400
+the reality of building the analytic
+data set is a challenging process.
+
+42
+00:02:25.400 --> 00:02:30.740
+You have missing data and because of the
+observational nature of your experiment,
+
+43
+00:02:30.740 --> 00:02:33.270
+advanced modelling winds
+up being required.
+
+44
+00:02:33.270 --> 00:02:36.780
+And then because you need advanced
+modeling, advanced computing is needed to
+
+45
+00:02:36.780 --> 00:02:41.470
+fit the model, which raises
+issues with robustness and bugs.
+
+46
+00:02:42.560 --> 00:02:44.330
+Then, you're all done with this process,
+and
+
+47
+00:02:44.330 --> 00:02:47.350
+the conclusions wind up
+being indeterminate.
+
+48
+00:02:47.350 --> 00:02:49.380
+And the decision is not substantially and
+
+49
+00:02:49.380 --> 00:02:52.750
+further informed by the data and
+the models that you've fit.
+
+50
+00:02:52.750 --> 00:02:57.960
+So, that's what happens maybe,
+maybe in some of the worst case scenarios,
+
+51
+00:02:57.960 --> 00:03:00.650
+but that's more like what happened
+tends to happen in real life.
+
+52
+00:03:02.400 --> 00:03:06.670
+So in this class we're gonna contrast data
+science in the ideal versus data science
+
+53
+00:03:06.670 --> 00:03:07.470
+in real life.
+
+54
+00:03:07.470 --> 00:03:10.260
+We're gonna talk about
+different variations
+
+55
+00:03:10.260 --> 00:03:14.640
+of experimental design versus
+observational studies.
+
+56
+00:03:14.640 --> 00:03:20.560
+We'll talk about how you can, some ideas
+for how you can check for errant data and
+
+57
+00:03:20.560 --> 00:03:25.300
+other tools to make data analysis in
+real life a little bit more manageable.
+
+58
+00:03:25.300 --> 00:03:28.010
+So the class is set up
+
+59
+00:03:28.010 --> 00:03:32.220
+as this introductory set of
+lectures plus then six lessons.
+
+60
+00:03:32.220 --> 00:03:36.380
+Each lesson has a quiz, each quiz has five
+questions, you need to pass four out of
+
+61
+00:03:36.380 --> 00:03:39.630
+the five questions to get credit for
+the quiz and you can do retakes.
+
+62
+00:03:40.780 --> 00:03:46.390
+Before each lesson, or at the beginning
+of each lesson is a reading and I would
+
+63
+00:03:46.390 --> 00:03:51.270
+suggest you do the reading before you go
+on to do a lot of the other materials.
+
+64
+00:03:51.270 --> 00:03:54.570
+So I'm gonna finish this lecture in a
+second by giving you some examples of data
+
+65
+00:03:54.570 --> 00:03:59.460
+science in the ideal versus data science
+in real life that I've concocted but
+
+66
+00:03:59.460 --> 00:04:00.810
+welcome to the class.
+
+67
+00:04:00.810 --> 00:04:04.210
+I'm really glad that you're in it and
+I look forward to working with you for
+
+68
+00:04:04.210 --> 00:04:08.020
+the next couple of days as we talk
+about data science in real life.

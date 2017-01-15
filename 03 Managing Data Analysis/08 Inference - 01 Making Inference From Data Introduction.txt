@@ -1,0 +1,75 @@
+Inference is the task of making statements
+about things you can't observe. This lecture's about the ingredients you
+need to make useful inferences from data. So the goal of inference is to be able
+to make statements about things we can't really observe directly. And we also want to be able to
+characterize our uncertainty about those statements that we make. So these things that we can't observe,
+the things that we wanna make inferences about, these are usually referred
+to generally as the population. Okay, and then to make inference, what we do is we collect
+a sample from the population. And the sampling process that we
+use results in our dataset, okay. So we have a dataset that results
+from a sampling process that draws from a population. So to make inferences from data,
+you need three simple ingredients. First, you need to be able
+to identify the population to which you're making these inferences. Of course you have to have a question
+about that population, but that's kind of secondary. Once you've identified the population, then you can talk coherently about
+what you're making inference about. The next thing you need to be able to
+do is to describe the sampling process. You need to be able to tell a story about
+how the data came from the population and ended up in your lap. Okay?
+If you can't describe that process, then it is going to be very
+hard to understand how valid your inferences are from the data. The better and more clearly you can
+describe how the data came to you, the stronger your results will be. Now the last thing you need is a model for
+the population. You need a model for how either elements
+of the population interact with each other or how they're related to each other. So defining the population is far and
+away the most important task. If you can't coherently
+describe the population, then you can't really make any inferences. Okay because there's nothing
+to make inference to. So make sure that you can accurately
+characterize your population. It's gonna help you tell the story better
+in the end after you analyze the data. So similarly it's important that you
+identify an important question that you wanna ask. Just get an answer. But presumably you've done this already. [COUGH] So just as a very quick, simple running example,
+here's a basic population of ten penguins. Okay, and each of these penguins has
+a turquoise hat or a purple hat. And so
+the basic question that we wanna ask is, what proportion of this population of
+penguins is wearing a turquoise hat? So, that's basically it. Now, the problem, of course, is that we can't collect data
+on the population, right? Cuz they're penguins after all, and
+we can't take care of all of them, so we need to draw a sample
+from this population. So the sampling process is the manner
+in which the data come to you, and this gives you the dataset. So, let's say we're going
+to sample three penguins, and the way that we sample those
+three penguins is, we stand there in front of these ten penguins and we take
+the first three that walk up to us, okay? So then we have our dataset
+of just three penguins. And so, now the model for the population
+describes how the features of the units in the population
+are related to each other, okay? And this model can be more or less complex depending on the type of
+question that we're trying to answer. But the important thing is that the model
+connects the data that we observe to the population that we don't observe. All right? And so, it's basically a little
+cartoon of how the world works. So a couple of example of what a model
+might consist of is that we might assume, for example, that the units of the
+population are independent of each other. So imagine that the different
+penguins in this population are wearing different hats. And the fact that one penguin is wearing
+a turquoise hat doesn't really influence whether another penguin is gonna wear
+a purple hat or a turquoise hat. So they're all kind of
+independent of each other. That's one assumption that we'll
+make as part of our model. Another intentional assumption
+that we might want to make is that certain features of the population
+are linearly related. So there are linear
+relationships between them. And there are many other kinds of things
+that you might wanna assume about a population if your question's
+a little bit more complex. Now the question that we're
+asking here is very simple. We just wanna know what's the proportion
+of penguins with turquoise hats. So we don't have to make too many
+assumptions about the population in order to order that question. So given our little data
+set here of three penguins, we want to estimate what's the proportion
+with turquoise hats in the population. So from the dataset we can estimate
+that it's one-third of the dataset. One-third of the penguins
+have turquoise hats so we'll assume that one-third of
+the population wears turquoise hats. So that's what we're gonna
+infer from our dataset. Our final estimate is one-third or
+.33 penguins with turquoise hats. Now it turns out because we know
+the population that the truth is about point four penguins actually wear
+turquoise hats, or two-fifths, okay? So our estimate is 0.3 roughly and
+the truth is point four. And so the question is well how do we
+know if 0.3 or 0.33 is a good estimate? So we'll talk about that
+in the next lecture. In terms of how do you know whether
+you've made a good inference or not. But the point is that our estimate
+is .33 and the truth is .4. So there's a variation
+there as we would expect. But that's our estimate for
+the population level feature.

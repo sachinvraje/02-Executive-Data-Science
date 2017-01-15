@@ -1,0 +1,42 @@
+So the first thing to know when
+building a data science team, is that data science is a team sport. It takes a large group of people
+working together to solve real, practical data science projects. So those people include
+the data scientists. The managers of those data scientists, data engineers who perform and
+develop the infrastructure. And then people who they have contact
+with outside of their data science team. So people within the organization or
+management of the organization, and how do they communicate
+with those people? So I just thought I'd go through the key
+positions in the data science team. And so the first one is a data engineer. So, a data engineer is a person that
+would maybe construct a database, or they might pull data out of that
+database for people to analyze. Or they might build production level
+machine learning algorithms and implement them on servers, so that they
+can be applied to a huge database of observations of data, and
+maybe even run in real time. So they have skills in infrastructure
+development, both the hardware side and the software side. And they do less of the actually
+analysis of the day to day data. That falls to the person that's
+called a data scientist. So a data scientist might be somebody that
+would go and pull data out of a database. Then they might analyze it, perform
+experiments on it, visualize it and communicate those results to
+the data science manager, and to other people in the organization
+to try and move things forward. Often, a data scientist will hand off
+any machine learning algorithm or prediction algorithm they develop,
+to the data engineer, who will then implement it so
+it can run at scale. The third key person is the data
+science manager, so that would be you. The data science manager, makes sure that
+everybody interacts with each other and that they keep things moving. They also recruit and
+build the data science team. And then they also interface with
+upper management in an organization. As well as with collaborators that are at
+their same level across the organization, to make sure that they get
+all the information across. And they advertise the data
+science team to other people, what their capabilities are, what they
+can do, and how they can help out. So that's the data science team,
+and then how do they work together? They work together as a unit, and so
+often each of these people are working on individual projects, or individual
+subproblems of a data science problem. And then they come together and have joint
+group meetings and joint presentations, where they discuss their ideas. They also interact with external folks,
+they might interact with those people directly through individual meetings with
+people outside of the data science team. Or they might interact through
+the data science manager. So, in either way they have to be able to
+communicate what's going on with the data science infrastructure, what's going
+on with the data science team. And how do they make sure that all
+the problems are getting solved.

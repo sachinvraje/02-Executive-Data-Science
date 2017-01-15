@@ -1,0 +1,51 @@
+Hi, my name is Brian Caffo. This is the lecture on the perfect data
+science experience versus real life. Let's start by talking about
+the perfect data science experiment. Here we've got the happy little cat
+looking at a highly significant p value. So in the perfect data science experiment, you have clearly defined hypotheses
+that are specified a priori. And experimental design
+is available to you. For example, you can use randomization
+across the treatment of interest. You can stratify or
+block on some nuisance variables. Your sample is a random sample
+from a population of interests so you know that it's generalizable. And the data that you have are directly
+able to interrogate the hypothesis that you're interested in. All the data set creation and merging and data pulls from the larger
+data set goes smoothly. There's no missing data or dropout, and your analyses are robust without the need
+for any sort of advance modeling. Your conclusions are clear and parsimonious of knowledge is
+gained via the experiment. And the decision is obvious
+being given the data and communicated clearly with a nice report or
+out going data product. What happens in real life? Well, in real life, Often the data is needed to both inform the
+hypotheses and interrogate the hypotheses. Often multiple comparisons are an issue
+because you've tried several different hypotheses or
+you're looking at multiple things at once. Often your access to experimental
+design is limited or nonexistent. The data is often
+completely observational. So the population being studied isn't
+the population that you're interested in. That's often a problem, your sample isn't representative of
+the sample you'd like to generalize to. The data don't have the exact measurements
+that you need to evaluate the hypothesis. This is a surprisingly common problem. You'd like to study caloric intake, but all you have is
+questionnaires asking people how many calories they ate last week,
+which they can't usually remember well. The data set is problematic, merging
+is problematic with multiple matches or no matches. Data entry errors, the data pool doesn't go the way that
+you want, so often the case that just the reality of building the analytic
+data set is a challenging process. You have missing data and because of the
+observational nature of your experiment, advanced modelling winds
+up being required. And then because you need advanced
+modeling, advanced computing is needed to fit the model, which raises
+issues with robustness and bugs. Then, you're all done with this process,
+and the conclusions wind up
+being indeterminate. And the decision is not substantially and further informed by the data and
+the models that you've fit. So, that's what happens maybe,
+maybe in some of the worst case scenarios, but that's more like what happened
+tends to happen in real life. So in this class we're gonna contrast data
+science in the ideal versus data science in real life. We're gonna talk about
+different variations of experimental design versus
+observational studies. We'll talk about how you can, some ideas
+for how you can check for errant data and other tools to make data analysis in
+real life a little bit more manageable. So the class is set up as this introductory set of
+lectures plus then six lessons. Each lesson has a quiz, each quiz has five
+questions, you need to pass four out of the five questions to get credit for
+the quiz and you can do retakes. Before each lesson, or at the beginning
+of each lesson is a reading and I would suggest you do the reading before you go
+on to do a lot of the other materials. So I'm gonna finish this lecture in a
+second by giving you some examples of data science in the ideal versus data science
+in real life that I've concocted but welcome to the class. I'm really glad that you're in it and
+I look forward to working with you for the next couple of days as we talk
+about data science in real life.

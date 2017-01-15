@@ -1,0 +1,606 @@
+WEBVTT
+
+1
+00:00:02.031 --> 00:00:03.683
+Hi, my name is Brian Caffo and
+
+2
+00:00:03.683 --> 00:00:08.320
+this is the lecture on report writing as
+part of the Executive Data Science series.
+
+3
+00:00:10.250 --> 00:00:14.840
+So report writing is, often
+
+4
+00:00:14.840 --> 00:00:20.720
+the case you get reports that
+are just really problematic.
+
+5
+00:00:20.720 --> 00:00:25.890
+And I think that's more of
+the norm than getting clear,
+
+6
+00:00:25.890 --> 00:00:31.610
+concise, reproducible reports
+that have a obvious and
+
+7
+00:00:31.610 --> 00:00:36.330
+clear narrative and tell a clear story.
+
+8
+00:00:36.330 --> 00:00:39.640
+More often, your reports are a little
+bit of a mis-mash of thoughts.
+
+9
+00:00:39.640 --> 00:00:43.990
+And so in this lecture, what we're
+going to talk about are some tools
+
+10
+00:00:43.990 --> 00:00:47.260
+that will help at least certain
+aspects of the report writing.
+
+11
+00:00:47.260 --> 00:00:51.270
+Of course, there's a lot to
+whatever specific area you're in
+
+12
+00:00:51.270 --> 00:00:55.730
+to the art in that area of how your
+reports are gonna get generated.
+
+13
+00:00:55.730 --> 00:00:59.640
+But some of these tools
+are ubiquitous enough across
+
+14
+00:00:59.640 --> 00:01:02.309
+scenarios that we can give
+some general recommendations.
+
+15
+00:01:04.230 --> 00:01:07.600
+So, in a perfect world,
+reports would be clear and
+
+16
+00:01:07.600 --> 00:01:12.060
+reproducible, kind of the two
+most important characteristics.
+
+17
+00:01:12.060 --> 00:01:14.300
+And so
+we're just gonna give three strategies for
+
+18
+00:01:14.300 --> 00:01:15.620
+helping manage report writing.
+
+19
+00:01:17.780 --> 00:01:22.760
+The first one I can say, which seems
+ridiculous, but it seems to help a lot and
+
+20
+00:01:22.760 --> 00:01:26.040
+it's encouraged checking the signs,
+the magnitudes and
+
+21
+00:01:26.040 --> 00:01:28.790
+the units of effects that are reported.
+
+22
+00:01:28.790 --> 00:01:31.560
+The second one is to focus
+on interpretation and
+
+23
+00:01:31.560 --> 00:01:33.090
+interpretability of the report.
+
+24
+00:01:34.650 --> 00:01:37.530
+And the third is to use
+reproducible research tools.
+
+25
+00:01:39.210 --> 00:01:43.670
+So let me just briefly elaborate on
+this point on checking the signs,
+
+26
+00:01:43.670 --> 00:01:45.079
+the magnitudes, and the units.
+
+27
+00:01:46.410 --> 00:01:49.530
+So the signs, for example,
+what do I mean by that?
+
+28
+00:01:49.530 --> 00:01:53.220
+I basically mean to check to make
+sure the directions of the effects
+
+29
+00:01:53.220 --> 00:01:54.560
+are as anticipated.
+
+30
+00:01:55.730 --> 00:01:58.640
+And this can often happen in a case.
+
+31
+00:01:58.640 --> 00:02:03.160
+The worst example of this is when
+the report only gives the output of
+
+32
+00:02:03.160 --> 00:02:08.220
+a regression analysis without actually
+interpreting the coefficients.
+
+33
+00:02:08.220 --> 00:02:13.320
+Well the most basic form of interpretation
+of the coefficient is just checking
+
+34
+00:02:13.320 --> 00:02:16.160
+that it's in the direction that
+everyone would anticipate that it's in.
+
+35
+00:02:16.160 --> 00:02:17.331
+So in this case I said,
+
+36
+00:02:17.331 --> 00:02:21.543
+are brain volumes decreasing with
+increasing Alzheimer's disease symptoms?
+
+37
+00:02:21.543 --> 00:02:27.096
+If you saw the opposite effect if
+you saw a brain volumes increasing,
+
+38
+00:02:27.096 --> 00:02:29.310
+then you would be worried.
+
+39
+00:02:29.310 --> 00:02:32.250
+Or at least that would
+merit some explanation.
+
+40
+00:02:34.310 --> 00:02:36.660
+The second idea was magnitudes.
+
+41
+00:02:36.660 --> 00:02:39.890
+We wanna compare the magnitudes
+effects with other known effects.
+
+42
+00:02:39.890 --> 00:02:43.340
+So volume loss is similar to
+a decade of normal aging,
+
+43
+00:02:43.340 --> 00:02:46.480
+is akin to the example
+we gave from before.
+
+44
+00:02:46.480 --> 00:02:52.210
+So we've talked about this idea
+before of taking effects for
+
+45
+00:02:52.210 --> 00:02:56.220
+things that you're studying that you don't
+know a lot about, and contrasting them
+
+46
+00:02:56.220 --> 00:03:01.470
+with the effects of things that you know a
+lot about, like normal aging in this case.
+
+47
+00:03:01.470 --> 00:03:03.330
+The third thing is the units.
+
+48
+00:03:03.330 --> 00:03:06.780
+And I can't stress this enough,
+make sure that the units are known,
+
+49
+00:03:06.780 --> 00:03:11.340
+they're written out explicitly and
+they're included on all graph axes.
+
+50
+00:03:11.340 --> 00:03:16.320
+So just to give you an anecdote,
+at one point we were all sitting
+
+51
+00:03:16.320 --> 00:03:20.340
+around discussing an effect that
+we saw for brain volume and
+
+52
+00:03:20.340 --> 00:03:25.150
+we realized that we had messed up the
+units at some point and people's brains
+
+53
+00:03:25.150 --> 00:03:30.450
+were supposedly growing at the size of a
+house every year, or something like that.
+
+54
+00:03:30.450 --> 00:03:34.790
+And it was only through the exercise
+of checking the units and
+
+55
+00:03:35.910 --> 00:03:40.030
+making sure that the units of our
+coefficient really made sense relative
+
+56
+00:03:40.030 --> 00:03:44.510
+to the context of the problem that
+we kind of caught that error and
+
+57
+00:03:44.510 --> 00:03:48.280
+found that one of our variables had
+been multiplied by a strange constant.
+
+58
+00:03:48.280 --> 00:03:52.821
+And so at any rate, the units, and
+again it's a simple thing, but
+
+59
+00:03:52.821 --> 00:03:56.330
+just drill down on the units
+on any given problem.
+
+60
+00:03:56.330 --> 00:03:59.410
+Understanding the units really
+helps you understand the problem.
+
+61
+00:04:01.550 --> 00:04:05.830
+So the second point I made was to focus
+on interpretation and interpretability.
+
+62
+00:04:05.830 --> 00:04:09.820
+So again, I'm gonna reiterate that
+comparing effects to other known effects
+
+63
+00:04:09.820 --> 00:04:13.290
+is a great way to focus on
+interpretation and interpretability.
+
+64
+00:04:14.720 --> 00:04:17.450
+The second way to focus
+on interpretation and
+
+65
+00:04:17.450 --> 00:04:20.000
+interpretability is to
+encourage so-called parsimony.
+
+66
+00:04:21.210 --> 00:04:26.320
+Parsimony, to me, is a key ingredient
+to having interpretable models.
+
+67
+00:04:26.320 --> 00:04:31.540
+And what I mean by parsimony is using the
+simplest possible model and no simpler.
+
+68
+00:04:31.540 --> 00:04:37.590
+In other words, I'm encouraging you
+to place a premium on simplicity.
+
+69
+00:04:37.590 --> 00:04:39.050
+So if you have a regression model,
+
+70
+00:04:39.050 --> 00:04:42.820
+regression models tend to be pretty
+simple models, that achieve 95% of
+
+71
+00:04:42.820 --> 00:04:47.380
+the prediction performance of some
+complicated machine learning algorithm.
+
+72
+00:04:47.380 --> 00:04:51.920
+You might wanna just stick with the
+regression model because that 5% penalty
+
+73
+00:04:51.920 --> 00:04:54.910
+of complexity is really a very high price.
+
+74
+00:04:54.910 --> 00:04:59.920
+You're losing a lot of interpretability
+for that extra 5% prediction.
+
+75
+00:05:01.270 --> 00:05:04.250
+So in this case I would suggest
+encouraging in the report writing
+
+76
+00:05:04.250 --> 00:05:05.810
+focusing on the regression results.
+
+77
+00:05:05.810 --> 00:05:10.240
+Or maybe doing both, but
+especially reporting and
+
+78
+00:05:10.240 --> 00:05:13.750
+giving good interpretations of
+the regression coefficient,
+
+79
+00:05:13.750 --> 00:05:17.150
+which are much more interpretable than
+the output of a complex algorithm.
+
+80
+00:05:18.990 --> 00:05:21.646
+The third idea that I find very useful,
+
+81
+00:05:21.646 --> 00:05:25.200
+is the idea of what I like
+to call effect critiquing.
+
+82
+00:05:26.560 --> 00:05:30.512
+And if you see a significant effect,
+or something that's very exciting,
+
+83
+00:05:30.512 --> 00:05:36.260
+then what you want to do is
+
+84
+00:05:36.260 --> 00:05:40.860
+try to put yourself in the mind of someone
+who would be a skeptic of that effect.
+
+85
+00:05:40.860 --> 00:05:43.870
+Try to be as skeptical and
+critical as possible.
+
+86
+00:05:43.870 --> 00:05:45.880
+And once you're in that mindset,
+
+87
+00:05:45.880 --> 00:05:49.110
+then try to come up with
+the counter-arguments for that effect.
+
+88
+00:05:49.110 --> 00:05:54.450
+Okay, so we saw this effect on lead
+exposure and brain volume loss.
+
+89
+00:05:54.450 --> 00:05:58.260
+But was it really due to something else,
+like the different
+
+90
+00:05:58.260 --> 00:06:02.250
+body mass indexes of the people who were
+exposed to lead to the people who weren't?
+
+91
+00:06:02.250 --> 00:06:06.380
+So it's really not due to lead exposure,
+it's really due to body mass.
+
+92
+00:06:06.380 --> 00:06:08.700
+Okay that would be
+an example of a critique.
+
+93
+00:06:08.700 --> 00:06:09.490
+So what will we do?
+
+94
+00:06:09.490 --> 00:06:12.640
+We might consider a model that
+then had lead exposure and
+
+95
+00:06:12.640 --> 00:06:17.770
+body mass in the model, just to see what
+impact looking at both simultaneously did
+
+96
+00:06:17.770 --> 00:06:20.480
+on the effect that we're interested in,
+the lead exposure.
+
+97
+00:06:20.480 --> 00:06:21.010
+Okay?
+
+98
+00:06:21.010 --> 00:06:25.830
+So the broader point in this case is to
+think like a critic of your effect, and
+
+99
+00:06:25.830 --> 00:06:31.390
+that will inform additional analyses you
+want to do to counter those arguments.
+
+100
+00:06:31.390 --> 00:06:36.890
+And I think, if possible,
+you could get other groups of people to
+
+101
+00:06:36.890 --> 00:06:41.490
+serve in the role as an internal
+critic in order to try to help you
+
+102
+00:06:41.490 --> 00:06:46.000
+generate new ways to poke and
+prod at an exciting or
+
+103
+00:06:46.000 --> 00:06:50.780
+apparently significant effect, to poke and
+prod at it and see if it really is real.
+
+104
+00:06:53.580 --> 00:06:57.830
+Now reproducability is a big
+topic around here, Roger Peng,
+
+105
+00:06:57.830 --> 00:07:02.710
+one of the co instructors in the series
+is one of the leading researchers and
+
+106
+00:07:02.710 --> 00:07:05.130
+thinkers on the idea of reproducibility.
+
+107
+00:07:05.130 --> 00:07:09.590
+But I love this Tweet by this person, Ben
+Hamner, who I don't know, who said, When
+
+108
+00:07:09.590 --> 00:07:13.010
+you write code, keep in mind that you're
+collaborating with your future self.
+
+109
+00:07:13.010 --> 00:07:15.460
+So, for reproducibility in a report,
+
+110
+00:07:15.460 --> 00:07:19.430
+you wanna make sure that these
+reports can get regenerated.
+
+111
+00:07:19.430 --> 00:07:21.160
+You'll get the exact same numbers.
+
+112
+00:07:21.160 --> 00:07:24.720
+The report contains
+the information available
+
+113
+00:07:24.720 --> 00:07:28.370
+to reproduce all of the numbers and
+analyses in it.
+
+114
+00:07:28.370 --> 00:07:32.680
+Fortunately for
+the people that you're managing,
+
+115
+00:07:32.680 --> 00:07:37.350
+there are a lot of tools
+available now that merge
+
+116
+00:07:37.350 --> 00:07:41.530
+the data analysis and
+the report writing into a single document.
+
+117
+00:07:41.530 --> 00:07:47.880
+And the two most popular in my mind are
+knitr, which is a tool for R specifically,
+
+118
+00:07:47.880 --> 00:07:53.920
+and the idea is knitting the analysis and
+the report writing together.
+
+119
+00:07:53.920 --> 00:07:56.050
+And then IPython Notebooks
+are another one.
+
+120
+00:07:57.160 --> 00:08:01.340
+And you should highly encourage the people
+you're managing to use tools like these.
+
+121
+00:08:01.340 --> 00:08:04.900
+Maybe not these specific tools, but
+I would recommend these specific tools.
+
+122
+00:08:04.900 --> 00:08:10.990
+But tools like these, in order to make
+sure that your reports are reproducible
+
+123
+00:08:10.990 --> 00:08:16.270
+and they leave a documented trail
+
+124
+00:08:16.270 --> 00:08:21.780
+of exactly how to go from
+the data to the final analyses.
+
+125
+00:08:21.780 --> 00:08:27.054
+So these are three simple rules,
+or three broad categories I think
+
+126
+00:08:27.054 --> 00:08:32.721
+that can help improve report writing
+across a broad spectrum of areas.

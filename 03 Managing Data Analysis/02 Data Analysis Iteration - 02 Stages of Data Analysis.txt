@@ -1,0 +1,14 @@
+So the data analysis process for the most
+part involves five different steps, and these steps are basically stating and
+refining your question, and exploring the data, and more importantly,
+determining if the data that you have is appropriate for answering the
+question that you asked in the first part. The third step is building statistical
+models to summarize your data and to quantify the relationships. The fourth step is
+interpreting the results, and the fifth step is communicating those
+results to the appropriate audience. And each one of these five
+steps you can imagine there's a little cycle that you can engage in
+which involves setting expectations, collecting information, and matching those
+expectations to the data that you collect. And then revising your expectations
+based on what you've seen. So what we're gonna talk about in future
+lectures is how this little cycle, this three step cycle, applies to each
+one of the five stages of data analysis.

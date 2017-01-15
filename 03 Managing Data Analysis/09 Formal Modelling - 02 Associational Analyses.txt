@@ -1,0 +1,148 @@
+This lecture gives an example
+of an associational analysis and how to use formal modeling
+to challenge your findings. The basic form of a model in
+an associational analysis will look something like this. You'll have an outcome, y and
+you'll have a key predictor, x. And then you have maybe some potential
+confounder that will call z. And then you have some independent
+random error that we call epsilon. In addition to those factors, we have a number of parameters
+that we wanna estimate. So alpha here is the intercept. It's the value of y when x and z are zero. We have beta, which is the change in y
+associated with a one unit increase in x, adjusted for z. And then gamma is the change in y
+associated with a one-unit increase in z, adjusting for x. So, this is a linear model, and the parameter that we're trying
+to estimate here is beta. That's what tells us how our outcome
+changes along with our key predictor. Now, there are other parameters, gamma and
+alpha, that are in the model and we need to have them in the model for
+the model to work. But we're actually not
+interested in those parameters. So we sometimes call
+them nuisance parameters, because we have to estimate them, but
+we don't actually care about their value. So this is what I might
+consider to be a primary model. It's very simple, there's a key predictor
+and there's only one confounder. And so you may need to consider
+other things later on, but this is sometimes good as a primary model. On the other hand, sometimes we'll use a primary model
+that doesn't have any confounders. And then slowly add things to the mall
+to see how our results change. So the example I'm going to use here is
+going to be an advertising campaign for a new product. Imagine you're selling something and
+you're thinking you're buying ads on Facebook and you wanna know how
+effective those ads are gonna be. So ultimately what you wanna
+do is sell more products and make more money from this. And so one thing you might do is try to
+pilot a one week experiment where you buy Facebook ads for a week and
+see how it does. So this is a very simple design,
+you might say look at the one week before the ad campaign,
+the one week during the ad campaign. And then the one week after
+the ad campaign just to see how the sales numbers change
+while you're running the ads. Then you could compare the total sales for
+the three weeks during, the three weeks before and
+the three weeks after. And see if there is any reasonable
+increase in the total sales. So using this type of design and this kind of experiment what
+would you expect to see? So here's a data set that's not real, but
+it kind of represents the ideal scenario for what you might see in
+an experiment like this. So in the first seven days you have
+an average about 200 dollars per day. Then the next 7 days, this is during the campaign,
+you have an average of about $300. And then after the campaign finishes you
+have an average of, again, about $200. So it's possible to tell just from this
+graph, without doing anything fancy, that the ad campaign seems to add about
+$100 per day to the total daily sales. So, in this case,
+your primary model might be very simple, it might look something like this. Where you have Y, is the outcome,
+that would be the daily sales. And then X is just an indicator of
+whether a given day fell during the ad campaign or not. And then still your primary
+interest is on the coefficient beta which tells you how your total daily sales
+increases with the ad campaign in place. So for example, the data for this might look something like this in
+this table here where you have 21 days. And you have seven days without the
+campaign, seven days with the campaign, and seven days without. I can see that the daily sales change
+as you go in and out of the campaign. So it's a very basic setup,
+very simple, and this is kinda what you would love to
+see in your data in an ideal world. Of course, in reality,
+you will never see data like this. There will always be
+something more complicated. So here is a picture of
+what kinda more realistic data might look like from
+an experiment like this. Typically real world data are more noisy. There are other trends in the background
+that are kind of messing up your relationship. So it makes it harder to analyze the data. So you'll notice that in this
+picture there does appear to be an increase in sales
+during the campaign period. But the problem is that it seems
+like the increase started, actually before the campaign even started,
+the sales were kind of going up. And so you might wanna ask,
+well are there background trends that for some reason increase sales
+over a three week period? So it's possible that we would've
+seen higher sales in the product, even without the ad campaign,
+just because of these background trends. And so
+the question you really wanna know is, did the ads cause an increase in sales. Over and above whatever background trends
+that might of been going on that you that you're not aware of. So let's take our primary model, which is just gonna be a simple model with
+the outcome and indicator of the campaign. If we use that model, what you'll
+see is that we'll estimate beta, the increase in the daily sales due to
+the ad campaign to be $44.75, okay? Now, now let's suppose we add
+a background trend into our model. So instead of the primary model where
+we just had the key predictor and the outcome, we fit the following model. Which has a quadratic trend for time, so
+this allows for kinda a little curvature, and allows for kind of rising and
+falling of the daily total sales. Okay, so if we use this model, and
+we still try to estimate beta, what we get is that the,
+our estimate of beta is $39.86. So that's somewhat less than the beta
+that we estimated for the primary model. And recall that this is the increase
+in sales due to the ad campaign. So just for comparison, we can fit
+actually even more complex model. We could have a fourth order
+polynomial to model the trend, just in case there might be something more
+complicated going on in the background. And then if we were to fit that model,
+this gives us a beta of $49.10 per day. So under this model, the ad campaign added
+an extra $49.10 per day to our sales. So we have three models. One primary model and
+two secondary models. And so, model one tells us that
+our estimate of beta is $44.75. Model two tells us it's $39.86, and
+model three tells us it's $49.10. So, what do we do with this? So there are a number of ways to
+evaluate your formal modeling and your examination of primary and
+secondary models. The first thing you want to
+look at is the effect size. So the effect size essentially is what
+is the value of beta that you estimate. And is it big or is it small, or how do they compare to each
+other from the different models? So the three different models represent
+a range of going from roughly $39 to $49. And so you might wanna ask
+yourself is that a big range? Do you care about those differences? It's a little hard to answer that
+question without knowing kind of what the context is and
+what your situation is. For example, if the cost of the ad
+campaign were really low, and it didn't really matter how much you
+made as long as you made something. Then maybe you don't care
+whether it's $39 or $49. As long as you make something back,
+then the ad campaign's worth it. On the other hand, if the ad
+campaign were really expensive, so maybe it's $20 a day to run these ads. Then you might care which end of
+the range you fall on when you run this ad campaign, because maybe $39 is
+not worth it, but $49 would be worth it. So ultimately, the question you're asking is is it
+worth the risk of buying these ads. Given the evidence that you've seen from
+these different models showing you that there might be a range of say,
+$39 $49 increase in total sales during the period of the ad campaign. The second factor you wanna
+think about is plausibility. So even though we fit
+many different models, not all of them are equally plausible,
+okay? So the primary model may not be plausible,
+because it didn't incorporate the possibility of any sort
+of background trend, okay? And likely with real world data, there's gonna be lots of things
+going on in the background. And you don't want to just forget about
+them because they could affect how your sales go, and you may think your
+campaign is having a big effect. When actually there's something just going
+on in the background that's moving your sales numbers. Now the third model that we did which
+had this kind of fourth order polynomial was a relatively complex
+model to capture a trend. And it may be too complex or more than we need to capture a very
+simple smooth trend in the background. And so model two seems kind of reasonable. We allow for this background trend. It's a polynomial model. But it's not very complicated, or at least not overly complicated,
+to try to capture this trend. So whether a model could
+be considered more or less plausible will depend on
+your knowledge of the subject. And your ability to map real world events
+to mathematical formulations of the model. The last concept to think of is parsimony. When different models tell the same story,
+for example, if you don't care about the range
+of $39 to $49, then it's sometimes better to choose the simpler
+model or the model with fewer parameters. And the reason is it's usually easier
+to tell a story about the data when you have fewer parameters and
+so this makes the model more useful. And then finally a simpler
+model would be more efficient because you're using more data to
+estimate fewer parameters and so that's generally good from
+a statistical standpoint. That will afford you to have
+less uncertainty about those parameter estimates because you're able to
+use more data for each of the parameters. So in this example,
+this was an associational analysis, and it focused on estimating
+the association between two features. Total sales and the ad campaign, while
+adjusting for other confounding factors, like this potential background trend. The primary models kind of
+capture the basic relationship. While the secondary models
+are used to kind of adjust for different factors in different ways. So we had two different models kind of
+adjusting for the background trends. So what conclusion you make ultimately
+may depend on outside factors like cost, or kind of timing issues. And so you have to factor all this in
+when you kind of ultimately draw your conclusions about what to do or
+what decisions to make. And also, you may have to think about
+the plausibility of the various models that you've chosen. To determine what evidence you're gonna
+weight more heavily than other evidence. So this is the basic kinda outline
+of an associational analysis. Obviously there'll often be many more
+things that you're gonna wanna do. But they'll generally follow this
+framework, and you're gonna wanna iterate between kinda fitting primary models and
+secondary models. And so you get to an answer that you
+can use or can make a decision on.

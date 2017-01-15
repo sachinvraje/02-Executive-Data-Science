@@ -1,0 +1,103 @@
+No matter how well you've put
+the data science team together, there can often be problems when the data
+science team is interacting with people outside of the team but
+within your organization. So, this lecture's a little bit
+about what those problems are and how to deal with them. So, the first one is lack of interaction. So, this can happen if you, especially if you have a data science
+team that's stand alone, it's on its own. And there's not necessarily a standing,
+or regular commitment, to be embedded it with, or
+sitting with an external unit. So, here if there's a lack of interaction,
+you have to identify what the problem is. The problem can either be
+with the data scientists. They don't know how to contact the person. They don't know what
+questions to be asking or it could be with the external unit. So, sometimes that lack of communication
+is because there is nothing to do. So, if there's no communication,
+you need to identity, is this because there's not actually
+a problem for them to be solving. In which case it's good to repurpose
+that data scientist's time on to a different project. Or to identify, is it because the external
+person isn't necessarily sending over, hey, we need to have those
+projections by the end of the week. They're just not contacting
+the data scientists. Or is it because your data scientist is so
+busy working on their problem, that they're not interacting. They're not emailing and contacting
+the person that they're working with. So again, this will depend a little
+bit on the scale of the project. If you're building a quick
+machine learning algorithm, there should be lots of quick interaction. If you're building out a huge
+scalable infrastructure for data management, it might take
+a little bit longer before there's interaction with the leadership team
+about that, and that's to be expected. So if there's this lack of communication,
+there's a couple of options. You can take a more active role. You can start initiating the conversation, you can send emails that will
+connect people together. Again, you have to be very mindful of
+the balance of not interrupting time for data scientists and data engineers. Those sort of uninterrupted moments
+are when most of the work gets done. And again, if you need to move personnel
+from a project, whether it's for lack of motivation,
+lack of good communication, or because there's not really a data science
+project they're gonna be working on, that's an important part of a data
+science manager, or an executive's job. Another reason that you might have to
+get involved is lack of empowerment. So this often happens if the data
+scientist is actually embedded in an external team. And so, if that happens, often the data
+scientist will feel a little bit isolated and they might not feel
+empowered to make decisions. So the external unit is in charge. They have to make some
+decisions about marketing. Or they have to make some decisions about
+how they're gonna take that data and make a decision for a product or so forth. And since they don't necessarily
+make those decisions, they might feel like I keep
+presenting my data ideas, I keep showing them experimental results,
+and they just don't listen. They don't wanna answer to those data, they don't wanna sort of use
+the information that I'm presenting. So the first thing that you need
+to do is understand both sides, cuz that can happen in one of two ways. One, the person that they're working with,
+the collaborator they're working with, can just be ignoring their advice,
+can be ignoring their data analysis. In which case, it's up to you to
+convince the other person, and to sort of take the initiative to explain why
+this is important, why using the data will help you do a better experiment, will get
+you better results at the end of the day. On the other hand, it could be because
+the data scientist is just sort of pushing ideas beyond
+the scope of the data, or they're not getting the data analysis
+done in a way that's convincing for the external person to sort of look at and
+interact with. So you kind of have to
+understand both sides. And then, it's sort of up to the data
+science manager to take the heat, particularly in a situation where say,
+leadership is asking for this machine learning algorithm to be done last week,
+and your data scientist is telling you, well, it takes six weeks to build
+a machine learning algorithm to do this. Then, it's up to the data science
+manager to collect that information, present it, and take the heat if things aren't going the
+way that everybody hoped they will take. So, one thing that's sort of a common
+misconception about data science or data engineering is that it's
+basically instantaneous. Because computers are so fast,
+people think that also data science or machine learning is
+really fast to develop. But sometimes it isn't. Sometimes it takes a long time to build
+a really good machine learning algorithm. And so, part of your role is
+sort of being the intermediate. Being the explainer. Why does it take so long? And then providing internal
+support to your data science team. And whether that's just being an ear for
+them to talk to. Whether it's by suggesting new ideas. And very often it's by
+identifying when to stop. So data science, data engineering and data science are often areas where
+perfect is the enemy of the very good. Once you have a pretty good solution, that
+might be enough to get everything done. And so, the data scientists or
+data engineer, because they have pride in what
+they're doing, will sort of try to optimize that machine learning
+algorithm for the last 3% accuracy, or save at just a little bit more computing
+power on the data engineering side. Sometimes that's necessary,
+but sometimes it isn't, and it's up to the data science manager
+to sort of pay attention and manage when you're actually solving the
+data science problem that matters versus when you're chasing something that
+doesn't maybe necessarily matter. The last problem can be
+lack of understanding. So, this could be because
+the data science team doesn't understand the problem
+that they're working on. This commonly happens when data
+scientist act in a consulting roll, when they just one off, see people from
+your organization, or bring one question, how does this t test work, or
+how does this random force work. Then, they might not actually
+understand the problem, and so they might give advice
+that isn't very good. Another way that this could work is,
+the marketing team doesn't understand what data science can do, or the product team
+doesn't understand what data science can do, or any collaborator doesn't
+understand what data science can do. And so it's up to you to sort of help make
+sure that everyone knows what's possible, what's not possible. And then, you can do this, you can manage this process in
+a couple of different ways. One, make sure that, if you have
+a separate dedicated data science team, that they interact with other groups in
+a regular way, that they're embedded for periods of time. Also, that there's presentations
+regularly to the organization both about capabilities and about new
+techniques and about just what's going on. And then advertising the data to
+the science team within the organization. Make sure that everyone knows, oh, that's
+a problem that the data science team can handle or actually we don't have any data
+on that but it'd be cool to collect it. Is that something that we
+actually need to collect data on? Those are the sorts of roles that can
+help build a understanding within the organization about what data
+science is and how it can help. So those are a couple of the ways that
+you could help minimize sort of external conflicts within the data science team.

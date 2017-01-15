@@ -1,0 +1,532 @@
+WEBVTT
+
+1
+00:00:00.700 --> 00:00:03.530
+There are two kinds of communications
+that you want to engage in
+
+2
+00:00:03.530 --> 00:00:05.500
+while you're working
+through a data analysis.
+
+3
+00:00:05.500 --> 00:00:09.368
+This lecture talks about the more routine
+kinds of communications that you do on
+
+4
+00:00:09.368 --> 00:00:10.300
+a day to day basis.
+
+5
+00:00:15.090 --> 00:00:18.560
+Communication is fundamental
+to good data analysis.
+
+6
+00:00:18.560 --> 00:00:22.180
+That's because data analysis
+is a highly verbal process and
+
+7
+00:00:22.180 --> 00:00:26.580
+requires regular back and forth and
+discussion to move the process forward.
+
+8
+00:00:26.580 --> 00:00:31.090
+In this kind of setting, both informal and
+formal communications are very important
+
+9
+00:00:31.090 --> 00:00:34.895
+and you want to be able to coordinate
+communication between members or
+
+10
+00:00:34.895 --> 00:00:39.025
+with yourself to make sure that
+the process is constantly moving forward.
+
+11
+00:00:39.025 --> 00:00:41.725
+In this lecture, I will talk more about
+the kind of routine communications and
+
+12
+00:00:41.725 --> 00:00:44.595
+the purposes of those routine
+communications as the data
+
+13
+00:00:44.595 --> 00:00:47.275
+analysis project moves forward.
+
+14
+00:00:48.285 --> 00:00:52.770
+Routine communication is an important tool
+for performing any good data analysis and
+
+15
+00:00:52.770 --> 00:00:56.380
+it's important to realize that
+communication is both a tool and
+
+16
+00:00:56.380 --> 00:00:57.890
+a product of data analysis.
+
+17
+00:00:57.890 --> 00:01:00.675
+Ultimately, when you've completed
+a data analysis project,
+
+18
+00:01:00.675 --> 00:01:03.605
+you're gonna wanna communicate your
+findings and your results to an audience.
+
+19
+00:01:03.605 --> 00:01:08.010
+That's communication as a product but
+as you go through the whole process,
+
+20
+00:01:08.010 --> 00:01:11.860
+you want there to be constant
+communication and dialog so
+
+21
+00:01:11.860 --> 00:01:15.640
+that you can assess findings and
+challenge them constantly
+
+22
+00:01:15.640 --> 00:01:18.170
+to make sure that you get
+the best results that you can.
+
+23
+00:01:18.170 --> 00:01:22.630
+Any good data analyst
+is gonna be engaged in
+
+24
+00:01:22.630 --> 00:01:26.900
+regular informal communication multiple
+times through the data analysis process.
+
+25
+00:01:26.900 --> 00:01:31.670
+They're also gonna keep in mind the way
+in which the ultimate results can be
+
+26
+00:01:31.670 --> 00:01:35.810
+communicated to a wider audience and think
+about what's the best way to do that.
+
+27
+00:01:37.190 --> 00:01:40.840
+It's important to ensure that
+the people in the data science team or
+
+28
+00:01:40.840 --> 00:01:45.030
+the analysts stay on task with these
+two basic communication goals.
+
+29
+00:01:46.340 --> 00:01:50.192
+The basic purpose of a routine
+communication is to gather information,
+
+30
+00:01:50.192 --> 00:01:54.855
+you gathered communication by
+communicating your results and
+
+31
+00:01:54.855 --> 00:01:58.870
+by taking in the responses
+from your audience.
+
+32
+00:01:58.870 --> 00:02:02.390
+Hopefully, that will inform the next
+steps of your data analysis.
+
+33
+00:02:02.390 --> 00:02:06.310
+The form that a routine communication
+takes depends on the goal or
+
+34
+00:02:06.310 --> 00:02:08.842
+what kind of information
+needs to be collected.
+
+35
+00:02:08.842 --> 00:02:14.926
+For example, you might need an answer to
+a very focused and technical question,
+
+36
+00:02:14.926 --> 00:02:20.550
+it's often just a clarification or about
+the details of a data set or a model.
+
+37
+00:02:22.580 --> 00:02:24.720
+Ultimately, you want to
+gather a single fact.
+
+38
+00:02:25.770 --> 00:02:29.950
+At the next level, you might want to
+get some feedback about results that
+
+39
+00:02:29.950 --> 00:02:34.100
+are puzzling or unexpected as you
+were analyzing your data set.
+
+40
+00:02:34.100 --> 00:02:37.680
+In the last level, you may not have
+any specific question whatsoever but
+
+41
+00:02:37.680 --> 00:02:40.210
+you want to gather information
+about the overall process and
+
+42
+00:02:40.210 --> 00:02:44.410
+get some first impressions and
+feedback about what you're doing, so
+
+43
+00:02:44.410 --> 00:02:47.350
+you can refine your data
+analysis even further.
+
+44
+00:02:47.350 --> 00:02:51.360
+It's important to kind of classify
+the purpose of a given communication and
+
+45
+00:02:51.360 --> 00:02:55.340
+to provide the appropriate environment and
+audience for that communication.
+
+46
+00:02:55.340 --> 00:02:57.960
+Just a few quick examples.
+
+47
+00:02:57.960 --> 00:03:02.100
+For example, when you're at a narrow
+level, you might want to say
+
+48
+00:03:02.100 --> 00:03:06.040
+clarify the coding of a variable
+because maybe the metadata's unclear.
+
+49
+00:03:06.040 --> 00:03:08.220
+Maybe if a variable is labeled zero or
+
+50
+00:03:08.220 --> 00:03:12.690
+one, you may not know what it means
+by zero and what is meant by one.
+
+51
+00:03:12.690 --> 00:03:17.030
+There may be a specific person that you
+can talk to to answer that question and
+
+52
+00:03:17.030 --> 00:03:20.010
+the communication will be very brief and
+to the point and
+
+53
+00:03:20.010 --> 00:03:22.120
+the answer will just be a single fact,
+essentially.
+
+54
+00:03:23.250 --> 00:03:26.610
+At the next level, you might be
+doing exploratory data analysis and
+
+55
+00:03:26.610 --> 00:03:29.590
+you are looking at the data and you see
+something that's really unexpected,
+
+56
+00:03:29.590 --> 00:03:32.050
+remember it's part of the EDA process.
+
+57
+00:03:32.050 --> 00:03:35.610
+You always set your expectations for
+what the data should look like and
+
+58
+00:03:35.610 --> 00:03:38.910
+then when you look at the data or
+you make a plot or a table and
+
+59
+00:03:38.910 --> 00:03:42.050
+it doesn't look like what you expected,
+and you can't quite explain,
+
+60
+00:03:42.050 --> 00:03:45.730
+it you may need to communicate
+that to a person or
+
+61
+00:03:45.730 --> 00:03:50.400
+a group of people in order to get
+some feedback or answers about that.
+
+62
+00:03:50.400 --> 00:03:51.840
+This might take the form or
+
+63
+00:03:51.840 --> 00:03:56.890
+an informal meeting with a few people
+to present some preliminary tables or
+
+64
+00:03:56.890 --> 00:04:01.890
+figures, you may need to show
+the data in terms of visualizations.
+
+65
+00:04:01.890 --> 00:04:05.550
+At the highest level,
+you may have reached a major milestone, or
+
+66
+00:04:05.550 --> 00:04:08.830
+maybe you've developed a primary model,
+and
+
+67
+00:04:08.830 --> 00:04:11.389
+you want to get some feedback
+on what you've done so far.
+
+68
+00:04:12.560 --> 00:04:15.800
+Part of this is just this idea that you
+always wanna be checking to see that you
+
+69
+00:04:15.800 --> 00:04:19.100
+haven't missed anything, you wanna be
+challenging your results all the time.
+
+70
+00:04:19.100 --> 00:04:22.630
+This may require a slightly larger
+audience, maybe a team meeting or
+
+71
+00:04:22.630 --> 00:04:26.100
+a group meeting,
+where you present your results and
+
+72
+00:04:26.100 --> 00:04:27.630
+get some feedback on what you've done so
+far.
+
+73
+00:04:29.580 --> 00:04:32.320
+There are a couple of just core
+concepts that are important for
+
+74
+00:04:32.320 --> 00:04:36.200
+any type of routine communication
+that you wanna think about.
+
+75
+00:04:36.200 --> 00:04:37.670
+The first, of course, is the audience.
+
+76
+00:04:37.670 --> 00:04:43.350
+To the extent that you might be able to
+control the audience that you present to,
+
+77
+00:04:43.350 --> 00:04:46.740
+you wanna make sure that you have
+the right people or the right person, so
+
+78
+00:04:46.740 --> 00:04:50.730
+that you can get the most efficient
+answers to your question.
+
+79
+00:04:50.730 --> 00:04:52.678
+It's important to know your audience and
+
+80
+00:04:52.678 --> 00:04:56.860
+make sure you've got the right people
+in the room to get the right feedback.
+
+81
+00:04:56.860 --> 00:04:59.040
+The next thing to think
+about is the content.
+
+82
+00:05:00.120 --> 00:05:03.530
+It's important to be prepared,
+so that you can be focused and
+
+83
+00:05:03.530 --> 00:05:07.360
+concise about what you're trying to say or
+what you're trying to communicate.
+
+84
+00:05:07.360 --> 00:05:11.160
+But also it's important to
+provide sufficient information so
+
+85
+00:05:11.160 --> 00:05:14.199
+that the audience can understand where
+you're coming from and where you're going.
+
+86
+00:05:15.530 --> 00:05:18.360
+Especially, if you have
+an interdisciplinary type of audience,
+
+87
+00:05:18.360 --> 00:05:21.220
+you wanna make sure that everyone's on
+the same page at the very beginning.
+
+88
+00:05:22.450 --> 00:05:27.350
+As far as the style is concerned, I
+generally find it useful to avoid a lot of
+
+89
+00:05:27.350 --> 00:05:32.520
+jargon because as soon as the audience
+grows to more than just a few people, it's
+
+90
+00:05:33.570 --> 00:05:37.060
+likely that different people will have
+different expertise, and different skills.
+
+91
+00:05:37.060 --> 00:05:39.090
+You're not gonna want to use
+very technical jargon that will
+
+92
+00:05:39.090 --> 00:05:42.450
+only be understood by a small
+subset of people, try to
+
+93
+00:05:42.450 --> 00:05:46.965
+use language that'll be understandable
+to a broader range of people.
+
+94
+00:05:46.965 --> 00:05:51.620
+Try to design your figures and
+tables so that people with a broad
+
+95
+00:05:51.620 --> 00:05:54.360
+background will be able to understand
+what's going on in those figures and
+
+96
+00:05:54.360 --> 00:05:56.289
+tables with just a little
+bit of explanation.
+
+97
+00:05:57.620 --> 00:06:01.070
+Finally, it's just your attitude
+when it comes to communication,
+
+98
+00:06:01.070 --> 00:06:04.480
+and it's important to have an open and
+collaborative attitude so the audience
+
+99
+00:06:04.480 --> 00:06:09.830
+is fully engaged in giving you feedback
+and helping you out with your analysis.
+
+100
+00:06:09.830 --> 00:06:13.960
+The point is not really to think about
+yourself as defending the analysis but
+
+101
+00:06:13.960 --> 00:06:17.690
+rather to work to get their input so
+you can do your best work.
+
+102
+00:06:17.690 --> 00:06:21.700
+This is a basic sketch of
+kind of routine communication
+
+103
+00:06:21.700 --> 00:06:23.840
+as you're going through
+the data analysis process.
+
+104
+00:06:23.840 --> 00:06:28.590
+This may be something that you
+do without much thinking but
+
+105
+00:06:28.590 --> 00:06:31.225
+actually, it's a very important
+part of the data analysis process.
+
+106
+00:06:31.225 --> 00:06:35.812
+It's important that the communication
+works between team members,
+
+107
+00:06:35.812 --> 00:06:40.786
+between managers and team members and
+that it's a continuous process to get
+
+108
+00:06:40.786 --> 00:06:44.220
+feedback and
+improve the quality of data analysis.

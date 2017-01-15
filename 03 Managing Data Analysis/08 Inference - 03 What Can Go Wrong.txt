@@ -1,0 +1,103 @@
+There are a number of things that can
+affect the quality of inferences that we make from data. This lecture talks about what
+can go wrong with inference. So the basic problems that occur
+when we're making inference, usually result from a violation
+of the assumptions that we make about the population, the sampling
+process or the model for the population. So, I'm kinda talk about
+each one of these things and kinda what happens when there
+is some sort of violation. The first problem is that
+the population is not well-defined. So this is a big problem, because a vaguely defined population
+leads to vague inferences. The sign that you have a vaguely defined
+population is that often the results are uninterpretable or
+difficult to interpret. And so this is really a problem that
+isn't really solved by the data or affixing the data. Really, it's about thinking a little bit
+more clearly about what type of population you're trying to make an inference about. Now the second problem you can have is
+an incorrectly specified sampling process. Now what this results in is that
+the sample data will not be representative of the population. Often, this is called a convenient sample. So when you collect data, you collect
+data in the most convenient way and it may just involve. For example, if you're studying
+people in an observational study or in an experimental study, you just kinda
+take whatever people come your way and enroll them in the study. This may not involve a sampling process
+that represents your population. It's often just a convenient sample. And so what the result of this is that
+you'll have a what's called selection bias, so the people in your study will
+represent a selection of your population, but not really the entire population. And so
+the result is that if you fit any models, if you estimate any characteristics from
+your data, those things that you estimate won't actually apply to the target
+population that you originally designated. They will apply to some other population
+that you may not be able to accurately define. So even if your model for the population
+is correct and even if you have a sense of what your target population is if your
+sampling process is not well specified or well characterized or
+if you don't understand it properly, then the data that you collect and
+the inferences that you make will only apply to some other population that you
+haven't really well characterized yet. So that's what can result from kind
+of incorrectly specifying your sampling process. The last part is incorrectly specifying
+the model for your population. Now recall that we said previously
+that all models are wrong. And for sure, you will incorrectly
+specify the model for the population. And so really the goal is not to get the
+correct model, but rather to get a model that's a reasonable approximation for
+what the population looks like. And so if you have the wrong model,
+a couple of things may occur. First, there may be
+uncertainty in your estimates from the data that are not accounted for. So you may underestimate how certain you
+are about certain characteristics of the population. Any parameters that you estimate from your
+model may end up being uninterpretable. And so if your model's incorrect, it doesn't correctly reflect
+the relationships in your data in your population, then your parameters that you
+estimate will not really apply to that population and
+may be difficult to interpret. Furthermore, in prediction
+types of problems. If you don't have the right model, then
+it's pretty straightforward to see that your predictions just may be poor and
+they may have a high error rate. So really what you need to know is kinda
+what are the questions that you need to be asking when you're involved
+in a data analysis process? And so the three basic questions related
+to the different kinds of violations that you might encounter when doing inference. So the first is can we
+characterize the population? That's a very simple question and the solution is to really just
+do more thinking beforehand. Before you engage in the inference
+process, just take a little bit of extra time to think about what the population is
+and maybe engage in experts in this area. They may be inside or
+outside of your organization. The second question you wanna ask is
+do we understand the sampling process? So what you wanna do about this is you can
+either collect your own data in which case you can specify what the sampling
+process is going to be. You can maybe collect auxiliary data
+about the population characteristics. So if you have auxiliary data about
+the population, maybe certain features of the population, then you can quantify
+the differences between the sample that you collect and the auxiliary data on the
+population to see how different they are. For example, you might have data on
+the sex of people in your study. And so you might want to know, well if the
+population is roughly 50, 50 male, female, but your dataset is say, 70, 30 male,
+female, then you can characterize that difference between the data you collected
+and the population your trying to target. Again, you can be more specific about
+the differences between the two. So auxiliary data about
+the population can be very useful for characterizing any sort of selection
+bias you might have in your sample. The last question you want to ask is
+do you have an appropriate model for the population? It's not going to be a perfect model, but
+you hope it's a reasonable approximation. This can be kind of addressed to
+a thorough exploratory data analysis or by using things, for example,
+things like robust methods for inference when you're
+fitting statistical models. Another approach is to
+use very flexible models. Like machine learning methods
+that are useful for making very accurate predictions without you having to
+specify very carefully what the model is. Often, lots of machine learning types of
+techniques can just learn the model from the data without you having
+to be very specific about it. That can be very useful when you don't
+have a good understanding about what the relationships of the population are. The final challenge to making good
+inferences is sampling variability. Now I've left this to the end for
+a reason, because sampling variability will exist
+even if you've done everything else right. So you've defined the population,
+you've described the sampling process, you've developed a reasonable model for
+the population. By virtue of the fact that
+you are sampling data, you will introduce uncertainty,
+because you don't have all the data. And so every time you draw a sample,
+it'll be slightly different and so anything you estimate about the population
+will be slightly different every time you sample data. And so we'll talk a little bit more about
+this in the lecture about interpreting data analysis. But the important thing to know here
+is that you should always be asking for a measure of uncertainty along with any
+estimate that's obtained from the data. So any summary statistic or any model parameter that you
+can estimate from the data, you should always be asking for a measure
+of uncertainty that comes along with it, because there always will be uncertainty
+if you're sampling data from a population. So just to summarize briefly, always think
+about what the population's going to be. Always assess the sampling process and
+think about differences between the data that you collect and the population that
+you're trying to make inferences to. Always try to diagnose your model
+as carefully as possible or use a very flexible method to
+kind of model your population. And lastly, always require
+a measure of uncertainty for any estimate that you draw from the data. So these are the kinds of things that
+can go wrong with inferences and how you can try to protect
+yourself from these things.

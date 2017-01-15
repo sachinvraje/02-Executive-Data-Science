@@ -1,0 +1,657 @@
+WEBVTT
+
+1
+00:00:03.090 --> 00:00:07.140
+So no matter how well you set up your
+data science team, and no matter how nice
+
+2
+00:00:07.140 --> 00:00:12.210
+the personalities are, there will always
+be some potential internal difficulties.
+
+3
+00:00:12.210 --> 00:00:15.950
+Some of these are related to personalities
+and interactions between people.
+
+4
+00:00:15.950 --> 00:00:18.555
+Some of them are related to
+the way data scientists and
+
+5
+00:00:18.555 --> 00:00:20.130
+data engineers tend to work.
+
+6
+00:00:20.130 --> 00:00:24.440
+So, it's up to you to sort of set up an
+environment where these sorts of problems
+
+7
+00:00:24.440 --> 00:00:29.170
+are minimized and it's possible to sort
+of keep the process moving as quickly and
+
+8
+00:00:29.170 --> 00:00:32.110
+as sort of friendly way as possible.
+
+9
+00:00:32.110 --> 00:00:34.910
+So the first thing they can often happen
+is there can be interpersonal conflict.
+
+10
+00:00:34.910 --> 00:00:39.050
+Now this happens in any organization, but
+obviously when you're dealing with sort of
+
+11
+00:00:39.050 --> 00:00:43.070
+heavily quantitative folks who often
+are maybe a little bit introverted and
+
+12
+00:00:43.070 --> 00:00:46.910
+maybe have a little bit less interpersonal
+interaction than people in other sort of
+
+13
+00:00:46.910 --> 00:00:51.350
+external units might have, you can
+have some difficulties of interaction.
+
+14
+00:00:51.350 --> 00:00:55.150
+So I think it's very helpful to right
+up front have a policy on the Code
+
+15
+00:00:55.150 --> 00:00:56.220
+of Conduct.
+
+16
+00:00:56.220 --> 00:00:58.330
+This policy can cover all sorts of things,
+
+17
+00:00:58.330 --> 00:01:00.270
+but it should definitely
+cover all of the biggies.
+
+18
+00:01:00.270 --> 00:01:03.600
+Obviously you don't want to any
+sort of put downs on the basis of
+
+19
+00:01:03.600 --> 00:01:07.670
+sexual orientation or on the basis
+of race or on the basis of sex.
+
+20
+00:01:08.980 --> 00:01:11.150
+All that sort of thing can be
+built into the policy, but
+
+21
+00:01:11.150 --> 00:01:15.620
+it can also cover more subtle things and
+data science specific things.
+
+22
+00:01:15.620 --> 00:01:19.600
+So for example, if there's going to be
+code review, if one person is gonna review
+
+23
+00:01:19.600 --> 00:01:23.790
+someone else's code, you might set up the
+parameters for how that's gonna happen.
+
+24
+00:01:23.790 --> 00:01:26.570
+Are they going to make the suggestions?
+
+25
+00:01:26.570 --> 00:01:30.620
+Are they going to immediately submit
+changes or fixes to people's code?
+
+26
+00:01:30.620 --> 00:01:33.890
+Are they gonna do that in a way where
+they communicate with the person who
+
+27
+00:01:33.890 --> 00:01:35.960
+originally wrote the code or not?
+
+28
+00:01:35.960 --> 00:01:37.500
+When people are reviewing
+each other's code and
+
+29
+00:01:37.500 --> 00:01:40.250
+in group meeting how are they
+supposed to communicate?
+
+30
+00:01:40.250 --> 00:01:42.020
+Are they supposed to be critical?
+
+31
+00:01:42.020 --> 00:01:44.450
+How are they supposed to be impartial?
+
+32
+00:01:44.450 --> 00:01:46.490
+How are they supposed to
+interact with each other?
+
+33
+00:01:46.490 --> 00:01:49.330
+Now this seems a little bit pedantic
+to have these sorts of things set up in
+
+34
+00:01:49.330 --> 00:01:51.170
+advance, this sort of policy, but
+
+35
+00:01:51.170 --> 00:01:53.720
+it can really save you a lot
+of trouble in the end run.
+
+36
+00:01:53.720 --> 00:01:56.291
+If you up front explain,
+here are the exceptions for
+
+37
+00:01:56.291 --> 00:01:58.650
+how our organization is gonna run.
+
+38
+00:01:58.650 --> 00:02:03.030
+It also helps, in the data science
+organization, like I said several times,
+
+39
+00:02:03.030 --> 00:02:06.540
+there's often uncomfortable truths
+that you discover with data.
+
+40
+00:02:06.540 --> 00:02:09.340
+Whether it's something you
+didn't quite expect or
+
+41
+00:02:09.340 --> 00:02:12.800
+a whether its a product or
+a machine learning algorithm that failed.
+
+42
+00:02:12.800 --> 00:02:15.770
+And so having a Code of
+Contact in place to prevent
+
+43
+00:02:15.770 --> 00:02:19.420
+personal hurt feelings Is
+a critical component of this.
+
+44
+00:02:19.420 --> 00:02:22.500
+In that Code of Conduct it also makes
+a lot of sense to explain what you mean by
+
+45
+00:02:22.500 --> 00:02:23.910
+success and failure.
+
+46
+00:02:23.910 --> 00:02:28.110
+So, if you only define success by
+the machine learning algorithm works or
+
+47
+00:02:28.110 --> 00:02:30.310
+the software never has bugs in it or
+
+48
+00:02:30.310 --> 00:02:33.550
+the hardware never goes down,
+there will be a lot of failure.
+
+49
+00:02:33.550 --> 00:02:37.860
+But if you define success
+as identifying problems,
+
+50
+00:02:37.860 --> 00:02:42.560
+tackling those problems, and not always
+getting an answer that everyone expects.
+
+51
+00:02:42.560 --> 00:02:46.370
+You kind of reduce the pressure on any
+individual analysis, and that allows
+
+52
+00:02:46.370 --> 00:02:50.180
+people to act sort of more impartially,
+really let the data speak for itself.
+
+53
+00:02:51.340 --> 00:02:53.760
+In addition to this policy you
+need to have open communication.
+
+54
+00:02:53.760 --> 00:02:56.480
+Allow people to communicate directly
+with you, and with each other,
+
+55
+00:02:56.480 --> 00:02:58.970
+about whether that policy
+is being enforced.
+
+56
+00:02:58.970 --> 00:03:03.900
+And make sure that they feel empowered to
+have that conversation with each other.
+
+57
+00:03:03.900 --> 00:03:07.320
+This is really critically important,
+both in a general sense, but
+
+58
+00:03:07.320 --> 00:03:09.050
+also very specifically for data science.
+
+59
+00:03:09.050 --> 00:03:14.620
+It needs to be a policy that open
+criticism of each others data analysis,
+
+60
+00:03:14.620 --> 00:03:19.800
+or other people's data infrastructure,
+is accepted and embraced.
+
+61
+00:03:19.800 --> 00:03:23.650
+But at the same time, that criticism
+isn't made to make people feel awful or
+
+62
+00:03:23.650 --> 00:03:27.030
+isn't used to hurt people, it's just
+used to improve the entire process.
+
+63
+00:03:27.030 --> 00:03:31.800
+So that if you organize it in that way,
+people will be open to criticism and
+
+64
+00:03:31.800 --> 00:03:35.420
+they'll be willing to sort of make
+changes if they don't feel like
+
+65
+00:03:35.420 --> 00:03:38.140
+it's gonna hurt their job and
+their job prospects.
+
+66
+00:03:38.140 --> 00:03:38.880
+The other thing is,
+
+67
+00:03:38.880 --> 00:03:43.210
+in the extreme circumstance where people
+are not adhering to the Code of Conduct,
+
+68
+00:03:43.210 --> 00:03:47.200
+for either sort of general purpose reasons
+or for data science specific reasons,
+
+69
+00:03:47.200 --> 00:03:50.750
+it's very useful to have outlined what
+are the steps that are gonna take place.
+
+70
+00:03:50.750 --> 00:03:52.150
+What's the enforcement?
+
+71
+00:03:52.150 --> 00:03:53.460
+Whether it's something like,
+
+72
+00:03:53.460 --> 00:03:57.010
+I'm gonna point out when you're
+behaving incorrectly in a code review.
+
+73
+00:03:57.010 --> 00:03:59.940
+Or whether it's something
+like at a certain stage,
+
+74
+00:03:59.940 --> 00:04:02.760
+you'll be barred from coming to this
+meeting for this period of time.
+
+75
+00:04:02.760 --> 00:04:04.600
+Whatever it is that you need to establish.
+
+76
+00:04:04.600 --> 00:04:06.220
+It's better to say it up front,
+
+77
+00:04:06.220 --> 00:04:09.760
+rather than to invent policies on the fly
+when dealing with a data science team,
+
+78
+00:04:09.760 --> 00:04:12.290
+especially when you're dealing with
+diverse people who have different
+
+79
+00:04:12.290 --> 00:04:15.010
+expertise, and maybe different
+expectations about what's going on.
+
+80
+00:04:16.660 --> 00:04:18.300
+Another thing that you need to deal with,
+or
+
+81
+00:04:18.300 --> 00:04:22.610
+another problem that often comes up
+internally, is inter-meeting slowdowns.
+
+82
+00:04:22.610 --> 00:04:25.360
+So especially if you've established
+regular individual meetings,
+
+83
+00:04:25.360 --> 00:04:28.740
+regular group meetings, you hope to see
+progress at each of those meetings.
+
+84
+00:04:28.740 --> 00:04:32.100
+You hope to see problems getting solved or
+at least tackled.
+
+85
+00:04:32.100 --> 00:04:34.370
+But sometimes that slows down,
+and like I mentioned,
+
+86
+00:04:34.370 --> 00:04:36.580
+that can often be for
+very trivial reasons.
+
+87
+00:04:36.580 --> 00:04:39.780
+There's a little bug in the code and
+you just can't see it.
+
+88
+00:04:39.780 --> 00:04:44.140
+So you want somebody else to take a look
+at your code and help you fix it and
+
+89
+00:04:44.140 --> 00:04:45.800
+get unstuck.
+
+90
+00:04:45.800 --> 00:04:48.120
+So the key here is to
+identify the core issues.
+
+91
+00:04:48.120 --> 00:04:49.180
+What's the real problem?
+
+92
+00:04:49.180 --> 00:04:52.370
+Is it that the person
+isn't self motivating?
+
+93
+00:04:52.370 --> 00:04:54.820
+Is it that they're not chasing,
+they don't know where to go to look for
+
+94
+00:04:54.820 --> 00:04:55.840
+the right answers?
+
+95
+00:04:55.840 --> 00:04:59.220
+Is it that the interaction between the
+data engineers and the data scientists, or
+
+96
+00:04:59.220 --> 00:05:01.690
+the data scientists and
+the external people, it's not happening?
+
+97
+00:05:02.820 --> 00:05:06.640
+So you can either deal with that by
+increasing your interaction, getting more
+
+98
+00:05:06.640 --> 00:05:10.790
+directly involved, emailing to ask
+questions about how things are going.
+
+99
+00:05:10.790 --> 00:05:13.890
+That's sort of a delicate balance, because
+like I mentioned, data scientists and
+
+100
+00:05:13.890 --> 00:05:16.880
+data engineers need long
+periods of uninterrupted time
+
+101
+00:05:16.880 --> 00:05:21.770
+in order to actually solve these sort of
+quite technical challenging problems.
+
+102
+00:05:21.770 --> 00:05:24.470
+It's also useful to sort of
+check on people's motivation.
+
+103
+00:05:24.470 --> 00:05:27.600
+So you might have a data scientist who's
+working with, say, the market team,
+
+104
+00:05:27.600 --> 00:05:29.500
+but they don't really like marketing.
+
+105
+00:05:29.500 --> 00:05:32.010
+They would much rather be
+involved with a different team,
+
+106
+00:05:32.010 --> 00:05:33.270
+they'd rather be involved with product.
+
+107
+00:05:33.270 --> 00:05:35.820
+And they'd like to be building
+data science products that can be
+
+108
+00:05:35.820 --> 00:05:37.000
+externally used.
+
+109
+00:05:37.000 --> 00:05:39.920
+And if you don't identify quickly
+that their motivation is flogging,
+
+110
+00:05:39.920 --> 00:05:42.540
+it can be very hard for
+the to get going again.
+
+111
+00:05:42.540 --> 00:05:45.420
+Given the frustrating
+nature of data science and
+
+112
+00:05:45.420 --> 00:05:48.590
+data engineering for the people that
+are doing it, motivation is critical.
+
+113
+00:05:48.590 --> 00:05:49.610
+So identifying and
+
+114
+00:05:49.610 --> 00:05:53.100
+fixing problems with motivation is one of
+the key jobs of the data science manager.
+
+115
+00:05:54.260 --> 00:05:57.000
+So this is comes back to
+the idea of frustration.
+
+116
+00:05:57.000 --> 00:06:00.300
+So, frustration is something that will
+always come up with data science teams.
+
+117
+00:06:00.300 --> 00:06:03.620
+Both people externally being frustrated
+with the data science team for
+
+118
+00:06:03.620 --> 00:06:06.780
+not getting the answer that they wanted,
+and frustration internally
+
+119
+00:06:06.780 --> 00:06:09.838
+because the stupid software isn't
+working the way you wanted it to.
+
+120
+00:06:09.838 --> 00:06:13.360
+And so a way to fix that problem,
+or to keep that problem going,
+
+121
+00:06:13.360 --> 00:06:16.710
+is to remember to use lots of
+positive feedback whenever
+
+122
+00:06:16.710 --> 00:06:19.830
+success are there you
+need to celebrate them.
+
+123
+00:06:19.830 --> 00:06:22.900
+Help people keep going,
+keep being excited about coming in and
+
+124
+00:06:22.900 --> 00:06:24.690
+working on those data science problems.
+
+125
+00:06:24.690 --> 00:06:26.370
+But also impartial feedback.
+
+126
+00:06:26.370 --> 00:06:29.106
+So the key there is to talk about
+the code, talk about the hardware,
+
+127
+00:06:29.106 --> 00:06:30.362
+don't talk about the person.
+
+128
+00:06:30.362 --> 00:06:35.710
+Always sort of focus on the problem and
+how the problem's gonna be fixed.
+
+129
+00:06:35.710 --> 00:06:40.710
+And again, not to say that
+problems are an issue that will
+
+130
+00:06:40.710 --> 00:06:42.680
+cause you to have difficulties
+with your employment.
+
+131
+00:06:42.680 --> 00:06:46.100
+Like if If the machine learning algorithm
+isn't working, that doesn't mean that
+
+132
+00:06:46.100 --> 00:06:49.050
+you're gonna be done, it means we're gonna
+try another machine learning algorithm, or
+
+133
+00:06:49.050 --> 00:06:52.010
+we're gonna get a different data set, or
+we're try to tackle a different problem.
+
+134
+00:06:52.010 --> 00:06:55.630
+That will keep people motivated and
+not make them fear that if they don't do
+
+135
+00:06:55.630 --> 00:06:59.010
+the analysis in a certain way, they
+won't be able to sort of keep their job.
+
+136
+00:06:59.010 --> 00:07:03.955
+So, motivation is a huge component of
+keeping an internal data science team
+
+137
+00:07:03.955 --> 00:07:04.507
+going.

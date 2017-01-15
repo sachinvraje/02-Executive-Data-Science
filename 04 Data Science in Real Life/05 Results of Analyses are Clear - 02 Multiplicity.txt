@@ -1,0 +1,85 @@
+Hi, my name is Brian Caffo, and
+this is the lecture on multiplicity and multiple comparisons. So in this lecture we're gonna go fishing. And as a homework problem, I'd like you to
+read this XKCD comic, comic number 882. And it's really a great description
+of multiple comparisons and so I won't rehash it here cuz it's
+a long one, but go read that. That's part of your homework. It's pretty funny. So what is multiple comparisons? Multiple comparisons is
+the idea of repeatedly doing hypothesis tests until
+one comes up significant. Okay? And this sounds nefarious, but it can be often done with
+the best of intentions, right? And multiple comparisons issues
+can creep in in unexpected ways. So to just give you an example
+of multiple comparisons, that's sort of famous in the field that I
+work in, is someone took a dead salmon and put it in a functional magnetic
+resonance imaging scanner. And they ran the pixel by pixel analysis, actually it's three dimensions so it's
+often called a voxel instead of a pixel. They ran a voxel by voxel analysis and
+checked for a statistical significance
+at each voxel of whether or not brain activation existed, and
+they found significant things. And the reason they found significant
+things is because of a lack of adjustment for multiple comparisons. And of course, there was no brain
+activation because it was a dead salmon. So multiple comparisons, this basically
+just arises from applying many tests and focusing on the significant ones. That's the negative aspect
+of multiple comparisons, but basically the idea of multiple comparisons
+exists just from doing a lot of tests, even if all the tests are null, the fact that you will just get some
+rejections by chance, just by randomness. So this can arise from
+fitting too many models, this can arise from looking at
+too many quantities of interest, like in our fish example they just
+simply looked at too many voxels, or not too many they just didn't
+appropriately control for it. Or I think the nefarious version
+of multiple comparisons, the most nefarious version,
+is fishing expeditions. And that's basically testing hypotheses,
+testing everything without a priori hypotheses and just trying to focus in
+on those ones that are just significant. So that's the most negative
+version of multiple comparisons. You have a large dataset,
+you want to explain an outcome. You look at every variable you have,
+every combination of variables with lots of models, pick out the small
+subset of significant ones, and report them as if you hadn't
+looked at all the others. And I think everyone can agree
+that there's some problem with doing something like that. But I also want to emphasize,
+multiple comparisons is not intrinsically, in looking at lots of hypothesis tests,
+is not intrinsically a bad thing to do. The bad thing to do is to do a lot of
+hypothesis tests and not be up front and account for the fact that you've
+done a lot of hypothesis tests, and that's basically the point
+of this lecture. And I want to give you
+the easiest fix possible. There is a vast literature on multiple
+comparisons, but the easiest fix uses an inequality that's named after
+the mathematician, Bonferroni. And because it's named
+after his inequality, it's called the Bonferroni correction. And the easiest way to execute
+a Bonferroni correction is if you have a bunch of P-values, simply multiply your P-values by the
+number of tests that you're performing. So, for example,
+if you perform ten tests and one of the P-values is 0.01,
+then that P-value is now 0.10. Okay, cuz you've multiplied it by ten. So the Bonferroni correction is highly
+robust and it works in all circumstances. The only problem is,
+is it's quite conservative. So you can imagine, if you perform
+a thousand tests, you're multiplying all your p values by a thousand, it's unlikely
+you're going to get anything significant. So the result of the Bonferroni correction
+is often that it is very conservative, tends to err on the side of
+declaring fewer things significant. But it's the easiest thing and then if
+you want to get into harder versions of multiple comparisons,
+you can look into further reading. You can read up on things like
+false discovery rates and things like, we actually had a relatively
+well-known multiple comparisons paper come out of this department from the faculty
+member named David Duncan, and Duncan's multiple range test is an example in ANOVA
+of multiple comparisons corrections. But I think all of those are much harder
+than the simple Bonferroni correction so that's what I would go with now. One thing I would mention about
+the Bonferroni correction is that it doesn't give you any guidance
+on what number to multiply by. So if you do a bunch of tests, and some are related and another set
+are kind of unrelated, they're two groups. Should you aggregate all of those tests
+together, and count, say, if you did ten tests of this sort, and ten tests of this
+sort for a totally different hypothesis. Do you aggregate all of them together,
+and multiply all your p values by 20? Or you just say, well this is one
+separate investigation from this other separate investigation and so
+we multiply these by ten and these by ten. The Bonferroni correction gives
+no guidance on this problem. The Bonferroni correction doesn't tell
+you what is the right number of tests to multiply by, and
+that is an inherent problem. So the best advice I can give on
+that is to be your own critic. Be a critic of the results
+that you have and include all the tests that you think a
+critic of yours would want you to include as penalizing for
+having looked at the data. Okay, so again, I would just reiterate
+there's a vast literature on some other techniques for
+handling multiple comparisons, but again, the Bonferroni correction is
+the simplest and easiest one. And if you're managing someone
+who's done a lot of tests or looked at a lot of models, fit a lot of models, the easiest thing to
+do is when you're looking at the output. And you discuss the number of models they
+fit and the number of parameters they looked at, you can just kind of
+do a kind of rough calculation, round it up to the easiest number to
+multiply by, and use that correction.

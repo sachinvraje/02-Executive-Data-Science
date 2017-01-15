@@ -1,0 +1,851 @@
+WEBVTT
+
+1
+00:00:02.780 --> 00:00:06.890
+Hi, my name is Brian Caffo, and this is
+the lecture on managing the data pull.
+
+2
+00:00:08.830 --> 00:00:11.030
+Like all the other lectures in this class,
+
+3
+00:00:11.030 --> 00:00:15.770
+we're gonna contrast between idealized
+settings, and what happens in real life.
+
+4
+00:00:15.770 --> 00:00:18.360
+In real life, data can be very messy.
+
+5
+00:00:18.360 --> 00:00:21.480
+And when we talk about the data pull,
+we're talking about all the different
+
+6
+00:00:21.480 --> 00:00:27.690
+components that go into going from a raw
+form of data into an analytic data set.
+
+7
+00:00:29.770 --> 00:00:35.260
+So in this process, some of these
+steps are almost always required.
+
+8
+00:00:35.260 --> 00:00:39.770
+You almost always have to pull
+an analytic data set from a larger more
+
+9
+00:00:39.770 --> 00:00:41.920
+complex data source.
+
+10
+00:00:41.920 --> 00:00:47.490
+You often have to merge disparate sorts
+of data causing matching errors and
+
+11
+00:00:47.490 --> 00:00:48.160
+things like that.
+
+12
+00:00:49.460 --> 00:00:54.950
+Often, we have to summarize complex data
+types, so for example, you might have
+
+13
+00:00:54.950 --> 00:01:00.320
+recorded voice data or text data that you
+need to convert into meaningful summaries.
+
+14
+00:01:02.000 --> 00:01:07.179
+In my personal area that I work in,
+often we're working with large
+
+15
+00:01:07.179 --> 00:01:12.267
+complex brain imaging data and
+we have to summarize that down into
+
+16
+00:01:12.267 --> 00:01:18.389
+a handful of numbers that represent
+certain regions of the brain for example.
+
+17
+00:01:18.389 --> 00:01:24.369
+Another very common problem is going
+from data that is convenient for
+
+18
+00:01:24.369 --> 00:01:28.910
+one purpose into a convenient form for
+analysis.
+
+19
+00:01:28.910 --> 00:01:32.370
+So for example the way we
+might store the data for
+
+20
+00:01:32.370 --> 00:01:36.800
+archival purposes is generally not
+what's right for analysis purposes.
+
+21
+00:01:36.800 --> 00:01:39.829
+So in the process of converting
+there can always be errors.
+
+22
+00:01:41.620 --> 00:01:44.360
+So as a manager you're not
+going to actually probably
+
+23
+00:01:44.360 --> 00:01:46.070
+execute any of these solutions.
+
+24
+00:01:46.070 --> 00:01:49.960
+Maybe you did that in your past, but
+now you're managing groups of people or
+
+25
+00:01:49.960 --> 00:01:51.990
+individuals that are doing this for you.
+
+26
+00:01:51.990 --> 00:01:58.370
+So in this lecture, we're gonna give you
+some simple tools that you can do to help
+
+27
+00:01:58.370 --> 00:02:03.469
+ensure data quality in real life when you
+have these kind of messy data issues.
+
+28
+00:02:05.120 --> 00:02:09.130
+In researching this lecture, I noticed
+that there were a lot of tools for
+
+29
+00:02:09.130 --> 00:02:12.940
+the practitioners, for the people that are
+actually going to be doing the merging and
+
+30
+00:02:12.940 --> 00:02:16.280
+doing the actual data manipulations.
+
+31
+00:02:16.280 --> 00:02:20.710
+But relatively few for managers, so
+that's what we're gonna focus on here.
+
+32
+00:02:20.710 --> 00:02:24.980
+The first thing I'd like to mention is the
+simple act of creating what I like to call
+
+33
+00:02:24.980 --> 00:02:26.230
+Table 1.
+
+34
+00:02:26.230 --> 00:02:29.180
+And this is, these are basically
+just summary tables and
+
+35
+00:02:29.180 --> 00:02:31.340
+these are a great way to catch errors.
+
+36
+00:02:31.340 --> 00:02:35.980
+And in Epi and Biostatistics
+we call these tables Table 1.
+
+37
+00:02:35.980 --> 00:02:39.160
+And the reason we do that is because
+whenever you write an Epi or
+
+38
+00:02:39.160 --> 00:02:43.460
+a biostatistics paper there's
+always a first table that's
+
+39
+00:02:43.460 --> 00:02:47.859
+main purpose is just to summarize
+demographic information in your sample.
+
+40
+00:02:49.240 --> 00:02:52.080
+So this is a great way to catch errors.
+
+41
+00:02:52.080 --> 00:02:55.440
+But a couple of caveats.
+
+42
+00:02:55.440 --> 00:02:59.720
+Get standard deviations along with means,
+medians and quantiles,
+
+43
+00:02:59.720 --> 00:03:02.550
+the standard deviations will
+often help you catch errors.
+
+44
+00:03:03.660 --> 00:03:05.700
+Another thing, another important one, and
+
+45
+00:03:05.700 --> 00:03:10.080
+I'll give an anecdote about this
+in a minute, is check your units.
+
+46
+00:03:10.080 --> 00:03:13.970
+And I'll give an anecdote just to
+remind exactly what I mean by that.
+
+47
+00:03:13.970 --> 00:03:18.070
+And then the other important thing I would
+say is, usually, you're meeting about
+
+48
+00:03:18.070 --> 00:03:23.590
+these data tables maybe weekly,
+maybe monthly, but keep the old ones and
+
+49
+00:03:23.590 --> 00:03:29.580
+always refer back to them cuz even subtle
+changes in these Table 1's can often
+
+50
+00:03:29.580 --> 00:03:33.950
+highlight important meaningful changes,
+an errant record or something like that.
+
+51
+00:03:33.950 --> 00:03:38.400
+If means that are usually quite stable
+jump up from one report to the next
+
+52
+00:03:38.400 --> 00:03:40.100
+that's often valuable information.
+
+53
+00:03:41.160 --> 00:03:44.080
+So now I'm gonna go over this
+example that I eluded to earlier.
+
+54
+00:03:45.360 --> 00:03:49.090
+In this example we were studying
+brain volume as it related to
+
+55
+00:03:49.090 --> 00:03:51.100
+people who are chronically
+exposed to lead.
+
+56
+00:03:51.100 --> 00:03:54.520
+They worked in a chemical
+manufacturing plant back when
+
+57
+00:03:54.520 --> 00:03:57.810
+they were adding lead to paint and
+gasoline and that sort of thing.
+
+58
+00:03:59.270 --> 00:04:03.755
+We we're interested in people's
+longitudinal change in brain volumes over
+
+59
+00:04:03.755 --> 00:04:08.378
+time and when we started creating our
+Table 1's, we weren't keeping track of
+
+60
+00:04:08.378 --> 00:04:11.828
+our units and it wasn't until
+much later on in the process,
+
+61
+00:04:11.828 --> 00:04:15.230
+thankfully well before we
+had finished the paper.
+
+62
+00:04:15.230 --> 00:04:17.350
+But it wasn't until pretty
+long in the process,
+
+63
+00:04:17.350 --> 00:04:20.060
+before we realized we weren't
+keeping track of our units.
+
+64
+00:04:20.060 --> 00:04:25.200
+And that people's brains were declining
+at a rate that was way too fast
+
+65
+00:04:25.200 --> 00:04:26.280
+to be reasonable.
+
+66
+00:04:26.280 --> 00:04:30.720
+They were going from the size of
+a house to the size of a pea, for
+
+67
+00:04:30.720 --> 00:04:32.480
+example, too quickly.
+
+68
+00:04:32.480 --> 00:04:36.960
+That was only because we hadn't
+kept good track of our units.
+
+69
+00:04:36.960 --> 00:04:41.740
+But once when we had a very helpful
+discussion about what the units were, and
+
+70
+00:04:41.740 --> 00:04:44.500
+then because of that discussion
+on what the units were,
+
+71
+00:04:44.500 --> 00:04:48.370
+we went on a long literature review
+on standard rates of brain decline in
+
+72
+00:04:48.370 --> 00:04:51.500
+healthy adults,
+this really helped inform the paper.
+
+73
+00:04:51.500 --> 00:04:55.828
+But more than anything,
+it also helped us with data quality,
+
+74
+00:04:55.828 --> 00:05:01.500
+since we realized that there were some
+errant measurements driving up results.
+
+75
+00:05:04.054 --> 00:05:09.276
+So, a second tool at your disposal
+after the modeling stage just like
+
+76
+00:05:09.276 --> 00:05:15.000
+we had the table one which we usually
+conduct before we do any modeling.
+
+77
+00:05:15.000 --> 00:05:17.270
+After you've done some
+regression modeling,
+
+78
+00:05:17.270 --> 00:05:22.310
+regression diagnostics are an extremely
+useful way to detect data errors.
+
+79
+00:05:22.310 --> 00:05:27.950
+And my favorite examples of regression
+diagnostics are from Len Stefansky,
+
+80
+00:05:27.950 --> 00:05:29.370
+who's at North Carolina State.
+
+81
+00:05:29.370 --> 00:05:33.080
+And if you look at this data set on
+the left, it actually goes on for
+
+82
+00:05:33.080 --> 00:05:35.360
+a while after that.
+
+83
+00:05:35.360 --> 00:05:37.870
+If you were to look at it and
+do some basic scatter plots,
+
+84
+00:05:37.870 --> 00:05:40.380
+you would see nothing out of
+the ordinary in the data.
+
+85
+00:05:40.380 --> 00:05:42.640
+It would just look kind of like noise.
+
+86
+00:05:42.640 --> 00:05:48.680
+However if you do a residual plot,
+which is plotting the errors
+
+87
+00:05:48.680 --> 00:05:54.390
+of the fitted values of the Russian model
+versus the actual observed outcome values,
+
+88
+00:05:54.390 --> 00:05:58.630
+versus the predicted, you see this
+crazy plot with Homer Simpsons on it.
+
+89
+00:05:58.630 --> 00:06:03.020
+And this is his way of showing
+how residual plots can highlight
+
+90
+00:06:03.020 --> 00:06:05.720
+hidden systematic patterns in our data.
+
+91
+00:06:05.720 --> 00:06:08.720
+Okay, so residual plots are always
+a good thing to look at and
+
+92
+00:06:08.720 --> 00:06:10.580
+always a good thing to look at for
+
+93
+00:06:10.580 --> 00:06:15.020
+systematic patterns, errant observations,
+outliers, and those sorts of things.
+
+94
+00:06:15.020 --> 00:06:18.190
+Of course, these always occur
+after you've done your modeling.
+
+95
+00:06:18.190 --> 00:06:21.790
+You have to have a model in
+order to look at a residual.
+
+96
+00:06:21.790 --> 00:06:25.870
+So let me give you some definitions of
+some of the things you might want to look
+
+97
+00:06:25.870 --> 00:06:30.560
+at especially from regression modeling
+which is my favorite kind of modeling.
+
+98
+00:06:30.560 --> 00:06:35.460
+So residuals, like I just said, these
+are the difference between the response,
+
+99
+00:06:35.460 --> 00:06:37.230
+the outcome that you're studying and
+
+100
+00:06:37.230 --> 00:06:41.020
+the fitted value,
+what your model predicts it would be.
+
+101
+00:06:41.020 --> 00:06:44.250
+So, what you wanna look for
+in residual plots, you just wanna make
+
+102
+00:06:44.250 --> 00:06:47.650
+sure that there aren't any systematic
+patterns and you wanna look for extremely
+
+103
+00:06:47.650 --> 00:06:52.000
+large values that are well outside
+the general pattern of the residuals.
+
+104
+00:06:52.000 --> 00:06:56.460
+There's another quantity called the hat
+values, and they consider how variable
+
+105
+00:06:56.460 --> 00:07:01.960
+a data row of explanatory variable is
+among its space of fellow predictors.
+
+106
+00:07:01.960 --> 00:07:08.000
+So all hat values are going to tell
+you is simply how outside of the norm,
+
+107
+00:07:08.000 --> 00:07:10.030
+the normal range of variability,
+
+108
+00:07:10.030 --> 00:07:14.950
+this particular row of data is
+relative to all it's other colleagues.
+
+109
+00:07:16.880 --> 00:07:22.480
+So, the DF fits, DF betas, and
+Cook's distance, these are all measures of
+
+110
+00:07:22.480 --> 00:07:26.490
+things that are kind of related,
+sort of like cross validation.
+
+111
+00:07:26.490 --> 00:07:32.270
+And in all these cases what you do is you
+fit the model with the point deleted,
+
+112
+00:07:32.270 --> 00:07:34.990
+and then you fit the model
+with that point included.
+
+113
+00:07:34.990 --> 00:07:41.090
+With a row of your data entirely deleted,
+and then with that row included, okay?
+
+114
+00:07:41.090 --> 00:07:44.110
+And then you look at how
+much your results changed
+
+115
+00:07:44.110 --> 00:07:46.960
+by virtue of leaving that row in or out.
+
+116
+00:07:46.960 --> 00:07:49.140
+And if you compare the fitted values.
+
+117
+00:07:49.140 --> 00:07:50.980
+And you get what are called the DF fits.
+
+118
+00:07:50.980 --> 00:07:55.240
+If you compare the slope estimates then
+you get what are called the DF betas.
+
+119
+00:07:55.240 --> 00:07:59.140
+And if you compare the slope estimates
+aggregated into one single number,
+
+120
+00:07:59.140 --> 00:08:02.090
+one single metric,
+that's called Cook's distance.
+
+121
+00:08:02.090 --> 00:08:04.440
+But all of these are influence measures.
+
+122
+00:08:04.440 --> 00:08:08.910
+All they're trying to do is tell
+you how much did things change
+
+123
+00:08:08.910 --> 00:08:12.120
+when I deleted this data
+point from my model fitting.
+
+124
+00:08:12.120 --> 00:08:14.920
+That's also the same logic
+among the PRESS residuals,
+
+125
+00:08:14.920 --> 00:08:17.140
+which are just residuals of the same sort.
+
+126
+00:08:17.140 --> 00:08:18.310
+How big was the residual for
+
+127
+00:08:18.310 --> 00:08:22.220
+this data point if I left
+it in versus I left it out?
+
+128
+00:08:22.220 --> 00:08:27.350
+And these are often called leave one out
+residuals or cross validated residuals but
+
+129
+00:08:27.350 --> 00:08:31.990
+all these things are useful and your
+analyst or whoever you are working with.
+
+130
+00:08:31.990 --> 00:08:33.410
+You should work with them so
+
+131
+00:08:33.410 --> 00:08:38.540
+that they produce these kinds of residuals
+diagnostic plots with your regression.
+
+132
+00:08:38.540 --> 00:08:42.050
+Not only do they help you evaluate
+things about your regression model but
+
+133
+00:08:42.050 --> 00:08:46.880
+they help you evaluate things about
+airing data points outlying observation.
+
+134
+00:08:46.880 --> 00:08:50.670
+And then you can drill down and
+see what went wrong to have
+
+135
+00:08:50.670 --> 00:08:54.560
+those specific observations to have
+such a large impact on the model fit for
+
+136
+00:08:54.560 --> 00:08:58.170
+example, or to be so
+outside of the norm of all their peers.
+
+137
+00:09:00.360 --> 00:09:04.680
+Another kind of interesting,
+in my mind fascinating
+
+138
+00:09:04.680 --> 00:09:09.080
+way to consider data quality
+is to use Benford's law.
+
+139
+00:09:09.080 --> 00:09:11.550
+And Benford's law is the so
+called First-Digit Law.
+
+140
+00:09:11.550 --> 00:09:17.860
+And I just mentioned here, you can read up
+on it and sometimes people find it useful.
+
+141
+00:09:17.860 --> 00:09:22.170
+And it's so called phenomenological law
+about the frequency distribution of
+
+142
+00:09:22.170 --> 00:09:29.880
+leading digits In many but
+of course not all real live sets of data.
+
+143
+00:09:29.880 --> 00:09:36.510
+And so what this means, what Benford's Law
+says, is if you look at the final digit,
+
+144
+00:09:36.510 --> 00:09:40.400
+say for example telephone numbers,
+they don't follow a uniform distribution.
+
+145
+00:09:40.400 --> 00:09:43.700
+They follow a distribution that
+looks something like this.
+
+146
+00:09:43.700 --> 00:09:48.270
+And you can try it,
+try some Benford Laws experiment.
+
+147
+00:09:48.270 --> 00:09:52.330
+And it's basically saying that the numbers
+should be uniform on a log scale
+
+148
+00:09:52.330 --> 00:09:54.460
+rather than on the natural scale.
+
+149
+00:09:54.460 --> 00:09:58.800
+So what you can do in terms of
+data quality sometimes is if your
+
+150
+00:09:58.800 --> 00:10:00.180
+phenomenon that you're studying.
+
+151
+00:10:00.180 --> 00:10:03.910
+Whatever outcome that you're studying,
+if it's digits should follow
+
+152
+00:10:03.910 --> 00:10:08.230
+Benford's law if you've checked in
+the past then you can do it again and
+
+153
+00:10:08.230 --> 00:10:13.420
+see if there was some systematic errors
+causing the distribution of your
+
+154
+00:10:13.420 --> 00:10:15.930
+the distribution of your points,
+not to follow this law.
+
+155
+00:10:15.930 --> 00:10:21.230
+Again, this only is applicable when
+the digits should follow Benford's Law.
+
+156
+00:10:21.230 --> 00:10:25.430
+As an example, if you're looking at
+a particular city, the first digit,
+
+157
+00:10:25.430 --> 00:10:28.380
+the leftmost digit of telephone numbers,
+isn't gonna
+
+158
+00:10:28.380 --> 00:10:32.450
+follow Benford's Laws because it's
+going to be related to the area codes.
+
+159
+00:10:32.450 --> 00:10:35.710
+But the rightmost digit it does
+tend to follow Benford's Law.
+
+160
+00:10:35.710 --> 00:10:41.040
+So at any rate, it's a little
+subtle tool that you can use for
+
+161
+00:10:41.040 --> 00:10:44.560
+assessing a systematic data quality error
+
+162
+00:10:44.560 --> 00:10:47.790
+that's perturbing the distribution
+of the digits of your data.
+
+163
+00:10:48.970 --> 00:10:53.120
+The final thing you might want to
+try is actually checking specific
+
+164
+00:10:53.120 --> 00:10:56.650
+rows of your data through so-called
+data quality queries, DQQs.
+
+165
+00:10:58.540 --> 00:11:01.735
+Of course you can't check every single
+point because that's usually too
+
+166
+00:11:01.735 --> 00:11:02.900
+time-consuming.
+
+167
+00:11:02.900 --> 00:11:04.770
+However, you can check some.
+
+168
+00:11:04.770 --> 00:11:09.870
+And you can use statistical procedures
+like random sampling to get a random
+
+169
+00:11:09.870 --> 00:11:14.500
+sample of rows of your data, check those
+rows individually, and because it's a nice
+
+170
+00:11:14.500 --> 00:11:21.030
+random sample, you can get an estimate of
+the proportion of bad rows in your data.
+
+171
+00:11:21.030 --> 00:11:25.210
+Okay, so
+you can use statistics to sample and
+
+172
+00:11:25.210 --> 00:11:29.160
+understand how good or bad in general your
+
+173
+00:11:29.160 --> 00:11:33.800
+dataset is from a relatively small
+sample that you check by hand, okay?
+
+174
+00:11:33.800 --> 00:11:36.670
+So these are some simple techniques
+that you can help to try and
+
+175
+00:11:36.670 --> 00:11:41.510
+stay on top of the real life circumstance
+where your data is actually a messy,
+
+176
+00:11:41.510 --> 00:11:45.580
+mishmash of merging errors and
+that sort of thing.
+
+177
+00:11:45.580 --> 00:11:50.531
+Since we all know that the true idealized
+setting doesn't occur in real life ever.

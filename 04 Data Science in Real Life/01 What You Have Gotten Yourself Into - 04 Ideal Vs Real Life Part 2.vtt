@@ -1,0 +1,296 @@
+WEBVTT
+
+1
+00:00:02.310 --> 00:00:04.330
+Hi, my name is Brian Caffo, and
+
+2
+00:00:04.330 --> 00:00:08.530
+this is lecture one in week four of
+the Executive Data Science Series.
+
+3
+00:00:08.530 --> 00:00:12.050
+In this lecture, we're going to talk about
+the perfect data science experience,
+
+4
+00:00:12.050 --> 00:00:14.889
+in contrast with what actually
+happens in real life.
+
+5
+00:00:16.600 --> 00:00:20.870
+So in the perfect data science experience,
+what happens?
+
+6
+00:00:20.870 --> 00:00:25.120
+We have clearly defined hypotheses of
+interest that you've specified a priori.
+
+7
+00:00:26.190 --> 00:00:28.570
+Experimental design is at your disposal so
+
+8
+00:00:28.570 --> 00:00:32.600
+you have a lot of control over what
+you do prior to collecting data.
+
+9
+00:00:32.600 --> 00:00:35.690
+So for example, you might be
+able to conduct an AB test and
+
+10
+00:00:35.690 --> 00:00:38.700
+do randomization across
+a treatment of interest.
+
+11
+00:00:38.700 --> 00:00:41.370
+Or if you have some nuisance variables
+that you're not interested in,
+
+12
+00:00:41.370 --> 00:00:44.150
+you might be able to
+stratify across those.
+
+13
+00:00:45.860 --> 00:00:48.720
+And randomization isn't enough by itself.
+
+14
+00:00:48.720 --> 00:00:53.010
+You actually have a random sample from
+a population that you're interested in.
+
+15
+00:00:53.010 --> 00:00:57.000
+So when you draw your conclusions from
+your sample, you know that they will,
+
+16
+00:00:57.000 --> 00:01:00.460
+hopefully be representative to
+the population that you're really
+
+17
+00:01:00.460 --> 00:01:01.050
+interested in.
+
+18
+00:01:02.110 --> 00:01:06.290
+The data that you measure is actually able
+to interrogate the hypothesis that you're
+
+19
+00:01:06.290 --> 00:01:07.280
+interested in.
+
+20
+00:01:07.280 --> 00:01:11.339
+That's an important other aspect that
+we'll talk a little bit more about later.
+
+21
+00:01:13.030 --> 00:01:16.542
+And then your data creation,
+creating your database,
+
+22
+00:01:16.542 --> 00:01:20.367
+whatever merging you have to do,
+all of that goes smoothly.
+
+23
+00:01:20.367 --> 00:01:25.632
+There's no missing data,
+there's no failed entries,
+
+24
+00:01:25.632 --> 00:01:31.564
+there's no non-unique matches so
+all of that goes perfectly.
+
+25
+00:01:31.564 --> 00:01:36.690
+Analysis is robust without the need for
+some sort of advanced modeling.
+
+26
+00:01:36.690 --> 00:01:40.050
+So you can get by with a simple t test or
+something like that and
+
+27
+00:01:40.050 --> 00:01:42.070
+then your conclusions are clear.
+
+28
+00:01:42.070 --> 00:01:45.110
+You gain parsimonious knowledge
+from the experiment and
+
+29
+00:01:45.110 --> 00:01:48.160
+your decision is obvious given the data.
+
+30
+00:01:48.160 --> 00:01:50.640
+So that's the perfect scenario.
+
+31
+00:01:50.640 --> 00:01:52.130
+What actually happens?
+
+32
+00:01:53.700 --> 00:01:56.850
+So what typically happens is
+
+33
+00:01:56.850 --> 00:02:01.130
+you don't have strongly specified
+operatory hypothesis and your data's
+
+34
+00:02:01.130 --> 00:02:04.970
+actually needed to inform your hypotheses
+before you start to interrogate them.
+
+35
+00:02:04.970 --> 00:02:07.830
+And usually you're having to
+use the same data set tocome
+
+36
+00:02:07.830 --> 00:02:11.679
+up with the hypothesis as you are to
+decide between the hypotheses.
+
+37
+00:02:12.930 --> 00:02:17.040
+And because of that and because you're
+often looking at multiple hypotheses,
+
+38
+00:02:17.040 --> 00:02:18.560
+multiple comparisons are an issue.
+
+39
+00:02:19.750 --> 00:02:23.840
+Your access to experimental
+design is often limited, or
+
+40
+00:02:23.840 --> 00:02:29.290
+the data is just completely observational
+so randomization isn't available, or even
+
+41
+00:02:29.290 --> 00:02:34.590
+in a setting that comes up commonly in
+biostatistics, your data is retrospective.
+
+42
+00:02:34.590 --> 00:02:38.401
+So, you just look at the outcomes and look
+backwards to see what covariates they had.
+
+43
+00:02:40.030 --> 00:02:43.720
+Often, the population being studied
+isn't the population of interest.
+
+44
+00:02:43.720 --> 00:02:46.080
+So, if you're Google and
+
+45
+00:02:46.080 --> 00:02:50.850
+if you happen to be analyzing search
+data from Yahoo, then that's not ideal.
+
+46
+00:02:50.850 --> 00:02:54.810
+But if that's an instance where that's
+the only data you happen to have,
+
+47
+00:02:54.810 --> 00:02:57.260
+then that's the data
+that you happen to have.
+
+48
+00:02:57.260 --> 00:03:00.380
+Another problem is that you don't have
+the exact measurements that you need
+
+49
+00:03:00.380 --> 00:03:02.030
+to evaluate the hypotheses.
+
+50
+00:03:02.030 --> 00:03:04.670
+And that's a very common problem,
+in my experience.
+
+51
+00:03:05.720 --> 00:03:07.530
+The data is problematic,
+
+52
+00:03:07.530 --> 00:03:11.040
+you have some issue with merging
+where you have non-unique matches, or
+
+53
+00:03:11.040 --> 00:03:16.480
+multiple matches, you have data
+entry errors, you have missing data.
+
+54
+00:03:16.480 --> 00:03:20.860
+And then, because of all these errors and
+intricacies in the observational
+
+55
+00:03:20.860 --> 00:03:24.860
+nature of the data,
+advanced modeling was being required.
+
+56
+00:03:24.860 --> 00:03:26.720
+Because advanced modeling is required,
+
+57
+00:03:26.720 --> 00:03:30.280
+advanced computing is needed
+to fit your advanced models.
+
+58
+00:03:30.280 --> 00:03:34.089
+And because of that, there's issues
+of both computational robustness,
+
+59
+00:03:35.430 --> 00:03:39.196
+how fragile the model is to the
+assumptions that you've made, and so on.
+
+60
+00:03:39.196 --> 00:03:44.490
+And then,
+your conclusions might be indeterminate.
+
+61
+00:03:44.490 --> 00:03:48.600
+And then your decision space might
+not be substantially more informed
+
+62
+00:03:48.600 --> 00:03:50.560
+by the data than if you
+had done nothing at all.

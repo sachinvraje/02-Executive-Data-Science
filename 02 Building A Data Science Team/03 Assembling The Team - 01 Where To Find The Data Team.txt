@@ -1,0 +1,43 @@
+So now that you know the qualifications
+of data scientists, data engineers, data science managers,
+the whole data science team, you need to know where you can go and
+find those sorts of people. The obvious place to look is the general
+purpose sites, LinkedIn or Monster.com or something like that, where you go out and
+you search for data science. This can be a little bit hard to do,
+because there are a large, large number of people that call
+themselves data scientists. And so it's a hot area right now and it can be a little bit hard to identify
+who are the people that are really good from who are the people that
+aren't necessarily good. Now it's not impossible, you can look for the right programming languages for
+each of the different roles. You can look for past experience. Ideally they have some kind of projects
+online, whether that's through something like a GitHub profile where they show
+their software or hardware background. So ideally you have some sort
+of toehold on what they know if you go to these sort
+of general purpose sites. Another place that you can go is you can
+go to sort of more dedicated sites, so kaggle.com hosts data
+science competitions. They also have a very large job board
+with lots of people who are looking for data science jobs. There you're gonna tend to find people who
+have at least a little bit of experience in data science, cuz you also know
+If they've competed in competitions, what their skills are, how they're doing. You can go to places like
+Insight Data Science, or you can go to places like hire.com. These are sort of more dedicated places
+that are focused exclusively on hiring and building data scientists, and so you know a little bit more
+about their qualifications. There's a little bit less
+of a filtering process. That may or may not be useful, depending
+on how specific are the needs of your institution or your organization
+versus what's being trained or what they hire in these
+particular websites. So in that case, if you're looking for
+somebody that's a little outside the mold, maybe the general purpose site might be
+better with a little bit more searching. If you're looking for sort of a more
+traditional data scientist or data engineer,
+you might go to these more specific sites. You can also look at people who
+have taken classes online, and find the people that are coming
+out of those classes. People that take classes on Coursera
+data science programs, for example, our data science specialization, or
+through Udacity's program on data science, or other online data science programs. Often the best way to find them is
+they have profiles on GitHub or other sites where they put up
+all their data science projects. And so you can kind of get
+a little bit of a feel for how they work right from the start,
+before you even interview them. So you can go search for them through the sort of sites
+where they might have information posted because most of these sort of
+programs have them build portfolios or profiles which they put online, which
+makes it easier for you to find them. And so another place to go look for people
+is through these sort of people who have qualifications in these online classes.

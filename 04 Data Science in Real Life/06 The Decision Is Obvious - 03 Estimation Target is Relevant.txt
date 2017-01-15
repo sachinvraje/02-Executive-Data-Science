@@ -1,0 +1,137 @@
+Hi, my name is Brian Caffo and this is the lecture on
+Estimation Target being Relevant. And so I'm gonna start with this quote
+from, it's attributed to lots of people, I give some example up there
+which you can find on Wikipedia. But of course many of
+you have heard the song. But if you can't be with the one you love,
+love the one you're with. And that's the idea behind some of these surrogate variables we're
+gonna talk about today. If you can't measure the variable you
+want, measure the variable you got. Okay, so what we're basically
+talking about in this lecture, is when you have an outcome you
+are interested in studying, but you can't actually measure it. You can only measure some surrogate for
+it. And we are gonna talk about
+the benefits and pitfalls and some strategies that you can do
+this very common circumstance. But, even if you don't find
+that prior quote less inspire. Even if you don't find that
+prior quote inspiring, even less inspiring is the classic joke
+that talks about the drunk looking for his keys under the lamp post. And the police comes up to him and
+asks, what are you doing? And the drunk says, looking for my keys. And the policeman says, well,
+did you drop them near here? And the drunk says,
+no I dropped them over there. And he's, well, why are you looking here? And the drunk says,
+cuz this is where the light is. Okay, so let's talk about surrogate
+variables and hopefully we won't be like drunks looking under the lamppost,
+hopefully our keys'll be nearby. So, the idea behind what we're talking
+about today, is it's very common to not be able to directly measure what
+is most germane to your investigation, what you really want to measure. So, some classic examples. Body mass index as a measure
+of body fat percentage. So, Bbdy mass index is really
+just only take two measurements. Your weight and your height. But a real measure of body fat
+percentage is much harder. It takes much more careful measurement,
+so BMI is a surrogate variable for what people really want,
+which is body fat percentage. It's very common for economists to use
+GDP as a measure of economic well-being, even though they fully acknowledge
+that it's a crude summary of that. Probably one of the worst, not worst,
+probably one of the hardest examples are food frequency questionnaires for
+calorie consumptions. So, if you just ask people what
+they ate last week to try to and ascertain their calorie consumption,
+that's a very noisy measure, but it's very hard to get good data
+on what people eat either way. Of course, if you ask people
+whether they're going to vote, you get likely voters, but that doesn't
+mean you're gonna get actual voters. If you measure web traffic that doesn't
+mean it's sort of actual web traffic. You might be getting lots of hits from
+web crawlers and things like that. Search engine crawlers and
+that sort of thing. So in my area, the area that I work in, we study something called
+Functional Magnetic Resonance Imaging. We would really like to measure people's
+brain activation, we really wanna get at let's say neuronal signaling, but we don't
+get that, we get instead a very crude proxy for this called the blood oxygen
+level dependent or BOLD signal. So, this phenomenon of not getting
+to measure what you want, but getting the measure of some
+surrogate that's close or hopefully close is a very common problem. So what are some hallmarks
+of good surrogates? Well, the best surrogates
+are gonna be unbiased. Even if they're noisy and they're not
+completely like the variable that they're measuring, they're not systematically
+larger or systematically smaller. And ideally they have a known
+variance around the desired outcome. So in that case,
+if you have a good surrogate variable. A very good surrogate is for example, weight,
+with a nice unbiased scale. If you don't know the person's
+actual weight but you have a scale that's kind of noisy but
+on average across all people, it's as high as it is low and you actually
+know how variable it is around the truth. Then you can use that
+information in your analysis and probably everything will be fine. That's a very unusual circumstance. Maybe the second best setting,
+which at some level attainable. Is where you have the truth measured
+on some subset of the people and you can study and
+understand some amount of calibration. And I'm gonna give an example,
+so a very common thing that people do now is they wear,
+I have a picture here of fitbit. And this is a little accelerometer
+that you wear around your wrist and it counts things like steps,
+but it's not measuring steps. It's on your wrist. It's measuring acceleration. So they have to use an algorithm to
+predict how many steps you're making. So and sometimes it's accurate and
+sometimes it's not. And maybe even further, your software,
+your fitbit software or your calorie count, your accelerometer
+on your watch or your cell phone, will also not only give you steps but it'll
+actually give you calorie consumption. So what could you do? Well, if you were very serious
+about studying accelerometry, what you could do is really get people
+in the lab, put a mask on them. Really get very careful measurements
+of steps and calorie consumption while they are wearing a fitbit,
+they are wearing these other devices. And use that to understand
+its degree of accuracy. You could maybe build up models because
+you know the truth on that subset of people, and
+using those models employ the strategies from those models in the instances
+where you only have the fitbit data and you don't have the gold standard data. So doing a gold standard study, is probably one of the better
+things that you can do. And if you have that option, I would highly recommend taking the time
+to actually study the variables, these surrogate variables
+that you are looking at. And I think what often happens at least
+In my experience in the scientific world, whenever we go after these surrogate
+variables, and try and figure out how accurate they are, we always seem to come
+away surprised at how inaccurate they are. How much less accurate they
+were then we thought they were. So at any rate, that is the strategy,
+that is very helpful but if you don't have those
+strategies available to you, well the worst case scenario is you
+have to acknowledge limitations. You don't have a real way
+to validate your surrogate. Maybe using some external data that you
+didn't collect, maybe that's an option, but let's suppose none of these
+circumstances are available to you. Then you wanna make sure you
+use skepticism of your results. For example if you're analyzing BMI and
+treating it as if it's body fat percentage, then you want to think
+about your sample and say, well, do I have a lot of body builders and
+midgets and and extremely tall people in my sample
+where BMI may not be as accurate? Or is my sample kind of in
+this range where we know, it's probably kind of okay and
+tends to sort of be and unbiased measure. You wanna use skepticism in
+studying your results and thing about the noise associate
+with your surrogate variables. And another reasonable strategy is
+to use sensitivity analysis for bias and
+variability of your surrogate variable. So what I mean by sensitivity analysis is,
+come up with some idea of how off it's going to be for
+the individual measurements. And come up with an idea of how
+biased it could possibly be, so if you're studying a food frequency
+questionnaire, you might think, okay, well, what if these food frequency
+questionnaires are really underestimating calorie consumptions by
+a thousand calories per day? Think about that, and
+then factor that into the analysis and see what would happen. So sensitivity analysis
+are always at your disposal and they're a good way to sort of poke and prod at what are the consequences of not
+measuring what you really want to measure. And I have this funny thing that says
+limitations, until you spread your wings you have no idea how far you can walk and
+there's a picture of a penquin. I thought that was terrible,
+put it up anyway. And then when to throw in the towel. So, I thought a lot about recommending
+when you throw in the towel, and so this is the resolution that
+I came up with, is prior to running your analysis, think about how you're
+going to interpret your results. And if the variable that
+you're going to use in lieu of the one that you really want is so
+unknown and so unreliable in estimate
+of the desired outcome. That no results would
+change your decision or state of knowledge, then why bother
+running the analysis at all? So, what I would do is go through the
+exercise before you perform the analysis, before you collect the data. And then kinda think about your
+decision space in the event that the results come out exactly
+as you would hope, or in the event that the results come up
+the exact opposite of what you would hope. Is the fact that
+the surrogate variable is so inaccurate relative to what
+you're trying to measure. If that's true in neither of those
+extremes would it really change your decision space, then you either need
+to improve your surrogate variable, do some gold standard studies. Or get a new variable or
+something like that, cuz it's probably not
+worth doing at that point. But I do think if you have
+a really noisy surrogate variable, it is at least worthwhile
+to think about whether or not you're actually gonna
+get anything valuable at all out of your analyses before you undertake
+the costly exercise of actually doing it. Okay, well thank you for your time, and I look forward to seeing
+you in the next lecture.

@@ -1,0 +1,341 @@
+WEBVTT
+
+1
+00:00:04.222 --> 00:00:06.921
+I'm gonna talk a little bit
+more about populations and
+
+2
+00:00:06.921 --> 00:00:10.617
+the forms in which they can come because
+populations can come in a variety of
+
+3
+00:00:10.617 --> 00:00:13.980
+different forms that you
+may not necessarily expect.
+
+4
+00:00:13.980 --> 00:00:18.800
+Two common ones that I wanna talk about
+are for data that vary over time or
+
+5
+00:00:18.800 --> 00:00:20.560
+data that vary over space.
+
+6
+00:00:20.560 --> 00:00:22.660
+For example, suppose you
+are looking at time series data.
+
+7
+00:00:22.660 --> 00:00:28.400
+You might be looking at the closing
+value of Apple stock every day for year.
+
+8
+00:00:28.400 --> 00:00:32.145
+You've got this data set, it's daily data
+for a year of Apple's closing price.
+
+9
+00:00:32.145 --> 00:00:37.280
+Suppose you wanna make
+an inference from this data set,
+
+10
+00:00:37.280 --> 00:00:41.670
+what is the population there now that
+you're trying to make an inference too?
+
+11
+00:00:41.670 --> 00:00:43.990
+There's a couple of different
+candidates that you can think about.
+
+12
+00:00:43.990 --> 00:00:47.980
+The first is, this data came from
+a single year's worth of data.
+
+13
+00:00:47.980 --> 00:00:50.120
+Apple's been around for many years.
+
+14
+00:00:50.120 --> 00:00:54.740
+You might think that this data
+set represents a sample from
+
+15
+00:00:54.740 --> 00:01:00.370
+all the future or past years, for
+example, of data that might exist.
+
+16
+00:01:00.370 --> 00:01:04.360
+This data's a random sample from all the
+different years that you might look at.
+
+17
+00:01:04.360 --> 00:01:07.850
+Another possibility is that,
+of course, Apple is on a stock market,
+
+18
+00:01:07.850 --> 00:01:10.540
+and there's other stocks that
+trade on a stock market.
+
+19
+00:01:10.540 --> 00:01:13.710
+You might think of Apple
+as being a random draw
+
+20
+00:01:13.710 --> 00:01:16.290
+from those other stocks
+in the stock market.
+
+21
+00:01:17.400 --> 00:01:21.300
+For example, if you're trying to
+approximate an index of stocks,
+
+22
+00:01:21.300 --> 00:01:23.990
+Apple would be a random
+element of that index,
+
+23
+00:01:23.990 --> 00:01:27.190
+you might sample different
+stocks to approximate the index.
+
+24
+00:01:28.760 --> 00:01:33.820
+The other kind of phenomenon that often,
+where the population
+
+25
+00:01:33.820 --> 00:01:36.700
+can be difficult to define, is when
+you're looking at natural phenomenons.
+
+26
+00:01:36.700 --> 00:01:42.170
+For things like earthquakes ,hurricanes,
+or wildfires, things that occur in space,
+
+27
+00:01:42.170 --> 00:01:46.940
+you often collect data on that and
+analyze it using models or whatnot.
+
+28
+00:01:46.940 --> 00:01:49.890
+But then if you want to make an inference,
+you have to think a little bit carefully
+
+29
+00:01:49.890 --> 00:01:54.290
+about what exactly are you inferring,
+or making an inference about?
+
+30
+00:01:54.290 --> 00:01:59.520
+Often with natural processes, it's useful
+to think of an unobserved stochastic
+
+31
+00:01:59.520 --> 00:02:04.230
+process that lies in the background and
+drops these events on the ground.
+
+32
+00:02:04.230 --> 00:02:09.432
+If you imagine there's a stochastic
+process of earthquakes that randomly
+
+33
+00:02:09.432 --> 00:02:14.138
+drops earthquakes into our world,
+or wildfires, or hurricanes,
+
+34
+00:02:14.138 --> 00:02:19.830
+whatever it may be, when you fit a model
+and you make an inference from that model,
+
+35
+00:02:19.830 --> 00:02:25.474
+what you're inferring are properties
+of this unobserved stochastic process.
+
+36
+00:02:29.213 --> 00:02:32.074
+The last thing that I'll
+talk about when it comes to
+
+37
+00:02:32.074 --> 00:02:34.934
+inference is actually not
+about inference at all,
+
+38
+00:02:34.934 --> 00:02:38.980
+it's actually a special case of
+using the data as a population.
+
+39
+00:02:38.980 --> 00:02:41.850
+The underlying question here really
+that you want to ask yourself
+
+40
+00:02:41.850 --> 00:02:45.190
+is do you actually need to
+make an inference at all?
+
+41
+00:02:45.190 --> 00:02:48.780
+Sometimes you can think of
+the data set as a population.
+
+42
+00:02:48.780 --> 00:02:52.564
+There may be cases where you actually
+have all the data you ever wanna see and
+
+43
+00:02:52.564 --> 00:02:56.340
+then you actually don't care about
+things that are outside the data set,
+
+44
+00:02:56.340 --> 00:02:57.360
+which is really, fundamentally,
+
+45
+00:02:57.360 --> 00:03:00.580
+what inference is about is that you're
+talking about things outside the data set.
+
+46
+00:03:01.790 --> 00:03:03.890
+If the data are the population,
+
+47
+00:03:03.890 --> 00:03:07.290
+one of the features of your analysis
+is that it will have no uncertainty
+
+48
+00:03:07.290 --> 00:03:11.129
+because there's no sampling process
+that generates the uncertainty.
+
+49
+00:03:12.150 --> 00:03:14.890
+You won't have to worry about confidence
+intervals or standard errors or
+
+50
+00:03:14.890 --> 00:03:18.410
+P values because you'll have all the
+certainty in the world that you'll need,
+
+51
+00:03:18.410 --> 00:03:21.620
+assuming that you don't have any
+problems with that data set.
+
+52
+00:03:21.620 --> 00:03:24.580
+There are many cases where, for example,
+if you have data collecting on your
+
+53
+00:03:24.580 --> 00:03:29.140
+organization that you won't have to worry
+about things that are outside the data set
+
+54
+00:03:29.140 --> 00:03:31.599
+because you may not be worried about
+things that are outside your organization.
+
+55
+00:03:32.900 --> 00:03:34.980
+Try to always think
+carefully about whether or
+
+56
+00:03:34.980 --> 00:03:39.030
+not you actually have to make an inference
+because, in many cases, you may not.
+
+57
+00:03:39.030 --> 00:03:41.690
+Then you're analysis will
+be greatly simplified
+
+58
+00:03:41.690 --> 00:03:45.090
+because you won't have to worry about
+making statements about things that you
+
+59
+00:03:45.090 --> 00:03:47.349
+don't actually observe because
+you actually observe everything.
+
+60
+00:03:49.270 --> 00:03:53.240
+Just to summarize, inference is
+the process of making statements from data
+
+61
+00:03:53.240 --> 00:03:55.180
+about things that you can't observe.
+
+62
+00:03:55.180 --> 00:03:58.190
+There are many different kind of
+populations that you can think about or
+
+63
+00:03:58.190 --> 00:04:00.880
+construct when you're
+making inference from data.
+
+64
+00:04:02.090 --> 00:04:05.530
+Then there's the special case of
+using the data as a population,
+
+65
+00:04:05.530 --> 00:04:07.970
+in which case you're not making
+any inferences at all but
+
+66
+00:04:07.970 --> 00:04:10.122
+you actually have all
+the information you need.
+
+67
+00:04:10.122 --> 00:04:14.322
+It's useful to figure out what situation
+you're in and for any given question, and
+
+68
+00:04:14.322 --> 00:04:16.749
+to always define
+the population coherently, so
+
+69
+00:04:16.749 --> 00:04:19.435
+that you know what you're
+making inferences about.

@@ -1,0 +1,468 @@
+WEBVTT
+
+1
+00:00:00.430 --> 00:00:03.765
+This lecture's just another quick example
+of how to use statistical models to
+
+2
+00:00:03.765 --> 00:00:06.300
+explore your data and
+to develop a sketch of your solution.
+
+3
+00:00:06.300 --> 00:00:11.303
+[MUSIC]
+
+4
+00:00:11.303 --> 00:00:15.260
+So this example looks at fitting
+linear models to some data.
+
+5
+00:00:15.260 --> 00:00:17.670
+And the data that we're
+gonna use is ozone and
+
+6
+00:00:17.670 --> 00:00:21.380
+temperature data from New York City for
+the year 1999.
+
+7
+00:00:21.380 --> 00:00:23.350
+This data comes from
+the National Morbidity and
+
+8
+00:00:23.350 --> 00:00:27.010
+Mortality Air Pollution Study which is
+an Air Pollution Study that I was heavily
+
+9
+00:00:27.010 --> 00:00:28.260
+involved with.
+
+10
+00:00:28.260 --> 00:00:32.540
+So the data that we've got here is
+just daily levels of 24 hour average
+
+11
+00:00:32.540 --> 00:00:37.950
+temperature and 24 hour average ozone
+levels for the year 1999 in New York.
+
+12
+00:00:37.950 --> 00:00:40.910
+And the basic question that
+we're interested in asking here
+
+13
+00:00:40.910 --> 00:00:43.680
+is how our ambient temperature levels
+
+14
+00:00:43.680 --> 00:00:47.130
+related to ambient ozone
+levels in New York City, okay?
+
+15
+00:00:47.130 --> 00:00:49.430
+Now, just a couple things
+about how ozone works.
+
+16
+00:00:49.430 --> 00:00:52.380
+First of all,
+the development of ozone in the air
+
+17
+00:00:52.380 --> 00:00:55.030
+depends a lot on the amount
+of sunlight that's available.
+
+18
+00:00:55.030 --> 00:00:58.910
+So, days with lots of sunlight
+have higher temperatures
+
+19
+00:00:58.910 --> 00:01:02.300
+than otherwise similar days
+with lower temperatures.
+
+20
+00:01:02.300 --> 00:01:06.480
+And so, similarly, cloudy days tend to
+have lower temperature and less ozone.
+
+21
+00:01:06.480 --> 00:01:09.000
+So the basic idea is that we expect days
+
+22
+00:01:09.000 --> 00:01:11.820
+with higher temperature to
+have higher ozone levels.
+
+23
+00:01:11.820 --> 00:01:13.840
+But this is kind of
+an indirect relationship.
+
+24
+00:01:13.840 --> 00:01:17.690
+What we're really doing is we're
+using temperature as a proxy for
+
+25
+00:01:17.690 --> 00:01:19.670
+the amount of sunlight that's available,
+
+26
+00:01:19.670 --> 00:01:22.240
+cuz we don't really actually
+have any data on sunlight, okay?
+
+27
+00:01:22.240 --> 00:01:26.350
+So we're expecting this kind of positive
+correlation between temperature and
+
+28
+00:01:26.350 --> 00:01:27.630
+ozone in New York City.
+
+29
+00:01:27.630 --> 00:01:31.550
+Now the simplest model that we can use to
+
+30
+00:01:31.550 --> 00:01:35.100
+describe this relationship that
+we expect is a linear model.
+
+31
+00:01:35.100 --> 00:01:38.200
+So now the question we should
+be asking right now is,
+
+32
+00:01:38.200 --> 00:01:40.060
+what does a linear model look like?
+
+33
+00:01:40.060 --> 00:01:44.420
+So remember we wanna set expectations
+before we start looking at the data.
+
+34
+00:01:44.420 --> 00:01:46.909
+So the easiest way to do that
+is to draw a fake picture.
+
+35
+00:01:48.630 --> 00:01:52.130
+So this picture shows two simulated
+variables with a linear relationship.
+
+36
+00:01:52.130 --> 00:01:53.670
+Okay?
+There's no actual data here.
+
+37
+00:01:53.670 --> 00:01:55.290
+We just simulated it on the computer.
+
+38
+00:01:55.290 --> 00:01:58.740
+So you can see that the data
+increased from the left to the right,
+
+39
+00:01:58.740 --> 00:02:01.190
+like a line but
+with some scatter around it.
+
+40
+00:02:01.190 --> 00:02:05.830
+And, furthermore, if you choose any point
+on the blue line, there are roughly
+
+41
+00:02:05.830 --> 00:02:09.410
+the same number of points above the line
+as there are below it, all right?
+
+42
+00:02:09.410 --> 00:02:13.880
+So we think of the line as
+being kind of unbiased, right?
+
+43
+00:02:13.880 --> 00:02:16.740
+So if there's gonna be a deviation
+from the line it's equally likely to
+
+44
+00:02:16.740 --> 00:02:18.140
+be above or below it.
+
+45
+00:02:18.140 --> 00:02:21.700
+So this is the picture that we expect
+to see when we look at the data.
+
+46
+00:02:21.700 --> 00:02:24.350
+So it's important that we kind of set
+these expectations before we look at
+
+47
+00:02:24.350 --> 00:02:27.740
+the data, so we know whether we are kind
+of right, or wrong, or far off,
+
+48
+00:02:27.740 --> 00:02:29.300
+or pretty close to the mark.
+
+49
+00:02:30.700 --> 00:02:32.100
+So here's the actually data for
+
+50
+00:02:32.100 --> 00:02:36.780
+New York in 1999, with a fitted linear
+regression line overlaid on top, okay.
+
+51
+00:02:36.780 --> 00:02:39.710
+So the first question you wanna ask
+yourself is how does it compare
+
+52
+00:02:39.710 --> 00:02:42.520
+to what we are expecting from
+the previous picture, okay.
+
+53
+00:02:42.520 --> 00:02:45.410
+Now one thing that we can
+see is that temperature and
+
+54
+00:02:45.410 --> 00:02:48.020
+ozone are in fact increasing together.
+
+55
+00:02:48.020 --> 00:02:50.960
+When temperature is higher,
+ozone does tend to be higher.
+
+56
+00:02:50.960 --> 00:02:54.210
+And when temperature is lower,
+ozone tends to be lower.
+
+57
+00:02:54.210 --> 00:02:57.020
+But there are some deviations
+from what we might expect
+
+58
+00:02:57.020 --> 00:02:59.340
+from what we saw in the previous picture.
+
+59
+00:02:59.340 --> 00:03:02.580
+In particular, if you look at
+around 85 degrees in temperature,
+
+60
+00:03:02.580 --> 00:03:04.770
+you look at where the blue
+line is around that point,
+
+61
+00:03:04.770 --> 00:03:08.150
+you'll see that most of the data points
+happen to be above the line, okay?
+
+62
+00:03:08.150 --> 00:03:12.040
+There aren't many data points below
+the line, right around that neighborhood.
+
+63
+00:03:12.040 --> 00:03:15.480
+Then again, if you look at the temperature
+70 degrees and where the blue line
+
+64
+00:03:15.480 --> 00:03:18.720
+is there, you'll see that most of
+the points are below the line, actually.
+
+65
+00:03:18.720 --> 00:03:20.810
+And there aren't that many
+points above the line.
+
+66
+00:03:20.810 --> 00:03:25.770
+So, at around 85 degrees, what we see
+is that the blue line, our model,
+
+67
+00:03:25.770 --> 00:03:28.048
+the linear model,
+is kind of biased downwards.
+
+68
+00:03:28.048 --> 00:03:32.640
+And at 70 degree point mark the linear
+model is actually biased upwards.
+
+69
+00:03:32.640 --> 00:03:36.920
+We're tending to predict too high for
+what the ozone level actually is.
+
+70
+00:03:36.920 --> 00:03:40.450
+So what we see here is that the model
+kind of captures the general
+
+71
+00:03:40.450 --> 00:03:44.000
+trend of kind of increasing
+temperature and increasing ozone, but
+
+72
+00:03:44.000 --> 00:03:47.280
+it tends to be biased within
+certain ranges of temperature.
+
+73
+00:03:47.280 --> 00:03:49.157
+So it's clearly not a perfect model.
+
+74
+00:03:49.157 --> 00:03:53.527
+So the observed pattern from the data
+seems to suggest that the relationship
+
+75
+00:03:53.527 --> 00:03:57.486
+between ozone and temperature is
+actually kind of flat up until about
+
+76
+00:03:57.486 --> 00:04:00.988
+the point where you hit 70 degrees,
+72, 73 degrees.
+
+77
+00:04:00.988 --> 00:04:05.721
+Then there's a sharp increase
+in ozone with every additional
+
+78
+00:04:05.721 --> 00:04:08.120
+degree of temperature.
+
+79
+00:04:08.120 --> 00:04:11.130
+And so this suggests that maybe
+the relationship is non linear.
+
+80
+00:04:11.130 --> 00:04:11.820
+Okay.
+
+81
+00:04:11.820 --> 00:04:14.210
+So we can revise our expectations for
+
+82
+00:04:14.210 --> 00:04:18.690
+what the relationship should look like to
+be this kind of non-linear relationship,
+
+83
+00:04:18.690 --> 00:04:21.570
+rather than our original expectation
+of a linear relationship.
+
+84
+00:04:21.570 --> 00:04:23.980
+And so the way that we can check that
+is by using a non-linear smoother.
+
+85
+00:04:23.980 --> 00:04:27.866
+Here's some data with a low-S smoother,
+which is a flexible smoother that can
+
+86
+00:04:27.866 --> 00:04:30.714
+capture a lot of different
+kinds of smooth trends, okay.
+
+87
+00:04:30.714 --> 00:04:35.505
+So what we can see here is that, from
+the blue line, there's a sharp increase in
+
+88
+00:04:35.505 --> 00:04:40.012
+ozone after about 75 degrees, and
+then maybe around 85 degrees or so,
+
+89
+00:04:40.012 --> 00:04:44.620
+there's some suggestion of
+leveling off of the relationship.
+
+90
+00:04:44.620 --> 00:04:48.370
+So there's a suggestion of a classic
+kind of S-shaped curve here,
+
+91
+00:04:48.370 --> 00:04:51.740
+where there's a kind of
+roughly flat relationship,
+
+92
+00:04:51.740 --> 00:04:54.509
+then there's a sharp, increasing one and
+then kind of leveling off.
+
+93
+00:04:55.550 --> 00:04:59.580
+Now, these smoothers like low S are very
+useful for capturing these kinds of null
+
+94
+00:04:59.580 --> 00:05:04.060
+in your trends but they usually don't tell
+you much about how things work underneath.
+
+95
+00:05:04.060 --> 00:05:08.100
+So we may wanna revise our original
+linear model based on what we found here
+
+96
+00:05:08.100 --> 00:05:10.509
+to think,
+to try to capture these trends and
+
+97
+00:05:10.509 --> 00:05:13.264
+to learn more about what's
+going on underneath.

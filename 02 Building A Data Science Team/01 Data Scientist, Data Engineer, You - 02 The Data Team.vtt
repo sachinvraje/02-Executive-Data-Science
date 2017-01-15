@@ -1,0 +1,234 @@
+WEBVTT
+
+1
+00:00:02.910 --> 00:00:05.190
+So the first thing to know when
+building a data science team,
+
+2
+00:00:05.190 --> 00:00:07.110
+is that data science is a team sport.
+
+3
+00:00:07.110 --> 00:00:10.250
+It takes a large group of people
+working together to solve real,
+
+4
+00:00:10.250 --> 00:00:12.350
+practical data science projects.
+
+5
+00:00:12.350 --> 00:00:14.700
+So those people include
+the data scientists.
+
+6
+00:00:14.700 --> 00:00:16.700
+The managers of those data scientists,
+
+7
+00:00:16.700 --> 00:00:20.100
+data engineers who perform and
+develop the infrastructure.
+
+8
+00:00:20.100 --> 00:00:24.480
+And then people who they have contact
+with outside of their data science team.
+
+9
+00:00:24.480 --> 00:00:28.150
+So people within the organization or
+management of the organization,
+
+10
+00:00:28.150 --> 00:00:30.460
+and how do they communicate
+with those people?
+
+11
+00:00:30.460 --> 00:00:33.410
+So I just thought I'd go through the key
+positions in the data science team.
+
+12
+00:00:33.410 --> 00:00:36.180
+And so the first one is a data engineer.
+
+13
+00:00:36.180 --> 00:00:40.040
+So, a data engineer is a person that
+would maybe construct a database, or
+
+14
+00:00:40.040 --> 00:00:43.470
+they might pull data out of that
+database for people to analyze.
+
+15
+00:00:43.470 --> 00:00:47.080
+Or they might build production level
+machine learning algorithms and
+
+16
+00:00:47.080 --> 00:00:51.020
+implement them on servers, so that they
+can be applied to a huge database of
+
+17
+00:00:51.020 --> 00:00:54.370
+observations of data, and
+maybe even run in real time.
+
+18
+00:00:54.370 --> 00:00:58.420
+So they have skills in infrastructure
+development, both the hardware side and
+
+19
+00:00:58.420 --> 00:00:59.750
+the software side.
+
+20
+00:00:59.750 --> 00:01:03.480
+And they do less of the actually
+analysis of the day to day data.
+
+21
+00:01:03.480 --> 00:01:06.220
+That falls to the person that's
+called a data scientist.
+
+22
+00:01:06.220 --> 00:01:10.030
+So a data scientist might be somebody that
+would go and pull data out of a database.
+
+23
+00:01:10.030 --> 00:01:13.860
+Then they might analyze it, perform
+experiments on it, visualize it and
+
+24
+00:01:13.860 --> 00:01:16.700
+communicate those results to
+the data science manager, and
+
+25
+00:01:16.700 --> 00:01:20.300
+to other people in the organization
+to try and move things forward.
+
+26
+00:01:20.300 --> 00:01:23.530
+Often, a data scientist will hand off
+any machine learning algorithm or
+
+27
+00:01:23.530 --> 00:01:26.310
+prediction algorithm they develop,
+to the data engineer,
+
+28
+00:01:26.310 --> 00:01:29.080
+who will then implement it so
+it can run at scale.
+
+29
+00:01:29.080 --> 00:01:32.510
+The third key person is the data
+science manager, so that would be you.
+
+30
+00:01:32.510 --> 00:01:36.090
+The data science manager, makes sure that
+everybody interacts with each other and
+
+31
+00:01:36.090 --> 00:01:38.340
+that they keep things moving.
+
+32
+00:01:38.340 --> 00:01:41.250
+They also recruit and
+build the data science team.
+
+33
+00:01:41.250 --> 00:01:45.440
+And then they also interface with
+upper management in an organization.
+
+34
+00:01:45.440 --> 00:01:48.980
+As well as with collaborators that are at
+their same level across the organization,
+
+35
+00:01:48.980 --> 00:01:51.820
+to make sure that they get
+all the information across.
+
+36
+00:01:51.820 --> 00:01:55.455
+And they advertise the data
+science team to other people,
+
+37
+00:01:55.455 --> 00:01:59.595
+what their capabilities are, what they
+can do, and how they can help out.
+
+38
+00:01:59.595 --> 00:02:03.995
+So that's the data science team,
+and then how do they work together?
+
+39
+00:02:03.995 --> 00:02:08.625
+They work together as a unit, and so
+often each of these people are working
+
+40
+00:02:08.625 --> 00:02:12.910
+on individual projects, or individual
+subproblems of a data science problem.
+
+41
+00:02:12.910 --> 00:02:17.510
+And then they come together and have joint
+group meetings and joint presentations,
+
+42
+00:02:17.510 --> 00:02:19.520
+where they discuss their ideas.
+
+43
+00:02:19.520 --> 00:02:23.790
+They also interact with external folks,
+they might interact with those people
+
+44
+00:02:23.790 --> 00:02:28.670
+directly through individual meetings with
+people outside of the data science team.
+
+45
+00:02:28.670 --> 00:02:31.380
+Or they might interact through
+the data science manager.
+
+46
+00:02:31.380 --> 00:02:35.420
+So, in either way they have to be able to
+communicate what's going on with the data
+
+47
+00:02:35.420 --> 00:02:39.360
+science infrastructure, what's going
+on with the data science team.
+
+48
+00:02:39.360 --> 00:02:42.600
+And how do they make sure that all
+the problems are getting solved.

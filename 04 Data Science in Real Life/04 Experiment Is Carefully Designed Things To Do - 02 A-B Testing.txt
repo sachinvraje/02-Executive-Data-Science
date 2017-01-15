@@ -1,0 +1,122 @@
+Hi.
+My name's Brian Caffo, and welcome to the lecture on A/B testing as part of our
+Executive Day science specialization. I'm going to start this lecture by
+posing one of the most fundamental questions of our time, and
+that is how can Jeff sell more books. So Jeff is another one of
+the instructors in our specialization, and he does have a book called
+the The Elements of Data Analytic Style. It's a great book. Get it off of Leanpub. So imagine if Jeff had two Twitter's
+ad campaigns he'd like to compare to see which one was more effective. The first one says, a practical but
+non-technical guide to data analysis. Pay what you want. And the other one says,
+a book of non-technical tips for analyzing data the right way. [INAUDIBLE] So, he wants to
+compare these two ad campaigns, what are some possible strategies
+he might use to do that? Well, one is he could run the ad serially. He could run for a couple of weeks
+the first ad then run the second one for a couple of weeks. Maybe after a washout period, and then compare the conversion rate during
+the time periods of the two ads. Now, that has the problem
+that anything that he found, whether it's an effective ad type or
+absence of effect, could also be attributed to whatever's aliased with
+the time periods that he was studying. For example, imagine the first ad ran
+during Christmas or a major holiday. Then, of course people's purchasing
+patterns are different during that time of year, than during a time where
+there isn't a major holiday. So, he wouldn't be able to conclude
+that there is a difference or absence of a difference because of ad campaign
+because of this lurking variable and that's what we're going to study today. I think this idea of lurking variables and confounding underlies a lot of the issues
+with observational studies and why in particular in nutritional studies
+we see kind of opposite results so often. Chocolate is good for us one week and
+it's bad for us another week. And I saw this great article
+where it's a blogger, of E Magazine, written by healthcare
+journalists for healthcare journalists. And the title was, Don't fudge
+the facts on chocolate studies and it actually goes through many of
+the topics we're gonna talk about today. So such as confounding, but chocolate is
+one of these examples where frequently it's associated with cancer,
+it's not associated with cancer, etc. So I'd like to use chocolate today to
+discuss the issue of confounding and how randomization as is used in A/B
+testing and randomized controlled trials, how that can help combat
+some of these issues. And I made up a little data set and
+it's a little bit contrived. But, kind of purposefully so, so
+that you can just focus on the concepts. In this case, we have two group,
+to the left the group of people who eats chocolate and to the right the group
+of people who don't eat chocolate. We're interested in
+ascertaining whether or not chocolate lowers our blood pressure,
+for whatever the reason. So everyone who has a smiley
+face has low blood pressure, and everyone who has a frowny
+face has high blood pressure. And if you were to look at this data set
+where we just observed people's chocolate eating patterns and compared the two
+groups, you'd see five out of either for the chocolate group and three out of
+either for the non-chocolate group had low blood pressure or
+had normal blood pressure. And so you might conclude that if there
+was enough subjects of this sort, maybe let each smiley face represents 1,000
+people or something like that, then you would conclude that there's a significant
+difference associated with chocolate. However, imagine if there
+was a lurking variable. In this case, imagine that
+the lurking variable is whether or not the subject is taking
+anti-hypertensive medication. Something that's clearly
+related to blood pressure. In this case the group of people who are
+naturally eating chocolate happen to have a much higher percentage of people who are
+taking this anti-hypertensive medications. And if you count 5 out of 7 for the red
+faces, the people on the medication, 3 out of 9 for the blue faces
+being happy,there's a greater percentage of people with
+lower blood pressure, on the anti hypertensive medications,
+likely due to their medications. So in this case, you can't really
+ascertain whether this effect is due to the chocolate or due to the
+anti-hypertensive medications, we haven't, you know, for this made up example,
+I think we'd all probably conclude it's. Likely do to the anti-hypertensive
+medications. So, how can we combat that? Ideally, we'd like to compare two groups with an equal mixture of people
+who are on medication versus not. Or we could fix medication and
+compare just among those taking medication,
+their chocolate-eating habits and just among those not taking medication,
+their chocolate eating habits. Of course that later
+strategy requires us to know what variables we need to control for
+and to have measured them. Randomization, on the other hand,
+is an attempt to balance the observed and unobserved variables that
+may contaminate our result. In randomization,
+we simply randomize every subject. In this case, you've randomized them and
+say go eat a bunch of chocolate, and randomize the other group and
+say you're not allowed to eat chocolate. The fundamental problem, of course, with
+randomization in many cases like this one, you can't ethically carry out a random, ethically or
+practically carry out a randomized trial. So the goal of randomization again
+is to compare like with like. Get apples to apples and
+oranges to oranges, in other words the group's that
+you're comparing have an equal, have roughly equal proportional mixtures of all
+the lurking variables that are associated, that are typically associated with
+the predictor and with the outcome. And you've broken that
+association with the, with the treatment by virtue
+of the randomization. And I'll give you this wonderful quote
+that I think summarizes this idea very neatly. It's by R.A. Fisher, one of the early
+pioneers on the subject of randomization. And he said randomization
+properly carried out, relieves the experimenter from
+the anxiety of considering and estimating the magnitude of the innumerable causes
+by which his data may be disturbed. This by, this quote, by the way, I found in a wonderful paper
+by Armitage on Fisher, Bradford Hill, and randomization, a discussion of some of
+the early thinking on randomization. Let's return to our example, and see what would likely have
+occurred if we had randomization. Well it would make, at least with
+high probability, the treated and untreated groups having
+roughly equal proportions of people on anti-hypertensive
+medications and people not. And in this case,
+we got the opposite result. 3 out of 8 for chocolate and
+5 out of 8 for no chocolate. So, as an example. Now the effect actually reverses itself
+when we perform the randomization. I'd like to close this lecture by asking
+the question is randomization a cure all? Is it all we need to think about for trying to solve some of the problems
+with observational studies? And the answer of course by
+posing this question is no. And one particular way in which bias
+can creep back into randomized studies is through missing data and I concocted
+an example where in this case for the chocolate group its just like before 3
+out of 8 its the same set of smiley faces and frowning faces as before, but for the
+non-chocolate group almost every person who was not taking anti-hypertensive
+medications dropped out of the study. They said for whatever the reason
+there most of them were frowny faces. So they were saying I've
+got high blood pressure. I feel like eating some chocolate. Whatever, they dropped out of the study. And so
+now the comparison is contaminated again by the fact that the groups
+aren't directly comparable. The mixture of anti-hypertensive
+medication folks is different in the two groups. So just as a fun, and again the specifics of all the different
+ways in which A/B tests or a randomized trial can fail is perhaps out
+of the out of the purview of this class. But I just want to emphasize the fact
+that just because you've randomized the necessary things to think
+about don't just end there. So at any rate I'd like to
+summarize this lecture. And the fundamental point of this lecture
+is the main characteristic of A/B testing, which is the main characteristic of
+randomized trials in the medical literature, is the idea of using
+randomization to balance these confounding factors in lurking variables that would
+otherwise contaminate the results. And the benefit is that they hopefully,
+at least with high probability, will balance both the known confounding
+factors and the unknown ones as well. So I hope you enjoyed today's lecture and I look forward to seeing
+you in the next class.

@@ -1,0 +1,15 @@
+Have you ever had the perfect
+data science experiment? You ran an AB test. Data collection pulls and
+mergers all went perfectly. There was no missing data. The sample was easily generalizable to
+the population you're interested in. Tests were robust and highly significant. And actual conclusions were obvious
+from the results of your test. Has this ever happened to you? >> No. Of course not. Instead, your experiments are with
+observational data on a sample that isn't representative of the population
+that you're interested in. You have missing data and
+errors in data collection. Through a complex merging. The results of your test are borderline
+and the conclusions are not clear. Welcome to data science in real life. This class is about the ying and yang of when data analysis is ideal,
+versus when it's hard. We'll cover the common pitfalls and
+protections from them in data analysis. We'll talk about how design can
+protect you in your recourse for when design is out of your control. We'll discuss when it's appropriate
+to throw in the towel and say that your data just can't answer
+the questions that you'd like to ask. So welcome to the class,
+I hope you enjoy it. And let's begin.

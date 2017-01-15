@@ -1,0 +1,584 @@
+WEBVTT
+
+1
+00:00:05.069 --> 00:00:08.506
+As your data science team is rolling
+along, one thing that you need to be able
+
+2
+00:00:08.506 --> 00:00:11.514
+to do is evaluate the success and
+define metrics that are useful for
+
+3
+00:00:11.514 --> 00:00:14.650
+people so
+they know what targets they need to hit.
+
+4
+00:00:14.650 --> 00:00:17.120
+So, on one level,
+you need to talk about group success,
+
+5
+00:00:17.120 --> 00:00:19.590
+what's the success of
+a data science group?
+
+6
+00:00:19.590 --> 00:00:21.880
+So, success can be defined
+in a few different ways.
+
+7
+00:00:21.880 --> 00:00:23.904
+One is solving organizational problems.
+
+8
+00:00:23.904 --> 00:00:28.230
+So, say for example, we want to
+increase user growth by a certain
+
+9
+00:00:28.230 --> 00:00:30.920
+percentage by a certain amount of time.
+
+10
+00:00:30.920 --> 00:00:33.200
+So, to do that,
+requires a couple of different things.
+
+11
+00:00:33.200 --> 00:00:35.440
+It requires careful use of the data.
+
+12
+00:00:35.440 --> 00:00:36.530
+Good analysis.
+
+13
+00:00:36.530 --> 00:00:39.030
+Good infrastructure for
+building out how is the data gonna be
+
+14
+00:00:39.030 --> 00:00:42.220
+used once we actually figure out
+what's going on with the data.
+
+15
+00:00:42.220 --> 00:00:44.450
+All those sorts of things
+need to be built into that.
+
+16
+00:00:44.450 --> 00:00:47.550
+And you can identify these
+organizational problems as a way,
+
+17
+00:00:47.550 --> 00:00:50.170
+as a target to try to hit.
+
+18
+00:00:50.170 --> 00:00:53.130
+Now, sometimes data is useful for
+those and sometimes it isn't.
+
+19
+00:00:53.130 --> 00:00:54.790
+So setting specific targets like that,
+
+20
+00:00:54.790 --> 00:00:59.550
+like a percent growth increase,
+can be very hard to hit all the time.
+
+21
+00:00:59.550 --> 00:01:01.760
+So you need to be able
+to internally calibrate.
+
+22
+00:01:01.760 --> 00:01:06.130
+When is it that we've actually explored an
+avenue, we improved things, but maybe we
+
+23
+00:01:06.130 --> 00:01:10.100
+didn't hit the target that we initially
+hypothesized we might be able to do.
+
+24
+00:01:10.100 --> 00:01:11.770
+Another is to solve internal problems.
+
+25
+00:01:11.770 --> 00:01:14.990
+Say the data security isn't
+quite where you'd want it to do.
+
+26
+00:01:14.990 --> 00:01:16.730
+Maybe that there's some
+sort of technical debt.
+
+27
+00:01:16.730 --> 00:01:19.870
+Say, you have a bunch of code,
+but its kind of bad quality code.
+
+28
+00:01:19.870 --> 00:01:22.120
+It gets the job done but
+nobody can understand it and
+
+29
+00:01:22.120 --> 00:01:23.620
+there's no documentation, so.
+
+30
+00:01:23.620 --> 00:01:26.230
+Solving an internal problem
+might be cleaning up the code,
+
+31
+00:01:26.230 --> 00:01:30.800
+cleaning up the documentations, and
+getting it ready for other people to use.
+
+32
+00:01:30.800 --> 00:01:33.820
+Those sort of targets tend to be
+targets that are more concrete and
+
+33
+00:01:33.820 --> 00:01:34.940
+definable and easy to hit.
+
+34
+00:01:34.940 --> 00:01:39.510
+And so there tends to be
+a tendency to set up internal
+
+35
+00:01:39.510 --> 00:01:42.320
+problems that you want to solve because
+they tend to be things that can be
+
+36
+00:01:42.320 --> 00:01:44.610
+easily be solved in
+a finite period of time.
+
+37
+00:01:44.610 --> 00:01:47.740
+Whereas organizational goals tend
+to be a little bit more vague.
+
+38
+00:01:47.740 --> 00:01:49.820
+And, they tend to be
+a little bit harder to hit,
+
+39
+00:01:49.820 --> 00:01:53.040
+because the data don't necessarily always
+do exactly what you want them to do.
+
+40
+00:01:54.230 --> 00:01:58.620
+So, metrics for success can either
+be very concrete or they can be,
+
+41
+00:01:58.620 --> 00:02:02.270
+are we progressing in the direction that
+we want to be moving in terms of the data
+
+42
+00:02:02.270 --> 00:02:05.270
+science infrastructure, the data
+science team for the organisation.
+
+43
+00:02:05.270 --> 00:02:08.316
+So, being able to
+prioritize those metrics.
+
+44
+00:02:08.316 --> 00:02:12.950
+Vague metrics versus very specific metrics
+is a key juggling job of the data science
+
+45
+00:02:12.950 --> 00:02:14.770
+executive or manager.
+
+46
+00:02:14.770 --> 00:02:18.760
+Another thing is individual success,
+so documenting and managing, and
+
+47
+00:02:18.760 --> 00:02:20.650
+celebrating individual success.
+
+48
+00:02:20.650 --> 00:02:23.690
+So, one way to do that is
+by identifying projects,
+
+49
+00:02:23.690 --> 00:02:26.560
+specific projects individuals can work on.
+
+50
+00:02:26.560 --> 00:02:29.924
+And when they've completed that project,
+you can document that as a success.
+
+51
+00:02:29.924 --> 00:02:34.158
+But it's often not that easy with data
+science because usually to solve a big
+
+52
+00:02:34.158 --> 00:02:38.790
+data science problem for an organization,
+you need to build some data engineering
+
+53
+00:02:38.790 --> 00:02:42.843
+infrastructure, you need to analyze
+some data, do some experiments.
+
+54
+00:02:42.843 --> 00:02:46.022
+Once you've done those experiments you
+need to figure out how to implement it,
+
+55
+00:02:46.022 --> 00:02:49.260
+back at scale, then you need to do another
+evaluation once you've scaled it up.
+
+56
+00:02:49.260 --> 00:02:50.790
+Is it still working?
+
+57
+00:02:50.790 --> 00:02:53.590
+That involves multiple people at
+multiple different times on multiple
+
+58
+00:02:53.590 --> 00:02:54.670
+different levels.
+
+59
+00:02:54.670 --> 00:02:57.310
+So it's a little bit hard to monitor
+
+60
+00:02:57.310 --> 00:03:00.410
+individual success by completion
+of specific projects.
+
+61
+00:03:00.410 --> 00:03:04.450
+It's often easier to monitor, you know,
+day to day activities, or week to week
+
+62
+00:03:04.450 --> 00:03:07.920
+activities in meetings, are they
+participating, are they contributing, do
+
+63
+00:03:07.920 --> 00:03:11.630
+other people seem like their getting what
+they need from your data engineering team?
+
+64
+00:03:11.630 --> 00:03:15.250
+Is the data scientist able to pull
+the data that they need and so forth.
+
+65
+00:03:15.250 --> 00:03:18.110
+Personal improvement,
+are they learning new techniques?
+
+66
+00:03:18.110 --> 00:03:22.170
+As the organization grows and
+you go from needing one database
+
+67
+00:03:22.170 --> 00:03:26.560
+to needing multiple databases, is your
+engineer learning how to manage that,
+
+68
+00:03:26.560 --> 00:03:29.720
+how to set up the infrastructure
+in a way that works?
+
+69
+00:03:29.720 --> 00:03:32.540
+And is there a way they can
+sort of personally improve and
+
+70
+00:03:32.540 --> 00:03:33.699
+hit goals for themselves?
+
+71
+00:03:35.140 --> 00:03:37.000
+The next thing is you
+need to examine failure.
+
+72
+00:03:37.000 --> 00:03:40.020
+This is obviously the least fun and
+hardest part.
+
+73
+00:03:40.020 --> 00:03:44.060
+One thing is to take responsibility as a
+data science manager when there's failure,
+
+74
+00:03:44.060 --> 00:03:46.740
+particularly externally facing.
+
+75
+00:03:46.740 --> 00:03:50.262
+So, for example, it's very common for
+a hypothesis to be generated,
+
+76
+00:03:50.262 --> 00:03:52.670
+maybe by some leadership organization.
+
+77
+00:03:52.670 --> 00:03:56.260
+They come down and they ask the data
+science team to run some experiments.
+
+78
+00:03:56.260 --> 00:03:59.610
+They run those experiments,
+maybe they don't find anything.
+
+79
+00:03:59.610 --> 00:04:01.210
+The leadership might
+think of that as failure,
+
+80
+00:04:01.210 --> 00:04:04.450
+you might recognize that as just
+the way that data science works.
+
+81
+00:04:04.450 --> 00:04:06.690
+But it's up to you to
+take responsibility and
+
+82
+00:04:06.690 --> 00:04:09.840
+to remove some of the heat from the people
+that are doing the experiments so
+
+83
+00:04:09.840 --> 00:04:12.380
+they can feel sort of empowered
+to do it the right way.
+
+84
+00:04:13.450 --> 00:04:15.240
+The next thing is to identify problems.
+
+85
+00:04:15.240 --> 00:04:19.770
+So sometimes there's lack of communication
+between either external people talking to
+
+86
+00:04:19.770 --> 00:04:23.900
+the data science team, or sometimes
+there's the data science team itself isn't
+
+87
+00:04:23.900 --> 00:04:26.680
+communicating between the data
+engineers and the data scientists.
+
+88
+00:04:26.680 --> 00:04:29.960
+Sometimes people aren't working on
+the problem that needs to be solved.
+
+89
+00:04:29.960 --> 00:04:33.270
+They're working on sort of
+a variety of different projects and
+
+90
+00:04:33.270 --> 00:04:35.050
+they need to be consolidated.
+
+91
+00:04:35.050 --> 00:04:38.829
+But in general, identifying what's
+the data problem that you're working on,
+
+92
+00:04:38.829 --> 00:04:40.007
+is a key component of it.
+
+93
+00:04:40.007 --> 00:04:44.101
+And then, proposing concrete steps and
+people responsible for
+
+94
+00:04:44.101 --> 00:04:48.775
+taking those steps is a key
+component of examining failure.
+
+95
+00:04:48.775 --> 00:04:52.186
+The other thing is and this is the
+critical one, is that treating failure and
+
+96
+00:04:52.186 --> 00:04:52.888
+data science.
+
+97
+00:04:52.888 --> 00:04:55.983
+If you don't find the right
+prediction accuracy you want, or
+
+98
+00:04:55.983 --> 00:04:59.434
+you don't get the infrastructure
+built exactly like you would I do,
+
+99
+00:04:59.434 --> 00:05:03.302
+in an idealized world, will often scare
+people off from trying new things and
+
+100
+00:05:03.302 --> 00:05:06.945
+being creative and
+really adding value to your organization.
+
+101
+00:05:06.945 --> 00:05:08.920
+So, you need to think of failure,
+
+102
+00:05:08.920 --> 00:05:13.740
+not as, did we hit the exact target
+metric, but did we, in the right way,
+
+103
+00:05:13.740 --> 00:05:18.480
+use the right process in order to try to
+achieve that and was the process good.
+
+104
+00:05:18.480 --> 00:05:19.720
+Again, it's about process and
+
+105
+00:05:19.720 --> 00:05:22.620
+not necessarily about outcomes
+as a data science team,
+
+106
+00:05:22.620 --> 00:05:26.280
+particularly for large scale, vague
+institutional goals that you might have.
+
+107
+00:05:28.020 --> 00:05:30.409
+And finally, the last thing that you
+need to do is celebrate success.
+
+108
+00:05:30.409 --> 00:05:35.367
+So, when people do well at data science
+it's often a long slog to solve some
+
+109
+00:05:35.367 --> 00:05:39.145
+very hard data coding problem,
+data cleaning problem,
+
+110
+00:05:39.145 --> 00:05:42.760
+then they build a machine
+learning algorithm.
+
+111
+00:05:42.760 --> 00:05:47.640
+And often the reaction is, well yeah
+we expected you to be able to do that
+
+112
+00:05:47.640 --> 00:05:51.840
+machine learning algorithm great and
+then moving on and there's sort of,
+
+113
+00:05:51.840 --> 00:05:55.790
+can over time this can grind people
+down because of the nature of the work.
+
+114
+00:05:55.790 --> 00:05:59.700
+Its helpful if there's a celebration
+of success, oh we really got that done,
+
+115
+00:05:59.700 --> 00:06:04.260
+really good job, to the data team,
+you did an excellent
+
+116
+00:06:04.260 --> 00:06:07.950
+job we're moving on to the next thing and
+that's been a huge part of your success.
+
+117
+00:06:07.950 --> 00:06:11.000
+Especially if you can show
+them how that success has sort
+
+118
+00:06:11.000 --> 00:06:12.520
+of realized in other areas.
+
+119
+00:06:12.520 --> 00:06:15.540
+Have they you know improved metrics for
+your organizations,
+
+120
+00:06:15.540 --> 00:06:18.030
+in a way that they can brag about.
+
+121
+00:06:18.030 --> 00:06:21.200
+This keeps people motivated,
+especially when it get's frustrating,
+
+122
+00:06:21.200 --> 00:06:22.100
+which it often does.

@@ -1,0 +1,893 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:03.687
+This lecture gives an example of how
+to think about formal modeling in
+
+2
+00:00:03.687 --> 00:00:04.697
+a prediction setting.
+
+3
+00:00:09.216 --> 00:00:12.876
+With associational analyses, the basic
+goal is to determine whether a key
+
+4
+00:00:12.876 --> 00:00:16.710
+predictor and an outcome are associated
+with each other in the presence of many
+
+5
+00:00:16.710 --> 00:00:19.210
+other potentially confounding factors.
+
+6
+00:00:19.210 --> 00:00:22.400
+But sometimes you wanna be able
+to predict the outcome with
+
+7
+00:00:22.400 --> 00:00:24.209
+all of the available
+information that you have.
+
+8
+00:00:25.650 --> 00:00:29.590
+So you don't necessarily have to
+distinguish between, say, a key predictor
+
+9
+00:00:29.590 --> 00:00:33.180
+and a set of other predictors, okay,
+you just want to use all the information.
+
+10
+00:00:33.180 --> 00:00:37.480
+So, and furthermore it doesn't matter
+kind of if the variables are related to
+
+11
+00:00:37.480 --> 00:00:41.260
+the outcome in some sort of causal or
+mechanistic way, but
+
+12
+00:00:41.260 --> 00:00:44.800
+if they carry any information
+at all about the outcome,
+
+13
+00:00:44.800 --> 00:00:48.040
+they may be useful in a prediction
+setting, and you might want to use them.
+
+14
+00:00:48.040 --> 00:00:52.050
+Because you're usually not
+interested in developing a kind
+
+15
+00:00:52.050 --> 00:00:55.780
+of detailed understanding of how the
+variables are related to each other, or
+
+16
+00:00:55.780 --> 00:00:57.040
+how about they're related to the outcome.
+
+17
+00:00:57.040 --> 00:01:00.650
+You just want to be able produce solid and
+high quality predictions, and
+
+18
+00:01:00.650 --> 00:01:04.940
+so any variable that could play a role
+in that might be useful to you.
+
+19
+00:01:04.940 --> 00:01:09.710
+So, what are the expectations that
+we have about prediction problems?
+
+20
+00:01:09.710 --> 00:01:14.270
+So when we build a prediction model the
+thing that we want is to be able to find
+
+21
+00:01:14.270 --> 00:01:20.360
+a feature or a set of features that can
+produce good separation in the outcome.
+
+22
+00:01:20.360 --> 00:01:23.740
+Because typically the outcome is typically
+going to be some binary outcome or
+
+23
+00:01:23.740 --> 00:01:27.810
+some multi-class outcome where
+that can take either two values or
+
+24
+00:01:27.810 --> 00:01:29.450
+just a handful of values.
+
+25
+00:01:29.450 --> 00:01:31.900
+That is a typical setup
+of a prediction problem.
+
+26
+00:01:31.900 --> 00:01:35.180
+And you want to be able to separate
+the two classes using a set of
+
+27
+00:01:35.180 --> 00:01:38.230
+features that you collect, and
+a model that you develop, okay?
+
+28
+00:01:38.230 --> 00:01:41.820
+So here's a very simple
+example of a single predictor
+
+29
+00:01:41.820 --> 00:01:45.195
+on a binary outcome that produces
+very good separation, okay?
+
+30
+00:01:45.195 --> 00:01:46.665
+This data is simulated, so
+
+31
+00:01:46.665 --> 00:01:49.955
+I just want to show you so
+you can see what it looks like.
+
+32
+00:01:49.955 --> 00:01:53.772
+On the y-axis I have the values of
+the outcome which are just 0 and 1, so
+
+33
+00:01:53.772 --> 00:01:55.095
+it's a binary outcome.
+
+34
+00:01:55.095 --> 00:01:59.282
+You can think of this as like not having
+the disease and having the disease or
+
+35
+00:02:00.812 --> 00:02:03.832
+any sort of binary class
+outcome like that.
+
+36
+00:02:03.832 --> 00:02:08.352
+On the x-axis here I've got a simulated
+predictor that ranges between -2 and 2,
+
+37
+00:02:08.352 --> 00:02:09.542
+roughly.
+
+38
+00:02:09.542 --> 00:02:12.762
+And it's continuous, so it takes all
+the different values in between there.
+
+39
+00:02:12.762 --> 00:02:16.342
+And you can see that there's a gray area
+
+40
+00:02:16.342 --> 00:02:19.170
+here that I've highlighted in the plot
+that's kind of near the middle.
+
+41
+00:02:19.170 --> 00:02:23.960
+And you can see that in that grey area
+that the outcome will take values 0 and
+
+42
+00:02:23.960 --> 00:02:27.170
+1 depending on the value predictor.
+
+43
+00:02:27.170 --> 00:02:30.610
+So the outcome can take either
+value in that grey area.
+
+44
+00:02:30.610 --> 00:02:33.300
+To the right of the grey area you'll
+notice that the outcome is always 1,
+
+45
+00:02:33.300 --> 00:02:36.830
+and to the left of the grey area you'll
+see that the outcome's always 0.
+
+46
+00:02:36.830 --> 00:02:40.790
+So the goal of most prediction
+algorithms is essentially
+
+47
+00:02:40.790 --> 00:02:43.190
+to minimize the size of that grey area.
+
+48
+00:02:43.190 --> 00:02:46.190
+Cuz that gray area is the area where
+you have the most uncertainty.
+
+49
+00:02:46.190 --> 00:02:49.090
+It's because this is
+the range of the predictor
+
+50
+00:02:49.090 --> 00:02:52.080
+where the outcome could
+actually take both values.
+
+51
+00:02:52.080 --> 00:02:53.800
+So you have some uncertainty there.
+
+52
+00:02:53.800 --> 00:02:56.570
+Once you're outside that gray area,
+you have almost absolute certainty,
+
+53
+00:02:56.570 --> 00:02:59.720
+because the outcome will either be 0 or 1.
+
+54
+00:02:59.720 --> 00:03:03.240
+So the goal is to minimize the size
+of this gray area using some set
+
+55
+00:03:03.240 --> 00:03:04.330
+of features that you can collect.
+
+56
+00:03:05.950 --> 00:03:09.420
+So, for this example, I'm gonna use
+a dataset on the creditworthiness
+
+57
+00:03:09.420 --> 00:03:10.870
+of a group of individuals.
+
+58
+00:03:10.870 --> 00:03:14.080
+And the dataset is taken from
+the UCI Machine Learning Repository,
+
+59
+00:03:14.080 --> 00:03:17.110
+which is an excellent repository for
+all kinds of machine learning and
+
+60
+00:03:17.110 --> 00:03:19.050
+prediction types of data sets.
+
+61
+00:03:19.050 --> 00:03:24.480
+So the data set classifies individuals
+into good credit or bad creditworthiness.
+
+62
+00:03:24.480 --> 00:03:27.490
+And they include a variety
+of variables to help you to
+
+63
+00:03:27.490 --> 00:03:30.120
+predict the creditworthiness
+of these people.
+
+64
+00:03:30.120 --> 00:03:33.820
+So the basic process that we'll go
+through here is we'll first split
+
+65
+00:03:33.820 --> 00:03:36.280
+the data set into a training and test set.
+
+66
+00:03:36.280 --> 00:03:38.461
+Then we'll fit the model
+to the training data.
+
+67
+00:03:38.461 --> 00:03:42.540
+Then we'll make predictions based
+on the model, but on the test data.
+
+68
+00:03:42.540 --> 00:03:46.190
+And then we'll compare the predictions
+on the test data to the truth
+
+69
+00:03:46.190 --> 00:03:49.110
+that we know from the test
+data to see how well we did.
+
+70
+00:03:49.110 --> 00:03:52.220
+So here are some of the results
+from the model that we fit.
+
+71
+00:03:52.220 --> 00:03:53.120
+I won't get into the details of
+
+72
+00:03:53.120 --> 00:03:55.630
+the model cuz it doesn't
+really matter at this point.
+
+73
+00:03:55.630 --> 00:03:58.200
+But here's a plot that you might make.
+
+74
+00:03:58.200 --> 00:04:03.040
+And the basic idea here is on the x-axis
+we have our predicted probability of being
+
+75
+00:04:03.040 --> 00:04:05.110
+good, a good credit quality.
+
+76
+00:04:05.110 --> 00:04:09.270
+And on the y-axis we have the actual
+truth of whether you're a good or
+
+77
+00:04:09.270 --> 00:04:12.110
+bad credit, you have the good or
+bad credit.
+
+78
+00:04:12.110 --> 00:04:14.936
+Because this is the test data set,
+we actually know the truth, and so
+
+79
+00:04:14.936 --> 00:04:17.254
+we can compare the truth with
+what our prediction says.
+
+80
+00:04:17.254 --> 00:04:20.416
+And so a couple things you'll notice here,
+first of all you'll notice it doesn't
+
+81
+00:04:20.416 --> 00:04:22.600
+quite look like that picture
+where I simulated the data.
+
+82
+00:04:22.600 --> 00:04:25.360
+So, it doesn't quite match our
+expectations of having this very good
+
+83
+00:04:25.360 --> 00:04:26.660
+separation, right?
+
+84
+00:04:26.660 --> 00:04:31.020
+All along the range of the x-axis you'll
+see there are both values of bad and
+
+85
+00:04:31.020 --> 00:04:33.790
+good and so
+the separation isn't necessarily so good.
+
+86
+00:04:33.790 --> 00:04:40.190
+Now you will notice there is a big clump
+of points in the range of the x-axis.
+
+87
+00:04:40.190 --> 00:04:45.370
+But about point 6 they are mostly in
+the good credit qualities category.
+
+88
+00:04:45.370 --> 00:04:51.299
+So as you can see as the predictor quality
+goes up you'll see that the number
+
+89
+00:04:51.299 --> 00:04:55.110
+of actual good credit
+quality people increases.
+
+90
+00:04:55.110 --> 00:04:58.210
+So there is at least an association there,
+so that's good.
+
+91
+00:04:58.210 --> 00:05:03.190
+But one thing you'll notice is that
+the prediction scores were all kind
+
+92
+00:05:03.190 --> 00:05:07.600
+of on the high end, they're all
+basically greater than a half, and so
+
+93
+00:05:07.600 --> 00:05:09.170
+there isn't a lot of range there.
+
+94
+00:05:10.350 --> 00:05:13.981
+So ultimately, it's not clear that this
+prediction algorithm is particularly good.
+
+95
+00:05:13.981 --> 00:05:17.465
+It seems like it's having some difficulty
+finding out, finding a good combination
+
+96
+00:05:17.465 --> 00:05:21.000
+of features that can separate people
+with good and kind of bad credit risk.
+
+97
+00:05:21.000 --> 00:05:24.760
+Something that can also be helpful is to
+compute a set of summary statistics about
+
+98
+00:05:24.760 --> 00:05:27.510
+the prediction algorithm,
+and you can see that here.
+
+99
+00:05:28.560 --> 00:05:31.690
+So here at the very top is what's
+called a confusion matrix and
+
+100
+00:05:31.690 --> 00:05:37.040
+it shows the number of predictions
+that are in the truth, bad or
+
+101
+00:05:37.040 --> 00:05:41.060
+good, that's called the reference, and
+then what we predict to be bad or good.
+
+102
+00:05:41.060 --> 00:05:46.570
+And you'll notice immediately that most
+of the predictions are just of good.
+
+103
+00:05:46.570 --> 00:05:50.200
+So the algorithm just basically classifies
+everyone as good credit quality.
+
+104
+00:05:50.200 --> 00:05:54.160
+So I guess that makes sense because most
+of the individuals in this data set have
+
+105
+00:05:54.160 --> 00:05:55.270
+good credit quality.
+
+106
+00:05:55.270 --> 00:05:58.650
+So if you were to make a prediction
+it would be easiest just to say
+
+107
+00:05:58.650 --> 00:06:00.270
+you have good credit.
+
+108
+00:06:00.270 --> 00:06:02.930
+And then your prediction would
+be right about 70% of the time.
+
+109
+00:06:04.050 --> 00:06:07.810
+You can see that the accuracy
+of the algorithm is about 70%.
+
+110
+00:06:07.810 --> 00:06:09.990
+And so that's okay, but
+
+111
+00:06:09.990 --> 00:06:13.700
+the problem is that the algorithm's
+specificity is very poor.
+
+112
+00:06:13.700 --> 00:06:17.920
+Which means that if you actually have bad
+credit, the probability that the algorithm
+
+113
+00:06:17.920 --> 00:06:22.970
+will classify you as such is only
+about 2.6%, so it's very low.
+
+114
+00:06:22.970 --> 00:06:26.040
+So if you truly have bad credit
+the algorithm will have a difficult time
+
+115
+00:06:26.040 --> 00:06:26.660
+picking that up.
+
+116
+00:06:28.170 --> 00:06:30.600
+So there are a couple of
+things to think about
+
+117
+00:06:30.600 --> 00:06:34.870
+when you see the results of
+a prediction model like this one.
+
+118
+00:06:34.870 --> 00:06:37.930
+So, the first thing to think
+about is prediction quality.
+
+119
+00:06:37.930 --> 00:06:41.070
+First, you have to ask yourself is
+the model's accuracy good enough for
+
+120
+00:06:41.070 --> 00:06:42.030
+your purposes.
+
+121
+00:06:42.030 --> 00:06:46.872
+So you solve the summary statistics from
+this particular model, which is okay.
+
+122
+00:06:46.872 --> 00:06:50.000
+It had a 70% accuracy,
+it had 2.6% specificity.
+
+123
+00:06:50.000 --> 00:06:51.840
+Is that good enough for your purposes?
+
+124
+00:06:51.840 --> 00:06:54.200
+Well, it depends on
+what your purposes are.
+
+125
+00:06:54.200 --> 00:06:57.920
+For example, in many medical applications
+where the outcome is the presence of
+
+126
+00:06:57.920 --> 00:07:02.900
+a disease you may want that test or that
+algorithm to have a very high sensitivity.
+
+127
+00:07:02.900 --> 00:07:06.230
+So if they truly have the disease,
+you'll want the algorithm to pick it up.
+
+128
+00:07:06.230 --> 00:07:08.520
+Because then you can
+send them into treatment,
+
+129
+00:07:08.520 --> 00:07:11.190
+and then kinda send them
+down the road to recovery.
+
+130
+00:07:11.190 --> 00:07:14.580
+However, if the treatment for
+that disease is very painful or
+
+131
+00:07:14.580 --> 00:07:18.680
+there are a lot of bad side effects
+you may want to be careful about
+
+132
+00:07:18.680 --> 00:07:20.720
+exactly who you send out to treatment.
+
+133
+00:07:20.720 --> 00:07:23.930
+And particularly, you wouldn't want to
+send someone who didn't have the disease
+
+134
+00:07:23.930 --> 00:07:27.020
+to a treatment that's going to be very
+painful and have a lot of side effects.
+
+135
+00:07:27.020 --> 00:07:29.600
+So there, you would make sure that if
+someone, you would want to make sure that
+
+136
+00:07:29.600 --> 00:07:33.410
+if someone does not have the disease, that
+you pick that the algorithm picks that up.
+
+137
+00:07:33.410 --> 00:07:38.780
+And so there are different metrics that
+you want to favor over each other,
+
+138
+00:07:38.780 --> 00:07:42.210
+depending on the kind of
+decision that will be made and
+
+139
+00:07:42.210 --> 00:07:44.380
+the consequences of those decisions.
+
+140
+00:07:44.380 --> 00:07:47.500
+And so, for example, in a financial
+application like the dataset we just
+
+141
+00:07:47.500 --> 00:07:51.790
+looked at with good and bad credit
+quality, there may be asymmetric costs
+
+142
+00:07:51.790 --> 00:07:56.300
+associated with mistaking good credit for
+bad versus bad credit for good.
+
+143
+00:07:56.300 --> 00:07:58.950
+So one scenario might
+have very little cost or
+
+144
+00:07:58.950 --> 00:08:01.070
+another scenario might
+have very high cost.
+
+145
+00:08:01.070 --> 00:08:03.800
+And so you wanna think about,
+
+146
+00:08:03.800 --> 00:08:08.300
+given the outcomes of your decision
+what types of metrics you want,
+
+147
+00:08:08.300 --> 00:08:11.390
+whether sensitivity or specificity,
+or all these other kinds of metrics,
+
+148
+00:08:11.390 --> 00:08:14.090
+which ones are going to be most
+important to you in your setting.
+
+149
+00:08:15.190 --> 00:08:18.827
+Every setting is going to be
+a little bit different, and so
+
+150
+00:08:18.827 --> 00:08:23.965
+you're not going to always focus on a
+given metric for every single application.
+
+151
+00:08:23.965 --> 00:08:28.980
+So a hallmark of almost all prediction
+algorithms is tuning parameters.
+
+152
+00:08:28.980 --> 00:08:31.910
+Most algorithms have lots and
+lots of tuning parameters.
+
+153
+00:08:31.910 --> 00:08:35.960
+And even though they're called tuning
+parameters, they can often have a very big
+
+154
+00:08:35.960 --> 00:08:40.340
+impact on the prediction quality of the
+algorithm depending on how you set them.
+
+155
+00:08:41.810 --> 00:08:46.720
+And so you should be careful about how you
+set them and how you change them around.
+
+156
+00:08:46.720 --> 00:08:49.930
+Now, there's no prediction
+algorithm that I'm aware of
+
+157
+00:08:49.930 --> 00:08:53.330
+where a single set of tuning
+parameters works fine for all problems.
+
+158
+00:08:53.330 --> 00:08:56.315
+So for any new data set that you
+bring into a prediction algorithm,
+
+159
+00:08:56.315 --> 00:08:59.258
+you'll probably have to tune it
+a little bit, and that's okay.
+
+160
+00:08:59.258 --> 00:09:03.784
+But the most important thing, excuse me,
+is that you're gonna want to make sure you
+
+161
+00:09:03.784 --> 00:09:06.462
+keep track of all the tuning
+parameters you set and
+
+162
+00:09:06.462 --> 00:09:10.000
+the process through which you
+set these tuning parameters.
+
+163
+00:09:10.000 --> 00:09:13.140
+Because ultimately you're gonna
+want this model to be reproducible.
+
+164
+00:09:13.140 --> 00:09:16.750
+And if you can't remember or
+you can't reproduce the tuning parameters,
+
+165
+00:09:16.750 --> 00:09:18.860
+you'll never be able to
+reproduce the algorithm itself.
+
+166
+00:09:21.810 --> 00:09:25.710
+So one last thing I want to mention is
+about the availability of other data.
+
+167
+00:09:25.710 --> 00:09:28.150
+So many prediction algorithms
+
+168
+00:09:28.150 --> 00:09:32.570
+these days are very good at exploring
+the structure of complex data and
+
+169
+00:09:32.570 --> 00:09:36.990
+making very good predictions, especially
+once you get the tuning parameters right.
+
+170
+00:09:36.990 --> 00:09:40.410
+And so, but now it may be that if
+your model is not working very well,
+
+171
+00:09:40.410 --> 00:09:43.880
+that you have to change to another
+algorithm or another procedure because
+
+172
+00:09:43.880 --> 00:09:46.310
+different procedures can work
+well in different settings and
+
+173
+00:09:46.310 --> 00:09:49.780
+different types of data structures and
+different types of data set up.
+
+174
+00:09:49.780 --> 00:09:53.090
+And so it's not necessarily true that all,
+the algorithms are exchangeable,
+
+175
+00:09:53.090 --> 00:09:54.840
+you may want to change the algorithm.
+
+176
+00:09:54.840 --> 00:09:58.610
+However, if you try a few algorithms and
+they all seem to be producing kind of
+
+177
+00:09:58.610 --> 00:10:02.430
+a similar quality of prediction,
+regardless of how well you tune them,
+
+178
+00:10:02.430 --> 00:10:06.870
+it may be time to get more data or other
+data to help you predict the outcome.
+
+179
+00:10:06.870 --> 00:10:11.170
+It could just be that the dataset you have
+only has an intrinsic amount of ability
+
+180
+00:10:11.170 --> 00:10:12.850
+to predict whatever outcome
+you're interested in.
+
+181
+00:10:12.850 --> 00:10:16.790
+And you have to kind of get other data
+that will have better predictive power.
+
+182
+00:10:16.790 --> 00:10:20.160
+And so think about that as you're
+building prediction algorithms and
+
+183
+00:10:20.160 --> 00:10:21.590
+you're seeing the results.
+
+184
+00:10:21.590 --> 00:10:24.540
+That there always might be this
+possibility that you have to bring in
+
+185
+00:10:24.540 --> 00:10:26.625
+additional data to
+improve your predictions.

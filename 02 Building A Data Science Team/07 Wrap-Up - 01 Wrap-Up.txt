@@ -1,0 +1,20 @@
+Congratulations on finishing
+Building Data Science Teams. Good work. So I wanted to let you know that there
+are a couple of other resources for you to check out, if you're interested. So first, there's a couple of great books. One is Data Driven,
+Creating a Data Culture and the second is Building Data Science Teams. Both of these books talk a little bit
+about how do you embed data science in an organization, how do you build up
+the team, what are some success stories, what are things that work,
+what are things that don't work? So if you liked what you've
+learned in this class and you want to learn a little bit more,
+there's a couple of great places to go. I'd also encourage you to check out the
+Johns Hopkins Data Science Specialization. So this is focused on, actually,
+how do you do data science? How do you do the data
+analysis part of data science? It's a sequence of nine classes. It's a great place to go
+learn a little bit more, especially if you're going to be
+managing a team of data scientists. It'll really help you to
+learn what are they doing? What are all the terms they're using and
+so forth? And finally,
+I'd encourage you to check out the rest of the John Hopkins Executive
+Data Science Specialization. We have some other great courses on how
+do you manage the data science process? What is data science? What are the buzz words? And I think it will help you out a lot. So anyway, it was great having
+you in class and good luck.

@@ -1,0 +1,767 @@
+WEBVTT
+
+1
+00:00:03.090 --> 00:00:04.740
+Hi.
+My name is Brian Caffo and
+
+2
+00:00:04.740 --> 00:00:09.573
+this is a lecture on experimental
+design and observational analysis.
+
+3
+00:00:09.573 --> 00:00:12.730
+I'm gonna begin this lecture
+with a quote from R.A.
+
+4
+00:00:12.730 --> 00:00:17.140
+Fischer, one of the forefathers
+of modern statistics and
+
+5
+00:00:17.140 --> 00:00:20.630
+probably the greatest thinker
+ever about experimental design.
+
+6
+00:00:21.830 --> 00:00:26.160
+And he said to call in the statistician
+after the experiment is done,
+
+7
+00:00:26.160 --> 00:00:29.860
+may be no more, than asking him to
+perform a post-mortem examination,
+
+8
+00:00:29.860 --> 00:00:32.210
+He may be able to say what
+the experiment died of.
+
+9
+00:00:33.340 --> 00:00:38.308
+So, in this lecture we're gonna talk
+about the difference between experimental
+
+10
+00:00:38.308 --> 00:00:40.547
+design and observational studies.
+
+11
+00:00:40.547 --> 00:00:45.465
+And so, let me go a little bit
+deeper into what these two subjects
+
+12
+00:00:45.465 --> 00:00:48.110
+are really talking about.
+
+13
+00:00:48.110 --> 00:00:51.700
+Experimental design is the case
+where you have tight control
+
+14
+00:00:51.700 --> 00:00:53.550
+over several aspects of the experiment.
+
+15
+00:00:54.630 --> 00:01:00.000
+So, good experimental design
+can do things like account for
+
+16
+00:01:00.000 --> 00:01:04.070
+known important factors through things
+like blocking and stratification.
+
+17
+00:01:06.030 --> 00:01:10.340
+In addition, it can account for
+unknown factors through randomization.
+
+18
+00:01:10.340 --> 00:01:12.280
+We'll have an entire
+lecture on randomization.
+
+19
+00:01:14.000 --> 00:01:19.420
+Experimental design in terms of getting
+a good sample via random sampling,
+
+20
+00:01:19.420 --> 00:01:21.440
+can help us get an unbiased sample for
+
+21
+00:01:21.440 --> 00:01:24.690
+extrapolating to the population that
+we're interested in extrapolating to.
+
+22
+00:01:26.380 --> 00:01:29.750
+If you execute good
+experimental design and
+
+23
+00:01:29.750 --> 00:01:34.090
+everything goes well, often it eliminates
+the need for complex analyses.
+
+24
+00:01:34.090 --> 00:01:39.160
+Simple analysis usually suffice and
+are better in these settings.
+
+25
+00:01:39.160 --> 00:01:41.810
+And they help us isolate
+the effects of interest.
+
+26
+00:01:43.200 --> 00:01:45.800
+In contrast,
+in an observational experiment,
+
+27
+00:01:45.800 --> 00:01:49.460
+this is the opposite setting where
+you don't have tight control
+
+28
+00:01:49.460 --> 00:01:53.940
+over the experiment and you can't
+have good control over the sample.
+
+29
+00:01:53.940 --> 00:01:57.770
+You can't randomly assign treatments,
+and these sorts of things.
+
+30
+00:01:57.770 --> 00:02:02.330
+In a purely observational experiment,
+you're just observing the data,
+
+31
+00:02:02.330 --> 00:02:08.060
+collecting it as it occurs, and
+this has some benefits as well.
+
+32
+00:02:08.060 --> 00:02:12.450
+For example, it's often feasible
+when designed experiments are not.
+
+33
+00:02:12.450 --> 00:02:13.310
+You can't, for
+
+34
+00:02:13.310 --> 00:02:18.400
+example, ethically randomize
+people in a smoking trial, right?
+
+35
+00:02:18.400 --> 00:02:21.640
+You can't randomize some people to
+have to smoke and other people to not.
+
+36
+00:02:24.000 --> 00:02:28.350
+As a consequence of just getting
+the data as it roles in,
+
+37
+00:02:28.350 --> 00:02:32.120
+often both by necessity and
+just by happenstance.
+
+38
+00:02:32.120 --> 00:02:35.650
+Observational studies often
+have very large sample sizes.
+
+39
+00:02:37.280 --> 00:02:41.380
+They're usually a lot
+cheaper to execute as well.
+
+40
+00:02:41.380 --> 00:02:44.660
+The process of designing an experiment,
+and
+
+41
+00:02:44.660 --> 00:02:48.710
+if you're collecting data on,
+for example, medical trials,
+
+42
+00:02:48.710 --> 00:02:53.600
+clinical studies are extremely expensive,
+thousands of dollars per subject.
+
+43
+00:02:53.600 --> 00:02:58.070
+Often observational studies can
+get much larger sample sizes and
+
+44
+00:02:58.070 --> 00:03:01.870
+thus by having a much lower
+dollar cost per record.
+
+45
+00:03:03.910 --> 00:03:07.640
+However on the negative side, in order
+to get things out of observational data
+
+46
+00:03:07.640 --> 00:03:11.210
+analysis, you often need
+much more complex modeling.
+
+47
+00:03:11.210 --> 00:03:14.260
+Because you haven't been able
+to do things, like control for
+
+48
+00:03:14.260 --> 00:03:17.470
+known important factors
+as part of the design.
+
+49
+00:03:17.470 --> 00:03:21.880
+You haven't been able to inject
+randomization into your analysis
+
+50
+00:03:21.880 --> 00:03:23.890
+to help control for the unknown factors.
+
+51
+00:03:23.890 --> 00:03:26.819
+So, you have to try and figure out and
+measure everything possible.
+
+52
+00:03:28.340 --> 00:03:32.410
+So, it's often the case,
+it's almost always the case that
+
+53
+00:03:32.410 --> 00:03:36.960
+an observational study needs these larger
+sample sizes to accommodate the much
+
+54
+00:03:36.960 --> 00:03:42.080
+more complex analysis that
+you have to do to study them.
+
+55
+00:03:42.080 --> 00:03:42.790
+And by the way,
+
+56
+00:03:42.790 --> 00:03:47.280
+this picture here on this slide
+Statistical Methods, Experimental Design,
+
+57
+00:03:47.280 --> 00:03:51.440
+and Scientific Inference by R.A.
+Fisher is sort of a classic in this area.
+
+58
+00:03:51.440 --> 00:03:56.860
+Fisher was one of the forefathers of the
+thinking on modern experimental design.
+
+59
+00:03:58.230 --> 00:04:00.830
+So, all I want to do is
+really set the stage for
+
+60
+00:04:00.830 --> 00:04:05.510
+the next couple of lectures, where we're
+going to cover several key topics of
+
+61
+00:04:05.510 --> 00:04:08.955
+experimental design versus
+observational analysis.
+
+62
+00:04:10.570 --> 00:04:13.940
+As an example, we're going to
+talk about sampling and bias.
+
+63
+00:04:13.940 --> 00:04:17.550
+And we'll give the specific example
+of when the Chicago Tribune
+
+64
+00:04:17.550 --> 00:04:22.070
+announced errantry, that Dewey defeated
+Truman in the Presidential election.
+
+65
+00:04:22.070 --> 00:04:26.020
+And much of their error was in this
+particular form of bias sampling.
+
+66
+00:04:26.020 --> 00:04:30.310
+The collection of people that they polled,
+weren't the right collection of people
+
+67
+00:04:30.310 --> 00:04:32.730
+to make the conclusions that
+they were interested in.
+
+68
+00:04:34.320 --> 00:04:37.000
+We'll talk about randomization and
+a, b testing, so
+
+69
+00:04:37.000 --> 00:04:39.820
+randomization is the process
+when you have a treatment or
+
+70
+00:04:39.820 --> 00:04:44.610
+something that you're interested in
+studying that say has two levels of
+
+71
+00:04:44.610 --> 00:04:48.259
+randomly assigning the observational
+units to those two levels.
+
+72
+00:04:49.300 --> 00:04:54.040
+And so, the classic example of this is in
+a medical trial, where you have a drug or
+
+73
+00:04:54.040 --> 00:04:57.650
+something like that and you give
+a random set of people the drug and
+
+74
+00:04:57.650 --> 00:05:01.080
+you give another random
+set of people the placebo.
+
+75
+00:05:01.080 --> 00:05:05.320
+And the idea is that the group of people
+that receive the drug and the group of
+
+76
+00:05:05.320 --> 00:05:10.390
+people that receive the placebo, other
+than receiving the drug or the placebo.
+
+77
+00:05:10.390 --> 00:05:14.790
+Are otherwise similar, so you're comparing
+apples to apples or oranges to oranges,
+
+78
+00:05:14.790 --> 00:05:15.610
+if you will.
+
+79
+00:05:15.610 --> 00:05:19.430
+Because the randomization
+has helped ensure that
+
+80
+00:05:19.430 --> 00:05:24.590
+everything else that might contaminate our
+results was at least equally distributed
+
+81
+00:05:24.590 --> 00:05:26.950
+among the groups with high probability.
+
+82
+00:05:26.950 --> 00:05:29.090
+So, we'll have a lecture
+on randomization and
+
+83
+00:05:29.090 --> 00:05:32.140
+this forms the basis of
+so-called clinical trials and
+
+84
+00:05:32.140 --> 00:05:38.130
+AB testing which are bedrock methods
+in data science and biostatistics.
+
+85
+00:05:39.760 --> 00:05:45.810
+Confounding is another core topic that
+occurs In observational data analysis.
+
+86
+00:05:45.810 --> 00:05:48.210
+When you don't have randomization and
+
+87
+00:05:48.210 --> 00:05:52.505
+you need to think about variables
+that can contaminate your results.
+
+88
+00:05:52.505 --> 00:05:56.908
+You have to think about confounding,
+and here Jeff came up with this funny
+
+89
+00:05:56.908 --> 00:06:00.887
+example of the number of people who
+drowned by falling into a pool,
+
+90
+00:06:00.887 --> 00:06:04.724
+how it correlated with films that
+Nicolas Cage appeared in, and
+
+91
+00:06:04.724 --> 00:06:09.480
+finally, we're gonna talk about
+causal inference and counterfactuals.
+
+92
+00:06:09.480 --> 00:06:14.600
+So, causal inference is the idea of trying
+to use observational or experimental
+
+93
+00:06:14.600 --> 00:06:20.080
+data to get a true statistical cause,
+rather than just association.
+
+94
+00:06:20.080 --> 00:06:24.130
+And we're going to only consider one
+particular way of thinking about
+
+95
+00:06:24.130 --> 00:06:27.400
+causal inference, and
+that's the idea of a counterfactual.
+
+96
+00:06:27.400 --> 00:06:33.500
+Where you consider two states
+of existence, one where
+
+97
+00:06:33.500 --> 00:06:37.910
+a person has received the treatment for
+example, and one where a person has not.
+
+98
+00:06:37.910 --> 00:06:41.820
+And in this case,
+the same person is in both these pictures.
+
+99
+00:06:41.820 --> 00:06:44.530
+This is Christian Bale in both pictures.
+
+100
+00:06:44.530 --> 00:06:48.520
+So, counterfactuals or
+the idea of thinking
+
+101
+00:06:48.520 --> 00:06:53.270
+along the lines of what
+would happen to each of
+
+102
+00:06:53.270 --> 00:06:58.120
+my observational units if they didn't get
+the treatment that they actually received?
+
+103
+00:06:58.120 --> 00:07:01.160
+So, of course,
+you don't actually get to observe this.
+
+104
+00:07:01.160 --> 00:07:03.590
+If you give a person a drug,
+
+105
+00:07:03.590 --> 00:07:06.060
+you only get to observe them
+after they've had the drug.
+
+106
+00:07:06.060 --> 00:07:08.290
+You don't get to observe
+what would've happened,
+
+107
+00:07:08.290 --> 00:07:10.360
+had they not received the drug, okay?
+
+108
+00:07:10.360 --> 00:07:14.630
+But counterfactual thinking forms
+the basis of causal thinking, so
+
+109
+00:07:14.630 --> 00:07:16.280
+we'll have a lecture on that.
+
+110
+00:07:16.280 --> 00:07:23.510
+That way of thinking will help us a, and
+I hope after that lecture you'll see this,
+
+111
+00:07:23.510 --> 00:07:28.490
+will help us a, improve the way that
+we come up with statistical designs.
+
+112
+00:07:28.490 --> 00:07:31.504
+To analyze data.
+
+113
+00:07:31.504 --> 00:07:34.550
+It's because we'll be thinking casually.
+
+114
+00:07:34.550 --> 00:07:39.000
+And b, it'll help us think about
+observational data analysis in a way
+
+115
+00:07:39.000 --> 00:07:43.610
+that will help us question our
+assumptions, so that we can
+
+116
+00:07:43.610 --> 00:07:48.170
+think about if we're gonna try to make
+the leap from associations to causation.
+
+117
+00:07:48.170 --> 00:07:50.630
+What sort of assumptions
+are we making to do it?
+
+118
+00:07:50.630 --> 00:07:53.910
+So, hopefully you'll get
+a lot out of that lecture.
+
+119
+00:07:53.910 --> 00:07:56.930
+The final thing I talk about is blocking,
+and
+
+120
+00:07:56.930 --> 00:08:01.860
+in blocking this comes from the idea
+of agricultural experiments,
+
+121
+00:08:01.860 --> 00:08:05.070
+where you have a field where there
+might be some sort of gradient.
+
+122
+00:08:05.070 --> 00:08:10.150
+For example, the water is distributed
+differently along rows of the crops.
+
+123
+00:08:10.150 --> 00:08:13.810
+Or the soil is distributed differently and
+
+124
+00:08:13.810 --> 00:08:18.620
+crops tend to be conveniently
+actually sectioned into rows anyway.
+
+125
+00:08:18.620 --> 00:08:20.710
+I have a picture of one here.
+
+126
+00:08:20.710 --> 00:08:24.759
+So, Ari Fischer worked in agricultural
+experiments, so we actually talk about
+
+127
+00:08:24.759 --> 00:08:28.879
+blocking, we tend to think in terms of
+these sorts of agricultural experiments.
+
+128
+00:08:28.879 --> 00:08:34.162
+So, the idea, if you know that something
+like the soil or the water along rows
+
+129
+00:08:34.162 --> 00:08:41.140
+of your crops, may impact the outcome that
+you'd like to study, like your crop yield.
+
+130
+00:08:41.140 --> 00:08:44.240
+Then if you're gonna do
+something like randomization,
+
+131
+00:08:44.240 --> 00:08:46.610
+why not do it within the rows, okay?
+
+132
+00:08:46.610 --> 00:08:49.520
+So, make sure you condition on the row.
+
+133
+00:08:49.520 --> 00:08:50.240
+Okay?
+
+134
+00:08:50.240 --> 00:08:52.910
+And randomize within the rows.
+
+135
+00:08:52.910 --> 00:08:56.430
+So, and this is the process of blocking.
+
+136
+00:08:56.430 --> 00:08:59.620
+Another example that
+occurs often in genomics,
+
+137
+00:08:59.620 --> 00:09:02.450
+is let's suppose you're studying mice.
+
+138
+00:09:02.450 --> 00:09:04.840
+And the mice have litters, okay.
+
+139
+00:09:04.840 --> 00:09:10.070
+So, every collection of
+parents of a litter,
+
+140
+00:09:10.070 --> 00:09:13.180
+they might have five or
+six mice in a litter.
+
+141
+00:09:13.180 --> 00:09:13.760
+Okay?
+
+142
+00:09:13.760 --> 00:09:17.330
+But there's genetic inheritance
+that occurs from the litter, so
+
+143
+00:09:17.330 --> 00:09:21.550
+if you're studying something, why not
+randomize it within litters of mice,
+
+144
+00:09:21.550 --> 00:09:26.390
+rather than to all the little mice
+regardless of what parents they had?
+
+145
+00:09:27.450 --> 00:09:30.210
+The reason for blocking on parents.
+
+146
+00:09:30.210 --> 00:09:33.180
+Right?
+Is to control whatever genetic factors
+
+147
+00:09:33.180 --> 00:09:34.490
+are associated with the parents.
+
+148
+00:09:34.490 --> 00:09:36.000
+So, that's another example,
+
+149
+00:09:36.000 --> 00:09:39.980
+blocking is another example of
+experimental design that we'll cover.
+
+150
+00:09:41.375 --> 00:09:45.940
+S,o hopefully this has given you a bird's
+eye view of some potential techniques that
+
+151
+00:09:45.940 --> 00:09:51.350
+you can use, to think about observational
+data analysis, and experimental design.
+
+152
+00:09:51.350 --> 00:09:55.380
+And hopefully after this lecture,
+you know that there is a dichotomy
+
+153
+00:09:55.380 --> 00:09:58.610
+between instances where you
+have the idealized setting,
+
+154
+00:09:58.610 --> 00:10:02.250
+where you have complete control over
+the whole experimental process,
+
+155
+00:10:02.250 --> 00:10:06.140
+versus the other end of the spectrum where
+you have no control and you have purely
+
+156
+00:10:06.140 --> 00:10:11.180
+observational data, and of course
+there's lots of gray areas in between.
+
+157
+00:10:11.180 --> 00:10:15.000
+But hopefully this will get you thinking
+about the strengths and weaknesses and
+
+158
+00:10:15.000 --> 00:10:17.770
+potentials and
+pitfalls of each of the different sorts.
+
+159
+00:10:17.770 --> 00:10:20.990
+In the next couple of lectures we're
+gonna go over some of the details.

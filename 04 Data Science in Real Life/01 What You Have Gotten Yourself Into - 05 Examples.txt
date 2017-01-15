@@ -1,0 +1,97 @@
+So let's go through some examples of
+ways in which things can go right and things can go wrong. So my colleagues wrote
+this wonderful paper exactly about the issue of using your
+data to come up with your hypotheses. They work in the area
+of Multiple Sclerosis. And a common problem in the area of
+Multiple Sclerosis brain research with magnetic resonance imaging which is what
+they work on is actually defining what it means for a lesion which is one
+of the hallmarks of the disease, a brain lesion to be so-called enhancing,
+so it's sort of getting a greater
+amount of blood in the area. So, they put forward
+a framework necessarily because the hypotheses weren't clear, they put
+forward a framework that both identified the hypotheses and interrogated
+the hypotheses with the same data set. And of course they're
+statistical researchers so their emphasis was on doing
+this in a rigorous fashion. But it's just an example
+of a setting where the hypotheses just couldn't immediately
+be come up with in a clear fashion and so the data had to perform double duty of
+both coming up with the hypotheses and interrogating those hypotheses. Multiple comparisons. Since we're on the subject of brain
+imaging, which is the area that I work on, multiple comparisons is often an issue,
+and in one particularly famous example, some people put a dead
+salmon in an fMRI machine, which is there to detect brain activation. And of course there's no brain
+activation in a dead salmon. And what they found is that if you do
+lots and lots and lots of tests, and you don't account for that correctly, you
+can see brain activation in a dead salmon. A very famous example of randomization
+that occurred kind of recently, at least in the past decade,
+was from the Women's Health Initiative. The Women's Health Initiative conducted
+a study, a randomized trial of hormone replacement therapy, which at the
+time was a fairly standard treatment for post-menopausal women. The results of these randomized trials
+contradicted what was thought of as common knowledge for the efficacy of hormone
+replacement therapy and the safety of it. And so it brought about a lot
+soul-searching about the value of randomized trial versus the value
+of a lot of observational data. And I think it's maybe not necessary
+to go into the weeds of this study for the purposes of this lecture. However, suffice it to say, the randomized
+trial carried a lot of weight with it because of the randomization. All the previous observational trials
+where they just saw whether or not women were on hormone replacement
+therapy and watched them over time. The multitude of those studies was not deemed as rigorous as the one
+study that had randomization, where women were actually randomized
+to hormone replacement therapy or not. And as a side note, if you're
+interested about reading up on hormone replacement therapy, I put a website
+here from the Women's Health Initiative where you can actually go and
+look on the frequently asked questions relating to some of
+the studies that have done since then. There's been a decade of
+work since then to further refine the science on
+this particular issue. The main point for
+this lecture is how important randomization was In
+this particular setting. So here's an example of a study
+that I was involved in, where you can't actually
+measure what you'd like to. So in two ways in this study,
+you can't measure what you'd like to. So my colleague, Susan Bassett, was interested
+in studying Alzheimer's disease. And what she'd really like to know is, well before people have Alzheimer's
+disease, what do their brains look like with regard to these functional
+magnetic resonance imaging scans? So well before it, and that would be very
+useful, because if you could see that there were some changes in the brain
+well before people developed symptoms, maybe you could treat it. So this is a big deal actually
+in Alzheimer's research, is trying to find precursors for
+the disease. So there's two problems that
+occur with respect to measurement in this particular study. First of all, the fMRI machine doesn't
+actually measure brain activation. It measures a proxy for brain
+activation through blood oxygenation. So it actually, we can't actually
+measure in living humans to the spatial extent that we'd like, the brain
+activation in the way that we'd like. So there's one sense that the technology
+just can't measure exactly what we'd like, it only measures a proxy. But, let's put that to the side and then talk about another way in which
+we're not measuring what we like. We can't know in advance who's
+going to get Alzheimer's disease, we can only guess. And so in this case what she
+looked at was people who were at very high familial risks. They had affected siblings, or affected
+parents, multiple affected siblings and affected parents and
+then in the other group they had people with no affected siblings and
+affected parents. But that doesn't mean that everyone
+in the familial risk group is gonna contract Alzheimer's disease. Quite the opposite,
+relatively small fraction of them has. And that doesn't mean no one in the other
+group is going to contract Alzheimer's disease, and some of them did, eventually. This was a long study, over 15 years. So later on they saw some results for
+people who actually converted. But the point being here that she can't
+actually measure what she needs to. She can't prospectively measure
+who's going to contract this disease in the future. Because if you did, the problem
+wouldn't be worth studying, right? That's everything that you'd like to do. So the measurement is a very
+clear problem in this case and what you have to combat this
+with is giant sample sizes. You just having a greater percentage
+of likely people that are gonna get Alzheimer's disease in the one group and
+a smaller percentage in the other group. And you need a much larger
+sample size to account for the fact that you're going to see
+much smaller effects from the fewer people of eventual disease
+type in the one group and the fewer people of control
+type in the other group. So, again, this just serves as an example
+where the measurement that you'd like to have,
+isn't the measurement that you get. And this is very common in
+data science experiments and you need to work around it. Just like Susan in this case did by
+conducting one of the largest fMRI experiments that anyone had seen at
+the time, just to combat this issue. So in this class we're gonna dig through
+various facets of the perfect data science experience versus real life. And we'll use this idea of what's
+ideal versus what tends to happen as our launching point for
+all of our discussions. And we'll give some practical
+recommendations for the messy situations and
+how you can manage the people doing the data analysis if
+it's not you and you're the manager. How you can manage and help direct
+them to different solutions for this collection of various problems
+that arise in data analysis. So welcome to the class, and
+we look forward to seeing you in it.

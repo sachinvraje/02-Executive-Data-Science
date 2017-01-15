@@ -1,0 +1,143 @@
+So when you're building out
+your data science team, one of the key roles that you'll be hiring
+for, no surprise, is a data scientist. So this lecture is a little bit about
+what to look for in a data scientist. So what does a data scientist do? As it's typically defined, a data
+scientist runs experiments, pulls and cleans data, analyzes it and
+then communicates the results to people. So they have to have a set of skills
+that allow them to perform all of these activities. And so we're going to talk a little
+bit about all of the different specific skills that a data
+scientist might need in order to be able to achieve this minimum
+set of tasks that they will have. Now this is one definition of
+a data scientist, obviously they're other definitions of data
+science that are going around right now. And depending on your definition of
+data science, you might have to like, move the qualifications just a little
+bit in one direction or another. It also depends a little bit how
+mature your organization is. If you're hiring dedicated
+data scientists, this is likely something
+like their job description. If you're at a very early stage, and
+you're hiring your first data science team members, they might have to be
+a little bit more of a jack of all trades. They might need to be able to do
+a little bit more data engineering, as well as data science. So I'm talking here about a sort of
+a mature organization that is hiring data scientists. So, then I'm going to talk a little
+about what skills they need. So they need to be able to do statistics. So, often they'll have learned
+that either in classes, so that they will have a qualification in
+statistics, whether it's a degree or they've taken a large number of classes,
+or they've taken some online classes. They probably need to know something
+about prediction and machine learning. So you can often learn that from
+either statistics classes or from computer science classes
+that focus on machine learning. Again, you can also learn that online. Those are two different tasks,
+inference and prediction. And so,
+we've learned about that in other classes. And it's important to know that some
+people will be better at one, and some people will be better at the other. And it kind of depends on what
+your organization is doing. If they're doing more like,
+building out predictive tools, they might need to be a little
+stronger machine learning. If you're trying to do experiments and
+come up with new hypotheses, they might need to be a little
+bit better at inference. They also need to be able
+to do data analysis, and that means the whole picture,
+they need to be able to pull data sets out of a database, they need to be able to
+analyze those data sets, clean them up. Perform the statistical inference or prediction that they want to do and
+then communicate those results. So data communication skills involve
+both being able to analyze the data, create nice visualizations,
+communicate those visualizations in the results that people in a way that
+both expresses what's going on and carefully expresses how
+uncertain they are. So when you're making decisions,
+you know exactly how strongly the data are supporting the decision
+that you're trying to make. So those are the main qualifications
+that they need to have, the skills that they need to have. That being said, data scientists usually
+have a few of the following skills. They usually, they know how to use r or
+Python So those are general purpose data science languages that people
+can use to analyze data. They know how to do some
+kind of visualization. Sometimes interactive visualization
+with something like D3.js. And they might know definitely how
+to pull data out of a database. So, they would have experience
+with at least one database, SQL, MongoDB, something like that. Where they've actually interacted
+with pulling data out of a database. So the very common backgrounds for
+data scientists are that they came from a statics or biostatistics department,
+they learned a lot of applications, so they've actually worked on
+lots of real data sets. That's not always true in statistics and
+biostatistics department, but it's usually true for applied statistics
+and biostatistics departments. And then they've picked up a little
+bit of software engineering they know a little bit about version
+control they know a little bit about programming in other languages and so
+those sorts of things allow them to sort of interface with the other
+people in your company but they're primarily focused in training and
+statistics. Another very common route to data science
+is if you do some kind of quantitative background say for
+example physics or engineering, and then there's some sort of
+data science transition. So they either take some classes online,
+like our data science specialization, or they take some other data science program. There are lots of transitioning data
+science programs, and then they're sort of Prepared to do data science, but they have
+a quantitative or experimental background. and then the last category that's very
+common among data scientists is that they'll actually trained
+in software engineering. They're actually a trained
+software engineer, or a working software engineer, and
+they just pick up some statistics. Now, they might pick that up,
+again, from classes online, or they might have taken
+some courses in college. And again, it'll depend the mix of
+what your organization is looking for. Are they looking for a person that's going
+to do more infrastructure development blended with a little bit of statistics? Then it might be better to go for somebody with a software engineering
+plus statistics background. If you already have an organization, you really need to be able to do
+experiments and make inferences from them. Going after with somebody from
+a Biostatistics Department, for example, might be a much stronger place to go and
+look for your candidate. So it depends a little bit on
+the needs of your organization. So one thing to keep in mind is that a key
+component of being a good data scientist is not being intimidated by new
+kinds of ideas or software. On the flip side, that means that in some
+cases it's really important that you look for somebody that has specific
+software engineering skills, or specific programming language and
+skills that your organization needs. But you'll often miss out on really
+strong candidates by doing that. And so, one really good idea is to
+assess in general, are they a go getter? Are they able to learn new things? Are they able to do this sort of general
+purpose data science tasks that you want? And then try to figure out if they'd
+be able to pick up on the fly, the languages that you would need them
+to use for your particular problem. So the key here is, focus on the problem
+not on the software programming languages when you're looking for data scientists,
+cuz you'll tend to miss a huge sloth of people, particularly right
+now in the transition. And while people are sort of the field
+of data science is relatively new and there's not a standardized curriculum for training data scientists across
+all these different disciplines. So what are the key characteristics
+of data scientists that you might be looking for? One is, that they're willing
+to find answers on their own. So, often a data scientist has to
+come up with their own data sets, they have to be able to pull data sets
+from the organizations, they have to be able to collaborate with people to figure
+out what the right problem to solve is. And so they need to be able to
+chase that down on their own. You can't always be holding their hand. So what can you do? You can go look for evidence of this,
+whether that's through leadership that they've taken on at their
+previous organizations. Whether it's through open source software,
+or whether it's through blogging, or something else where they communicate
+that they've gone out and they've actually been willing to
+go get the answers on their own. They need to unintimidated by new data. A question that often gets asked, a very
+smart question to ask when interviewing a data scientist, is to throw out a kind
+of data that they've never seen before, whether it's from your organization or
+even data that you might have just imagined from a different organization,
+and see how they react to it. If they react in a way that's positive,
+they have ideas, they think about ways to try to
+tackle that problem, that's great. If they're intimidated by that data type
+and they're just trying to force it back into the box of the data they know,
+that might be very challenging as your organization changes and
+the data science changes for them. And then, it's important that they're
+willing to say, I don't know. This is often hard to get out
+of a person in an interview, but it's important to know that, if they
+don't know the answer to a question, maybe you asked them a question about
+your organization that's very specific That they wouldn't know the answer to. You need to see if they're
+comfortable saying, I don't know, because often data come to no conclusion. It's very common for
+you to do an experiment and the conclusion is, we don't know very
+much more than we knew before we started. It's frustrating, and it's one of
+the hard parts about data science. But is important to know that people will,
+when faced with that, are comfortable saying "I don't know," so that you know that they'll be
+communicating the truth to you. Finally, I guess the way I put it, but
+it's put differently by different people, is that they're friendly but relentless. In the sense that data science requires
+a lot of dedication to getting all the details right, to making sure
+that you interact with people in a way that moves things forward,
+even when they're sort of faced with. Not necessarily the most
+friendly response in return. And so they need to be very friendly,
+they need to have people skills, those soft skills that come with being a
+data scientist are incredibly critical in a data science team where they're
+gonna be working with other people, they'll be your point of
+contact with external units. And so, it's actually a kind of a grossly
+under valued skill in data scientist. I would say that typically,
+people over-value the technical component. Like do they know programming language X? And de-value, can they have a conversation
+with me that doesn't get testy if I'm questioning some of their
+deep-held beliefs about data? And so, that's an important component is
+making sure that they'll fit in well with your organization

@@ -1,0 +1,570 @@
+WEBVTT
+
+1
+00:00:02.173 --> 00:00:05.923
+One of the key members of a data
+science team is a data engineer.
+
+2
+00:00:05.923 --> 00:00:09.072
+And so I'm gonna talk a little bit
+about what are the qualifications and
+
+3
+00:00:09.072 --> 00:00:11.133
+skills that you might
+need in a data engineer.
+
+4
+00:00:11.133 --> 00:00:13.370
+So what does a data engineer do?
+
+5
+00:00:13.370 --> 00:00:15.640
+They might do things like
+build infrastructure.
+
+6
+00:00:15.640 --> 00:00:18.810
+So they would build out what are your
+databases, the hardware for that.
+
+7
+00:00:18.810 --> 00:00:21.800
+Whether it's purchasing that, and
+organizing it, and ordering it.
+
+8
+00:00:21.800 --> 00:00:24.665
+Or they might build out your system for
+actually computing on that,
+
+9
+00:00:24.665 --> 00:00:28.300
+whether it's what servers they're gonna
+buy and how they're gonna organize that.
+
+10
+00:00:28.300 --> 00:00:30.854
+And what software they're gonna
+run on top of the database,
+
+11
+00:00:30.854 --> 00:00:33.830
+what software they're gonna
+run on top of the server.
+
+12
+00:00:33.830 --> 00:00:35.760
+And then,
+they manage the data storage and use.
+
+13
+00:00:35.760 --> 00:00:38.340
+So they might monitor how those work.
+
+14
+00:00:38.340 --> 00:00:41.630
+They might monitor who,
+what people are using which data.
+
+15
+00:00:41.630 --> 00:00:43.920
+They might pull data out and
+give it to somebody.
+
+16
+00:00:43.920 --> 00:00:45.990
+And then they might
+implement production tools.
+
+17
+00:00:45.990 --> 00:00:49.170
+Now each of these is a different thing,
+and so
+
+18
+00:00:49.170 --> 00:00:51.630
+you might not have one person
+that does all of these things.
+
+19
+00:00:51.630 --> 00:00:54.040
+Certainly at the beginning,
+when you're a very small organization,
+
+20
+00:00:54.040 --> 00:00:58.180
+you might need one person that can kind
+of handle the entire data infrastructure.
+
+21
+00:00:58.180 --> 00:01:01.630
+And then you might get more specialized
+people as you get to be a larger and
+
+22
+00:01:01.630 --> 00:01:03.550
+larger organization.
+
+23
+00:01:03.550 --> 00:01:06.010
+So the question is,
+what skills do they need?
+
+24
+00:01:06.010 --> 00:01:09.084
+So they might need some knowledge of
+what's the right hardware to be looking
+
+25
+00:01:09.084 --> 00:01:11.730
+for, both in terms of storage and
+in terms of computing.
+
+26
+00:01:11.730 --> 00:01:15.050
+They might need to have some
+knowledge about databases software.
+
+27
+00:01:15.050 --> 00:01:17.980
+They might need to know a little bit
+about software for computing and
+
+28
+00:01:17.980 --> 00:01:21.180
+what are the different software needs
+that your organization might need.
+
+29
+00:01:21.180 --> 00:01:23.850
+In that sense, they need to be able
+to interact with the data scientists,
+
+30
+00:01:23.850 --> 00:01:24.900
+once you have them.
+
+31
+00:01:24.900 --> 00:01:27.240
+They need to be able to know what
+software they need to be able to install,
+
+32
+00:01:27.240 --> 00:01:29.710
+what kind of data pulls that
+people will frequently do.
+
+33
+00:01:29.710 --> 00:01:33.500
+That will all inform users of hardware
+choices that they're going to be making.
+
+34
+00:01:33.500 --> 00:01:37.150
+And so, they also need to understand data
+processing at scale, almost always now,
+
+35
+00:01:37.150 --> 00:01:39.090
+and if you're a data driven organization,
+
+36
+00:01:39.090 --> 00:01:41.170
+you're collecting a massive
+amount amount of data.
+
+37
+00:01:41.170 --> 00:01:44.424
+So you need to be able to run at
+scale those data processes and
+
+38
+00:01:44.424 --> 00:01:47.760
+those data prediction algorithms
+that you've developed.
+
+39
+00:01:47.760 --> 00:01:50.383
+And then they need to understand
+software engineering at the level of,
+
+40
+00:01:50.383 --> 00:01:53.227
+they need to know how they're gonna
+interact with all these other components
+
+41
+00:01:53.227 --> 00:01:54.200
+of the data science team.
+
+42
+00:01:55.490 --> 00:02:00.190
+And so the background for data
+engineers is often computer science and
+
+43
+00:02:00.190 --> 00:02:03.390
+computer engineering, but
+they could also come from other places.
+
+44
+00:02:03.390 --> 00:02:06.460
+They might come from a quantitative
+background with some computer science
+
+45
+00:02:06.460 --> 00:02:10.650
+experience that they picked up maybe in
+online courses or in courses in person.
+
+46
+00:02:10.650 --> 00:02:13.540
+Or maybe they come from information
+technology where they've actually been
+
+47
+00:02:13.540 --> 00:02:15.840
+involved in infrastructure building and
+so forth.
+
+48
+00:02:15.840 --> 00:02:17.875
+Again, sort of like with
+the data scientist,
+
+49
+00:02:17.875 --> 00:02:20.640
+you might depend on what your
+organization needs a little bit,
+
+50
+00:02:20.640 --> 00:02:23.260
+which of these specific
+backgrounds is most useful to you.
+
+51
+00:02:23.260 --> 00:02:25.220
+But the primary thing you're looking for
+
+52
+00:02:25.220 --> 00:02:28.980
+is, can they execute those jobs that
+your organization needs them to execute?
+
+53
+00:02:28.980 --> 00:02:30.420
+Are they able to build infrastructure?
+
+54
+00:02:30.420 --> 00:02:33.070
+Are they able to maintain
+the infrastructure that you need them to
+
+55
+00:02:33.070 --> 00:02:34.220
+be able to maintain?
+
+56
+00:02:34.220 --> 00:02:35.660
+Can they implement the data science,
+
+57
+00:02:35.660 --> 00:02:39.750
+or machine learning algorithms, or
+statistical experiments, at scale for
+
+58
+00:02:39.750 --> 00:02:42.520
+your organization in the way
+that you would like them to.
+
+59
+00:02:42.520 --> 00:02:43.600
+So again,
+
+60
+00:02:43.600 --> 00:02:46.520
+the key is to get them to be able to
+solve the problems that you need now.
+
+61
+00:02:46.520 --> 00:02:50.090
+With a data engineer, the balance of
+solutions versus software might be
+
+62
+00:02:50.090 --> 00:02:51.500
+a little bit different
+then a data scientist.
+
+63
+00:02:51.500 --> 00:02:54.360
+Since this person is the person that's
+going to sort of be maintaining the data
+
+64
+00:02:54.360 --> 00:02:59.060
+stack for you, you need them to be able to
+do that in a way that's consistent with
+
+65
+00:02:59.060 --> 00:03:01.280
+the way that your
+organization does things.
+
+66
+00:03:01.280 --> 00:03:05.840
+So they need to be able to have an idea
+about what are the specific software and
+
+67
+00:03:05.840 --> 00:03:08.210
+hardware needs that your organization has.
+
+68
+00:03:08.210 --> 00:03:12.349
+There are a few sort of key things that
+they need to know, they might need to know
+
+69
+00:03:12.349 --> 00:03:16.630
+how to build and manage some databases,
+things like SQL, things like MongoDB.
+
+70
+00:03:16.630 --> 00:03:20.046
+They might also need to know how to
+do things like implement or run,
+
+71
+00:03:20.046 --> 00:03:23.710
+things like Hadoop, which is
+a parallel processing infrastructure.
+
+72
+00:03:24.810 --> 00:03:27.963
+Now it's not necessarily true that they
+need to know any one of these buzzwords
+
+73
+00:03:27.963 --> 00:03:29.190
+or another.
+
+74
+00:03:29.190 --> 00:03:32.622
+But it is true that they need to have the
+combination of skills that allow them to
+
+75
+00:03:32.622 --> 00:03:36.170
+build out a data infrastructure that's
+supportive and that can be maintained.
+
+76
+00:03:36.170 --> 00:03:39.145
+So there's a couple of key
+characteristics that you're looking for
+
+77
+00:03:39.145 --> 00:03:41.410
+when you're looking for a data engineer.
+
+78
+00:03:41.410 --> 00:03:44.550
+So first, again, they need to be
+willing to find answers on their own.
+
+79
+00:03:44.550 --> 00:03:49.269
+This is again, a person that often will
+be one of the few people that's solely
+
+80
+00:03:49.269 --> 00:03:51.970
+responsible for the data infrastructure.
+
+81
+00:03:51.970 --> 00:03:54.790
+And so, often they need be able to
+answer those questions themselves.
+
+82
+00:03:54.790 --> 00:03:57.830
+They need to be able to go out and
+get the quotes on the Internet.
+
+83
+00:03:57.830 --> 00:04:01.110
+They need to be able to ask questions and
+figure out what's the right hardware,
+
+84
+00:04:01.110 --> 00:04:03.920
+and what's the right security
+measures to be taking, and so forth.
+
+85
+00:04:03.920 --> 00:04:06.920
+Often they will have to do that a little
+bit on their own, in the sense that,
+
+86
+00:04:06.920 --> 00:04:11.000
+the data engineering team is often
+very specific and expert in an area.
+
+87
+00:04:11.000 --> 00:04:15.050
+Where it's not clear that other people
+within your organization will be able to
+
+88
+00:04:15.050 --> 00:04:17.160
+give them a lot of advice.
+
+89
+00:04:17.160 --> 00:04:18.840
+They need to know a little
+bit of data science.
+
+90
+00:04:18.840 --> 00:04:22.710
+They need to know how data is used,
+how it's pulled, how it's analyzed.
+
+91
+00:04:22.710 --> 00:04:25.520
+So that they know how to build
+the infrastructure that's useful for them.
+
+92
+00:04:25.520 --> 00:04:28.580
+Ideally, they'll be closely
+collaborative with the data scientists,
+
+93
+00:04:28.580 --> 00:04:30.560
+maybe they've done that before.
+
+94
+00:04:30.560 --> 00:04:32.850
+And then they need to be able
+to work well under pressure.
+
+95
+00:04:32.850 --> 00:04:35.700
+And so one reason for
+that is that the data infrastructure for
+
+96
+00:04:35.700 --> 00:04:38.370
+an organization is often very critical.
+
+97
+00:04:38.370 --> 00:04:42.810
+And if it goes down then, say,
+your website might go down, or
+
+98
+00:04:42.810 --> 00:04:47.240
+you won't be able to do any analysis, or
+the organization sort of grinds to a halt.
+
+99
+00:04:47.240 --> 00:04:50.900
+And so having a data engineer that's
+able to work well under pressure,
+
+100
+00:04:50.900 --> 00:04:54.840
+that's able to keep things up and
+running, and keep things maintaining.
+
+101
+00:04:54.840 --> 00:04:58.840
+That makes good decisions about
+software maintainability, and hardware
+
+102
+00:04:58.840 --> 00:05:02.860
+maintainability, and somebody that's
+critical for your data engineering team.
+
+103
+00:05:02.860 --> 00:05:04.330
+And again, friendly but relentless, so
+
+104
+00:05:04.330 --> 00:05:06.500
+they need to be able to
+interact with people.
+
+105
+00:05:06.500 --> 00:05:10.530
+Again, their personal communication skills
+are highly undervalued but are very,
+
+106
+00:05:10.530 --> 00:05:11.119
+very important.
+
+107
+00:05:12.130 --> 00:05:15.900
+There's gonna be a lot of steps at which
+a data engineer is gonna have to interact,
+
+108
+00:05:15.900 --> 00:05:19.000
+especially at first in a small
+organization but even later on,
+
+109
+00:05:19.000 --> 00:05:22.780
+with data scientists, with other people
+in your organization, and external units.
+
+110
+00:05:22.780 --> 00:05:25.520
+And so you need to be able to have
+a friendly conversation with them.
+
+111
+00:05:25.520 --> 00:05:26.030
+And ideally,
+
+112
+00:05:26.030 --> 00:05:30.460
+they can explain in very simple terms
+why they need to make certain decisions.
+
+113
+00:05:30.460 --> 00:05:33.860
+So often the decisions, especially
+these days, are quite technical,
+
+114
+00:05:33.860 --> 00:05:36.280
+quite involved with the hardware and
+software involved.
+
+115
+00:05:36.280 --> 00:05:39.940
+And so it's very useful if they can,
+in very simple language,
+
+116
+00:05:39.940 --> 00:05:44.770
+explain what's going on, what the problem
+is, how it's gonna be fixed, and so forth.
+
+117
+00:05:44.770 --> 00:05:47.210
+That can be a huge advantage
+to your organization.
+
+118
+00:05:47.210 --> 00:05:50.093
+So that's what a little bit about,
+what a data engineer is.

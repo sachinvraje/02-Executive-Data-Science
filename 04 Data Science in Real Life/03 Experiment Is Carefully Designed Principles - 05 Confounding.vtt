@@ -1,0 +1,352 @@
+WEBVTT
+
+1
+00:00:02.585 --> 00:00:04.820
+Hi, my name is Brian Caffo.
+
+2
+00:00:04.820 --> 00:00:09.830
+And this is the lecture on confounding as
+part of our executive data science series.
+
+3
+00:00:09.830 --> 00:00:13.780
+I'd like to thank Jeff Leek who wrote
+these slides, and I'm giving the lecture.
+
+4
+00:00:15.680 --> 00:00:18.700
+So sometimes you see
+unexpected patterns in data.
+
+5
+00:00:19.750 --> 00:00:24.970
+And as an example, we have here the number
+of people who've drowned by falling into
+
+6
+00:00:24.970 --> 00:00:30.340
+a pool, by the films Nicholas Cage
+has appeared in over time.
+
+7
+00:00:30.340 --> 00:00:33.500
+And there's a strong correlation
+just by happenstance.
+
+8
+00:00:33.500 --> 00:00:39.690
+So what are some of the reasons that
+we see spurious correlations in data?
+
+9
+00:00:39.690 --> 00:00:42.390
+Probably this example isn't the best,
+
+10
+00:00:42.390 --> 00:00:44.600
+because this isn't really
+an example of confounding.
+
+11
+00:00:44.600 --> 00:00:47.380
+And we'll go over why in a few slides.
+
+12
+00:00:47.380 --> 00:00:51.450
+But one potential reason we
+see associations that maybe
+
+13
+00:00:51.450 --> 00:00:56.350
+don't make sense or are not real is
+because of the idea of confounding.
+
+14
+00:00:56.350 --> 00:00:59.650
+And confounding is one of
+the central topics in statistics.
+
+15
+00:00:59.650 --> 00:01:02.310
+And I would say it's one
+of the core reasons that
+
+16
+00:01:02.310 --> 00:01:04.740
+observational data analysis is hard.
+
+17
+00:01:06.520 --> 00:01:09.900
+Let's go through a simple exam
+that Jeff concocted just to
+
+18
+00:01:09.900 --> 00:01:11.960
+illustrate the principle of confounding.
+
+19
+00:01:11.960 --> 00:01:15.520
+Here we see a picture of Jeff
+playing with his son Dexter.
+
+20
+00:01:16.880 --> 00:01:21.610
+He points out that he has big shoes,
+and he's literate,
+
+21
+00:01:21.610 --> 00:01:24.770
+he claims he's somewhat literate, but
+I've seen him read and he's literate.
+
+22
+00:01:24.770 --> 00:01:30.300
+And Dexter has little tiny shoes and
+is not literate because he's a little kid.
+
+23
+00:01:31.560 --> 00:01:35.620
+So, imagine conducting a data analysis
+
+24
+00:01:35.620 --> 00:01:40.080
+with some variables, and
+you see an association like that.
+
+25
+00:01:40.080 --> 00:01:42.090
+Well, in this example you might say,
+
+26
+00:01:42.090 --> 00:01:45.910
+okay, well,
+is shoe size associated with literacy?
+
+27
+00:01:48.250 --> 00:01:50.950
+But there's another variable,
+which is age.
+
+28
+00:01:50.950 --> 00:01:57.700
+In this case, Dexter is young and
+Jeff is older, middle aged he claims.
+
+29
+00:01:58.890 --> 00:02:05.380
+And so that is ultimately the intermediary
+between the relationship.
+
+30
+00:02:05.380 --> 00:02:10.610
+So we might put it in a graph like this
+where we have shoe size, literacy and
+
+31
+00:02:10.610 --> 00:02:15.720
+age, and we have the arrows in the sense
+that age corresponds to shoe size.
+
+32
+00:02:15.720 --> 00:02:17.450
+Younger people have smaller feet.
+
+33
+00:02:17.450 --> 00:02:19.540
+Older people have bigger feet.
+
+34
+00:02:19.540 --> 00:02:21.200
+And age corresponds to literacy.
+
+35
+00:02:21.200 --> 00:02:24.300
+As we age and develop,
+we develop our reading skills.
+
+36
+00:02:26.420 --> 00:02:29.100
+And so this is the idea of confounding.
+
+37
+00:02:29.100 --> 00:02:33.650
+That the confounder exists between
+what you're using to predict, and
+
+38
+00:02:33.650 --> 00:02:35.550
+what you are predicting.
+
+39
+00:02:35.550 --> 00:02:39.830
+And it, the name confounder,
+comes because it can confound.
+
+40
+00:02:39.830 --> 00:02:40.430
+In other words,
+
+41
+00:02:40.430 --> 00:02:43.430
+it confounds the relationship
+that you're trying to look at.
+
+42
+00:02:45.760 --> 00:02:50.670
+So, here's another funny example that he
+came up with that came from the XKCD comic
+
+43
+00:02:50.670 --> 00:02:54.790
+book, where sales correlate with
+geography, but so do lots of other things.
+
+44
+00:02:54.790 --> 00:02:59.760
+And this is basically what
+this comic is illustrating,
+
+45
+00:02:59.760 --> 00:03:02.590
+is that whenever you look
+at any of these heat maps.
+
+46
+00:03:02.590 --> 00:03:03.980
+Right?
+
+47
+00:03:03.980 --> 00:03:07.950
+What you see are very consistent hotspots,
+and
+
+48
+00:03:07.950 --> 00:03:13.530
+those hotspots tend to just be where most
+people live, and the comics says, pet
+
+49
+00:03:13.530 --> 00:03:17.770
+peeve #208, geographic profile maps which
+are specifically just population maps.
+
+50
+00:03:17.770 --> 00:03:20.590
+In other words,
+whatever you're trying to study and
+
+51
+00:03:20.590 --> 00:03:25.259
+geography is being confounded by the
+number of people that live in that area.
+
+52
+00:03:26.640 --> 00:03:31.610
+So confounding just to reiterate and
+to summarize this lecture, confounding
+
+53
+00:03:31.610 --> 00:03:36.620
+is the idea that a relationship between
+a variable you're interested in and
+
+54
+00:03:36.620 --> 00:03:40.540
+an outcome is spurious and
+
+55
+00:03:40.540 --> 00:03:45.150
+really due to a third variable that
+really is associated with the other two.
+
+56
+00:03:46.190 --> 00:03:46.900
+Okay?
+
+57
+00:03:46.900 --> 00:03:53.090
+And so It's very often the case that we
+find relationships in our data set and
+
+58
+00:03:53.090 --> 00:03:57.560
+have to be able to navigate
+through things like confounding
+
+59
+00:03:57.560 --> 00:04:01.110
+to figure out whether these associations
+are real, or whether they're fake.
+
+60
+00:04:02.180 --> 00:04:07.450
+And just to give you a sense to
+foreshadow some later lectures,
+
+61
+00:04:07.450 --> 00:04:09.140
+how do we deal with confounding?
+
+62
+00:04:09.140 --> 00:04:10.660
+How do we address it?
+
+63
+00:04:10.660 --> 00:04:14.340
+Well the big way that we address it
+is through things like adjustment.
+
+64
+00:04:14.340 --> 00:04:17.850
+In the first case with the shoe size
+example if we had a bunch of people and
+
+65
+00:04:17.850 --> 00:04:21.710
+we had their shoe sizes and we had a bunch
+of people and we had their reading levels.
+
+66
+00:04:23.000 --> 00:04:27.440
+If we fit a model that had shoe size
+we'd get a positive association but
+
+67
+00:04:27.440 --> 00:04:29.900
+if we adjust it for age right?
+
+68
+00:04:29.900 --> 00:04:34.210
+If we adjusted for age,
+then that association would go away.
+
+69
+00:04:35.530 --> 00:04:42.330
+Same thing here where if we looked at
+geography as it was associated with
+
+70
+00:04:42.330 --> 00:04:46.400
+whatever they were looking at, subscribers
+to Martha Stewart Living in this case.
+
+71
+00:04:46.400 --> 00:04:51.300
+And we accounted for
+population density at that
+
+72
+00:04:51.300 --> 00:04:55.410
+geographic location,
+then the relationship would go away, okay?
+
+73
+00:04:55.410 --> 00:04:59.166
+So, adjustment,
+things like adjustment using models,
+
+74
+00:04:59.166 --> 00:05:03.700
+is going to be one of the ways that
+we look to, to address confounding.

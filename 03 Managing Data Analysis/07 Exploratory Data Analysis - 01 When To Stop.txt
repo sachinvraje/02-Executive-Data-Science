@@ -1,0 +1,99 @@
+Exploratory data analysis is
+a highly iterative process. But it's tempting to want
+to iterate it forever. This lecture talks about
+when to stop the process and move on to the next
+phase of data analysis. [MUSIC] So far the examples in these lectures have generally illustrated one
+phase of the EDA iteration. But most exploratory data analyses iterate
+for a couple of times as you go through and you revise the question or
+update the data or change your model. And usually, every new answer that
+you get will raise more questions. So it's possible to just
+kind of go on forever. Now, but the real question is when do you
+stop, because none of us live forever. We have to eventually figure out
+what the answer's going to be and move onto the next phase. This lecture just raises a couple of
+questions that you can ask yourself to figure out when it's time to stop. So, the first question is
+really are you out of data? So eventually, as you iterate through the
+exploratory data analysis, you may be led to a place where you simply don't have
+any more data to answer the questions. So you can't move forward. So for example in the example about the
+ozone and temperature relationship, one of the things that we discovered was that
+the relationship appeared to be nonlinear. But what the data doesn't tell you is why
+that relationship might be nonlinear. Or how it might manifest in that way. And so the data might suggest certain
+hypotheses that you can further explore. But eventually you'll need to go out and collect more data on things that
+you haven't already measured. So, now if the analysis is successful and you've answered the question
+that you've set out to ask. That's another indicator that
+you're probably out of data. Because often what
+you'll want to do is get another data set to
+replicate what you've done. Okay?
+So if you've answered the question and maybe it's matched your expectations,
+it's often important to try to replicate your findings
+in an independent data set just so you can be sure that the answer that
+you've come to is actually the truth. So this is a sign that you're out of
+data and you need to get some more. The next question that you might want to
+ask yourself is do you have enough data to make a decision? Now data analysis is often done in
+support of some sort of decision making. Okay? And analysis for decisions is often
+different from doing analysis for like supporting a research paper,
+or for shipping a product, or even if you're writing a technical report. It may be that you have
+enough information or you have enough evidence to make
+a decision based on lots of external factors that are not really
+in the data set, okay. So decision making can depend
+on many different inputs. One of which may be your analysis. So, keeping in mind the purpose of
+a data analysis is very important. Cuz if you don't keep in mind the exact
+purpose of why you're analyzing the data, you may over or
+under invest resources into your project. And so, and finally, the purpose of
+your analysis may change over time. This is fairly common. And there may be multiple
+parallel purposes all at once. And so, keeping track of
+what these purposes are and why you're analyzing data will keep you
+focused on how much you can iterate your data analysis to get
+the appropriate answer. The next question you
+wanna ask yourself is, can you place your results
+in a larger context? Another way to ask this question is
+really, do the results make any sense? Because now,
+in order to answer this question, you may need to search the literature,
+or talk to people inside or outside your organization who
+are familiar with this area and to see if your findings fit
+with what they expect to see. Now whether your findings do fit
+the kind of existing literature or what people believe. It may or may not be a good thing. If they don't fit, for example, this may
+lead you down a path of new discovery. So it could be a good thing if you
+find something that's unexpected. Now on the other hand if you do find
+something that is expected, and your findings kind of match
+what everyone is looking for. That may or
+may not be a good thing either. Now in particular,
+if your data match your expectations it may simply be an indication that you
+have a question that's not very sharp. If you have a question that's
+kinda vague in its nature, then there may be a lot of
+different patterns in the data that match those expectations
+that are raised by your question. If you find things that kind of make sense
+to you, it may be an indication that you actually need to sharpen
+your question a little bit, to make it a little bit more precise. Now if the results don't
+match what you're expecting, this may be an interesting thing, but
+it definitely needs to be followed up. Because remember for every diamond in
+the rough, there are 99 pieces of coal. So it could be that you just made a simple
+mistake, and you need to check for this. So really actually, no matter what, no
+matter how you answer the question of do these results make sense, the thing that
+you need to do is check what you've done, check it over to make sure
+there's no simple mistakes. And if you don't find any mistakes
+the other thing that you might want to do is to try to replicate it
+in an independent data set. And so if you can replicate your findings,
+and then regardless of whether they matched your original expectations,
+you can have a little bit more confidence in the fact that whatever you
+found could actually be the truth. The last question you can ask yourself
+is really are you out of time? Now, this sounds arbitrary. But it's a very realistic question. Another way to ask this question really,
+is are you out of money, okay? Now every project has a time budget and
+a monetary budget. And it's important to be aware of these
+budgets, even if you don't directly control them, because they will help you
+to manage the data analysis process. And importantly, you may need to
+eventually argue for more resources or more time, and you're going to have to
+persuade other people in those cases. So it's important to know when to stop the
+data analysis process or the exploratory data analysis process in order to prepare
+results for presentation and to argue for continuation of the project, if that's
+what you believe needs to be done. Keeping track of your time and
+your budgets for both money and time is an important part of managing
+the data analysis process, so that you kind of manage the continuation
+into the next phase and to argue for
+more resources if you need them. So these are some basic questions that you
+can ask yourself to determine whether you need to stop the exploratory
+data analysis process. Are you out of data? Do you have enough evidence
+to make a decision? Can you place your results
+in a larger context or do these results make sense, and
+finally are you just simply out of time? These questions will help you determine
+how to manage the data analysis process in general and whether you can stop
+the exploratory analysis process and move on to the next phase.

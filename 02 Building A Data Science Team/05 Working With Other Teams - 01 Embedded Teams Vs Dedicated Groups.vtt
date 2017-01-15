@@ -1,0 +1,504 @@
+WEBVTT
+
+1
+00:00:02.780 --> 00:00:05.670
+One of the questions that often comes
+up when building a data science team,
+
+2
+00:00:05.670 --> 00:00:09.220
+is whether you should build a stand-alone
+data science group all on it's own, or
+
+3
+00:00:09.220 --> 00:00:11.030
+whether you should embed data scientists,
+
+4
+00:00:11.030 --> 00:00:16.200
+one in each of a number of different
+external management organizations.
+
+5
+00:00:16.200 --> 00:00:19.420
+So I'm gonna talk a little bit about
+those two different scenarios.
+
+6
+00:00:19.420 --> 00:00:23.395
+In the embedded data scientist idea,
+you're taking a data scientist, and
+
+7
+00:00:23.395 --> 00:00:25.555
+you're having them sit with say,
+the marketing team, or
+
+8
+00:00:25.555 --> 00:00:28.150
+you're having them sit with the business
+intelligence team, or you're having
+
+9
+00:00:28.150 --> 00:00:32.970
+them sit with a different team than
+the rest of their data science colleagues.
+
+10
+00:00:32.970 --> 00:00:36.140
+So, there are some big advantages to this,
+in particular,
+
+11
+00:00:36.140 --> 00:00:39.740
+they get to hear about the problems every
+day that that organization is having.
+
+12
+00:00:39.740 --> 00:00:42.380
+It's a really great way
+to promote collaboration.
+
+13
+00:00:42.380 --> 00:00:46.696
+It's also a little bit difficult in
+the sense that they can't necessarily
+
+14
+00:00:46.696 --> 00:00:50.580
+communicate very well with their own or
+other data scientists.
+
+15
+00:00:50.580 --> 00:00:53.680
+They won't be able to ask questions if
+they get stuck on different problems.
+
+16
+00:00:53.680 --> 00:00:55.610
+So there's some difficulties as well.
+
+17
+00:00:55.610 --> 00:00:56.350
+On the other hand,
+
+18
+00:00:56.350 --> 00:01:00.120
+you could imagine setting up
+a independent data science group.
+
+19
+00:01:00.120 --> 00:01:02.420
+So this depends a little bit on
+the scale of your organization.
+
+20
+00:01:02.420 --> 00:01:05.430
+If you're a really small start-up
+organization with only one or two people,
+
+21
+00:01:05.430 --> 00:01:07.270
+there's no need for a dedicated group.
+
+22
+00:01:07.270 --> 00:01:09.040
+But for a larger organization,
+
+23
+00:01:09.040 --> 00:01:11.670
+sometimes it makes sense to
+have them all sit together.
+
+24
+00:01:11.670 --> 00:01:15.310
+The advantage here is that they'll be able
+to ask questions quickly of their peers,
+
+25
+00:01:15.310 --> 00:01:18.180
+they'll have good support
+among their peers.
+
+26
+00:01:18.180 --> 00:01:22.086
+The disadvantage is that they won't
+necessarily be on top of all the problems
+
+27
+00:01:22.086 --> 00:01:25.450
+that necessarily they need to be on
+top of in order to do their job and
+
+28
+00:01:25.450 --> 00:01:28.790
+to effectively use data for
+your organization.
+
+29
+00:01:28.790 --> 00:01:33.220
+So the keys when making this comparison
+are communication, support, and
+
+30
+00:01:33.220 --> 00:01:35.270
+empowerment of data scientists.
+
+31
+00:01:35.270 --> 00:01:37.330
+So I'm gonna take each
+of these one at a time.
+
+32
+00:01:37.330 --> 00:01:40.360
+So the first thing I wanted to
+talk about is close communication.
+
+33
+00:01:40.360 --> 00:01:43.450
+So, the first thing that a data scientist
+needs to do to be really effective is to
+
+34
+00:01:43.450 --> 00:01:45.760
+be working on a concrete problem.
+
+35
+00:01:45.760 --> 00:01:48.720
+And those concrete problems often don't
+come out of the data science team,
+
+36
+00:01:48.720 --> 00:01:50.020
+they often come out of another team.
+
+37
+00:01:50.020 --> 00:01:54.260
+Whether that's the marketing team,
+or whether that's the leadership, or
+
+38
+00:01:54.260 --> 00:01:58.070
+some other part of the company or
+organization that you are working for.
+
+39
+00:01:58.070 --> 00:02:02.280
+And so to have close communication, one
+option is to embed the person directly in
+
+40
+00:02:02.280 --> 00:02:06.080
+that external unit and
+have them talk to them all the time.
+
+41
+00:02:06.080 --> 00:02:10.210
+But another way is to make sure that the
+channels of communication are open between
+
+42
+00:02:10.210 --> 00:02:13.270
+people in the external units and
+people in the data science team.
+
+43
+00:02:13.270 --> 00:02:16.590
+Either way, the key component is that
+the data scientist should always be aware,
+
+44
+00:02:16.590 --> 00:02:18.970
+what's the concrete problem
+they're trying to solve?
+
+45
+00:02:18.970 --> 00:02:20.240
+And when they come up with solutions,
+
+46
+00:02:20.240 --> 00:02:23.750
+they need to know what to benchmark
+against, what's success look like?
+
+47
+00:02:23.750 --> 00:02:27.120
+And the best way to do that is through
+communication with these external units.
+
+48
+00:02:27.120 --> 00:02:28.280
+The next thing is support.
+
+49
+00:02:28.280 --> 00:02:31.970
+You need to support data scientists, and
+not only support data scientists, but
+
+50
+00:02:31.970 --> 00:02:34.860
+that way they have the support they need
+to be able to help the other people in
+
+51
+00:02:34.860 --> 00:02:36.310
+your organization.
+
+52
+00:02:36.310 --> 00:02:40.290
+So if a data scientist is
+embedded in an external unit,
+
+53
+00:02:40.290 --> 00:02:43.350
+often they don't necessarily have
+the person that they can talk to.
+
+54
+00:02:43.350 --> 00:02:45.340
+It can be very frustrating
+to perform data science.
+
+55
+00:02:45.340 --> 00:02:47.690
+A lot of it is very
+low-level data cleaning,
+
+56
+00:02:47.690 --> 00:02:51.450
+which can be a very painful,
+I can tell you from experience, process.
+
+57
+00:02:51.450 --> 00:02:55.170
+And so the idea is you wanna be able
+to have somebody that they can turn to,
+
+58
+00:02:55.170 --> 00:02:57.100
+that they can talk to you for
+advise or support.
+
+59
+00:02:57.100 --> 00:03:01.280
+So that often is better in
+a stand-alone data science unit.
+
+60
+00:03:01.280 --> 00:03:03.780
+They can actually go and
+talk to other people.
+
+61
+00:03:03.780 --> 00:03:08.420
+But again, then there can be this insular
+nature of the group being on its own.
+
+62
+00:03:08.420 --> 00:03:10.640
+So the last thing is empowerment.
+
+63
+00:03:10.640 --> 00:03:14.310
+So one thing that's very difficult about
+being a data scientist in the organization
+
+64
+00:03:14.310 --> 00:03:17.250
+is that the data often don't
+tell you what you wanna hear.
+
+65
+00:03:17.250 --> 00:03:19.980
+So it's very common to
+run an experiment and
+
+66
+00:03:19.980 --> 00:03:23.390
+to get a result that goes
+against the common wisdom.
+
+67
+00:03:23.390 --> 00:03:27.010
+Or maybe you have a great idea, a great
+hypothesis, you run an experiment, and
+
+68
+00:03:27.010 --> 00:03:28.250
+you collect the data.
+
+69
+00:03:28.250 --> 00:03:30.160
+It turns out your hypothesis was wrong.
+
+70
+00:03:30.160 --> 00:03:32.940
+Communicating these sorts of things
+to the people that had the ideas or
+
+71
+00:03:32.940 --> 00:03:37.540
+the external units that came up with
+those projects can be very difficult.
+
+72
+00:03:37.540 --> 00:03:42.200
+And in particular, if those organizations
+are upset or the external units
+
+73
+00:03:42.200 --> 00:03:46.220
+are upset about the results that came
+out of the data science experience,
+
+74
+00:03:46.220 --> 00:03:50.300
+the data science project,
+there can be a big disadvantage because
+
+75
+00:03:50.300 --> 00:03:54.150
+the data scientists might be incentivized
+to not tell you the full truth, or
+
+76
+00:03:54.150 --> 00:03:57.220
+to not communicate exactly what
+happened in the experiment.
+
+77
+00:03:57.220 --> 00:03:59.780
+So we need to empower data scientists
+
+78
+00:03:59.780 --> 00:04:03.380
+to be able to be confident in
+reporting the results that were there.
+
+79
+00:04:03.380 --> 00:04:07.930
+And then to have the organization support
+that and make quick decisions, even when
+
+80
+00:04:07.930 --> 00:04:12.370
+those decisions are not necessarily
+the way that everyone would want to work.
+
+81
+00:04:12.370 --> 00:04:15.060
+So it's not a political process,
+doing data science.
+
+82
+00:04:15.060 --> 00:04:17.010
+And because it's not a politic process,
+
+83
+00:04:17.010 --> 00:04:20.900
+that can often make the politics
+very difficult for data scientists.
+
+84
+00:04:20.900 --> 00:04:25.470
+So I've found that the best happy
+medium between the two ways of working,
+
+85
+00:04:25.470 --> 00:04:27.710
+whether you embed somebody out externally,
+or
+
+86
+00:04:27.710 --> 00:04:32.790
+you have a dedicated team, is to once
+you're at a scale that's useful for it,
+
+87
+00:04:32.790 --> 00:04:35.870
+once you have two or three people that are
+doing data science within an organization,
+
+88
+00:04:35.870 --> 00:04:39.620
+you have them sit together in a way that
+they can all communicate with each other.
+
+89
+00:04:39.620 --> 00:04:42.640
+They can commiserate with each other, they
+can empower each other to feel good about
+
+90
+00:04:42.640 --> 00:04:45.070
+the decisions they're making
+about what to report.
+
+91
+00:04:45.070 --> 00:04:47.080
+But then you make sure that
+they have close contact and
+
+92
+00:04:47.080 --> 00:04:48.990
+continual contact with those groups.
+
+93
+00:04:48.990 --> 00:04:51.490
+So they might go sit for
+an hour a week with some group.
+
+94
+00:04:51.490 --> 00:04:54.510
+Or they might go sit for
+a couple hours a week with another group.
+
+95
+00:04:54.510 --> 00:04:56.790
+But they always have a home
+base to come back to,
+
+96
+00:04:56.790 --> 00:04:59.530
+the data science home base,
+where they can feel really supported and
+
+97
+00:04:59.530 --> 00:05:02.330
+they can have the right people
+to ask questions about.
+
+98
+00:05:02.330 --> 00:05:06.057
+So as long as you can encourage the right
+kind of communication and make sure that,
+
+99
+00:05:06.057 --> 00:05:09.838
+that doesn't become insular, that usually
+tends to be the optimal arrangement,
+
+100
+00:05:09.838 --> 00:05:12.770
+a dedicated team with close
+connections to individual groups.
+
+101
+00:05:12.770 --> 00:05:16.822
+And ideally, you have each person has one
+external unit that they are responsible
+
+102
+00:05:16.822 --> 00:05:19.992
+for, or a small number of units
+that they're responsible for,
+
+103
+00:05:19.992 --> 00:05:23.517
+so that they can develop long-term
+relationships with those units and
+
+104
+00:05:23.517 --> 00:05:27.007
+really be effective at using data
+to help optimize the organization.

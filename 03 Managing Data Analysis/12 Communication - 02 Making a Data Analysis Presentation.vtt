@@ -1,0 +1,426 @@
+WEBVTT
+
+1
+00:00:00.580 --> 00:00:04.174
+This lecture provides just a couple of
+ideas of how to make a good data analysis
+
+2
+00:00:04.174 --> 00:00:04.963
+presentation.
+
+3
+00:00:09.012 --> 00:00:13.141
+There are a couple of key components that
+I feel like are important to making a good
+
+4
+00:00:13.141 --> 00:00:15.450
+presentation that involves data analysis,
+
+5
+00:00:15.450 --> 00:00:18.940
+and so I thought I would just
+list a couple of them here.
+
+6
+00:00:18.940 --> 00:00:21.000
+Just so
+you can kind of keep them in mind and
+
+7
+00:00:21.000 --> 00:00:23.710
+think about them the next time you're
+making your next presentation.
+
+8
+00:00:23.710 --> 00:00:27.530
+So, the first and I think the most
+important thing you want to have in
+
+9
+00:00:27.530 --> 00:00:32.020
+a presentation is to state the question
+that you're trying to answer.
+
+10
+00:00:32.020 --> 00:00:34.910
+I can't tell you how many times
+I've been in a presentation and
+
+11
+00:00:34.910 --> 00:00:36.490
+we've been ten minutes in and
+
+12
+00:00:36.490 --> 00:00:40.005
+I still don't exactly know what question
+this person is trying to answer.
+
+13
+00:00:40.005 --> 00:00:40.770
+Okay.
+
+14
+00:00:40.770 --> 00:00:45.140
+So, it's important, upfront, that you not
+assume that everyone is on the same page,
+
+15
+00:00:45.140 --> 00:00:48.820
+that everyone has the same background,
+but to state the question clearly and
+
+16
+00:00:48.820 --> 00:00:51.432
+succinctly so
+that everyone knows what the goal is.
+
+17
+00:00:51.432 --> 00:00:53.980
+Okay.
+And once everyone knows what the goal is,
+
+18
+00:00:53.980 --> 00:00:58.690
+we could all be kind of on the same page
+and oriented towards achieving that goal.
+
+19
+00:00:58.690 --> 00:01:00.320
+Okay.
+So stating the question
+
+20
+00:01:00.320 --> 00:01:02.210
+is very important from
+the get go in a presentation.
+
+21
+00:01:03.870 --> 00:01:06.740
+Secondary to that, you might want to
+describe what type of question it is that
+
+22
+00:01:06.740 --> 00:01:09.740
+you're trying to answer if it's
+not immediately obvious, okay.
+
+23
+00:01:09.740 --> 00:01:13.630
+So remember that we have the six types
+of questions that you can try to ask.
+
+24
+00:01:13.630 --> 00:01:17.260
+And so it's useful to the audience
+sometimes to know if you're trying to
+
+25
+00:01:17.260 --> 00:01:20.940
+ask an inferential question versus
+a causal one, versus a predictive one.
+
+26
+00:01:20.940 --> 00:01:24.430
+That can help to inform any discussion
+that may occur afterward in terms of
+
+27
+00:01:24.430 --> 00:01:27.440
+improving your analysis or modifying it.
+
+28
+00:01:27.440 --> 00:01:31.685
+Another thing that I like to do that I
+think is very useful is to show the data.
+
+29
+00:01:31.685 --> 00:01:33.770
+Okay.
+It's often helpful or
+
+30
+00:01:33.770 --> 00:01:39.810
+tempting to just show summaries, or you
+just kind of just not even data summaries,
+
+31
+00:01:39.810 --> 00:01:42.820
+but just kind of summaries in
+words of what the results are.
+
+32
+00:01:42.820 --> 00:01:45.620
+But it's actually very
+useful to show the data.
+
+33
+00:01:45.620 --> 00:01:48.780
+But just as a warning though,
+this could be a double edged sword.
+
+34
+00:01:48.780 --> 00:01:51.850
+Because people like to talk
+about data when they see it.
+
+35
+00:01:51.850 --> 00:01:55.510
+So if you want people to have good
+discussion, to have informed discussion
+
+36
+00:01:55.510 --> 00:01:58.640
+that may be useful to you,
+I think it's very useful to show the data.
+
+37
+00:01:58.640 --> 00:02:02.930
+People love to talk about data, but, so
+even if you don't want that discussion to
+
+38
+00:02:02.930 --> 00:02:07.240
+happen necessarily, you may be better
+off in the end if it does happen.
+
+39
+00:02:07.240 --> 00:02:10.650
+And so to this extent,
+I find plots are better than tables,
+
+40
+00:02:10.650 --> 00:02:14.530
+because plots show people, you know,
+a summary of the data, but
+
+41
+00:02:14.530 --> 00:02:18.060
+they also show people deviations
+from what might be expected, and so
+
+42
+00:02:18.060 --> 00:02:21.230
+plots are very useful for
+kind of producing discussion and
+
+43
+00:02:21.230 --> 00:02:23.010
+kind of encouraging people
+to think about the data.
+
+44
+00:02:24.650 --> 00:02:28.390
+When it's possible, if you're making a
+presentation and you're showing the data,
+
+45
+00:02:28.390 --> 00:02:32.530
+if you're showing some summary or
+a statistic about the data,
+
+46
+00:02:32.530 --> 00:02:35.940
+try to show a measure of
+uncertainty to go with it.
+
+47
+00:02:35.940 --> 00:02:40.239
+And the reason why is it just provides for
+a richer discussion when you can
+
+48
+00:02:40.239 --> 00:02:43.415
+incorporate the uncertainty
+into any predictions or
+
+49
+00:02:43.415 --> 00:02:45.973
+any estimates that you make from the data.
+
+50
+00:02:45.973 --> 00:02:49.483
+And so, try to have a broad array
+of measures of uncertainty so
+
+51
+00:02:49.483 --> 00:02:53.680
+that people can get the full picture
+of what's going on in your analysis.
+
+52
+00:02:53.680 --> 00:02:57.390
+So for example, if you have a primary
+model, it can be used to show results for
+
+53
+00:02:57.390 --> 00:03:01.860
+say, a bunch of secondary models or to
+show confidence intervals for parameters.
+
+54
+00:03:03.580 --> 00:03:08.380
+Lastly, I think it's important that when
+you present results from a data analysis,
+
+55
+00:03:08.380 --> 00:03:11.260
+that you separate three things,
+
+56
+00:03:11.260 --> 00:03:15.080
+they are the evidence,
+the interpretation and the decision.
+
+57
+00:03:15.080 --> 00:03:15.790
+Okay?
+
+58
+00:03:15.790 --> 00:03:19.460
+It's often easy to kind of conflate
+all these things into one sentence or
+
+59
+00:03:19.460 --> 00:03:22.960
+to one statement and
+I think it helps people to
+
+60
+00:03:22.960 --> 00:03:25.780
+provide a useful discussion
+if you can separate them out.
+
+61
+00:03:25.780 --> 00:03:29.850
+So for example, if you're looking at,
+let's say, an air pollutant and
+
+62
+00:03:29.850 --> 00:03:32.570
+some health outcome, you might find that
+
+63
+00:03:32.570 --> 00:03:37.390
+the increase in the air pollutant results,
+you estimate that
+
+64
+00:03:37.390 --> 00:03:41.950
+an increase in the air pollutant results
+in a 5% increase in the health outcome.
+
+65
+00:03:41.950 --> 00:03:42.780
+So that's bad.
+
+66
+00:03:42.780 --> 00:03:44.170
+So maybe the health outcome is mortality.
+
+67
+00:03:44.170 --> 00:03:50.030
+So, an increase in the pollutant results
+in a five percent increase in mortality.
+
+68
+00:03:50.030 --> 00:03:52.510
+So that's the evidence,
+that is the result of your analysis.
+
+69
+00:03:52.510 --> 00:03:55.420
+You estimated some parameter and
+that was the result, and
+
+70
+00:03:55.420 --> 00:03:58.660
+maybe there's a competence level that
+you can present around that too.
+
+71
+00:03:58.660 --> 00:04:01.740
+So, the interpretation might be,
+okay air pollution is bad for you, okay,
+
+72
+00:04:01.740 --> 00:04:06.450
+and then the decision might be we
+need to lower air pollution levels in
+
+73
+00:04:06.450 --> 00:04:07.740
+whatever environment we're thinking about.
+
+74
+00:04:07.740 --> 00:04:11.399
+So there's three separate components there
+that all could be evaluated independently.
+
+75
+00:04:12.450 --> 00:04:15.450
+Given a set of evidence,
+you're interpretation might be that,
+
+76
+00:04:15.450 --> 00:04:18.460
+oh if it's only 5% maybe air
+pollution's not so bad for you.
+
+77
+00:04:18.460 --> 00:04:20.320
+Or it might be 5% and it's terrible.
+
+78
+00:04:20.320 --> 00:04:22.950
+But your interpretation can be
+made separate from the evidence
+
+79
+00:04:22.950 --> 00:04:23.900
+that's provided.
+
+80
+00:04:23.900 --> 00:04:28.640
+And further more, what you do about it is
+further separate from what you think about
+
+81
+00:04:28.640 --> 00:04:31.702
+it, how you interpret it,
+and what the evidence is.
+
+82
+00:04:31.702 --> 00:04:34.558
+So, separating the evidence,
+the interpretation, and
+
+83
+00:04:34.558 --> 00:04:38.220
+the decision can help people think
+about the different components.
+
+84
+00:04:38.220 --> 00:04:42.300
+And can weigh the evidence, in terms
+of how they would react differently or
+
+85
+00:04:42.300 --> 00:04:46.430
+how important that evidence is to
+whatever process they're involved in.
+
+86
+00:04:46.430 --> 00:04:50.374
+So, I think doing that provides for
+a useful presentation and provides for
+
+87
+00:04:50.374 --> 00:04:54.379
+a more important, a useful discussion
+about the meaning of your results and
+
+88
+00:04:54.379 --> 00:04:55.958
+what we should do about them.

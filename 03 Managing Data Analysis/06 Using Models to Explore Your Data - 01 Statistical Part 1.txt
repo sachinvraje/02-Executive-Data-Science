@@ -1,0 +1,195 @@
+Statistical models can play many
+different roles in a data analysis. In this lecture I'll talk about how to use
+statistical models to explore your data. So exploratory data analysis
+can have two broad goals. The first is more basic where it's you
+determine whether you have the right data to answer your question. And part of exploratory analysis is to
+determine do you need to get more data, do you need to change datasets, or
+do you need to change your question or refine your question. So what I'm gonna talk about in this
+lecture is really how do we develop a sketch of a solution to your question,
+assume your question is appropriate and is answerable,
+we want to start sketching out a solution. So in many ways this is
+like with film-making, you want to make a rough
+cut of your movie, right? So the idea is it's not gonna
+be the final product, but it's gonna give you a sense of how
+things flow and how things work. And if you're gonna make an argument
+to someone, you're gonna argue for doing this versus that and you wanna
+build evidence to make your case, this is gonna be a basic sketch of
+how that argument's gonna work out. Okay?
+So that's what we'll talk about in this lecture. And so this lecture is really
+about using statistical models to help you to summarize your data, and to eventually kind of make things to
+things like make inference, okay. So the first thing we need to talk
+about is what is a model, okay, and why do we need them, okay. So, models are generally speaking
+are just constructs that we build to help us understand the real world,
+okay. So for example, in biology often people
+will use mice as models for humans. So we can't do experiments on humans so
+we'll use, we sometimes people do
+experiments on mice to use, to kind of give us sense of what
+might happen in a human being. For example, for
+things like drug development or whatever. Now, so that's a very,
+that's a physical type of model. We're not going to be talking about
+those kind of models of course. But the models that we use
+are mathematical models in many cases. And we use them to help tell, to kind of help us describe
+the population that we're talking about. So if there's a population out there that
+we're trying to make inferences to, or to describe in some way,
+we use a model to kind of help us do that. Because often the population is too
+complex to think about all at once. So imagine if you're trying to make a
+statement about the entire United States, everyone in the United States, okay. All the things that might go
+on between all the 300 or so million people in the United States,
+it's impossible to think about. So we need a model to
+help us simplify that, to allow us to think about it
+in a kind of a reasonable way. The ideas of the models will stand in for
+the population. And they're a much simpler form than
+what might actually be going on in the population. But they represent population features and
+relationships, okay. And the models help us by imposing
+structure on the population, so we might for example assume that things
+are linearly related to each other. We don't necessarily know that, but it helps us to simplify how we think about
+two different variables in the population. And the important thing to realize, and this is a well worn saying
+in the field of statistics. Is that, all models are wrong,
+but some are useful. So, it's important not to get hung
+up on finding the right model. But rather to focus on developing
+a model that's actually useful to help you tell your story
+about the population. So it might be useful
+to start at this point, which I think it was to ask what's
+it like to have no model at all? Okay. So that way you get a sense of
+kind of how bad things can be or how difficult it might be if
+you didn't ever use a model. Okay. So just take this as a basic example. Suppose you're developing a new product,
+and you want to know how much people would
+be willing to pay for this new product. So something you might do is
+just put out a simple survey, you might survey 20 people, and
+that may be a representative of the the larger population of people
+that would be willing to buy this product. And ask them how much they
+would be willing to pay. And so you do the survey and
+then someone comes at you and says, okay well what did the data say? Okay, what did they tell us? Now so as an example, I recently
+published a book called R Programming for Data Science. And before it was published,
+on the website, you could ask people to put their names,
+their email addresses and ask them how much they'd be willing to
+pay for this book before it goes on sale. And so here's what the data looked like. So these are 20 numbers from
+the survey that was put out on the website about my book, okay? So this is life without a model, okay? The answer to what did the data tell us. It's in here somewhere,
+because this is the data. It has to be in here somewhere. But the problem is, so this is, there's
+no model to help us think about the data. So this is what I would call the trivial
+model, meaning that there's no model. Okay? And the problem is the trivial
+model is not useful. Because it doesn't provide any summary or
+any data reduction. Okay?
+So put it this way, if all models are gonna be wrong, you might as well
+try to find something that's useful. Rather than have no model at all that's
+almost certainly not going to be useful. All right? So just for the sake of example,
+let's use the normal model. So, the normal model is based
+on the normal distribution, and it's the familiar bell curve that
+we've seen many, many times. Okay? The nice thing about the normal
+model is that it only requires two parameters to estimate. There's the mean, and
+the standard deviation, okay? And we can estimate that from the data
+by just calculating the mean and the standard deviation in the usual way. So the first question we want to ask is,
+what do we expect to see? If the population were truly
+coming from a normal distribution, what would that look like, okay? And it's always important
+to set expectations for models, so I know it's very tempting
+to get right into the data and see what they look like, but you gotta
+be able to set your expectations. Appropriately, so that you know whether
+you're right or wrong in the end, okay? So here's what we would expect the data
+to look like if they were drawn from, as representative samples
+from the population that was governed by
+a normal distribution. So here's the normal curve. It probably looks very familiar to you. Now models are very useful, because they can tell us a lot of
+different things about the population. For example, this model, the normal model, says that 68% of the population of readers
+would be willing to pay between $6 and 81 cents, and $27 and 59 cents,
+okay, how do we know that? Because that's what the normal
+distribution based on this data set tells us about the population, okay? We can use the models to compute other
+quantities too, for example we might want to know how many people will be
+willing to pay more than $30. So we can use the normal
+distribution to say that 11% of the population would be
+willing to pay more than 30. So that's useful to know. Now, the one thing about this picture
+that you have to just remember is that there is no data in this picture. Now we use the data to draw the picture, because we use the data to calculate
+the mean and the standard deviation. But there's no actual
+data in this picture. So just keep that in mind. Now, but
+eventually we'll look at the data. And we want to know how that
+data matches our expectation, which is what this picture is giving us. Now before we actually get to the data,
+one of the things I just want to do is to show you, what would data look like if it
+came from a normal distribution, okay? Now the nice thing about most software
+packages now is that we could just simulate the error from a normal
+distribution and see what it looks like. So here's what that picture looks like. I've made a histogram of 20
+data points that come from exactly a normal distribution. And I plotted the theoretical
+normal curve over. You can see that the histogram and the blue curve match very
+nicely with each other. This is all very nice and
+ideal because it's simulated, okay? So this is what I call,
+drawing a fake picture, okay? Drawing a fake picture I
+find to be terribly useful because it really helps
+to set expectations. And sometimes its okay to even
+literally just draw it with your hand. You don't have to
+necessarily use a computer. But draw a fake picture of what
+you're expecting to see with the actual data okay? So this is what normal data looks like, if we see a histogram it
+kinda looks like this. We might think okay a normal distribution
+is a pretty reasonable approximation for the dataset okay? So, now one thing that we can
+see from the fake picture is that the normal distribution probably
+isn't going to be perfect from the get-go. Because in particularly you can
+see on the left-hand side there that there are negative values, okay? [LAUGH] And it doesn't seem plausible that people would be willing to pay
+negative dollars for this book. And so maybe that's probably not the best
+model, but it may be still useful. Remember that no model is
+going to be right, but it may actually still be useful for
+helping us summarize the data. Okay, so here's what the data
+actually looked like, okay? I've got a histogram of all of the data
+points that were from the survey. This is 20 data points. And I've overlaid it with the blue curve,
+the normal distribution, that's fitted to the data. So you have to ask yourself
+how does the data match up with this normal distribution,
+with this model, okay? Now, given what we've seen before
+with the theoretical normal curve, with the fake data and
+the fake picture that we showed, how does this picture compare
+to the fake picture, okay? Now, you might think it doesn't look
+that good, actually, [LAUGH] right? So what's wrong with this picture? Well, you got this huge spike in
+the histogram at around $10, okay? That's not predicted by the volume, the normal distribution doesn't have
+a huge spike right there, and furthermore, there are no values that are either close
+to zero or negative, whereas the normal distribution has all these negative
+values in its functional form. So it doesn't look like
+the histogram really fits that well. So what are we going to do about that? So there may be multiple problems. There may be multiple explanations for
+why the histogram from the data doesn't look like what we'd expect
+from a normal distribution. For starters, the data may not even
+be representative of the population. This is just a website that was up there
+and anyone who just happened to come by could fill in their name and
+say what price they'd be willing to pay. Who knows who these people were, who knows
+if they were even prospective customers, people who would actually buy the product? So that the data collection process
+might have been very skewed. We have no real way of knowing that. But on the other hand it could be that the
+model clearly just does not fit well and we may need to revise the model too. It may be easier in some circumstances to
+revise the model than to revise the data, especially at the data collection process. Is very expensive, okay? So one of the things we can do is
+let's try the gamma distribution. Okay, so the gamma distribution
+is another model and one of its key features is that it
+only allows for positive values. So unlike the normal which has
+negative and positive values. The gamma distribution only
+allows positive values. So then we can just repeat all the steps
+that we just went right through. We can set expectations. We can draw a fake picture and then we
+can compare our expectations to the data. Okay. So, I'll skip the first two steps there,
+and I'll just show you, here's what the picture
+looks like with the data, and the gamma distribution that's
+fitted on top of it, okay? So you can see from this picture that
+the fit's not perfect either, okay? Maybe, you could argue
+it's a little bit better, you've got a little hump
+wherever that spike at ten is. But it's not, it doesnt exactly fit it
+perfectly, and still you have a bunch of, the curve, is kind of covering values
+where there's no data between the zero and five range. And now, but the important thing is
+that we have a different model, and so a different model is gonna
+yield different predictions. So this model is telling us something
+completely different about the population than the normal model was, right? So the normal model told us there was
+gonna be a big hump kind of around 20. But this model tells us that the hump's
+more like around seven and ten. Okay? So the model is telling us something very
+different about what the population is willing to pay for this product. Okay? For example, before we said that 11% of people
+would be willing to pay more than $30. However, if we use the gamma model we find that only 7% of people would
+be willing to pay more than $30. So the importance of using models,
+different types of models is that they tell you very different
+things about the population, and they result in very different predictions. And so, if you're interested in
+making these predictions and being accurate about them, you want
+to make sure you have a model that's reasonably a reasonable
+approximation of the population. And you can use the data to
+help you see if that fits well. Now we have looked at two
+different types of models to tell us about our data and
+to tell us about the population, okay? So now you may want to keep, continue to
+refine this, think about different models. Obviously this last one didn't really
+fit perfectly, so you might wanna either refine your model or you might want
+to do another survey to get more data, to get a better sense and so you kind
+of think about where you go from here. The point of this whole exercise
+is that you get a little sketch of where you're gonna go and
+kinda what your solution's gonna be. If your question was originally,
+how much are people willing to pay for this product,
+you have a better sense now in terms of what the shape of that
+distribution might look like. And what the population
+might be willing to do. From here where you go, it depends. You may have enough information
+as it is to kind of set prices or to figure out how your
+marketing campaign's gonna go. Or you might want to go
+into more formal modeling. So you can test the sensitivity
+of your assumptions, of your expectations to various features. So that's what we'll talk about more
+when we talk about formal modeling.

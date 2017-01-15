@@ -1,0 +1,86 @@
+So once you've identified the people that
+you wanna bring in, or people who've applied to your organization,
+the next step is interviewing them, and trying to figure out if they're a good
+fit for your data science team. So the structure of a data science
+interview is usually is follows. Usually you have individual or group meetings where you meet
+either one on one with the person. Or you have a small group
+of people meet with them. Then you have some kind of demonstration
+or presentation of their skills, and then maybe a test of their
+technical skills as well. So those are usually the three main
+components of the data science interview. And so,
+I'm gonna talk about each of these. So the first is individual meetings or
+group meetings. So this kind of depends on
+the size of your organization. How many people they'll meet at once,
+whether it's a few people, or one person. And ideally they will meet both people
+inside the data science team as well as people outside the data science team, so
+you can get feedback on whether they've communicated well with both internal
+people and external people. So the key here is to focus on
+the projects that they've worked on. Try to illicit as much information as
+you can about how they work on projects. Whether they're go-getters, whether
+they can go figure it out on their own. It's also very critical that
+you assess at this stage. The resume will tell you a lot
+about their technical skills. It will tell very little about
+their interpersonal skills. So this is sort of a critical stage
+where you need to dissect and identify, are they a person that will easily work
+with other people in your organisation. Ideally, you want to do this in such a way
+that it's sometimes good to have people can make people a little
+uncomfortable as data scientists. Again, that's gonna be part of their
+job is they might come up with ideas, when they might analyze data, and come to
+conclusions that aren't super popular. But you might still wanna be able
+to communicate with them, and you'll be able to do
+that in a friendly way. Here you're gonna want to focus on
+the global evaluation of skills. So some people have used
+technical recruiting questions. Although, a lot of large organizations,
+including really famous data science organizations, have kind of moved
+away from that in interviews, sort of the riddle type of questions. Or the mathematical type puzzle questions
+are sort of not in favor any more, and I think I agree with that in the sense
+that it's very unuseful in a very confined setting to know how somebody's
+gonna react to a specific tricky puzzle. It's usually like, have they
+studied that kind of puzzle before, is a better predictor than
+their actual abilities. And so, it's better to ask sort
+of general purpose questions. How would you tackle this kind of problem? How would you, in general, build out the infrastructure to
+solve this kind of security risk? So you wanna focus on, maybe some drill
+down into some technical details, but you definitely want to focus on
+their conceptual understanding. Do they know how to tackle the problems? Do they know the right
+sort of language to speak? Do they know the right
+technologies to talk about? Do they seem like they have experience in
+solving the sorts of problems that you'd ask them to solve if they
+came onto your organization? The next key component, and some
+organizations don't do this, but I think it's very important when interviewing any
+data scientist, data engineer, or data science manager, is to have them do some
+kind of demonstration or presentation. This is good for a couple of reasons. One, it's an ability for
+them to show their own creativity and show their own sort of unique contribution
+that they can bring to your organization. So if they do a presentation about
+a data analysis they've done, or an infrastructure they've built, or they
+demo some software that they build, or if they talk a little bit about
+their management techniques and how they would manage a data science team. It's important to get sort of that
+information about what's creative or unique about them. It's also a communications skills check. Almost always data scientist,
+data engineers, data managers, they're going to have to present
+their results to people. And so, it's good to evaluate right from
+the get-go, are they able to do that, are they able to answer
+questions on their feet. Are they comfortable with presenting
+information that's technical and detailed. It's also an opportunity for
+a broader group to interact with them. So you can only have so many individual or small group meetings with
+any person at any given day. But if you have a nice big presentation
+for them to give with a larger group of people, it gives more people
+a chance to sort of weigh in on. Does this person seem like the kind
+of person that would fit into our organization? So finally, there's often
+an evaluation of technical skills. Now, there are two kind of
+schools of thought here. One is very technical,
+maybe even like riddle-like problems. And the other is to actually have them try
+to solve a very small but real problem. So I think that the latter case
+is usually much more effective. So for a data scientist, you might
+give them a very small data set, and see if they can do an analysis on it and
+report. It might take them only an hour, cuz
+it's very small, or something like that. And then, you afterwards
+have an interview with them. You go through what they did, and get a feel for what their
+thinking process is really like. Ideally, you'd give them a problem or a project that's related to what
+your organization does every day. It might be a simulated example or
+a fake example, so they don't get access to any real data,
+but it gives you an idea. How are they gonna operate
+day-to-day in the organization? So those are the three components,
+you have individual or group meetings. You have a demonstration or
+presentation of their skills, and then you have some evaluation
+of their technical skills. Then you collect all the information
+from everybody who saw them, and you make a judgment on whether they're
+a right fit for your organization. [BLANK AUDIO]

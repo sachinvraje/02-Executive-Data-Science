@@ -1,0 +1,75 @@
+The last member of the data science
+team is a data science manager. So I'm gonna talk a little bit about
+the qualifications and skills. These might be your qualifications and
+skills, if you're taking this class. So what does a data science manager do? Well, the first that they
+might be responsible for is building the data science team. They are responsible for identifying,
+and recruiting data engineers, and data scientists to the team. Getting them set up, setting goals and
+priorities, identifying those problems within an organization that need
+to be solved by data science, and sort of putting the right
+people on the right problem. So then,
+they manage the data science process. So data science,
+as you'll learn in another class, is a process that's not just one time,
+one all thing. It's an iterative process, and so
+it needs to be managed carefully. And so, that is one of their
+responsibilities is making sure that people interact with each other
+within the data science team, but also interact with other people
+in the external organization. And they also interact with other groups. So they might report to higher management. They might also just interact with,
+or collaborate with people at their same level and
+their units of your organization, and so they need to have good
+communication skills in that sense. And so, what kind of skills do they need? Ideally they have knowledge of
+the software and hardware being used. That's great if they have some kind of
+background in either data science or data engineering. That's sort of the ideal case. That's ideal, because then they actually kind of know
+the infrastructure that's involved. If there's a problem that comes up they
+might have a good suggestion about how to fix the data science infrastructure, or
+how to fix that machine learning algorithm that doesn't necessary work
+exactly like the person wanted. They don't have to have that
+qualification, but it'd be nice. They do need to know the roles, they
+need to know what a data scientist does, what a data engineer does, what other
+teams are supposed to be doing, and how that may or may not be data science. And so, part of that is a filter, so that
+they can sort of filter out the problems that aren't necessarily appropriate,
+and focus on the ones that are. They need to know what can and
+can't be achieved. So data science is useful and
+it can be a very powerful tool for an organization, but
+it's not all purpose and all knowing. And so, there's often problems that
+just can't be solved with data science. That could be because
+the data aren't available. It could be because algorithms aren't
+good enough to be able to do that kind of prediction at that time. It could be because we can
+definitely solve the problem, but we just can't scale it up to
+the scale that's necessary. So they need to kind of have an idea of
+what are the global parameters of what can be done and
+what can't be done with data science. And then obviously, strong communication
+skills, because they're going to be communicating with their own team,
+they'll be interfacing with other units. And so, they need to be able to
+communicate with what's going on. And so,
+what is the background of data managers? So data managers ideally come from
+some sort of data science background. Whether that's analyzing data themselves, or building data science infrastructure
+themselves plus some management training. That might be you if you've taken, say,
+the data science specialization series and now you're taking this series. You kinda have data science background
+plus management background. Or you might have data engineering and
+again management experience. There's also another option is that you
+have some management experience, but you've also taken or learned a little bit
+about data science and data engineering. And ideally you've learned about it at
+least at the depth where you'll be able to come up with those suggestions
+if those people get stuck. At the high level it's good that you know
+how to direct and set priorities, and know what's possible and not possible,
+but ideally you can also sort of get in the mix and
+help people out if that's possible. The best managers at some level or
+another know enough data science or data in general that they can
+contribute to the team in that way. So their key characteristics are that
+they're knowledgeable about data science. That they're supportive, data science and
+data engineering are often very frustrating components of
+being in an organization for lots of different reasons. And so, being positive and supportive and motivational is really important when
+identifying a data science manager. Being thick-skinned is also really
+important, it often falls on the data science manager to report disappointing
+results from a prediction algorithm, or an experiment that failed, they often
+have to report that to management or people that might not
+be too happy about it. And so, they have to be willing to do that
+in a way that's positive and friendly and like moves on to the next thing. So thick-skinned is very important for
+a data science manager. And again, polite, but relentless,
+friendly, but relentless, they'll get out there and
+really work with people. They can communicate with them, but they
+advocate for and use data science in a way that's really positive for
+the whole organization and for their team. And so, that's what you're looking for
+in a data science manager. Somebody that can kinda organize the whole
+process, keep it going, and move people onto the right problems and solve the real
+problems that your organization has.

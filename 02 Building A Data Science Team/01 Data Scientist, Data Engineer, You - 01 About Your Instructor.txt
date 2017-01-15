@@ -1,0 +1,30 @@
+Welcome to this class on
+building data science teams. I'm really excited to teach you about
+recruiting, managing, organizing, and evaluating data science teams to help
+your organization get better with data. I thought I'd tell you a little
+bit about myself to start. So I'm very excited about data and data
+science, and I do a few different things that are related to data and
+data science because of that excitement. So the first thing I wanted to tell you
+about is I blog at simplystatistics, so you can also find me on
+Twitter @simplystats. I talk about a lot of data science issues,
+a lot of statistical issues, and then a few more inside baseball
+issues related to academics. I do that with a couple of colleagues,
+Roger Peng and Rafael Irizarry. Roger Peng is another instructor
+in this sequence with me. I also teach in the Johns Hopkins
+data science specialization. So the Johns Hopkins Data Science
+Specialization is a sequence of nine classes. And it's focused on teaching
+data scientists who are actually going to be on the ground doing data
+science day to day how to do their jobs. And so
+that set of classes is incredibly popular. It has enrolled over two million people. And this sort of executive data
+science sequence is sort of building on the success and excitement
+around that data science sequence. And then finally I actually manage a team
+of data scientists here at John's Hopkins. I'm an associate professor of
+biostatistics here at John's Hopkins, and I lead a team that works on
+data science for genomics. So you can think of this as a way to use
+genomic information say to personalize health or to understand
+natural biological variation. So a lot of what I do day to day is
+actually managing data scientist and organizing them and
+getting them to work with others. And so I'm going to share some of
+the experiences that I have from doing that here at John Hopkins, and hopefully help you to manage
+your data science teams better. I'm really looking forward
+to seeing you in class.

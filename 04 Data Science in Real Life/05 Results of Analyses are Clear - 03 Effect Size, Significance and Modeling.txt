@@ -1,0 +1,93 @@
+Hi, this is the lecture on Effect size,
+significance and modeling. In every statistics course ever taught,
+they go over this exact phrase. Statistical significance is
+not practical significance. And that's a discussion of the fact
+that just by reasons of having a large N you can detect very miniscule but
+unimportant effects. But I think the picture is a lot
+more complicated than that. And in this lecture we're gonna
+talk about these instances. What does it mean to get a significant or a non significant result
+in hypothesis testing. And here we have two funny cartoons. If you wanna find more cartoons like this, I highly recommend looking up research
+Mark Wahlberg and statistics Ryan Gosling. Anyway, they're very funny. So let's go through some
+thought experiments. So a very large epidemiological
+study of nutrition finds a slightly significant result,
+P of 0.049, so a P value, right under what is the typical
+standard of evidence in this area, associating hot dog consumption
+to colorectal cancer incidence. So the question I would ask to you is
+does the larger sample size bolster the evidence or hinder it? So in this case does the fact that they
+have a giant study, does that suggest oh, okay well that means that
+it was really powerful, a really powerful study and
+we should trust it. Or does it mean, oh wait, they barely achieved significance
+despite having a giant study. Are we only getting at some sorta
+quirk of the large sample size. And in fact, this is kinda
+unresolved question in statistics. It's not clear in this setting or
+in many settings, what the information that the study was a
+very large study, the end was very large, how that contributes to the strength
+of evidence for this specific p value. So if it seems confusing,
+it's because it is confusing. I think you could probably go ask
+all the top statisticians and you would get different answers. Let's consider another thought experiment. A well done AB test,
+you had nice randomization, there wasn't a lot of missing data,
+the sample was very good. Finds one ad campaign is not significantly
+better than another, p value that's just above the standard threshold
+for significance, for online purchases. And in this case, does the good
+study design bolster confidence in the lack of significance or not? Okay?
+It's basically the same question, does the fact that you have this
+really good study design say, okay, well we had a really
+good study design and the p value is really just right around
+marginal so it's not significant and it should have been significant
+because this design was so good. That's one way you could think about it. Another way to think about it is well,
+it's really borderline. And maybe if n had been a little
+bit larger, we might have rejected. So again, the point I'm trying to make
+here is that context is important. And we cannot simply interpret the result
+of hypothesis test outside of the context. It's basically the idea that P values and the results of hypothesis tests
+are not portable across settings. They're not kinda a unit free, context free quantities that you can
+just take from one experiment and interpret a p value of .04, and interpret
+it in the same way in the next experiment. So among other things,
+the size of the effect matters. And the size of the effect
+is lost when you just report the result of a hypothesis test or
+the p value by itself. So the size of the effect matters, okay. So usually you want in addition to the p
+value to actually see the actual estimate. If there is a difference in means you
+wanna see the difference in means. So if the number of purchases and
+percentage of click through purchases for ad campaign one, minus the percentage
+of click through purchases for ad campaign two, as an example. You actually wanna see that effect and
+not just see the P value. But also the context of
+the problem matters. What strength of evidence is
+required in this setting? What constitutes strong
+evidence in highly controlled physics experiments is very different
+than what constitutes as evidence in very large epidemiological
+studies of nutrition. Another question is what
+level of error is tolerable? You may be in a circumstance where
+you're testing A versus B but you have to make a decision
+between the two. So, you can tolerate
+a different level of evidence because you're gonna have to pick one or
+the other. So unless the evidence
+is perfectly equivocal, you're gonna take evidence
+slightly in favor of A and go with A, or evidence slightly
+in favor of B and go with B. Contrast to this was something like
+a regulatory agency like the Food and Drug Administration that has to prevent
+dangerous drugs from going to market. There they put very high scrutiny on the amount of information and
+evidence required to bring a drug to market because they don't
+want dangerous drugs to go to market. So the standard of evidence in those
+two circumstances is very different. So the result of a hypothesis test just
+can't be interpreted in the same way. Another question is, of course,
+what biases are likely present? If you have a giant sample that's
+very biased, then you might be finding an effect, but that effect
+may just be detecting that bias. And another thing that comes up
+often is multiple comparisons. Did someone just fish around until
+they got a significant result. Okay they kept testing different
+hypothesis until they got a significant result. And we'll talk about some of
+these various concepts in subsequent lectures because I think
+they're important enough to drill down on. So let's just summarize. So hypothesis testing is a tool. But it rarely should be used in isolation. So if you're managing someone and they're
+just reporting P values by themselves or the result of hypothesis test you
+need to push them to go further. You need to push them to
+give you effect sizes push them to give you
+confidence intervals. To put the results into the proper
+context of what's being studied, to contrast the results with other related
+studies and that sorta information. So in other words there is no substitute
+for critical review of results in context. Confidence intervals studies the effects. And other tools like this should be
+used in addition to hypothesis tests. So three tools we're gonna discuss
+specifically is we're gonna talk about evaluating multiplicity concerns, to make
+sure that the person you're managing hasn't fished through hypotheses until
+they found that one that was significant. Another really useful tool is comparing
+effect sizes to other known effects. And then a third very useful tool
+is negative control analyses. So we're gonna go over all three of
+these in the next couple of lectures.

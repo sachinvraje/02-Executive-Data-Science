@@ -1,0 +1,541 @@
+WEBVTT
+
+1
+00:00:03.172 --> 00:00:06.540
+Hi, this is the lecture on Effect size,
+significance and modeling.
+
+2
+00:00:07.890 --> 00:00:12.420
+In every statistics course ever taught,
+they go over this exact phrase.
+
+3
+00:00:12.420 --> 00:00:15.370
+Statistical significance is
+not practical significance.
+
+4
+00:00:16.540 --> 00:00:21.770
+And that's a discussion of the fact
+that just by reasons of having a large
+
+5
+00:00:21.770 --> 00:00:26.750
+N you can detect very miniscule but
+unimportant effects.
+
+6
+00:00:26.750 --> 00:00:30.250
+But I think the picture is a lot
+more complicated than that.
+
+7
+00:00:30.250 --> 00:00:33.610
+And in this lecture we're gonna
+talk about these instances.
+
+8
+00:00:33.610 --> 00:00:36.730
+What does it mean to get a significant or
+
+9
+00:00:36.730 --> 00:00:39.549
+a non significant result
+in hypothesis testing.
+
+10
+00:00:41.110 --> 00:00:42.658
+And here we have two funny cartoons.
+
+11
+00:00:42.658 --> 00:00:46.930
+If you wanna find more cartoons like this,
+
+12
+00:00:46.930 --> 00:00:54.600
+I highly recommend looking up research
+Mark Wahlberg and statistics Ryan Gosling.
+
+13
+00:00:54.600 --> 00:00:56.370
+Anyway, they're very funny.
+
+14
+00:00:56.370 --> 00:00:59.530
+So let's go through some
+thought experiments.
+
+15
+00:00:59.530 --> 00:01:04.124
+So a very large epidemiological
+study of nutrition finds a slightly
+
+16
+00:01:04.124 --> 00:01:07.749
+significant result,
+P of 0.049, so a P value,
+
+17
+00:01:07.749 --> 00:01:12.261
+right under what is the typical
+standard of evidence in this area,
+
+18
+00:01:12.261 --> 00:01:16.878
+associating hot dog consumption
+to colorectal cancer incidence.
+
+19
+00:01:16.878 --> 00:01:21.303
+So the question I would ask to you is
+does the larger sample size bolster
+
+20
+00:01:21.303 --> 00:01:23.720
+the evidence or hinder it?
+
+21
+00:01:23.720 --> 00:01:28.620
+So in this case does the fact that they
+have a giant study, does that suggest oh,
+
+22
+00:01:28.620 --> 00:01:32.230
+okay well that means that
+it was really powerful,
+
+23
+00:01:32.230 --> 00:01:34.870
+a really powerful study and
+we should trust it.
+
+24
+00:01:34.870 --> 00:01:36.700
+Or does it mean, oh wait,
+
+25
+00:01:36.700 --> 00:01:40.760
+they barely achieved significance
+despite having a giant study.
+
+26
+00:01:40.760 --> 00:01:45.740
+Are we only getting at some sorta
+quirk of the large sample size.
+
+27
+00:01:45.740 --> 00:01:48.840
+And in fact, this is kinda
+unresolved question in statistics.
+
+28
+00:01:48.840 --> 00:01:52.930
+It's not clear in this setting or
+in many settings,
+
+29
+00:01:52.930 --> 00:01:58.190
+what the information that the study was a
+very large study, the end was very large,
+
+30
+00:01:58.190 --> 00:02:01.680
+how that contributes to the strength
+of evidence for this specific p value.
+
+31
+00:02:03.380 --> 00:02:06.060
+So if it seems confusing,
+it's because it is confusing.
+
+32
+00:02:06.060 --> 00:02:09.560
+I think you could probably go ask
+all the top statisticians and
+
+33
+00:02:09.560 --> 00:02:12.200
+you would get different answers.
+
+34
+00:02:12.200 --> 00:02:14.170
+Let's consider another thought experiment.
+
+35
+00:02:14.170 --> 00:02:17.080
+A well done AB test,
+you had nice randomization,
+
+36
+00:02:17.080 --> 00:02:21.030
+there wasn't a lot of missing data,
+the sample was very good.
+
+37
+00:02:21.030 --> 00:02:25.720
+Finds one ad campaign is not significantly
+better than another, p value
+
+38
+00:02:25.720 --> 00:02:30.990
+that's just above the standard threshold
+for significance, for online purchases.
+
+39
+00:02:33.060 --> 00:02:36.320
+And in this case, does the good
+study design bolster confidence in
+
+40
+00:02:36.320 --> 00:02:38.530
+the lack of significance or not?
+
+41
+00:02:38.530 --> 00:02:40.910
+Okay?
+It's basically the same question,
+
+42
+00:02:40.910 --> 00:02:46.720
+does the fact that you have this
+really good study design say,
+
+43
+00:02:46.720 --> 00:02:51.380
+okay, well we had a really
+good study design and
+
+44
+00:02:51.380 --> 00:02:55.730
+the p value is really just right around
+marginal so it's not significant and
+
+45
+00:02:55.730 --> 00:02:58.560
+it should have been significant
+because this design was so good.
+
+46
+00:02:59.660 --> 00:03:01.390
+That's one way you could think about it.
+
+47
+00:03:01.390 --> 00:03:05.750
+Another way to think about it is well,
+it's really borderline.
+
+48
+00:03:05.750 --> 00:03:10.140
+And maybe if n had been a little
+bit larger, we might have rejected.
+
+49
+00:03:10.140 --> 00:03:17.579
+So again, the point I'm trying to make
+here is that context is important.
+
+50
+00:03:19.200 --> 00:03:25.370
+And we cannot simply interpret the result
+of hypothesis test outside of the context.
+
+51
+00:03:25.370 --> 00:03:28.450
+It's basically the idea that P values and
+
+52
+00:03:28.450 --> 00:03:33.374
+the results of hypothesis tests
+are not portable across settings.
+
+53
+00:03:33.374 --> 00:03:38.600
+They're not kinda a unit free,
+
+54
+00:03:38.600 --> 00:03:43.590
+context free quantities that you can
+just take from one experiment and
+
+55
+00:03:43.590 --> 00:03:48.550
+interpret a p value of .04, and interpret
+it in the same way in the next experiment.
+
+56
+00:03:49.650 --> 00:03:52.310
+So among other things,
+the size of the effect matters.
+
+57
+00:03:52.310 --> 00:03:55.840
+And the size of the effect
+is lost when you just report
+
+58
+00:03:55.840 --> 00:04:00.360
+the result of a hypothesis test or
+the p value by itself.
+
+59
+00:04:00.360 --> 00:04:03.020
+So the size of the effect matters, okay.
+
+60
+00:04:03.020 --> 00:04:08.330
+So usually you want in addition to the p
+value to actually see the actual estimate.
+
+61
+00:04:08.330 --> 00:04:11.530
+If there is a difference in means you
+wanna see the difference in means.
+
+62
+00:04:11.530 --> 00:04:16.280
+So if the number of purchases and
+percentage of click through purchases for
+
+63
+00:04:16.280 --> 00:04:19.510
+ad campaign one, minus the percentage
+of click through purchases for
+
+64
+00:04:19.510 --> 00:04:21.618
+ad campaign two, as an example.
+
+65
+00:04:21.618 --> 00:04:25.100
+You actually wanna see that effect and
+not just see the P value.
+
+66
+00:04:25.100 --> 00:04:27.730
+But also the context of
+the problem matters.
+
+67
+00:04:27.730 --> 00:04:30.980
+What strength of evidence is
+required in this setting?
+
+68
+00:04:30.980 --> 00:04:34.390
+What constitutes strong
+evidence in highly controlled
+
+69
+00:04:34.390 --> 00:04:38.540
+physics experiments is very different
+than what constitutes as evidence
+
+70
+00:04:38.540 --> 00:04:41.619
+in very large epidemiological
+studies of nutrition.
+
+71
+00:04:42.900 --> 00:04:45.680
+Another question is what
+level of error is tolerable?
+
+72
+00:04:45.680 --> 00:04:49.810
+You may be in a circumstance where
+you're testing A versus B but
+
+73
+00:04:49.810 --> 00:04:52.620
+you have to make a decision
+between the two.
+
+74
+00:04:52.620 --> 00:04:56.620
+So, you can tolerate
+a different level of evidence
+
+75
+00:04:56.620 --> 00:04:59.260
+because you're gonna have to pick one or
+the other.
+
+76
+00:04:59.260 --> 00:05:02.040
+So unless the evidence
+is perfectly equivocal,
+
+77
+00:05:02.040 --> 00:05:05.050
+you're gonna take evidence
+slightly in favor of A and
+
+78
+00:05:05.050 --> 00:05:08.800
+go with A, or evidence slightly
+in favor of B and go with B.
+
+79
+00:05:08.800 --> 00:05:14.250
+Contrast to this was something like
+a regulatory agency like the Food and
+
+80
+00:05:14.250 --> 00:05:19.878
+Drug Administration that has to prevent
+dangerous drugs from going to market.
+
+81
+00:05:19.878 --> 00:05:25.320
+There they put very high
+
+82
+00:05:25.320 --> 00:05:30.780
+scrutiny on the amount of information and
+evidence required to
+
+83
+00:05:30.780 --> 00:05:34.670
+bring a drug to market because they don't
+want dangerous drugs to go to market.
+
+84
+00:05:34.670 --> 00:05:39.000
+So the standard of evidence in those
+two circumstances is very different.
+
+85
+00:05:39.000 --> 00:05:42.670
+So the result of a hypothesis test just
+can't be interpreted in the same way.
+
+86
+00:05:43.890 --> 00:05:46.990
+Another question is, of course,
+what biases are likely present?
+
+87
+00:05:46.990 --> 00:05:51.350
+If you have a giant sample that's
+very biased, then you might be
+
+88
+00:05:51.350 --> 00:05:55.540
+finding an effect, but that effect
+may just be detecting that bias.
+
+89
+00:05:55.540 --> 00:05:58.800
+And another thing that comes up
+often is multiple comparisons.
+
+90
+00:05:58.800 --> 00:06:02.860
+Did someone just fish around until
+they got a significant result.
+
+91
+00:06:02.860 --> 00:06:05.700
+Okay they kept testing different
+hypothesis until they got
+
+92
+00:06:05.700 --> 00:06:06.560
+a significant result.
+
+93
+00:06:06.560 --> 00:06:11.110
+And we'll talk about some of
+these various concepts in
+
+94
+00:06:11.110 --> 00:06:14.390
+subsequent lectures because I think
+they're important enough to drill down on.
+
+95
+00:06:15.940 --> 00:06:17.300
+So let's just summarize.
+
+96
+00:06:17.300 --> 00:06:19.640
+So hypothesis testing is a tool.
+
+97
+00:06:19.640 --> 00:06:21.810
+But it rarely should be used in isolation.
+
+98
+00:06:21.810 --> 00:06:26.870
+So if you're managing someone and they're
+just reporting P values by themselves or
+
+99
+00:06:26.870 --> 00:06:30.310
+the result of hypothesis test you
+need to push them to go further.
+
+100
+00:06:30.310 --> 00:06:33.380
+You need to push them to
+give you effect sizes
+
+101
+00:06:33.380 --> 00:06:35.550
+push them to give you
+confidence intervals.
+
+102
+00:06:35.550 --> 00:06:39.300
+To put the results into the proper
+context of what's being studied,
+
+103
+00:06:39.300 --> 00:06:45.677
+to contrast the results with other related
+studies and that sorta information.
+
+104
+00:06:46.970 --> 00:06:52.300
+So in other words there is no substitute
+for critical review of results in context.
+
+105
+00:06:52.300 --> 00:06:55.030
+Confidence intervals studies the effects.
+
+106
+00:06:55.030 --> 00:07:02.610
+And other tools like this should be
+used in addition to hypothesis tests.
+
+107
+00:07:02.610 --> 00:07:06.190
+So three tools we're gonna discuss
+specifically is we're gonna talk about
+
+108
+00:07:06.190 --> 00:07:10.960
+evaluating multiplicity concerns, to make
+sure that the person you're managing
+
+109
+00:07:10.960 --> 00:07:14.930
+hasn't fished through hypotheses until
+they found that one that was significant.
+
+110
+00:07:16.230 --> 00:07:21.030
+Another really useful tool is comparing
+effect sizes to other known effects.
+
+111
+00:07:21.030 --> 00:07:25.290
+And then a third very useful tool
+is negative control analyses.
+
+112
+00:07:25.290 --> 00:07:28.595
+So we're gonna go over all three of
+these in the next couple of lectures.

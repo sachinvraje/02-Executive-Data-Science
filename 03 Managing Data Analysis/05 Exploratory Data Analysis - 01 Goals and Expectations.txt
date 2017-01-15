@@ -1,0 +1,180 @@
+Exploratory data analysis is an important
+part of any data analysis process. This lecture discusses the goals
+of EDA and what to expect from it. Some of the key questions that you
+wanna think about before engaging in an exploratory data analysis process,
+are basically, do you have the right data to answer
+the question that you’re interested in? And then, do you need to get other data, if you don’t have the right data,
+to answer your question? And then finally, given what you see from
+the data, and given kinda what you make of everything that’s going on in there,
+do you have the right question? Cuz it could be that, maybe,
+you thought you had the right question. And you thought you had
+the right data set, but when looking around in the data set and
+exploring what's in there, you realize that maybe the question
+is better asked a different way. Or maybe you need to just slightly refine
+the question, make it more specific, or maybe focus on specific variables. So the goal of EDA is to get
+a chance to look at the data, see if you've got the right data,
+do you need to get more? And do you need to refine
+your question at all? In this lecture, we're gonna talk about whether you have
+the right data to answer your question. And then,
+another goal of exploratory data analysis, assuming you pass that first part,
+is to think about how can you develop a sketch of kinda what the answer
+to your question might be. So the idea, so one of the end products
+of exploratory data analysis is to really get a sense of whether
+the solution is out, whether the solution exists,
+and what it might look at. And then from there, if you wanna
+continue, you might go onto something more like formal modeling which
+we'll talk about later. So this lecture we'll talk about figuring
+our whether you've got the right data for the job. Now, I assume you've already
+formulated your question, but it's good here to always double check to
+make sure that it's as sharp as it can be. So that you can kind of reduce the number
+of variables or the kind of fact features that you might want to look at,
+before you kind of go ahead, okay? Now the first thing you want to do, of
+course, is you have to read in the data. You can't do an exploratory data
+analysis without reading in the data. But, assuming you can do that, the thing that I like to do is
+what I call check the packaging. Imagine you've got some box, and
+there's something inside you wanna get at. And you can't get at it yet, and so you
+kinda shake it around, maybe measure it. You know, see how big it is. Is it bigger than a bread box? And see what kind noises does
+it make when you shake it. Things like that. So that's kind of what you're trying
+to do with your data set here. Your data set is the thing that's inside
+the box but you want to make sure, kind of see what's, everything's
+kind of the right shape and size. So some of the things
+that I like to check are, do you have the right number of rows and
+columns? If the way that you got this data said
+that you were expecting there to be 1,000 rows, then there should be 1,000
+rows in the table for example. If there are gonna be 60 features,
+there should be 60 columns, for example, in a table. So just make sure you got
+those dimensions right. Basic details about
+the packaging of a data set. If you were told that certain variables
+were gonna be included in the data set, just check to see that they are in
+fact included in the data set, right? It's a very simple check. You don't have to look at
+any data to figure that out. You just basically have
+to look at the metadata, things like the variable names and
+the number of rows, for example. And then if there's any other
+metadata that you might need, things like codebooks, things that
+describe what the variables are, make sure that comes with the data too,
+okay. So this could all be done without
+actually looking at any numbers yet. Now, the next thing I like to do is
+to check the edges of the data set. And so for example, if you're looking
+at a table, I like to check the top and the bottom. Okay, so just look at the first few rows
+and then maybe look at the last few rows. So the first few rows are helpful just to
+make sure you've got the right numbers there, the kind of things
+you were expecting to see. I find it's very useful to look at
+the last few rows just to make sure, for example, that the data
+set is read in properly, that you've got all of the data
+that you were expecting to get. Often in data files, there's some
+junk at the end, some comments maybe, just some notes that someone put in there, especially if they were exported
+from an Excel spreadsheet. So you usually don't want to
+read that kind of stuff in, so looking at the bottom of the data set can,
+so to speak, can kind of help you to see if
+there's any of that junk down there. And you want to check to see is
+the data formatted correctly? Does it look like the right numbers
+are in the right columns and the right numbers are in the right rows? Sometimes those things can
+be shifted by one or two. So you wanna make sure you've got
+everything kinda correct there. If you've got data, for example with
+dates, often looking at the top and the bottom can be useful because
+if they're sorted by date, you can see if the range is correct. You know, if the earliest and
+latest dates are correct. And so that's another thing
+that you might wanna check for. And so, just looking at the very edges of
+the data set can be very useful to flag a number of basic problems that can very
+often occur and are usually easy to fix. But once you kind of get
+into a data analysis, if you discover these things later, it can
+be a real pain in the neck to deal with. So the next item that I always try to
+think about when I'm looking at a new data set, I'm just getting involved in
+a data analysis is what I call ABC, always be checking your Ns, okay? So every aspect of your data set is
+gonna have some kind of count or number associated with it. For example, there's gonna be
+a total number of observations, or your sample size. Is that what you expect it to be? Are you expecting a certain
+number of columns? There's going to be a number of columns,
+you should always check that end. But then also within the data set, there's going to be a certain
+numbers that you expect. For example,
+if you have a number of subjects, you wanna count the number of subjects or
+units in your analysis. If every subject was measured three times,
+you wanna make sure that every subjects got actually three measurements
+associated with it, right? So there's all kinds of just ends that
+you can check within your data set and kind of around your data set to
+make sure that everything is kind of in structured in place, okay? So, the next thing you wanna do is
+actually just look at your data. And to me,
+the easiest way to look at the data to determine if there are any
+problems is to make a plot. So making a plot is useful in two ways. The first way it's useful is for setting
+expectations about your data, okay? So when you look at a plot,
+you get a sense of kinda how the variables are related to each other
+if you make a scatter plot. Now if you make a box plot, you can look at the distributions of the
+variables to see whether they're skewed. Are there positive and negative values, are you expecting positive and
+negative values, things like that? So plots can very quickly reveal this
+kind of information in a way that often, tables cannot. Because one of the things
+that plots give you is they give you a summary
+plus a deviation. And very often,
+tables will only give you the summary. So for example,
+they give you the mean or the median. But a plot will allow you to
+visualize both the mean and the deviations from the mean. And so you'll be able to see if there
+are very large deviations that are perhaps unexpected. Or there are kind of values that, for
+example, negative values or maybe they're positive values that you weren't
+expecting that don't appear correct. All right, so
+I think a plot is very important to make. Not that there is no role for
+tables in data analysis, but a plot has a unique ability, in my opinion,
+to show you both what to expect and what not to expect in the sense of what
+the deviations are from that expectation. So look at the data and make a plot. The next useful thing that I like
+to do with data sets is to try to validate it with at least
+one external data source. So obviously how you do this will
+depend on exactly what your problem is, what your question is and
+the data that you have at hand. But it's nice to be able to check
+certain aspects of your data set, that they match something outside. So that you know that the data you got
+are at least kinda within the realm of reality. And even just a single
+number can be useful. So, for example, if you know that
+the average level of some feature In your population is, on the order
+of plus or minus whatever, ten. And if you look in your data set, and you
+have a measurement on that same feature, and it looks like
+the average is around ten. Well that can be useful just so
+you know that roughly the mean of your, the distribution in your data set, is corresponds to kind of what you
+might expect in the population. Another thing you can do is
+to look at some measurements that you have in your data set. And compare it with measurements that are
+similar, if not exactly the same feature, but things that you would
+expect to be correlated with what’s there in your data set. And check to see if they’re
+actually correlated, right? So that way, you can get a sense of,
+okay well, whatever I’m measuring in my data set, it’s measuring the same thing
+that this other metric is looking at, and so
+there may be some kinda validity there. So just doing a little check to see that
+your data matches with something that's kind of independent and
+outside your data set. Can give you a little bit more confidence
+in the idea that your data set is properly formatted and
+it came to you in the right way. So now that you've checked the packaging,
+you've checked your ends, you looked at the top and
+the bottom of the data set. You've made maybe a simple plot just
+to kind of visualize the data, and you've validated with one
+external data source. The next thing to do is to try
+to take a stab at your solution. And I won't get into
+that very much right now, but my only point to make here is that
+you should try the easy solution first. Okay, what is the most obvious
+thing that you would do in the kind of simplest of scenarios,
+right? So, cuz you wanna be able to
+start with something simple and then you can kind of get more
+complex a little bit later. But often the simplest thing
+can be very revealing. That's the key, and often the more sophisticated approaches
+will give you a little bit more insight. But not any more than you would have
+gotten from just looking at a very simple picture or a table or whatever it is
+that you've tried to do it first. And the goal of this is really to start
+developing what I call a primary model. So a primary model is
+the model of which you kind of base your other analysis around, right? And it's not gonna be permanent. You may change what
+the primary model is later. But it's the kinda focal point,
+your initial focal point for your analysis, and then you'll
+try all kinds of other analyses. Secondary analyses that I call them, that will try to test whether your
+primary analysis is appropriate or not. And many times you'll find that actually
+your primary analysis was not right and you'll focus on a different model and
+you make that your primary model. But sometimes your primary
+model will hold up and then you'll be able to stick with it. But it doesn't matter, at first, kind of
+what you choose, you want to be able to say craft the solution and
+then kind of hang on to it for a moment. And try to do some secondary
+analyses around it to see if your initial solution holds up. So the idea is that you wanna build, if
+you're kinda making a case for something, you wanna build some prima facie evidence. And so that prima facie evidence
+is really this initial solution, is the simplest solution that
+you can think of at the moment. And then you try to pick away
+at it to see if it falls apart. But one of the endpoints of exploratory
+data analysis is to develop this prima facie case to develop this primary model. So once you've gone through this process,
+you've looked at the data, you've checked to see that everything's
+valid, you wanna be able to follow up. Okay, so this is the point where you ask
+yourself those three questions that we talked about in the beginning. Do you have the right data? Do you need to get other data, right? So do you need to collect more? Do you need to ask for more? In order to answer. And do you have the right question, or
+does it need to be refined a little bit? So once you're here,
+you may need to slightly revise a few things with your data and
+with your question. But once you've done that, if you wanna
+move on, then you can start using exploratory data analysis techniques
+to kinda refine your primary model, and then move on later into
+a more formal model.

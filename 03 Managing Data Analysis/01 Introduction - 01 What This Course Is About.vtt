@@ -1,0 +1,211 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.295
+[MUSIC]
+
+2
+00:00:04.295 --> 00:00:07.560
+Hi, I'm Roger Peng and
+I'll be your instructor for this course.
+
+3
+00:00:07.560 --> 00:00:10.990
+This course is about managing
+the data analysis process.
+
+4
+00:00:10.990 --> 00:00:15.450
+Now data analysis is really hard because
+it's a process that we don't understand
+
+5
+00:00:15.450 --> 00:00:18.590
+very well and
+we have a difficult time describing,
+
+6
+00:00:18.590 --> 00:00:21.200
+even people who are really
+good at analyzing data.
+
+7
+00:00:21.200 --> 00:00:25.380
+Maybe you're one of them, often have a
+difficult time explaining exactly what it
+
+8
+00:00:25.380 --> 00:00:29.070
+is that they are doing, and the process,
+the thought process that goes behind it.
+
+9
+00:00:30.610 --> 00:00:32.930
+Put it this way,
+suppose you're a song writer,
+
+10
+00:00:32.930 --> 00:00:36.470
+and you're trying to write a hit song,
+okay?
+
+11
+00:00:36.470 --> 00:00:39.140
+Now you have a lot of tools
+at your disposal, but
+
+12
+00:00:39.140 --> 00:00:41.920
+you've probably heard a lot of
+different songs that are really good.
+
+13
+00:00:41.920 --> 00:00:45.660
+So you kinda have a sense of what
+makes it good, how long it should be,
+
+14
+00:00:45.660 --> 00:00:49.430
+what the structure should be in terms of
+the verse and the chorus and the bridge.
+
+15
+00:00:49.430 --> 00:00:53.230
+We have a lot of music theory that tells
+us what notes sound good together,
+
+16
+00:00:53.230 --> 00:00:57.040
+what notes don't sound good together, what
+chords you should use, things like that.
+
+17
+00:00:57.040 --> 00:01:00.630
+There's all kinds of knowledge that we've
+accumulated over the years about what
+
+18
+00:01:00.630 --> 00:01:02.010
+makes a great song.
+
+19
+00:01:02.010 --> 00:01:07.990
+But ultimately the song writer has to
+inject this creative spark that puts
+
+20
+00:01:07.990 --> 00:01:12.870
+it all together and makes a piece of music
+that people actually want to listen to.
+
+21
+00:01:12.870 --> 00:01:14.996
+Okay, so that's the art of song writing.
+
+22
+00:01:14.996 --> 00:01:18.850
+In 1974, Donald Knuth,
+a computer scientist at Stanford,
+
+23
+00:01:18.850 --> 00:01:23.140
+wrote an essay where he talked about the
+difference between an art and a science.
+
+24
+00:01:23.140 --> 00:01:27.040
+And the bottom line is that he said
+a science is something we understand so
+
+25
+00:01:27.040 --> 00:01:29.690
+well, that we can teach it to a computer.
+
+26
+00:01:29.690 --> 00:01:31.270
+Everything else is an art.
+
+27
+00:01:31.270 --> 00:01:32.030
+Okay.
+
+28
+00:01:32.030 --> 00:01:34.400
+So, one of the things that it's
+important to understand for
+
+29
+00:01:34.400 --> 00:01:38.190
+this course,
+is that data analysis is an art.
+
+30
+00:01:38.190 --> 00:01:42.910
+Okay, when you analyze data,
+we have a lot of tools at our disposal.
+
+31
+00:01:42.910 --> 00:01:45.760
+We have statistical methods,
+we have machine learning methods,
+
+32
+00:01:45.760 --> 00:01:49.300
+we have all kinds of software
+packages that we can apply.
+
+33
+00:01:49.300 --> 00:01:52.410
+There are a lot of tools out there that we
+have that have been developed by a lot of
+
+34
+00:01:52.410 --> 00:01:54.160
+different people in this area.
+
+35
+00:01:54.160 --> 00:01:56.190
+But ultimately, for a given data set,
+
+36
+00:01:57.290 --> 00:02:01.840
+it takes a person to put it together,
+to ask the right question,
+
+37
+00:02:01.840 --> 00:02:06.550
+to assemble the right methods to interpret
+the results, and to communicate them in
+
+38
+00:02:06.550 --> 00:02:10.350
+a way that people really care
+about what you found, all right?
+
+39
+00:02:10.350 --> 00:02:14.367
+So that's kind of what this course is
+about, is about managing this entire
+
+40
+00:02:14.367 --> 00:02:17.811
+process and the iteration that you
+go through to analyze data and
+
+41
+00:02:17.811 --> 00:02:19.497
+to produce coherent results.
+
+42
+00:02:19.497 --> 00:02:22.608
+So I'm looking forward to working
+with you in this course and
+
+43
+00:02:22.608 --> 00:02:25.174
+to bring you through this
+data analysis process.
+
+44
+00:02:25.174 --> 00:02:35.174
+[MUSIC]

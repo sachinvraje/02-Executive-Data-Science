@@ -1,0 +1,170 @@
+Hi, my name is Brian Caffo, and this
+is the second lecture of the executive data science specialization course
+on data analysis in real life. So in this lecture, I'd like to talk about machine learning
+versus traditional statistics, just to orient you to the way I think
+about the difference between the two. And why most of what I'm going to
+talk about in the subsequent lectures really applies to more
+traditional statistics. But it also somewhat applies to machine
+learning, and in this lecture I'll tell you the difference, or
+at least how I perceive the difference. In this lecture, we'd like to contrast machine learning
+versus more traditional statistics. Because some of what we're gonna cover
+in subsequent lectures is universally applicable to both. However, some of it is
+really more oriented toward traditional statistical analysis. And in this lecture, I'm going to
+tell you kind of what I perceive to be the difference between the two. So it's very kind of oriented
+toward my impressions. So here's my sort of boiler plate bifurcation of these
+two style of analysis. So to me, machine learning really
+emphasizes things like predictions. And so, it tends to evaluate performance
+via prediction performance, and we'll go through some examples later on. So there's a lot of concern in
+machine learning for overfitting, that's fitting way too complex of a model,
+but not model complexity per se. If you do good prediction and
+you're not overfitting, then it's okay to have a rather
+complex model in machine learning. So the emphasis is on performance and
+automated learning. And generalizability is usually obtained through performance of
+the algorithm on novel datasets. So machine learning tends to be
+a very data oriented disappoint. So if you want to discuss that
+your machine learning algorithm is generalizable, usually there's a sort
+of show me attitude in machine learning. Get a new dataset and apply it to that. And there's usually no
+superpopulation model specified. So there's no, my data is a sample
+from a larger population, and I'm thinking of it this way
+through statistical assumptions. And there is a lot of concern
+over performance and robustness. So let's contrast this with
+traditional statistical analysis. So traditional statistical analysis
+focuses on so-called superpopulation inference. We have a dataset. We're gonna assume that that data set is
+a sample from a larger population that we are interested in. And it tends to focus
+on A-Priori Hypotheses. Your hypotheses are specified A-Priori. And in general, there's this principal of parsimony
+in traditional statistical analysis. And that's basically saying,
+all us being equal the simpler models gonna be preferred over
+a more complex model. And I would go even further, that most
+traditional statisticians would say even if you take a ding on
+prediction performance, even if your model isn't performing that
+well, you'd rather have a simpler model than a complex model unless
+the difference in performance is extreme. In traditional statistical analysis, you emphasize parameter
+interpretability a lot. In contrast to machine learning
+where you may have lots and lots of parameters in your model, your algorithm that you don't really
+care about those individual parameters. But in a regression analysis, for example,
+you care about every one of the slopes. So the other super population inference,
+so typically we have a statistical model that connects
+our data to this super population. That's the crux of statistical modeling. So some sorta statistical model, or
+even in non-parametric settings or robust settings,
+we often have sampling assumptions. That connect our data to the population. And so, just like machine learning,
+there's concern over robustness. But there's also this large concern over
+the status statistical assumptions that connect our data to the population. So let's go through some examples. And I picked mostly prediction
+examples that I'm gonna talk, if I were to have approached this problem
+as a traditional statistical analysis, what I would have done. So one of the most famous prediction
+problems, in recent years, was the Netflix Prize. And in the Netflix Prize, the teams
+competed to produce the best recommender system for the company, Netflix. So they wanted to recommend, to users,
+new movies that they might like. Through their star ratings system. The Netflix Prize was interesting,
+because it was a $1 million prize. And some good friends of
+the team here actually won. A close friend, Chris Valencia,
+a great data scientist who works at AT&T. So the goal of this prize, and
+his team won, the goal of this prize was to build a machine learning algorithm
+that produced these recommendations. So that you wanted it to be automated. You wanted it to be something that
+could be adaptive that maybe could relearn the algorithm as needed, and you would define success as anything
+that produced reliable recommendations. And you can check that by when people watch a movie, and
+actually then subsequently rate it. If they rate it high,
+then it was a good recommendation, if they rate it low then it
+was a poor recommendation. So that's the goal of
+the machine learning analysis. But what if you were to
+approach this same problem with a traditional statistical analysis? Well rather than building an algorithm, what you would wanna do is
+build a parsimonious and interpretable model to better understand
+why people choose the movies that they do. So you'd be much more interested in
+where the sample of people that you are interested in, were they representative of
+the totality of Netflix users. Or if you wanted to generalize,
+not just the Netflix users in general, but to movie watchers in general, you'd wanna
+know to what extent are my Netflix users in my sample representative of the larger
+population of movie watchers in general. So in this case, you would be
+building probably smaller models, you'd be trying to get very interpretable
+results, interpretable parameters. And you would define
+success as anything true that was learned about movies choices. So if you learned that certain
+demographics like certain kinds of movies, or you learn that people who, psychological reasons why people like
+certain movies, or anything that was true. And parsimonious learned about movie
+choices would be the hopeful result, the hopeful success of such
+a statistical analysis, even if you didn't gain
+any better prediction. You can learn something true, but that
+may not really help you with prediction. Another example that I was involved
+in was the Heritage Health Prize. So this was actually a slightly bigger,
+in terms of the monetary payout, prediction competition. In this case,
+the goal was to take previous years', previous couple of years',
+insurance claims. And try and predict how long
+a person would spend in the hospital in subsequent years. So for example, just because we spent
+a lot of time on this prediction, an example,
+one that we found was if a woman was in the hospital, for
+a hospital stay for a baby, then two years later they had a higher, they
+were more likely to be in the hospital again just because a lot of people tend
+to have babies about two years apart. So that was an example of a predictor so
+for among women With having had a hospital stay for having a child two
+years pervious, they had a slightly increased prediction of being in
+the hospital two years subsequently. And then there were some
+other obvious ones. For example, people who are in for
+cardiac problems and things like that, tended to have an elevated risk of
+being in the hospital the next year. So at any rate,
+the machine learning algorithm for this problem,
+which we spent a lot of time building, was basically to build an automated
+system for predicting hospital stays. So you'd want, if you were a hospital
+provider or something like this, you would want to know from the collection
+of previous claims that you have what exactly, how long people would
+spend in a hospital in subsequent years. And you could evaluate that,
+again, like most things, you would want the system to be able to
+relearn itself over time as things change. And you'd want it to be robust and, but success would be anything that
+produces reliable predictions. And anything that produces
+more reliable predictions is better than something that
+produces less reliable predictions. And you could come up with a pretty
+simple formula to define what you meant by good predictions. By the way, in this case,
+I think we got 12. We were listed as 14th, but
+2 other teams got disqualified, so we came up with 12th, and
+it was a 3-year prediction competition. Or two-year prediction competition. And by the end things got pretty grim. We have to come up with
+a prediction every single day. And boy, were we tired of building
+prediction algorithms by the end. So I would just give you as a caveat, if you ever intend to enter into
+one of these competitions, think a year later down the road if you wanna
+be building predictions every single day. So let's now contrast what
+I would have done if, instead of engaging in this prediction
+competition, if I had been interested in the science of insurance claims and
+hospital stays. Well, then I would want to perform
+a more traditional statistical analysis. I'd want to build a parsimonious
+interpreter model. And I would want to figure out things
+like what I mentioned earlier about the issue with the pregnant women. Now, that probably wouldn't be
+terribly of interest to scientists or medical practitioners any of them,
+because it's just a kind of quirky little, it's just a demographic fact really. But you might wanna learn if there's
+certain combinations of the claims that might lead to a greater propensity for
+hospital stays, which might then lead to the ability
+to treat people earlier. So success, in this case, would be anything that was learned about
+hospital stays from insurance claims data. Another very famous prediction
+example was the Google flu trends. This came out several years ago, and it was a very,
+it generated a lot of excitement. And here, the very clever
+people at Google came up with the idea that well they could maybe detect
+flu outbreaks before the Centers for Disease Control by looking
+at search terms and geographic information associated
+with the search terms. So if lots of people were searching for
+Tamiflu, or searching for headaches and fevers, etc. That might lead to a greater propensity,
+or greater risk that a flu outbreak in that particular area where
+most of the searches were coming from. So in this case, their goal was
+to build an automated system for predicting flu outbreaks. And their success was anything that
+produces reliable predictions as judged by the more thorough information that came
+out from the CDC, but much slower. So their goal was to beat the CDC in
+terms of time, but then they had the high quality data coming in a little bit later
+to actually validate their algorithm. So contrast this with what flu
+researchers, like I'm in the school public health at Johns Hopkins,
+that flu researchers here do all the time. They want to better
+understand flu outbreaks. So they want to build models that
+helps us understand specifically why flu outbreaks occur in certain areas. So for them,
+search terms probably wouldn't be enough. They need more of the kind of information
+that the CDC, for example, was collecting, which Includes actual prescription counts
+for Tamiflu and that sort of thing. So again, so all of these examples really
+emphasize, in my mind, kind of this big dividing line between what is typically
+going on in a machine learning experiment versus what's typically going on in
+a traditional statistical experiment. So I hope what I've emphasized
+in this lecture is that both approaches are extremely valuable,
+and they have their place. However, typically, the amount of model
+complexity and assumptions, etc., differs quite a bit between the two approaches,
+because their goals are very different. And I would just end this part of the
+discussion with a little caveat that says, well there's the machine
+learning community I've noticed, has started to build super population
+models to evaluate their algorithms, and so they're kind of connecting
+it to traditional statistics. In addition, there's been a lot of work
+on making machine algorithm output in addition to producing these
+ultra high quality predictions, making them much more interpretable. I've also seen a lot of people taking
+traditional statistical approaches and building them up slightly in
+terms of complexity to try and produce better predictions. So it's interesting that in a lot of ways
+the two areas are meeting in the middle, and these distinctions that I've
+outlined a lot in this lecture, that I am outlining a lot in this lecture,
+are getting grayed quite a bit.

@@ -1,0 +1,96 @@
+As your data science team is rolling
+along, one thing that you need to be able to do is evaluate the success and
+define metrics that are useful for people so
+they know what targets they need to hit. So, on one level,
+you need to talk about group success, what's the success of
+a data science group? So, success can be defined
+in a few different ways. One is solving organizational problems. So, say for example, we want to
+increase user growth by a certain percentage by a certain amount of time. So, to do that,
+requires a couple of different things. It requires careful use of the data. Good analysis. Good infrastructure for
+building out how is the data gonna be used once we actually figure out
+what's going on with the data. All those sorts of things
+need to be built into that. And you can identify these
+organizational problems as a way, as a target to try to hit. Now, sometimes data is useful for
+those and sometimes it isn't. So setting specific targets like that, like a percent growth increase,
+can be very hard to hit all the time. So you need to be able
+to internally calibrate. When is it that we've actually explored an
+avenue, we improved things, but maybe we didn't hit the target that we initially
+hypothesized we might be able to do. Another is to solve internal problems. Say the data security isn't
+quite where you'd want it to do. Maybe that there's some
+sort of technical debt. Say, you have a bunch of code,
+but its kind of bad quality code. It gets the job done but
+nobody can understand it and there's no documentation, so. Solving an internal problem
+might be cleaning up the code, cleaning up the documentations, and
+getting it ready for other people to use. Those sort of targets tend to be
+targets that are more concrete and definable and easy to hit. And so there tends to be
+a tendency to set up internal problems that you want to solve because
+they tend to be things that can be easily be solved in
+a finite period of time. Whereas organizational goals tend
+to be a little bit more vague. And, they tend to be
+a little bit harder to hit, because the data don't necessarily always
+do exactly what you want them to do. So, metrics for success can either
+be very concrete or they can be, are we progressing in the direction that
+we want to be moving in terms of the data science infrastructure, the data
+science team for the organisation. So, being able to
+prioritize those metrics. Vague metrics versus very specific metrics
+is a key juggling job of the data science executive or manager. Another thing is individual success,
+so documenting and managing, and celebrating individual success. So, one way to do that is
+by identifying projects, specific projects individuals can work on. And when they've completed that project,
+you can document that as a success. But it's often not that easy with data
+science because usually to solve a big data science problem for an organization,
+you need to build some data engineering infrastructure, you need to analyze
+some data, do some experiments. Once you've done those experiments you
+need to figure out how to implement it, back at scale, then you need to do another
+evaluation once you've scaled it up. Is it still working? That involves multiple people at
+multiple different times on multiple different levels. So it's a little bit hard to monitor individual success by completion
+of specific projects. It's often easier to monitor, you know,
+day to day activities, or week to week activities in meetings, are they
+participating, are they contributing, do other people seem like their getting what
+they need from your data engineering team? Is the data scientist able to pull
+the data that they need and so forth. Personal improvement,
+are they learning new techniques? As the organization grows and
+you go from needing one database to needing multiple databases, is your
+engineer learning how to manage that, how to set up the infrastructure
+in a way that works? And is there a way they can
+sort of personally improve and hit goals for themselves? The next thing is you
+need to examine failure. This is obviously the least fun and
+hardest part. One thing is to take responsibility as a
+data science manager when there's failure, particularly externally facing. So, for example, it's very common for
+a hypothesis to be generated, maybe by some leadership organization. They come down and they ask the data
+science team to run some experiments. They run those experiments,
+maybe they don't find anything. The leadership might
+think of that as failure, you might recognize that as just
+the way that data science works. But it's up to you to
+take responsibility and to remove some of the heat from the people
+that are doing the experiments so they can feel sort of empowered
+to do it the right way. The next thing is to identify problems. So sometimes there's lack of communication
+between either external people talking to the data science team, or sometimes
+there's the data science team itself isn't communicating between the data
+engineers and the data scientists. Sometimes people aren't working on
+the problem that needs to be solved. They're working on sort of
+a variety of different projects and they need to be consolidated. But in general, identifying what's
+the data problem that you're working on, is a key component of it. And then, proposing concrete steps and
+people responsible for taking those steps is a key
+component of examining failure. The other thing is and this is the
+critical one, is that treating failure and data science. If you don't find the right
+prediction accuracy you want, or you don't get the infrastructure
+built exactly like you would I do, in an idealized world, will often scare
+people off from trying new things and being creative and
+really adding value to your organization. So, you need to think of failure, not as, did we hit the exact target
+metric, but did we, in the right way, use the right process in order to try to
+achieve that and was the process good. Again, it's about process and not necessarily about outcomes
+as a data science team, particularly for large scale, vague
+institutional goals that you might have. And finally, the last thing that you
+need to do is celebrate success. So, when people do well at data science
+it's often a long slog to solve some very hard data coding problem,
+data cleaning problem, then they build a machine
+learning algorithm. And often the reaction is, well yeah
+we expected you to be able to do that machine learning algorithm great and
+then moving on and there's sort of, can over time this can grind people
+down because of the nature of the work. Its helpful if there's a celebration
+of success, oh we really got that done, really good job, to the data team,
+you did an excellent job we're moving on to the next thing and
+that's been a huge part of your success. Especially if you can show
+them how that success has sort of realized in other areas. Have they you know improved metrics for
+your organizations, in a way that they can brag about. This keeps people motivated,
+especially when it get's frustrating, which it often does.
