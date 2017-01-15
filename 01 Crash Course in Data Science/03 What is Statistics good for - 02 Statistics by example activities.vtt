@@ -1,0 +1,811 @@
+WEBVTT
+
+1
+00:00:00.110 --> 00:00:01.710
+Hi, my name is Brian Caffo,
+
+2
+00:00:01.710 --> 00:00:04.222
+and this is the lecture on
+what statistics is good for.
+
+3
+00:00:04.222 --> 00:00:08.010
+Now at the start of every class,
+we try to define concepts,
+
+4
+00:00:08.010 --> 00:00:10.490
+so I went to the authority and
+
+5
+00:00:10.490 --> 00:00:14.600
+asked Google what statistics was good for,
+and it came up with this.
+
+6
+00:00:14.600 --> 00:00:19.160
+Statistics, the practice or science of
+collecting and analyzing numerical data in
+
+7
+00:00:19.160 --> 00:00:23.050
+large quantities, especially for
+the purpose of inferring proportions
+
+8
+00:00:23.050 --> 00:00:27.070
+in a whole from those in a representative
+sample, that's quite a mouthful.
+
+9
+00:00:27.070 --> 00:00:32.280
+So I've decided instead, of trying to
+define statistics, to really just pick up
+
+10
+00:00:32.280 --> 00:00:37.730
+some of the core activities of statistics
+and go through some examples of those.
+
+11
+00:00:37.730 --> 00:00:40.770
+When I think about the core of statistics
+
+12
+00:00:40.770 --> 00:00:45.210
+I come up with four key
+activities that define the field.
+
+13
+00:00:45.210 --> 00:00:48.775
+There are of course others, and
+all of these activities are overlapping.
+
+14
+00:00:48.775 --> 00:00:53.560
+They're not perfectly parcellating okay,
+but these four activities
+
+15
+00:00:53.560 --> 00:00:58.410
+are descriptive analysis, which includes
+things like exploratory data analysis,
+
+16
+00:00:58.410 --> 00:01:05.240
+just quantification, like creating tables,
+summarization and unsupervised clustering.
+
+17
+00:01:07.090 --> 00:01:11.670
+Inference, the second topic
+includes things like estimation,
+
+18
+00:01:11.670 --> 00:01:16.230
+sampling, variability,
+and defining populations.
+
+19
+00:01:18.000 --> 00:01:22.720
+Prediction, the third activity that I
+think I've associated with statistics
+
+20
+00:01:22.720 --> 00:01:24.390
+includes things like machine learning,
+
+21
+00:01:24.390 --> 00:01:29.240
+supervised learning any instance where
+we wanna create a lot of predictions
+
+22
+00:01:29.240 --> 00:01:33.850
+from maybe a lot of predictors,
+or even just a few predictors.
+
+23
+00:01:33.850 --> 00:01:37.690
+And then design, design is
+the process of designing experiments.
+
+24
+00:01:37.690 --> 00:01:41.840
+So again, these four activities
+to me cover a lot of what I
+
+25
+00:01:41.840 --> 00:01:45.110
+think of as statistics,
+and they're overlapping.
+
+26
+00:01:45.110 --> 00:01:48.130
+Inference and prediction are,
+of course, highly overlapping.
+
+27
+00:01:48.130 --> 00:01:52.660
+Descriptive analysis and inference,
+they're all quite a bit overlapping, but
+
+28
+00:01:52.660 --> 00:01:57.120
+let me go through some examples of each
+of these to get you sort of thinking
+
+29
+00:01:57.120 --> 00:02:01.040
+about some of these topics and
+how statistics might be useful for you.
+
+30
+00:02:02.890 --> 00:02:05.880
+So here let's start with
+descriptive analysis, and
+
+31
+00:02:05.880 --> 00:02:11.660
+I put up a picture of the great Roger
+Peng's Exploratory Data Analysis book,
+
+32
+00:02:11.660 --> 00:02:13.760
+which you can get for free on Leanpub.
+
+33
+00:02:13.760 --> 00:02:18.720
+By the way, I think that's Roger's
+actual dog on the cover, by the way.
+
+34
+00:02:18.720 --> 00:02:21.120
+So let's talk a little bit
+about descriptive analysis, and
+
+35
+00:02:21.120 --> 00:02:24.270
+in each case when I described
+one of these four activities I
+
+36
+00:02:24.270 --> 00:02:28.840
+tried to come up with an example that's
+a good defining example of these.
+
+37
+00:02:28.840 --> 00:02:32.248
+In this case, I came up with
+the example that's from my field,
+
+38
+00:02:32.248 --> 00:02:37.840
+Functional Magnetic Resonance Imaging,
+that really created quite a stir.
+
+39
+00:02:37.840 --> 00:02:40.870
+In this case, some really good
+researchers, Power, Barnes,
+
+40
+00:02:40.870 --> 00:02:46.450
+Snyder, Schlager and Peterson,
+real heavy hitters in this area,
+
+41
+00:02:46.450 --> 00:02:53.370
+did this great plot and they, let me
+summarize what's going on in this plot.
+
+42
+00:02:53.370 --> 00:02:57.300
+They were looking,
+were interested a lot in this area,
+
+43
+00:02:57.300 --> 00:03:02.330
+is correlations between different areas in
+the brain with respect to brain activity.
+
+44
+00:03:02.330 --> 00:03:04.290
+So we want to know when
+brain activity goes up and
+
+45
+00:03:04.290 --> 00:03:07.020
+down, when that correlates in
+different areas of the brain.
+
+46
+00:03:07.020 --> 00:03:08.368
+We call that connectivity.
+
+47
+00:03:08.368 --> 00:03:11.663
+And what they figured
+out by doing this plot,
+
+48
+00:03:11.663 --> 00:03:17.128
+is when they got rid of some bad scans
+from people moving their head around,
+
+49
+00:03:17.128 --> 00:03:23.200
+that the estimated correlations from their
+data changed quite a bit, and the short
+
+50
+00:03:23.200 --> 00:03:29.210
+range correlations changed in a different
+way from the long range correlations.
+
+51
+00:03:29.210 --> 00:03:34.352
+And this had profound impact on our field,
+because everyone had thought
+
+52
+00:03:34.352 --> 00:03:39.995
+up to that point that they had been doing
+a good job of getting rid of head motion,
+
+53
+00:03:39.995 --> 00:03:44.802
+but this exploratory plot really
+was a defining characteristic for
+
+54
+00:03:44.802 --> 00:03:50.220
+making the field understand that well no,
+there was some motion leftover.
+
+55
+00:03:50.220 --> 00:03:54.381
+And it's possible that a lot of what's
+being reported in the literature is not
+
+56
+00:03:54.381 --> 00:03:57.156
+actual brain cognitivity
+of scientific interest,
+
+57
+00:03:57.156 --> 00:04:00.510
+but whether or not people are moving
+their head in the scanner.
+
+58
+00:04:00.510 --> 00:04:04.536
+And I don't know these folks personally,
+but I can imagine them going through
+
+59
+00:04:04.536 --> 00:04:08.510
+an exploratory data analysis, seeing
+this plot, and having an aha moment.
+
+60
+00:04:08.510 --> 00:04:13.844
+And that's I think,
+what exploratory data analysis is best for
+
+61
+00:04:13.844 --> 00:04:17.020
+is really coming up with hypotheses.
+
+62
+00:04:17.020 --> 00:04:21.955
+Since this paper was published,
+mountains of research
+
+63
+00:04:21.955 --> 00:04:27.100
+has been done on the subject
+of motion in the fMRI scanner.
+
+64
+00:04:28.250 --> 00:04:32.320
+So that's a great example in my mind
+of an exploratory data analysis plot,
+
+65
+00:04:32.320 --> 00:04:36.370
+this plot made it into their paper and
+created quite a stir.
+
+66
+00:04:36.370 --> 00:04:40.080
+Okay, let's now talk about inference.
+
+67
+00:04:40.080 --> 00:04:44.880
+I have a picture of my much more austere
+statistical inference Leanpub book,
+
+68
+00:04:44.880 --> 00:04:48.630
+which you can get for free on Leanpub if
+you wanna read more about the subject of
+
+69
+00:04:48.630 --> 00:04:50.700
+statistical inference.
+
+70
+00:04:50.700 --> 00:04:54.240
+I define statistical inference as
+the process of making conclusions about
+
+71
+00:04:54.240 --> 00:04:57.360
+populations from samples.
+
+72
+00:04:57.360 --> 00:05:02.500
+And to me, it was pretty easy
+to think of a famous example
+
+73
+00:05:02.500 --> 00:05:06.720
+of statistical inference because we're
+confronted with one very frequently and
+
+74
+00:05:06.720 --> 00:05:10.410
+that is election polling.
+
+75
+00:05:10.410 --> 00:05:14.621
+In that case, the population we're
+interested in making inferences about is
+
+76
+00:05:14.621 --> 00:05:17.108
+the population of voters on election day,
+and
+
+77
+00:05:17.108 --> 00:05:20.840
+we want to know the proportion of
+them that will vote for a candidate.
+
+78
+00:05:20.840 --> 00:05:25.802
+So we are confronted with a fairly
+classical statistical inference problem
+
+79
+00:05:25.802 --> 00:05:30.531
+every two years, four years for
+presidential elections, and in fact,
+
+80
+00:05:30.531 --> 00:05:33.244
+in the 2012 presidential election,
+
+81
+00:05:33.244 --> 00:05:38.460
+there was quite a brew ha ha exactly over
+the process of statistical inference.
+
+82
+00:05:38.460 --> 00:05:43.731
+In fact, one of the news
+television shows on the night
+
+83
+00:05:43.731 --> 00:05:48.533
+of the election,
+one of the political pundits,
+
+84
+00:05:48.533 --> 00:05:52.750
+Carl Rogue, just refused to believe the,
+
+85
+00:05:52.750 --> 00:05:57.340
+in fact, their own team's polling results.
+
+86
+00:05:57.340 --> 00:06:01.857
+And even prior, well prior to that night,
+the statistician,
+
+87
+00:06:01.857 --> 00:06:05.352
+Nate Silver,
+had been doing a lot of publicity,
+
+88
+00:06:05.352 --> 00:06:10.980
+really kind of promoting the idea that
+well, Obama's really for the most part
+
+89
+00:06:10.980 --> 00:06:17.080
+locked up this election to much derision
+from a lot of the political pundits.
+
+90
+00:06:17.080 --> 00:06:21.210
+And what happened after the election
+was a very interesting discussion
+
+91
+00:06:21.210 --> 00:06:22.760
+about the role of inference, and
+
+92
+00:06:22.760 --> 00:06:27.520
+about the role of how much we believe
+inference when discussing polling.
+
+93
+00:06:27.520 --> 00:06:33.210
+So if you want an interesting collection
+of reading on statistical inference and
+
+94
+00:06:33.210 --> 00:06:38.130
+how it plays out in the media,
+then you can read up on the 2012 election.
+
+95
+00:06:39.340 --> 00:06:42.850
+But at any rate,
+more germane to this class is the idea
+
+96
+00:06:42.850 --> 00:06:46.890
+that election polling is a great
+example of statistical inference.
+
+97
+00:06:46.890 --> 00:06:49.650
+We have a clearly defined
+population of interest,
+
+98
+00:06:49.650 --> 00:06:53.540
+a clear parameter that we're interested
+in, and we can't poll everyone, so
+
+99
+00:06:53.540 --> 00:06:57.565
+we're gonna get an estimate of that
+population parameter from a sample.
+
+100
+00:07:00.230 --> 00:07:01.800
+Let's talk about prediction, and
+
+101
+00:07:01.800 --> 00:07:05.280
+I put a link here to Jeff Leagues
+practical machine learning class
+
+102
+00:07:05.280 --> 00:07:08.390
+which is a great class to learn
+about the details of prediction.
+
+103
+00:07:10.090 --> 00:07:13.670
+So I didn't have, again this is another
+example where I didn't have to think too
+
+104
+00:07:13.670 --> 00:07:18.830
+hard about coming up with a really
+well known example of prediction,
+
+105
+00:07:18.830 --> 00:07:21.950
+and here I thought about
+stock market prediction.
+
+106
+00:07:21.950 --> 00:07:25.040
+And I think,
+to me one of the characteristics of
+
+107
+00:07:25.040 --> 00:07:29.870
+prediction over inference, because
+those two subjects bleed together quite
+
+108
+00:07:31.080 --> 00:07:34.400
+a bit, one of the hallmarks of prediction,
+
+109
+00:07:34.400 --> 00:07:39.960
+is a move away from trying to understand
+mechanisms and models, in a move toward
+
+110
+00:07:39.960 --> 00:07:45.290
+trying to actually create predictions and
+
+111
+00:07:45.290 --> 00:07:49.780
+really evaluate them with how accurate
+the predictions are not how much of
+
+112
+00:07:51.350 --> 00:07:55.079
+the unknown state of the world
+a model would explain.
+
+113
+00:07:56.460 --> 00:08:00.753
+So, to me stock market predictions
+are a great example of this, because for
+
+114
+00:08:00.753 --> 00:08:03.570
+many people who are predicting
+the stock market,
+
+115
+00:08:03.570 --> 00:08:06.387
+what they really care about
+is simply the losses or
+
+116
+00:08:06.387 --> 00:08:10.840
+gains, the monetary losses or gains
+that occur from the predictions, okay?
+
+117
+00:08:10.840 --> 00:08:14.880
+And, this is the modern way to think
+about predictions I might add.
+
+118
+00:08:14.880 --> 00:08:19.202
+And so, the frame of mind has
+shifted whereas someone who was
+
+119
+00:08:19.202 --> 00:08:23.611
+an academic studying the markets
+might be interested in why,
+
+120
+00:08:23.611 --> 00:08:28.865
+the why the market moves in the ways
+that it does, regardless of whether or
+
+121
+00:08:28.865 --> 00:08:33.309
+not they personally make a lot
+of money off of that knowledge.
+
+122
+00:08:35.690 --> 00:08:39.540
+Another great example of prediction
+that's occurring a lot lately and
+
+123
+00:08:39.540 --> 00:08:43.300
+probably one of the things that drove you
+to this class, is how important modern
+
+124
+00:08:43.300 --> 00:08:48.300
+machine learning and modern prediction
+algorithms have become in data science.
+
+125
+00:08:48.300 --> 00:08:52.250
+For example, Amazon wants to recommend for
+
+126
+00:08:52.250 --> 00:08:55.160
+you things that you might
+wanna buy on their site.
+
+127
+00:08:55.160 --> 00:08:57.330
+Netflix wants to recommend movies.
+
+128
+00:08:57.330 --> 00:09:01.630
+At the heart of all these activities
+is a machine learning process
+
+129
+00:09:01.630 --> 00:09:03.510
+that's coming up with
+these recommendations.
+
+130
+00:09:03.510 --> 00:09:08.610
+And again, they care less about
+the underlying psychology and
+
+131
+00:09:09.750 --> 00:09:12.850
+fundamental truths of why
+you're doing these things, but
+
+132
+00:09:12.850 --> 00:09:16.310
+more care about, we wanna give
+the person the most relevant ads, so
+
+133
+00:09:16.310 --> 00:09:17.450
+they click and then they buy things.
+
+134
+00:09:17.450 --> 00:09:21.160
+So, a huge chunk of marketing and
+
+135
+00:09:21.160 --> 00:09:25.880
+online retail and etc.,
+all rely on machine learning now.
+
+136
+00:09:25.880 --> 00:09:31.060
+It's been somewhat of
+a revolution in prediction.
+
+137
+00:09:31.060 --> 00:09:36.202
+Finally, the last thing that we
+wanted to talk about was design, and
+
+138
+00:09:36.202 --> 00:09:41.090
+design is perhaps one of the most
+important things that we cover.
+
+139
+00:09:41.090 --> 00:09:44.837
+Though it's often overlooked, and
+it's often overlooked because in many,
+
+140
+00:09:44.837 --> 00:09:47.800
+many settings we don't have
+control over the design.
+
+141
+00:09:47.800 --> 00:09:51.830
+We just get the data that we get,
+and we don't have a choice over it.
+
+142
+00:09:51.830 --> 00:09:56.270
+However, and I put up a picture
+of the famous R.A. Fisher's book.
+
+143
+00:09:56.270 --> 00:10:01.970
+This is a reprint of it from Oxford, the
+Statistical Methods Experimental Design
+
+144
+00:10:01.970 --> 00:10:05.700
+and Scientific Interference is
+a real classic, so, and R.A.
+
+145
+00:10:05.700 --> 00:10:08.910
+Fisher was the patriarch of
+the idea of statistical design.
+
+146
+00:10:10.390 --> 00:10:14.620
+So when trying to think of an example for
+statistical design,
+
+147
+00:10:14.620 --> 00:10:19.240
+the first thing that came to my mind for
+data science was AB testing, sort of
+
+148
+00:10:19.240 --> 00:10:24.020
+the most classy examples of statistics
+design in the data science world.
+
+149
+00:10:24.020 --> 00:10:26.220
+But I wanna instead talk
+more about clinical trials,
+
+150
+00:10:26.220 --> 00:10:29.010
+because I think clinical
+trials impact our lives more.
+
+151
+00:10:29.010 --> 00:10:33.350
+When things are really on the line, when
+the government has to decide whether or
+
+152
+00:10:33.350 --> 00:10:40.309
+not to allow a drug, or a therapy to
+be executed to the population at large.
+
+153
+00:10:42.330 --> 00:10:46.220
+There's a demand to have a clinical trial,
+and it's so important that there
+
+154
+00:10:46.220 --> 00:10:51.490
+are entities like clinicaltrials.gov to
+keep track and monitor clinical trials.
+
+155
+00:10:51.490 --> 00:10:55.810
+The hallmark of a clinical trial is
+the randomization of treatment groups, so
+
+156
+00:10:55.810 --> 00:10:58.240
+that it balances unobserved co-variants.
+
+157
+00:10:58.240 --> 00:11:02.460
+So the idea of randomization is
+the fundamental hallmark of both clinical
+
+158
+00:11:02.460 --> 00:11:07.100
+trials and AB testing, but germane to
+our discussion today is the fact that,
+
+159
+00:11:07.100 --> 00:11:11.180
+that randomization is part of a carefully
+controlled experimental design.
+
+160
+00:11:11.180 --> 00:11:12.080
+In a clinical trial,
+
+161
+00:11:12.080 --> 00:11:16.820
+they're trying to control as much of
+the experimental design as possible, and
+
+162
+00:11:16.820 --> 00:11:23.090
+that's one of these four corners of the
+field of statistics that is so important.
+
+163
+00:11:24.170 --> 00:11:27.280
+So just to remind you what
+these four activities are,
+
+164
+00:11:27.280 --> 00:11:31.151
+they were exploratory data analysis,
+inference,
+
+165
+00:11:31.151 --> 00:11:36.300
+prediction, experimental design.
+
+166
+00:11:36.300 --> 00:11:40.340
+So, I look forward to seeing you
+in some of our future classes, and
+
+167
+00:11:40.340 --> 00:11:42.740
+we'll talk a little bit more about
+each of these topics in turn.

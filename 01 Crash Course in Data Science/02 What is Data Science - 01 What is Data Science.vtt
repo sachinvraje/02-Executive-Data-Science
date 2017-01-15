@@ -1,0 +1,465 @@
+WEBVTT
+
+1
+00:00:03.463 --> 00:00:05.320
+So this is a crash course in data science.
+
+2
+00:00:05.320 --> 00:00:08.370
+And so the first question you might
+ask yourself is, what is data science?
+
+3
+00:00:08.370 --> 00:00:11.520
+So this is a blog post that I wrote for
+our blog Simply Statistics,
+
+4
+00:00:11.520 --> 00:00:16.170
+that talked about how the key word in
+data science, is science, and not data.
+
+5
+00:00:16.170 --> 00:00:19.540
+So the key issue when you're analyzing
+a data set, or when you're trying to use
+
+6
+00:00:19.540 --> 00:00:23.260
+data to help your business, or
+to help your organization move forward is
+
+7
+00:00:23.260 --> 00:00:26.820
+to know that data science is only useful
+when you're actually using that data to
+
+8
+00:00:26.820 --> 00:00:30.930
+answer a specific, concrete question that
+could be useful for your organization.
+
+9
+00:00:30.930 --> 00:00:34.900
+So it turns out that this definition
+actually ends up in the actual definition
+
+10
+00:00:34.900 --> 00:00:38.710
+of data science in Wikipedia, and, as we
+know, Wikipedia is the main source of most
+
+11
+00:00:38.710 --> 00:00:41.270
+people's information, so
+we literally define data science.
+
+12
+00:00:42.370 --> 00:00:44.580
+So a couple of example of this,
+
+13
+00:00:44.580 --> 00:00:47.420
+we'll illustrate what I mean
+by what is data science.
+
+14
+00:00:47.420 --> 00:00:50.675
+So one of the examples that you about
+a lot when you hear about data science is
+
+15
+00:00:50.675 --> 00:00:51.256
+Moneyball.
+
+16
+00:00:51.256 --> 00:00:54.410
+And so, in Moneyball, the idea was,
+
+17
+00:00:54.410 --> 00:00:58.230
+can we build a winning baseball team
+if we have a really limited budget?
+
+18
+00:00:58.230 --> 00:01:01.050
+Now they used quantification
+of player skills,
+
+19
+00:01:01.050 --> 00:01:04.250
+and a new metric that's more
+useful to answer that question.
+
+20
+00:01:04.250 --> 00:01:07.460
+But the key underlying question that
+they were asking, the key reason
+
+21
+00:01:07.460 --> 00:01:11.440
+why this is a data science problem was,
+could we use the data that we collected to
+
+22
+00:01:11.440 --> 00:01:15.410
+answer this specific question which is
+building a low budget baseball team.
+
+23
+00:01:15.410 --> 00:01:19.530
+A second question would be, how do we find
+the people who vote for Barack Obama and
+
+24
+00:01:19.530 --> 00:01:22.640
+make sure that those people end
+up at the polls on polling day?
+
+25
+00:01:22.640 --> 00:01:28.330
+And so this is an example from
+a study of Barack Obama's data team,
+
+26
+00:01:28.330 --> 00:01:30.760
+where they went and they actually
+tried to analyze the data, and
+
+27
+00:01:30.760 --> 00:01:32.850
+run experiments to identify those people.
+
+28
+00:01:32.850 --> 00:01:36.000
+And they ended up being a surprising
+group of people that weren't necessarily
+
+29
+00:01:36.000 --> 00:01:38.730
+the moderate voters that
+everybody thought they would be,
+
+30
+00:01:38.730 --> 00:01:41.752
+that could be swayed to go out and
+vote for Barack Obama.
+
+31
+00:01:41.752 --> 00:01:46.500
+And so, this is again an example where
+there was a high-level technical issue
+
+32
+00:01:46.500 --> 00:01:51.350
+that had been used to basically A B
+testing on websites and things like that,
+
+33
+00:01:51.350 --> 00:01:55.860
+to basically collect and identify the data
+that they will use to answer the question.
+
+34
+00:01:55.860 --> 00:01:58.780
+But at the core,
+the data science problem was
+
+35
+00:01:58.780 --> 00:02:01.860
+can we use data to answer this
+question of voter turnout, and
+
+36
+00:02:01.860 --> 00:02:06.890
+the right kind of voter turnout to make
+sure a particular team wins an election.
+
+37
+00:02:06.890 --> 00:02:09.340
+So another data science
+question is the Netflix prize.
+
+38
+00:02:09.340 --> 00:02:13.910
+So here the idea was, Netflix wants to
+keep people watching movies, and so
+
+39
+00:02:13.910 --> 00:02:18.490
+to get them to watch those movies, you
+need to keep producing recommendations of
+
+40
+00:02:18.490 --> 00:02:21.670
+movies that they might like to watch
+after they've finished watching one.
+
+41
+00:02:21.670 --> 00:02:24.280
+And so, the idea here is
+the question is how can we
+
+42
+00:02:24.280 --> 00:02:27.900
+show people movies that they'd like
+to see so they'll keep watching, and
+
+43
+00:02:27.900 --> 00:02:31.220
+then they use data, basically
+the preferences of other people like that
+
+44
+00:02:31.220 --> 00:02:33.770
+person to try to predict which
+movies that they would like.
+
+45
+00:02:33.770 --> 00:02:37.891
+So this is another example where there is
+some technical high-level machine learning
+
+46
+00:02:37.891 --> 00:02:40.432
+techniques that were used
+to do these predictions but
+
+47
+00:02:40.432 --> 00:02:44.230
+at the core the question was, how can we
+identify movies that people will like.
+
+48
+00:02:44.230 --> 00:02:47.803
+And so I've talked a lot about how data
+science about answering questions with
+
+49
+00:02:47.803 --> 00:02:49.480
+data and that's definitely true but
+
+50
+00:02:49.480 --> 00:02:51.930
+there are also some other
+components to the problem.
+
+51
+00:02:51.930 --> 00:02:56.160
+So, data science is involved in
+formulating those quantitative questions,
+
+52
+00:02:56.160 --> 00:03:00.452
+identifying the data that could be used
+to answer the questions, cleaning it,
+
+53
+00:03:00.452 --> 00:03:05.130
+making it nice, then analyzing the data,
+whether that's with machine learning, or
+
+54
+00:03:05.130 --> 00:03:08.650
+with statistics, or
+with neural networks or whatever.
+
+55
+00:03:08.650 --> 00:03:11.625
+And then communicating that
+answer to other people.
+
+56
+00:03:11.625 --> 00:03:15.680
+And so another component of that, that
+often gets left out in these discussions,
+
+57
+00:03:15.680 --> 00:03:18.150
+is basically the engineering
+component of it.
+
+58
+00:03:18.150 --> 00:03:20.330
+So one example of that
+is this Netflix prize.
+
+59
+00:03:20.330 --> 00:03:24.560
+So in the Netflix prize, they had a whole
+bunch of teams competing to try to predict
+
+60
+00:03:24.560 --> 00:03:27.820
+how best to show people what
+movies to watch next, and
+
+61
+00:03:27.820 --> 00:03:31.470
+the team that won blended together a large
+number of machine learning algorithms.
+
+62
+00:03:31.470 --> 00:03:34.210
+In other words, they predicted the result
+with a large number of machine
+
+63
+00:03:34.210 --> 00:03:37.370
+learning algorithms and
+then cleverly averaged them together.
+
+64
+00:03:37.370 --> 00:03:41.210
+But it turns out that's really
+computationally hard to do, and so Netflix
+
+65
+00:03:41.210 --> 00:03:44.590
+never actually ended up implementing the
+waiting solution on their system, because
+
+66
+00:03:44.590 --> 00:03:48.780
+there wasn't enough computing power to do
+that at a scale where they could do it for
+
+67
+00:03:48.780 --> 00:03:50.320
+all their customers.
+
+68
+00:03:50.320 --> 00:03:53.580
+So this is an example of how there
+are different components to the data
+
+69
+00:03:53.580 --> 00:03:54.980
+science process.
+
+70
+00:03:54.980 --> 00:03:58.450
+There's the actual data science,
+the actual learning from data.
+
+71
+00:03:58.450 --> 00:04:02.560
+And doing, discovering what
+the right prediction model is.
+
+72
+00:04:02.560 --> 00:04:05.150
+And then there's the implementation
+component which is often
+
+73
+00:04:05.150 --> 00:04:08.610
+lumped into data engineering which
+is how you actually implement or
+
+74
+00:04:08.610 --> 00:04:13.090
+scale that technology to be able to apply
+it to, say, a large customer base or
+
+75
+00:04:13.090 --> 00:04:15.550
+to a large number of people all at once.
+
+76
+00:04:15.550 --> 00:04:18.580
+And so there are these trade-offs
+that always come up in data science.
+
+77
+00:04:18.580 --> 00:04:22.970
+The tradeo-ffs between interpretability
+and accuracy or interpretability and
+
+78
+00:04:22.970 --> 00:04:26.510
+speed, or interpretability and
+scalability, and so forth.
+
+79
+00:04:26.510 --> 00:04:29.480
+So you can basically imagine that there
+are all these different components to
+
+80
+00:04:29.480 --> 00:04:32.850
+a model whether it's in It's
+interpretable, simple, accurate, fast, and
+
+81
+00:04:32.850 --> 00:04:33.410
+scalable.
+
+82
+00:04:33.410 --> 00:04:36.540
+And you have to sort of make judgments
+about which of those things are important
+
+83
+00:04:36.540 --> 00:04:39.540
+for the particular problem
+that you're trying to solve.
+
+84
+00:04:39.540 --> 00:04:43.020
+And so, another component of this is
+like being able to identify what's hype
+
+85
+00:04:43.020 --> 00:04:44.090
+and what's not.
+
+86
+00:04:44.090 --> 00:04:47.370
+And so, this is an example of the hype
+cycle where there's sort of the peak of
+
+87
+00:04:47.370 --> 00:04:51.610
+inflated expectations, followed by
+when everybody gets disillusioned with
+
+88
+00:04:51.610 --> 00:04:54.040
+the technology and
+a plateau of productivity.
+
+89
+00:04:54.040 --> 00:04:57.850
+We're sort of just coming out to that part
+where data science, people have really
+
+90
+00:04:57.850 --> 00:05:01.830
+starting to figure out how to use
+data science to solve key problems.
+
+91
+00:05:01.830 --> 00:05:04.160
+And so
+we're about to see a lot of productivity.
+
+92
+00:05:04.160 --> 00:05:06.940
+You can kind of think about it
+as the 1999 for data science.
+
+93
+00:05:06.940 --> 00:05:09.590
+So it's an exciting time to
+be involved in it because
+
+94
+00:05:09.590 --> 00:05:12.340
+even relatively simple data
+science tools used well to
+
+95
+00:05:12.340 --> 00:05:16.550
+answer very specific questions can have a
+major impact on you and your organization.

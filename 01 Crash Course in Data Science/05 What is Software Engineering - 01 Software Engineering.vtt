@@ -1,0 +1,509 @@
+WEBVTT
+
+1
+00:00:00.730 --> 00:00:03.763
+This lecture talks about software
+engineering and what it means for
+
+2
+00:00:03.763 --> 00:00:04.461
+data science.
+
+3
+00:00:08.523 --> 00:00:10.064
+For data scientists,
+
+4
+00:00:10.064 --> 00:00:15.020
+software is the generalization of
+a specific aspect of a data analysis.
+
+5
+00:00:15.020 --> 00:00:19.282
+So if specific parts of a data
+analysis may require implementing or
+
+6
+00:00:19.282 --> 00:00:22.640
+applying a number of procedures or
+tools together.
+
+7
+00:00:22.640 --> 00:00:28.228
+Software is the encompassing of all
+these tools into a specific module or
+
+8
+00:00:28.228 --> 00:00:33.960
+procedure that can be repeatedly
+applied in a variety of settings.
+
+9
+00:00:33.960 --> 00:00:38.300
+So software allows for the systematizing
+and the standardizing of a procedure, so
+
+10
+00:00:38.300 --> 00:00:40.510
+that different people can use it and
+
+11
+00:00:40.510 --> 00:00:44.130
+understand what it's gonna do,
+at any given time.
+
+12
+00:00:45.200 --> 00:00:46.620
+What software is useful for,
+
+13
+00:00:46.620 --> 00:00:51.330
+is that it formalizes and abstracts the
+functionality of a set of procedures or
+
+14
+00:00:51.330 --> 00:00:57.020
+tools, by developing a well
+defined interface to the analysis.
+
+15
+00:00:57.020 --> 00:01:00.740
+So the software will have an interface,
+or a set of inputs and
+
+16
+00:01:00.740 --> 00:01:02.820
+a set of outputs that are well understood.
+
+17
+00:01:02.820 --> 00:01:06.240
+And people can understand the inputs and
+the outputs
+
+18
+00:01:06.240 --> 00:01:09.980
+without having to worry about the gory
+details of what's going on underneath.
+
+19
+00:01:09.980 --> 00:01:12.230
+Now they may be interested
+in those details, but
+
+20
+00:01:12.230 --> 00:01:14.890
+the application of the software
+at any given setting
+
+21
+00:01:14.890 --> 00:01:18.930
+will not necessarily depend on
+the knowledge of those details.
+
+22
+00:01:18.930 --> 00:01:23.100
+Rather the knowledge of the interface
+to that software is important
+
+23
+00:01:23.100 --> 00:01:25.380
+to using it in any given situation.
+
+24
+00:01:25.380 --> 00:01:29.840
+So for example, most statistical
+packages will have a linear regression,
+
+25
+00:01:29.840 --> 00:01:34.920
+a function which has a very well
+defined interface, usually.
+
+26
+00:01:34.920 --> 00:01:39.600
+For example, you'll have to input
+things like the outcome and the set of
+
+27
+00:01:39.600 --> 00:01:43.940
+predictors, and maybe there will be some
+other inputs like the data set or weights.
+
+28
+00:01:43.940 --> 00:01:46.530
+But most linear regression
+functions kind of work in that way.
+
+29
+00:01:46.530 --> 00:01:51.150
+And importantly the user does not
+have to know exactly how the linear
+
+30
+00:01:51.150 --> 00:01:54.950
+regression calculation is
+done underneath the hood.
+
+31
+00:01:54.950 --> 00:01:59.440
+Rather, they only need to know that
+they need to specify the outcome,
+
+32
+00:01:59.440 --> 00:02:01.720
+the predictors, and
+a couple of other things.
+
+33
+00:02:01.720 --> 00:02:05.730
+And so the linear regression
+function abstracts all the details
+
+34
+00:02:05.730 --> 00:02:10.680
+that go on underneath, that are required
+to implement linear regression, so
+
+35
+00:02:10.680 --> 00:02:13.220
+that the user can apply the tool
+in a variety of settings.
+
+36
+00:02:14.480 --> 00:02:19.340
+So there are basically three kind of
+levels of software that I can think about,
+
+37
+00:02:19.340 --> 00:02:22.420
+going from kind of the simplest
+to the most abstract.
+
+38
+00:02:22.420 --> 00:02:25.450
+And so at the first level you might just
+have some code that you wrote, and so
+
+39
+00:02:25.450 --> 00:02:30.710
+this is really the first step towards
+encapsulating automation of a set
+
+40
+00:02:30.710 --> 00:02:32.580
+of procedures.
+
+41
+00:02:32.580 --> 00:02:35.050
+For example,
+you might have a loop of some sort,
+
+42
+00:02:35.050 --> 00:02:38.080
+never repeats an operation multiple times.
+
+43
+00:02:38.080 --> 00:02:39.720
+So this is the first tip.
+
+44
+00:02:39.720 --> 00:02:41.860
+And then the next step might
+be some sort of function.
+
+45
+00:02:41.860 --> 00:02:46.410
+So regardless of what language you may be
+using, often there will be some notion of
+
+46
+00:02:46.410 --> 00:02:49.910
+a function, which is used to
+encapsulate a set of instructions.
+
+47
+00:02:49.910 --> 00:02:52.560
+And the key thing about a function is
+that you'll have to define some sort of
+
+48
+00:02:52.560 --> 00:02:55.040
+interface, which will be
+the inputs to the function.
+
+49
+00:02:55.040 --> 00:02:57.420
+And then the function may
+have a set of outputs or
+
+50
+00:02:57.420 --> 00:02:59.840
+it may have some side effect for
+example, if it's a plotting function.
+
+51
+00:03:00.940 --> 00:03:03.280
+And then, so the user only
+needs to know those inputs and
+
+52
+00:03:03.280 --> 00:03:04.550
+kind of what the outputs will be.
+
+53
+00:03:04.550 --> 00:03:09.790
+And so this is kind of the first level
+of abstraction that you might encounter,
+
+54
+00:03:09.790 --> 00:03:12.262
+where you have to actually define and
+interface to that function.
+
+55
+00:03:12.262 --> 00:03:15.450
+And then the very highest level
+is the actual software package.
+
+56
+00:03:15.450 --> 00:03:19.219
+Which will often be a collection of
+functions or functions in other things.
+
+57
+00:03:19.219 --> 00:03:23.406
+That will be a little bit more
+formal because there'll be a very
+
+58
+00:03:23.406 --> 00:03:27.207
+specific interface or
+API that a user has to understand.
+
+59
+00:03:27.207 --> 00:03:31.545
+And often for a software package there'll
+be a level of convenience features for
+
+60
+00:03:31.545 --> 00:03:35.880
+users, like documentation, or examples,
+or tutorials that may come with it,
+
+61
+00:03:35.880 --> 00:03:40.004
+to help the user, to kind of apply
+the software to many different settings.
+
+62
+00:03:40.004 --> 00:03:44.740
+So a full on software package will
+be most general in the sense that
+
+63
+00:03:44.740 --> 00:03:48.110
+it should be applicable to
+kind of more than one setting.
+
+64
+00:03:48.110 --> 00:03:51.100
+And maybe become more
+broadly useful to people.
+
+65
+00:03:52.440 --> 00:03:55.980
+So, one question that you'll find yourself
+asking, is at what point do you need to
+
+66
+00:03:55.980 --> 00:04:00.410
+systematize common tasks and procedures
+across projects versus, you know,
+
+67
+00:04:00.410 --> 00:04:04.800
+recreating code or writing new code
+from scratch on every new project?
+
+68
+00:04:04.800 --> 00:04:09.340
+Now it depends on a variety of factors and
+answering this question may require
+
+69
+00:04:09.340 --> 00:04:13.380
+communication within your team, and with
+people outside of your team potentially.
+
+70
+00:04:13.380 --> 00:04:16.330
+Because you may need to have
+an understanding of how often a given
+
+71
+00:04:16.330 --> 00:04:19.770
+process is repeated, or how often
+a given type of data analysis is done,
+
+72
+00:04:19.770 --> 00:04:22.910
+in order to weigh the costs and
+the benefits of kind
+
+73
+00:04:22.910 --> 00:04:26.650
+of investing in either a software
+package or something like that.
+
+74
+00:04:26.650 --> 00:04:30.720
+And so within your team,
+you may want to ask yourself,
+
+75
+00:04:30.720 --> 00:04:33.580
+is the data analysis you're gonna do, is
+that something you're gonna build upon for
+
+76
+00:04:33.580 --> 00:04:37.100
+future work, or
+is it just gonna be a one shot deal.
+
+77
+00:04:37.100 --> 00:04:41.550
+Now in my experience, there are relatively
+few one shot deals out there.
+
+78
+00:04:41.550 --> 00:04:43.950
+Often you will have to
+do a certain analysis or
+
+79
+00:04:43.950 --> 00:04:47.730
+a certain type of analysis more than once,
+twice, or even three times.
+
+80
+00:04:47.730 --> 00:04:51.250
+And at that point, it's usually often,
+you've kind of reached the threshold where
+
+81
+00:04:51.250 --> 00:04:54.150
+you wanna write some code, write some
+software, or at least a function.
+
+82
+00:04:55.460 --> 00:04:58.710
+So the point at which you need to
+systematize a given set of procedures,
+
+83
+00:04:58.710 --> 00:05:01.290
+is probably gonna be sooner
+than you think it is.
+
+84
+00:05:01.290 --> 00:05:04.950
+Because things will more
+likely be done more than once.
+
+85
+00:05:04.950 --> 00:05:09.540
+Now the initial investment for developing
+more formal software will be higher,
+
+86
+00:05:09.540 --> 00:05:13.340
+of course, but that will likely pay
+off in savings in time down the road.
+
+87
+00:05:14.490 --> 00:05:19.300
+So my basic rule of thumb is that,
+if you're gonna do something once,
+
+88
+00:05:19.300 --> 00:05:23.530
+that does happen on occasion, just write
+some code and document it very well.
+
+89
+00:05:23.530 --> 00:05:26.960
+The important thing is that you wanna make
+sure that you understand what the code
+
+90
+00:05:26.960 --> 00:05:31.890
+does, and so that requires both writing
+the code well and writing documentation.
+
+91
+00:05:31.890 --> 00:05:34.830
+Cuz you wanna be able to reproduce it down
+the road, in case you ever come back to
+
+92
+00:05:34.830 --> 00:05:39.250
+it, or in case someone else comes back to
+it, and needs to understand what was done.
+
+93
+00:05:39.250 --> 00:05:41.730
+If you're gonna do something twice,
+write a function.
+
+94
+00:05:41.730 --> 00:05:43.950
+This allows you to abstract
+a small piece of code,
+
+95
+00:05:43.950 --> 00:05:49.020
+it forces you to define an interface, so
+you have well defined inputs and outputs.
+
+96
+00:05:49.020 --> 00:05:52.480
+And that will allow for other people
+to access a given function and
+
+97
+00:05:52.480 --> 00:05:53.940
+apply it to whatever situation they're in.
+
+98
+00:05:53.940 --> 00:05:56.020
+And then if you're gonna do
+something three times or more,
+
+99
+00:05:56.020 --> 00:05:58.210
+you should think about
+writing a small package.
+
+100
+00:05:58.210 --> 00:06:00.630
+It doesn't have to be
+commercial level software.
+
+101
+00:06:00.630 --> 00:06:03.400
+But a small package which encapsulates
+
+102
+00:06:03.400 --> 00:06:06.960
+the set of operations that you're
+gonna be doing in a given analysis.
+
+103
+00:06:06.960 --> 00:06:10.550
+And also write some real documentation so
+that people can understand what's supposed
+
+104
+00:06:10.550 --> 00:06:15.600
+to be going on, and can apply the software
+to a different situation if they have to.

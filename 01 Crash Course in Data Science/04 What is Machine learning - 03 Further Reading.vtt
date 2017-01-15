@@ -1,0 +1,260 @@
+WEBVTT
+
+1
+00:00:03.023 --> 00:00:07.343
+So what if you want to read a little more
+about the discussion of the differences
+
+2
+00:00:07.343 --> 00:00:10.100
+between machinery and
+traditional statistics.
+
+3
+00:00:10.100 --> 00:00:13.900
+Well I'm gonna give you a couple of
+articles that you can go get and read.
+
+4
+00:00:13.900 --> 00:00:17.650
+One is a blog post by Larry Wasserman,
+he's a very well known statistician.
+
+5
+00:00:17.650 --> 00:00:21.417
+And he wrote a blog post if you search,
+called the Rise of the Machines.
+
+6
+00:00:21.417 --> 00:00:24.607
+It's a very good treatment
+of the distinction, and
+
+7
+00:00:24.607 --> 00:00:26.854
+maybe a little bit of a rallying cry,
+
+8
+00:00:26.854 --> 00:00:32.310
+to the statistical community to embrace
+machine learning a little bit better.
+
+9
+00:00:32.310 --> 00:00:35.080
+There was this very
+celebrated statistician,
+
+10
+00:00:35.080 --> 00:00:38.780
+who sadly past away, named Leo Breiman.
+
+11
+00:00:38.780 --> 00:00:41.570
+And he wrote a tremendously
+well-received paper called
+
+12
+00:00:41.570 --> 00:00:44.010
+Statistical Modeling: The Two Cultures,
+and
+
+13
+00:00:44.010 --> 00:00:47.380
+much of my thinking really
+derives from this paper.
+
+14
+00:00:47.380 --> 00:00:50.670
+It's very accessible, it's in
+the Journal of Statistical Science.
+
+15
+00:00:50.670 --> 00:00:55.858
+And I would say his approach is quite
+critical of traditional statistics,
+
+16
+00:00:55.858 --> 00:01:00.899
+or at least suggesting that traditional
+statistics is lagging behind.
+
+17
+00:01:00.899 --> 00:01:05.132
+I give you this quote here where he says,
+in this paper I will argue that the focus
+
+18
+00:01:05.132 --> 00:01:09.110
+of the statistical community on data
+models has led to irrelevant theory,
+
+19
+00:01:09.110 --> 00:01:12.713
+kept statisticians from using
+more suitable algorithmic models,
+
+20
+00:01:12.713 --> 00:01:16.460
+and prevented statisticians from
+working on exciting new problems.
+
+21
+00:01:16.460 --> 00:01:19.700
+So he kinda takes his own
+community to task quite a bit,
+
+22
+00:01:19.700 --> 00:01:21.330
+it's a very entertaining article.
+
+23
+00:01:21.330 --> 00:01:24.201
+And it's not quite as dry and
+
+24
+00:01:24.201 --> 00:01:29.990
+academic as most statistical
+research papers.
+
+25
+00:01:29.990 --> 00:01:32.660
+And I just brought out this wonderful
+
+26
+00:01:32.660 --> 00:01:35.184
+quote that really stuck
+with me from DR Cox.
+
+27
+00:01:35.184 --> 00:01:39.220
+DR Cox is another tremendously
+celebrated statistician.
+
+28
+00:01:39.220 --> 00:01:43.695
+His Cox Proportional Hazards Model
+is easily one of the top five
+
+29
+00:01:43.695 --> 00:01:46.237
+most-cited statistical papers.
+
+30
+00:01:46.237 --> 00:01:50.547
+And Dr. Cox was one of
+the discussants of the paper, and
+
+31
+00:01:50.547 --> 00:01:53.130
+this quote really stuck with me.
+
+32
+00:01:53.130 --> 00:01:56.780
+Where he said, Professor Breiman
+takes data as his starting point,
+
+33
+00:01:56.780 --> 00:02:00.480
+I would prefer to start with an issue,
+a question or a scientific hypothesis,
+
+34
+00:02:00.480 --> 00:02:03.690
+although I would be surprised if this
+were a real source of disagreement.
+
+35
+00:02:03.690 --> 00:02:09.500
+But I really like this comment because
+I do think that really does get at, to
+
+36
+00:02:09.500 --> 00:02:14.070
+me I think of the things that I have the
+most trouble with, with machine learning.
+
+37
+00:02:14.070 --> 00:02:16.780
+It's when you're having to both derive and
+
+38
+00:02:16.780 --> 00:02:19.880
+interrogate the hypothesis
+with the same set of data.
+
+39
+00:02:19.880 --> 00:02:23.030
+I think to me that's
+the hardest pill to swallow.
+
+40
+00:02:24.400 --> 00:02:27.640
+And then, the final article that you
+might be interested in looking at
+
+41
+00:02:27.640 --> 00:02:32.220
+was an article by David Hand,
+another great statistician.
+
+42
+00:02:32.220 --> 00:02:36.431
+And he says, Classifier technology and
+the Illusion of Progress.
+
+43
+00:02:36.431 --> 00:02:40.229
+So, this one's a little bit more critical
+of the machine learning approach and
+
+44
+00:02:40.229 --> 00:02:41.830
+I'll give you a quote from this.
+
+45
+00:02:41.830 --> 00:02:44.540
+It says, so that the apparent
+
+46
+00:02:44.540 --> 00:02:48.330
+superiority of more sophisticated
+methods may be something of an illusion.
+
+47
+00:02:48.330 --> 00:02:51.510
+In particular, simple methods typically
+yield performance almost as good
+
+48
+00:02:51.510 --> 00:02:55.300
+as more sophisticated methods, to the
+extent that the difference in performance
+
+49
+00:02:55.300 --> 00:02:58.980
+may be swamped by other sources
+of uncertainty that generally
+
+50
+00:02:58.980 --> 00:03:02.570
+are not considered in the classical
+supervised classification paradigm.
+
+51
+00:03:02.570 --> 00:03:07.480
+So he's basically saying the effort
+of building a complicated
+
+52
+00:03:07.480 --> 00:03:10.940
+machine learning algorithm
+is often not worth it.
+
+53
+00:03:10.940 --> 00:03:14.610
+The increasing complexity
+leads to marginal gains,
+
+54
+00:03:14.610 --> 00:03:16.877
+is one of the points that he's making.

@@ -1,0 +1,579 @@
+WEBVTT
+
+1
+00:00:00.740 --> 00:00:03.960
+This lecture discusses the basic
+structure of a data science project.
+
+2
+00:00:08.501 --> 00:00:13.085
+A typical data science project will be
+structured in a few different phases
+
+3
+00:00:13.085 --> 00:00:16.630
+that I'll talk about in
+separately in this lecture.
+
+4
+00:00:16.630 --> 00:00:19.910
+So there's roughly five different
+phases that we can think about
+
+5
+00:00:19.910 --> 00:00:21.280
+in a data science project.
+
+6
+00:00:21.280 --> 00:00:23.970
+The first phase is
+the most important phase,
+
+7
+00:00:23.970 --> 00:00:26.490
+and that's the phase where
+you ask the question and
+
+8
+00:00:26.490 --> 00:00:30.750
+you specify what is it that you're
+interested in learning from data.
+
+9
+00:00:30.750 --> 00:00:35.282
+Now, specifying the question and
+kind of refining it over time is really
+
+10
+00:00:35.282 --> 00:00:39.743
+important because it will ultimately
+guide the data that you obtain and
+
+11
+00:00:39.743 --> 00:00:41.845
+the type of analysis that you do.
+
+12
+00:00:41.845 --> 00:00:46.751
+Part of specifying the question is also
+determining the type of question that
+
+13
+00:00:46.751 --> 00:00:48.350
+you are gonna be asking.
+
+14
+00:00:48.350 --> 00:00:50.840
+There are roughly six types
+of questions that you can
+
+15
+00:00:50.840 --> 00:00:55.210
+ask going from kind of descriptive,
+to exploratory, to inferential,
+
+16
+00:00:55.210 --> 00:00:58.960
+to causal, to prediction,
+predictive and mechanistic.
+
+17
+00:00:58.960 --> 00:01:02.240
+And so figuring out what type
+of question you're asking and
+
+18
+00:01:02.240 --> 00:01:05.300
+what exactly the question is,
+is really influential.
+
+19
+00:01:05.300 --> 00:01:07.840
+And so you should spend a lot
+of time thinking about this.
+
+20
+00:01:07.840 --> 00:01:10.240
+Once you've kind of figured
+out what your question is, but
+
+21
+00:01:10.240 --> 00:01:11.600
+typically you'll get some data.
+
+22
+00:01:11.600 --> 00:01:15.550
+Now, either you'll have the data or you'll
+have to go out and get it somewhere or
+
+23
+00:01:15.550 --> 00:01:18.760
+maybe someone will provide it to you,
+but the data will come to you.
+
+24
+00:01:18.760 --> 00:01:22.033
+And then the next phase will
+be exploratory data analysis.
+
+25
+00:01:22.033 --> 00:01:27.590
+So this is the second part, there are two
+main goals to exploratory data analysis.
+
+26
+00:01:27.590 --> 00:01:31.100
+The first is you wanna know if
+the data that you have is suitable for
+
+27
+00:01:31.100 --> 00:01:33.231
+answering the question that you have.
+
+28
+00:01:33.231 --> 00:01:37.686
+Then so this will depend on a variety of
+factors depending on very basic things
+
+29
+00:01:37.686 --> 00:01:40.870
+like is there enough data, are there too
+many missing values, things like that.
+
+30
+00:01:40.870 --> 00:01:44.050
+To more fundamental ones,
+like are you missing certain variables or
+
+31
+00:01:44.050 --> 00:01:47.180
+do you need to collect more data
+to get those variables, etc?
+
+32
+00:01:47.180 --> 00:01:50.070
+The second goal of
+exploratory data analysis is
+
+33
+00:01:50.070 --> 00:01:53.670
+to start to develop
+a sketch of the solution.
+
+34
+00:01:53.670 --> 00:01:56.240
+And so if the data are appropriate for
+
+35
+00:01:56.240 --> 00:01:59.060
+answering your question,
+you can start using it to kinda sketch
+
+36
+00:01:59.060 --> 00:02:03.260
+out what the answer might be to get
+a sense of kinda what it'll look like.
+
+37
+00:02:03.260 --> 00:02:06.620
+This can be done without any formal
+modeling or any kind of the statistical
+
+38
+00:02:06.620 --> 00:02:09.780
+testing of things like that just to get
+a good picture of what it might be.
+
+39
+00:02:09.780 --> 00:02:12.160
+The next stage, the third stage,
+is formal modeling.
+
+40
+00:02:12.160 --> 00:02:13.750
+So if you're sketch kind of works out,
+
+41
+00:02:13.750 --> 00:02:17.670
+you've got the right data and
+it seems appropriate to move on,
+
+42
+00:02:17.670 --> 00:02:21.510
+the formal modeling phase is the way
+to kind of specifically write
+
+43
+00:02:21.510 --> 00:02:25.570
+down what questions you're asking,
+what parameters you're trying to estimate.
+
+44
+00:02:25.570 --> 00:02:29.160
+And it also provides a framework for
+challenging your results.
+
+45
+00:02:29.160 --> 00:02:33.496
+So just because you've come up with
+an answer in the exploratory data analysis
+
+46
+00:02:33.496 --> 00:02:37.633
+phase doesn't mean that it's necessarily
+going to be the right answer and
+
+47
+00:02:37.633 --> 00:02:41.179
+you need to be able to challenge
+your results through a variety of
+
+48
+00:02:41.179 --> 00:02:45.273
+approaches where the sensitivity
+analysis are other types of analysis.
+
+49
+00:02:45.273 --> 00:02:49.545
+So challenging your model and just
+developing a formal framework is really
+
+50
+00:02:49.545 --> 00:02:53.274
+important to making sure that you
+can develop robust evidence for
+
+51
+00:02:53.274 --> 00:02:55.380
+answering your question.
+
+52
+00:02:55.380 --> 00:03:00.080
+The next phase is interpretation so
+once you've done your analysis your
+
+53
+00:03:00.080 --> 00:03:03.350
+formal modeling you wanna think about
+how to interpret your results and
+
+54
+00:03:03.350 --> 00:03:06.470
+there are a variety of things to think
+about in the interpretation phase
+
+55
+00:03:06.470 --> 00:03:08.180
+the data science project.
+
+56
+00:03:08.180 --> 00:03:12.730
+The first is kinda like think about
+how your results jive with kinda what
+
+57
+00:03:12.730 --> 00:03:16.440
+you expected to find when you
+where first asking the question.
+
+58
+00:03:16.440 --> 00:03:19.580
+And also you wanna think about
+the kind the totality of the evidence
+
+59
+00:03:19.580 --> 00:03:20.210
+that you've developed.
+
+60
+00:03:20.210 --> 00:03:22.850
+At this point, you've probably
+done many different analysis,
+
+61
+00:03:22.850 --> 00:03:24.450
+you probably fit in many different models.
+
+62
+00:03:24.450 --> 00:03:28.300
+And so you have many different bits
+of information to think about and
+
+63
+00:03:28.300 --> 00:03:30.790
+part of the interpretation
+phase is to kind of
+
+64
+00:03:30.790 --> 00:03:34.680
+assemble all that information to weigh
+the different pieces of evidence.
+
+65
+00:03:34.680 --> 00:03:35.560
+So that you know what kind or
+
+66
+00:03:35.560 --> 00:03:39.870
+which are more reliable, which are more
+important than others and to get a sense
+
+67
+00:03:39.870 --> 00:03:44.130
+of the totality of evidence with respect
+to kind of answering the question.
+
+68
+00:03:45.150 --> 00:03:48.260
+The last phase is the communication phase.
+
+69
+00:03:48.260 --> 00:03:50.760
+Any data science project that
+is successful will wanna
+
+70
+00:03:50.760 --> 00:03:53.330
+communicate its findings
+to some sort of audience.
+
+71
+00:03:53.330 --> 00:03:56.850
+Now that audience may be internal to
+your organization, it may be external,
+
+72
+00:03:56.850 --> 00:03:59.490
+it may be to a large audience or
+even just a few people.
+
+73
+00:03:59.490 --> 00:04:04.002
+But communicating your findings is
+an essential part of data science in it
+
+74
+00:04:04.002 --> 00:04:06.987
+because it informs the data
+analysis process and
+
+75
+00:04:06.987 --> 00:04:09.695
+a it translates your findings into action.
+
+76
+00:04:09.695 --> 00:04:13.923
+So that's the last part which is not
+a formal part of a data science project
+
+77
+00:04:13.923 --> 00:04:18.219
+necessarily, but often there will be
+some decision that needs to be made or
+
+78
+00:04:18.219 --> 00:04:20.650
+some action that needs to be taken.
+
+79
+00:04:20.650 --> 00:04:24.470
+And the data science project will
+have been conducted in support
+
+80
+00:04:24.470 --> 00:04:26.810
+of making a decision or taking an action.
+
+81
+00:04:26.810 --> 00:04:31.220
+So that last phase will depend on more
+than just the results of the data size or
+
+82
+00:04:31.220 --> 00:04:34.210
+the data analysis, but may require
+
+83
+00:04:34.210 --> 00:04:38.920
+inputs from many different parts of an
+organization or from other stakeholders.
+
+84
+00:04:38.920 --> 00:04:41.100
+So ultimately if the decision is made,
+
+85
+00:04:41.100 --> 00:04:45.350
+the data analysis that was done will
+inform that decision and will support and
+
+86
+00:04:45.350 --> 00:04:48.170
+the evidence that was collected
+will support that decision.
+
+87
+00:04:48.170 --> 00:04:52.530
+So these are roughly the five
+phases of a data science project.
+
+88
+00:04:52.530 --> 00:04:56.270
+There's the question, there's exploratory
+data analysis, there's formal modeling,
+
+89
+00:04:56.270 --> 00:04:58.000
+and there's interpretation,
+and there's communication.
+
+90
+00:04:59.200 --> 00:05:01.836
+Now, there is another
+approach that can be taken,
+
+91
+00:05:01.836 --> 00:05:04.363
+it's very often taken in
+data science project.
+
+92
+00:05:04.363 --> 00:05:07.032
+And that is to really
+start with the data and
+
+93
+00:05:07.032 --> 00:05:09.860
+to start with an exploratory
+data analysis.
+
+94
+00:05:09.860 --> 00:05:13.620
+So often there will be
+a data set available, But,
+
+95
+00:05:13.620 --> 00:05:17.320
+it won't be immediately clear kind of
+what the data set will be useful for.
+
+96
+00:05:17.320 --> 00:05:20.500
+So it can be useful to kind of do some
+exploratory data analysis, to look at
+
+97
+00:05:20.500 --> 00:05:24.800
+the data, to summarize it a little bit,
+make some plots, and see what's there.
+
+98
+00:05:24.800 --> 00:05:27.570
+And to generate some interesting
+questions based on the data.
+
+99
+00:05:27.570 --> 00:05:31.980
+So this is sometimes called hypothesis
+generating because it kind of produces
+
+100
+00:05:31.980 --> 00:05:34.790
+questions that were already there.
+
+101
+00:05:34.790 --> 00:05:37.110
+Once you've produced
+the questions that you wanna ask,
+
+102
+00:05:37.110 --> 00:05:39.630
+based on your initial kind of
+exploratory data analysis,
+
+103
+00:05:39.630 --> 00:05:42.840
+it may be useful to kind of
+get more data or other data
+
+104
+00:05:42.840 --> 00:05:47.010
+to kind of do an exploratory data analysis
+that's specific to your question now.
+
+105
+00:05:47.010 --> 00:05:50.170
+And then continue with the formal
+modeling, interpretation and
+
+106
+00:05:50.170 --> 00:05:51.400
+communication.
+
+107
+00:05:51.400 --> 00:05:55.400
+One thing that you have to be wary of is
+to do the exploratory data analysis in one
+
+108
+00:05:55.400 --> 00:06:00.050
+data set, develop the question, and
+then go back to the same data set.
+
+109
+00:06:00.050 --> 00:06:04.580
+And pretend like you hadn't done
+the exploratory data analysis before and
+
+110
+00:06:04.580 --> 00:06:06.500
+come at it with say a fresh question.
+
+111
+00:06:06.500 --> 00:06:08.270
+That goes on to the rest of the stages.
+
+112
+00:06:08.270 --> 00:06:11.955
+This could often be a recipe for
+kind of, for bias in your analysis.
+
+113
+00:06:11.955 --> 00:06:16.900
+Because the results were
+derived from the same data set.
+
+114
+00:06:16.900 --> 00:06:21.343
+So it's important to be careful about
+doing that and to try to obtain other data
+
+115
+00:06:21.343 --> 00:06:25.538
+when you're using the data to generate
+the questions in the first place.
+
+116
+00:06:25.538 --> 00:06:30.798
+So this is the secondary approach to data
+science that can be very useful and can
+
+117
+00:06:30.798 --> 00:06:36.740
+often result in many interesting questions
+that are generated from the data.
+
+118
+00:06:36.740 --> 00:06:40.593
+Data science projects have a variety
+of phases and it's important to kind of
+
+119
+00:06:40.593 --> 00:06:44.445
+understand which phase you're in so
+that you know kind of how to progress and
+
+120
+00:06:44.445 --> 00:06:47.056
+how to move forward with
+any data science project.

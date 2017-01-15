@@ -1,0 +1,1005 @@
+WEBVTT
+
+1
+00:00:00.160 --> 00:00:03.795
+Hi, my name is Brian Caffo and
+this is a lecture on Machine Learning.
+
+2
+00:00:03.795 --> 00:00:08.661
+So I'm gonna define machine
+learning as a set of algorithms
+
+3
+00:00:08.661 --> 00:00:12.764
+that take a set of inputs and
+return a prediction.
+
+4
+00:00:12.764 --> 00:00:17.939
+And I would classify the way in which it
+returns a prediction at least in the two
+
+5
+00:00:17.939 --> 00:00:22.649
+ways that are most useful for
+Data Science, as two broad categories.
+
+6
+00:00:23.670 --> 00:00:27.475
+And this is non exhaustive, there's other
+aspect of machine learning, but the two I
+
+7
+00:00:27.475 --> 00:00:33.160
+wanna focus on are Unsupervised and
+Supervised versions of machine learning.
+
+8
+00:00:34.840 --> 00:00:38.840
+In an Unsupervised case you're trying
+to build a prediction where you don't
+
+9
+00:00:38.840 --> 00:00:44.110
+actually have the outcome
+to train the algorithm.
+
+10
+00:00:44.110 --> 00:00:49.710
+So I would define unsupervised learning
+as trying to uncover unobserved factors.
+
+11
+00:00:49.710 --> 00:00:53.920
+And some examples of this would
+be clustering, mixture models and
+
+12
+00:00:53.920 --> 00:00:55.570
+principal components.
+
+13
+00:00:55.570 --> 00:01:01.130
+To give you an example I will go back to
+one of the first examples of clustering.
+
+14
+00:01:01.130 --> 00:01:06.390
+And that is, for
+the famous g factor is psychometrics.
+
+15
+00:01:06.390 --> 00:01:10.500
+So people like Spearmen,
+a famous psychometrician and statistician,
+
+16
+00:01:10.500 --> 00:01:16.310
+used factor analysis to combine
+collection of questionnaire data to find
+
+17
+00:01:16.310 --> 00:01:22.740
+that people who took these tests, these
+psychometric tests, tended to cluster.
+
+18
+00:01:22.740 --> 00:01:27.780
+They hypothesized that these clusters
+represented some outcome, some unmeasured
+
+19
+00:01:27.780 --> 00:01:32.450
+outcome that represents some kind
+of intrinsic intellectual ability.
+
+20
+00:01:32.450 --> 00:01:36.160
+So this was one of the first
+examples of unsupervised clustering
+
+21
+00:01:36.160 --> 00:01:39.540
+done well before the advent
+of computers I might add.
+
+22
+00:01:41.080 --> 00:01:47.210
+If that's unsupervised clustering, let's
+talk about what supervised learning is.
+
+23
+00:01:47.210 --> 00:01:52.930
+So supervised learning is using a
+collection of predictors and some observed
+
+24
+00:01:52.930 --> 00:01:58.060
+outcomes to build an algorithm to predict
+this outcome when it's not observed.
+
+25
+00:01:58.060 --> 00:02:01.910
+So some examples of supervised learning
+algorithms include random forests,
+
+26
+00:02:01.910 --> 00:02:05.570
+boosting, support vector machines.
+
+27
+00:02:05.570 --> 00:02:08.330
+I'll try and give you a similarly old,
+
+28
+00:02:08.330 --> 00:02:12.230
+maybe in fact,
+older version of supervised learning.
+
+29
+00:02:12.230 --> 00:02:13.080
+Regression.
+
+30
+00:02:13.080 --> 00:02:16.360
+And I give a picture of my regression book
+
+31
+00:02:16.360 --> 00:02:19.270
+which is free on Lean Pub which
+you're more than welcome to download.
+
+32
+00:02:19.270 --> 00:02:21.980
+But the reason I actually put the book
+up here is because of the picture
+
+33
+00:02:21.980 --> 00:02:22.490
+on the cover.
+
+34
+00:02:22.490 --> 00:02:27.350
+And I like this picture quite a bit
+because it was taken from Francis Dalton's
+
+35
+00:02:27.350 --> 00:02:30.100
+original paper where he
+developed regression.
+
+36
+00:02:30.100 --> 00:02:33.420
+In this paper he was trying
+to predict the height
+
+37
+00:02:33.420 --> 00:02:36.040
+of sons from the height of the parents.
+
+38
+00:02:36.040 --> 00:02:40.700
+In some cases, some midpoint between
+the father and the mother's height.
+
+39
+00:02:40.700 --> 00:02:42.900
+In other cases just from
+the father's height.
+
+40
+00:02:42.900 --> 00:02:46.960
+But this is an example where we have
+an observed outcome, the son's height, and
+
+41
+00:02:46.960 --> 00:02:47.930
+then we have the predictor,
+
+42
+00:02:47.930 --> 00:02:52.120
+the father's height and Francis Dalton
+wanted to build up and algorithm.
+
+43
+00:02:52.120 --> 00:02:54.376
+So that,
+when you just do the father's height and
+
+44
+00:02:54.376 --> 00:02:55.998
+say the mother was still pregnant.
+
+45
+00:02:55.998 --> 00:02:59.887
+Then you could try to predict
+what the son's height was.
+
+46
+00:02:59.887 --> 00:03:06.860
+So, this led to the development of what
+we think of low as linear regression.
+
+47
+00:03:08.900 --> 00:03:13.980
+However, modern prediction algorithms
+can take tens of thousands
+
+48
+00:03:13.980 --> 00:03:16.300
+are potential predictors
+to predict outcomes.
+
+49
+00:03:16.300 --> 00:03:19.290
+Now you need a lot of data to
+train up your algorithm, but
+
+50
+00:03:19.290 --> 00:03:23.740
+that's been some of the real
+advances in this area.
+
+51
+00:03:23.740 --> 00:03:28.860
+So in these cases,
+you would use a collection of outcomes,
+
+52
+00:03:28.860 --> 00:03:33.230
+and lots of collection,
+a large collection of predictors.
+
+53
+00:03:33.230 --> 00:03:34.800
+You would build up this algorithm.
+
+54
+00:03:35.860 --> 00:03:38.850
+And then you would then be
+able to predict the outcome
+
+55
+00:03:38.850 --> 00:03:40.940
+in instances where you didn't have it.
+
+56
+00:03:40.940 --> 00:03:44.560
+So you might wanna predict
+stock prices in the future.
+
+57
+00:03:44.560 --> 00:03:47.660
+But doing that, you're gonna
+use historic stock pricing data
+
+58
+00:03:47.660 --> 00:03:50.980
+with a lot of predictors to try and
+build up your algorithm.
+
+59
+00:03:50.980 --> 00:03:54.150
+Okay?
+So that's machine learning in a nutshell.
+
+60
+00:03:54.150 --> 00:03:56.860
+I'd like to contrast it because
+it seems very different.
+
+61
+00:03:56.860 --> 00:03:59.642
+Many people are familiar with
+traditional statistics, but
+
+62
+00:03:59.642 --> 00:04:02.620
+they're maybe a little less
+familiar with machine learning.
+
+63
+00:04:02.620 --> 00:04:07.470
+So I'd like to contrast traditional
+statistics with machine learning.
+
+64
+00:04:07.470 --> 00:04:13.000
+So in my mind, traditional statistics or
+machine learning, the main emphasis,
+
+65
+00:04:13.000 --> 00:04:16.420
+at least let's focus on
+supervised learning.
+
+66
+00:04:16.420 --> 00:04:19.560
+It emphasizes predictions and
+
+67
+00:04:19.560 --> 00:04:24.630
+then it tries to evaluate performance
+via the prediction performance.
+
+68
+00:04:24.630 --> 00:04:28.660
+So, unlike and
+we'll talk a little bit about statistics,
+
+69
+00:04:28.660 --> 00:04:32.070
+traditional statistics,
+how it evaluates performance.
+
+70
+00:04:33.160 --> 00:04:37.530
+So there's a lot of concern for
+overfitting in machine learning, but
+
+71
+00:04:37.530 --> 00:04:40.470
+there's not as much concern for
+model complexity.
+
+72
+00:04:40.470 --> 00:04:43.840
+So if you have a highly complex
+model that's not overfitting, and
+
+73
+00:04:43.840 --> 00:04:47.630
+yielding good predictions, then there's
+more of a tolerance for that in the field
+
+74
+00:04:47.630 --> 00:04:50.770
+of machine learning than there is in
+the field of traditional statistics.
+
+75
+00:04:50.770 --> 00:04:54.410
+And so, there's an emphasis in
+machine learning on performance.
+
+76
+00:04:54.410 --> 00:04:58.190
+And in less of an emphasis on
+super population models and
+
+77
+00:04:58.190 --> 00:05:01.910
+generalizability that
+occurs a lot in statistics.
+
+78
+00:05:01.910 --> 00:05:05.850
+So generalizability in machine
+learning tends to be obtained
+
+79
+00:05:05.850 --> 00:05:10.620
+by applying the algorithm on novel data
+sets where you know the outcome and
+
+80
+00:05:10.620 --> 00:05:13.560
+checking to see how good
+your predictions are.
+
+81
+00:05:13.560 --> 00:05:16.080
+Rather than on a modeling and
+
+82
+00:05:16.080 --> 00:05:20.280
+sampling assumptions that often
+occur in traditional statistics.
+
+83
+00:05:20.280 --> 00:05:25.760
+And there's of course in machine learning
+a concern over performance and robustness.
+
+84
+00:05:25.760 --> 00:05:30.740
+So in traditional statistical analysis,
+le's contrast that now, this tends
+
+85
+00:05:30.740 --> 00:05:35.110
+to emphasize not so much predictions,
+even if it's doing predictions, but
+
+86
+00:05:35.110 --> 00:05:39.980
+emphasizes predictions or models as
+they relate to some superpopulation.
+
+87
+00:05:39.980 --> 00:05:43.340
+You have a sample and you wanna
+generalize it to some superpopulation
+
+88
+00:05:44.950 --> 00:05:46.470
+that the sample was drawn from.
+
+89
+00:05:46.470 --> 00:05:49.070
+So, there's less of an emphasis
+on sampling from assumptions in
+
+90
+00:05:49.070 --> 00:05:50.380
+machine learning.
+
+91
+00:05:50.380 --> 00:05:53.620
+Traditional statistics tends to
+focus on a-priori hypotheses,
+
+92
+00:05:53.620 --> 00:05:57.920
+where things like unsupervised learning
+tend to try to generate the hypotheses.
+
+93
+00:05:57.920 --> 00:05:59.200
+Right?
+
+94
+00:05:59.200 --> 00:06:03.280
+The G factor generated this
+idea that there was intrinsic
+
+95
+00:06:03.280 --> 00:06:05.170
+variability in intelligence.
+
+96
+00:06:07.070 --> 00:06:12.013
+It tends, Traditional Statistics tends to
+focus on simpler models over complex ones,
+
+97
+00:06:12.013 --> 00:06:15.953
+and tends to put a higher penalty on
+complexity than a machine learning
+
+98
+00:06:15.953 --> 00:06:16.980
+algorithm does.
+
+99
+00:06:16.980 --> 00:06:23.450
+In fact, the idea of a model seems already
+simpler than the idea of an algorithm.
+
+100
+00:06:23.450 --> 00:06:24.570
+Right?
+
+101
+00:06:24.570 --> 00:06:28.895
+Just the words themselves they seem like
+when I give you the word algorithm it
+
+102
+00:06:28.895 --> 00:06:33.016
+conjures up an image of that's far
+more complex than the idea of a model,
+
+103
+00:06:33.016 --> 00:06:37.503
+the idea of a model is a simplified
+version of something that's complicated.
+
+104
+00:06:37.503 --> 00:06:40.162
+So there's a lot of emphasis
+on traditional statistics
+
+105
+00:06:40.162 --> 00:06:41.809
+on parameter interpretability.
+
+106
+00:06:41.809 --> 00:06:46.374
+And then an emphasis on the modeling and
+assumptions that go in to connect your
+
+107
+00:06:46.374 --> 00:06:50.041
+data to the population you're
+trying to draw inferences on.
+
+108
+00:06:50.041 --> 00:06:55.660
+And just like machine learning, there's
+concern over assumptions and robustness.
+
+109
+00:06:55.660 --> 00:06:59.470
+So those are some broad distinctions
+between machine learning and statistics,
+
+110
+00:06:59.470 --> 00:07:00.949
+though of course there's a lot of overlap.
+
+111
+00:07:02.010 --> 00:07:06.440
+Let's just give you some
+examples of problems that occur
+
+112
+00:07:06.440 --> 00:07:09.720
+where you could both approach them
+from a statistics perspective and
+
+113
+00:07:09.720 --> 00:07:12.110
+machine learning perspective and
+talk about them.
+
+114
+00:07:12.110 --> 00:07:17.422
+One of the most famous, recent machine
+learning exercises was the Netflix prize.
+
+115
+00:07:17.422 --> 00:07:22.873
+And here the goal was to predict
+movie choices from a large
+
+116
+00:07:22.873 --> 00:07:27.880
+collection of instances
+where users rated movies.
+
+117
+00:07:27.880 --> 00:07:32.737
+So you had the outcome data and you had
+a lot of data on their viewing history and
+
+118
+00:07:32.737 --> 00:07:36.500
+other things that might help
+you perform that prediction.
+
+119
+00:07:36.500 --> 00:07:40.480
+So machine learning would build
+an automated movie recommender system.
+
+120
+00:07:40.480 --> 00:07:44.070
+And success would be defined as anything
+that produces reliable predictions.
+
+121
+00:07:46.130 --> 00:07:49.570
+Statistical analysis on the other hand,
+would try to build a parsimonious and
+
+122
+00:07:49.570 --> 00:07:54.430
+interpretable model to better understand
+why people choose the movies that they do,
+
+123
+00:07:54.430 --> 00:07:56.410
+so you'd want something
+that was interpretable.
+
+124
+00:07:56.410 --> 00:08:01.945
+You'd want to understand uh-huh, this is
+the reason why this prediction works,
+
+125
+00:08:01.945 --> 00:08:05.230
+it's because of the psychology.
+
+126
+00:08:05.230 --> 00:08:08.800
+People have a tendency to like this kind
+of movie if they like this kind of movie,
+
+127
+00:08:08.800 --> 00:08:13.390
+whereas an algorithm can tend to have
+a lot more complexity built in and
+
+128
+00:08:13.390 --> 00:08:15.150
+may sacrifice some interpretability.
+
+129
+00:08:16.530 --> 00:08:20.068
+Another example that I was engaged
+in was the Heritage Health Prize.
+
+130
+00:08:20.068 --> 00:08:23.241
+In the Heritage Health Prize,
+we wanted to identify
+
+131
+00:08:23.241 --> 00:08:28.229
+the number of days that patients would
+spend in the hospital in subsequent years.
+
+132
+00:08:28.229 --> 00:08:33.158
+Given their prior year's hospitalization
+rates and a large collection
+
+133
+00:08:33.158 --> 00:08:37.844
+of their insurance claims data that
+led to their hospitalization and
+
+134
+00:08:37.844 --> 00:08:40.930
+whatever other insurance claims they have.
+
+135
+00:08:40.930 --> 00:08:44.293
+And in this case if you are doing
+a machine learning exercise,
+
+136
+00:08:44.293 --> 00:08:48.624
+which is how we approach the problem,
+we wanted to build an automated system for
+
+137
+00:08:48.624 --> 00:08:51.780
+predicting hospital stays
+from previous claims.
+
+138
+00:08:51.780 --> 00:08:52.650
+And all we want,
+
+139
+00:08:52.650 --> 00:08:56.520
+success is anything that yields
+reliable predictions for the next year.
+
+140
+00:08:56.520 --> 00:08:57.470
+So when we predict for
+
+141
+00:08:57.470 --> 00:09:01.410
+a person in the next year, how long that
+we think they're gonna be in the hospital.
+
+142
+00:09:01.410 --> 00:09:03.819
+If that's a number greater than zero,
+
+143
+00:09:03.819 --> 00:09:06.666
+we might want to do some
+sort of intervention.
+
+144
+00:09:06.666 --> 00:09:10.501
+Statistical analysis, the goal would
+be to build a parsimonious and
+
+145
+00:09:10.501 --> 00:09:15.012
+interpretal model to better understand
+why people stay in the hospital longer.
+
+146
+00:09:15.012 --> 00:09:19.786
+So success would be anything true
+that's learned about hospital stays,
+
+147
+00:09:19.786 --> 00:09:22.581
+whether or not it gives good predictions.
+
+148
+00:09:22.581 --> 00:09:28.480
+Okay, statistical analysis,you can have,
+for example, a great example of
+
+149
+00:09:29.570 --> 00:09:34.290
+statistical effect that would yield no
+significant prediction is, take for
+
+150
+00:09:34.290 --> 00:09:39.150
+example if a drug is shown to have
+a very small but positive effect for
+
+151
+00:09:39.150 --> 00:09:41.150
+reducing the symptoms
+of Alzheimer's disease.
+
+152
+00:09:41.150 --> 00:09:45.750
+That would be actually a huge success for
+the medical field.
+
+153
+00:09:45.750 --> 00:09:49.060
+But knowledge of whether, but
+the effect is very minor, but
+
+154
+00:09:49.060 --> 00:09:51.240
+statistically significant.
+
+155
+00:09:51.240 --> 00:09:52.776
+That would be a huge effect,
+
+156
+00:09:52.776 --> 00:09:56.488
+that would be a landmark study in
+the field of Alzheimer's disease.
+
+157
+00:09:56.488 --> 00:10:00.143
+But if it was a really minor
+effect knowledge of whether or
+
+158
+00:10:00.143 --> 00:10:04.638
+not someone was taking that drug
+wouldn't lead to a good prediction of
+
+159
+00:10:04.638 --> 00:10:07.475
+they're Alzheimer's disease symptoms.
+
+160
+00:10:07.475 --> 00:10:08.020
+Okay?
+
+161
+00:10:08.020 --> 00:10:12.065
+That maybe something like their age and
+other factors, their age and
+
+162
+00:10:12.065 --> 00:10:16.596
+their family history of Alzheimer's
+disease and other things maybe a better
+
+163
+00:10:16.596 --> 00:10:21.475
+predictor of the severity, of the likely
+severity of their disease than whether or
+
+164
+00:10:21.475 --> 00:10:23.382
+not they're taking this drug.
+
+165
+00:10:23.382 --> 00:10:28.818
+So that is an instance where statistical
+significance in a statistical
+
+166
+00:10:28.818 --> 00:10:34.981
+model that's important may not lead to
+an important, that important predictor
+
+167
+00:10:34.981 --> 00:10:40.710
+being something that would be important
+in machine learning algorithms.
+
+168
+00:10:40.710 --> 00:10:43.800
+So I just wanna emphasize that there's
+a big difference between these two
+
+169
+00:10:43.800 --> 00:10:46.160
+approaches even though
+there's a lot of overlap.
+
+170
+00:10:46.160 --> 00:10:49.930
+And I think the biggest difference is just
+in how you're thinking about the problem
+
+171
+00:10:49.930 --> 00:10:51.020
+and what you're concerned with.
+
+172
+00:10:52.700 --> 00:10:55.580
+The last example I'd like to
+give is kind of a relatively
+
+173
+00:10:55.580 --> 00:10:57.830
+famous one which is Google Flu Trends.
+
+174
+00:10:57.830 --> 00:11:02.520
+In this, the very clever people at Google
+tried to come up with a way to predict
+
+175
+00:11:02.520 --> 00:11:05.630
+flu cases based on
+people's search history.
+
+176
+00:11:05.630 --> 00:11:06.840
+And try to predict outbreaks.
+
+177
+00:11:06.840 --> 00:11:13.530
+So in a particular area where
+a lot of ISPs traffic is
+
+178
+00:11:13.530 --> 00:11:19.220
+relating to searches on Tamiflu that
+might suggest an outbreak in that area.
+
+179
+00:11:19.220 --> 00:11:22.665
+So success for an algorithm in this case
+would be anything that produces reliable
+
+180
+00:11:22.665 --> 00:11:23.770
+predictions.
+
+181
+00:11:23.770 --> 00:11:27.640
+And they had, for example the CDC data,
+the historical CDC data to
+
+182
+00:11:27.640 --> 00:11:31.700
+build up the predictions to try and
+predict flu outbreaks in the future.
+
+183
+00:11:31.700 --> 00:11:35.213
+I'm not so sure how this is held up but
+
+184
+00:11:35.213 --> 00:11:38.870
+nonetheless that's how you would approach
+this as a machine learning algorithm.
+
+185
+00:11:38.870 --> 00:11:41.540
+This is a very clever idea I think.
+
+186
+00:11:41.540 --> 00:11:46.260
+Statistical analysis on the other hand,
+would instead try to approach the problem
+
+187
+00:11:46.260 --> 00:11:49.530
+of trying to learn what
+predicts flu outbreaks,
+
+188
+00:11:49.530 --> 00:11:52.790
+and anything true that was
+learned about that would count.
+
+189
+00:11:52.790 --> 00:11:53.949
+Regardless of whether or
+
+190
+00:11:53.949 --> 00:11:56.495
+not it dramatically improved
+our ability to predict.
+
+191
+00:11:56.495 --> 00:12:00.778
+So, the goal would be to build
+a parsimonious and interpretal model to
+
+192
+00:12:00.778 --> 00:12:05.872
+better understand the outbreaks rather
+than to just get prediction performance.
+
+193
+00:12:05.872 --> 00:12:10.263
+So if you build a model, if you built
+a model that was simpler and led to better
+
+194
+00:12:10.263 --> 00:12:14.658
+understanding of what was going on but
+didn't leave any good predictions,
+
+195
+00:12:14.658 --> 00:12:18.249
+that would be a beneficial
+outcome in statistical analysis.
+
+196
+00:12:20.210 --> 00:12:23.480
+So some lessons learned are that both
+approaches are extremely valuable and
+
+197
+00:12:23.480 --> 00:12:25.380
+they have their place.
+
+198
+00:12:25.380 --> 00:12:28.340
+And the amount of tolerable model and
+
+199
+00:12:28.340 --> 00:12:31.800
+algorithm complexity changes
+dramatically between the approaches.
+
+200
+00:12:31.800 --> 00:12:33.860
+And their goals are often very different.
+
+201
+00:12:33.860 --> 00:12:36.970
+However, I would say this caveat
+that there's a fair amount of work
+
+202
+00:12:36.970 --> 00:12:40.370
+in making machine learning
+more interpretable.
+
+203
+00:12:40.370 --> 00:12:44.870
+And a fair amount of work can make things
+traditional statistical approaches
+
+204
+00:12:44.870 --> 00:12:46.050
+have better prediction.
+
+205
+00:12:46.050 --> 00:12:50.485
+So it does seem like both fields
+are working towards some common areas
+
+206
+00:12:50.485 --> 00:12:51.486
+in the middle.
+
+207
+00:12:51.486 --> 00:12:52.579
+In the next lecture,
+
+208
+00:12:52.579 --> 00:12:56.649
+I'm just gonna give you some examples of
+further reading that you can go into for
+
+209
+00:12:56.649 --> 00:13:00.007
+contrasting traditional statistics
+versus machine learning.
+
+210
+00:13:00.007 --> 00:13:03.000
+So, thank you for listening, and
+I'll see you in the next lecture.

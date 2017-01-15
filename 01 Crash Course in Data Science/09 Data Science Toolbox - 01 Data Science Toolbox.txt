@@ -1,0 +1,85 @@
+This lecture is about
+the data scientist's toolbox. So by the data scientist toolbox, I mean
+the collection of tools that are used to store, process, analyze and communicate
+results of data science experiments. And so the first thing that we're gonna
+talk about is where do you actually store the data? So data are typically
+stored in a database. For a smaller organization that might
+be single, small MySQL database. And for a large organization, it might be a large distributed
+database across many servers. And so I'm showing you here an example,
+the PostgreSQL database, but there are a large number of other options. The key take home message here is that in
+the database the data are are stored, and backed up. Usually, most of the analysis that takes
+place and most of the production doesn't actually happen in the database,
+it happens elsewhere. So, you usually have to pull it out
+with another programming language to pull the data out of that database and
+analyze it. So, the two most common languages for
+doing that. The first one is R Programming Language. So the R programming language is basically
+a statistical programming language that allows you to pull data out of a database,
+analyze it, and produce visualizations very quickly. This forms the basis for
+our data science specialization. The other major programming
+language that's used for this type of analysis is Python. So Python is another similar language that
+allows you to pull data out of databases, analyze and manipulate it, visualize it. And connected to downstream production. So the other thing that you need to do
+to be able to use these languages and pull them up out is actually
+some kind of servers or some kind of computers that you can
+run those programming languages on. So you have the database,
+which stores the data. And then you have the servers which you
+will use to basically analyze the data. And those servers will run the languages
+R or Python or and so forth. Here I'm showing you an example,
+Amazon Web Services. This is a set of computing resources
+that you can actually rent from Amazon. And so many organizations that do data
+signs actually just directly rent their computing resources. Rather than buy and manage their own. This is particularly true for small
+organizations that don't have a large IT budget, so they would actually go out and
+just rent their competing resources, that then they would be able
+to use to analyze data. Once you've actually done some low-level
+analysis and maybe made some discoveries or done some experiments, and decided
+actually how you're gonna use data to make decisions for your organization
+you might want to scale those up. So there's a large number of sort of
+analysis tools that can be used to provide more scalables analysis of data
+sets, whether that's in a database or by pulling the data out of the database. So two of the most popular right
+now are the Hadoop framework and the Spark framework. And both of these are basically ways to
+analyze, at a very large scale, data sets. Now you can do interactive analysis with
+both of these, particularly with Spark. But it's a little bit more complicated. It's a little bit more expensive, especially if you're applying
+it to large sets of data. So it's very typical in the data
+science process to take the database, pull out a small sub sample of the data,
+process it and analyse it in R or Python and then go back to the engineering
+team and scale it back up with Hadoop, or Spark, or other tools like that. So the next tool that is in the data scientist toolbox
+is actually communication. A data scientist or
+a data engineer has a job that's typically changing quite rapidly as new packages and
+new sort of tools become available, and so the quickest way to keep them up to
+speed is to have quick communication and to have an open channel of communication. So a lot of data science teams use tools
+like Slack to communicate with each other, to basically be able to post new results,
+new ideas. Be able to communicate about what
+the latest packages are available. And then data scientists are frequently
+going to the internet to search for how do I this really,
+what seems like a very simple task, how do I match IDs together
+from two different log files. That might not be something that they know
+how to do, but there are a large number of sort of help websites like Stack Overflow,
+that allow people go out and sort of search for
+the questions that they need to answer. Even if there quite technical, and quite
+detailing, get answers relatively quickly. And that allows people to sort
+of keep the process moving, even though the technology
+is changing quite rapidly. Once the analysis is done,
+and complete, and you sort of want to share it with
+other people in your organization, you need to do that with sort of
+reproducible or literate documentation. What does that mean? It basically means a way to
+integrate the analysis code and the figures and the plots that have
+been created by the data scientist with sort of plain text that can be
+used to explain what's going on. One example is the R Markdown framework. Another example is iPython notebooks. These are ways to sort of make
+your analysis reproducible and make it possible that if one data
+scientist runs an analysis and they want to hand it off to someone else,
+they'll be able to easily do that. You also need to be able to visualize
+often the results of the data science experiment. So the end product is often some
+kind of data visualization or interactive data experience. And there are a large number of tools that
+are available to build those sorts of interactive experiences and
+visualizations. Because at the end user of a data
+science product is very often not a data scientist themselves. It's often a manager or
+an executive who needs to handle that data understand what's happening with it and
+make a decision. So, there's a large number of tools. I'm showing one here, Shiny, which is a way to build quickly
+data products that you can share with people who don't necessarily have
+a lot of data science experience. And then finally, most of the time
+when you do a science data experiment, you don't do it in isolation. You wanna communicate your
+results to other people. So, people frequently make data
+presentations whether that's the data science manager, the data engineer, or the
+data scientist themselves, that actually explains, how did they actually
+perform that data science experiment. What are the techniques that they use,
+what are the caveats, and how can it be applied to the data to
+make a decision like you'd like to?

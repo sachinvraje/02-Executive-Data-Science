@@ -1,0 +1,44 @@
+So what if you want to read a little more
+about the discussion of the differences between machinery and
+traditional statistics. Well I'm gonna give you a couple of
+articles that you can go get and read. One is a blog post by Larry Wasserman,
+he's a very well known statistician. And he wrote a blog post if you search,
+called the Rise of the Machines. It's a very good treatment
+of the distinction, and maybe a little bit of a rallying cry, to the statistical community to embrace
+machine learning a little bit better. There was this very
+celebrated statistician, who sadly past away, named Leo Breiman. And he wrote a tremendously
+well-received paper called Statistical Modeling: The Two Cultures,
+and much of my thinking really
+derives from this paper. It's very accessible, it's in
+the Journal of Statistical Science. And I would say his approach is quite
+critical of traditional statistics, or at least suggesting that traditional
+statistics is lagging behind. I give you this quote here where he says,
+in this paper I will argue that the focus of the statistical community on data
+models has led to irrelevant theory, kept statisticians from using
+more suitable algorithmic models, and prevented statisticians from
+working on exciting new problems. So he kinda takes his own
+community to task quite a bit, it's a very entertaining article. And it's not quite as dry and academic as most statistical
+research papers. And I just brought out this wonderful quote that really stuck
+with me from DR Cox. DR Cox is another tremendously
+celebrated statistician. His Cox Proportional Hazards Model
+is easily one of the top five most-cited statistical papers. And Dr. Cox was one of
+the discussants of the paper, and this quote really stuck with me. Where he said, Professor Breiman
+takes data as his starting point, I would prefer to start with an issue,
+a question or a scientific hypothesis, although I would be surprised if this
+were a real source of disagreement. But I really like this comment because
+I do think that really does get at, to me I think of the things that I have the
+most trouble with, with machine learning. It's when you're having to both derive and interrogate the hypothesis
+with the same set of data. I think to me that's
+the hardest pill to swallow. And then, the final article that you
+might be interested in looking at was an article by David Hand,
+another great statistician. And he says, Classifier technology and
+the Illusion of Progress. So, this one's a little bit more critical
+of the machine learning approach and I'll give you a quote from this. It says, so that the apparent superiority of more sophisticated
+methods may be something of an illusion. In particular, simple methods typically
+yield performance almost as good as more sophisticated methods, to the
+extent that the difference in performance may be swamped by other sources
+of uncertainty that generally are not considered in the classical
+supervised classification paradigm. So he's basically saying the effort
+of building a complicated machine learning algorithm
+is often not worth it. The increasing complexity
+leads to marginal gains, is one of the points that he's making.

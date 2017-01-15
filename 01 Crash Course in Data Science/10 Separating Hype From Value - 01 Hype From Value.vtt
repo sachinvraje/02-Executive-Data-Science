@@ -1,0 +1,316 @@
+WEBVTT
+
+1
+00:00:03.348 --> 00:00:05.580
+You've probably heard a lot
+about data science and big data.
+
+2
+00:00:05.580 --> 00:00:08.140
+And there's been a lot of
+hype around these areas.
+
+3
+00:00:08.140 --> 00:00:11.830
+And so I think what that's done, is it's
+sort of inflated expectations about what
+
+4
+00:00:11.830 --> 00:00:14.350
+a data science and
+data can actually accomplish.
+
+5
+00:00:14.350 --> 00:00:16.560
+And I think overall that's
+just been a net negative for
+
+6
+00:00:16.560 --> 00:00:18.720
+the field of data science and
+for big data.
+
+7
+00:00:18.720 --> 00:00:21.880
+So I wanted to talk a little bit about
+what is the way what are the questions you
+
+8
+00:00:21.880 --> 00:00:26.060
+can ask to separate data science
+hype from data science hope and
+
+9
+00:00:26.060 --> 00:00:29.790
+so if you look at this sort of the hype
+curve the traditional hype curve that
+
+10
+00:00:29.790 --> 00:00:33.755
+people talk about I think that we've
+seen a lot about inflated expectations.
+
+11
+00:00:33.755 --> 00:00:37.275
+And we're sort of just now coming out
+into this sort of productive plateau,
+
+12
+00:00:37.275 --> 00:00:39.135
+where people actually know
+what to do with data.
+
+13
+00:00:39.135 --> 00:00:40.505
+They know how to data science.
+
+14
+00:00:40.505 --> 00:00:43.365
+So it's a perfect time to start,
+you know, managing those teams.
+
+15
+00:00:43.365 --> 00:00:47.445
+And managing expectations in a way
+that's really clear, and really focused.
+
+16
+00:00:47.445 --> 00:00:51.995
+So the first question you need to ask
+yourself, is what problem have you solved
+
+17
+00:00:51.995 --> 00:00:56.740
+ever that was worth solving where you knew
+all of the given information in advance?
+
+18
+00:00:56.740 --> 00:00:59.980
+Where you didn't have a surplus of
+information and have to filter some of it
+
+19
+00:00:59.980 --> 00:01:03.230
+out, or you didn't have insufficient
+information and have to go find some?
+
+20
+00:01:03.230 --> 00:01:04.330
+And so that's kind of the key.
+
+21
+00:01:04.330 --> 00:01:05.550
+That's at the heart of data science.
+
+22
+00:01:05.550 --> 00:01:09.320
+That's actually a quote from Dan Meyer who
+was talking about mathematics education.
+
+23
+00:01:09.320 --> 00:01:10.910
+But it's also at the heart
+of data science.
+
+24
+00:01:10.910 --> 00:01:15.790
+It's basically trying to decide what
+information do you have, is it useful, and
+
+25
+00:01:15.790 --> 00:01:18.930
+then what information do you need and
+can you get it?
+
+26
+00:01:18.930 --> 00:01:20.340
+So the first question is,
+
+27
+00:01:20.340 --> 00:01:23.280
+what is the question you are trying
+to answer with the data?
+
+28
+00:01:23.280 --> 00:01:25.770
+So if someone comes to talk to
+you about a big data project, or
+
+29
+00:01:25.770 --> 00:01:28.860
+a data science project, and
+they start talking about the hottest new
+
+30
+00:01:28.860 --> 00:01:32.340
+cool technology they can use to
+do distributed computing, and
+
+31
+00:01:32.340 --> 00:01:35.960
+analyze data with machine learning and
+they throw a bunch of buzz words at you.
+
+32
+00:01:35.960 --> 00:01:38.960
+The very first question you should ask
+is what is the question you're trying to
+
+33
+00:01:38.960 --> 00:01:40.010
+answer with data.
+
+34
+00:01:40.010 --> 00:01:42.050
+Because that really narrows
+the question down and
+
+35
+00:01:42.050 --> 00:01:45.440
+it filters out a lot of the hype around
+what tools and technologies people
+
+36
+00:01:45.440 --> 00:01:48.310
+are using which can often be very
+interesting, fun to talk about.
+
+37
+00:01:48.310 --> 00:01:49.980
+I like to talk about them too but
+
+38
+00:01:49.980 --> 00:01:52.379
+they're not really gonna add
+value to your organization.
+
+39
+00:01:53.430 --> 00:01:54.950
+The second question to ask is,
+
+40
+00:01:54.950 --> 00:01:57.560
+once you've identified what that question
+is you're trying to answer with the data.
+
+41
+00:01:57.560 --> 00:01:59.190
+And this is the really hard one,
+
+42
+00:01:59.190 --> 00:02:02.350
+is, do you have the data to
+actually answer that question?
+
+43
+00:02:02.350 --> 00:02:05.560
+So often the question that you wanna
+answer and the data that you have to
+
+44
+00:02:05.560 --> 00:02:09.080
+answer it with are not actually
+very compatible with each other.
+
+45
+00:02:09.080 --> 00:02:12.380
+And so the first question you have to
+kinda have to ask yourself is can we get
+
+46
+00:02:12.380 --> 00:02:16.670
+the data in a shape, where we can actually
+answer the question we want to answer?
+
+47
+00:02:16.670 --> 00:02:20.440
+And sometimes the answer is just no, in
+which case, you kind of have to give up.
+
+48
+00:02:20.440 --> 00:02:25.950
+So, if you want to decide on whether
+a project is hype or whether it's reality,
+
+49
+00:02:25.950 --> 00:02:29.880
+you need to decide, is the data the people
+are trying to use actually relevant for
+
+50
+00:02:29.880 --> 00:02:32.300
+the question they are trying to answer and
+then,
+
+51
+00:02:32.300 --> 00:02:34.760
+the third thing you need to answer is.
+
+52
+00:02:34.760 --> 00:02:37.250
+If you could answer the question
+with the data you have,
+
+53
+00:02:37.250 --> 00:02:40.590
+suppose that you could perfectly answer,
+you knew that you could do that,
+
+54
+00:02:40.590 --> 00:02:43.990
+the question is, could you even use
+the answer that you've collected?
+
+55
+00:02:43.990 --> 00:02:48.920
+So this goes back to that idea from the
+Netflix prize where there was a solution
+
+56
+00:02:48.920 --> 00:02:52.160
+to the problem of predicting which
+videos people would like to watch.
+
+57
+00:02:52.160 --> 00:02:54.240
+And it was a very very good solution.
+
+58
+00:02:54.240 --> 00:02:57.330
+But it wasn't a solution that could be
+implemented with the computing resources
+
+59
+00:02:57.330 --> 00:03:00.270
+that Netflix had in a way that was
+sort of financially expedient.
+
+60
+00:03:00.270 --> 00:03:03.020
+Even though they could
+answer the question,
+
+61
+00:03:03.020 --> 00:03:06.320
+even though they did have the right data,
+even though they were answering a specific
+
+62
+00:03:06.320 --> 00:03:10.040
+question, they couldn't actually apply
+the results of what they figured out.
+
+63
+00:03:10.040 --> 00:03:13.600
+So if you ask these three questions,
+you can very quickly decipher whether
+
+64
+00:03:13.600 --> 00:03:16.460
+a data science project is about hype or
+whether it's
+
+65
+00:03:16.460 --> 00:03:19.800
+about a real contribution that can
+really move your organisation forward.

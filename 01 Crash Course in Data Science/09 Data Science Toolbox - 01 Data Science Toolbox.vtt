@@ -1,0 +1,529 @@
+WEBVTT
+
+1
+00:00:03.662 --> 00:00:06.250
+This lecture is about
+the data scientist's toolbox.
+
+2
+00:00:06.250 --> 00:00:09.950
+So by the data scientist toolbox, I mean
+the collection of tools that are used
+
+3
+00:00:09.950 --> 00:00:15.230
+to store, process, analyze and communicate
+results of data science experiments.
+
+4
+00:00:15.230 --> 00:00:17.450
+And so the first thing that we're gonna
+talk about is where do you actually
+
+5
+00:00:17.450 --> 00:00:18.730
+store the data?
+
+6
+00:00:18.730 --> 00:00:20.670
+So data are typically
+stored in a database.
+
+7
+00:00:20.670 --> 00:00:24.550
+For a smaller organization that might
+be single, small MySQL database.
+
+8
+00:00:24.550 --> 00:00:25.760
+And for a large organization,
+
+9
+00:00:25.760 --> 00:00:29.280
+it might be a large distributed
+database across many servers.
+
+10
+00:00:29.280 --> 00:00:32.020
+And so I'm showing you here an example,
+the PostgreSQL database, but
+
+11
+00:00:32.020 --> 00:00:34.410
+there are a large number of other options.
+
+12
+00:00:34.410 --> 00:00:38.155
+The key take home message here is that in
+the database the data are are stored, and
+
+13
+00:00:38.155 --> 00:00:39.055
+backed up.
+
+14
+00:00:39.055 --> 00:00:42.425
+Usually, most of the analysis that takes
+place and most of the production doesn't
+
+15
+00:00:42.425 --> 00:00:44.605
+actually happen in the database,
+it happens elsewhere.
+
+16
+00:00:44.605 --> 00:00:47.525
+So, you usually have to pull it out
+with another programming language to
+
+17
+00:00:47.525 --> 00:00:50.375
+pull the data out of that database and
+analyze it.
+
+18
+00:00:50.375 --> 00:00:52.195
+So, the two most common languages for
+doing that.
+
+19
+00:00:52.195 --> 00:00:54.570
+The first one is R Programming Language.
+
+20
+00:00:54.570 --> 00:00:58.470
+So the R programming language is basically
+a statistical programming language that
+
+21
+00:00:58.470 --> 00:01:01.490
+allows you to pull data out of a database,
+analyze it, and
+
+22
+00:01:01.490 --> 00:01:03.550
+produce visualizations very quickly.
+
+23
+00:01:03.550 --> 00:01:06.730
+This forms the basis for
+our data science specialization.
+
+24
+00:01:06.730 --> 00:01:09.740
+The other major programming
+language that's used for
+
+25
+00:01:09.740 --> 00:01:11.780
+this type of analysis is Python.
+
+26
+00:01:11.780 --> 00:01:15.490
+So Python is another similar language that
+allows you to pull data out of databases,
+
+27
+00:01:15.490 --> 00:01:17.730
+analyze and manipulate it, visualize it.
+
+28
+00:01:17.730 --> 00:01:21.240
+And connected to downstream production.
+
+29
+00:01:21.240 --> 00:01:24.040
+So the other thing that you need to do
+to be able to use these languages and
+
+30
+00:01:24.040 --> 00:01:26.930
+pull them up out is actually
+some kind of servers or
+
+31
+00:01:26.930 --> 00:01:30.020
+some kind of computers that you can
+run those programming languages on.
+
+32
+00:01:30.020 --> 00:01:32.230
+So you have the database,
+which stores the data.
+
+33
+00:01:32.230 --> 00:01:36.320
+And then you have the servers which you
+will use to basically analyze the data.
+
+34
+00:01:36.320 --> 00:01:40.880
+And those servers will run the languages
+R or Python or and so forth.
+
+35
+00:01:40.880 --> 00:01:43.550
+Here I'm showing you an example,
+Amazon Web Services.
+
+36
+00:01:43.550 --> 00:01:47.400
+This is a set of computing resources
+that you can actually rent from Amazon.
+
+37
+00:01:47.400 --> 00:01:51.210
+And so many organizations that do data
+signs actually just directly rent
+
+38
+00:01:51.210 --> 00:01:52.770
+their computing resources.
+
+39
+00:01:52.770 --> 00:01:54.370
+Rather than buy and manage their own.
+
+40
+00:01:54.370 --> 00:01:58.030
+This is particularly true for small
+organizations that don't have a large IT
+
+41
+00:01:58.030 --> 00:02:01.910
+budget, so they would actually go out and
+just rent their competing resources,
+
+42
+00:02:01.910 --> 00:02:04.000
+that then they would be able
+to use to analyze data.
+
+43
+00:02:05.010 --> 00:02:08.370
+Once you've actually done some low-level
+analysis and maybe made some discoveries
+
+44
+00:02:08.370 --> 00:02:11.990
+or done some experiments, and decided
+actually how you're gonna use data to
+
+45
+00:02:11.990 --> 00:02:15.780
+make decisions for your organization
+you might want to scale those up.
+
+46
+00:02:15.780 --> 00:02:19.380
+So there's a large number of sort of
+analysis tools that can be used to
+
+47
+00:02:19.380 --> 00:02:24.140
+provide more scalables analysis of data
+sets, whether that's in a database or
+
+48
+00:02:24.140 --> 00:02:26.050
+by pulling the data out of the database.
+
+49
+00:02:26.050 --> 00:02:29.115
+So two of the most popular right
+now are the Hadoop framework and
+
+50
+00:02:29.115 --> 00:02:30.435
+the Spark framework.
+
+51
+00:02:30.435 --> 00:02:36.275
+And both of these are basically ways to
+analyze, at a very large scale, data sets.
+
+52
+00:02:36.275 --> 00:02:40.565
+Now you can do interactive analysis with
+both of these, particularly with Spark.
+
+53
+00:02:40.565 --> 00:02:42.025
+But it's a little bit more complicated.
+
+54
+00:02:42.025 --> 00:02:43.245
+It's a little bit more expensive,
+
+55
+00:02:43.245 --> 00:02:45.780
+especially if you're applying
+it to large sets of data.
+
+56
+00:02:45.780 --> 00:02:49.360
+So it's very typical in the data
+science process to take the database,
+
+57
+00:02:49.360 --> 00:02:53.490
+pull out a small sub sample of the data,
+process it and analyse it in R or
+
+58
+00:02:53.490 --> 00:02:57.890
+Python and then go back to the engineering
+team and scale it back up with Hadoop, or
+
+59
+00:02:57.890 --> 00:02:59.250
+Spark, or other tools like that.
+
+60
+00:02:59.250 --> 00:03:02.060
+So the next tool that
+
+61
+00:03:02.060 --> 00:03:05.580
+is in the data scientist toolbox
+is actually communication.
+
+62
+00:03:05.580 --> 00:03:09.026
+A data scientist or
+a data engineer has a job that's typically
+
+63
+00:03:09.026 --> 00:03:13.796
+changing quite rapidly as new packages and
+new sort of tools become available, and so
+
+64
+00:03:13.796 --> 00:03:17.902
+the quickest way to keep them up to
+speed is to have quick communication and
+
+65
+00:03:17.902 --> 00:03:20.309
+to have an open channel of communication.
+
+66
+00:03:20.309 --> 00:03:24.741
+So a lot of data science teams use tools
+like Slack to communicate with each other,
+
+67
+00:03:24.741 --> 00:03:27.860
+to basically be able to post new results,
+new ideas.
+
+68
+00:03:27.860 --> 00:03:31.460
+Be able to communicate about what
+the latest packages are available.
+
+69
+00:03:31.460 --> 00:03:35.260
+And then data scientists are frequently
+going to the internet to search for
+
+70
+00:03:35.260 --> 00:03:38.890
+how do I this really,
+what seems like a very simple task,
+
+71
+00:03:38.890 --> 00:03:42.020
+how do I match IDs together
+from two different log files.
+
+72
+00:03:42.020 --> 00:03:45.190
+That might not be something that they know
+how to do, but there are a large number of
+
+73
+00:03:45.190 --> 00:03:48.930
+sort of help websites like Stack Overflow,
+that allow people go out and
+
+74
+00:03:48.930 --> 00:03:51.180
+sort of search for
+the questions that they need to answer.
+
+75
+00:03:51.180 --> 00:03:54.820
+Even if there quite technical, and quite
+detailing, get answers relatively quickly.
+
+76
+00:03:54.820 --> 00:03:57.950
+And that allows people to sort
+of keep the process moving,
+
+77
+00:03:57.950 --> 00:04:00.230
+even though the technology
+is changing quite rapidly.
+
+78
+00:04:01.320 --> 00:04:03.230
+Once the analysis is done,
+and complete, and
+
+79
+00:04:03.230 --> 00:04:06.290
+you sort of want to share it with
+other people in your organization,
+
+80
+00:04:06.290 --> 00:04:09.650
+you need to do that with sort of
+reproducible or literate documentation.
+
+81
+00:04:09.650 --> 00:04:10.590
+What does that mean?
+
+82
+00:04:10.590 --> 00:04:13.970
+It basically means a way to
+integrate the analysis code and
+
+83
+00:04:13.970 --> 00:04:17.950
+the figures and the plots that have
+been created by the data scientist
+
+84
+00:04:17.950 --> 00:04:21.110
+with sort of plain text that can be
+used to explain what's going on.
+
+85
+00:04:21.110 --> 00:04:23.430
+One example is the R Markdown framework.
+
+86
+00:04:23.430 --> 00:04:25.300
+Another example is iPython notebooks.
+
+87
+00:04:25.300 --> 00:04:27.670
+These are ways to sort of make
+your analysis reproducible and
+
+88
+00:04:27.670 --> 00:04:31.450
+make it possible that if one data
+scientist runs an analysis and
+
+89
+00:04:31.450 --> 00:04:34.850
+they want to hand it off to someone else,
+they'll be able to easily do that.
+
+90
+00:04:36.220 --> 00:04:39.190
+You also need to be able to visualize
+often the results of the data
+
+91
+00:04:39.190 --> 00:04:40.020
+science experiment.
+
+92
+00:04:40.020 --> 00:04:43.920
+So the end product is often some
+kind of data visualization or
+
+93
+00:04:43.920 --> 00:04:45.700
+interactive data experience.
+
+94
+00:04:45.700 --> 00:04:48.580
+And there are a large number of tools that
+are available to build those sorts of
+
+95
+00:04:48.580 --> 00:04:51.040
+interactive experiences and
+visualizations.
+
+96
+00:04:51.040 --> 00:04:54.310
+Because at the end user of a data
+science product is very often
+
+97
+00:04:54.310 --> 00:04:55.830
+not a data scientist themselves.
+
+98
+00:04:55.830 --> 00:05:00.440
+It's often a manager or
+an executive who needs to handle that data
+
+99
+00:05:00.440 --> 00:05:02.970
+understand what's happening with it and
+make a decision.
+
+100
+00:05:02.970 --> 00:05:03.950
+So, there's a large number of tools.
+
+101
+00:05:03.950 --> 00:05:05.330
+I'm showing one here, Shiny,
+
+102
+00:05:05.330 --> 00:05:08.220
+which is a way to build quickly
+data products that you can share
+
+103
+00:05:08.220 --> 00:05:11.070
+with people who don't necessarily have
+a lot of data science experience.
+
+104
+00:05:12.090 --> 00:05:15.605
+And then finally, most of the time
+when you do a science data experiment,
+
+105
+00:05:15.605 --> 00:05:17.090
+you don't do it in isolation.
+
+106
+00:05:17.090 --> 00:05:19.250
+You wanna communicate your
+results to other people.
+
+107
+00:05:19.250 --> 00:05:23.100
+So, people frequently make data
+presentations whether that's the data
+
+108
+00:05:23.100 --> 00:05:27.310
+science manager, the data engineer, or the
+data scientist themselves, that actually
+
+109
+00:05:27.310 --> 00:05:30.150
+explains, how did they actually
+perform that data science experiment.
+
+110
+00:05:30.150 --> 00:05:33.180
+What are the techniques that they use,
+what are the caveats, and
+
+111
+00:05:33.180 --> 00:05:36.110
+how can it be applied to the data to
+make a decision like you'd like to?

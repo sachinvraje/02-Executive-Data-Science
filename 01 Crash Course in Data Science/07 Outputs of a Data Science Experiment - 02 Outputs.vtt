@@ -1,0 +1,450 @@
+WEBVTT
+
+1
+00:00:00.130 --> 00:00:04.050
+Hi, this is a brief lecture about
+the outputs of a data science experiment.
+
+2
+00:00:05.620 --> 00:00:08.980
+So some of the most common forms of
+output from a data science experiment
+
+3
+00:00:08.980 --> 00:00:13.210
+include reports, presentations,
+interactive web pages and apps.
+
+4
+00:00:14.360 --> 00:00:18.860
+For me probably the most common
+output from a data science experiment
+
+5
+00:00:18.860 --> 00:00:22.810
+is a report, and so, let's for
+each of these things,
+
+6
+00:00:22.810 --> 00:00:27.720
+talk about the hallmarks of good
+output from a data science experiment.
+
+7
+00:00:27.720 --> 00:00:31.670
+So let's focus on reports first.
+
+8
+00:00:31.670 --> 00:00:33.748
+Ideally reports should be clearly written,
+
+9
+00:00:33.748 --> 00:00:36.049
+they should involve
+a narrative around the data.
+
+10
+00:00:36.049 --> 00:00:40.254
+A narrative that goes from the data
+creation to the analysis to clear
+
+11
+00:00:40.254 --> 00:00:45.290
+conclusions, or if there aren't clear
+conclusions, a discussion of why not.
+
+12
+00:00:45.290 --> 00:00:50.021
+So the conclusions should be concise,
+and any un-details, or
+
+13
+00:00:50.021 --> 00:00:55.112
+side bars should be left to a minimum,
+so omit unnecessary details.
+
+14
+00:00:55.112 --> 00:00:58.647
+I think this is probably one of
+the biggest issues with a lot
+
+15
+00:00:58.647 --> 00:01:00.243
+of the reports that I see.
+
+16
+00:01:00.243 --> 00:01:04.935
+But one thing again, in your domain,
+how and what is done for
+
+17
+00:01:04.935 --> 00:01:09.811
+reports, there's going to be a lot of,
+kind of terms of art and
+
+18
+00:01:09.811 --> 00:01:12.572
+specifics of the art for your case.
+
+19
+00:01:12.572 --> 00:01:15.704
+One thing that we'd like to harp on is
+something that's common across most
+
+20
+00:01:15.704 --> 00:01:18.449
+settings, is the idea that
+the reports should be reproducible.
+
+21
+00:01:19.530 --> 00:01:23.740
+The idea of reproducibility, is that
+if someone goes back to the report,
+
+22
+00:01:23.740 --> 00:01:28.340
+the report and the analysis,
+the code that creates the analysis and
+
+23
+00:01:28.340 --> 00:01:32.000
+the data can be embedded
+in one single document.
+
+24
+00:01:32.000 --> 00:01:35.860
+And this document will help so that if
+someone tries to reproduce the report two
+
+25
+00:01:35.860 --> 00:01:38.970
+months later, say with the same
+starting data set, they should
+
+26
+00:01:38.970 --> 00:01:43.380
+get the same numbers, and these tools
+will help ensure that can happen.
+
+27
+00:01:43.380 --> 00:01:47.695
+And some of the tools like Ipiecon
+notebooks in Nitter and R,
+
+28
+00:01:47.695 --> 00:01:52.349
+are available so that you can help
+the people that you manage try to
+
+29
+00:01:52.349 --> 00:01:54.733
+produce reproducible reports.
+
+30
+00:01:54.733 --> 00:01:58.969
+In addition, there's a lot of
+benefits to reproducible reports,
+
+31
+00:01:58.969 --> 00:02:04.321
+such as the documents tend to document the
+code very well because the documentation,
+
+32
+00:02:04.321 --> 00:02:08.734
+the report itself and the analysis
+are embedded in the same document.
+
+33
+00:02:08.734 --> 00:02:10.251
+It helps people think about the analysis,
+
+34
+00:02:10.251 --> 00:02:13.123
+because they're thinking about the report
+while they're doing the analysis.
+
+35
+00:02:13.123 --> 00:02:18.922
+So, there's quite a few benefits
+to using some of these tools for
+
+36
+00:02:18.922 --> 00:02:21.249
+reproducible research.
+
+37
+00:02:21.249 --> 00:02:25.522
+The same set of criteria should
+also go for presentations as well.
+
+38
+00:02:25.522 --> 00:02:29.802
+Presentations should be clear, they should
+involve a narrative around the data,
+
+39
+00:02:29.802 --> 00:02:34.324
+they should have concise conclusions, and
+they should omit unnecessary details, and
+
+40
+00:02:34.324 --> 00:02:38.357
+maybe less well known is that there's
+a lot of tools for reproducibility, for
+
+41
+00:02:38.357 --> 00:02:40.893
+presentations just like there are for
+reports.
+
+42
+00:02:40.893 --> 00:02:45.002
+I'm thinking in specifics of
+Slidefy in our studio's presenter,
+
+43
+00:02:45.002 --> 00:02:49.253
+and some of these tools that make
+very beautiful, nice presentations
+
+44
+00:02:49.253 --> 00:02:54.243
+that similarly embed the analysis and
+the presentations into a single document.
+
+45
+00:02:54.243 --> 00:02:58.732
+And in addition to reproducibility,
+just like with reports,
+
+46
+00:02:58.732 --> 00:03:04.406
+these have many side benefits of helping
+how you think about the presentation,
+
+47
+00:03:04.406 --> 00:03:10.690
+and archival purposes, many other benefits
+to this style of creating presentations.
+
+48
+00:03:10.690 --> 00:03:14.090
+It hasn't caught on that much,
+not anywhere near as much as the report
+
+49
+00:03:14.090 --> 00:03:16.629
+writing has, but
+still it has many benefits.
+
+50
+00:03:18.410 --> 00:03:23.390
+So, I'm gonna lump web pages and apps
+together as a single thing to talk about,
+
+51
+00:03:23.390 --> 00:03:25.970
+cuz I think you could make a fairly
+
+52
+00:03:25.970 --> 00:03:28.890
+easy case that an interactive web
+page is just an app of a form.
+
+53
+00:03:30.380 --> 00:03:36.090
+And these should be easy to use, they
+should have help pages or documentation,
+
+54
+00:03:36.090 --> 00:03:39.860
+and some things that we're gonna talk
+a lot about in the specialization of it.
+
+55
+00:03:39.860 --> 00:03:44.330
+The code should be documented well,
+so that when you manage someone and
+
+56
+00:03:44.330 --> 00:03:49.810
+they leave and someone else comes
+later on to maintain the app or
+
+57
+00:03:49.810 --> 00:03:53.110
+the web page, they'll know how to do it.
+
+58
+00:03:53.110 --> 00:03:58.363
+They'll come in later, or even if
+the person who's doing it puts it down for
+
+59
+00:03:58.363 --> 00:04:01.071
+several months and has to go back to it,
+
+60
+00:04:01.071 --> 00:04:05.526
+having good documentation is going
+to help them do that better.
+
+61
+00:04:05.526 --> 00:04:10.487
+The second thing that we harp on a lot in
+this specialization is that code should
+
+62
+00:04:10.487 --> 00:04:14.468
+be version controlled, and
+the tools like Git and GitHub, and
+
+63
+00:04:14.468 --> 00:04:19.829
+other tools like Subversion are available
+now, to make version control very easy.
+
+64
+00:04:19.829 --> 00:04:25.614
+So, we think part of best practices
+should be executing a culture
+
+65
+00:04:25.614 --> 00:04:31.833
+of version control and reproducibility
+in your management process.
+
+66
+00:04:31.833 --> 00:04:36.057
+Let me just go through an app here,
+my former master student John Buscheli,
+
+67
+00:04:36.057 --> 00:04:41.260
+who's now a PHd student in the department
+working with chip ground created in China.
+
+68
+00:04:41.260 --> 00:04:43.780
+He created this great app for the ENAR,
+
+69
+00:04:43.780 --> 00:04:48.800
+the Eastern North American Regional bio
+statistics, bio metrics conference.
+
+70
+00:04:48.800 --> 00:04:53.610
+Where they didn't have a, they didn't
+have a website or an interactive website,
+
+71
+00:04:53.610 --> 00:04:58.530
+so he scraped the PDF with a program and
+created this website, but it's very easy
+
+72
+00:04:58.530 --> 00:05:03.430
+to use, the fields are all somewhat
+obvious, and there's a very clean design.
+
+73
+00:05:03.430 --> 00:05:07.740
+Again, he's not gonna win any awards for
+this, but it was highly useful for
+
+74
+00:05:07.740 --> 00:05:10.140
+the collection of people at ENAR, and
+
+75
+00:05:10.140 --> 00:05:12.799
+I think they try to contact
+him every year to do it again.
+
+76
+00:05:14.470 --> 00:05:18.300
+Here's another great app that occurred
+in the data products class, and
+
+77
+00:05:18.300 --> 00:05:21.560
+I want to kinda harp on one
+specific part of this app.
+
+78
+00:05:21.560 --> 00:05:24.280
+This was created by Alex Lem, and
+
+79
+00:05:24.280 --> 00:05:27.840
+this is an app that maps
+the Syrian refugee crisis.
+
+80
+00:05:27.840 --> 00:05:29.990
+You click on a component of the map, and
+
+81
+00:05:29.990 --> 00:05:33.720
+then it gives you some demographic
+information about the refugees, and
+
+82
+00:05:33.720 --> 00:05:39.420
+this was well and beyond I think what was
+required for the data products class.
+
+83
+00:05:39.420 --> 00:05:41.420
+So, he really did a nice job with this and
+
+84
+00:05:41.420 --> 00:05:44.390
+you can see it's a very
+beautiful web page.
+
+85
+00:05:45.510 --> 00:05:49.310
+But more than anything, he created some,
+he was very considerate to the users
+
+86
+00:05:49.310 --> 00:05:53.119
+by creating some very nice instructions
+and a manual over here to the side.
+
+87
+00:05:54.690 --> 00:05:55.460
+It's easy to use, but
+
+88
+00:05:55.460 --> 00:05:59.200
+more importantly, it's very well
+documented exactly how to use the app.
+
+89
+00:06:00.540 --> 00:06:03.780
+So I hope in this lecture you got
+a little bit of a sense of the kinds
+
+90
+00:06:03.780 --> 00:06:08.235
+of things that could be output from
+a data science experiment, the sort of,
+
+91
+00:06:08.235 --> 00:06:12.155
+we like to call them data products that
+could result, and maybe some insights, at
+
+92
+00:06:12.155 --> 00:06:16.445
+least some of the insights that we have,
+about what make for good data products.
+
+93
+00:06:16.445 --> 00:06:18.735
+Thanks again and
+we'll see you in the rest of the class.

@@ -1,0 +1,93 @@
+This lecture talks about software
+engineering and what it means for data science. For data scientists, software is the generalization of
+a specific aspect of a data analysis. So if specific parts of a data
+analysis may require implementing or applying a number of procedures or
+tools together. Software is the encompassing of all
+these tools into a specific module or procedure that can be repeatedly
+applied in a variety of settings. So software allows for the systematizing
+and the standardizing of a procedure, so that different people can use it and understand what it's gonna do,
+at any given time. What software is useful for, is that it formalizes and abstracts the
+functionality of a set of procedures or tools, by developing a well
+defined interface to the analysis. So the software will have an interface,
+or a set of inputs and a set of outputs that are well understood. And people can understand the inputs and
+the outputs without having to worry about the gory
+details of what's going on underneath. Now they may be interested
+in those details, but the application of the software
+at any given setting will not necessarily depend on
+the knowledge of those details. Rather the knowledge of the interface
+to that software is important to using it in any given situation. So for example, most statistical
+packages will have a linear regression, a function which has a very well
+defined interface, usually. For example, you'll have to input
+things like the outcome and the set of predictors, and maybe there will be some
+other inputs like the data set or weights. But most linear regression
+functions kind of work in that way. And importantly the user does not
+have to know exactly how the linear regression calculation is
+done underneath the hood. Rather, they only need to know that
+they need to specify the outcome, the predictors, and
+a couple of other things. And so the linear regression
+function abstracts all the details that go on underneath, that are required
+to implement linear regression, so that the user can apply the tool
+in a variety of settings. So there are basically three kind of
+levels of software that I can think about, going from kind of the simplest
+to the most abstract. And so at the first level you might just
+have some code that you wrote, and so this is really the first step towards
+encapsulating automation of a set of procedures. For example,
+you might have a loop of some sort, never repeats an operation multiple times. So this is the first tip. And then the next step might
+be some sort of function. So regardless of what language you may be
+using, often there will be some notion of a function, which is used to
+encapsulate a set of instructions. And the key thing about a function is
+that you'll have to define some sort of interface, which will be
+the inputs to the function. And then the function may
+have a set of outputs or it may have some side effect for
+example, if it's a plotting function. And then, so the user only
+needs to know those inputs and kind of what the outputs will be. And so this is kind of the first level
+of abstraction that you might encounter, where you have to actually define and
+interface to that function. And then the very highest level
+is the actual software package. Which will often be a collection of
+functions or functions in other things. That will be a little bit more
+formal because there'll be a very specific interface or
+API that a user has to understand. And often for a software package there'll
+be a level of convenience features for users, like documentation, or examples,
+or tutorials that may come with it, to help the user, to kind of apply
+the software to many different settings. So a full on software package will
+be most general in the sense that it should be applicable to
+kind of more than one setting. And maybe become more
+broadly useful to people. So, one question that you'll find yourself
+asking, is at what point do you need to systematize common tasks and procedures
+across projects versus, you know, recreating code or writing new code
+from scratch on every new project? Now it depends on a variety of factors and
+answering this question may require communication within your team, and with
+people outside of your team potentially. Because you may need to have
+an understanding of how often a given process is repeated, or how often
+a given type of data analysis is done, in order to weigh the costs and
+the benefits of kind of investing in either a software
+package or something like that. And so within your team,
+you may want to ask yourself, is the data analysis you're gonna do, is
+that something you're gonna build upon for future work, or
+is it just gonna be a one shot deal. Now in my experience, there are relatively
+few one shot deals out there. Often you will have to
+do a certain analysis or a certain type of analysis more than once,
+twice, or even three times. And at that point, it's usually often,
+you've kind of reached the threshold where you wanna write some code, write some
+software, or at least a function. So the point at which you need to
+systematize a given set of procedures, is probably gonna be sooner
+than you think it is. Because things will more
+likely be done more than once. Now the initial investment for developing
+more formal software will be higher, of course, but that will likely pay
+off in savings in time down the road. So my basic rule of thumb is that,
+if you're gonna do something once, that does happen on occasion, just write
+some code and document it very well. The important thing is that you wanna make
+sure that you understand what the code does, and so that requires both writing
+the code well and writing documentation. Cuz you wanna be able to reproduce it down
+the road, in case you ever come back to it, or in case someone else comes back to
+it, and needs to understand what was done. If you're gonna do something twice,
+write a function. This allows you to abstract
+a small piece of code, it forces you to define an interface, so
+you have well defined inputs and outputs. And that will allow for other people
+to access a given function and apply it to whatever situation they're in. And then if you're gonna do
+something three times or more, you should think about
+writing a small package. It doesn't have to be
+commercial level software. But a small package which encapsulates the set of operations that you're
+gonna be doing in a given analysis. And also write some real documentation so
+that people can understand what's supposed to be going on, and can apply the software
+to a different situation if they have to.

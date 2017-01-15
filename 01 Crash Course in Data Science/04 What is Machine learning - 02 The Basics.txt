@@ -1,0 +1,165 @@
+Hi, my name is Brian Caffo and
+this is a lecture on Machine Learning. So I'm gonna define machine
+learning as a set of algorithms that take a set of inputs and
+return a prediction. And I would classify the way in which it
+returns a prediction at least in the two ways that are most useful for
+Data Science, as two broad categories. And this is non exhaustive, there's other
+aspect of machine learning, but the two I wanna focus on are Unsupervised and
+Supervised versions of machine learning. In an Unsupervised case you're trying
+to build a prediction where you don't actually have the outcome
+to train the algorithm. So I would define unsupervised learning
+as trying to uncover unobserved factors. And some examples of this would
+be clustering, mixture models and principal components. To give you an example I will go back to
+one of the first examples of clustering. And that is, for
+the famous g factor is psychometrics. So people like Spearmen,
+a famous psychometrician and statistician, used factor analysis to combine
+collection of questionnaire data to find that people who took these tests, these
+psychometric tests, tended to cluster. They hypothesized that these clusters
+represented some outcome, some unmeasured outcome that represents some kind
+of intrinsic intellectual ability. So this was one of the first
+examples of unsupervised clustering done well before the advent
+of computers I might add. If that's unsupervised clustering, let's
+talk about what supervised learning is. So supervised learning is using a
+collection of predictors and some observed outcomes to build an algorithm to predict
+this outcome when it's not observed. So some examples of supervised learning
+algorithms include random forests, boosting, support vector machines. I'll try and give you a similarly old, maybe in fact,
+older version of supervised learning. Regression. And I give a picture of my regression book which is free on Lean Pub which
+you're more than welcome to download. But the reason I actually put the book
+up here is because of the picture on the cover. And I like this picture quite a bit
+because it was taken from Francis Dalton's original paper where he
+developed regression. In this paper he was trying
+to predict the height of sons from the height of the parents. In some cases, some midpoint between
+the father and the mother's height. In other cases just from
+the father's height. But this is an example where we have
+an observed outcome, the son's height, and then we have the predictor, the father's height and Francis Dalton
+wanted to build up and algorithm. So that,
+when you just do the father's height and say the mother was still pregnant. Then you could try to predict
+what the son's height was. So, this led to the development of what
+we think of low as linear regression. However, modern prediction algorithms
+can take tens of thousands are potential predictors
+to predict outcomes. Now you need a lot of data to
+train up your algorithm, but that's been some of the real
+advances in this area. So in these cases,
+you would use a collection of outcomes, and lots of collection,
+a large collection of predictors. You would build up this algorithm. And then you would then be
+able to predict the outcome in instances where you didn't have it. So you might wanna predict
+stock prices in the future. But doing that, you're gonna
+use historic stock pricing data with a lot of predictors to try and
+build up your algorithm. Okay?
+So that's machine learning in a nutshell. I'd like to contrast it because
+it seems very different. Many people are familiar with
+traditional statistics, but they're maybe a little less
+familiar with machine learning. So I'd like to contrast traditional
+statistics with machine learning. So in my mind, traditional statistics or
+machine learning, the main emphasis, at least let's focus on
+supervised learning. It emphasizes predictions and then it tries to evaluate performance
+via the prediction performance. So, unlike and
+we'll talk a little bit about statistics, traditional statistics,
+how it evaluates performance. So there's a lot of concern for
+overfitting in machine learning, but there's not as much concern for
+model complexity. So if you have a highly complex
+model that's not overfitting, and yielding good predictions, then there's
+more of a tolerance for that in the field of machine learning than there is in
+the field of traditional statistics. And so, there's an emphasis in
+machine learning on performance. And in less of an emphasis on
+super population models and generalizability that
+occurs a lot in statistics. So generalizability in machine
+learning tends to be obtained by applying the algorithm on novel data
+sets where you know the outcome and checking to see how good
+your predictions are. Rather than on a modeling and sampling assumptions that often
+occur in traditional statistics. And there's of course in machine learning
+a concern over performance and robustness. So in traditional statistical analysis,
+le's contrast that now, this tends to emphasize not so much predictions,
+even if it's doing predictions, but emphasizes predictions or models as
+they relate to some superpopulation. You have a sample and you wanna
+generalize it to some superpopulation that the sample was drawn from. So, there's less of an emphasis
+on sampling from assumptions in machine learning. Traditional statistics tends to
+focus on a-priori hypotheses, where things like unsupervised learning
+tend to try to generate the hypotheses. Right? The G factor generated this
+idea that there was intrinsic variability in intelligence. It tends, Traditional Statistics tends to
+focus on simpler models over complex ones, and tends to put a higher penalty on
+complexity than a machine learning algorithm does. In fact, the idea of a model seems already
+simpler than the idea of an algorithm. Right? Just the words themselves they seem like
+when I give you the word algorithm it conjures up an image of that's far
+more complex than the idea of a model, the idea of a model is a simplified
+version of something that's complicated. So there's a lot of emphasis
+on traditional statistics on parameter interpretability. And then an emphasis on the modeling and
+assumptions that go in to connect your data to the population you're
+trying to draw inferences on. And just like machine learning, there's
+concern over assumptions and robustness. So those are some broad distinctions
+between machine learning and statistics, though of course there's a lot of overlap. Let's just give you some
+examples of problems that occur where you could both approach them
+from a statistics perspective and machine learning perspective and
+talk about them. One of the most famous, recent machine
+learning exercises was the Netflix prize. And here the goal was to predict
+movie choices from a large collection of instances
+where users rated movies. So you had the outcome data and you had
+a lot of data on their viewing history and other things that might help
+you perform that prediction. So machine learning would build
+an automated movie recommender system. And success would be defined as anything
+that produces reliable predictions. Statistical analysis on the other hand,
+would try to build a parsimonious and interpretable model to better understand
+why people choose the movies that they do, so you'd want something
+that was interpretable. You'd want to understand uh-huh, this is
+the reason why this prediction works, it's because of the psychology. People have a tendency to like this kind
+of movie if they like this kind of movie, whereas an algorithm can tend to have
+a lot more complexity built in and may sacrifice some interpretability. Another example that I was engaged
+in was the Heritage Health Prize. In the Heritage Health Prize,
+we wanted to identify the number of days that patients would
+spend in the hospital in subsequent years. Given their prior year's hospitalization
+rates and a large collection of their insurance claims data that
+led to their hospitalization and whatever other insurance claims they have. And in this case if you are doing
+a machine learning exercise, which is how we approach the problem,
+we wanted to build an automated system for predicting hospital stays
+from previous claims. And all we want, success is anything that yields
+reliable predictions for the next year. So when we predict for a person in the next year, how long that
+we think they're gonna be in the hospital. If that's a number greater than zero, we might want to do some
+sort of intervention. Statistical analysis, the goal would
+be to build a parsimonious and interpretal model to better understand
+why people stay in the hospital longer. So success would be anything true
+that's learned about hospital stays, whether or not it gives good predictions. Okay, statistical analysis,you can have,
+for example, a great example of statistical effect that would yield no
+significant prediction is, take for example if a drug is shown to have
+a very small but positive effect for reducing the symptoms
+of Alzheimer's disease. That would be actually a huge success for
+the medical field. But knowledge of whether, but
+the effect is very minor, but statistically significant. That would be a huge effect, that would be a landmark study in
+the field of Alzheimer's disease. But if it was a really minor
+effect knowledge of whether or not someone was taking that drug
+wouldn't lead to a good prediction of they're Alzheimer's disease symptoms. Okay? That maybe something like their age and
+other factors, their age and their family history of Alzheimer's
+disease and other things maybe a better predictor of the severity, of the likely
+severity of their disease than whether or not they're taking this drug. So that is an instance where statistical
+significance in a statistical model that's important may not lead to
+an important, that important predictor being something that would be important
+in machine learning algorithms. So I just wanna emphasize that there's
+a big difference between these two approaches even though
+there's a lot of overlap. And I think the biggest difference is just
+in how you're thinking about the problem and what you're concerned with. The last example I'd like to
+give is kind of a relatively famous one which is Google Flu Trends. In this, the very clever people at Google
+tried to come up with a way to predict flu cases based on
+people's search history. And try to predict outbreaks. So in a particular area where
+a lot of ISPs traffic is relating to searches on Tamiflu that
+might suggest an outbreak in that area. So success for an algorithm in this case
+would be anything that produces reliable predictions. And they had, for example the CDC data,
+the historical CDC data to build up the predictions to try and
+predict flu outbreaks in the future. I'm not so sure how this is held up but nonetheless that's how you would approach
+this as a machine learning algorithm. This is a very clever idea I think. Statistical analysis on the other hand,
+would instead try to approach the problem of trying to learn what
+predicts flu outbreaks, and anything true that was
+learned about that would count. Regardless of whether or not it dramatically improved
+our ability to predict. So, the goal would be to build
+a parsimonious and interpretal model to better understand the outbreaks rather
+than to just get prediction performance. So if you build a model, if you built
+a model that was simpler and led to better understanding of what was going on but
+didn't leave any good predictions, that would be a beneficial
+outcome in statistical analysis. So some lessons learned are that both
+approaches are extremely valuable and they have their place. And the amount of tolerable model and algorithm complexity changes
+dramatically between the approaches. And their goals are often very different. However, I would say this caveat
+that there's a fair amount of work in making machine learning
+more interpretable. And a fair amount of work can make things
+traditional statistical approaches have better prediction. So it does seem like both fields
+are working towards some common areas in the middle. In the next lecture, I'm just gonna give you some examples of
+further reading that you can go into for contrasting traditional statistics
+versus machine learning. So, thank you for listening, and
+I'll see you in the next lecture.

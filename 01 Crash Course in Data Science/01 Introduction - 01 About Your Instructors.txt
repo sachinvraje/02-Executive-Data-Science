@@ -1,0 +1,32 @@
+Welcome to the class,
+A Crash Course in Data Science. I thought I'd start off by
+telling you a little bit about the instructors in the class. The three of us are actually
+the co-instructors and co-developers of the Executive Data Science Specialization
+and so we're all gonna be part of this first class and getting you comfortable
+with and introduce you to data science. So I thought I'd tell you
+a bit about each of us. So Brian Caflo is a professor of
+Bio Statistics here at John Hopkins. He works primarily in the analysis of
+data from neuro-imaging experience. So, he leads a team of data scientists
+that analyze that type of data and interact with medical professionals and
+scientists here at Johns Hopkins campus. I am also a data scientist
+here at Johns Hopkins. I'm a associate professor
+of Bio Statistics and Oncology here at Johns Hopkins and I work
+primarily on the analysis of genomic data. And so that's the data about your
+genome and how you use that genome and relate it to personalized medicine and
+other areas where you can use your genome to tell you something about how you're
+going to vary compared to other people. And then the third
+instructor is Roger Peng. And Roger Peng is also
+an associate professor here in Bio Statistics at Johns Hopkins, and he works primarily in the analysis of
+data from environmental health studies. And so
+he analyzes again data sets that come in that relate environmental health
+data to other public quantities that are of interest to regulators and
+other people. And so, the two of us, Roger and I, actually write a blog together,
+the Simply Statistics blog and so that blog deals with a lot
+of data science issues. It covers a lot of the material. You might see some of those blog
+posts pop up in later lectures and then the three of us also co-created the
+Johns Hopkins Data Science Specialization, which is actually a more low level
+specialization focused on, actually, how do you actually, do the grunt
+work of data science day to day. And so, this overview in this class is
+gonna be more like a crash course in the concepts of data science and
+how they apply, and how you can use them
+when you're managing people. Welcome to the class.

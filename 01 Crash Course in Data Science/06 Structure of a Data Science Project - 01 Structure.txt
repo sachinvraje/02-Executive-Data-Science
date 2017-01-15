@@ -1,0 +1,99 @@
+This lecture discusses the basic
+structure of a data science project. A typical data science project will be
+structured in a few different phases that I'll talk about in
+separately in this lecture. So there's roughly five different
+phases that we can think about in a data science project. The first phase is
+the most important phase, and that's the phase where
+you ask the question and you specify what is it that you're
+interested in learning from data. Now, specifying the question and
+kind of refining it over time is really important because it will ultimately
+guide the data that you obtain and the type of analysis that you do. Part of specifying the question is also
+determining the type of question that you are gonna be asking. There are roughly six types
+of questions that you can ask going from kind of descriptive,
+to exploratory, to inferential, to causal, to prediction,
+predictive and mechanistic. And so figuring out what type
+of question you're asking and what exactly the question is,
+is really influential. And so you should spend a lot
+of time thinking about this. Once you've kind of figured
+out what your question is, but typically you'll get some data. Now, either you'll have the data or you'll
+have to go out and get it somewhere or maybe someone will provide it to you,
+but the data will come to you. And then the next phase will
+be exploratory data analysis. So this is the second part, there are two
+main goals to exploratory data analysis. The first is you wanna know if
+the data that you have is suitable for answering the question that you have. Then so this will depend on a variety of
+factors depending on very basic things like is there enough data, are there too
+many missing values, things like that. To more fundamental ones,
+like are you missing certain variables or do you need to collect more data
+to get those variables, etc? The second goal of
+exploratory data analysis is to start to develop
+a sketch of the solution. And so if the data are appropriate for answering your question,
+you can start using it to kinda sketch out what the answer might be to get
+a sense of kinda what it'll look like. This can be done without any formal
+modeling or any kind of the statistical testing of things like that just to get
+a good picture of what it might be. The next stage, the third stage,
+is formal modeling. So if you're sketch kind of works out, you've got the right data and
+it seems appropriate to move on, the formal modeling phase is the way
+to kind of specifically write down what questions you're asking,
+what parameters you're trying to estimate. And it also provides a framework for
+challenging your results. So just because you've come up with
+an answer in the exploratory data analysis phase doesn't mean that it's necessarily
+going to be the right answer and you need to be able to challenge
+your results through a variety of approaches where the sensitivity
+analysis are other types of analysis. So challenging your model and just
+developing a formal framework is really important to making sure that you
+can develop robust evidence for answering your question. The next phase is interpretation so
+once you've done your analysis your formal modeling you wanna think about
+how to interpret your results and there are a variety of things to think
+about in the interpretation phase the data science project. The first is kinda like think about
+how your results jive with kinda what you expected to find when you
+where first asking the question. And also you wanna think about
+the kind the totality of the evidence that you've developed. At this point, you've probably
+done many different analysis, you probably fit in many different models. And so you have many different bits
+of information to think about and part of the interpretation
+phase is to kind of assemble all that information to weigh
+the different pieces of evidence. So that you know what kind or which are more reliable, which are more
+important than others and to get a sense of the totality of evidence with respect
+to kind of answering the question. The last phase is the communication phase. Any data science project that
+is successful will wanna communicate its findings
+to some sort of audience. Now that audience may be internal to
+your organization, it may be external, it may be to a large audience or
+even just a few people. But communicating your findings is
+an essential part of data science in it because it informs the data
+analysis process and a it translates your findings into action. So that's the last part which is not
+a formal part of a data science project necessarily, but often there will be
+some decision that needs to be made or some action that needs to be taken. And the data science project will
+have been conducted in support of making a decision or taking an action. So that last phase will depend on more
+than just the results of the data size or the data analysis, but may require inputs from many different parts of an
+organization or from other stakeholders. So ultimately if the decision is made, the data analysis that was done will
+inform that decision and will support and the evidence that was collected
+will support that decision. So these are roughly the five
+phases of a data science project. There's the question, there's exploratory
+data analysis, there's formal modeling, and there's interpretation,
+and there's communication. Now, there is another
+approach that can be taken, it's very often taken in
+data science project. And that is to really
+start with the data and to start with an exploratory
+data analysis. So often there will be
+a data set available, But, it won't be immediately clear kind of
+what the data set will be useful for. So it can be useful to kind of do some
+exploratory data analysis, to look at the data, to summarize it a little bit,
+make some plots, and see what's there. And to generate some interesting
+questions based on the data. So this is sometimes called hypothesis
+generating because it kind of produces questions that were already there. Once you've produced
+the questions that you wanna ask, based on your initial kind of
+exploratory data analysis, it may be useful to kind of
+get more data or other data to kind of do an exploratory data analysis
+that's specific to your question now. And then continue with the formal
+modeling, interpretation and communication. One thing that you have to be wary of is
+to do the exploratory data analysis in one data set, develop the question, and
+then go back to the same data set. And pretend like you hadn't done
+the exploratory data analysis before and come at it with say a fresh question. That goes on to the rest of the stages. This could often be a recipe for
+kind of, for bias in your analysis. Because the results were
+derived from the same data set. So it's important to be careful about
+doing that and to try to obtain other data when you're using the data to generate
+the questions in the first place. So this is the secondary approach to data
+science that can be very useful and can often result in many interesting questions
+that are generated from the data. Data science projects have a variety
+of phases and it's important to kind of understand which phase you're in so
+that you know kind of how to progress and how to move forward with
+any data science project.
